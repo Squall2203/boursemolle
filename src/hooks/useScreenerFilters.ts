@@ -59,6 +59,10 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
       pe: parseRange(searchParams, "pe", FILTER_BOUNDS.pe),
       roe: parseRange(searchParams, "roe", FILTER_BOUNDS.roe),
       divYield: parseRange(searchParams, "divYield", FILTER_BOUNDS.divYield),
+      rsi: parseRange(searchParams, "rsi", FILTER_BOUNDS.rsi),
+      perf1M: parseRange(searchParams, "perf1M", FILTER_BOUNDS.perf1M),
+      perf6M: parseRange(searchParams, "perf6M", FILTER_BOUNDS.perf6M),
+      perf1Y: parseRange(searchParams, "perf1Y", FILTER_BOUNDS.perf1Y),
       sectors: parseList(searchParams, "sectors"),
       countries: parseList(searchParams, "countries"),
     }),
@@ -75,6 +79,10 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
           applyRange(params, "pe", merged.pe, FILTER_BOUNDS.pe)
           applyRange(params, "roe", merged.roe, FILTER_BOUNDS.roe)
           applyRange(params, "divYield", merged.divYield, FILTER_BOUNDS.divYield)
+          applyRange(params, "rsi", merged.rsi, FILTER_BOUNDS.rsi)
+          applyRange(params, "perf1M", merged.perf1M, FILTER_BOUNDS.perf1M)
+          applyRange(params, "perf6M", merged.perf6M, FILTER_BOUNDS.perf6M)
+          applyRange(params, "perf1Y", merged.perf1Y, FILTER_BOUNDS.perf1Y)
           applyList(params, "sectors", merged.sectors)
           applyList(params, "countries", merged.countries)
           return params

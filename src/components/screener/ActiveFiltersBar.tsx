@@ -66,6 +66,38 @@ export function ActiveFiltersBar({ filters, onChange, onReset }: ActiveFiltersBa
     })
   }
 
+  if (isRangeActive(filters.rsi, FILTER_BOUNDS.rsi)) {
+    chips.push({
+      key: "rsi",
+      label: rangeLabel("RSI", filters.rsi, FILTER_BOUNDS.rsi),
+      onDismiss: () => onChange({ rsi: DEFAULT_FILTERS.rsi }),
+    })
+  }
+
+  if (isRangeActive(filters.perf1M, FILTER_BOUNDS.perf1M)) {
+    chips.push({
+      key: "perf1M",
+      label: rangeLabel("Perf 1M", filters.perf1M, FILTER_BOUNDS.perf1M, (n) => `${n > 0 ? "+" : ""}${n}%`),
+      onDismiss: () => onChange({ perf1M: DEFAULT_FILTERS.perf1M }),
+    })
+  }
+
+  if (isRangeActive(filters.perf6M, FILTER_BOUNDS.perf6M)) {
+    chips.push({
+      key: "perf6M",
+      label: rangeLabel("Perf 6M", filters.perf6M, FILTER_BOUNDS.perf6M, (n) => `${n > 0 ? "+" : ""}${n}%`),
+      onDismiss: () => onChange({ perf6M: DEFAULT_FILTERS.perf6M }),
+    })
+  }
+
+  if (isRangeActive(filters.perf1Y, FILTER_BOUNDS.perf1Y)) {
+    chips.push({
+      key: "perf1Y",
+      label: rangeLabel("Perf 1A", filters.perf1Y, FILTER_BOUNDS.perf1Y, (n) => `${n > 0 ? "+" : ""}${n}%`),
+      onDismiss: () => onChange({ perf1Y: DEFAULT_FILTERS.perf1Y }),
+    })
+  }
+
   for (const sector of filters.sectors) {
     chips.push({
       key: `sector-${sector}`,

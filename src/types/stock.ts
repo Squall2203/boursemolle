@@ -40,6 +40,17 @@ export interface Stock {
   fiftyTwoWeekHigh: number | null
   fiftyTwoWeekLow: number | null
 
+  // Technical indicators (computed from price history at ingestion)
+  rsi14: number | null
+  sma50: number | null
+  sma200: number | null
+  priceVsSma50: number | null   // % above/below SMA50
+  priceVsSma200: number | null  // % above/below SMA200
+  perf1M: number | null         // % performance 1 month
+  perf3M: number | null
+  perf6M: number | null
+  perf1Y: number | null
+
   peaEligible: boolean
   fetchedAt: string
 }

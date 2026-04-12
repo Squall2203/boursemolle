@@ -8,6 +8,10 @@ export interface ScreenerFilters {
   pe: RangeFilter          // 0..100
   roe: RangeFilter         // -50..100 (%)
   divYield: RangeFilter    // 0..15 (%)
+  rsi: RangeFilter         // 0..100
+  perf1M: RangeFilter      // -80..200 (%)
+  perf6M: RangeFilter      // -80..200 (%)
+  perf1Y: RangeFilter      // -80..500 (%)
   sectors: string[]        // empty = no filter
   countries: string[]      // empty = no filter
 }
@@ -17,6 +21,10 @@ export const FILTER_BOUNDS = {
   pe: { min: 0, max: 100, step: 1 },
   roe: { min: -50, max: 100, step: 1 },
   divYield: { min: 0, max: 15, step: 0.5 },
+  rsi: { min: 0, max: 100, step: 1 },
+  perf1M: { min: -80, max: 200, step: 1 },
+  perf6M: { min: -80, max: 200, step: 1 },
+  perf1Y: { min: -80, max: 500, step: 5 },
 } as const
 
 export const DEFAULT_FILTERS: ScreenerFilters = {
@@ -24,6 +32,10 @@ export const DEFAULT_FILTERS: ScreenerFilters = {
   pe: { min: FILTER_BOUNDS.pe.min, max: FILTER_BOUNDS.pe.max },
   roe: { min: FILTER_BOUNDS.roe.min, max: FILTER_BOUNDS.roe.max },
   divYield: { min: FILTER_BOUNDS.divYield.min, max: FILTER_BOUNDS.divYield.max },
+  rsi: { min: FILTER_BOUNDS.rsi.min, max: FILTER_BOUNDS.rsi.max },
+  perf1M: { min: FILTER_BOUNDS.perf1M.min, max: FILTER_BOUNDS.perf1M.max },
+  perf6M: { min: FILTER_BOUNDS.perf6M.min, max: FILTER_BOUNDS.perf6M.max },
+  perf1Y: { min: FILTER_BOUNDS.perf1Y.min, max: FILTER_BOUNDS.perf1Y.max },
   sectors: [],
   countries: [],
 }

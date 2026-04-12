@@ -27,12 +27,21 @@ export function FilterPanel({
   const profitActive = isRangeActive(filters.roe, FILTER_BOUNDS.roe)
   const yieldActive = isRangeActive(filters.divYield, FILTER_BOUNDS.divYield)
   const qualActive = filters.sectors.length > 0 || filters.countries.length > 0
+  const techActive =
+    isRangeActive(filters.rsi, FILTER_BOUNDS.rsi) ||
+    isRangeActive(filters.perf1M, FILTER_BOUNDS.perf1M) ||
+    isRangeActive(filters.perf6M, FILTER_BOUNDS.perf6M) ||
+    isRangeActive(filters.perf1Y, FILTER_BOUNDS.perf1Y)
 
   const activeCount =
     (isRangeActive(filters.marketCap, FILTER_BOUNDS.marketCap) ? 1 : 0) +
     (isRangeActive(filters.pe, FILTER_BOUNDS.pe) ? 1 : 0) +
     (profitActive ? 1 : 0) +
     (yieldActive ? 1 : 0) +
+    (isRangeActive(filters.rsi, FILTER_BOUNDS.rsi) ? 1 : 0) +
+    (isRangeActive(filters.perf1M, FILTER_BOUNDS.perf1M) ? 1 : 0) +
+    (isRangeActive(filters.perf6M, FILTER_BOUNDS.perf6M) ? 1 : 0) +
+    (isRangeActive(filters.perf1Y, FILTER_BOUNDS.perf1Y) ? 1 : 0) +
     (filters.sectors.length > 0 ? 1 : 0) +
     (filters.countries.length > 0 ? 1 : 0)
 
@@ -123,6 +132,53 @@ export function FilterPanel({
             max={FILTER_BOUNDS.divYield.max}
             step={FILTER_BOUNDS.divYield.step}
             formatValue={(n) => n.toFixed(1)}
+          />
+        </section>
+
+        <Separator />
+
+        <section className="space-y-4">
+          <h3 className={cn(
+            "text-xs font-semibold uppercase tracking-wider",
+            techActive ? "text-primary" : "text-foreground",
+          )}>
+            Technique
+            {techActive && <span className="ml-1.5 inline-flex size-1.5 rounded-full bg-primary align-middle" />}
+          </h3>
+          <RangeSliderField
+            label="RSI (14)"
+            value={filters.rsi}
+            onChange={(v) => onChange({ rsi: v })}
+            min={FILTER_BOUNDS.rsi.min}
+            max={FILTER_BOUNDS.rsi.max}
+            step={FILTER_BOUNDS.rsi.step}
+          />
+          <RangeSliderField
+            label="Perf 1 mois (%)"
+            value={filters.perf1M}
+            onChange={(v) => onChange({ perf1M: v })}
+            min={FILTER_BOUNDS.perf1M.min}
+            max={FILTER_BOUNDS.perf1M.max}
+            step={FILTER_BOUNDS.perf1M.step}
+            formatValue={(n) => `${n > 0 ? "+" : ""}${n}`}
+          />
+          <RangeSliderField
+            label="Perf 6 mois (%)"
+            value={filters.perf6M}
+            onChange={(v) => onChange({ perf6M: v })}
+            min={FILTER_BOUNDS.perf6M.min}
+            max={FILTER_BOUNDS.perf6M.max}
+            step={FILTER_BOUNDS.perf6M.step}
+            formatValue={(n) => `${n > 0 ? "+" : ""}${n}`}
+          />
+          <RangeSliderField
+            label="Perf 1 an (%)"
+            value={filters.perf1Y}
+            onChange={(v) => onChange({ perf1Y: v })}
+            min={FILTER_BOUNDS.perf1Y.min}
+            max={FILTER_BOUNDS.perf1Y.max}
+            step={FILTER_BOUNDS.perf1Y.step}
+            formatValue={(n) => `${n > 0 ? "+" : ""}${n}`}
           />
         </section>
 

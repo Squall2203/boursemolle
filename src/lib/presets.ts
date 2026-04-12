@@ -18,6 +18,13 @@ const full = (key: keyof typeof FILTER_BOUNDS) => ({
   max: FILTER_BOUNDS[key].max,
 })
 
+const BASE_TECH = {
+  rsi: full("rsi"),
+  perf1M: full("perf1M"),
+  perf6M: full("perf6M"),
+  perf1Y: full("perf1Y"),
+}
+
 export const PRESETS: Preset[] = [
   {
     id: "value",
@@ -33,6 +40,7 @@ export const PRESETS: Preset[] = [
       roe: { min: 8, max: FILTER_BOUNDS.roe.max },
       divYield: { min: 1.5, max: FILTER_BOUNDS.divYield.max },
       marketCap: full("marketCap"),
+      ...BASE_TECH,
       sectors: [],
       countries: [],
     },
@@ -51,6 +59,7 @@ export const PRESETS: Preset[] = [
       roe: { min: 10, max: FILTER_BOUNDS.roe.max },
       pe: { min: 0, max: 25 },
       marketCap: full("marketCap"),
+      ...BASE_TECH,
       sectors: [],
       countries: [],
     },
@@ -61,7 +70,6 @@ export const PRESETS: Preset[] = [
     description: "Entreprises à forte rentabilité, souvent en croissance, acceptant une prime de valorisation",
     criteria: [
       { label: "ROE", value: "> 15%" },
-      { label: "Marge", value: "implicite élevée" },
       { label: "Capi", value: "> 10 Md€" },
     ],
     filters: {
@@ -69,6 +77,7 @@ export const PRESETS: Preset[] = [
       marketCap: { min: 10, max: FILTER_BOUNDS.marketCap.max },
       pe: full("pe"),
       divYield: full("divYield"),
+      ...BASE_TECH,
       sectors: [],
       countries: [],
     },
@@ -86,6 +95,7 @@ export const PRESETS: Preset[] = [
       roe: { min: 5, max: FILTER_BOUNDS.roe.max },
       pe: full("pe"),
       divYield: full("divYield"),
+      ...BASE_TECH,
       sectors: [],
       countries: [],
     },
@@ -103,6 +113,50 @@ export const PRESETS: Preset[] = [
       roe: { min: 0, max: FILTER_BOUNDS.roe.max },
       marketCap: full("marketCap"),
       divYield: full("divYield"),
+      ...BASE_TECH,
+      sectors: [],
+      countries: [],
+    },
+  },
+  {
+    id: "momentum",
+    name: "Momentum",
+    description: "Actions en forte hausse récente avec un RSI dynamique — suivre la tendance",
+    criteria: [
+      { label: "Perf 1M", value: "> 5%" },
+      { label: "Perf 6M", value: "> 15%" },
+      { label: "RSI", value: "50 – 80" },
+    ],
+    filters: {
+      pe: full("pe"),
+      roe: full("roe"),
+      marketCap: full("marketCap"),
+      divYield: full("divYield"),
+      rsi: { min: 50, max: 80 },
+      perf1M: { min: 5, max: FILTER_BOUNDS.perf1M.max },
+      perf6M: { min: 15, max: FILTER_BOUNDS.perf6M.max },
+      perf1Y: full("perf1Y"),
+      sectors: [],
+      countries: [],
+    },
+  },
+  {
+    id: "oversold",
+    name: "Survendues",
+    description: "Actions en zone de survente (RSI bas) — potentiel rebond technique",
+    criteria: [
+      { label: "RSI", value: "< 35" },
+      { label: "Capi", value: "> 5 Md€" },
+    ],
+    filters: {
+      pe: full("pe"),
+      roe: full("roe"),
+      marketCap: { min: 5, max: FILTER_BOUNDS.marketCap.max },
+      divYield: full("divYield"),
+      rsi: { min: 0, max: 35 },
+      perf1M: full("perf1M"),
+      perf6M: full("perf6M"),
+      perf1Y: full("perf1Y"),
       sectors: [],
       countries: [],
     },

@@ -26,6 +26,10 @@ export function filterStocks(
     if (!inRange(s.trailingPE, filters.pe, FILTER_BOUNDS.pe)) return false
     if (!inRange(s.returnOnEquity, filters.roe, FILTER_BOUNDS.roe)) return false
     if (!inRange(s.dividendYield, filters.divYield, FILTER_BOUNDS.divYield)) return false
+    if (!inRange(s.rsi14, filters.rsi, FILTER_BOUNDS.rsi)) return false
+    if (!inRange(s.perf1M, filters.perf1M, FILTER_BOUNDS.perf1M)) return false
+    if (!inRange(s.perf6M, filters.perf6M, FILTER_BOUNDS.perf6M)) return false
+    if (!inRange(s.perf1Y, filters.perf1Y, FILTER_BOUNDS.perf1Y)) return false
 
     if (filters.sectors.length > 0) {
       if (!s.sector || !filters.sectors.includes(s.sector)) return false
