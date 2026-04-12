@@ -98,6 +98,14 @@ export function ActiveFiltersBar({ filters, onChange, onReset }: ActiveFiltersBa
     })
   }
 
+  for (const index of filters.indices) {
+    chips.push({
+      key: `index-${index}`,
+      label: index,
+      onDismiss: () => onChange({ indices: filters.indices.filter((i) => i !== index) }),
+    })
+  }
+
   for (const sector of filters.sectors) {
     chips.push({
       key: `sector-${sector}`,

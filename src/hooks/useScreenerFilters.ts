@@ -63,6 +63,7 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
       perf1M: parseRange(searchParams, "perf1M", FILTER_BOUNDS.perf1M),
       perf6M: parseRange(searchParams, "perf6M", FILTER_BOUNDS.perf6M),
       perf1Y: parseRange(searchParams, "perf1Y", FILTER_BOUNDS.perf1Y),
+      indices: parseList(searchParams, "indices"),
       sectors: parseList(searchParams, "sectors"),
       countries: parseList(searchParams, "countries"),
     }),
@@ -83,6 +84,7 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
           applyRange(params, "perf1M", merged.perf1M, FILTER_BOUNDS.perf1M)
           applyRange(params, "perf6M", merged.perf6M, FILTER_BOUNDS.perf6M)
           applyRange(params, "perf1Y", merged.perf1Y, FILTER_BOUNDS.perf1Y)
+          applyList(params, "indices", merged.indices)
           applyList(params, "sectors", merged.sectors)
           applyList(params, "countries", merged.countries)
           return params

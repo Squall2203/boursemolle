@@ -51,6 +51,8 @@ export interface Stock {
   perf6M: number | null
   perf1Y: number | null
 
+  indices: string[]
+
   peaEligible: boolean
   fetchedAt: string
 }

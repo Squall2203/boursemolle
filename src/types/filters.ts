@@ -12,6 +12,7 @@ export interface ScreenerFilters {
   perf1M: RangeFilter      // -80..200 (%)
   perf6M: RangeFilter      // -80..200 (%)
   perf1Y: RangeFilter      // -80..500 (%)
+  indices: string[]        // empty = no filter
   sectors: string[]        // empty = no filter
   countries: string[]      // empty = no filter
 }
@@ -36,6 +37,7 @@ export const DEFAULT_FILTERS: ScreenerFilters = {
   perf1M: { min: FILTER_BOUNDS.perf1M.min, max: FILTER_BOUNDS.perf1M.max },
   perf6M: { min: FILTER_BOUNDS.perf6M.min, max: FILTER_BOUNDS.perf6M.max },
   perf1Y: { min: FILTER_BOUNDS.perf1Y.min, max: FILTER_BOUNDS.perf1Y.max },
+  indices: [],
   sectors: [],
   countries: [],
 }

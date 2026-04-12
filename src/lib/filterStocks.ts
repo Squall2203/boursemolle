@@ -31,6 +31,9 @@ export function filterStocks(
     if (!inRange(s.perf6M, filters.perf6M, FILTER_BOUNDS.perf6M)) return false
     if (!inRange(s.perf1Y, filters.perf1Y, FILTER_BOUNDS.perf1Y)) return false
 
+    if (filters.indices.length > 0) {
+      if (!filters.indices.some((idx) => s.indices.includes(idx))) return false
+    }
     if (filters.sectors.length > 0) {
       if (!s.sector || !filters.sectors.includes(s.sector)) return false
     }

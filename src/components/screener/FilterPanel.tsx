@@ -8,6 +8,17 @@ import { FILTER_BOUNDS, isRangeActive, type ScreenerFilters } from "@/types/filt
 import { RangeSliderField } from "./RangeSliderField"
 import { MultiSelectField } from "./MultiSelectField"
 
+const AVAILABLE_INDICES = [
+  "CAC 40",
+  "CAC Next 20",
+  "CAC Mid 60",
+  "SBF 120",
+  "DAX 40",
+  "AEX 25",
+  "BEL 20",
+  "IBEX 35",
+]
+
 interface FilterPanelProps {
   filters: ScreenerFilters
   onChange: (next: Partial<ScreenerFilters>) => void
@@ -26,7 +37,7 @@ export function FilterPanel({
   const valuationActive = isRangeActive(filters.marketCap, FILTER_BOUNDS.marketCap) || isRangeActive(filters.pe, FILTER_BOUNDS.pe)
   const profitActive = isRangeActive(filters.roe, FILTER_BOUNDS.roe)
   const yieldActive = isRangeActive(filters.divYield, FILTER_BOUNDS.divYield)
-  const qualActive = filters.sectors.length > 0 || filters.countries.length > 0
+  const qualActive = filters.indices.length > 0 || filters.sectors.length > 0 || filters.countries.length > 0
   const techActive =
     isRangeActive(filters.rsi, FILTER_BOUNDS.rsi) ||
     isRangeActive(filters.perf1M, FILTER_BOUNDS.perf1M) ||
@@ -42,6 +53,7 @@ export function FilterPanel({
     (isRangeActive(filters.perf1M, FILTER_BOUNDS.perf1M) ? 1 : 0) +
     (isRangeActive(filters.perf6M, FILTER_BOUNDS.perf6M) ? 1 : 0) +
     (isRangeActive(filters.perf1Y, FILTER_BOUNDS.perf1Y) ? 1 : 0) +
+    (filters.indices.length > 0 ? 1 : 0) +
     (filters.sectors.length > 0 ? 1 : 0) +
     (filters.countries.length > 0 ? 1 : 0)
 
@@ -192,6 +204,13 @@ export function FilterPanel({
             Qualitatif
             {qualActive && <span className="ml-1.5 inline-flex size-1.5 rounded-full bg-primary align-middle" />}
           </h3>
+          <MultiSelectField
+            label="Indice"
+            options={AVAILABLE_INDICES}
+            value={filters.indices}
+            onChange={(v) => onChange({ indices: v })}
+            searchPlaceholder="Rechercher un indice..."
+          />
           <MultiSelectField
             label="Secteur"
             options={availableSectors}
