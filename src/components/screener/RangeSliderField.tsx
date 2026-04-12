@@ -1,6 +1,7 @@
 import { X } from "lucide-react"
 import { Label } from "@/components/ui/label"
 import { Slider } from "@/components/ui/slider"
+import { MetricTooltip } from "@/components/MetricTooltip"
 import { cn } from "@/lib/utils"
 import type { RangeFilter } from "@/types/filters"
 
@@ -35,14 +36,15 @@ export function RangeSliderField({
       <div className="flex items-center justify-between gap-2">
         <Label
           className={cn(
-            "text-xs font-medium uppercase tracking-wide",
+            "text-xs font-medium uppercase tracking-wide flex items-center gap-1",
             isActive ? "text-primary" : "text-muted-foreground",
           )}
         >
           {label}
           {isActive && (
-            <span className="ml-1.5 inline-flex size-1.5 rounded-full bg-primary" />
+            <span className="inline-flex size-1.5 rounded-full bg-primary" />
           )}
+          <MetricTooltip label={label} />
         </Label>
         <div className="flex items-center gap-1">
           <span

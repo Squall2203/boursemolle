@@ -85,13 +85,23 @@ interface ResultsTableProps {
   allStocks: Stock[]
 }
 
-const PAGE_SIZE_OPTIONS = [25, 50, 100]
+const PAGE_SIZE_OPTIONS = [25, 50, 100, 0]
+const PAGE_SIZE_LABELS: Record<number, string> = { 0: "Tout" }
+const LS_KEY = "boursemolle-pagesize"
+
+function getStoredPageSize(): number {
+  try {
+    const v = localStorage.getItem(LS_KEY)
+    if (v != null) return Number(v)
+  } catch {}
+  return 50
+}
 
 export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
   const navigate = useNavigate()
   const [sortKey, setSortKey] = useState<SortKey>("marketCap")
   const [sortDir, setSortDir] = useState<SortDir>("desc")
-  const [pageSize, setPageSize] = useState(50)
+  const [pageSize, setPageSize] = useState(getStoredPageSize)
   const [page, setPage] = useState(0)
 
   const scoreMap = useMemo(() => {
@@ -119,10 +129,11 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
     return copy
   }, [stocks, sortKey, sortDir, scoreMap])
 
-  const totalPages = Math.max(1, Math.ceil(sorted.length / pageSize))
+  const effectivePageSize = pageSize === 0 ? sorted.length : pageSize
+  const totalPages = Math.max(1, Math.ceil(sorted.length / (effectivePageSize || 1)))
   const safePage = Math.min(page, totalPages - 1)
-  const pageStart = safePage * pageSize
-  const pageStocks = sorted.slice(pageStart, pageStart + pageSize)
+  const pageStart = safePage * effectivePageSize
+  const pageStocks = sorted.slice(pageStart, pageStart + effectivePageSize)
 
   function handleSort(key: SortKey) {
     if (key === sortKey) {
@@ -265,8 +276,10 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
           <Select
             value={String(pageSize)}
             onValueChange={(v) => {
-              setPageSize(Number(v))
+              const n = Number(v)
+              setPageSize(n)
               setPage(0)
+              try { localStorage.setItem(LS_KEY, String(n)) } catch {}
             }}
           >
             <SelectTrigger className="h-8 w-20">
@@ -275,7 +288,7 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
             <SelectContent>
               {PAGE_SIZE_OPTIONS.map((n) => (
                 <SelectItem key={n} value={String(n)}>
-                  {n}
+                  {PAGE_SIZE_LABELS[n] ?? n}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -285,13 +298,13 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
           <span>
             {sorted.length === 0
               ? "0 résultat"
-              : `${pageStart + 1}–${Math.min(pageStart + pageSize, sorted.length)} sur ${sorted.length}`}
+              : `Résultats ${pageStart + 1}–${Math.min(pageStart + effectivePageSize, sorted.length)} sur ${sorted.length}`}
           </span>
           <div className="flex gap-1">
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setPage((p) => Math.max(0, p - 1))}
+              onClick={() => { setPage((p) => Math.max(0, p - 1)); window.scrollTo({ top: 0, behavior: "smooth" }) }}
               disabled={safePage === 0}
             >
               Précédent
@@ -299,7 +312,7 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+              onClick={() => { setPage((p) => Math.min(totalPages - 1, p + 1)); window.scrollTo({ top: 0, behavior: "smooth" }) }}
               disabled={safePage >= totalPages - 1}
             >
               Suivant
