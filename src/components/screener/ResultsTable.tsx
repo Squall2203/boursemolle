@@ -58,6 +58,9 @@ const ALL_COLUMNS: ColumnDef[] = [
       if (!score) return null
       return (
         <div className="flex items-center justify-end gap-1.5">
+          {score.flags.slice(0, 2).map((f) => (
+            <span key={f.id} title={f.label} className="text-xs">{f.emoji}</span>
+          ))}
           <span className="font-mono text-xs font-semibold tabular-nums">{score.total.toFixed(1)}</span>
           <Badge variant="outline" className={cn("h-5 px-1.5 text-[10px] font-semibold", score.labelColor)}>{score.label}</Badge>
         </div>
