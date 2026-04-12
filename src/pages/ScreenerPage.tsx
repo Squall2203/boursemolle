@@ -3,6 +3,7 @@ import { ActiveFiltersBar } from "@/components/screener/ActiveFiltersBar"
 import { FilterPanel } from "@/components/screener/FilterPanel"
 import { PresetBar } from "@/components/screener/PresetBar"
 import { ResultsTable } from "@/components/screener/ResultsTable"
+import { SavedScreeners } from "@/components/screener/SavedScreeners"
 import { useScreenerFilters } from "@/hooks/useScreenerFilters"
 import { useStocks } from "@/hooks/useStocks"
 import { filterStocks } from "@/lib/filterStocks"
@@ -64,7 +65,10 @@ export function ScreenerPage() {
             )}
           </div>
         </header>
-        <PresetBar filters={filters} onApply={setFilters} onReset={resetFilters} />
+        <div className="flex flex-wrap items-center gap-2">
+          <PresetBar filters={filters} onApply={setFilters} onReset={resetFilters} />
+          <SavedScreeners filters={filters} onLoad={setFilters} />
+        </div>
         <ActiveFiltersBar filters={filters} onChange={setFilters} onReset={resetFilters} />
         {!loading && !error && <ResultsTable stocks={filteredStocks} allStocks={allStocks} />}
       </main>
