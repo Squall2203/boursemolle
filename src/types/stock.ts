@@ -53,8 +53,22 @@ export interface Stock {
 
   indices: string[]
 
+  annualFinancials: AnnualFinancial[]
+  dividendHistory: AnnualDividend[]
+
   peaEligible: boolean
   fetchedAt: string
+}
+
+export interface AnnualFinancial {
+  year: number
+  revenue: number | null
+  netIncome: number | null
+}
+
+export interface AnnualDividend {
+  year: number
+  total: number
 }
 
 export interface PriceCandle {

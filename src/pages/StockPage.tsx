@@ -4,6 +4,8 @@ import { Separator } from "@/components/ui/separator"
 import { PriceChart } from "@/components/stock/PriceChart"
 import { StockHeader } from "@/components/stock/StockHeader"
 import { FundamentalsTable } from "@/components/stock/FundamentalsTable"
+import { GrowthHistoryTable } from "@/components/stock/GrowthHistoryTable"
+import { DividendSparkline } from "@/components/stock/DividendSparkline"
 import { TechnicalAnalysisPanel } from "@/components/stock/TechnicalAnalysisPanel"
 import { computeScore } from "@/lib/scoring"
 import { usePriceHistory } from "@/hooks/usePriceHistory"
@@ -39,7 +41,7 @@ export function StockPage() {
       <Card>
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-            Graphique de prix — 1 an
+            Graphique de prix
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -67,6 +69,36 @@ export function StockPage() {
             candles={priceData.candles}
             currency={stock.currency}
           />
+        </>
+      )}
+
+      {(stock.annualFinancials.length >= 2 || stock.dividendHistory.length >= 2) && (
+        <>
+          <Separator />
+          <section className="space-y-4">
+            <h2 className="text-lg font-semibold">Historique financier</h2>
+            {stock.annualFinancials.length >= 2 && (
+              <GrowthHistoryTable
+                financials={stock.annualFinancials}
+                currency={stock.currency}
+              />
+            )}
+            {stock.dividendHistory.length >= 2 && (
+              <Card>
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Dividende par action — historique
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <DividendSparkline
+                    dividends={stock.dividendHistory}
+                    currency={stock.currency}
+                  />
+                </CardContent>
+              </Card>
+            )}
+          </section>
         </>
       )}
 

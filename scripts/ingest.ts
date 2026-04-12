@@ -2,7 +2,7 @@ import { writeFile, mkdir } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import YahooFinance from "yahoo-finance2"
-import type { Stock, StocksDataset, StockPriceHistory, PriceCandle } from "../src/types/stock.ts"
+import type { Stock, StocksDataset, StockPriceHistory, PriceCandle, AnnualFinancial, AnnualDividend } from "../src/types/stock.ts"
 import { UNIVERSE } from "./universe.ts"
 
 const yahooFinance = new YahooFinance({ suppressNotices: ["yahooSurvey"] })
@@ -102,6 +102,7 @@ async function fetchStock(ticker: string, indices: string[]): Promise<Stock | nu
         "financialData",
         "assetProfile",
         "summaryProfile",
+        "incomeStatementHistory",
       ],
     })
 
@@ -117,6 +118,17 @@ async function fetchStock(ticker: string, indices: string[]): Promise<Stock | nu
     }
 
     const country = profile?.country ?? "Unknown"
+
+    const annualFinancials: AnnualFinancial[] = (
+      summary.incomeStatementHistory?.incomeStatementHistory ?? []
+    )
+      .filter((s: Record<string, unknown>) => s.endDate != null)
+      .map((s: Record<string, unknown>) => ({
+        year: (s.endDate as Date).getFullYear(),
+        revenue: num(s.totalRevenue as number | null),
+        netIncome: num(s.netIncome as number | null),
+      }))
+      .sort((a: AnnualFinancial, b: AnnualFinancial) => a.year - b.year)
 
     const stock: Stock = {
       ticker,
@@ -170,6 +182,9 @@ async function fetchStock(ticker: string, indices: string[]): Promise<Stock | nu
       perf6M: null,
       perf1Y: null,
 
+      annualFinancials,
+      dividendHistory: [],
+
       indices,
 
       peaEligible: EEE_COUNTRIES.has(country),
@@ -184,16 +199,21 @@ async function fetchStock(ticker: string, indices: string[]): Promise<Stock | nu
   }
 }
 
+interface PriceHistoryResult {
+  history: StockPriceHistory
+  dividends: AnnualDividend[]
+}
+
 async function fetchPriceHistory(
   ticker: string,
   currency: string,
-): Promise<StockPriceHistory | null> {
+): Promise<PriceHistoryResult | null> {
   try {
-    const oneYearAgo = new Date()
-    oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1)
+    const fiveYearsAgo = new Date()
+    fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5)
 
     const result = await yahooFinance.chart(ticker, {
-      period1: oneYearAgo.toISOString().split("T")[0],
+      period1: fiveYearsAgo.toISOString().split("T")[0],
       interval: "1d",
     })
 
@@ -214,7 +234,17 @@ async function fetchPriceHistory(
         volume: Math.round(q.volume as number),
       }))
 
-    return { ticker, currency, candles }
+    const divEvents = result.events?.dividends ?? []
+    const divByYear = new Map<number, number>()
+    for (const ev of divEvents) {
+      const year = (ev.date as Date).getFullYear()
+      divByYear.set(year, (divByYear.get(year) ?? 0) + round2(ev.amount as number))
+    }
+    const dividends: AnnualDividend[] = [...divByYear.entries()]
+      .map(([year, total]) => ({ year, total: round2(total) }))
+      .sort((a, b) => a.year - b.year)
+
+    return { history: { ticker, currency, candles }, dividends }
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err)
     console.warn(`    price history error: ${msg}`)
@@ -250,18 +280,20 @@ async function main() {
     console.log("Failed tickers:", failures.join(", "))
   }
 
-  console.log(`\nFetching price history (1 year) + computing technicals...\n`)
+  console.log(`\nFetching price history (5 years) + computing technicals...\n`)
   await mkdir(PRICES_DIR, { recursive: true })
   let priceSuccesses = 0
   for (const stock of results) {
     process.stdout.write(`  ${stock.ticker.padEnd(12)} prices ... `)
-    const history = await fetchPriceHistory(stock.ticker, stock.currency)
-    if (history && history.candles.length > 0) {
+    const result = await fetchPriceHistory(stock.ticker, stock.currency)
+    if (result && result.history.candles.length > 0) {
       const filePath = path.join(PRICES_DIR, `${stock.ticker}.json`)
-      await writeFile(filePath, JSON.stringify(history), "utf-8")
-      enrichWithTechnicals(stock, history.candles)
+      await writeFile(filePath, JSON.stringify(result.history), "utf-8")
+      enrichWithTechnicals(stock, result.history.candles)
+      stock.dividendHistory = result.dividends
       const rsi = stock.rsi14 != null ? `RSI=${stock.rsi14}` : ""
-      console.log(`✓ ${history.candles.length} candles ${rsi}`)
+      const divYears = result.dividends.length > 0 ? ` div=${result.dividends.length}y` : ""
+      console.log(`✓ ${result.history.candles.length} candles ${rsi}${divYears}`)
       priceSuccesses++
     } else {
       console.log("✗")
