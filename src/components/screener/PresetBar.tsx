@@ -26,7 +26,15 @@ function isPresetActive(preset: Preset, filters: ScreenerFilters): boolean {
     filters.divYield.min === target.divYield.min &&
     filters.divYield.max === target.divYield.max &&
     filters.marketCap.min === target.marketCap.min &&
-    filters.marketCap.max === target.marketCap.max
+    filters.marketCap.max === target.marketCap.max &&
+    filters.rsi.min === target.rsi.min &&
+    filters.rsi.max === target.rsi.max &&
+    filters.perf1M.min === target.perf1M.min &&
+    filters.perf1M.max === target.perf1M.max &&
+    filters.perf6M.min === target.perf6M.min &&
+    filters.perf6M.max === target.perf6M.max &&
+    filters.perf1Y.min === target.perf1Y.min &&
+    filters.perf1Y.max === target.perf1Y.max
   )
 }
 
