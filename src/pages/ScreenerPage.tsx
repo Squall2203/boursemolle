@@ -7,6 +7,7 @@ import { SavedScreeners } from "@/components/screener/SavedScreeners"
 import { useScreenerFilters } from "@/hooks/useScreenerFilters"
 import { useStocks } from "@/hooks/useStocks"
 import { filterStocks } from "@/lib/filterStocks"
+import { computeScore } from "@/lib/scoring"
 
 export function ScreenerPage() {
   const { data, loading, error } = useStocks()
@@ -31,6 +32,17 @@ export function ScreenerPage() {
     [allStocks, filters],
   )
 
+  const badgeCounts = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const s of filteredStocks) {
+      const score = computeScore(s, allStocks)
+      for (const f of score.flags) {
+        counts.set(f.id, (counts.get(f.id) ?? 0) + 1)
+      }
+    }
+    return counts
+  }, [filteredStocks, allStocks])
+
   return (
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
       <aside>
@@ -40,6 +52,7 @@ export function ScreenerPage() {
           onReset={resetFilters}
           availableSectors={availableSectors}
           availableCountries={availableCountries}
+          badgeCounts={badgeCounts}
         />
       </aside>
       <main className="min-w-0 space-y-4">

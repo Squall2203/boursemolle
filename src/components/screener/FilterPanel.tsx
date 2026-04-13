@@ -26,6 +26,7 @@ interface FilterPanelProps {
   onReset: () => void
   availableSectors: string[]
   availableCountries: string[]
+  badgeCounts?: Map<string, number>
 }
 
 export function FilterPanel({
@@ -34,6 +35,7 @@ export function FilterPanel({
   onReset,
   availableSectors,
   availableCountries,
+  badgeCounts,
 }: FilterPanelProps) {
   const valuationActive = isRangeActive(filters.marketCap, FILTER_BOUNDS.marketCap) || isRangeActive(filters.pe, FILTER_BOUNDS.pe)
   const profitActive = isRangeActive(filters.roe, FILTER_BOUNDS.roe)
@@ -263,6 +265,14 @@ export function FilterPanel({
                 >
                   <span>{flag.emoji}</span>
                   <span>{flag.label}</span>
+                  {badgeCounts && (
+                    <span className={cn(
+                      "ml-0.5 font-mono text-[10px]",
+                      active ? "opacity-80" : "opacity-50",
+                    )}>
+                      {badgeCounts.get(flag.id) ?? 0}
+                    </span>
+                  )}
                 </button>
               )
             })}
