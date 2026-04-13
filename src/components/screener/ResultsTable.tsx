@@ -57,11 +57,25 @@ const ALL_COLUMNS: ColumnDef[] = [
     format: (s, scoreMap) => {
       const score = scoreMap.get(s.ticker)
       if (!score) return null
+      const pillars = score.pillars
+      const best = Object.entries(pillars).reduce((a, b) => b[1] > a[1] ? b : a)
+      const worst = Object.entries(pillars).reduce((a, b) => b[1] < a[1] ? b : a)
+      const pillarLabels: Record<string, string> = { valorisation: "Valo", qualite: "Qual", croissance: "Crois", sante: "Santé", dividende: "Div", momentum: "Mom", quant: "Quant" }
       return (
-        <div className="flex items-center justify-end gap-1.5">
-          <span className="font-mono text-xs font-semibold tabular-nums">{score.total.toFixed(1)}</span>
-          <Badge variant="outline" className={cn("h-5 px-1.5 text-[10px] font-semibold", score.labelColor)}>{score.label}</Badge>
-        </div>
+        <TooltipProvider delayDuration={150}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div className="flex items-center justify-end gap-1.5 cursor-help">
+                <span className="font-mono text-xs font-semibold tabular-nums">{score.total.toFixed(1)}</span>
+                <Badge variant="outline" className={cn("h-5 px-1.5 text-[10px] font-semibold", score.labelColor)}>{score.label}</Badge>
+              </div>
+            </TooltipTrigger>
+            <TooltipContent side="left" className="text-xs">
+              <div className="font-semibold mb-1">{score.summary}</div>
+              <div className="text-muted-foreground">Meilleur : {pillarLabels[best[0]]} ({best[1].toFixed(1)}) · Pire : {pillarLabels[worst[0]]} ({worst[1].toFixed(1)})</div>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       )
     },
   },
