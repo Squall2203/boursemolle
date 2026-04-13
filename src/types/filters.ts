@@ -15,6 +15,7 @@ export interface ScreenerFilters {
   indices: string[]        // empty = no filter
   sectors: string[]        // empty = no filter
   countries: string[]      // empty = no filter
+  signaux: string[]        // empty = no filter (FlagId values)
 }
 
 export const FILTER_BOUNDS = {
@@ -40,6 +41,7 @@ export const DEFAULT_FILTERS: ScreenerFilters = {
   indices: [],
   sectors: [],
   countries: [],
+  signaux: [],
 }
 
 export function isRangeActive(

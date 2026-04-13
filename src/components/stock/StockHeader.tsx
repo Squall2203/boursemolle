@@ -1,12 +1,13 @@
 import { useState } from "react"
-import { ArrowLeft, ChevronDown, ChevronUp, ExternalLink } from "lucide-react"
+import { ArrowLeft, ChevronDown, ChevronUp, ExternalLink, Ban } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
 import { formatMarketCap, formatPercent, formatPrice } from "@/lib/format"
-import type { StockScore, PillarDetail } from "@/lib/scoring"
+import type { StockScore, PillarDetail, MetricDetail } from "@/lib/scoring"
 import type { Stock } from "@/types/stock"
 
 interface StockHeaderProps {
@@ -51,23 +52,50 @@ function ScoreBar({ score }: { score: number }) {
   )
 }
 
+function MetricRow({ metric }: { metric: MetricDetail }) {
+  if (metric.excluded) {
+    return (
+      <div className="flex items-center gap-2 opacity-50">
+        <Ban className="size-3 shrink-0 text-muted-foreground" />
+        <div className="flex-1 text-muted-foreground line-through">{metric.label}</div>
+        <div className="text-xs text-muted-foreground italic">{metric.excludedReason ?? "Exclu"}</div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="space-y-0.5">
+      <div className="flex items-center gap-2">
+        <div className="flex-1 text-muted-foreground">{metric.label}</div>
+        <div className="font-mono tabular-nums w-16 text-right">{metric.displayValue}</div>
+        <div className={cn("w-8 text-right font-mono font-semibold tabular-nums", scoreColor(metric.note))}>
+          {metric.note.toFixed(1)}
+        </div>
+        <div className="w-16">
+          <ScoreBar score={metric.note} />
+        </div>
+      </div>
+      {metric.sectorMedian != null && (
+        <div className="flex items-center gap-2 pl-2 text-[10px] text-muted-foreground/70">
+          <span>Méd. secteur: <span className="font-mono">{metric.sectorMedian.toFixed(1)}</span></span>
+          {metric.ratioVsSector != null && (
+            <span>· Ratio: <span className={cn("font-mono", metric.ratioVsSector <= 0.9 ? "text-emerald-600 dark:text-emerald-400" : metric.ratioVsSector >= 1.3 ? "text-red-500" : "")}>{metric.ratioVsSector.toFixed(2)}x</span></span>
+          )}
+          {metric.sectorPercentile != null && (
+            <span>· P{metric.sectorPercentile}</span>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function PillarDetailPanel({ detail }: { detail: PillarDetail }) {
   const entries = Object.entries(detail)
   return (
-    <div className="mt-2 space-y-1.5 text-xs">
-      {entries.map(([key, { value, note, label }]) => (
-        <div key={key} className="flex items-center gap-2">
-          <div className="flex-1 text-muted-foreground">{label}</div>
-          <div className="font-mono tabular-nums w-16 text-right">
-            {value != null ? (typeof value === "number" ? value.toFixed(1) : value) : "—"}
-          </div>
-          <div className={cn("font-mono font-semibold tabular-nums w-8 text-right", scoreColor(note))}>
-            {note.toFixed(1)}
-          </div>
-          <div className="w-16">
-            <ScoreBar score={note} />
-          </div>
-        </div>
+    <div className="mt-2 space-y-2 text-xs">
+      {entries.map(([key, metric]) => (
+        <MetricRow key={key} metric={metric} />
       ))}
     </div>
   )
@@ -134,13 +162,22 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
             )}
           </div>
           {score.flags.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 pt-1">
-              {score.flags.map((flag) => (
-                <Badge key={flag.id} variant="outline" className={cn("gap-1 text-xs", flag.color)}>
-                  {flag.emoji} {flag.label}
-                </Badge>
-              ))}
-            </div>
+            <TooltipProvider delayDuration={200}>
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {score.flags.map((flag) => (
+                  <Tooltip key={flag.id}>
+                    <TooltipTrigger asChild>
+                      <Badge variant="outline" className={cn("gap-1 text-xs cursor-help", flag.color)}>
+                        {flag.emoji} {flag.label}
+                      </Badge>
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom" className="max-w-xs text-xs">
+                      {flag.detail}
+                    </TooltipContent>
+                  </Tooltip>
+                ))}
+              </div>
+            </TooltipProvider>
           )}
         </div>
 
@@ -171,6 +208,10 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
                 {score.label}
               </div>
               <p className="text-sm text-muted-foreground">{score.summary}</p>
+              <p className="text-xs text-muted-foreground/60 mt-0.5">
+                Secteur : {score.sectorContext.name} ({score.sectorContext.count} actions)
+                {score.sectorContext.isSmall && " · échantillon réduit"}
+              </p>
             </div>
           </div>
 
@@ -204,6 +245,11 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
                 </div>
               )
             })}
+          </div>
+          <div className="text-center pt-1">
+            <Link to="/methodologie" className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors">
+              Comment ce score est calculé
+            </Link>
           </div>
         </CardContent>
       </Card>

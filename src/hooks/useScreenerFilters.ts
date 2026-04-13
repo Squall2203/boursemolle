@@ -66,6 +66,7 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
       indices: parseList(searchParams, "indices"),
       sectors: parseList(searchParams, "sectors"),
       countries: parseList(searchParams, "countries"),
+      signaux: parseList(searchParams, "signaux"),
     }),
     [searchParams],
   )
@@ -87,6 +88,7 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
           applyList(params, "indices", merged.indices)
           applyList(params, "sectors", merged.sectors)
           applyList(params, "countries", merged.countries)
+          applyList(params, "signaux", merged.signaux)
           return params
         },
         { replace: true },

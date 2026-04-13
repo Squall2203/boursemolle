@@ -70,7 +70,7 @@ export function ScreenerPage() {
           <SavedScreeners filters={filters} onLoad={setFilters} />
         </div>
         <ActiveFiltersBar filters={filters} onChange={setFilters} onReset={resetFilters} />
-        {!loading && !error && <ResultsTable stocks={filteredStocks} allStocks={allStocks} />}
+        {!loading && !error && <ResultsTable stocks={filteredStocks} allStocks={allStocks} signaux={filters.signaux} />}
       </main>
     </div>
   )

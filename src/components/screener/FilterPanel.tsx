@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 import { FILTER_BOUNDS, isRangeActive, type ScreenerFilters } from "@/types/filters"
+import { FLAG_CATALOG } from "@/lib/scoring"
 import { RangeSliderField } from "./RangeSliderField"
 import { MultiSelectField } from "./MultiSelectField"
 
@@ -55,7 +56,8 @@ export function FilterPanel({
     (isRangeActive(filters.perf1Y, FILTER_BOUNDS.perf1Y) ? 1 : 0) +
     (filters.indices.length > 0 ? 1 : 0) +
     (filters.sectors.length > 0 ? 1 : 0) +
-    (filters.countries.length > 0 ? 1 : 0)
+    (filters.countries.length > 0 ? 1 : 0) +
+    (filters.signaux.length > 0 ? 1 : 0)
 
   return (
     <Card className="sticky top-4">
@@ -225,6 +227,46 @@ export function FilterPanel({
             onChange={(v) => onChange({ countries: v })}
             searchPlaceholder="Rechercher un pays..."
           />
+        </section>
+
+        <Separator />
+
+        <section className="space-y-3">
+          <h3 className={cn(
+            "text-xs font-semibold uppercase tracking-wider",
+            filters.signaux.length > 0 ? "text-primary" : "text-foreground",
+          )}>
+            Signaux
+            {filters.signaux.length > 0 && <span className="ml-1.5 inline-flex size-1.5 rounded-full bg-primary align-middle" />}
+          </h3>
+          <div className="flex flex-wrap gap-1.5">
+            {FLAG_CATALOG.map((flag) => {
+              const active = filters.signaux.includes(flag.id)
+              return (
+                <button
+                  key={flag.id}
+                  type="button"
+                  onClick={() => {
+                    const next = active
+                      ? filters.signaux.filter((s) => s !== flag.id)
+                      : [...filters.signaux, flag.id]
+                    onChange({ signaux: next })
+                  }}
+                  className={cn(
+                    "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs transition-colors",
+                    active
+                      ? flag.type === "positive"
+                        ? "border-emerald-500/50 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                        : "border-red-500/50 bg-red-500/10 text-red-700 dark:text-red-400"
+                      : "border-border bg-background text-muted-foreground hover:bg-muted/50",
+                  )}
+                >
+                  <span>{flag.emoji}</span>
+                  <span>{flag.label}</span>
+                </button>
+              )
+            })}
+          </div>
         </section>
       </CardContent>
     </Card>

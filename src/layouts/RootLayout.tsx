@@ -42,6 +42,17 @@ export function RootLayout() {
             >
               Comparer
             </NavLink>
+            <NavLink
+              to="/methodologie"
+              className={({ isActive }) =>
+                cn(
+                  "transition-colors hover:text-foreground",
+                  isActive ? "font-medium text-foreground" : "text-muted-foreground",
+                )
+              }
+            >
+              Méthodo
+            </NavLink>
             <Button
               variant="ghost"
               size="icon"

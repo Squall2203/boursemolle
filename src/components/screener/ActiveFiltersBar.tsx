@@ -7,6 +7,7 @@ import {
   type ScreenerFilters,
   type RangeFilter,
 } from "@/types/filters"
+import { FLAG_CATALOG } from "@/lib/scoring"
 
 interface ActiveFiltersBarProps {
   filters: ScreenerFilters
@@ -119,6 +120,15 @@ export function ActiveFiltersBar({ filters, onChange, onReset }: ActiveFiltersBa
       key: `country-${country}`,
       label: country,
       onDismiss: () => onChange({ countries: filters.countries.filter((c) => c !== country) }),
+    })
+  }
+
+  for (const sig of filters.signaux) {
+    const flag = FLAG_CATALOG.find((f) => f.id === sig)
+    chips.push({
+      key: `signal-${sig}`,
+      label: flag ? `${flag.emoji} ${flag.label}` : sig,
+      onDismiss: () => onChange({ signaux: filters.signaux.filter((s) => s !== sig) }),
     })
   }
 

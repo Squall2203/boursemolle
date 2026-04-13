@@ -4,6 +4,7 @@ import { ArrowDown, ArrowUp, ArrowUpDown, Columns3, Download } from "lucide-reac
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import {
   Popover,
   PopoverContent,
@@ -58,12 +59,35 @@ const ALL_COLUMNS: ColumnDef[] = [
       if (!score) return null
       return (
         <div className="flex items-center justify-end gap-1.5">
-          {score.flags.slice(0, 2).map((f) => (
-            <span key={f.id} title={f.label} className="text-xs">{f.emoji}</span>
-          ))}
           <span className="font-mono text-xs font-semibold tabular-nums">{score.total.toFixed(1)}</span>
           <Badge variant="outline" className={cn("h-5 px-1.5 text-[10px] font-semibold", score.labelColor)}>{score.label}</Badge>
         </div>
+      )
+    },
+  },
+  {
+    key: "signaux", label: "Signaux", align: "left", group: "Général",
+    getValue: () => null,
+    format: (s, scoreMap) => {
+      const score = scoreMap.get(s.ticker)
+      if (!score || score.flags.length === 0) return <span className="text-muted-foreground">—</span>
+      return (
+        <TooltipProvider delayDuration={150}>
+          <div className="flex items-center gap-1">
+            {score.flags.map((f) => (
+              <Tooltip key={f.id}>
+                <TooltipTrigger asChild>
+                  <span className="cursor-help text-sm" title={f.label}>{f.emoji}</span>
+                </TooltipTrigger>
+                <TooltipContent side="top" className="max-w-xs text-xs">
+                  <span className="font-semibold">{f.label}</span>
+                  <br />
+                  {f.detail}
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </div>
+        </TooltipProvider>
       )
     },
   },
@@ -208,7 +232,7 @@ const ALL_COLUMNS: ColumnDef[] = [
   },
 ]
 
-const DEFAULT_VISIBLE = ["score", "ticker", "name", "sector", "country", "marketCap", "price", "priceChangePercent", "trailingPE", "returnOnEquity", "dividendYield"]
+const DEFAULT_VISIBLE = ["score", "signaux", "ticker", "name", "sector", "country", "marketCap", "price", "priceChangePercent", "trailingPE", "returnOnEquity", "dividendYield"]
 const LOCKED_COLUMNS = new Set(["ticker"])
 
 const LS_COLS_KEY = "boursemolle-columns"
@@ -244,6 +268,7 @@ function compareValues(
 interface ResultsTableProps {
   stocks: Stock[]
   allStocks: Stock[]
+  signaux?: string[]
 }
 
 const PAGE_SIZE_OPTIONS = [25, 50, 100, 0]
@@ -277,7 +302,7 @@ function exportCsv(stocks: Stock[], columns: ColumnDef[], scoreMap: Map<string, 
   URL.revokeObjectURL(url)
 }
 
-export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
+export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTableProps) {
   const navigate = useNavigate()
   const [sortKey, setSortKey] = useState<SortKey>("marketCap")
   const [sortDir, setSortDir] = useState<SortDir>("desc")
@@ -311,9 +336,18 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
     return map
   }, [stocks, allStocks])
 
+  const filteredStocks = useMemo(() => {
+    if (signaux.length === 0) return stocks
+    return stocks.filter((s) => {
+      const score = scoreMap.get(s.ticker)
+      if (!score) return false
+      return signaux.some((sig) => score.flags.some((f) => f.id === sig))
+    })
+  }, [stocks, signaux, scoreMap])
+
   const sorted = useMemo(() => {
     const col = ALL_COLUMNS.find((c) => c.key === sortKey)
-    const copy = [...stocks]
+    const copy = [...filteredStocks]
     copy.sort((a, b) => {
       if (sortKey === "score") {
         const sa = scoreMap.get(a.ticker)?.total ?? 0
@@ -324,7 +358,7 @@ export function ResultsTable({ stocks, allStocks }: ResultsTableProps) {
       return compareValues(col.getValue(a), col.getValue(b), sortDir)
     })
     return copy
-  }, [stocks, sortKey, sortDir, scoreMap])
+  }, [filteredStocks, sortKey, sortDir, scoreMap])
 
   const effectivePageSize = pageSize === 0 ? sorted.length : pageSize
   const totalPages = Math.max(1, Math.ceil(sorted.length / (effectivePageSize || 1)))

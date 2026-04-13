@@ -10,7 +10,7 @@ export interface Preset {
   name: string
   description: string
   criteria: PresetCriterion[]
-  filters: ScreenerFilters
+  filters: Partial<ScreenerFilters>
 }
 
 const full = (key: keyof typeof FILTER_BOUNDS) => ({
