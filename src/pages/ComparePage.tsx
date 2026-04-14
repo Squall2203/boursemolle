@@ -7,6 +7,7 @@ import { NormalizedChart } from "@/components/compare/NormalizedChart"
 import { StockSelector } from "@/components/compare/StockSelector"
 import { useStocks } from "@/hooks/useStocks"
 import type { StockPriceHistory } from "@/types/stock"
+import { toPriceFilename } from "@/lib/tickerFilename"
 
 export function ComparePage() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -52,7 +53,7 @@ export function ComparePage() {
     Promise.all(
       selectedTickers.map(async (ticker) => {
         try {
-          const r = await fetch(`/data/prices/${ticker}.json`)
+          const r = await fetch(`/data/prices/${toPriceFilename(ticker)}.json`)
           if (!r.ok) return null
           const data = (await r.json()) as StockPriceHistory
           return { ticker, data }

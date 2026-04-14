@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url"
 import YahooFinance from "yahoo-finance2"
 import type { Stock, StocksDataset, StockPriceHistory, PriceCandle, AnnualFinancial, AnnualDividend } from "../src/types/stock.ts"
 import { UNIVERSE } from "./universe.ts"
+import { toPriceFilename } from "../src/lib/tickerFilename.ts"
 
 const yahooFinance = new YahooFinance({ suppressNotices: ["yahooSurvey"] })
 
@@ -287,7 +288,7 @@ async function main() {
     process.stdout.write(`  ${stock.ticker.padEnd(12)} prices ... `)
     const result = await fetchPriceHistory(stock.ticker, stock.currency)
     if (result && result.history.candles.length > 0) {
-      const filePath = path.join(PRICES_DIR, `${stock.ticker}.json`)
+      const filePath = path.join(PRICES_DIR, `${toPriceFilename(stock.ticker)}.json`)
       await writeFile(filePath, JSON.stringify(result.history), "utf-8")
       enrichWithTechnicals(stock, result.history.candles)
       stock.dividendHistory = result.dividends

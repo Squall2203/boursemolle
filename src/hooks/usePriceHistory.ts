@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import type { StockPriceHistory } from "@/types/stock"
+import { toPriceFilename } from "@/lib/tickerFilename"
 
 interface UsePriceHistoryResult {
   data: StockPriceHistory | null
@@ -18,7 +19,7 @@ export function usePriceHistory(ticker: string): UsePriceHistoryResult {
     setError(null)
     setData(null)
 
-    fetch(`/data/prices/${ticker}.json`)
+    fetch(`/data/prices/${toPriceFilename(ticker)}.json`)
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json() as Promise<StockPriceHistory>
