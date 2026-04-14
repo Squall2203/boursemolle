@@ -10,6 +10,7 @@ import { GrowthHistoryTable } from "@/components/stock/GrowthHistoryTable"
 import { DividendSparkline } from "@/components/stock/DividendSparkline"
 import { TechnicalAnalysisPanel } from "@/components/stock/TechnicalAnalysisPanel"
 import { analyzeTechnicals } from "@/lib/technicalAnalysis"
+import { ExpertsSection } from "@/components/stock/ExpertsSection"
 import { cn } from "@/lib/utils"
 import { computeScore } from "@/lib/scoring"
 import { usePriceHistory } from "@/hooks/usePriceHistory"
@@ -154,6 +155,9 @@ export function StockPage() {
           </section>
         </>
       )}
+
+      <Separator />
+      <ExpertsSection ticker={stock.ticker} simple={isSimple} />
 
       {stock.description && (
         <>

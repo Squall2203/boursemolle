@@ -1,0 +1,110 @@
+[
+  {
+    "id": "xavier-delmas",
+    "name": "Xavier Delmas",
+    "platform": "youtube",
+    "tier": 1,
+    "focus": "Analyse fondamentale, valorisation, stock picking FR",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVnfV-lBSB7JZ7kDPlFuT4w",
+    "avatarInitials": "XD"
+  },
+  {
+    "id": "sinvestir",
+    "name": "Matthieu Louvet (S'investir)",
+    "platform": "youtube",
+    "tier": 1,
+    "focus": "ETF, PEA, gestion passive, stock picking",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFj8TWnRFX-Xhz1YoGN6VKQ",
+    "avatarInitials": "ML"
+  },
+  {
+    "id": "sinvestir-blog",
+    "name": "S'investir (blog)",
+    "platform": "blog",
+    "tier": 1,
+    "focus": "ETF, PEA, gestion passive",
+    "feedUrl": "https://www.sinvestir.fr/feed/",
+    "avatarInitials": "SI"
+  },
+  {
+    "id": "etre-riche",
+    "name": "Etre Riche et Indépendant",
+    "platform": "blog",
+    "tier": 1,
+    "focus": "Screener PEA, score, qualité",
+    "feedUrl": "https://www.etrericheetindependant.com/feed/",
+    "avatarInitials": "ER"
+  },
+  {
+    "id": "zonebourse",
+    "name": "ZoneBourse",
+    "platform": "youtube",
+    "tier": 1,
+    "focus": "Analyses, chroniques, multi-contenu",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBi_EGrQV0MV3uBbNcqU4Gw",
+    "avatarInitials": "ZB"
+  },
+  {
+    "id": "sebastien-koubar",
+    "name": "Sébastien Koubar",
+    "platform": "youtube",
+    "tier": 1,
+    "focus": "Stock picking, analyses actions EU",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC44kGkIlh3G6hLW7TBXUSkg",
+    "avatarInitials": "SK"
+  },
+  {
+    "id": "finary",
+    "name": "Finary (Mounir Laggoune)",
+    "platform": "youtube",
+    "tier": 2,
+    "focus": "Patrimoine, macro, interviews experts",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0ZTfWH5Fl-T8aIXXIPTGSg",
+    "avatarInitials": "FN"
+  },
+  {
+    "id": "epargnant30",
+    "name": "Edouard Petit (Épargnant 3.0)",
+    "platform": "blog",
+    "tier": 2,
+    "focus": "ETF, gestion passive, académique",
+    "feedUrl": "https://www.epargnant30.fr/feed/",
+    "avatarInitials": "EP"
+  },
+  {
+    "id": "andlil",
+    "name": "Benoist Rousseau (Andlil)",
+    "platform": "youtube",
+    "tier": 2,
+    "focus": "Trading, analyse technique",
+    "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGUWJHwVhyI9xJ_3w4mH0IA",
+    "avatarInitials": "BR"
+  },
+  {
+    "id": "ecb",
+    "name": "BCE (Banque Centrale Européenne)",
+    "platform": "rss",
+    "tier": 3,
+    "focus": "Politique monétaire, taux directeurs",
+    "feedUrl": "https://www.ecb.europa.eu/rss/press.en.rss",
+    "avatarInitials": "BC"
+  },
+  {
+    "id": "insee",
+    "name": "INSEE",
+    "platform": "rss",
+    "tier": 3,
+    "focus": "Données économiques France",
+    "feedUrl": "https://www.insee.fr/fr/information/rss?theme=all",
+    "avatarInitials": "IN"
+  },
+  {
+    "id": "bfm-bourse",
+    "name": "BFM Bourse",
+    "platform": "rss",
+    "tier": 3,
+    "focus": "Actualité marchés français",
+    "feedUrl": "https://bfmbusiness.bfmtv.com/rss/bourse.rss",
+    "avatarInitials": "BF"
+  }
+]

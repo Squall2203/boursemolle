@@ -15,7 +15,7 @@ export function RootLayout() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b bg-card">
         <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-4 sm:px-6">
-          <Link to="/screener" className="flex items-baseline gap-1">
+          <Link to="/" className="flex items-baseline gap-1">
             <span className="text-lg font-bold tracking-tight">Bourse</span>
             <span className="text-lg font-bold tracking-tight text-primary">
               Molle
