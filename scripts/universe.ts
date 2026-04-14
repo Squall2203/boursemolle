@@ -266,6 +266,61 @@ const AUSTRIA: TickerEntry[] = [
   { ticker: "WIE.VI", expectedName: "Wienerberger", indices: [] },
 ]
 
+// ─── USA — S&P 500 (Top 50 selection) ───
+const SP500: TickerEntry[] = [
+  { ticker: "AAPL", expectedName: "Apple", indices: ["S&P 500"] },
+  { ticker: "MSFT", expectedName: "Microsoft", indices: ["S&P 500"] },
+  { ticker: "NVDA", expectedName: "NVIDIA", indices: ["S&P 500"] },
+  { ticker: "AMZN", expectedName: "Amazon", indices: ["S&P 500"] },
+  { ticker: "META", expectedName: "Meta Platforms", indices: ["S&P 500"] },
+  { ticker: "GOOGL", expectedName: "Alphabet (Class A)", indices: ["S&P 500"] },
+  { ticker: "GOOG", expectedName: "Alphabet (Class C)", indices: ["S&P 500"] },
+  { ticker: "BRK-B", expectedName: "Berkshire Hathaway", indices: ["S&P 500"] },
+  { ticker: "TSLA", expectedName: "Tesla", indices: ["S&P 500"] },
+  { ticker: "LLY", expectedName: "Eli Lilly", indices: ["S&P 500"] },
+  { ticker: "AVGO", expectedName: "Broadcom", indices: ["S&P 500"] },
+  { ticker: "V", expectedName: "Visa", indices: ["S&P 500"] },
+  { ticker: "JPM", expectedName: "JPMorgan Chase", indices: ["S&P 500"] },
+  { ticker: "UNH", expectedName: "UnitedHealth Group", indices: ["S&P 500"] },
+  { ticker: "WMT", expectedName: "Walmart", indices: ["S&P 500"] },
+  { ticker: "MA", expectedName: "Mastercard", indices: ["S&P 500"] },
+  { ticker: "XOM", expectedName: "Exxon Mobil", indices: ["S&P 500"] },
+  { ticker: "JNJ", expectedName: "Johnson & Johnson", indices: ["S&P 500"] },
+  { ticker: "PG", expectedName: "Procter & Gamble", indices: ["S&P 500"] },
+  { ticker: "HD", expectedName: "Home Depot", indices: ["S&P 500"] },
+  { ticker: "COST", expectedName: "Costco Wholesale", indices: ["S&P 500"] },
+  { ticker: "MRK", expectedName: "Merck & Co.", indices: ["S&P 500"] },
+  { ticker: "ABBV", expectedName: "AbbVie", indices: ["S&P 500"] },
+  { ticker: "CRM", expectedName: "Salesforce", indices: ["S&P 500"] },
+  { ticker: "CVX", expectedName: "Chevron", indices: ["S&P 500"] },
+  { ticker: "AMD", expectedName: "Advanced Micro Devices", indices: ["S&P 500"] },
+  { ticker: "NFLX", expectedName: "Netflix", indices: ["S&P 500"] },
+  { ticker: "PEP", expectedName: "PepsiCo", indices: ["S&P 500"] },
+  { ticker: "KO", expectedName: "Coca-Cola", indices: ["S&P 500"] },
+  { ticker: "BAC", expectedName: "Bank of America", indices: ["S&P 500"] },
+  { ticker: "ADBE", expectedName: "Adobe", indices: ["S&P 500"] },
+  { ticker: "LIN", expectedName: "Linde", indices: ["S&P 500"] },
+  { ticker: "TMO", expectedName: "Thermo Fisher Scientific", indices: ["S&P 500"] },
+  { ticker: "MCD", expectedName: "McDonald's", indices: ["S&P 500"] },
+  { ticker: "CSCO", expectedName: "Cisco Systems", indices: ["S&P 500"] },
+  { ticker: "INTU", expectedName: "Intuit", indices: ["S&P 500"] },
+  { ticker: "ABT", expectedName: "Abbott Laboratories", indices: ["S&P 500"] },
+  { ticker: "QCOM", expectedName: "Qualcomm", indices: ["S&P 500"] },
+  { ticker: "WFC", expectedName: "Wells Fargo", indices: ["S&P 500"] },
+  { ticker: "DHR", expectedName: "Danaher", indices: ["S&P 500"] },
+  { ticker: "GE", expectedName: "General Electric", indices: ["S&P 500"] },
+  { ticker: "IBM", expectedName: "IBM", indices: ["S&P 500"] },
+  { ticker: "AXP", expectedName: "American Express", indices: ["S&P 500"] },
+  { ticker: "CAT", expectedName: "Caterpillar", indices: ["S&P 500"] },
+  { ticker: "VZ", expectedName: "Verizon", indices: ["S&P 500"] },
+  { ticker: "TXN", expectedName: "Texas Instruments", indices: ["S&P 500"] },
+  { ticker: "DIS", expectedName: "Walt Disney", indices: ["S&P 500"] },
+  { ticker: "AMGN", expectedName: "Amgen", indices: ["S&P 500"] },
+  { ticker: "PFE", expectedName: "Pfizer", indices: ["S&P 500"] },
+  { ticker: "NOW", expectedName: "ServiceNow", indices: ["S&P 500"] },
+  // ... Ajoute le reste ici si nécessaire
+]
+
 // ─── Merge & deduplicate ───
 
 function buildUniverse(): TickerEntry[] {
@@ -273,6 +328,7 @@ function buildUniverse(): TickerEntry[] {
     ...CAC40, ...CAC_NEXT20, ...CAC_MID60,
     ...DAX40, ...AEX25, ...BEL20, ...IBEX,
     ...ITALY, ...PORTUGAL, ...FINLAND, ...IRELAND, ...AUSTRIA,
+    ...SP500 // Ajout du S&P 500 à la fusion
   ]
 
   const map = new Map<string, TickerEntry>()
@@ -313,6 +369,7 @@ export const ALL_INDICES = [
   "AEX 25",
   "BEL 20",
   "IBEX 35",
+  "S&P 500" // Ajout de l'indice à la liste exportée
 ] as const
 
 export type IndexName = (typeof ALL_INDICES)[number]
