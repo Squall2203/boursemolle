@@ -1,6 +1,6 @@
 import { useMemo } from "react"
 import { Link } from "react-router-dom"
-import { TrendingUp, ExternalLink, Youtube, FileText, Rss, ChevronRight } from "lucide-react"
+import { TrendingUp, ExternalLink, Play, FileText, Rss, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
@@ -26,7 +26,7 @@ function timeAgo(isoDate: string): string {
 
 function PlatformIcon({ platform }: { platform: Platform }) {
   switch (platform) {
-    case "youtube": return <Youtube className="size-3 text-red-500" />
+    case "youtube": return <Play className="size-3 text-red-500" />
     case "blog": return <FileText className="size-3 text-blue-500" />
     case "rss": return <Rss className="size-3 text-orange-500" />
   }

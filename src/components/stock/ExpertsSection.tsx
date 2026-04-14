@@ -1,4 +1,4 @@
-import { ExternalLink, Youtube, FileText, Rss } from "lucide-react"
+import { ExternalLink, Play, FileText, Rss } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
@@ -7,7 +7,7 @@ import type { FeedItem, Platform } from "@/types/feed"
 
 function PlatformIcon({ platform }: { platform: Platform }) {
   switch (platform) {
-    case "youtube": return <Youtube className="size-3.5 text-red-500" />
+    case "youtube": return <Play className="size-3.5 text-red-500" />
     case "blog": return <FileText className="size-3.5 text-blue-500" />
     case "rss": return <Rss className="size-3.5 text-orange-500" />
   }
