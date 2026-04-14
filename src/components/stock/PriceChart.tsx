@@ -6,6 +6,7 @@ import {
   CrosshairMode,
   CandlestickSeries,
   HistogramSeries,
+  AreaSeries,
 } from "lightweight-charts"
 import { Button } from "@/components/ui/button"
 import type { PriceCandle } from "@/types/stock"
@@ -58,12 +59,15 @@ function aggregateWeekly(candles: PriceCandle[]): PriceCandle[] {
 interface PriceChartProps {
   candles: PriceCandle[]
   currency: string
+  simple?: boolean
 }
 
-export function PriceChart({ candles, currency }: PriceChartProps) {
+export function PriceChart({ candles, currency, simple = false }: PriceChartProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const chartRef = useRef<IChartApi | null>(null)
   const [period, setPeriod] = useState<Period>("1A")
+
+  const effectivePeriod: Period = simple ? "1A" : period
 
   const maxDays = useMemo(() => {
     if (candles.length < 2) return 0
@@ -73,11 +77,11 @@ export function PriceChart({ candles, currency }: PriceChartProps) {
   }, [candles])
 
   const displayCandles = useMemo(() => {
-    const p = PERIODS.find((x) => x.key === period)!
+    const p = PERIODS.find((x) => x.key === effectivePeriod)!
     const filtered = filterByPeriod(candles, p.days)
-    if (p.days > 365 * 2) return aggregateWeekly(filtered)
+    if (!simple && p.days > 365 * 2) return aggregateWeekly(filtered)
     return filtered
-  }, [candles, period])
+  }, [candles, effectivePeriod, simple])
 
   useEffect(() => {
     const container = containerRef.current
@@ -85,7 +89,7 @@ export function PriceChart({ candles, currency }: PriceChartProps) {
 
     const chart = createChart(container, {
       width: container.clientWidth,
-      height: 400,
+      height: simple ? 200 : 400,
       layout: {
         background: { type: ColorType.Solid, color: "transparent" },
         textColor: "#9ca3af",
@@ -109,41 +113,50 @@ export function PriceChart({ candles, currency }: PriceChartProps) {
       },
     })
 
-    const candleSeries = chart.addSeries(CandlestickSeries, {
-      upColor: "#10b981",
-      downColor: "#ef4444",
-      borderDownColor: "#ef4444",
-      borderUpColor: "#10b981",
-      wickDownColor: "#ef4444",
-      wickUpColor: "#10b981",
-    })
+    if (simple) {
+      const areaSeries = chart.addSeries(AreaSeries, {
+        lineColor: "#3b82f6",
+        topColor: "rgba(59, 130, 246, 0.25)",
+        bottomColor: "rgba(59, 130, 246, 0.0)",
+        lineWidth: 2,
+      })
+      areaSeries.setData(
+        displayCandles.map((c) => ({ time: c.date, value: c.close })),
+      )
+    } else {
+      const candleSeries = chart.addSeries(CandlestickSeries, {
+        upColor: "#10b981",
+        downColor: "#ef4444",
+        borderDownColor: "#ef4444",
+        borderUpColor: "#10b981",
+        wickDownColor: "#ef4444",
+        wickUpColor: "#10b981",
+      })
+      candleSeries.setData(
+        displayCandles.map((c) => ({
+          time: c.date,
+          open: c.open,
+          high: c.high,
+          low: c.low,
+          close: c.close,
+        })),
+      )
 
-    candleSeries.setData(
-      displayCandles.map((c) => ({
-        time: c.date,
-        open: c.open,
-        high: c.high,
-        low: c.low,
-        close: c.close,
-      })),
-    )
-
-    const volumeSeries = chart.addSeries(HistogramSeries, {
-      priceFormat: { type: "volume" },
-      priceScaleId: "volume",
-    })
-
-    chart.priceScale("volume").applyOptions({
-      scaleMargins: { top: 0.85, bottom: 0 },
-    })
-
-    volumeSeries.setData(
-      displayCandles.map((c) => ({
-        time: c.date,
-        value: c.volume,
-        color: c.close >= c.open ? "rgba(16, 185, 129, 0.3)" : "rgba(239, 68, 68, 0.3)",
-      })),
-    )
+      const volumeSeries = chart.addSeries(HistogramSeries, {
+        priceFormat: { type: "volume" },
+        priceScaleId: "volume",
+      })
+      chart.priceScale("volume").applyOptions({
+        scaleMargins: { top: 0.85, bottom: 0 },
+      })
+      volumeSeries.setData(
+        displayCandles.map((c) => ({
+          time: c.date,
+          value: c.volume,
+          color: c.close >= c.open ? "rgba(16, 185, 129, 0.3)" : "rgba(239, 68, 68, 0.3)",
+        })),
+      )
+    }
 
     chart.timeScale().fitContent()
     chartRef.current = chart
@@ -158,7 +171,11 @@ export function PriceChart({ candles, currency }: PriceChartProps) {
       chart.remove()
       chartRef.current = null
     }
-  }, [displayCandles, currency])
+  }, [displayCandles, currency, simple])
+
+  if (simple) {
+    return <div ref={containerRef} className="w-full" />
+  }
 
   return (
     <div className="space-y-2">

@@ -1,13 +1,15 @@
-import { Moon, Sun } from "lucide-react"
+import { X, Moon, Sun } from "lucide-react"
 import { Link, NavLink, Outlet } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { SearchCommand } from "@/components/SearchCommand"
 import { ViewModeToggle } from "@/components/ViewModeToggle"
 import { cn } from "@/lib/utils"
 import { useTheme } from "@/hooks/useTheme"
+import { useViewMode } from "@/hooks/useViewMode"
 
 export function RootLayout() {
   const { theme, toggle } = useTheme()
+  const { showExpertHint, dismissHint, setMode } = useViewMode()
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -70,6 +72,31 @@ export function RootLayout() {
           </nav>
         </div>
       </header>
+      {showExpertHint && (
+        <div className="border-b bg-primary/5 px-4 py-2 sm:px-6">
+          <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-4 text-sm">
+            <p className="text-muted-foreground">
+              Vous êtes en mode <span className="font-medium text-foreground">Simple</span>.{" "}
+              <button
+                type="button"
+                className="font-medium text-primary hover:underline"
+                onClick={() => setMode("expert")}
+              >
+                Passer en mode Expert
+              </button>{" "}
+              pour voir le détail des scores et toutes les métriques.
+            </p>
+            <button
+              type="button"
+              onClick={dismissHint}
+              className="shrink-0 rounded p-0.5 text-muted-foreground hover:text-foreground"
+              aria-label="Fermer"
+            >
+              <X className="size-3.5" />
+            </button>
+          </div>
+        </div>
+      )}
       <main className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6">
         <Outlet />
       </main>

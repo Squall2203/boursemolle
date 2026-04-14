@@ -148,6 +148,8 @@ function SimpleFundamentalsCard({ score, onSwitchExpert }: { score: StockScore; 
   )
 }
 
+export { SimpleFundamentalsCard }
+
 export function StockHeader({ stock, score }: StockHeaderProps) {
   const [expandedPillar, setExpandedPillar] = useState<string | null>(null)
   const { isSimple, setMode } = useViewMode()
@@ -164,6 +166,8 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
   function togglePillar(key: string) {
     setExpandedPillar((prev) => (prev === key ? null : key))
   }
+
+  const grade = getGrade(score.total)
 
   return (
     <div className="space-y-4">
@@ -184,31 +188,33 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
               </Badge>
             )}
           </div>
-          <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-            <span className="font-mono font-medium text-foreground">
-              {stock.ticker}
-            </span>
-            <span>·</span>
-            <span>{stock.exchange}</span>
-            <span>·</span>
-            <span>{stock.sector ?? "—"}</span>
-            <span>·</span>
-            <span>{stock.country}</span>
-            {stock.website && (
-              <>
-                <span>·</span>
-                <a
-                  href={stock.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary hover:underline"
-                >
-                  Site web
-                  <ExternalLink className="size-3" />
-                </a>
-              </>
-            )}
-          </div>
+          {!isSimple && (
+            <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+              <span className="font-mono font-medium text-foreground">
+                {stock.ticker}
+              </span>
+              <span>·</span>
+              <span>{stock.exchange}</span>
+              <span>·</span>
+              <span>{stock.sector ?? "—"}</span>
+              <span>·</span>
+              <span>{stock.country}</span>
+              {stock.website && (
+                <>
+                  <span>·</span>
+                  <a
+                    href={stock.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-primary hover:underline"
+                  >
+                    Site web
+                    <ExternalLink className="size-3" />
+                  </a>
+                </>
+              )}
+            </div>
+          )}
           {score.flags.length > 0 && (
             <TooltipProvider delayDuration={200}>
               <div className="flex flex-wrap gap-1.5 pt-1">
@@ -242,65 +248,90 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
         </div>
       </div>
 
-      <Card>
-        <CardContent className="space-y-4 pt-4 pb-4">
-          {/* Score global + verdict */}
-          <div className="flex items-center gap-4">
-            <div className={cn("flex size-14 items-center justify-center rounded-full", scoreBg(score.total))}>
-              <span className={cn("text-xl font-bold tabular-nums", scoreColor(score.total))}>
-                {score.total.toFixed(1)}
-              </span>
-            </div>
-            <div className="flex-1">
-              <div className={cn("text-sm font-semibold", score.labelColor)}>
-                {score.label}
-              </div>
-              <p className="text-sm text-muted-foreground">{score.summary}</p>
-              <p className="text-xs text-muted-foreground/60 mt-0.5">
-                Secteur : {score.sectorContext.name} ({score.sectorContext.count} actions)
-                {score.sectorContext.isSmall && " · échantillon réduit"}
-              </p>
-            </div>
-          </div>
-
-          {/* 7 piliers */}
-          <div className="grid gap-1">
-            {PILLAR_LABELS.map(({ key, label, weight }) => {
-              const val = score.pillars[key]
-              const isExpanded = expandedPillar === key
-              return (
-                <div key={key}>
-                  <button
-                    type="button"
-                    onClick={() => togglePillar(key)}
-                    className="flex w-full items-center gap-3 rounded-md px-2 py-1.5 text-sm hover:bg-muted/50 transition-colors"
-                  >
-                    <span className="w-14 text-xs text-muted-foreground">{weight}</span>
-                    <span className="w-16 text-left font-medium">{label}</span>
-                    <div className="flex-1">
-                      <ScoreBar score={val} />
-                    </div>
-                    <span className={cn("w-8 text-right font-mono font-semibold tabular-nums", scoreColor(val))}>
-                      {val.toFixed(1)}
-                    </span>
-                    {isExpanded ? <ChevronUp className="size-3.5 text-muted-foreground" /> : <ChevronDown className="size-3.5 text-muted-foreground" />}
-                  </button>
-                  {isExpanded && (
-                    <div className="px-2 pb-2">
-                      <PillarDetailPanel detail={score.details[key]} />
-                    </div>
-                  )}
+      {isSimple ? (
+        <Card>
+          <CardContent className="pt-4 pb-4">
+            <div className="flex items-center gap-4">
+              <LetterGrade score={score.total} size="lg" />
+              <div className="flex-1">
+                <div className={cn("text-base font-semibold", grade.color)}>
+                  {grade.label}
                 </div>
-              )
-            })}
-          </div>
-          <div className="text-center pt-1">
-            <Link to="/methodologie" className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors">
-              Comment ce score est calculé
-            </Link>
-          </div>
-        </CardContent>
-      </Card>
+                <p className="text-sm text-muted-foreground">{score.summary}</p>
+              </div>
+            </div>
+            <div className="mt-3 text-center">
+              <button
+                type="button"
+                onClick={() => setMode("expert")}
+                className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors"
+              >
+                Voir le détail en mode Expert
+              </button>
+            </div>
+          </CardContent>
+        </Card>
+      ) : (
+        <Card>
+          <CardContent className="space-y-4 pt-4 pb-4">
+            {/* Score global + verdict */}
+            <div className="flex items-center gap-4">
+              <div className={cn("flex size-14 items-center justify-center rounded-full", scoreBg(score.total))}>
+                <span className={cn("text-xl font-bold tabular-nums", scoreColor(score.total))}>
+                  {score.total.toFixed(1)}
+                </span>
+              </div>
+              <div className="flex-1">
+                <div className={cn("text-sm font-semibold", score.labelColor)}>
+                  {score.label}
+                </div>
+                <p className="text-sm text-muted-foreground">{score.summary}</p>
+                <p className="text-xs text-muted-foreground/60 mt-0.5">
+                  Secteur : {score.sectorContext.name} ({score.sectorContext.count} actions)
+                  {score.sectorContext.isSmall && " · échantillon réduit"}
+                </p>
+              </div>
+            </div>
+
+            {/* 7 piliers */}
+            <div className="grid gap-1">
+              {PILLAR_LABELS.map(({ key, label, weight }) => {
+                const val = score.pillars[key]
+                const isExpanded = expandedPillar === key
+                return (
+                  <div key={key}>
+                    <button
+                      type="button"
+                      onClick={() => togglePillar(key)}
+                      className="flex w-full items-center gap-3 rounded-md px-2 py-1.5 text-sm hover:bg-muted/50 transition-colors"
+                    >
+                      <span className="w-14 text-xs text-muted-foreground">{weight}</span>
+                      <span className="w-16 text-left font-medium">{label}</span>
+                      <div className="flex-1">
+                        <ScoreBar score={val} />
+                      </div>
+                      <span className={cn("w-8 text-right font-mono font-semibold tabular-nums", scoreColor(val))}>
+                        {val.toFixed(1)}
+                      </span>
+                      {isExpanded ? <ChevronUp className="size-3.5 text-muted-foreground" /> : <ChevronDown className="size-3.5 text-muted-foreground" />}
+                    </button>
+                    {isExpanded && (
+                      <div className="px-2 pb-2">
+                        <PillarDetailPanel detail={score.details[key]} />
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+            <div className="text-center pt-1">
+              <Link to="/methodologie" className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors">
+                Comment ce score est calculé
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </div>
   )
 }
