@@ -2,6 +2,7 @@ import { Moon, Sun } from "lucide-react"
 import { Link, NavLink, Outlet } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { SearchCommand } from "@/components/SearchCommand"
+import { ViewModeToggle } from "@/components/ViewModeToggle"
 import { cn } from "@/lib/utils"
 import { useTheme } from "@/hooks/useTheme"
 
@@ -20,6 +21,7 @@ export function RootLayout() {
           </Link>
           <SearchCommand />
           <nav className="flex items-center gap-4 text-sm">
+            <ViewModeToggle />
             <NavLink
               to="/screener"
               className={({ isActive }) =>

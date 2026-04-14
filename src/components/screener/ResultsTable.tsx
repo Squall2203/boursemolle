@@ -33,6 +33,8 @@ import {
   formatRatio,
 } from "@/lib/format"
 import { computeScore, type StockScore } from "@/lib/scoring"
+import { LetterGrade, getGrade } from "@/components/LetterGrade"
+import { useViewMode } from "@/hooks/useViewMode"
 import type { Stock } from "@/types/stock"
 
 type SortKey = string
@@ -246,6 +248,100 @@ const ALL_COLUMNS: ColumnDef[] = [
   },
 ]
 
+// ─── Colonnes mode Simple ───
+const SIMPLE_COLUMNS: ColumnDef[] = [
+  {
+    key: "score_letter", label: "Note", align: "left", group: "Général",
+    getValue: () => null,
+    format: (s, scoreMap) => {
+      const score = scoreMap.get(s.ticker)
+      if (!score) return null
+      const grade = getGrade(score.total)
+      return (
+        <TooltipProvider delayDuration={150}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div className="cursor-help">
+                <LetterGrade score={score.total} size="sm" showLabel />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent side="right" className="text-xs max-w-xs">
+              <div className="font-semibold mb-1">{grade.label} — {score.total.toFixed(1)}/10</div>
+              <div className="text-muted-foreground">{score.summary}</div>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      )
+    },
+  },
+  {
+    key: "ticker", label: "Ticker", align: "left", group: "Général",
+    getValue: (s) => s.ticker,
+    format: (s) => (
+      <div className="flex items-center gap-2 font-mono text-xs font-medium">
+        {s.ticker}
+        {s.peaEligible && <Badge variant="secondary" className="h-4 px-1 text-[9px] uppercase">PEA</Badge>}
+      </div>
+    ),
+  },
+  {
+    key: "name", label: "Nom", align: "left", group: "Général",
+    getValue: (s) => s.name,
+    format: (s) => <span className="max-w-[260px] truncate" title={s.name}>{s.name}</span>,
+  },
+  {
+    key: "verdict", label: "Verdict", align: "left", group: "Général",
+    getValue: () => null,
+    format: (s, scoreMap) => {
+      const score = scoreMap.get(s.ticker)
+      if (!score) return null
+      return <span className="text-xs text-muted-foreground max-w-[300px] truncate block">{score.summary}</span>
+    },
+  },
+  {
+    key: "signaux_simple", label: "Signaux", align: "left", group: "Général",
+    getValue: () => null,
+    format: (s, scoreMap) => {
+      const score = scoreMap.get(s.ticker)
+      if (!score || score.flags.length === 0) return <span className="text-muted-foreground">—</span>
+      return (
+        <TooltipProvider delayDuration={150}>
+          <div className="flex flex-wrap items-center gap-1">
+            {score.flags.map((f) => (
+              <Tooltip key={f.id}>
+                <TooltipTrigger asChild>
+                  <Badge variant="outline" className={cn("gap-0.5 text-[10px] cursor-help h-5 px-1.5", f.color)}>
+                    {f.emoji} {f.label}
+                  </Badge>
+                </TooltipTrigger>
+                <TooltipContent side="top" className="max-w-xs text-xs">
+                  {f.detail}
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </div>
+        </TooltipProvider>
+      )
+    },
+  },
+  {
+    key: "price", label: "Prix", align: "right", group: "Prix",
+    getValue: (s) => s.price,
+    format: (s) => formatPrice(s.price, s.currency),
+  },
+  {
+    key: "priceChangePercent", label: "Var. j.", align: "right", group: "Prix",
+    getValue: (s) => s.priceChangePercent,
+    format: (s) => {
+      const c = s.priceChangePercent
+      const cls = c == null ? "text-muted-foreground" : c > 0 ? "text-emerald-600 dark:text-emerald-400" : c < 0 ? "text-red-600 dark:text-red-400" : "text-muted-foreground"
+      return <span className={cls}>{formatPercent(c, true)}</span>
+    },
+  },
+]
+
+const SIMPLE_COLUMN_KEYS = SIMPLE_COLUMNS.map((c) => c.key)
+
 const DEFAULT_VISIBLE = ["score", "signaux", "ticker", "name", "sector", "country", "marketCap", "price", "priceChangePercent", "trailingPE", "returnOnEquity", "dividendYield"]
 const LOCKED_COLUMNS = new Set(["ticker"])
 
@@ -318,6 +414,7 @@ function exportCsv(stocks: Stock[], columns: ColumnDef[], scoreMap: Map<string, 
 
 export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTableProps) {
   const navigate = useNavigate()
+  const { isSimple } = useViewMode()
   const [sortKey, setSortKey] = useState<SortKey>("marketCap")
   const [sortDir, setSortDir] = useState<SortDir>("desc")
   const [pageSize, setPageSize] = useState(getStoredPageSize)
@@ -325,8 +422,8 @@ export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTablePr
   const [visibleKeys, setVisibleKeys] = useState<string[]>(getStoredColumns)
 
   const visibleColumns = useMemo(
-    () => ALL_COLUMNS.filter((c) => visibleKeys.includes(c.key)),
-    [visibleKeys],
+    () => isSimple ? SIMPLE_COLUMNS : ALL_COLUMNS.filter((c) => visibleKeys.includes(c.key)),
+    [visibleKeys, isSimple],
   )
 
   function toggleColumn(key: string) {
@@ -359,11 +456,13 @@ export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTablePr
     })
   }, [stocks, signaux, scoreMap])
 
+  const effectiveSortKey = isSimple && !SIMPLE_COLUMN_KEYS.includes(sortKey) ? "score_letter" : sortKey
+
   const sorted = useMemo(() => {
-    const col = ALL_COLUMNS.find((c) => c.key === sortKey)
+    const col = ALL_COLUMNS.find((c) => c.key === effectiveSortKey) ?? SIMPLE_COLUMNS.find((c) => c.key === effectiveSortKey)
     const copy = [...filteredStocks]
     copy.sort((a, b) => {
-      if (sortKey === "score") {
+      if (effectiveSortKey === "score" || effectiveSortKey === "score_letter") {
         const sa = scoreMap.get(a.ticker)?.total ?? 0
         const sb = scoreMap.get(b.ticker)?.total ?? 0
         return sortDir === "asc" ? sa - sb : sb - sa
@@ -372,7 +471,7 @@ export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTablePr
       return compareValues(col.getValue(a), col.getValue(b), sortDir)
     })
     return copy
-  }, [filteredStocks, sortKey, sortDir, scoreMap])
+  }, [filteredStocks, effectiveSortKey, sortDir, scoreMap])
 
   const effectivePageSize = pageSize === 0 ? sorted.length : pageSize
   const totalPages = Math.max(1, Math.ceil(sorted.length / (effectivePageSize || 1)))
@@ -402,7 +501,7 @@ export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTablePr
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-end gap-2">
+      {!isSimple && <div className="flex items-center justify-end gap-2">
         <Popover>
           <PopoverTrigger asChild>
             <Button variant="outline" size="sm" className="h-8 gap-1.5">
@@ -444,7 +543,7 @@ export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTablePr
           <Download className="size-3.5" />
           CSV
         </Button>
-      </div>
+      </div>}
 
       <div className="rounded-lg border bg-card">
         <Table>

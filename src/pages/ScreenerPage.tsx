@@ -6,12 +6,14 @@ import { ResultsTable } from "@/components/screener/ResultsTable"
 import { SavedScreeners } from "@/components/screener/SavedScreeners"
 import { useScreenerFilters } from "@/hooks/useScreenerFilters"
 import { useStocks } from "@/hooks/useStocks"
+import { useViewMode } from "@/hooks/useViewMode"
 import { filterStocks } from "@/lib/filterStocks"
 import { computeScore } from "@/lib/scoring"
 
 export function ScreenerPage() {
   const { data, loading, error } = useStocks()
   const { filters, setFilters, resetFilters } = useScreenerFilters()
+  const { isSimple } = useViewMode()
 
   const allStocks = data?.stocks ?? []
 
@@ -44,17 +46,19 @@ export function ScreenerPage() {
   }, [filteredStocks, allStocks])
 
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
-      <aside>
-        <FilterPanel
-          filters={filters}
-          onChange={setFilters}
-          onReset={resetFilters}
-          availableSectors={availableSectors}
-          availableCountries={availableCountries}
-          badgeCounts={badgeCounts}
-        />
-      </aside>
+    <div className={isSimple ? "space-y-4" : "grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]"}>
+      {!isSimple && (
+        <aside>
+          <FilterPanel
+            filters={filters}
+            onChange={setFilters}
+            onReset={resetFilters}
+            availableSectors={availableSectors}
+            availableCountries={availableCountries}
+            badgeCounts={badgeCounts}
+          />
+        </aside>
+      )}
       <main className="min-w-0 space-y-4">
         <header className="flex flex-wrap items-baseline justify-between gap-2">
           <div>
@@ -80,9 +84,9 @@ export function ScreenerPage() {
         </header>
         <div className="flex flex-wrap items-center gap-2">
           <PresetBar filters={filters} onApply={setFilters} onReset={resetFilters} />
-          <SavedScreeners filters={filters} onLoad={setFilters} />
+          {!isSimple && <SavedScreeners filters={filters} onLoad={setFilters} />}
         </div>
-        <ActiveFiltersBar filters={filters} onChange={setFilters} onReset={resetFilters} />
+        {!isSimple && <ActiveFiltersBar filters={filters} onChange={setFilters} onReset={resetFilters} />}
         {!loading && !error && <ResultsTable stocks={filteredStocks} allStocks={allStocks} signaux={filters.signaux} />}
       </main>
     </div>

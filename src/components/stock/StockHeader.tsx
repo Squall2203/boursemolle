@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { LetterGrade, getGrade } from "@/components/LetterGrade"
+import { useViewMode } from "@/hooks/useViewMode"
 import { cn } from "@/lib/utils"
 import { formatMarketCap, formatPercent, formatPrice } from "@/lib/format"
 import type { StockScore, PillarDetail, MetricDetail } from "@/lib/scoring"
@@ -101,8 +103,54 @@ function PillarDetailPanel({ detail }: { detail: PillarDetail }) {
   )
 }
 
+const SIMPLE_PILLARS: { key: keyof StockScore["pillars"]; label: string; qualLabel: (score: number) => string }[] = [
+  { key: "valorisation", label: "Valorisation", qualLabel: (s) => s >= 7 ? "Attractive" : s >= 4.5 ? "Correcte" : "Elevee" },
+  { key: "qualite", label: "Rentabilite", qualLabel: (s) => s >= 7 ? "Elevee" : s >= 4.5 ? "Correcte" : "Faible" },
+  { key: "croissance", label: "Croissance", qualLabel: (s) => s >= 7 ? "Forte" : s >= 4.5 ? "Moderee" : "Faible" },
+  { key: "sante", label: "Sante financiere", qualLabel: (s) => s >= 7 ? "Solide" : s >= 4.5 ? "Correcte" : "Fragile" },
+  { key: "dividende", label: "Dividende", qualLabel: (s) => s >= 7 ? "Genereux" : s >= 4.5 ? "Modeste" : "Faible" },
+  { key: "momentum", label: "Momentum", qualLabel: (s) => s >= 7 ? "Favorable" : s >= 4.5 ? "Neutre" : "Defavorable" },
+]
+
+function pillarDotColor(score: number): string {
+  if (score >= 7) return "bg-emerald-500"
+  if (score >= 4.5) return "bg-yellow-500"
+  return "bg-red-500"
+}
+
+function SimpleFundamentalsCard({ score, onSwitchExpert }: { score: StockScore; onSwitchExpert: () => void }) {
+  return (
+    <Card>
+      <CardContent className="pt-4 pb-4 space-y-3">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Les fondamentaux en un coup d'oeil</h3>
+        <div className="space-y-2">
+          {SIMPLE_PILLARS.map(({ key, label, qualLabel }) => {
+            const val = score.pillars[key]
+            return (
+              <button
+                key={key}
+                type="button"
+                onClick={onSwitchExpert}
+                className="flex w-full items-center gap-3 rounded-md px-2 py-1 text-sm hover:bg-muted/50 transition-colors"
+              >
+                <span className={cn("size-3 rounded-full shrink-0", pillarDotColor(val))} />
+                <span className="flex-1 text-left">{label}</span>
+                <span className="text-muted-foreground text-xs">{qualLabel(val)}</span>
+              </button>
+            )
+          })}
+        </div>
+        <p className="text-[10px] text-center text-muted-foreground">
+          Cliquer sur une ligne pour voir le detail en mode Expert
+        </p>
+      </CardContent>
+    </Card>
+  )
+}
+
 export function StockHeader({ stock, score }: StockHeaderProps) {
   const [expandedPillar, setExpandedPillar] = useState<string | null>(null)
+  const { isSimple, setMode } = useViewMode()
 
   const changeClass =
     stock.priceChangePercent == null
