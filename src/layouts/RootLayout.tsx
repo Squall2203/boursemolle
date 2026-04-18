@@ -1,11 +1,103 @@
-import { X, Moon, Sun } from "lucide-react"
-import { Link, NavLink, Outlet } from "react-router-dom"
+import { useState, useRef, useEffect } from "react"
+import { X, Moon, Sun, User, LayoutDashboard, Trophy, LogOut, ChevronDown } from "lucide-react"
+import { Link, NavLink, Outlet, useNavigate } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { SearchCommand } from "@/components/SearchCommand"
 import { ViewModeToggle } from "@/components/ViewModeToggle"
+import { AuthModal } from "@/components/AuthModal"
+import { BuySellModal } from "@/components/portfolio/BuySellModal"
+import { XPNotification } from "@/components/XPNotification"
 import { cn } from "@/lib/utils"
 import { useTheme } from "@/hooks/useTheme"
 import { useViewMode } from "@/hooks/useViewMode"
+import { useAuth } from "@/contexts/AuthContext"
+
+function UserMenu() {
+  const { user, signOut, openAuthModal } = useAuth()
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
+    }
+    document.addEventListener("mousedown", handleClick)
+    return () => document.removeEventListener("mousedown", handleClick)
+  }, [])
+
+  if (!user) {
+    return (
+      <div className="flex items-center gap-2">
+        <Button variant="ghost" size="sm" onClick={openAuthModal}>
+          Connexion
+        </Button>
+        <Button size="sm" onClick={openAuthModal}>
+          S'inscrire
+        </Button>
+      </div>
+    )
+  }
+
+  const initial = (user.email ?? "U")[0].toUpperCase()
+
+  return (
+    <div className="relative" ref={ref}>
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm hover:bg-muted"
+      >
+        <span className="flex size-7 items-center justify-center rounded-full bg-primary text-xs font-medium text-primary-foreground">
+          {initial}
+        </span>
+        <ChevronDown className="size-3.5 text-muted-foreground" />
+      </button>
+
+      {open && (
+        <div className="absolute right-0 top-full z-50 mt-1 w-48 rounded-lg border bg-popover p-1 shadow-lg">
+          <p className="truncate px-2 py-1.5 text-xs text-muted-foreground">
+            {user.email}
+          </p>
+          <div className="my-1 border-t" />
+          <button
+            type="button"
+            onClick={() => { navigate("/portfolio"); setOpen(false) }}
+            className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-muted"
+          >
+            <LayoutDashboard className="size-4 text-muted-foreground" />
+            Mon Paper PEA
+          </button>
+          <button
+            type="button"
+            onClick={() => { navigate("/profile"); setOpen(false) }}
+            className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-muted"
+          >
+            <User className="size-4 text-muted-foreground" />
+            Mon profil
+          </button>
+          <button
+            type="button"
+            onClick={() => { navigate("/leaderboard"); setOpen(false) }}
+            className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-muted"
+          >
+            <Trophy className="size-4 text-muted-foreground" />
+            Classement
+          </button>
+          <div className="my-1 border-t" />
+          <button
+            type="button"
+            onClick={async () => { await signOut(); setOpen(false) }}
+            className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-sm text-destructive hover:bg-muted"
+          >
+            <LogOut className="size-4" />
+            Déconnexion
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
 
 export function RootLayout() {
   const { theme, toggle } = useTheme()
@@ -22,7 +114,7 @@ export function RootLayout() {
             </span>
           </Link>
           <SearchCommand />
-          <nav className="flex items-center gap-4 text-sm">
+          <nav className="flex items-center gap-3 text-sm">
             <ViewModeToggle />
             <NavLink
               to="/screener"
@@ -47,7 +139,7 @@ export function RootLayout() {
               Comparer
             </NavLink>
             <NavLink
-              to="/methodologie"
+              to="/leaderboard"
               className={({ isActive }) =>
                 cn(
                   "transition-colors hover:text-foreground",
@@ -55,7 +147,7 @@ export function RootLayout() {
                 )
               }
             >
-              Méthodo
+              <Trophy className="inline size-3.5 -mt-0.5 mr-0.5" />
             </NavLink>
             <Button
               variant="ghost"
@@ -69,6 +161,7 @@ export function RootLayout() {
                 <Moon className="size-4" />
               )}
             </Button>
+            <UserMenu />
           </nav>
         </div>
       </header>
@@ -106,6 +199,9 @@ export function RootLayout() {
           constitue pas un conseil en investissement.
         </div>
       </footer>
+      <AuthModal />
+      <BuySellModal />
+      <XPNotification />
     </div>
   )
 }

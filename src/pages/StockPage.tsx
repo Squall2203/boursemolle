@@ -1,6 +1,7 @@
-import { useMemo } from "react"
-import { TrendingUp, TrendingDown, Minus } from "lucide-react"
+import { useMemo, useEffect } from "react"
+import { TrendingUp, TrendingDown, Minus, BarChart2 } from "lucide-react"
 import { useParams } from "react-router-dom"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { PriceChart } from "@/components/stock/PriceChart"
@@ -16,15 +17,32 @@ import { computeScore } from "@/lib/scoring"
 import { usePriceHistory } from "@/hooks/usePriceHistory"
 import { useStocks } from "@/hooks/useStocks"
 import { useViewMode } from "@/hooks/useViewMode"
+import { useAuth } from "@/contexts/AuthContext"
+import { usePortfolio } from "@/contexts/PortfolioContext"
+import { useXP } from "@/contexts/XPContext"
+import { XP_ACTIONS } from "@/lib/xp"
 
 export function StockPage() {
   const { ticker } = useParams<{ ticker: string }>()
   const { data: dataset, loading: stocksLoading } = useStocks()
   const { data: priceData, loading: pricesLoading } = usePriceHistory(ticker ?? "")
   const { isSimple } = useViewMode()
+  const { user, openAuthModal } = useAuth()
+  const { openTradeModal } = usePortfolio()
+  const { trackStockView, awardXP } = useXP()
 
   const allStocks = dataset?.stocks ?? []
   const stock = allStocks.find((s) => s.ticker === ticker)
+
+  // Track view + XP (once per ticker per mount, only when stock is loaded)
+  useEffect(() => {
+    if (!user || !ticker || !stock) return
+    trackStockView(ticker)
+    if (!isSimple) {
+      const a = XP_ACTIONS.VIEW_STOCK_EXPERT
+      awardXP(a.action, a.xp, a.dailyMax)
+    }
+  }, [user?.id, ticker, !!stock]) // eslint-disable-line react-hooks/exhaustive-deps
   const score = useMemo(
     () => (stock ? computeScore(stock, allStocks) : null),
     [stock, allStocks],
@@ -45,9 +63,22 @@ export function StockPage() {
     )
   }
 
+  function handleInvest() {
+    if (!user) return openAuthModal()
+    if (stock) openTradeModal(stock)
+  }
+
   return (
     <div className="space-y-8">
-      <StockHeader stock={stock} score={score} />
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="flex-1">
+          <StockHeader stock={stock} score={score} />
+        </div>
+        <Button onClick={handleInvest} className="shrink-0 gap-2">
+          <BarChart2 className="size-4" />
+          Investir — Paper PEA
+        </Button>
+      </div>
 
       <Card>
         <CardHeader className="pb-2">
