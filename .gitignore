@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Données générées (regénérées via pnpm ingest)
+public/data/prices/
+public/data/stocks.json
+public/data/feed.json
+public/data/feed/
