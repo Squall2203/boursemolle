@@ -190,6 +190,8 @@ async function fetchStock(ticker: string, indices: string[]): Promise<Stock | nu
 
       peaEligible: EEE_COUNTRIES.has(country),
       fetchedAt: new Date().toISOString(),
+      lastFundamentalsUpdate: new Date().toISOString(),
+      refreshPriority: 2,
     }
 
     return stock

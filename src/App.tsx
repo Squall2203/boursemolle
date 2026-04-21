@@ -8,6 +8,7 @@ import { MethodologiePage } from "@/pages/MethodologiePage"
 import { PortfolioPage } from "@/pages/PortfolioPage"
 import { ProfilePage } from "@/pages/ProfilePage"
 import { LeaderboardPage } from "@/pages/LeaderboardPage"
+import { DataFreshnessPage } from "@/pages/DataFreshnessPage"
 import { ProtectedRoute } from "@/components/ProtectedRoute"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/stock/:ticker" element={<StockPage />} />
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/methodologie" element={<MethodologiePage />} />
+        <Route path="/data-freshness" element={<DataFreshnessPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route
           path="/portfolio"

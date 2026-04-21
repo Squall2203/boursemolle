@@ -1,8 +1,16 @@
-import { RotateCcw } from "lucide-react"
+import { useState } from "react"
+import { ChevronDown, ChevronRight, RotateCcw } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { cn } from "@/lib/utils"
 import { FILTER_BOUNDS, isRangeActive, type ScreenerFilters } from "@/types/filters"
 import { FLAG_CATALOG } from "@/lib/scoring"
@@ -37,6 +45,19 @@ export function FilterPanel({
   availableCountries,
   badgeCounts,
 }: FilterPanelProps) {
+  const [subScoresOpen, setSubScoresOpen] = useState(false)
+
+  const scoreGlobalActive = isRangeActive(filters.scoreGlobal, FILTER_BOUNDS.scoreGlobal)
+  const scoreSubActive =
+    isRangeActive(filters.scoreValorisation, FILTER_BOUNDS.scoreValorisation) ||
+    isRangeActive(filters.scoreQualite, FILTER_BOUNDS.scoreQualite) ||
+    isRangeActive(filters.scoreCroissance, FILTER_BOUNDS.scoreCroissance) ||
+    isRangeActive(filters.scoreSante, FILTER_BOUNDS.scoreSante) ||
+    isRangeActive(filters.scoreDividende, FILTER_BOUNDS.scoreDividende) ||
+    isRangeActive(filters.scoreMomentum, FILTER_BOUNDS.scoreMomentum) ||
+    isRangeActive(filters.scoreQuant, FILTER_BOUNDS.scoreQuant)
+  const scoreActive = scoreGlobalActive || scoreSubActive
+
   const valuationActive = isRangeActive(filters.marketCap, FILTER_BOUNDS.marketCap) || isRangeActive(filters.pe, FILTER_BOUNDS.pe)
   const profitActive = isRangeActive(filters.roe, FILTER_BOUNDS.roe)
   const yieldActive = isRangeActive(filters.divYield, FILTER_BOUNDS.divYield)
@@ -47,7 +68,18 @@ export function FilterPanel({
     isRangeActive(filters.perf6M, FILTER_BOUNDS.perf6M) ||
     isRangeActive(filters.perf1Y, FILTER_BOUNDS.perf1Y)
 
+  const freshnessActive = filters.freshnessMaxDays > 0
+
   const activeCount =
+    (freshnessActive ? 1 : 0) +
+    (scoreGlobalActive ? 1 : 0) +
+    (isRangeActive(filters.scoreValorisation, FILTER_BOUNDS.scoreValorisation) ? 1 : 0) +
+    (isRangeActive(filters.scoreQualite, FILTER_BOUNDS.scoreQualite) ? 1 : 0) +
+    (isRangeActive(filters.scoreCroissance, FILTER_BOUNDS.scoreCroissance) ? 1 : 0) +
+    (isRangeActive(filters.scoreSante, FILTER_BOUNDS.scoreSante) ? 1 : 0) +
+    (isRangeActive(filters.scoreDividende, FILTER_BOUNDS.scoreDividende) ? 1 : 0) +
+    (isRangeActive(filters.scoreMomentum, FILTER_BOUNDS.scoreMomentum) ? 1 : 0) +
+    (isRangeActive(filters.scoreQuant, FILTER_BOUNDS.scoreQuant) ? 1 : 0) +
     (isRangeActive(filters.marketCap, FILTER_BOUNDS.marketCap) ? 1 : 0) +
     (isRangeActive(filters.pe, FILTER_BOUNDS.pe) ? 1 : 0) +
     (profitActive ? 1 : 0) +
@@ -83,6 +115,89 @@ export function FilterPanel({
         </Button>
       </CardHeader>
       <CardContent className="space-y-5">
+        <section className="space-y-4">
+          <h3 className={cn(
+            "text-xs font-semibold uppercase tracking-wider",
+            scoreActive ? "text-primary" : "text-foreground",
+          )}>
+            Score BourseMolle
+            {scoreActive && <span className="ml-1.5 inline-flex size-1.5 rounded-full bg-primary align-middle" />}
+          </h3>
+          <RangeSliderField
+            label="Score global"
+            value={filters.scoreGlobal}
+            onChange={(v) => onChange({ scoreGlobal: v })}
+            min={FILTER_BOUNDS.scoreGlobal.min}
+            max={FILTER_BOUNDS.scoreGlobal.max}
+            step={FILTER_BOUNDS.scoreGlobal.step}
+            formatValue={(n) => n.toFixed(1)}
+          />
+          <button
+            type="button"
+            onClick={() => setSubScoresOpen((o) => !o)}
+            className="flex w-full items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {subScoresOpen ? <ChevronDown className="size-3" /> : <ChevronRight className="size-3" />}
+            Sous-scores
+            {scoreSubActive && <span className="ml-1 inline-flex size-1.5 rounded-full bg-primary" />}
+          </button>
+          {subScoresOpen && (
+            <div className="space-y-3 pl-3 border-l border-border">
+              <RangeSliderField
+                label="Valorisation"
+                value={filters.scoreValorisation}
+                onChange={(v) => onChange({ scoreValorisation: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+              <RangeSliderField
+                label="Qualité"
+                value={filters.scoreQualite}
+                onChange={(v) => onChange({ scoreQualite: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+              <RangeSliderField
+                label="Croissance"
+                value={filters.scoreCroissance}
+                onChange={(v) => onChange({ scoreCroissance: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+              <RangeSliderField
+                label="Santé financière"
+                value={filters.scoreSante}
+                onChange={(v) => onChange({ scoreSante: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+              <RangeSliderField
+                label="Dividende"
+                value={filters.scoreDividende}
+                onChange={(v) => onChange({ scoreDividende: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+              <RangeSliderField
+                label="Momentum"
+                value={filters.scoreMomentum}
+                onChange={(v) => onChange({ scoreMomentum: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+              <RangeSliderField
+                label="Signaux quant"
+                value={filters.scoreQuant}
+                onChange={(v) => onChange({ scoreQuant: v })}
+                min={0} max={10} step={0.5}
+                formatValue={(n) => n.toFixed(1)}
+              />
+            </div>
+          )}
+        </section>
+
+        <Separator />
+
         <section className="space-y-4">
           <h3 className={cn(
             "text-xs font-semibold uppercase tracking-wider",
@@ -229,6 +344,32 @@ export function FilterPanel({
             onChange={(v) => onChange({ countries: v })}
             searchPlaceholder="Rechercher un pays..."
           />
+        </section>
+
+        <Separator />
+
+        <section className="space-y-3">
+          <h3 className={cn(
+            "text-xs font-semibold uppercase tracking-wider",
+            freshnessActive ? "text-primary" : "text-foreground",
+          )}>
+            Fraîcheur des données
+            {freshnessActive && <span className="ml-1.5 inline-flex size-1.5 rounded-full bg-primary align-middle" />}
+          </h3>
+          <Select
+            value={String(filters.freshnessMaxDays)}
+            onValueChange={(v) => onChange({ freshnessMaxDays: Number(v) })}
+          >
+            <SelectTrigger className="h-8 text-xs">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="0" className="text-xs">Toutes les actions</SelectItem>
+              <SelectItem value="3" className="text-xs">🟢 Mises à jour &lt; 3 jours</SelectItem>
+              <SelectItem value="7" className="text-xs">🟢🟡 Mises à jour &lt; 7 jours</SelectItem>
+              <SelectItem value="14" className="text-xs">🟢🟡🟠 Mises à jour &lt; 14 jours</SelectItem>
+            </SelectContent>
+          </Select>
         </section>
 
         <Separator />

@@ -32,7 +32,8 @@ import {
   formatPrice,
   formatRatio,
 } from "@/lib/format"
-import { computeScore, type StockScore } from "@/lib/scoring"
+import { type StockScore } from "@/lib/scoring"
+import { getFreshness, freshnessColor } from "@/lib/freshness"
 import { LetterGrade, getGrade } from "@/components/LetterGrade"
 import { useViewMode } from "@/hooks/useViewMode"
 import type { Stock } from "@/types/stock"
@@ -103,6 +104,29 @@ const ALL_COLUMNS: ColumnDef[] = [
               </Tooltip>
             ))}
           </div>
+        </TooltipProvider>
+      )
+    },
+  },
+  {
+    key: "freshness", label: "MAJ", align: "right", group: "Général",
+    getValue: (s) => {
+      const d = s.lastFundamentalsUpdate ?? s.fetchedAt
+      return Math.floor((Date.now() - new Date(d).getTime()) / 86_400_000)
+    },
+    format: (s) => {
+      const info = getFreshness(s.lastFundamentalsUpdate ?? s.fetchedAt)
+      if (!info) return <span className="text-muted-foreground">—</span>
+      return (
+        <TooltipProvider delayDuration={150}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <span className={cn("cursor-help text-xs tabular-nums", freshnessColor(info.level))}>
+                {info.dot} {info.days}j
+              </span>
+            </TooltipTrigger>
+            <TooltipContent side="left" className="text-xs">{info.label}</TooltipContent>
+          </Tooltip>
         </TooltipProvider>
       )
     },
@@ -377,8 +401,7 @@ function compareValues(
 
 interface ResultsTableProps {
   stocks: Stock[]
-  allStocks: Stock[]
-  signaux?: string[]
+  scoreMap: Map<string, StockScore>
 }
 
 const PAGE_SIZE_OPTIONS = [25, 50, 100, 0]
@@ -412,10 +435,10 @@ function exportCsv(stocks: Stock[], columns: ColumnDef[], scoreMap: Map<string, 
   URL.revokeObjectURL(url)
 }
 
-export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTableProps) {
+export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
   const navigate = useNavigate()
   const { isSimple } = useViewMode()
-  const [sortKey, setSortKey] = useState<SortKey>("marketCap")
+  const [sortKey, setSortKey] = useState<SortKey>("score")
   const [sortDir, setSortDir] = useState<SortDir>("desc")
   const [pageSize, setPageSize] = useState(getStoredPageSize)
   const [page, setPage] = useState(0)
@@ -439,22 +462,7 @@ export function ResultsTable({ stocks, allStocks, signaux = [] }: ResultsTablePr
     try { localStorage.setItem(LS_COLS_KEY, JSON.stringify(DEFAULT_VISIBLE)) } catch {}
   }
 
-  const scoreMap = useMemo(() => {
-    const map = new Map<string, StockScore>()
-    for (const s of stocks) {
-      map.set(s.ticker, computeScore(s, allStocks))
-    }
-    return map
-  }, [stocks, allStocks])
-
-  const filteredStocks = useMemo(() => {
-    if (signaux.length === 0) return stocks
-    return stocks.filter((s) => {
-      const score = scoreMap.get(s.ticker)
-      if (!score) return false
-      return signaux.some((sig) => score.flags.some((f) => f.id === sig))
-    })
-  }, [stocks, signaux, scoreMap])
+  const filteredStocks = stocks
 
   const effectiveSortKey = isSimple && !SIMPLE_COLUMN_KEYS.includes(sortKey) ? "score_letter" : sortKey
 

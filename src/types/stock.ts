@@ -58,6 +58,8 @@ export interface Stock {
 
   peaEligible: boolean
   fetchedAt: string
+  lastFundamentalsUpdate?: string | null
+  refreshPriority?: number | null   // 0=critique, 1=haute, 2=normale, 3=basse
 }
 
 export interface AnnualFinancial {

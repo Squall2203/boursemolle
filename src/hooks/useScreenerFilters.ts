@@ -21,6 +21,18 @@ function parseRange(
   }
 }
 
+function parseNum(params: URLSearchParams, key: string, defaultVal: number): number {
+  const v = params.get(key)
+  if (v == null) return defaultVal
+  const n = Number(v)
+  return Number.isFinite(n) ? n : defaultVal
+}
+
+function applyNum(params: URLSearchParams, key: string, value: number, defaultVal: number) {
+  if (value !== defaultVal) params.set(key, String(value))
+  else params.delete(key)
+}
+
 function parseList(params: URLSearchParams, key: string): string[] {
   const v = params.get(key)
   if (!v) return []
@@ -63,6 +75,15 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
       perf1M: parseRange(searchParams, "perf1M", FILTER_BOUNDS.perf1M),
       perf6M: parseRange(searchParams, "perf6M", FILTER_BOUNDS.perf6M),
       perf1Y: parseRange(searchParams, "perf1Y", FILTER_BOUNDS.perf1Y),
+      scoreGlobal: parseRange(searchParams, "scoreGlobal", FILTER_BOUNDS.scoreGlobal),
+      scoreValorisation: parseRange(searchParams, "scoreValorisation", FILTER_BOUNDS.scoreValorisation),
+      scoreQualite: parseRange(searchParams, "scoreQualite", FILTER_BOUNDS.scoreQualite),
+      scoreCroissance: parseRange(searchParams, "scoreCroissance", FILTER_BOUNDS.scoreCroissance),
+      scoreSante: parseRange(searchParams, "scoreSante", FILTER_BOUNDS.scoreSante),
+      scoreDividende: parseRange(searchParams, "scoreDividende", FILTER_BOUNDS.scoreDividende),
+      scoreMomentum: parseRange(searchParams, "scoreMomentum", FILTER_BOUNDS.scoreMomentum),
+      scoreQuant: parseRange(searchParams, "scoreQuant", FILTER_BOUNDS.scoreQuant),
+      freshnessMaxDays: parseNum(searchParams, "freshnessMaxDays", 0),
       indices: parseList(searchParams, "indices"),
       sectors: parseList(searchParams, "sectors"),
       countries: parseList(searchParams, "countries"),
@@ -85,6 +106,15 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
           applyRange(params, "perf1M", merged.perf1M, FILTER_BOUNDS.perf1M)
           applyRange(params, "perf6M", merged.perf6M, FILTER_BOUNDS.perf6M)
           applyRange(params, "perf1Y", merged.perf1Y, FILTER_BOUNDS.perf1Y)
+          applyRange(params, "scoreGlobal", merged.scoreGlobal, FILTER_BOUNDS.scoreGlobal)
+          applyRange(params, "scoreValorisation", merged.scoreValorisation, FILTER_BOUNDS.scoreValorisation)
+          applyRange(params, "scoreQualite", merged.scoreQualite, FILTER_BOUNDS.scoreQualite)
+          applyRange(params, "scoreCroissance", merged.scoreCroissance, FILTER_BOUNDS.scoreCroissance)
+          applyRange(params, "scoreSante", merged.scoreSante, FILTER_BOUNDS.scoreSante)
+          applyRange(params, "scoreDividende", merged.scoreDividende, FILTER_BOUNDS.scoreDividende)
+          applyRange(params, "scoreMomentum", merged.scoreMomentum, FILTER_BOUNDS.scoreMomentum)
+          applyRange(params, "scoreQuant", merged.scoreQuant, FILTER_BOUNDS.scoreQuant)
+          applyNum(params, "freshnessMaxDays", merged.freshnessMaxDays, 0)
           applyList(params, "indices", merged.indices)
           applyList(params, "sectors", merged.sectors)
           applyList(params, "countries", merged.countries)

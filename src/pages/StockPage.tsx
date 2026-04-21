@@ -12,6 +12,7 @@ import { DividendSparkline } from "@/components/stock/DividendSparkline"
 import { TechnicalAnalysisPanel } from "@/components/stock/TechnicalAnalysisPanel"
 import { analyzeTechnicals } from "@/lib/technicalAnalysis"
 import { ExpertsSection } from "@/components/stock/ExpertsSection"
+import { FreshnessBadge } from "@/components/FreshnessBadge"
 import { cn } from "@/lib/utils"
 import { computeScore } from "@/lib/scoring"
 import { usePriceHistory } from "@/hooks/usePriceHistory"
@@ -71,8 +72,9 @@ export function StockPage() {
   return (
     <div className="space-y-8">
       <div className="flex flex-wrap items-start justify-between gap-3">
-        <div className="flex-1">
+        <div className="flex-1 space-y-1">
           <StockHeader stock={stock} score={score} />
+          <FreshnessBadge date={stock.lastFundamentalsUpdate ?? stock.fetchedAt} className="mt-1" />
         </div>
         <Button onClick={handleInvest} className="shrink-0 gap-2">
           <BarChart2 className="size-4" />

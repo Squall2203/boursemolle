@@ -25,6 +25,17 @@ const BASE_TECH = {
   perf1Y: full("perf1Y"),
 }
 
+const NO_SCORE = {
+  scoreGlobal: full("scoreGlobal"),
+  scoreValorisation: full("scoreValorisation"),
+  scoreQualite: full("scoreQualite"),
+  scoreCroissance: full("scoreCroissance"),
+  scoreSante: full("scoreSante"),
+  scoreDividende: full("scoreDividende"),
+  scoreMomentum: full("scoreMomentum"),
+  scoreQuant: full("scoreQuant"),
+}
+
 export const PRESETS: Preset[] = [
   {
     id: "value",
@@ -34,6 +45,7 @@ export const PRESETS: Preset[] = [
       { label: "P/E", value: "< 15" },
       { label: "ROE", value: "> 8%" },
       { label: "Dividende", value: "> 1.5%" },
+      { label: "Score Valo.", value: "> 7" },
     ],
     filters: {
       pe: { min: 0, max: 15 },
@@ -41,6 +53,9 @@ export const PRESETS: Preset[] = [
       divYield: { min: 1.5, max: FILTER_BOUNDS.divYield.max },
       marketCap: full("marketCap"),
       ...BASE_TECH,
+      ...NO_SCORE,
+      scoreValorisation: { min: 7, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],
@@ -54,6 +69,7 @@ export const PRESETS: Preset[] = [
       { label: "Dividende", value: "> 3%" },
       { label: "ROE", value: "> 10%" },
       { label: "P/E", value: "< 25" },
+      { label: "Score Div.", value: "> 7" },
     ],
     filters: {
       divYield: { min: 3, max: FILTER_BOUNDS.divYield.max },
@@ -61,6 +77,9 @@ export const PRESETS: Preset[] = [
       pe: { min: 0, max: 25 },
       marketCap: full("marketCap"),
       ...BASE_TECH,
+      ...NO_SCORE,
+      scoreDividende: { min: 7, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],
@@ -73,6 +92,8 @@ export const PRESETS: Preset[] = [
     criteria: [
       { label: "ROE", value: "> 15%" },
       { label: "Capi", value: "> 10 Md€" },
+      { label: "Score Crois.", value: "> 7" },
+      { label: "Score Qual.", value: "> 6" },
     ],
     filters: {
       roe: { min: 15, max: FILTER_BOUNDS.roe.max },
@@ -80,6 +101,10 @@ export const PRESETS: Preset[] = [
       pe: full("pe"),
       divYield: full("divYield"),
       ...BASE_TECH,
+      ...NO_SCORE,
+      scoreCroissance: { min: 7, max: 10 },
+      scoreQualite: { min: 6, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],
@@ -92,6 +117,7 @@ export const PRESETS: Preset[] = [
     criteria: [
       { label: "Capi", value: "> 80 Md€" },
       { label: "ROE", value: "> 5%" },
+      { label: "Score", value: "> 7" },
     ],
     filters: {
       marketCap: { min: 80, max: FILTER_BOUNDS.marketCap.max },
@@ -99,6 +125,9 @@ export const PRESETS: Preset[] = [
       pe: full("pe"),
       divYield: full("divYield"),
       ...BASE_TECH,
+      ...NO_SCORE,
+      scoreGlobal: { min: 7, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],
@@ -111,6 +140,7 @@ export const PRESETS: Preset[] = [
     criteria: [
       { label: "P/E", value: "< 10" },
       { label: "ROE", value: "> 0%" },
+      { label: "Score Valo.", value: "> 8" },
     ],
     filters: {
       pe: { min: 0, max: 10 },
@@ -118,6 +148,9 @@ export const PRESETS: Preset[] = [
       marketCap: full("marketCap"),
       divYield: full("divYield"),
       ...BASE_TECH,
+      ...NO_SCORE,
+      scoreValorisation: { min: 8, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],
@@ -131,6 +164,7 @@ export const PRESETS: Preset[] = [
       { label: "Perf 1M", value: "> 5%" },
       { label: "Perf 6M", value: "> 15%" },
       { label: "RSI", value: "50 – 80" },
+      { label: "Score Mom.", value: "> 7" },
     ],
     filters: {
       pe: full("pe"),
@@ -141,6 +175,9 @@ export const PRESETS: Preset[] = [
       perf1M: { min: 5, max: FILTER_BOUNDS.perf1M.max },
       perf6M: { min: 15, max: FILTER_BOUNDS.perf6M.max },
       perf1Y: full("perf1Y"),
+      ...NO_SCORE,
+      scoreMomentum: { min: 7, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],
@@ -153,6 +190,7 @@ export const PRESETS: Preset[] = [
     criteria: [
       { label: "RSI", value: "< 35" },
       { label: "Capi", value: "> 5 Md€" },
+      { label: "Score Qual.", value: "> 6" },
     ],
     filters: {
       pe: full("pe"),
@@ -163,6 +201,53 @@ export const PRESETS: Preset[] = [
       perf1M: full("perf1M"),
       perf6M: full("perf6M"),
       perf1Y: full("perf1Y"),
+      ...NO_SCORE,
+      scoreQualite: { min: 6, max: 10 },
+      freshnessMaxDays: 0,
+      indices: [],
+      sectors: [],
+      countries: [],
+    },
+  },
+  {
+    id: "topscores",
+    name: "Top scores",
+    description: "Les meilleures notes BourseMolle — actions les plus attractives sur tous les critères",
+    criteria: [
+      { label: "Score", value: "> 8" },
+    ],
+    filters: {
+      pe: full("pe"),
+      roe: full("roe"),
+      marketCap: full("marketCap"),
+      divYield: full("divYield"),
+      ...BASE_TECH,
+      ...NO_SCORE,
+      scoreGlobal: { min: 8, max: 10 },
+      freshnessMaxDays: 0,
+      indices: [],
+      sectors: [],
+      countries: [],
+    },
+  },
+  {
+    id: "forteresses",
+    name: "Forteresses",
+    description: "Bilans indestructibles — entreprises avec une santé financière et une qualité hors norme",
+    criteria: [
+      { label: "Score Santé", value: "> 8" },
+      { label: "Score Qual.", value: "> 8" },
+    ],
+    filters: {
+      pe: full("pe"),
+      roe: full("roe"),
+      marketCap: full("marketCap"),
+      divYield: full("divYield"),
+      ...BASE_TECH,
+      ...NO_SCORE,
+      scoreSante: { min: 8, max: 10 },
+      scoreQualite: { min: 8, max: 10 },
+      freshnessMaxDays: 0,
       indices: [],
       sectors: [],
       countries: [],

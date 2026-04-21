@@ -42,19 +42,43 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   async function signInWithEmail(email: string, password: string) {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
-    return { error: error?.message ?? null }
+    if (error) {
+      const msg = error.message.toLowerCase()
+      if (msg.includes("invalid login") || msg.includes("invalid credentials")) {
+        return { error: "Email ou mot de passe incorrect." }
+      }
+      if (msg.includes("email not confirmed")) {
+        return { error: "Vérifiez votre boîte email — confirmez votre inscription avant de vous connecter." }
+      }
+      if (msg.includes("too many requests") || msg.includes("rate limit")) {
+        return { error: "Trop de tentatives. Attendez quelques minutes avant de réessayer." }
+      }
+      return { error: error.message }
+    }
+    return { error: null }
   }
 
   async function signUpWithEmail(email: string, password: string) {
     const { error } = await supabase.auth.signUp({ email, password })
-    return { error: error?.message ?? null }
+    if (error) {
+      const msg = error.message.toLowerCase()
+      if (msg.includes("already registered") || msg.includes("user already exists")) {
+        return { error: "Un compte existe déjà avec cet email. Essayez de vous connecter." }
+      }
+      if (msg.includes("password")) {
+        return { error: "Le mot de passe doit contenir au moins 6 caractères." }
+      }
+      return { error: error.message }
+    }
+    return { error: null }
   }
 
   async function signInWithGoogle() {
-    await supabase.auth.signInWithOAuth({
+    const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: { redirectTo: window.location.origin },
     })
+    if (error) console.error("Google OAuth error:", error.message)
   }
 
   async function signOut() {

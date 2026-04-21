@@ -1,142 +1,175 @@
 import { useMemo } from "react"
 import { Link } from "react-router-dom"
-import { TrendingUp, ExternalLink, Play, FileText, Rss, ChevronRight } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { TrendingUp, TrendingDown, ArrowRight, BarChart2, Star, Shield } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
-import { useFeed } from "@/hooks/useFeed"
 import { useStocks } from "@/hooks/useStocks"
 import { computeScore } from "@/lib/scoring"
-import type { FeedItem, Platform } from "@/types/feed"
+import { formatMarketCap, formatPercent } from "@/lib/format"
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
+// ─── Ticker Tape ─────────────────────────────────────────────────────────────
 
-function timeAgo(isoDate: string): string {
-  const diff = Date.now() - new Date(isoDate).getTime()
-  const hours = Math.floor(diff / 3600000)
-  if (hours < 1) return "il y a moins d'1h"
-  if (hours < 24) return `il y a ${hours}h`
-  const days = Math.floor(diff / 86400000)
-  if (days === 1) return "hier"
-  if (days < 7) return `il y a ${days}j`
-  const weeks = Math.floor(days / 7)
-  return `il y a ${weeks} sem`
+function TickerTape({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }) {
+  const items = useMemo(() => {
+    if (!stocks) return []
+    return [...stocks.stocks]
+      .filter((s) => s.price != null)
+      .sort((a, b) => (b.marketCap ?? 0) - (a.marketCap ?? 0))
+      .slice(0, 24)
+  }, [stocks])
+
+  if (items.length === 0) return null
+
+  const doubled = [...items, ...items]
+
+  return (
+    <div className="overflow-hidden border-b border-border bg-card py-2.5 text-xs">
+      <div
+        className="flex whitespace-nowrap"
+        style={{ animation: "ticker 60s linear infinite" }}
+      >
+        {doubled.map((s, i) => (
+          <Link
+            key={`${s.ticker}-${i}`}
+            to={`/stock/${s.ticker}`}
+            className="mx-8 inline-flex items-center gap-2 font-mono hover:opacity-80 transition-opacity"
+          >
+            <span className="font-semibold text-foreground">{s.ticker}</span>
+            <span className="text-muted-foreground">
+              {s.price?.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {s.currency === "EUR" ? "€" : s.currency === "USD" ? "$" : s.currency}
+            </span>
+            {s.priceChangePercent != null && (
+              <span className={s.priceChangePercent >= 0 ? "text-emerald-500" : "text-destructive"}>
+                {s.priceChangePercent >= 0 ? "+" : ""}{s.priceChangePercent.toFixed(2)}%
+              </span>
+            )}
+          </Link>
+        ))}
+      </div>
+      <style>{`
+        @keyframes ticker {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
+    </div>
+  )
 }
 
-function PlatformIcon({ platform }: { platform: Platform }) {
-  switch (platform) {
-    case "youtube": return <Play className="size-3 text-red-500" />
-    case "blog": return <FileText className="size-3 text-blue-500" />
-    case "rss": return <Rss className="size-3 text-orange-500" />
-  }
+// ─── Hero Stock Card ──────────────────────────────────────────────────────────
+
+function HeroStockCard({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }) {
+  const top = useMemo(() => {
+    if (!stocks) return null
+    const all = stocks.stocks
+    return all
+      .map((s) => ({ stock: s, score: computeScore(s, all) }))
+      .sort((a, b) => b.score.total - a.score.total)[0] ?? null
+  }, [stocks])
+
+  if (!top) return null
+  const { stock: s, score } = top
+
+  const scoreColor =
+    score.total >= 8 ? "text-emerald-400" :
+    score.total >= 6 ? "text-yellow-400" : "text-red-400"
+
+  return (
+    <Link
+      to={`/stock/${s.ticker}`}
+      className="group relative block rounded-xl border border-border bg-card p-6 hover:border-primary/40 transition-all hover:shadow-[0_0_20px_rgba(0,230,118,0.08)]"
+    >
+      <div className="absolute -top-3 left-5">
+        <span className="rounded-md bg-primary px-3 py-1 text-xs font-bold text-primary-foreground uppercase tracking-wide">
+          {score.label}
+        </span>
+      </div>
+
+      <div className="mt-2 flex items-start justify-between gap-4">
+        <div>
+          <div className="text-xs text-muted-foreground font-mono mb-0.5">{s.ticker}</div>
+          <div className="font-heading text-lg font-semibold leading-tight">{s.name}</div>
+          <div className="text-xs text-muted-foreground mt-0.5">{s.sector ?? ""} · {s.country}</div>
+        </div>
+        <div className="text-right shrink-0">
+          <div className="font-heading text-2xl font-bold tabular-nums">
+            {s.price?.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            <span className="text-sm font-normal text-muted-foreground ml-1">{s.currency === "EUR" ? "€" : "$"}</span>
+          </div>
+          {s.priceChangePercent != null && (
+            <div className={cn("text-sm font-medium", s.priceChangePercent >= 0 ? "text-emerald-500" : "text-destructive")}>
+              {s.priceChangePercent >= 0 ? <TrendingUp className="inline size-3 mr-0.5" /> : <TrendingDown className="inline size-3 mr-0.5" />}
+              {s.priceChangePercent >= 0 ? "+" : ""}{s.priceChangePercent.toFixed(2)}%
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="mt-5 grid grid-cols-4 gap-3 border-t border-border pt-4">
+        {[
+          { label: "Score", value: <span className={cn("font-bold", scoreColor)}>{score.total.toFixed(1)}</span> },
+          { label: "P/E", value: s.trailingPE?.toFixed(1) ?? "—" },
+          { label: "Dividende", value: s.dividendYield ? `${s.dividendYield.toFixed(1)}%` : "—" },
+          { label: "Capitalisation", value: s.marketCap ? formatMarketCap(s.marketCap) : "—" },
+        ].map(({ label, value }) => (
+          <div key={label} className="text-center">
+            <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</div>
+            <div className="mt-1 text-sm font-semibold">{value}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-4 flex items-center gap-1 text-xs text-primary font-medium group-hover:gap-2 transition-all">
+        Voir la fiche complète <ArrowRight className="size-3" />
+      </div>
+    </Link>
+  )
 }
 
 // ─── Signaux du jour ──────────────────────────────────────────────────────────
-
-const FLAG_PRIORITY = ["golden_cross", "aristos", "value_trap", "survendu", "surachete"]
 
 function SignauxDuJour({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }) {
   const signals = useMemo(() => {
     if (!stocks) return []
     const all = stocks.stocks
-    const scores = all.map((s) => computeScore(s, all))
-
     const byFlag: Record<string, { label: string; emoji: string; color: string; tickers: string[] }> = {}
-
-    for (let i = 0; i < all.length; i++) {
-      for (const flag of scores[i].flags) {
-        if (!byFlag[flag.id]) {
-          byFlag[flag.id] = { label: flag.label, emoji: flag.emoji, color: flag.color, tickers: [] }
-        }
-        byFlag[flag.id].tickers.push(all[i].ticker)
+    for (const s of all) {
+      for (const flag of computeScore(s, all).flags) {
+        if (!byFlag[flag.id]) byFlag[flag.id] = { label: flag.label, emoji: flag.emoji, color: flag.color, tickers: [] }
+        byFlag[flag.id].tickers.push(s.ticker)
       }
     }
-
-    return Object.entries(byFlag)
-      .sort((a, b) => FLAG_PRIORITY.indexOf(b[0]) - FLAG_PRIORITY.indexOf(a[0]))
-      .slice(0, 6)
-      .map(([id, data]) => ({ id, ...data }))
+    return Object.entries(byFlag).slice(0, 6).map(([id, data]) => ({ id, ...data }))
   }, [stocks])
 
   if (signals.length === 0) return null
 
   return (
-    <Card>
-      <CardHeader className="pb-2">
-        <CardTitle className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-          <TrendingUp className="size-4" />
-          Signaux du jour
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-2 pb-4">
+    <div className="rounded-xl border border-border bg-card p-5">
+      <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
+        <TrendingUp className="size-4" /> Signaux du jour
+      </h3>
+      <div className="space-y-2">
         {signals.map((sig) => (
           <Link
             key={sig.id}
-            to={`/screener`}
-            className="flex items-center gap-2 rounded-md px-2 py-1.5 text-sm hover:bg-muted/50 transition-colors"
+            to="/screener"
+            className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-muted/50 transition-colors"
           >
             <Badge variant="outline" className={cn("gap-0.5 text-[10px] h-5 px-1.5 shrink-0", sig.color)}>
               {sig.emoji} {sig.label}
             </Badge>
             <span className="text-xs text-muted-foreground truncate">
-              {sig.tickers.slice(0, 4).join(", ")}
-              {sig.tickers.length > 4 && ` +${sig.tickers.length - 4}`}
+              {sig.tickers.slice(0, 4).join(", ")}{sig.tickers.length > 4 ? ` +${sig.tickers.length - 4}` : ""}
             </span>
-            <ChevronRight className="size-3.5 ml-auto shrink-0 text-muted-foreground" />
+            <ArrowRight className="size-3 ml-auto shrink-0 text-muted-foreground" />
           </Link>
         ))}
-        <Link
-          to="/screener"
-          className="block text-center text-xs text-primary hover:underline pt-1"
-        >
-          → Ouvrir le screener
+        <Link to="/screener" className="block pt-1 text-center text-xs text-primary hover:underline">
+          Ouvrir le screener →
         </Link>
-      </CardContent>
-    </Card>
-  )
-}
-
-// ─── Flux experts ─────────────────────────────────────────────────────────────
-
-function FeedCard({ item }: { item: FeedItem }) {
-  return (
-    <a
-      href={item.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex items-start gap-3 rounded-md px-2 py-2 hover:bg-muted/50 transition-colors"
-    >
-      <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-muted text-[9px] font-bold uppercase">
-        {item.sourceName.slice(0, 2)}
       </div>
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-1 text-[10px] text-muted-foreground mb-0.5">
-          <PlatformIcon platform={item.platform} />
-          <span className="font-medium">{item.sourceName}</span>
-          <span>·</span>
-          <span>{timeAgo(item.publishedAt)}</span>
-        </div>
-        <p className="text-xs font-medium leading-snug line-clamp-2 group-hover:text-primary transition-colors">
-          {item.title}
-        </p>
-        {item.tickers.length > 0 && (
-          <div className="flex gap-1 mt-1 flex-wrap">
-            {item.tickers.slice(0, 3).map((t) => (
-              <Link
-                key={t}
-                to={`/stock/${t}`}
-                onClick={(e) => e.stopPropagation()}
-                className="text-[9px] font-mono bg-muted px-1 rounded hover:bg-primary/10 hover:text-primary transition-colors"
-              >
-                {t}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
-      <ExternalLink className="size-3 shrink-0 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity mt-0.5" />
-    </a>
+    </div>
   )
 }
 
@@ -149,105 +182,121 @@ function TopActions({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
     return all
       .map((s) => ({ stock: s, score: computeScore(s, all) }))
       .sort((a, b) => b.score.total - a.score.total)
-      .slice(0, 5)
+      .slice(0, 7)
   }, [stocks])
 
   if (top.length === 0) return null
 
   return (
-    <Card>
-      <CardHeader className="pb-2">
-        <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-          Top actions du moment
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="divide-y pb-2">
+    <div className="rounded-xl border border-border bg-card p-5">
+      <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+        Top actions
+      </h3>
+      <div className="divide-y divide-border">
         {top.map(({ stock, score }) => (
           <Link
             key={stock.ticker}
             to={`/stock/${stock.ticker}`}
-            className="flex items-center gap-3 py-2 hover:bg-muted/50 -mx-2 px-2 rounded transition-colors"
+            className="flex items-center gap-3 py-2.5 -mx-2 px-2 rounded hover:bg-muted/40 transition-colors"
           >
-            <div className="w-20 truncate font-mono text-xs font-medium">{stock.ticker}</div>
-            <div className="flex-1 truncate text-xs text-muted-foreground">{stock.name}</div>
-            <div className={cn("text-xs font-semibold tabular-nums", score.labelColor)}>
+            <span className="w-20 shrink-0 font-mono text-xs font-semibold text-foreground">{stock.ticker}</span>
+            <span className="flex-1 truncate text-sm text-muted-foreground">{stock.name}</span>
+            {stock.priceChangePercent != null && (
+              <span className={cn("text-xs tabular-nums w-14 text-right shrink-0", stock.priceChangePercent >= 0 ? "text-emerald-500" : "text-destructive")}>
+                {stock.priceChangePercent >= 0 ? "+" : ""}{formatPercent(stock.priceChangePercent)}
+              </span>
+            )}
+            <span className={cn("text-xs font-bold tabular-nums w-8 text-right shrink-0",
+              score.total >= 8 ? "text-emerald-400" : score.total >= 6 ? "text-yellow-400" : "text-red-400"
+            )}>
               {score.total.toFixed(1)}
-            </div>
-            <div className={cn("text-[10px]", score.total >= 7 ? "text-emerald-600" : score.total >= 5 ? "text-yellow-600" : "text-red-500")}>
-              {score.total >= 9 ? "A+" : score.total >= 8 ? "A" : score.total >= 7 ? "B+" : score.total >= 6 ? "B" : score.total >= 5 ? "C" : "D"}
-            </div>
+            </span>
           </Link>
         ))}
-        <Link to="/screener" className="block pt-2 text-center text-xs text-primary hover:underline">
-          Voir toutes les actions →
-        </Link>
-      </CardContent>
-    </Card>
+      </div>
+      <Link to="/screener" className="block mt-2 text-center text-xs text-primary hover:underline">
+        Voir toutes les actions →
+      </Link>
+    </div>
+  )
+}
+
+// ─── Features strip ───────────────────────────────────────────────────────────
+
+function FeaturesStrip() {
+  return (
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      {[
+        { icon: <BarChart2 className="size-5" />, title: "Screener intelligent", desc: "Filtrez par score, secteur, capitalisation, dividende, momentum et 30+ critères." },
+        { icon: <Star className="size-5" />, title: "Score /10 par action", desc: "7 piliers (valorisation, qualité, croissance…) combinés en un seul score actionnable." },
+        { icon: <Shield className="size-5" />, title: "Paper PEA", desc: "Investissez virtuellement sans risque. Suivez vos performances vs le marché." },
+      ].map(({ icon, title, desc }) => (
+        <div key={title} className="rounded-xl border border-border bg-card p-5 hover:border-primary/30 transition-colors">
+          <div className="mb-3 inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            {icon}
+          </div>
+          <h4 className="font-heading font-semibold mb-1.5">{title}</h4>
+          <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+        </div>
+      ))}
+    </div>
   )
 }
 
 // ─── Dashboard ────────────────────────────────────────────────────────────────
 
 export function DashboardPage() {
-  const { data: feedData, loading: feedLoading } = useFeed()
   const { data: stocksData, loading: stocksLoading } = useStocks()
 
-  const recentFeedItems = useMemo(() => {
-    if (!feedData) return []
-    return feedData.items
-      .filter((i) => i.tier <= 2)
-      .slice(0, 8)
-  }, [feedData])
+  const stats = useMemo(() => {
+    if (!stocksData) return null
+    const updated = stocksData.generatedAt
+      ? new Date(stocksData.generatedAt).toLocaleDateString("fr-FR", { day: "numeric", month: "long" })
+      : null
+    return { count: stocksData.count, updated }
+  }, [stocksData])
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold tracking-tight">Bourse Molle</h1>
-        <p className="text-sm text-muted-foreground">
-          Votre veille bourse quotidienne — actions européennes, experts FR, données fondamentales
+    <div className="space-y-8">
+      {/* Ticker tape */}
+      {!stocksLoading && <div className="-mx-4 sm:-mx-6"><TickerTape stocks={stocksData} /></div>}
+
+      {/* Hero */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold uppercase tracking-widest text-primary">Analyse boursière</p>
+        <h1 className="font-heading text-3xl font-bold tracking-tight lg:text-4xl">
+          L'investissement simplifié,{" "}
+          <span className="text-primary">sans le bruit.</span>
+        </h1>
+        <p className="text-muted-foreground max-w-xl">
+          Screener, scores et signaux pour investisseurs long terme — marchés européens et américains.
         </p>
+        {stats && (
+          <p className="text-xs text-muted-foreground">
+            {stats.count} actions · données du {stats.updated}
+          </p>
+        )}
+        <div className="flex items-center gap-3 pt-1">
+          <Link
+            to="/screener"
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground hover:opacity-90 transition-opacity"
+          >
+            Ouvrir le screener <ArrowRight className="size-4" />
+          </Link>
+          <Link to="/methodologie" className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4">
+            Voir la méthodologie
+          </Link>
+        </div>
       </div>
 
+      {/* Hero card + side */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_340px]">
-        {/* Colonne principale */}
-        <div className="space-y-6">
-          {/* Flux experts */}
-          <Card>
-            <CardHeader className="pb-2">
-              <CardTitle className="flex items-center justify-between text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                <span>Flux experts</span>
-                {feedData && (
-                  <span className="text-[10px] normal-case font-normal">
-                    {feedData.items.length} contenus · mis à jour {timeAgo(feedData.generatedAt)}
-                  </span>
-                )}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="pb-4">
-              {feedLoading ? (
-                <p className="py-4 text-center text-sm text-muted-foreground">Chargement...</p>
-              ) : recentFeedItems.length === 0 ? (
-                <div className="py-6 text-center space-y-2">
-                  <p className="text-sm text-muted-foreground">Aucun contenu disponible.</p>
-                  <p className="text-xs text-muted-foreground">
-                    Lancez <code className="bg-muted px-1 rounded text-xs">pnpm ingest-feed</code> pour agréger les contenus.
-                  </p>
-                </div>
-              ) : (
-                <div className="divide-y -mx-2">
-                  {recentFeedItems.map((item) => (
-                    <FeedCard key={item.id} item={item} />
-                  ))}
-                </div>
-              )}
-            </CardContent>
-          </Card>
+        <div className="space-y-4">
+          {!stocksLoading && <HeroStockCard stocks={stocksData} />}
+          <FeaturesStrip />
         </div>
-
-        {/* Colonne latérale */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {!stocksLoading && <SignauxDuJour stocks={stocksData} />}
-          <Separator className="lg:hidden" />
           {!stocksLoading && <TopActions stocks={stocksData} />}
         </div>
       </div>

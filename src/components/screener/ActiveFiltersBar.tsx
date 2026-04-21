@@ -35,6 +35,42 @@ function rangeLabel(name: string, range: RangeFilter, bounds: { min: number; max
 export function ActiveFiltersBar({ filters, onChange, onReset }: ActiveFiltersBarProps) {
   const chips: FilterChip[] = []
 
+  if (filters.freshnessMaxDays > 0) {
+    const labels: Record<number, string> = { 3: "MAJ < 3j 🟢", 7: "MAJ < 7j 🟡", 14: "MAJ < 14j 🟠" }
+    chips.push({
+      key: "freshnessMaxDays",
+      label: labels[filters.freshnessMaxDays] ?? `MAJ < ${filters.freshnessMaxDays}j`,
+      onDismiss: () => onChange({ freshnessMaxDays: 0 }),
+    })
+  }
+
+  if (isRangeActive(filters.scoreGlobal, FILTER_BOUNDS.scoreGlobal)) {
+    chips.push({
+      key: "scoreGlobal",
+      label: rangeLabel("Score", filters.scoreGlobal, FILTER_BOUNDS.scoreGlobal, (n) => n.toFixed(1)),
+      onDismiss: () => onChange({ scoreGlobal: DEFAULT_FILTERS.scoreGlobal }),
+    })
+  }
+
+  const subScoreFields = [
+    { key: "scoreValorisation" as const, label: "Valo." },
+    { key: "scoreQualite" as const, label: "Qualité" },
+    { key: "scoreCroissance" as const, label: "Croiss." },
+    { key: "scoreSante" as const, label: "Santé" },
+    { key: "scoreDividende" as const, label: "Div." },
+    { key: "scoreMomentum" as const, label: "Mom." },
+    { key: "scoreQuant" as const, label: "Quant" },
+  ] as const
+  for (const { key, label } of subScoreFields) {
+    if (isRangeActive(filters[key], FILTER_BOUNDS[key])) {
+      chips.push({
+        key,
+        label: rangeLabel(label, filters[key], FILTER_BOUNDS[key], (n) => n.toFixed(1)),
+        onDismiss: () => onChange({ [key]: DEFAULT_FILTERS[key] }),
+      })
+    }
+  }
+
   if (isRangeActive(filters.marketCap, FILTER_BOUNDS.marketCap)) {
     chips.push({
       key: "marketCap",

@@ -41,6 +41,12 @@ export function filterStocks(
       if (!filters.countries.includes(s.country)) return false
     }
 
+    if (filters.freshnessMaxDays > 0) {
+      const dateStr = s.lastFundamentalsUpdate ?? s.fetchedAt
+      const ageDays = (Date.now() - new Date(dateStr).getTime()) / 86_400_000
+      if (ageDays > filters.freshnessMaxDays) return false
+    }
+
     return true
   })
 }
