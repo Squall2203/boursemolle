@@ -16,25 +16,29 @@ interface PresetBarProps {
   onReset: () => void
 }
 
+function rangeEq(a: { min: number; max: number }, b: { min: number; max: number }) {
+  return a.min === b.min && a.max === b.max
+}
+
 function isPresetActive(preset: Preset, filters: ScreenerFilters): boolean {
-  const target = { ...DEFAULT_FILTERS, ...preset.filters }
+  const t = { ...DEFAULT_FILTERS, ...preset.filters }
   return (
-    filters.pe.min === target.pe.min &&
-    filters.pe.max === target.pe.max &&
-    filters.roe.min === target.roe.min &&
-    filters.roe.max === target.roe.max &&
-    filters.divYield.min === target.divYield.min &&
-    filters.divYield.max === target.divYield.max &&
-    filters.marketCap.min === target.marketCap.min &&
-    filters.marketCap.max === target.marketCap.max &&
-    filters.rsi.min === target.rsi.min &&
-    filters.rsi.max === target.rsi.max &&
-    filters.perf1M.min === target.perf1M.min &&
-    filters.perf1M.max === target.perf1M.max &&
-    filters.perf6M.min === target.perf6M.min &&
-    filters.perf6M.max === target.perf6M.max &&
-    filters.perf1Y.min === target.perf1Y.min &&
-    filters.perf1Y.max === target.perf1Y.max
+    rangeEq(filters.pe, t.pe) &&
+    rangeEq(filters.roe, t.roe) &&
+    rangeEq(filters.divYield, t.divYield) &&
+    rangeEq(filters.marketCap, t.marketCap) &&
+    rangeEq(filters.rsi, t.rsi) &&
+    rangeEq(filters.perf1M, t.perf1M) &&
+    rangeEq(filters.perf6M, t.perf6M) &&
+    rangeEq(filters.perf1Y, t.perf1Y) &&
+    rangeEq(filters.scoreGlobal, t.scoreGlobal) &&
+    rangeEq(filters.scoreValorisation, t.scoreValorisation) &&
+    rangeEq(filters.scoreQualite, t.scoreQualite) &&
+    rangeEq(filters.scoreCroissance, t.scoreCroissance) &&
+    rangeEq(filters.scoreSante, t.scoreSante) &&
+    rangeEq(filters.scoreDividende, t.scoreDividende) &&
+    rangeEq(filters.scoreMomentum, t.scoreMomentum) &&
+    rangeEq(filters.scoreQuant, t.scoreQuant)
   )
 }
 
