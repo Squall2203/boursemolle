@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import { X, Moon, Sun, User, LayoutDashboard, Trophy, LogOut, ChevronDown } from "lucide-react"
-import { Link, NavLink, Outlet, useNavigate } from "react-router-dom"
+import { Link, NavLink, Outlet, useNavigate, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { SearchCommand } from "@/components/SearchCommand"
 import { ViewModeToggle } from "@/components/ViewModeToggle"
@@ -102,6 +102,8 @@ function UserMenu() {
 export function RootLayout() {
   const { theme, toggle } = useTheme()
   const { showExpertHint, dismissHint, setMode } = useViewMode()
+  const location = useLocation()
+  const showViewToggle = location.pathname === "/screener" || location.pathname.startsWith("/stock/")
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -115,7 +117,7 @@ export function RootLayout() {
           </Link>
           <SearchCommand />
           <nav className="flex items-center gap-3 text-sm">
-            <ViewModeToggle />
+            {showViewToggle && <ViewModeToggle />}
             <NavLink
               to="/screener"
               className={({ isActive }) =>

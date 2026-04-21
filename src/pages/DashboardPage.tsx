@@ -23,24 +23,26 @@ function TickerTape({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
   const doubled = [...items, ...items]
 
   return (
-    <div className="overflow-hidden border-b border-border bg-card py-2.5 text-xs">
+    <div className="overflow-hidden border-b border-border bg-card py-3 text-sm">
       <div
         className="flex whitespace-nowrap"
-        style={{ animation: "ticker 60s linear infinite" }}
+        style={{ animation: "ticker 80s linear infinite" }}
       >
         {doubled.map((s, i) => (
           <Link
             key={`${s.ticker}-${i}`}
             to={`/stock/${s.ticker}`}
-            className="mx-8 inline-flex items-center gap-2 font-mono hover:opacity-80 transition-opacity"
+            className="mx-10 inline-flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            <span className="font-semibold text-foreground">{s.ticker}</span>
-            <span className="text-muted-foreground">
-              {s.price?.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {s.currency === "EUR" ? "€" : s.currency === "USD" ? "$" : s.currency}
+            <span className="font-mono font-bold text-foreground">{s.ticker}</span>
+            <span className="text-muted-foreground max-w-[140px] truncate">{s.name}</span>
+            <span className="font-mono text-foreground">
+              {s.price?.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
+              <span className="text-muted-foreground">{s.currency === "EUR" ? "€" : s.currency === "USD" ? "$" : s.currency}</span>
             </span>
             {s.priceChangePercent != null && (
-              <span className={s.priceChangePercent >= 0 ? "text-emerald-500" : "text-destructive"}>
-                {s.priceChangePercent >= 0 ? "+" : ""}{s.priceChangePercent.toFixed(2)}%
+              <span className={cn("font-mono font-medium", s.priceChangePercent >= 0 ? "text-emerald-500" : "text-destructive")}>
+                {s.priceChangePercent >= 0 ? "▲" : "▼"}{Math.abs(s.priceChangePercent).toFixed(2)}%
               </span>
             )}
           </Link>
