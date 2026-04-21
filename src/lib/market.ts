@@ -8,6 +8,7 @@ const ASIA_EXCHANGES = new Set(["Tokyo", "HKSE", "YHD"])
 const ASIA_COUNTRIES = new Set(["Japan", "China", "Hong Kong"])
 const US_COUNTRIES = new Set(["United States"])
 
+
 export function getStockRegion(stock: Stock): StockRegion {
   if (US_EXCHANGES.has(stock.exchange) || US_COUNTRIES.has(stock.country)) return "us"
   if (ASIA_EXCHANGES.has(stock.exchange) || ASIA_COUNTRIES.has(stock.country)) return "asia"
