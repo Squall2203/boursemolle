@@ -35,6 +35,15 @@ function rangeLabel(name: string, range: RangeFilter, bounds: { min: number; max
 export function ActiveFiltersBar({ filters, onChange, onReset }: ActiveFiltersBarProps) {
   const chips: FilterChip[] = []
 
+  if (filters.market) {
+    const marketLabels = { pea: "🇪🇺 Europe PEA", us: "🇺🇸 États-Unis", asia: "🌏 Asie" }
+    chips.push({
+      key: "market",
+      label: marketLabels[filters.market] ?? filters.market,
+      onDismiss: () => onChange({ market: "" }),
+    })
+  }
+
   if (filters.freshnessMaxDays > 0) {
     const labels: Record<number, string> = { 3: "MAJ < 3j 🟢", 7: "MAJ < 7j 🟡", 14: "MAJ < 14j 🟠" }
     chips.push({

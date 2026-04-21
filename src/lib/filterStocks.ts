@@ -5,6 +5,7 @@ import {
   type RangeFilter,
   type ScreenerFilters,
 } from "@/types/filters"
+import { matchesMarketFilter } from "@/lib/market"
 
 function inRange(
   value: number | null,
@@ -40,6 +41,8 @@ export function filterStocks(
     if (filters.countries.length > 0) {
       if (!filters.countries.includes(s.country)) return false
     }
+
+    if (filters.market && !matchesMarketFilter(s, filters.market)) return false
 
     if (filters.freshnessMaxDays > 0) {
       const dateStr = s.lastFundamentalsUpdate ?? s.fetchedAt

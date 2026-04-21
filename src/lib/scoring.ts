@@ -1,4 +1,5 @@
 import type { Stock } from "@/types/stock"
+import { getStockRegion, type StockRegion } from "@/lib/market"
 
 // ─── Types ───
 
@@ -795,17 +796,33 @@ function getLabelColor(label: ScoreLabel): string {
 
 // ─── MAIN ───
 
-let cachedStats: Map<string, SectorStats> | null = null
+// Regional stats cache: one SectorStats map per region (eu/us/asia)
+let cachedRegionalStats: Map<StockRegion, Map<string, SectorStats>> | null = null
 let cachedUniverseRef: Stock[] | null = null
+
+function buildRegionalStats(universe: Stock[]): Map<StockRegion, Map<string, SectorStats>> {
+  const byRegion = new Map<StockRegion, Stock[]>([["eu", []], ["us", []], ["asia", []]])
+  for (const s of universe) {
+    byRegion.get(getStockRegion(s))!.push(s)
+  }
+  const result = new Map<StockRegion, Map<string, SectorStats>>()
+  for (const [region, stocks] of byRegion) {
+    // Fall back to global pool if regional pool is too small (< 20 stocks)
+    result.set(region, computeAllSectorStats(stocks.length >= 20 ? stocks : universe))
+  }
+  return result
+}
 
 export function computeScore(stock: Stock, universe: Stock[]): StockScore {
   if (cachedUniverseRef !== universe) {
-    cachedStats = computeAllSectorStats(universe)
+    cachedRegionalStats = buildRegionalStats(universe)
     cachedUniverseRef = universe
   }
 
+  const region = getStockRegion(stock)
+  const statsForRegion = cachedRegionalStats!.get(region)!
   const sector = stock.sector ?? "Unknown"
-  const stats = cachedStats!.get(sector) ?? {
+  const stats = statsForRegion.get(sector) ?? {
     pe: [], evEbitda: [], pb: [], roe: [], roa: [], marginOpe: [], marginNette: [], count: 0,
   }
 

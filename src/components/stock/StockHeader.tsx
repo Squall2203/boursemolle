@@ -9,6 +9,7 @@ import { LetterGrade, getGrade } from "@/components/LetterGrade"
 import { useViewMode } from "@/hooks/useViewMode"
 import { cn } from "@/lib/utils"
 import { formatMarketCap, formatPercent, formatPrice } from "@/lib/format"
+import { getStockRegion } from "@/lib/market"
 import type { StockScore, PillarDetail, MetricDetail } from "@/lib/scoring"
 import type { Stock } from "@/types/stock"
 
@@ -180,11 +181,15 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
 
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="space-y-1">
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2">
             <h1 className="text-2xl font-bold tracking-tight">{stock.name}</h1>
-            {stock.peaEligible && (
-              <Badge variant="secondary" className="text-xs uppercase">
-                PEA
+            {stock.peaEligible ? (
+              <Badge variant="secondary" className="text-xs uppercase text-emerald-600 dark:text-emerald-400 border-emerald-500/30 bg-emerald-500/10">
+                🇪🇺 PEA
+              </Badge>
+            ) : (
+              <Badge variant="outline" className="text-xs text-muted-foreground">
+                {getStockRegion(stock) === "us" ? "🇺🇸 CTO uniquement" : getStockRegion(stock) === "asia" ? "🌏 CTO uniquement" : "Hors PEA"}
               </Badge>
             )}
           </div>

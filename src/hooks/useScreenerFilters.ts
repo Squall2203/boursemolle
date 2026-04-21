@@ -84,6 +84,7 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
       scoreMomentum: parseRange(searchParams, "scoreMomentum", FILTER_BOUNDS.scoreMomentum),
       scoreQuant: parseRange(searchParams, "scoreQuant", FILTER_BOUNDS.scoreQuant),
       freshnessMaxDays: parseNum(searchParams, "freshnessMaxDays", 0),
+      market: (searchParams.get("market") ?? "") as "" | "pea" | "us" | "asia",
       indices: parseList(searchParams, "indices"),
       sectors: parseList(searchParams, "sectors"),
       countries: parseList(searchParams, "countries"),
@@ -115,6 +116,8 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
           applyRange(params, "scoreMomentum", merged.scoreMomentum, FILTER_BOUNDS.scoreMomentum)
           applyRange(params, "scoreQuant", merged.scoreQuant, FILTER_BOUNDS.scoreQuant)
           applyNum(params, "freshnessMaxDays", merged.freshnessMaxDays, 0)
+          if (merged.market) params.set("market", merged.market)
+          else params.delete("market")
           applyList(params, "indices", merged.indices)
           applyList(params, "sectors", merged.sectors)
           applyList(params, "countries", merged.countries)

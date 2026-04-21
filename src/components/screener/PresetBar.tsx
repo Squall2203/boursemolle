@@ -38,7 +38,8 @@ function isPresetActive(preset: Preset, filters: ScreenerFilters): boolean {
     rangeEq(filters.scoreSante, t.scoreSante) &&
     rangeEq(filters.scoreDividende, t.scoreDividende) &&
     rangeEq(filters.scoreMomentum, t.scoreMomentum) &&
-    rangeEq(filters.scoreQuant, t.scoreQuant)
+    rangeEq(filters.scoreQuant, t.scoreQuant) &&
+    filters.market === (t.market ?? "")
   )
 }
 

@@ -21,6 +21,7 @@ export interface ScreenerFilters {
   scoreMomentum: RangeFilter
   scoreQuant: RangeFilter
   freshnessMaxDays: number  // 0 = no filter, 3/7/14 = max days since lastFundamentalsUpdate
+  market: "" | "pea" | "us" | "asia"  // "" = tous les marchés
   indices: string[]        // empty = no filter
   sectors: string[]        // empty = no filter
   countries: string[]      // empty = no filter
@@ -64,6 +65,7 @@ export const DEFAULT_FILTERS: ScreenerFilters = {
   scoreMomentum: { min: 0, max: 10 },
   scoreQuant: { min: 0, max: 10 },
   freshnessMaxDays: 0,
+  market: "",
   indices: [],
   sectors: [],
   countries: [],

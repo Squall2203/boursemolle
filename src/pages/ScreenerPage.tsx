@@ -3,6 +3,7 @@ import { RefreshCw } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ActiveFiltersBar } from "@/components/screener/ActiveFiltersBar"
 import { FilterPanel } from "@/components/screener/FilterPanel"
+import { MarketPills } from "@/components/screener/MarketPills"
 import { PresetBar } from "@/components/screener/PresetBar"
 import { ResultsTable } from "@/components/screener/ResultsTable"
 import { SavedScreeners } from "@/components/screener/SavedScreeners"
@@ -11,6 +12,7 @@ import { useScreenerFilters } from "@/hooks/useScreenerFilters"
 import { useStocks } from "@/hooks/useStocks"
 import { useViewMode } from "@/hooks/useViewMode"
 import { filterStocks } from "@/lib/filterStocks"
+import { matchesMarketFilter, type MarketFilter } from "@/lib/market"
 import { computeScore, type StockScore } from "@/lib/scoring"
 import { FILTER_BOUNDS, isRangeActive } from "@/types/filters"
 
@@ -20,6 +22,14 @@ export function ScreenerPage() {
   const { isSimple } = useViewMode()
 
   const allStocks = data?.stocks ?? []
+
+  // Market counts for pills
+  const marketCounts = useMemo(() => {
+    const markets: MarketFilter[] = ["", "pea", "us", "asia"]
+    return Object.fromEntries(
+      markets.map((m) => [m, allStocks.filter((s) => matchesMarketFilter(s, m)).length])
+    ) as Record<MarketFilter, number>
+  }, [allStocks])
 
   const availableSectors = useMemo(() => {
     const set = new Set<string>()
@@ -114,7 +124,7 @@ export function ScreenerPage() {
           <div>
             <h1 className="text-2xl font-semibold tracking-tight">Screener</h1>
             <p className="text-sm text-muted-foreground">
-              Actions européennes — données Yahoo Finance
+              {allStocks.length} actions — Europe · États-Unis · Asie
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -139,6 +149,11 @@ export function ScreenerPage() {
             </div>
           </div>
         </header>
+        <MarketPills
+          value={filters.market}
+          onChange={(market) => setFilters({ market })}
+          counts={marketCounts}
+        />
         <div className="flex flex-wrap items-center gap-2">
           <PresetBar filters={filters} onApply={setFilters} onReset={resetFilters} />
           {!isSimple && <SavedScreeners filters={filters} onLoad={setFilters} />}
