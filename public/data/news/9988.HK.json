@@ -1,0 +1,53 @@
+{
+  "ticker": "9988.HK",
+  "last_updated": "2026-04-22T13:32:32.490372+00:00",
+  "sentiment_score": -0.08,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Tencent, Alibaba in talks to invest in DeepSeek at over $20 billion valuation, The Information reports",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/tencent-alibaba-talks-invest-deepseek-113338468.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:33:38+00:00",
+      "summary": "Chinese tech giants Tencent Holdings and Alibaba Group are in discussions to invest in artificial intelligence ‌startup DeepSeek, The Information reported on Wednesday, citing four people ‌with knowle",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alibaba (BABA) Declines More Than Market: Some Information for Investors",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-baba-declines-more-market-214505960.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:45:05+00:00",
+      "summary": "Alibaba (BABA) reached $135.38 at the closing of the latest trading day, reflecting a -3.42% change compared to its last close.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Microsoft must face $2.8 billion UK lawsuit over cloud computing licences",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-must-face-2-8-163907031.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:39:07+00:00",
+      "summary": "Microsoft must face a mass lawsuit alleging it overcharged thousands of British businesses to use Windows Server software on ‌cloud computing services provided by Amazon, Google and Alibaba, a London ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alibaba's Cost Surge Intensifies: Is Profitability Under Pressure?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alibabas-cost-surge-intensifies-profitability-161600356.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:16:00+00:00",
+      "summary": "BABA's rising costs and heavy AI, cloud and logistics investments are squeezing margins, with profits and cash flow dropping sharply in Q3 FY26.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Microsoft vs. Alibaba: Which Cloud Titan Is the Smarter Buy Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-vs-alibaba-cloud-titan-152300909.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:23:00+00:00",
+      "summary": "MSFT's cloud-AI surge, strong margins and $625B backlog highlight its edge over BABA, whose profits and cash flow face mounting pressure.",
+      "sentiment": "positif",
+      "sentiment_score": 0.6
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "CBOE",
+  "last_updated": "2026-04-22T13:17:50.857094+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Cboe Announces Agreement to Sell Cboe Australia and Cboe Canada to TMX Group",
+      "url": "https://www.prnewswire.com/news-releases/cboe-announces-agreement-to-sell-cboe-australia-and-cboe-canada-to-tmx-group-302749644.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T10:00:00+00:00",
+      "summary": "CHICAGO, April 22, 2026 /PRNewswire/ -- Cboe Global Markets, Inc. (Cboe: CBOE), a leading global markets operator and pioneer in equity derivatives, today announced that it has reached a definitive ag",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Canada’s TMX Group in Talks to Buy Cboe Australia, AFR Says",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-22/canada-s-tmx-group-in-talks-to-buy-cboe-australia-afr-says",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-22T04:56:30+00:00",
+      "summary": "Toronto Stock Exchange owner TMX Group Ltd. has become the preferred bidder to purchase Cboe Global Markets Inc.’s Australian unit, the Australian Financial Review reported, a deal that would offer so",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Transaction in Own Shares - Transaction in Own Shares 21 April 2026 • • • • • • • • • • ...",
+      "url": "https://finance.yahoo.com/news/transaction-own-shares-162700071.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T16:27:00+00:00",
+      "summary": "Transaction in Own Shares 21 April 2026 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 21 April 2026 it purchased the following number of Shares for cancellation. Aggregat",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Cboe Global Markets (CBOE) Valuation As Strait Of Hormuz Tensions Lift Volatility Index",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-cboe-global-markets-cboe-140304054.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T14:03:04+00:00",
+      "summary": "Heightened tension around the Strait of Hormuz cease-fire pushed the CBOE Volatility Index above 19.5, and that kind of move puts Cboe Global Markets (CBOE) firmly on investors’ radar. See our latest ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Amplify ETFs Launches Two Fixed Income Covered Call ETFs for Targeted Annualized Income",
+      "url": "https://finance.yahoo.com/markets/options/articles/amplify-etfs-launches-two-fixed-110000069.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T11:00:00+00:00",
+      "summary": "Introducing the Amplify LQD Investment Grade 12% Target Income ETF (LQDM) & Amplify HYG High Yield 10% Target Income ETF (HYGM)CHICAGO, April 21, 2026 (GLOBE NEWSWIRE) -- Amplify ETFs, a leading provi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

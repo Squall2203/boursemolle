@@ -1,0 +1,53 @@
+{
+  "ticker": "LSEG.L",
+  "last_updated": "2026-04-22T12:22:15.511383+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "How The Investment Story For London Stock Exchange Group (LSE:LSEG) Is Quietly Shifting",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investment-story-london-stock-exchange-220634201.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T22:06:34+00:00",
+      "summary": "The latest analyst work on London Stock Exchange Group includes a small shift in the modelled fair value, with the price target moving from £122.32 to £122.54. JPMorgan's £1.00 increase reflects refre",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bank of America Q1 2026 earnings beat on trading and interest income",
+      "url": "https://qz.com/bank-of-america-q1-2026-earnings-profit-trading-041526?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T12:03:35+00:00",
+      "summary": "Net income reached $8.6 billion as equities trading revenue climbed 30% and net interest income rose 9% to $15.9 billion",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "13 Investment Must Reads For This Week (April 14, 2026)",
+      "url": "https://www.wealthmanagement.com/etfs/13-investment-must-reads-for-this-week-april-14-2026-?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T15:55:29+00:00",
+      "summary": "Buffer ETFs have reached $87 billion in AUM and ETF sponsors continue to bring new flavors to the market. Investors continue to wrestle with the ongoing uncertainty about private credit amid the redem",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Inflation surged in March as Iran war's energy impact hit consumers",
+      "url": "https://www.foxbusiness.com/economy/cpi-inflation-march-2026?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T12:31:42+00:00",
+      "summary": "The Bureau of Labor Statistics released the latest consumer price index data which showed that CPI inflation surged in March as the Iran war's imapct took a toll on consumer prices.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Dell Lands London Stock Exchange Cloud Role With Long-Term Investor Implications",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dell-lands-london-stock-exchange-140714646.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T14:07:14+00:00",
+      "summary": "London Stock Exchange Group has entered a multi-year partnership with Dell Technologies (NYSE:DELL) to build a private cloud platform. The platform is intended to support LSEG's critical data, analyti",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

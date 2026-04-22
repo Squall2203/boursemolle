@@ -1,0 +1,53 @@
+{
+  "ticker": "SPGI",
+  "last_updated": "2026-04-22T12:57:43.771279+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "S&P upgrades SiriusPoint’s Insurance Subsidiaries to ‘A’ based on consistent robust earnings and strength of capital position",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/p-upgrades-siriuspoint-insurance-subsidiaries-172200755.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:22:00+00:00",
+      "summary": "HAMILTON, Bermuda, April 21, 2026 (GLOBE NEWSWIRE) -- S&amp;P Global Ratings (“S&amp;P”) has raised the long-term issuer credit and financial strength ratings on the core insurance operating subsidiar",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "S&P Global Energy and United Nations Sustainable Stock Exchanges are Collaborating to Advance the Energy Transition in Capital Markets",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/p-global-energy-united-nations-170000863.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:00:00+00:00",
+      "summary": "S&amp;P Global Energy and the United Nations Sustainable Stock Exchanges (UN SSE) today announced a knowledge partnership agreement aimed at advancing energy transition in capital markets by better eq",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "S&P Global (SPGI) Earnings Expected to Grow: Should You Buy?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/p-global-spgi-earnings-expected-140020478.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:20+00:00",
+      "summary": "S&amp;P Global (SPGI) doesn't possess the right combination of the two key ingredients for a likely earnings beat in its upcoming report. Get prepared with the key expectations.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Decent Global Bond Issuance Volumes to Aid Moody's Q1 Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/decent-global-bond-issuance-volumes-121800423.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:18:00+00:00",
+      "summary": "MCO eyes Q1 earnings lift as global bond issuance stays healthy; Corporate Finance revenues seen up 10% ahead of April 22 results.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Every Electric Vehicle, Every Solar Panel, Every AI Data Center Runs on Copper. The World Needs Far More of It Than Exists, Says Jim Rickards. Where Will We Get it From?",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/every-electric-vehicle-every-solar-120000305.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:00:00+00:00",
+      "summary": "Former CIA Advisor Jim Rickards Has Released a New Free Presentation Examining S&amp;P Global's Documented Copper Supply Crisis — and the Case for Why an Alaskan Deposit Could Be America's Most Strate",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

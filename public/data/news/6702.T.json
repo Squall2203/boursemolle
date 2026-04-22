@@ -1,0 +1,53 @@
+{
+  "ticker": "6702.T",
+  "last_updated": "2026-04-22T13:47:19.007144+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "FJTSY or VRT: Which Is the Better Value Stock Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fjtsy-vrt-better-value-stock-154002134.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:40:02+00:00",
+      "summary": "FJTSY vs. VRT: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fujitsu Gains Chip Design Support As Valuation Signals Possible Upside",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/fujitsu-gains-chip-design-support-220734378.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-12T22:07:34+00:00",
+      "summary": "Japan's industry ministry announced new government support for semiconductor design projects involving Fujitsu (TSE:6702) and IBM Japan. The backing focuses on design related work aimed at strengtheni",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Japan Bets $16 Billion to Propel Rapidus in Global AI Chip Race",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/japan-bets-16-billion-propel-112506649.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T11:25:06+00:00",
+      "summary": "(Bloomberg) -- Japan approved ¥631.5 billion ($4 billion) in additional subsidies to quicken Rapidus Corp.’s entry into the high-stakes AI chipmaking arena, ramping up support for a project widely reg",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Japan approves additional $4 billion for chipmaker Rapidus",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/japan-approves-additional-4-billion-055512035.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T05:55:12+00:00",
+      "summary": "Japan's industry ministry said on Saturday it ‌has approved an additional 631.5 billion ‌yen ($3.96 billion) to accelerate research and development ​at chipmaker Rapidus. The support is part of the go",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fujitsu (FJTSY) Upgraded to Buy: What Does It Mean for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fujitsu-fjtsy-upgraded-buy-does-160004471.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T16:00:04+00:00",
+      "summary": "Fujitsu (FJTSY) has been upgraded to a Zacks Rank #2 (Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

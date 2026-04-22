@@ -1,0 +1,53 @@
+{
+  "ticker": "0175.HK",
+  "last_updated": "2026-04-22T13:33:33.632836+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Chinese carmakers aim to build up presence in Europe",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/chinese-carmakers-aim-build-presence-053921324.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:39:21+00:00",
+      "summary": "Chinese carmakers have quickly built up their presence in the lucrative European auto market, buoyed by technological advances their competitors are trying to copy, and analysts say their next step is",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nissan Advances Solid-State Batteries, Targets 2028 EV Rollout",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nissan-advances-solid-state-batteries-150600001.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:06:00+00:00",
+      "summary": "NSANY targets 2028 EV rollout with solid-state batteries, achieving a key prototype milestone that can double range and slash charging times.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2026 Geely Auto International Business Partner Conference Opens in Hangzhou, \"One Geely\" Strategy Accelerates Global Development",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/2026-geely-auto-international-business-121700319.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:17:00+00:00",
+      "summary": "Geely Auto is hosting its 2026 International Business Partner Conference in Hangzhou from April 21 to 23. The conference brings together over 1,000 dealer representatives from more than 100 countries ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Global Market Stocks Estimated Below Fair Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/global-market-stocks-estimated-below-093804625.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:38:04+00:00",
+      "summary": "Recent developments in the global markets, including signs of de-escalation in the Middle East and strong corporate earnings, have bolstered investor sentiment and driven major indices to record highs",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "3 Asian Stocks That May Be Trading Below Their Estimated Intrinsic Values",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-asian-stocks-may-trading-044208086.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T04:42:08+00:00",
+      "summary": "Amidst a backdrop of geopolitical developments and economic data releases, Asian markets have shown resilience, with indices in Japan and China experiencing gains driven by optimism around diplomatic ",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    }
+  ]
+}

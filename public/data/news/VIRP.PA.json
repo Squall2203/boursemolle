@@ -1,0 +1,53 @@
+{
+  "ticker": "VIRP.PA",
+  "last_updated": "2026-04-22T11:49:27.466089+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Virbac shares jump on Q1 growth as North America surge offsets FX drag",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/virbac-shares-jump-q1-growth-080732812.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T08:07:32+00:00",
+      "summary": "Investing.com -- Shares of Virbac SA (EPA:VIRB) jumped more than 2% on Friday after the company reported first-quarter revenue of €384 million, up 7.7% at constant exchange rates and scope, driven by ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Virbac: strong Q1 2026 growth of +7.7% at CERS, driven by double-digit growth of our priority Supercharge4 platforms",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/virbac-strong-q1-2026-growth-154500402.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T15:45:00+00:00",
+      "summary": "First-quarter 2026 revenue reached €384m : +7.7% at constant exchange rate and scope (CERS) vs Q1 2025+2.2% at actual rates impacted by significant currency headwinds Balanced growth in both segments ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Virbac : Declaration of the number of shares and voting rights 03/2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/virbac-declaration-number-shares-voting-090600366.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T09:06:00+00:00",
+      "summary": "DECLARATION OF THE NUMBER OF SHARES AND VOTING RIGHTS Information on the total number of voting rights and of shares representing the share capital (Article 223-16 of the General regulations of the Fr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Virbac (ENXTPA:VIRP) Valuation As Investors Revisit The Stock’s Recent Performance",
+      "url": "https://finance.yahoo.com/news/assessing-virbac-enxtpa-virp-valuation-200543504.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T20:05:43+00:00",
+      "summary": "Why Virbac stock is on investors’ radar Virbac (ENXTPA:VIRP) has drawn fresh attention after recent price moves, with the share closing at €353. Investors are weighing this level against its recent re",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Virbac: 2025 annual results",
+      "url": "https://finance.yahoo.com/news/virbac-2025-annual-results-164500311.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T16:45:00+00:00",
+      "summary": "A robust adjusted EBIT margin² of 16.3% at CERS, driven by solid organic revenue growth of 7.9% Solid 2025 dynamic with annual revenue up +7.9% at CERS; with strong momentum in key categories and coun",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

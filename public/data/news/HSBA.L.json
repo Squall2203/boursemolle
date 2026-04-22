@@ -1,0 +1,53 @@
+{
+  "ticker": "HSBA.L",
+  "last_updated": "2026-04-22T12:20:49.624839+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Update: Market Chatter: HSBC Narrows Bidding List for Singapore Insurance Unit",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-hsbc-narrows-bidding-105338635.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:53:38+00:00",
+      "summary": "(Updates with responses from HSBC and Allianz in the third paragraph.) HSBC Holdings (HSBC) has s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Intel's Comeback May Be Taking Shape",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intels-comeback-may-taking-shape-183736380.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:37:36+00:00",
+      "summary": "Server demand starts driving the story",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HSBC Just Upgraded Intel to Buy and Raised the Price Target From $50 to $95: Is the Comeback Real?",
+      "url": "https://247wallst.com/investing/2026/04/21/hsbc-just-upgraded-intel-to-buy-and-raised-the-price-target-from-50-to-95-is-the-comeback-real/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:51:38+00:00",
+      "summary": "Intel (NASDAQ:INTC) just earned a strong endorsement from HSBC, with analyst Frank Lee upgrading INTC stock from Hold to Buy and nearly doubling the price target from $50 to $95. The rating change sig",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "NYSE Content Update: UiPath Celebrates Five-Year Listing Anniversary at NYSE",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nyse-content-uipath-celebrates-five-125500012.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:55:00+00:00",
+      "summary": "The New York Stock Exchange (NYSE) provides a daily pre-market update directly from the NYSE Trading Floor. Access today's NYSE Pre-market update for market insights before trading begins.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HSBC Holdings (HSBC) Gets Downgraded to Neutral From Outperform by BNP Paribas",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hsbc-holdings-hsbc-gets-downgraded-221602186.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T22:16:02+00:00",
+      "summary": "HSBC Holdings (NYSE:HSBC) is one of the best cheap stocks for beginners to invest in. HSBC Holdings (NYSE:HSBC) was downgraded to Neutral from Outperform by BNP Paribas on April 14, with the firm sett",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

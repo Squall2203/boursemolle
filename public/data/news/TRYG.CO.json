@@ -1,0 +1,53 @@
+{
+  "ticker": "TRYG.CO",
+  "last_updated": "2026-04-22T12:44:24.555331+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Tryg - Transactions in connection with share buyback programme",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tryg-transactions-connection-share-buyback-080000475.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T08:00:00+00:00",
+      "summary": "On 22 January 2026, Tryg A/S (“Tryg”) announced that the Board of Directors had decided to initiate a share buyback programme of up to DKK 1.0 billion. The share buyback programme is executed in accor",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tryg AS (TGVSF) Q1 2026 Earnings Call Highlights: Strong Premium Growth and Robust Solvency ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tryg-tgvsf-q1-2026-earnings-070033491.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T07:00:33+00:00",
+      "summary": "Tryg AS (TGVSF) reports a solid quarter with 3.5% premium growth, a strong insurance service result, and a stable solvency ratio, despite geopolitical and inflationary challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tryg A/S - Interim report Q1 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tryg-interim-report-q1-2026-053000557.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T05:30:00+00:00",
+      "summary": "Tryg’s Supervisory Board has today approved the interim report for Q1 2026. Tryg reported a strong insurance service result of DKK 1,655m (DKK 1,540m) and a combined ratio of 84.0% (84.2%) in Q1 2026.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Notice of the annual general meeting of Tryg A/S",
+      "url": "https://finance.yahoo.com/news/notice-annual-general-meeting-tryg-100000071.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T10:00:00+00:00",
+      "summary": "The annual general meeting of Tryg A/S will be held on Thursday 26 March 2026 at 15:00 CET at the company’s Head Office, Klausdalsbrovej 601, Ballerup. The agenda is as follows: 1) The Supervisory Boa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Tryg (CPSE:TRYG) After Recent Share Price Weakness",
+      "url": "https://finance.yahoo.com/news/assessing-tryg-cpse-tryg-recent-231530412.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T23:15:30+00:00",
+      "summary": "If you are wondering whether Tryg shares are offering fair value or a potential bargain at today's price, it helps to look past the headline share price and focus on what the underlying numbers sugges",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ALC.SW",
+  "last_updated": "2026-04-22T12:34:22.983297+00:00",
+  "sentiment_score": 0.1,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "How The Failed Alcon Deal Is Reframing The LENSAR (LNSR) Story And $10 Upside Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/failed-alcon-deal-reframing-lensar-050324004.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T05:03:24+00:00",
+      "summary": "The updated analyst narrative around LENSAR now centers on a $10 price target that sits above a model fair value of $8.50 per share, giving you a clear reference point for how some on the Street are f",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "National Advertising Division Finds Certain ACUVUE® Oasys Max Claim Supported; Recommends Modification or Discontinuation of Others",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/national-advertising-division-finds-certain-144800588.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:48:00+00:00",
+      "summary": "Following a challenge brought by Alcon, Inc., BBB National Programs’ National Advertising Division determined that Johnson & Johnson Vision Care, Inc. (JJVC) had a reasonable basis for the claim “MAX ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Abbott Stock Falls Despite Q1 Earnings & Revenue Beat",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/abbott-stock-falls-despite-q1-171200129.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T17:12:00+00:00",
+      "summary": "ABT slips 4% despite Q1 beats as margin pressure, Nutrition weakness and lowered 2026 EPS guidance weigh on investor sentiment.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.5
+    },
+    {
+      "title": "Is it a Prudent Move to Retain IDXX Stock in Your Portfolio Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/prudent-move-retain-idxx-stock-170100299.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T17:01:00+00:00",
+      "summary": "IDEXX rides on strong diagnostics growth and software momentum, but FX pressure and weak solvency cloud its outlook - should investors hold now?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Are Medical Stocks Lagging  Alcon (ALC) This Year?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/medical-stocks-lagging-alcon-alc-134002947.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T13:40:02+00:00",
+      "summary": "Here is how Alcon (ALC) and Brainsway Ltd. Sponsored ADR (BWAY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

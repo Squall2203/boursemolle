@@ -1,0 +1,53 @@
+{
+  "ticker": "1810.HK",
+  "last_updated": "2026-04-22T13:32:07.923859+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Chinese EVs look to sideline foreign brands at Beijing auto show",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/chinese-evs-look-sideline-foreign-124346048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:43:46+00:00",
+      "summary": "The world's biggest auto show opens in Beijing on Friday, as Chinese manufacturers solidify their status as industry innovators and foreign brands face ferocious competition in the country's giant car",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Omdia: India’s smartphone shipments fell 5% in 1Q26 amid channel caution and pricing pressures",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/omdia-india-smartphone-shipments-fell-030200331.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T03:02:00+00:00",
+      "summary": "LONDON, April 21, 2026--The latest Omdia research shows that India’s smartphone shipments fell by 5% year on year to 30.9 million units in 1Q26, reflecting seasonally weak demand compounded by cautiou",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Huawei Unfurls Foldable Phone While Apple Stages China Comeback",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/huawei-unfurls-foldable-phone-while-101737055.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:17:37+00:00",
+      "summary": "(Bloomberg) -- Huawei Technologies Co. unveiled its latest foldable phone on Monday, betting on the novel format to flesh out its lineup and fend off resurgent competition in China from Apple Inc.Most",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AI’s Token Economy Revolution Creates New China Tech Winners",
+      "url": "https://finance.yahoo.com/news/ais-token-economy-revolution-creates-new-china-tech-winners-035211861.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T03:52:11+00:00",
+      "summary": "(Bloomberg) -- China’s cheap artificial intelligence models are rapidly attracting global users and creating new winners in the nation’s stock market.Most Read from BloombergCruise Ships Seized Brief ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Apple's China Comeback Leaves Android Rivals Behind",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apples-china-comeback-leaves-android-135045374.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:50:45+00:00",
+      "summary": "iPhone shipments rise 20% as rivals struggle with pricing pressure",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

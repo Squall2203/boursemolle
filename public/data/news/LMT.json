@@ -1,0 +1,53 @@
+{
+  "ticker": "LMT",
+  "last_updated": "2026-04-22T13:01:03.431599+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Earnings To Watch: Lockheed Martin (LMT) Reports Q1 Results Tomorrow",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-lockheed-martin-lmt-093323926.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:33:23+00:00",
+      "summary": "Security and Aerospace company Lockheed Martin (NYSE:LMT) will be reporting earnings this Thursday morning. Here’s what you need to know.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "General Atomics to Deliver Infrared Payloads for Lockheed Martin's Space Development Agency Tracking Layer Tranche 3 Constellation Contract",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/general-atomics-deliver-infrared-payloads-225500852.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:55:00+00:00",
+      "summary": "SAN DIEGO, CA / ACCESS Newswire / April 21, 2026 / General Atomics Electromagnetic Systems (GA-EMS) was awarded a contract from Lockheed Martin to deliver missile warning, tracking, and defense (MWTD)",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "RTX, Northrop, GE Aerospace Beat Views, But Stocks Diverge. Pentagon Details Budget Request.",
+      "url": "https://finance.yahoo.com/m/3f5af19c-a572-3ba9-a9bb-3f227ccea289/rtx%2C-northrop%2C-ge-aerospace.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:51:42+00:00",
+      "summary": "RTX, Northrop Grumman, GE Aerospace clear estimates, Lockheed Martin follows Thursday. Pentagon releases budget details amid Iran war.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Corporate America Is Making Billions. That Might Not Matter if Growth Doesn’t Improve.",
+      "url": "https://finance.yahoo.com/m/01c6c49d-094c-3442-8dc1-e35430facd98/corporate-america-is-making.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:11:00+00:00",
+      "summary": "Collective S&amp;P 500 profits are forecast to rise more than 14% over the first quarter, to just under $608 billion.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LMT vs. GD: Which Defense Stock Looks More Attractive Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lmt-vs-gd-defense-stock-153000613.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:30:00+00:00",
+      "summary": "Both Lockheed Martin and General Dynamics are top-tier Pentagon contractors with diversified defense portfolios, including combat systems and naval programs.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

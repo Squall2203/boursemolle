@@ -1,0 +1,53 @@
+{
+  "ticker": "ABBN.SW",
+  "last_updated": "2026-04-22T12:33:21.700929+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European chip, electrical stocks surge as AI optimism builds on earnings",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/european-chip-electrical-stocks-surge-110002562.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:00:02+00:00",
+      "summary": "Shares in European chip and electrical equipment makers rallied on Wednesday as investors piled into stocks set to ‌benefit from the artificial intelligence investment boom, following upbeat earnings ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "New 34.5kV HiPerGuard UPS: direct grid connection cuts AI data center power costs",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/34-5kv-hiperguard-ups-direct-210500284.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:05:00+00:00",
+      "summary": "ABB's new 34.5kV HiPerGuard UPS ABB unveils new voltage 34.5kV HiPerGuard UPS coming soon. ABB’s microgrid-ready UPS architecture Direct grid connection with ABB's 34.5kV HiPerGuard UPS reduces conver",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Global Continuous Emission Monitoring Systems Market Size/Share Worth USD 9.67 Billion by 2035 at a 9.2% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/global-continuous-emission-monitoring-systems-193000322.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:30:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Continuous Emission Monitoring Systems Market size & share revenue wa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ABB (SWX:ABBN) Valuation Check As Eva Copper Mine Contract Highlights Growth In Electrification",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/abb-swx-abbn-valuation-check-011038532.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T01:10:38+00:00",
+      "summary": "ABB (SWX:ABBN) has agreed to supply gearless and ring-geared mill drive systems for the Eva Copper Mine Project in Queensland, Australia, putting its mining technology in focus for investors. See our ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Blink Charging Teams with Lake City Hotels to Celebrate Earth Day at Comfort Suites Lake City, Florida",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/blink-charging-teams-lake-city-131500679.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:15:00+00:00",
+      "summary": "Blink Offering Two Hours of Free EV Charging at Lake City Florida Location and Week-Long Charging Credit Promotion starting Earth Day (April 22, 2026). Bowie, MD, April 16, 2026 (GLOBE NEWSWIRE) -- Bl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

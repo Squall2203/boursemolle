@@ -1,0 +1,53 @@
+{
+  "ticker": "BAS.DE",
+  "last_updated": "2026-04-22T11:50:28.670979+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "BASFY Expands Nunhem Seed Hub With 40M Euro Sustainable Investment",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/basfy-expands-nunhem-seed-hub-120600635.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T12:06:00+00:00",
+      "summary": "BASF invests 40M Euro to upgrade seed processing in Nunhem, boosting capacity, sustainability and efficiency to meet rising global demand.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "[Latest] Global Zinc Agriculture Micronutrients Market Size/Share Worth USD 6.14 Billion by 2035 at a 7.1% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/latest-global-zinc-agriculture-micronutrients-173000282.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T17:30:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Zinc Agriculture Micronutrients Market size & share revenue was value",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "D-Wave CEO on quantum computing's ChatGPT moment, Nvidia, & more",
+      "url": "https://finance.yahoo.com/video/d-wave-ceo-on-quantum-computings-chatgpt-moment-nvidia--more-152350565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T15:23:50+00:00",
+      "summary": "D-Wave Quantum (QBTS) president and CEO Alan Baratz sits down with Yahoo Finance Executive Editor Brian Sozzi to discuss Nvidia's (NVDA) artificial intelligence (AI) models for quantum computing, the ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is It Too Late To Consider BASF (XTRA:BAS) After A 38% One-Year Rally?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-basf-xtra-bas-043224365.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T04:32:24+00:00",
+      "summary": "If you are wondering whether BASF at €53.58 is priced attractively or not, the key is to separate short term excitement from what the fundamentals suggest the shares might be worth. The stock has deli",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing BASF (XTRA:BAS) Valuation As Fine Chemicals Sector Growth Draws Fresh Attention",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-basf-xtra-bas-valuation-101003289.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T10:10:03+00:00",
+      "summary": "Recent research on the fine chemicals sector has highlighted structured growth, tighter regulation, and long term supply needs, which has put BASF (XTRA:BAS) in focus for its R&amp;D capabilities and ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

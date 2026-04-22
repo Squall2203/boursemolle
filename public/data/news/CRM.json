@@ -1,0 +1,53 @@
+{
+  "ticker": "CRM",
+  "last_updated": "2026-04-22T12:52:01.757533+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Achieve Partners: $450 Million Fund Closed To Build AI-Ready Workforce Through Apprenticeships",
+      "url": "https://pulse2.com/achieve-partners-450-million-fund-closed-to-build-ai-ready-workforce-through-apprenticeships/",
+      "source": "pulse2.com",
+      "published_at": "2026-04-22T11:21:44+00:00",
+      "summary": "Achieve Partners announced the close of Achieve Partners Workforce II, a $450 million fund aimed at addressing labor market disruption driven by artificial intelligence and persistent talent shortages",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Key Client Fiduciary Advisors LLC Purchases 3,757 Shares of Salesforce Inc. $CRM",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-key-client-fiduciary-advisors-llc-purchases-3757-shares-of-salesforce-inc-crm-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:15:18+00:00",
+      "summary": "Key Client Fiduciary Advisors LLC grew its position in Salesforce Inc. (NYSE:CRM - Free Report) by 1,040.7% in the 4th quarter, according to its most recent 13F filing with the Securities and Exchange",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Meta deploys employee tracking software to train AI models",
+      "url": "https://crypto.news/meta-deploys-employee-tracking-software-to-train-ai-models/",
+      "source": "crypto.news",
+      "published_at": "2026-04-22T11:13:50+00:00",
+      "summary": "Meta Platforms has started rolling out internal tracking software on devices used by its U.S.-based employees, gathering data such as mouse movements and keystrokes to support the training of artifici",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Contractor Commerce launches AI-powered conversational buying experience",
+      "url": "https://www.prnewswire.com/news-releases/contractor-commerce-launches-ai-powered-conversational-buying-experience-302749472.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T11:01:00+00:00",
+      "summary": "New technology ushers in new era of e-commerce for home service contracting companies LEBANON, Ohio , April 22, 2026 /PRNewswire/ -- Contractor Commerce, a leading e-commerce and sales enablement plat",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Best Buy names Jason Bonfig as new CEO, replacing Corie Barry in late October",
+      "url": "https://www.cnbc.com/2026/04/22/best-buy-jason-bonfig-ceo-corie-barry.html",
+      "source": "cnbc.com",
+      "published_at": "2026-04-22T11:00:27+00:00",
+      "summary": "The leadership change comes as the company tries to rev up sales and capitalize on artificial intelligence-fueled innovation of laptops and mobile phones.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

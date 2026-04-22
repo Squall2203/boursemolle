@@ -1,0 +1,53 @@
+{
+  "ticker": "BESI.AS",
+  "last_updated": "2026-04-22T12:03:44.557996+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is Lam Research Corporation (LRCX) Eyeing Besi Industries Merger Amid IBM Pact for Logic Scaling",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-corporation-lrcx-eyeing-165320856.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-22T20:04:20+00:00",
+      "summary": "Lam Research Corporation (NASDAQ:LRCX) is one of the best forever stocks to buy now. On March 12, Reuters reported that Lam Research Corp (NASDAQ:LRCX) is one of the suitors eyeing a potential deal to",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Lam Research BESI Talks Highlight Push Into Advanced Packaging Content",
+      "url": "https://finance.yahoo.com/news/lam-research-besi-talks-highlight-150908002.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T15:09:08+00:00",
+      "summary": "Lam Research (NasdaqGS:LRCX) has reportedly held takeover talks with BE Semiconductor Industries (BESI). The discussions point to potential M&amp;A activity that could affect the semiconductor equipme",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Exclusive-Besi fields takeover interest on surging demand for advanced chip packaging, sources say",
+      "url": "https://finance.yahoo.com/news/exclusive-besi-attracts-takeover-interest-233959838.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T23:39:59+00:00",
+      "summary": "BE Semiconductor Industries has attracted takeover interest as its chip-packaging technology becomes increasingly strategic for semiconductor equipment manufacturers, according to three people familia",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Hybrid Bonding Delays Test BE Semiconductor Industries Valuation And Growth Story",
+      "url": "https://finance.yahoo.com/news/hybrid-bonding-delays-test-semiconductor-150932725.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-07T15:09:32+00:00",
+      "summary": "Leading memory chipmakers such as Samsung and SK Hynix are discussing new thickness limits for high bandwidth memory packaging. These talks could postpone the rollout of hybrid bonding in HBM producti",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "BE Semiconductor Falls on HBM Standard Change Concerns",
+      "url": "https://finance.yahoo.com/news/semiconductor-falls-hbm-standard-change-190405206.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T19:04:05+00:00",
+      "summary": "Report suggests thicker HBM designs could delay hybrid bonding adoption",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

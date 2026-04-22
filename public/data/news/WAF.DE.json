@@ -1,0 +1,53 @@
+{
+  "ticker": "WAF.DE",
+  "last_updated": "2026-04-22T12:01:05.046907+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Siltronic AG (SSLLF) Q4 2025 Earnings Call Highlights: Navigating Challenges with Strategic ...",
+      "url": "https://finance.yahoo.com/news/siltronic-ag-ssllf-q4-2025-150130021.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T15:01:30+00:00",
+      "summary": "Despite a dip in revenue and EBIT margin, Siltronic AG (SSLLF) showcases robust EBITDA and strategic advancements in the semiconductor industry.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Siltronic Releases Its Guidance for Financial Year 2026",
+      "url": "https://finance.yahoo.com/news/siltronic-releases-guidance-financial-2026-215604034.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T21:56:04+00:00",
+      "summary": "Group sales expected to be in the mid-single-digit percent range below the previous year at an assumed exchange rate of EUR/USD 1.18(2025 preliminary: EUR 1,347 million) EBITDA margin projected within",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Siltronic (XTRA:WAF) Valuation After Strong Q4 Update And Cautious 2026 Outlook",
+      "url": "https://finance.yahoo.com/news/assessing-siltronic-xtra-waf-valuation-140521603.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-07T14:05:21+00:00",
+      "summary": "Siltronic (XTRA:WAF) is back in focus after reporting better than expected preliminary Q4 results and meeting its 2025 targets, while also providing a cautious outlook for 2026. See our latest analysi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Chip materials supplier Siltronic warns of challenging 2026, knocking shares",
+      "url": "https://finance.yahoo.com/news/siltronics-preliminary-results-beat-estimates-061740897.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T06:17:40+00:00",
+      "summary": "German semiconductor wafer maker Siltronic warned on Tuesday its markets would remain challenging in 2026, even as it reported ​better-than-expected preliminary results for the fourth quarter aided by",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Silicon EPI Wafers Market to Grow by 26% During 2026-2030 Driven by AI and 5G Expansion - Shin-Etsu Chemical Co., Siltronic, GlobalWafers Co., and SK Siltron Co. Dominate",
+      "url": "https://finance.yahoo.com/news/silicon-epi-wafers-market-grow-120600829.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T12:06:00+00:00",
+      "summary": "Key opportunities include the rise in high-performance computing & automotive applications, the expansion driven by 5G infrastructure, and innovation in next-gen epitaxy technologies Silicon EPI Wafer",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

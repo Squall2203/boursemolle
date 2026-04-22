@@ -1,0 +1,53 @@
+{
+  "ticker": "FITB",
+  "last_updated": "2026-04-22T13:09:49.620706+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Insider Selling: Fifth Third Bancorp (NASDAQ:FITB) EVP Sells 6,000 Shares of Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/insider-selling-fifth-third-bancorp-nasdaqfitb-evp-sells-6000-shares-of-stock-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T22:38:51+00:00",
+      "summary": "Fifth Third Bancorp (NASDAQ:FITB - Get Free Report) EVP Kevin Khanna sold 6,000 shares of the stock in a transaction that occurred on Monday, April 20th. The shares were sold at an average price of $5",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "FIFTH THIRD BANCORP: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/35527/000207826326000003/0002078263-26-000003-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-21T20:50:28+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FIFTH THIRD BANCORP: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/35527/000203636826000003/0002036368-26-000003-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-21T20:49:45+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fifth Third Bancorp Announces Preliminary Results of Annual Shareholders Meeting",
+      "url": "http://www.businesswire.com/news/home/20260421671645/en/Fifth-Third-Bancorp-Announces-Preliminary-Results-of-Annual-Shareholders-Meeting/?feedref=JjAwJuNHiystnCoBq_hl-XEemlDQ6NgDkiei3bSxnzGlJCVVeQL8sr5Wvng8AXxRSfe41V1BKA-b6v2ZVrSSNs-dUYKiDvY7XniNSqv88QcY1Ge_vf9QIMZ4alzIf_0HE01s4RTGeX_C4TDnN9C9Cg==",
+      "source": "businesswire.com",
+      "published_at": "2026-04-21T20:15:00+00:00",
+      "summary": "CINCINNATI--(BUSINESS WIRE)--Fifth Third Bancorp (Nasdaq: FITB) has announced that preliminary results from the Annual Shareholders Meeting held earlier today have indicated the following directors we",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Evercore Issues Positive Forecast for Fifth Third Bancorp (NASDAQ:FITB) Stock Price",
+      "url": "https://www.marketbeat.com/instant-alerts/evercore-issues-positive-forecast-for-fifth-third-bancorp-nasdaqfitb-stock-price-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T14:36:56+00:00",
+      "summary": "Evercore boosted their price objective on Fifth Third Bancorp from $51.00 to $53.00 in a research note on Tuesday.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

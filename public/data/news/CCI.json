@@ -1,0 +1,53 @@
+{
+  "ticker": "CCI",
+  "last_updated": "2026-04-22T13:12:49.183543+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "MSCI Q1 Earnings Beat Estimates, Revenues Rise Y/Y, Shares Up",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/msci-q1-earnings-beat-estimates-171100418.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:11:00+00:00",
+      "summary": "MSCI's Q1'26 earnings beat estimates as revenues jump 14% and margins expand, fueled by asset-based fees and recurring subscriptions.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "What's in Store for Crown Castle Stock This Earnings Season?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/whats-store-crown-castle-stock-164900979.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:49:00+00:00",
+      "summary": "CCI faces revenue pressure and rising expenses ahead of Q1 results, even as wireless demand growth supports its long-term outlook.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Crown Castle (CCI) Valuation After Recent Tower Focus And Share Price Moves",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-crown-castle-cci-valuation-140352869.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T14:03:52+00:00",
+      "summary": "Why Crown Castle is on investors’ radar today Crown Castle (CCI) is drawing fresh attention after recent share price moves, with the stock up about 2% over the past day and roughly 4% over the past mo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "4 Reasons to Add Welltower Stock to Your Portfolio Right Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/4-reasons-add-welltower-stock-150900462.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:09:00+00:00",
+      "summary": "WELL rides strong SHO growth, strategic U.K. acquisitions and solid liquidity as rising healthcare demand and demographics fuel long-term upside.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Zillow Unveils Buzz Index to Identify Features Liked by Home Buyers",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zillow-unveils-buzz-index-identify-133100236.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:31:00+00:00",
+      "summary": "Z unveils Buzz Index to spotlight high-demand home features, helping sellers boost engagement and pricing while guiding buyers to trending properties.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

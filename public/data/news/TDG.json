@@ -1,0 +1,53 @@
+{
+  "ticker": "TDG",
+  "last_updated": "2026-04-22T13:05:12.201320+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SpaceX Financials Are Leaking Out. What Surprised Us.",
+      "url": "https://finance.yahoo.com/m/ee2b5d6a-59fc-3045-8927-57a0317062a4/spacex-financials-are-leaking.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:20:00+00:00",
+      "summary": "FEATURE  SpaceX is meeting with aerospace and tech analysts in Boca Chica, Texas, ahead of its trillion-dollar IPO.  Some numbers have started to leak out. They are impressive. (And Barron’s did a dec",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Steve Cohen’s Point72 Is Aggressively Buying These 3 Stocks. Here’s Why They’re Worth a Closer Look",
+      "url": "https://247wallst.com/investing/2026/04/21/steve-cohens-point72-is-aggressively-buying-these-3-stocks-heres-why-theyre-worth-a-closer-look/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:01:15+00:00",
+      "summary": "Steve Cohen isn’t known for making slow, passive bets. Through Point72 Asset Management, he runs one of the most aggressive multi-strategy hedge funds in the world, constantly reallocating capital tow",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 Big Reasons to Love TransDigm (TDG)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-big-reasons-love-transdigm-191751984.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:17:51+00:00",
+      "summary": "Since October 2025, TransDigm has been in a holding pattern, posting a small loss of 3.2% while floating around $1,287. The stock also fell short of the S&amp;P 500’s 5.8% gain during that period.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Jim Cramer Says “I Don’t Know Why I Need TransDigm, and I Don’t Know Why You Need It Either”",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-don-t-171857627.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:18:57+00:00",
+      "summary": "TransDigm Group Incorporated (NYSE:TDG) was among Jim Cramer’s recent stock calls on Mad Money. When a caller asked about the stock, Cramer remarked: Ooh, interesting because you know, I like Boeing. ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "TransDigm Balances Strong Q2 Update With New Fixed Income Debt",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/transdigm-balances-strong-q2-fixed-190440001.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T19:04:40+00:00",
+      "summary": "TransDigm Group (NYSE:TDG) released strong preliminary financial results for its second quarter. The company reported continued strength across both commercial and defense aerospace product lines. Alo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

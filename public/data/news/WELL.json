@@ -1,0 +1,53 @@
+{
+  "ticker": "WELL",
+  "last_updated": "2026-04-22T13:10:50.819648+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Welltower’s UK Senior Care Deals Reshape Growth And Risk Profile",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/welltower-uk-senior-care-deals-170247087.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T17:02:47+00:00",
+      "summary": "Welltower, NYSE:WELL, has expanded in the United Kingdom through large acquisitions of senior care property portfolios operated by Barchester and HC-One Group. These deals increase the company’s expos",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Prologis Guidance 2026: What Raised Outlook Means for PLD Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/prologis-guidance-2026-raised-outlook-170400871.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:04:00+00:00",
+      "summary": "PLD rises after Q1 core FFO beat and higher 2026 outlook, with stronger occupancy and same-store NOI growth targets.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "4 Reasons to Add Welltower Stock to Your Portfolio Right Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/4-reasons-add-welltower-stock-150900462.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:09:00+00:00",
+      "summary": "WELL rides strong SHO growth, strategic U.K. acquisitions and solid liquidity as rising healthcare demand and demographics fuel long-term upside.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 Best Vanguard Dividend ETFs for Reliable Passive Income in 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-best-vanguard-dividend-etfs-091650323.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T10:04:06+00:00",
+      "summary": "Dividend investing is a simple way to earn steady income, especially in volatile markets. Many investors prefer stable dividend-paying companies, and Vanguard ETFs offer a low-cost way to get that inc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Prologis' Q1 FFO & Revenues Beat Estimates on Strong Leasing Execution",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/prologis-q1-ffo-revenues-beat-165300893.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T16:53:00+00:00",
+      "summary": "PLD beats Q1 estimates as strong leasing drives higher FFO, revenue growth, and improved outlook.",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    }
+  ]
+}

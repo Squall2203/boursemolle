@@ -1,0 +1,53 @@
+{
+  "ticker": "V",
+  "last_updated": "2026-04-22T12:50:03.527089+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Emissary Wealth LLC Makes New Investment in Visa Inc. $V",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-emissary-wealth-llc-makes-new-investment-in-visa-inc-v-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:03:59+00:00",
+      "summary": "Emissary Wealth LLC acquired a new stake in Visa Inc. (NYSE:V - Free Report) in the 4th quarter, according to the company in its most recent 13F filing with the SEC. The firm acquired 9,597 shares of ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Stablecoins Move Toward Mainstream Payments as Binance Cites Visa-Beating Volume",
+      "url": "https://news.bitcoin.com/stablecoins-move-toward-mainstream-payments-as-binance-cites-visa-beating-volume/",
+      "source": "bitcoin.com",
+      "published_at": "2026-04-22T01:30:29+00:00",
+      "summary": "Stablecoin transaction volume has surpassed Visa in raw terms, Binance Research said, signaling rapid growth in blockchain-based payments. The data highlights expanding adoption, though much of the ac",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "BMO Capital initiates Visa stock coverage with outperform rating",
+      "url": "https://www.investing.com/news/analyst-ratings/bmo-capital-initiates-visa-stock-coverage-with-outperform-rating-93CH-4627824",
+      "source": "investing.com",
+      "published_at": "2026-04-21T21:58:52+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Visa (NYSE:V) Stock Price Down 1.3% - Time to Sell?",
+      "url": "https://www.marketbeat.com/instant-alerts/visa-nysev-stock-price-down-13-time-to-sell-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T21:15:18+00:00",
+      "summary": "Visa (NYSE:V) Shares Down 1.3% - Time to Sell?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "It’s Level 3 or Bust as Visa’s Interchange Shift Rewires B2B Data",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/its-level-3-or-bust-as-visas-interchange-shift-rewires-b2b-data/",
+      "source": "pymnts.com",
+      "published_at": "2026-04-21T16:54:30+00:00",
+      "summary": "B2B payments are becoming a data-rich world. That’s creating new challenges for data-poor businesses. As of Saturday (April 18), Visa’s Commercial Enhanced Data Program (CEDP) officially phased out it",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

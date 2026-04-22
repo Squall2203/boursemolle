@@ -1,0 +1,53 @@
+{
+  "ticker": "AUTO.L",
+  "last_updated": "2026-04-22T12:26:20.509080+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "How The Autotrader Group (LSE:AUTO) Investment Story Is Shifting As Analysts Turn More Cautious",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/autotrader-group-lse-auto-investment-112144052.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T11:21:44+00:00",
+      "summary": "Autotrader Group's fair value estimate has been revised down from £8.60 to £6.98, a cut of around 19% that puts fresh focus on how much upside is actually on the table. That shift sits alongside a wav",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is There An Opportunity With Autotrader Group plc's (LON:AUTO) 38% Undervaluation?",
+      "url": "https://finance.yahoo.com/news/opportunity-autotrader-group-plcs-lon-085614142.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-08T08:56:14+00:00",
+      "summary": "Key Insights The projected fair value for Autotrader Group is UK£7.78 based on 2 Stage Free Cash Flow to Equity...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Will Weakness in Auto Trader Group plc's (LON:AUTO) Stock Prove Temporary Given Strong Fundamentals?",
+      "url": "https://finance.yahoo.com/news/weakness-auto-trader-group-plcs-092416606.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-27T09:24:16+00:00",
+      "summary": "Auto Trader Group (LON:AUTO) has had a rough three months with its share price down 23%. But if you pay close...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Auto Trader Group's (LON:AUTO) five-year total shareholder returns outpace the underlying earnings growth",
+      "url": "https://finance.yahoo.com/news/auto-trader-groups-lon-auto-132000453.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-21T13:20:00+00:00",
+      "summary": "While Auto Trader Group plc ( LON:AUTO ) shareholders are probably generally happy, the stock hasn't had particularly...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "FTSE 100 hits new high on electricity generator SSE spark and gold gains",
+      "url": "https://uk.finance.yahoo.com/news/ftse-100-hits-high-electricity-172037235.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-12T17:20:37+00:00",
+      "summary": "The FTSE 100 index closed up 11.82 points, or 0.1%, at 9,911.42, a record closing peak.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

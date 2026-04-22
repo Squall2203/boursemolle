@@ -1,0 +1,53 @@
+{
+  "ticker": "8058.T",
+  "last_updated": "2026-04-22T13:47:55.572375+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Berkshire Taps Yen Bonds: Does This Signal Confidence in Japan?",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/berkshire-taps-yen-bonds-does-180800958.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T18:08:00+00:00",
+      "summary": "BRK.B sells 272.3B in yen bonds, hedging currency risk and funding Japan bets as its trading-house stakes jump in value.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "RCI BANQUE: ISSUANCE OF EUR 900 MILLION FIXED RATE NOTES MATURING IN FEBRUARY 2030",
+      "url": "https://finance.yahoo.com/markets/options/articles/rci-banque-issuance-eur-900-190800747.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T19:08:00+00:00",
+      "summary": "PRESS RELEASE April 14th, 2026 RCI BANQUE: ISSUANCE OF EUR 900 MILLION FIXED RATE NOTES MATURING IN FEBRUARY 2030 RCI Banque, operating under the commercial brand Mobilize Financial Services, announce",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Divert Secures Strategic Partnership with Mitsubishi to Scale Circular Infrastructure Across North America",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/divert-secures-strategic-partnership-mitsubishi-130000148.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T13:00:00+00:00",
+      "summary": "WEST CONCORD, Mass., April 14, 2026--Divert, Inc. and Mitsubishi Corporation announce strategic partnership to scale circular infrastructure across North America.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mitsubishi Partners With Yami To Test Higher Margin Consumer Growth In North America",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mitsubishi-partners-yami-test-higher-051106417.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T05:11:06+00:00",
+      "summary": "Mitsubishi Corporation has entered a partnership with Yami to expand Japanese food and lifestyle brands across North America. The collaboration includes plans to use Mitsubishi’s supplier network and ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Digital Realty Opens NRT14 Data Center, Third Facility at NRT Campus in Japan",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/digital-realty-opens-nrt14-data-023500897.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T02:35:00+00:00",
+      "summary": "Supporting Diverse AI Infrastructure with a High-Power, High-Density Liquid- and Air-Cooling Hybrid Environment Optimized for Next-Generation GPUs Digital Realty Opens NRT14 Data Center, Third Facilit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

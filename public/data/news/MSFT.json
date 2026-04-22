@@ -1,0 +1,53 @@
+{
+  "ticker": "MSFT",
+  "last_updated": "2026-04-22T12:48:21.686964+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "SIS Unveils Fixed-Price ERP Implementation Program for Mid-Sized Specialty Contractors",
+      "url": "https://www.prnewswire.com/news-releases/sis-unveils-fixed-price-erp-implementation-program-for-mid-sized-specialty-contractors-302749623.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T11:30:00+00:00",
+      "summary": "DULUTH, Ga., April 22, 2026 /PRNewswire/ -- With over 25 years of expertise in the Architecture, Engineering, and Construction (A/E/C) sectors, SIS, LLC—a top Microsoft Dynamics 365 partner—has introd",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
+      "url": "https://www.fool.com/investing/2026/04/22/ranking-magnificent-seven-most-to-least-attractive/",
+      "source": "fool.com",
+      "published_at": "2026-04-22T11:26:00+00:00",
+      "summary": "Among Nvidia, Alphabet, Apple, Microsoft, Amazon, Meta Platforms, and Tesla, there are two screaming bargains and one pricey company whose valuation can't be justified. Key PointsThe Magnificent Seven",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Microsoft extends rare handshake to Google with upcoming Edge feature",
+      "url": "https://www.neowin.net/news/microsoft-extends-rare-handshake-to-google-with-upcoming-edge-feature/",
+      "source": "neowin.net",
+      "published_at": "2026-04-22T11:16:01+00:00",
+      "summary": "Edge is gaining a feature for Google queries, hinting at a rare Microsoft shift that could blur lines with Bing in enterprise use. Read more...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "UK tribunal sends £2B claim accusing Microsoft of overcharging for licensing to trial",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/04/22/microsoft_licensing_claim_cat/",
+      "source": "theregister.com",
+      "published_at": "2026-04-22T11:08:04+00:00",
+      "summary": "Legal action claims tech giant charges more for Windows Server when it's not on Azure A UK Competition Appeals Tribunal (CAT) has dismissed Microsoft's objections to a collective action lawsuit brough",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "I didn't think I'd ever leave Chrome until I tried this lightweight browser",
+      "url": "https://www.makeuseof.com/firefox-focus-lightweight-browser-replace-chrome/",
+      "source": "makeuseof.com",
+      "published_at": "2026-04-22T11:00:17+00:00",
+      "summary": "This lightweight browser might just replace Chrome for good. I prefer a Chromium-based browser like Microsoft Edge or Perplexity Comet on my PC. On my phone, however, Chrome has always worked well eno",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

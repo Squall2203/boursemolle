@@ -1,0 +1,53 @@
+{
+  "ticker": "BIM.PA",
+  "last_updated": "2026-04-22T11:40:26.704775+00:00",
+  "sentiment_score": 0.27,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "BioMerieux SA (BMXMF) Full Year 2025 Earnings Call Highlights: Strong Organic Growth and ...",
+      "url": "https://finance.yahoo.com/news/biomerieux-sa-bmxmf-full-2025-210524177.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-27T21:05:24+00:00",
+      "summary": "BioMerieux SA (BMXMF) reports robust financial results with significant growth in cash flow and strategic expansions in its BIOFIRE and SPOTFIRE systems.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why The Narrative Around bioMérieux (ENXTPA:BIM) Is Shifting As Analysts Rebalance Risk And Growth",
+      "url": "https://finance.yahoo.com/news/why-narrative-around-biom-rieux-151024685.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-24T15:10:24+00:00",
+      "summary": "bioMérieux’s latest analyst update keeps the Fair Value target steady at €119.12, even as underlying model inputs such as the discount rate and revenue assumptions are fine tuned. Both bullish and bea",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "bioMérieux launches SMARTBIOME™ to help food manufacturers gain deeper insights into spoilage and protect product quality",
+      "url": "https://finance.yahoo.com/news/biom-rieux-launches-smartbiome-help-143000317.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-18T14:30:00+00:00",
+      "summary": "bioMérieux, a world leader in the field of in vitro diagnostics, today announces the launch of SMARTBIOME™, an innovative solution designed to help food manufacturers better understand, control and pr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Commonwealth Fusion Systems Names Stephane Bancel to Board of Directors",
+      "url": "https://finance.yahoo.com/news/commonwealth-fusion-systems-names-stephane-130000132.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-12T13:00:00+00:00",
+      "summary": "Commonwealth Fusion Systems (CFS), the largest and leading private fusion company, today announced that Stephane Bancel, the Chief Executive Officer of Moderna Inc. who led that company's successful d",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Clinical Microbiology Market Set to Reach USD 7.4 Billion by 2032, Driven by Advancements in Diagnostics and Rising Infectious Disease Rates – SNS Insider",
+      "url": "https://finance.yahoo.com/news/clinical-microbiology-market-set-reach-131500606.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-28T13:15:00+00:00",
+      "summary": "Clinical Microbiology Market Growth Fueled by Reagent Innovation, Advanced Instrumentation, and Increasing Prevalence of Respiratory and Bloodstream Infections Worldwide.Austin, Oct. 28, 2025 (GLOBE N",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

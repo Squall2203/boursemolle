@@ -1,0 +1,53 @@
+{
+  "ticker": "EQR",
+  "last_updated": "2026-04-22T13:11:15.312235+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Equity Lifestyle Properties (ELS) Matches Q1 FFO Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/equity-lifestyle-properties-els-matches-213502082.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:35:02+00:00",
+      "summary": "Equity Lifestyle Properties (ELS) delivered FFO and revenue surprises of +0.45% and -0.98%, respectively, for the quarter ended March 2026. Do the numbers hold clues to what lies ahead for the stock?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EQR Q4 2025 Earnings Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/04/21/eqr-q4-2025-earnings-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:24:20+00:00",
+      "summary": "Mark Parrell: Thank you, Marty.  2025 was a challenging year for the rental housing industry, including Equity Residential.  In many of our coastal markets, we saw stronger-than-expected rental growth",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "EQR settles RealPage lawsuit for $56M",
+      "url": "https://www.multifamilydive.com/news/antitrust-collusion-lawsuit-realpage-eqr/817846/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T12:50:39+00:00",
+      "summary": "The Chicago-based REIT joins Camden and other peers to resolve allegations that it illegally fixed and inflated rents.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Equity Residential Announces First Quarter 2026 Earnings Release Date",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/equity-residential-announces-first-quarter-213500053.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T21:35:00+00:00",
+      "summary": "CHICAGO, April 13, 2026--Equity Residential (NYSE: EQR) today announced that the Company will release its first quarter 2026 operating results on Tuesday, April 28, 2026, after the close of market and",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What to Expect From Equity Residential’s Next Quarterly Earnings Report",
+      "url": "https://www.barchart.com/story/news/1267312/what-to-expect-from-equity-residentials-next-quarterly-earnings-report?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T04:57:15+00:00",
+      "summary": "Equity Residential is all set to post its FY2026 Q1 earnings in the near term, and analysts are anticipating its bottom line to rise in the single digit.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

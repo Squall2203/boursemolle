@@ -1,0 +1,53 @@
+{
+  "ticker": "9984.T",
+  "last_updated": "2026-04-22T13:42:49.476774+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Persian Gulf Outlook Roils Asian Stock Markets",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/persian-gulf-outlook-roils-asian-104105857.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:41:05+00:00",
+      "summary": "Asian stock markets turned in a choppy Wednesday as traders weighed a unilateral extension of a Pers",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Here’s What TD Cowen Thinks About Tempus AI Inc (TEM) Stock",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/td-cowen-thinks-tempus-ai-205041783.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T20:50:41+00:00",
+      "summary": "Tempus AI Inc (NASDAQ:TEM) is among the best medical AI stocks to buy now. Tempus has partnered with SoftBank, Gilead, and Merck on AI-driven drug development programs. Analysts are growing more confi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SoftBank (TSE:9434) Valuation Check After Recent Share Price Momentum And Mixed P/E And Cash Flow Signals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/softbank-tse-9434-valuation-check-190336350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T19:03:36+00:00",
+      "summary": "SoftBank’s recent share performance and business mix SoftBank (TSE:9434) has drawn fresh investor interest after a solid stretch of recent returns, including 0.9% over the past day and 6.2% over the p",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider SoftBank Group (TSE:9984) After Its 167% One-Year Surge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-softbank-group-tse-110624990.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T11:06:24+00:00",
+      "summary": "If you are wondering whether SoftBank Group's current share price reflects its true worth or just recent excitement, this article walks through the key numbers that matter. SoftBank Group's stock most",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "IPO Stock Of The Week: Japan-Based PayPay Nears First Buy Point As Public Company",
+      "url": "https://finance.yahoo.com/m/48188edc-563c-3dde-bcd3-255dfb23bba5/ipo-stock-of-the-week%3A.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T19:50:16+00:00",
+      "summary": "IPO Stock Of The Week: Japan-based PayPay is approaching its first buy point as a public company. PayPay stock debuted on March 12.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

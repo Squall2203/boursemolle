@@ -1,0 +1,53 @@
+{
+  "ticker": "AFX.DE",
+  "last_updated": "2026-04-22T11:59:39.460574+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Has Carl Zeiss Meditec (XTRA:AFX) Fallen Too Far After Recent Medtech Reassessment?",
+      "url": "https://finance.yahoo.com/news/carl-zeiss-meditec-xtra-afx-111037656.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-25T11:10:37+00:00",
+      "summary": "If you are wondering whether Carl Zeiss Meditec is simply out of favour or actually offers value at its current price, this article is going to focus squarely on what the numbers are saying. The stock",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Cataract Surgery Devices Market Companies Analysis, Company Profiles, Strategic Developments, Mergers, Product Innovations, Revenue Insights, and Future Forecasts",
+      "url": "https://finance.yahoo.com/news/cataract-surgery-devices-market-companies-090200048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-24T09:02:00+00:00",
+      "summary": "The cataract surgery devices market is poised for growth, projected to expand from USD 9.25 billion in 2025 to USD 12.47 billion by 2033, with a CAGR of 3.80%. Key drivers include rising cataract inci",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ZEISS launches Collaborative Care application to strengthen continuity of care; new solution offers on-premises and cloud-based options",
+      "url": "https://finance.yahoo.com/news/zeiss-launches-collaborative-care-application-140000874.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-23T14:00:00+00:00",
+      "summary": "ZEISS Medical Technology, one of the world's leading medical technology companies, today launched its ZEISS Collaborative Care browser-based software application enabling eye care professionals to sea",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Carl Zeiss Meditec AG (CZMWF) Q1 2026 Earnings Call Highlights: Navigating Challenges with ...",
+      "url": "https://finance.yahoo.com/news/carl-zeiss-meditec-ag-czmwf-010057637.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-20T01:00:57+00:00",
+      "summary": "Despite a challenging start to the fiscal year, Carl Zeiss Meditec AG (CZMWF) leverages its strong brand and strategic initiatives in China to counteract revenue and EBITA declines.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Carl Zeiss Meditec Q1 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/carl-zeiss-meditec-q1-earnings-call-highlights-2026-02-16/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-16T11:03:10+00:00",
+      "summary": "Carl Zeiss Meditec (ETR:AFX) reported a weaker-than-expected start to fiscal 2025/26, as management cited currency headwinds, an unfavorable product mix, and challenges in China and the U.S. as key dr",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

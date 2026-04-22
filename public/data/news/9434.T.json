@@ -1,0 +1,53 @@
+{
+  "ticker": "9434.T",
+  "last_updated": "2026-04-22T13:47:06.764389+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "SoftBank Corp. Prepares First Euro Bond As Parent Explores $40 Billion Loan",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/softbank-corp-prepares-first-euro-195555584.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T19:55:55+00:00",
+      "summary": "Investor calls begin for six- and 10-year euro debt as SoftBank expands AI-linked funding strategy",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Microsoft to Invest $10 Billion in Japan on AI Infrastructure, Cybersecurity",
+      "url": "https://www.wsj.com/tech/ai/microsoft-to-invest-10-billion-in-japan-on-ai-infrastructure-cybersecurity-3942b41f?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T05:39:00+00:00",
+      "summary": "The U.S. tech giant is teaming up with Japanese companies including SoftBank.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Foresight Announces Fourth Quarter and Full Year 2025 Financial Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/foresight-announces-fourth-quarter-full-125500363.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T12:55:00+00:00",
+      "summary": "NESS ZIONA, Israel, March 26, 2026 (GLOBE NEWSWIRE) -- Foresight Autonomous Holdings Ltd., (Nasdaq and TASE: FRSX) (“Foresight” or the “Company”), an innovator in 3D perception systems, today reported",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ericsson to expand and modernize SoftBank Corp.'s core network in Japan",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ericsson-expand-modernize-softbank-corp-120900264.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T12:09:00+00:00",
+      "summary": "Ericsson (NASDAQ: ERIC) has signed a multi-year framework agreement with SoftBank Corp. (SoftBank) in Japan to deploy next-generation core network solutions to expand and modernize SoftBank's core net",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How Investors Are Reacting To SoftBank (TSE:9434) Pivoting Its Network Into an AI-Native Cloud Platform",
+      "url": "https://finance.yahoo.com/news/investors-reacting-softbank-tse-9434-071043056.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-10T07:10:43+00:00",
+      "summary": "In early March 2026, SoftBank Corp. outlined its Telco AI Cloud vision, repositioning itself from a conventional telecom carrier to an AI-native infrastructure provider that distributes intelligence a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

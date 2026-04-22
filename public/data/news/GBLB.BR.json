@@ -1,0 +1,53 @@
+{
+  "ticker": "GBLB.BR",
+  "last_updated": "2026-04-22T12:07:41.864488+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Groupe Bruxelles Lambert (ENXTBR:GBLB): Assessing Valuation After Recent Period of Steady Share Price Gains",
+      "url": "https://finance.yahoo.com/news/groupe-bruxelles-lambert-enxtbr-gblb-133756440.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-04T13:37:56+00:00",
+      "summary": "Groupe Bruxelles Lambert (ENXTBR:GBLB) is attracting close attention from investors lately after shares posted steady gains over the past month, climbing 3% and up 7% over the past 3 months. The moves",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Heineken’s Strongbow adds NaviLens levels to packaging",
+      "url": "https://www.packaging-gateway.com/news/heineken-strongbow-navilens-packaging/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T10:38:43+00:00",
+      "summary": "The cider brand has added a high-contrast NaviLens QR code to its cans.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 firms to lay off hundreds of North Jersey-based employees",
+      "url": "https://www.northjersey.com/story/news/business/2025/09/09/firms-layoffs-nj-where-jpmorgan/86043850007/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T08:28:25+00:00",
+      "summary": "BioReference health, JPMorgan Chase and an Italian fashion retailer are making the job cuts amid market uncertainty",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Temenos Named Overall Winner in IDC FinTech Real Results 2025",
+      "url": "https://finance.yahoo.com/news/temenos-named-overall-winner-idc-072800280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T07:28:00+00:00",
+      "summary": "Temenos also the winner for Bank Deposit Transformation with Credem and listed in the 2025 IDC FinTech Rankings Top 25GRAND-LANCY, Switzerland, Sept. 09, 2025 (GLOBE NEWSWIRE) -- Temenos (SIX: TEMN), ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Changes in the Management of AB Artea Bankas",
+      "url": "https://finance.yahoo.com/news/changes-management-ab-artea-bankas-063000327.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T06:30:00+00:00",
+      "summary": "The Management Board of Artea Bankas has approved changes to the management and organizational structure. The Management Board has received a notice from board member Mindaugas Rudys regarding his res",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "HEXA-B.ST",
+  "last_updated": "2026-04-22T12:40:43.121318+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Digi International Reveals 2026 Green Tech Customer Innovation Award Honorees",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/digi-international-reveals-2026-green-130000950.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:00:00+00:00",
+      "summary": "MINNEAPOLIS, April 16, 2026--Digi International Reveals 2026 Green Tech Customer Innovation Award Honorees",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Hexagon Agrees $1.45 Billion Waygate Acquisition To Expand Inspection Technology",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/hexagon-agrees-1-45-billion-185209294.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T18:52:09+00:00",
+      "summary": "Hexagon plans all-cash purchase of Waygate from Baker Hughes, adding non-destructive testing capabilities across industrial sectors.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Hexagon to acquire Waygate Technologies, expanding into non-destructive testing",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hexagon-acquire-waygate-technologies-expanding-065400127.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T06:54:00+00:00",
+      "summary": "Hexagon AB today announced that it has signed a definitive agreement to acquire Waygate Technologies, a leading provider of non-destructive testing solutions, from Baker Hughes. Waygate Technologies s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Baker Hughes Announces Sale of Waygate Technologies to Hexagon",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/baker-hughes-announces-sale-waygate-060000298.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T06:00:00+00:00",
+      "summary": "Baker Hughes to sell Waygate Technologies business to Hexagon in an all-cash transaction for approximately $1.45 billion, before customary closing adjustmentsThis transaction is consistent with Baker ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Invitation to presentation of Hexagon's Interim Report on 23 April",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invitation-presentation-hexagons-interim-report-064500725.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T06:45:00+00:00",
+      "summary": "Hexagon will release its Interim Report for the first quarter on Thursday, 23 April 2026, at approximately 08:00 CET. President and CEO Anders Svensson will present the results during a live webcast a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

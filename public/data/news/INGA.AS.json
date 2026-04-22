@@ -1,0 +1,53 @@
+{
+  "ticker": "INGA.AS",
+  "last_updated": "2026-04-22T12:04:09.037590+00:00",
+  "sentiment_score": 0.13,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Progress on share buyback programme",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/progress-share-buyback-programme-060000344.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T06:00:00+00:00",
+      "summary": "Progress on share buyback programme ING announced today that, as part of our €1.1 billion share buyback programme announced on 30 October 2025, in total 915,231 shares were repurchased during the week",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Stabilization Notice - Pre-Stab - NEW IMMO HOLDING",
+      "url": "https://finance.yahoo.com/markets/options/articles/stabilization-notice-pre-stab-immo-073500070.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T07:35:00+00:00",
+      "summary": "15.04.2026 Not for distribution, directly or indirectly, in or into the United States or any jurisdiction in which such distribution would be unlawful. NEW IMMO HOLDING Pre-stabilisation Period Announ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Results of ING’s 2026 Annual General Meeting",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/results-ing-2026-annual-general-160000884.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T16:00:00+00:00",
+      "summary": "Results of ING’s 2026 Annual General Meeting The Annual General Meeting (AGM) of ING Groep N.V. was held today in Amsterdam. The AGM approved the appointment of Ida Lerner to the Executive Board. The ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Dollar Extends Losses on Hopes for Renewed U.S.-Iran Talks",
+      "url": "https://finance.yahoo.com/m/f9f6d46a-f6b9-3016-9ad3-9e098c4c2e16/dollar-extends-losses-on.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T08:06:56+00:00",
+      "summary": "The dollar falls to a fresh six-week low against a basket of currencies on hopes for renewed U.S.-Iran talks to end the war.  President Trump said the \"right people\" in Iran had reached out and still ",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 5.8%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-dividend-stocks-yielding-053230655.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T05:32:30+00:00",
+      "summary": "As European markets experience a rally with the STOXX Europe 600 Index climbing over 3% amid easing geopolitical tensions, investors are increasingly focused on opportunities within dividend stocks. I",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

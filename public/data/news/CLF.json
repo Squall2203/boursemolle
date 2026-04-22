@@ -1,0 +1,53 @@
+{
+  "ticker": "CLF",
+  "last_updated": "2026-04-22T13:23:37.731913+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Compared to Estimates, Cleveland-Cliffs (CLF) Q1 Earnings: A Look at Key Metrics",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/compared-estimates-cleveland-cliffs-clf-000002379.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T00:00:02+00:00",
+      "summary": "The headline numbers for Cleveland-Cliffs (CLF) give insight into how the company performed in the quarter ended March 2026, but it may be worthwhile to compare some of its key metrics to Wall Street ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Steel Dynamics Sees Strong Demand For Years Amid Trump Tariffs; STLD, Nucor Break Out",
+      "url": "https://finance.yahoo.com/m/442a4886-3cce-3092-b4f8-d7f9550dbb11/steel-dynamics-sees-strong.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:56:52+00:00",
+      "summary": "STLD and Nucor edged higher early Tuesday after both steel stocks broke out during Monday's regular session ahead of Steel Dynamics' late-day earnings report.  Cleveland-Cliffs opened the first-quarte",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Cleveland-Cliffs CEO says ‘order book is full’ as steel prices rise",
+      "url": "https://www.manufacturingdive.com/news/cleveland-cliffs-q1-earnings-ceo-says-order-book-full-steel-prices-rise/818059/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:08:00+00:00",
+      "summary": "First quarter earnings increased as the flat-rolled steel provider continues its trade talks with Posco and begins to embed AI into its operations.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Company News for Apr 21, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/company-news-apr-21-2026-083500984.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T08:35:00+00:00",
+      "summary": "Companies In The Article Are: BLD,QXO, CLF, CMPS and BOH",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cleveland-Cliffs Inc (CLF) Q1 2026 Earnings Call Highlights: Strong EBITDA Growth Amid Energy ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cleveland-cliffs-inc-clf-q1-070047051.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:00:47+00:00",
+      "summary": "Cleveland-Cliffs Inc (CLF) reports a significant EBITDA increase and robust demand, despite facing energy cost spikes and market challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "9698.HK",
+  "last_updated": "2026-04-22T13:39:00.732221+00:00",
+  "sentiment_score": 0.3,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Here's How Red Cat Holdings Manufacturing Milestones Drive Performance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-red-cat-holdings-manufacturing-135300603.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:53:00+00:00",
+      "summary": "RCAT's explosive revenue surge follows its U.S. Army win, but aggressive manufacturing scale-up leads to steep losses amid rapid expansion.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is GDS (GDS) Turning Waste-Fuel Backup Power Into a Durable ESG Edge in Data Centers?",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/gds-gds-turning-waste-fuel-001644171.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T00:16:44+00:00",
+      "summary": "EcoCeres Inc recently launched a pilot project with GDS Holdings to use hydrotreated vegetable oil as a lower-carbon replacement for diesel in backup power at GDS’s high-performance data centres in Ch",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is There Longevity in Coherent's AI-Backed Growth Strategy?",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/longevity-coherents-ai-backed-growth-132800835.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T13:28:00+00:00",
+      "summary": "COHR rides AI-driven datacenter demand with surging segment growth, margin gains and rising transceiver adoption. Can this momentum last?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "TTEC Holdings Stock Drops 32% in Six Months: Should You Buy the Dip?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ttec-holdings-stock-drops-32-145800096.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T14:58:00+00:00",
+      "summary": "TTEC plunges 32% in six months, but an AI-driven strategy, strong cash flow rebound and improving liquidity signal upside.",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "RCAT's Pivot: Tech Developer to High-Volume Defense Manufacturer",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rcats-pivot-tech-developer-high-152500985.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T15:25:00+00:00",
+      "summary": "Red Cat moves from a startup to a defense-scale producer, boosting capacity across U.S. sites and hitting 1,000 drones monthly before contracts are finalized.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

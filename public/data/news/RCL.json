@@ -1,0 +1,53 @@
+{
+  "ticker": "RCL",
+  "last_updated": "2026-04-22T13:15:11.993564+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Travel + Leisure Co. (TNL) Beats Q1 Earnings and Revenue Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/travel-leisure-co-tnl-beats-114002684.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:40:02+00:00",
+      "summary": "Travel Leisure Co. (TNL) delivered earnings and revenue surprises of +10.62% and +0.93%, respectively, for the quarter ended March 2026. Do the numbers hold clues to what lies ahead for the stock?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Target Hospitality (TH) Soars 5.2%: Is Further Upside Left in the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/target-hospitality-th-soars-5-143200198.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:32:00+00:00",
+      "summary": "Target Hospitality (TH) saw its shares surge in the last session with trading volume being higher than average. The latest trend in earnings estimate revisions may not translate into further price inc",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Comparing 3 Cruise Stocks: Which Has the Most Upside in 2026?",
+      "url": "https://www.marketbeat.com/stock-ideas/comparing-3-cruise-stocks-which-has-the-most-upside-in-2026/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:45:00+00:00",
+      "summary": "Cruise stocks have upside, but performance may vary as Carnival, Royal Caribbean, and Norwegian face different fundamentals, fuel exposure, and execution challenges.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Royal Caribbean (RCL) Investment Story Is Shifting As Analyst Targets Reset",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/royal-caribbean-rcl-investment-story-110825263.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:08:25+00:00",
+      "summary": "Royal Caribbean Cruises now carries a slightly lower modeled fair value of US$348.46, down from US$362.04, a reduction of about US$13.58 in the latest update. This shift sits within a lively period of",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What Royal Caribbean Cruises (RCL)'s AI Booking Push Means For Shareholders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/royal-caribbean-cruises-rcl-ai-090715827.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:07:15+00:00",
+      "summary": "In recent days, Barclays highlighted Royal Caribbean Cruises as a leader in adopting artificial intelligence to streamline bookings and reduce dependence on third-party travel agents across the cruise",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

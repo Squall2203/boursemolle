@@ -1,0 +1,53 @@
+{
+  "ticker": "HUBS",
+  "last_updated": "2026-04-22T13:19:49.017826+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Achieve Partners: $450 Million Fund Closed To Build AI-Ready Workforce Through Apprenticeships",
+      "url": "https://pulse2.com/achieve-partners-450-million-fund-closed-to-build-ai-ready-workforce-through-apprenticeships/",
+      "source": "pulse2.com",
+      "published_at": "2026-04-22T11:21:44+00:00",
+      "summary": "Achieve Partners announced the close of Achieve Partners Workforce II, a $450 million fund aimed at addressing labor market disruption driven by artificial intelligence and persistent talent shortages",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Meta deploys employee tracking software to train AI models",
+      "url": "https://crypto.news/meta-deploys-employee-tracking-software-to-train-ai-models/",
+      "source": "crypto.news",
+      "published_at": "2026-04-22T11:13:50+00:00",
+      "summary": "Meta Platforms has started rolling out internal tracking software on devices used by its U.S.-based employees, gathering data such as mouse movements and keystrokes to support the training of artifici",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Contractor Commerce launches AI-powered conversational buying experience",
+      "url": "https://www.prnewswire.com/news-releases/contractor-commerce-launches-ai-powered-conversational-buying-experience-302749472.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T11:01:00+00:00",
+      "summary": "New technology ushers in new era of e-commerce for home service contracting companies LEBANON, Ohio , April 22, 2026 /PRNewswire/ -- Contractor Commerce, a leading e-commerce and sales enablement plat",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Best Buy names Jason Bonfig as new CEO, replacing Corie Barry in late October",
+      "url": "https://www.cnbc.com/2026/04/22/best-buy-jason-bonfig-ceo-corie-barry.html",
+      "source": "cnbc.com",
+      "published_at": "2026-04-22T11:00:27+00:00",
+      "summary": "The leadership change comes as the company tries to rev up sales and capitalize on artificial intelligence-fueled innovation of laptops and mobile phones.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Ecolab Unleashes Water Intelligence to Drive Growth in the AI Era",
+      "url": "http://www.businesswire.com/news/home/20260422376349/en/Ecolab-Unleashes-Water-Intelligence-to-Drive-Growth-in-the-AI-Era/?feedref=JjAwJuNHiystnCoBq_hl-SP7CEH_PxTjduXJ0SDrbU6qcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu67Ap_pA_yJ1XPgPy1DuJnY",
+      "source": "businesswire.com",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "ST. PAUL, Minn.--(BUSINESS WIRE)--As artificial intelligence defines a new era of growth, businesses are navigating a fast-changing world, and demand for our most critical resource, water, is rapidly ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

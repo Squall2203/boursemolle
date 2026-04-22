@@ -1,0 +1,53 @@
+{
+  "ticker": "GM",
+  "last_updated": "2026-04-22T13:03:54.574492+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "GM Cancels Next-Gen Electric Trucks as 1,300 Laid-Off Workers Return to a Factory with No Successor in Sight",
+      "url": "https://www.ibtimes.co.uk/gm-halts-next-gen-electric-trucks-detroit-plant-1792970",
+      "source": "ibtimes.co.uk",
+      "published_at": "2026-04-22T10:19:12+00:00",
+      "summary": "General Motors halts next-gen electric truck production at Factory Zero, delaying models like the Silverado EV and Hummer EV until 2030. Explore the impact on Detroit's workforce and GM's $35 billion ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Trey Hutchens trying to find that family magic at Bowman Gray Stadium",
+      "url": "https://greensboro.com/sports/other/motorsports/article_df4e303a-cf98-56ae-97c1-9e9e301d1f27.html",
+      "source": "greensboro.com",
+      "published_at": "2026-04-22T09:30:00+00:00",
+      "summary": "The Winston-Salem native's day job is as a software developer for the Cadillac F1 team for General Motors, but he's also racing some this season in his hometown.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GM suspends next-gen electric truck indefinitely as it retreats to gas",
+      "url": "https://electrek.co/2026/04/21/gm-suspends-next-gen-electric-truck-refresh-indefinitely/",
+      "source": "electrek.co",
+      "published_at": "2026-04-22T01:13:11+00:00",
+      "summary": "General Motors has indefinitely suspended plans to refresh its full-size electric truck and SUV lineup, putting the future of the Chevrolet Silverado EV, GMC Sierra EV, Hummer EV, and Cadillac Escalad",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GM Just Canceled The Next-Gen Chevy Silverado EV, GMC Hummer EV, And Cadillac Escalade IQ",
+      "url": "https://insideevs.com/news/793636/chevy-silverado-ev-sierra-ev-escalade-ev-canceled/",
+      "source": "insideevs.com",
+      "published_at": "2026-04-21T22:49:20+00:00",
+      "summary": "The current Silverado EV, Sierra EV, and Escalade IQ won't get direct successors, General Motors confirmed on Wednesday.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rick Hendrick Acquires GM Defense ISV-U Military Vehicle For Charity",
+      "url": "https://gmauthority.com/blog/2026/04/rick-hendrick-acquires-gm-defense-isv-u-military-vehicle-for-charity/",
+      "source": "gmauthority.com",
+      "published_at": "2026-04-21T20:20:03+00:00",
+      "summary": "One-off infantry vehicle fetches $1M.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

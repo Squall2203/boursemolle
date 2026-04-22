@@ -1,0 +1,53 @@
+{
+  "ticker": "1177.HK",
+  "last_updated": "2026-04-22T13:38:36.241540+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Sanofi bets on Sino Biopharm’s transplant drug in $1.5bn licensing deal",
+      "url": "https://www.pharmaceutical-technology.com/news/sanofi-1-5bn-licensing-deal-sino-biopharm-rovadicitinib-gvhd/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T19:02:16+00:00",
+      "summary": "By blocking the JAK and ROCK pathways, rovadicitinib offers a differentiated mechanism of action to best-selling, single-target GVHD drugs like Jakavi and Imbruvica.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Weighing Sino Biopharmaceutical (SEHK:1177) After Strong One Year Share Price Run",
+      "url": "https://finance.yahoo.com/news/weighing-sino-biopharmaceutical-sehk-1177-021058782.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-16T02:10:58+00:00",
+      "summary": "If you are wondering whether Sino Biopharmaceutical's current share price gives you good value, it helps to step back and look at how the market has been treating the stock recently and how that lines",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Phrontline Biopharma Raises $60 Million in Pre-A+ Financing to Advance Global Development of Bispecific and Dual-Payload ADCs",
+      "url": "https://finance.yahoo.com/news/phrontline-biopharma-raises-60-million-004200523.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-25T00:42:00+00:00",
+      "summary": "Phrontline Biopharma (\"Phrontline\"), a next-generation antibody–drug conjugate (ADC) company, today announced the closing of a $60 million Pre-A+ financing round. The round was led by Lapam Investment",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MediTrust Health and Sino Biopharm Sign Strategic Cooperation Agreement at CIIE 2025 to Advance Drug-Insurance Integration New Model",
+      "url": "https://finance.yahoo.com/news/meditrust-health-sino-biopharm-sign-061800783.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-10T06:18:00+00:00",
+      "summary": "Shanghai, November 10, 2025 – During the 8th China International Import Expo (CIIE), Sino Biopharmaceutical Limited (\"Sino Biopharm\") and Shanghai MediTrust Health Technology Group Co., Ltd. (\"MediTru",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Merck & Co., Inc., Rahway, N.J., USA Announces Third-Quarter 2025 Financial Results",
+      "url": "https://finance.yahoo.com/news/merck-co-inc-rahway-n-103000450.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-30T10:30:00+00:00",
+      "summary": "RAHWAY, N.J., October 30, 2025--Merck & Co., Inc., Rahway, N.J., USA Announces Third-Quarter 2025 Financial Results",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

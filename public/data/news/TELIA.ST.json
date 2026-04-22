@@ -1,0 +1,53 @@
+{
+  "ticker": "TELIA.ST",
+  "last_updated": "2026-04-22T12:39:54.004180+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Telia Company AB (TLSNF) Q4 2025 Earnings Call Highlights: Strong Cash Flow and Strategic ...",
+      "url": "https://finance.yahoo.com/news/telia-company-ab-tlsnf-q4-150233884.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-29T15:02:33+00:00",
+      "summary": "Telia Company AB (TLSNF) reports robust free cash flow and strategic advancements, despite facing hurdles in Finland and Norway.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Telia Lietuva to reorganise Technology unit in digital shift",
+      "url": "https://finance.yahoo.com/news/telia-lietuva-reorganise-technology-unit-074500312.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-07T07:45:00+00:00",
+      "summary": "Telia Lietuva, AB (hereinafter “Telia Lietuva” or “the Company”) is starting a reorganisation of its Digital & Technology unit as part of a broader digital shift across the Telia Company Group. By dep",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Appointment of Marec Gasiun as Executive Vice President of Sales & Marketing at Neonode",
+      "url": "https://finance.yahoo.com/news/appointment-marec-gasiun-executive-vice-143400066.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-02T14:34:00+00:00",
+      "summary": "Neonode Inc. (NASDAQ: NEON) today announced the appointment of Marec Gasiun as Executive Vice President of Sales & Marketing, effective January 1, 2026.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Will Ericsson’s (OM:ERIC B) Extended Telia Deal Redefine Its 5G Edge in Nordic Markets?",
+      "url": "https://finance.yahoo.com/news/ericsson-om-eric-b-extended-211145564.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-19T21:11:45+00:00",
+      "summary": "Telia Company recently announced a four-year extension of its Radio Access Network partnership with Ericsson, spanning Sweden, Norway, Lithuania, and Estonia to enhance network speeds, capacity, and 5",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Telia (OM:TELIA) Valuation: How Recent Gains Stack Up Against Analyst Expectations",
+      "url": "https://finance.yahoo.com/news/telia-om-telia-valuation-recent-171318259.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-19T17:13:18+00:00",
+      "summary": "Telia Company (OM:TELIA) shares have shown some movement recently, with a steady climb of 1% over the past month and 2% in the past 3 months. Many investors are watching for shifts in performance give",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

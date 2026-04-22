@@ -1,0 +1,53 @@
+{
+  "ticker": "AA",
+  "last_updated": "2026-04-22T13:23:45.930691+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Cwm LLC Increases Stock Position in Alcoa $AA",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-cwm-llc-increases-stock-position-in-alcoa-aa-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T07:53:08+00:00",
+      "summary": "Cwm LLC increased its position in Alcoa (NYSE:AA - Free Report) by 428.3% in the fourth quarter, according to the company in its most recent filing with the Securities & Exchange Commission. The fund ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Alcoa Nears Sale of Idle New York Smelter to NYDIG for Bitcoin Mining Use",
+      "url": "https://bitcoinmagazine.com/news/alcoa-nears-sale-of-idle-new-york",
+      "source": "bitcoinmagazine.com",
+      "published_at": "2026-04-20T19:03:30+00:00",
+      "summary": "Bitcoin Magazine Alcoa Nears Sale of Idle New York Smelter to NYDIG for Bitcoin Mining Use Alcoa is in talks to sell its idle Massena East aluminum smelter in upstate New York to bitcoin mining firm N",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Alcoa (AA) reports Q1 adjusted EPS $1.40",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alcoa-aa-reports-q1-adjusted-134335220.html",
+      "source": "yahoo.com",
+      "published_at": "2026-04-20T13:43:35+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "49,516 Shares in Alcoa $AA Acquired by Moran Wealth Management LLC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-49516-shares-in-alcoa-aa-acquired-by-moran-wealth-management-llc-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T09:28:30+00:00",
+      "summary": "Moran Wealth Management LLC bought a new position in shares of Alcoa (NYSE:AA - Free Report) during the fourth quarter, according to the company in its most recent 13F filing with the Securities and E",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alcoa shares surge, echoing pandemic-era rally",
+      "url": "https://www.marketscreener.com/news/alcoa-shares-surge-echoing-pandemic-era-rally-ce7e50d3de8cf32c",
+      "source": "marketscreener.com",
+      "published_at": "2026-04-20T07:15:52+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

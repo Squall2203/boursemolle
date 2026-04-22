@@ -1,0 +1,53 @@
+{
+  "ticker": "SON.LS",
+  "last_updated": "2026-04-22T12:16:28.596595+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Sonae SGPS SA (STU:YSON) Q4 2025 Earnings Call Highlights: Strong Retail Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sonae-sgps-sa-stu-yson-210146576.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T21:01:46+00:00",
+      "summary": "Sonae SGPS SA (STU:YSON) reports robust turnover growth and improved EBITDA margins, while successfully reducing net debt and expanding its retail footprint.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Alimentaria+Hostelco 2026 reinforces its leadership in a historic edition",
+      "url": "https://finance.yahoo.com/news/alimentaria-hostelco-2026-reinforces-leadership-140000479.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T14:00:00+00:00",
+      "summary": "Alimentaria+Hostelco will return to Fira de Barcelona's Gran Via venue from 23 to 26 March 2026, consolidating its position as a leading platform for the food, hospitality and foodservice value chain.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 6.2%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-103152340.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-28T10:31:52+00:00",
+      "summary": "As European markets face renewed concerns over inflated AI stock valuations and receding expectations for a U.S. interest rate cut, the pan-European STOXX Europe 600 Index recently ended 2.21% lower, ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Dividend Stocks To Consider In November 2025",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-consider-november-053138237.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-28T05:31:38+00:00",
+      "summary": "As European markets navigate the challenges of inflated AI stock valuations and shifting expectations for U.S. interest rates, investors are keenly observing how these factors influence broader market",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks: CaixaBank And Two More Top Picks",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-caixabank-two-103140866.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-27T10:31:40+00:00",
+      "summary": "In recent weeks, European markets have experienced a downturn, with the STOXX Europe 600 Index dropping 2.21% amid concerns over inflated AI stock valuations and diminishing expectations for a U.S. in",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

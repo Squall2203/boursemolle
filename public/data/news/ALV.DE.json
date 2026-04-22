@@ -1,0 +1,53 @@
+{
+  "ticker": "ALV.DE",
+  "last_updated": "2026-04-22T11:50:16.379825+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Update: Market Chatter: HSBC Narrows Bidding List for Singapore Insurance Unit",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-hsbc-narrows-bidding-105338635.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:53:38+00:00",
+      "summary": "(Updates with responses from HSBC and Allianz in the third paragraph.) HSBC Holdings (HSBC) has s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks With Yields Up To 4.4%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-dividend-stocks-yields-4-103156358.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:31:56+00:00",
+      "summary": "As European markets respond to corporate earnings and geopolitical developments, the pan-European STOXX Europe 600 Index saw a notable rise of 1.91%, reflecting investor optimism amid Middle East de-e",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AIZ Stock Outperforms Industry: Time to Hold or Buy?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aiz-stock-outperforms-industry-time-161000837.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T16:10:00+00:00",
+      "summary": "Assurant leans into capital-light, fee-based growth and AI-driven efficiency, with Connected Living and Housing fueling durable earnings and expansion.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Aviva tops broker ranking as it upgrades its commercial offering",
+      "url": "https://www.lifeinsuranceinternational.com/analyst-comment/aviva-tops-broker-ranking/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:44:12+00:00",
+      "summary": "A GlobalData survey shows 26.3% place most business with Aviva as it modularises CCI and grows Fast Trade.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Top European Dividend Stocks For April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-european-dividend-stocks-april-103153801.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T10:31:53+00:00",
+      "summary": "As European markets see a rise in optimism due to hopes of a shorter-than-expected Middle East conflict, the pan-European STOXX Europe 600 Index has climbed 3.92%, reflecting positive sentiment across",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

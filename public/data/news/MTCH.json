@@ -1,0 +1,53 @@
+{
+  "ticker": "MTCH",
+  "last_updated": "2026-04-22T13:22:20.156906+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Cwm LLC Trims Stake in Match Group Inc. $MTCH",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-cwm-llc-trims-stake-in-match-group-inc-mtch-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T08:01:22+00:00",
+      "summary": "Cwm LLC reduced its stake in Match Group Inc. (NASDAQ:MTCH - Free Report) by 22.3% in the fourth quarter, according to the company in its most recent Form 13F filing with the Securities and Exchange C",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Clarifai says it deleted 3 million OkCupid user photos and the facial-recognition models trained on them",
+      "url": "https://thenextweb.com/news/clarifai-okcupid-photos-deleted-ftc-settlement",
+      "source": "thenextweb.com",
+      "published_at": "2026-04-21T07:20:48+00:00",
+      "summary": "The AI company received the photos from OkCupid in 2014 without users’ knowledge, in a data transfer that breached OkCupid’s own privacy policy. The FTC’s late March settlement with OkCupid and Match ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Match Group CEO Says Winning Back Women Is Top Priority for Tinder",
+      "url": "https://www.globaldatinginsights.com/featured/match-group-ceo-says-winning-back-women-is-top-priority-for-tinder/",
+      "source": "globaldatinginsights.com",
+      "published_at": "2026-04-20T07:15:53+00:00",
+      "summary": "Match Group CEO Spencer Rascoff has identified attracting more female users as the “primary focus” for reviving Tinder, the company’s The post Match Group CEO Says Winning Back Women Is Top Priority f",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Match Group CEO Spencer Rascoff says growing women's share on Tinder is his \"primary focus\" to stem user declines; Sensor Tower says 75% of Tinder users are men (Kieran Smith/Financial Times)",
+      "url": "http://www.techmeme.com/260419/p15#a260419p15",
+      "source": "techmeme.com",
+      "published_at": "2026-04-20T00:45:00+00:00",
+      "summary": "Kieran Smith / Financial Times: Match Group CEO Spencer Rascoff says growing women's share on Tinder is his “primary focus” to stem user declines; Sensor Tower says 75% of Tinder users are men — Match",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Can Tinder win back women? - Match Group boss Spencer Rascoff says attracting female users ...",
+      "url": "https://www.ft.com/content/3a1ec8b3-2928-4813-a00a-2078e9fe7872",
+      "source": "ft.com",
+      "published_at": "2026-04-19T04:00:07+00:00",
+      "summary": "Match Group boss Spencer Rascoff says attracting female users is ‘priority focus’ in push to turn around flagship dating app",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

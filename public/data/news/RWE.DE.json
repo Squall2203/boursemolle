@@ -1,0 +1,53 @@
+{
+  "ticker": "RWE.DE",
+  "last_updated": "2026-04-22T11:55:22.286220+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "European Stocks Fall Sharply in Monday Trading as Hopes of Middle East Ceasefire Dim",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-fall-sharply-monday-154929600.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:49:29+00:00",
+      "summary": "European markets were tracking lower Monday as investors are discouraged by reports that Tehran will",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Hitachi Energy to supply automation solutions for RWE wind project",
+      "url": "https://www.power-technology.com/news/hitachi-energy-to-supply-automation/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:11:34+00:00",
+      "summary": "Hitachi Energy’s MicroSCADA system will support grid integration for the 900MW Nordseecluster B wind project.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Rise in Friday Trading Following Middle East War Ceasefire",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-stocks-rise-friday-trading-160025475.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T16:00:25+00:00",
+      "summary": "The European stock markets were tracking higher in Friday trading as a 10-day ceasefire between Isra",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The RWE (XTRA:RWE) Story Is Shifting With Fresh Targets And A New Fair Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rwe-xtra-rwe-story-shifting-110709562.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:07:09+00:00",
+      "summary": "RWE’s updated analyst model nudges fair value from €59.49 to about €60.12, a shift of roughly €0.63 per share that may look small but still matters if you are tracking valuation closely. That change s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Are Utilities Stocks Lagging  Lumen Technologies (LUMN) This Year?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/utilities-stocks-lagging-lumen-technologies-134004107.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:40:04+00:00",
+      "summary": "Here is how Lumen (LUMN) and RWE AG (RWEOY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "NUE",
+  "last_updated": "2026-04-22T13:23:25.509339+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Insulated Metal Panels Market by Metal Type, Insulation Material, Application, End-use, and Region - Global Forecast to 2030",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/insulated-metal-panels-market-metal-082600797.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:26:00+00:00",
+      "summary": "The insulated metal panels market is expected to reach USD 15.01 billion by 2025 and USD 17.13 billion by 2030, growing at a CAGR of 2.69%. This expansion is driven by rising urbanization and the dema",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Caterpillar, IBD Stock Of The Day, Rises In Buy Zone Amid Data Center Strength",
+      "url": "https://finance.yahoo.com/m/2bedbc11-337f-3e39-bee1-edab2aa8a79d/caterpillar%2C-ibd-stock-of-the.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:39:40+00:00",
+      "summary": "Caterpillar is Tuesday's IBD Stock Of The Day as the Dow Jones Industrial Average heavyweight got a big price target hike for the second straight day on AI data center demand and the broader industria",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nucor (NUE) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/04/21/nucor-nue-q4-2025-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:26:23+00:00",
+      "summary": "For as long as I've been Nucor's CEO, we have opened our earnings calls by recognizing our safety performance, and I am pleased to continue that tradition again.  In 2025, our team achieved the lowest",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Steel Dynamics Sees Strong Demand For Years Amid Trump Tariffs; STLD, Nucor Break Out",
+      "url": "https://finance.yahoo.com/m/442a4886-3cce-3092-b4f8-d7f9550dbb11/steel-dynamics-sees-strong.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:56:52+00:00",
+      "summary": "STLD and Nucor edged higher early Tuesday after both steel stocks broke out during Monday's regular session ahead of Steel Dynamics' late-day earnings report.  Cleveland-Cliffs opened the first-quarte",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Steel Dynamics (STLD) Q1 Earnings Miss Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/steel-dynamics-stld-q1-earnings-214001750.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T21:40:01+00:00",
+      "summary": "Steel Dynamics (STLD) delivered earnings and revenue surprises of -0.27% and +2.08%, respectively, for the quarter ended March 2026. Do the numbers hold clues to what lies ahead for the stock?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

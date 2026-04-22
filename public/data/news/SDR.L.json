@@ -1,0 +1,53 @@
+{
+  "ticker": "SDR.L",
+  "last_updated": "2026-04-22T12:32:08.215995+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Form 8.3",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/form-8-3-080600574.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:06:00+00:00",
+      "summary": "LONDON, April 22, 2026-- FORM 8.3",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Titanbay Expands Swiss Advisory Board with Appointment of Adrian Nösberger",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/titanbay-expands-swiss-advisory-board-080000495.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:00:00+00:00",
+      "summary": "Former CEO of Schroder & Co Bank AG and President of the Association of Foreign Banks in Switzerland joins as private markets infrastructure demand accelerates ZURICH and LONDON, April 22, 2026 (GLOBE",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "L&G hires Schroders executive as asset management chief risk officer",
+      "url": "https://www.privatebankerinternational.com/news/lg-asset-management-chief-risk-officer/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:30:53+00:00",
+      "summary": "Drury remit covers risk and governance structures, investment risk supervision and compliance for L&amp;G’s asset management unit.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Schroders shareholders approve £9.9bn sale to Nuveen",
+      "url": "https://www.privatebankerinternational.com/news/schroders-shareholders-approve-sale-to-nuveen/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:11:08+00:00",
+      "summary": "At a general meeting in London, 99.9% of votes cast backed the takeover, comfortably above the 75% approval threshold.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Middle East tensions spark £2.2bn outflows at Schroders in Q1 2026",
+      "url": "https://www.privatebankerinternational.com/news/outflows-at-schroders-in-q1/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T14:08:59+00:00",
+      "summary": "Group assets under management fell to £814.4bn at the end of March, down from £823.7bn at year-end 2025.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

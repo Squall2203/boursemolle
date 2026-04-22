@@ -1,0 +1,53 @@
+{
+  "ticker": "DG",
+  "last_updated": "2026-04-22T13:26:45.381622+00:00",
+  "sentiment_score": -0.13,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Wall Street’s Bullish Stocks View Contrasts With Consumer Gloom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bullish-stocks-view-112800536.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:28:00+00:00",
+      "summary": "(Bloomberg) -- Stocks are trading near a record high, signaling Wall Street is learning to cope with lingering geopolitical risks. Main Street is struggling to catch up.Most Read from BloombergInside ",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Are consumers finally cracking under the weight of $4 gas?",
+      "url": "https://finance.yahoo.com/news/are-consumers-finally-cracking-under-the-weight-of-4-gas-111859680.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:18:59+00:00",
+      "summary": "The warning signals from the consumer mount.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "2 Top Dividend Stocks to Buy and Hold Forever",
+      "url": "https://www.fool.com/investing/2026/04/21/2-top-dividend-stocks-to-buy-and-hold-forever/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:45:00+00:00",
+      "summary": "Unlock the magic of compound interest.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How Do DG’s AI Audio Push and Governance Pressures Reframe Dollar General’s Efficiency Story?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dg-ai-audio-push-governance-180819205.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:08:19+00:00",
+      "summary": "Dollar General previously announced plans to roll out an AI-enabled in-store audio network with QSIC to around 6,000 additional stores across 48 states by the second quarter of 2026, doubling its curr",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Walmart or Dollar General: Which Retail Stock Offers Better Prospects?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/walmart-dollar-general-retail-stock-124500413.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:45:00+00:00",
+      "summary": "Walmart's digital and ad engines meet Dollar General's operational rebound as both chase value shoppers.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

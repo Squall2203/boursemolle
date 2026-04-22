@@ -1,0 +1,53 @@
+{
+  "ticker": "ELISA.HE",
+  "last_updated": "2026-04-22T12:18:18.723982+00:00",
+  "sentiment_score": 0.27,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Elisa Oyj (ELMUY) Q1 2026 Earnings Call Highlights: Navigating Revenue Challenges with ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elisa-oyj-elmuy-q1-2026-070137227.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:01:37+00:00",
+      "summary": "Elisa Oyj (ELMUY) reports a mixed quarter with a decline in overall revenue but strong growth in international software services and improved cash flow.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Mikko Soirola joins Elisa Industriq as CEO to lead its next international growth phase",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/mikko-soirola-joins-elisa-industriq-054300096.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T05:43:00+00:00",
+      "summary": "Elisa Industriq today welcomes Mikko Soirola as its new CEO, marking an important step for the fast-growing international software business within the Elisa Group. His appointment comes as Elisa Indus",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Elisa Industriq's Gridle signs three new grid-scale battery optimization contracts",
+      "url": "https://finance.yahoo.com/news/elisa-industriqs-gridle-signs-three-072400342.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T07:24:00+00:00",
+      "summary": "Elisa Industriq's AI-powered battery optimization service, Gridle, has signed new grid-scale customer agreements with Nivos, Enereon and Puutarha Timo Juntti. The contracts mark a major milestone for ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Elisa Oyj’s (HLSE:ELISA) Valuation After Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/news/assessing-elisa-oyj-hlse-elisa-031349111.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T03:13:49+00:00",
+      "summary": "Recent performance snapshot Elisa Oyj (HLSE:ELISA) has drawn fresh attention after recent share price moves, with the stock showing a 1 day return of 1%, a week return of 2.7% and a month gain near 5%",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Elisa Industriq's CalcuQuote wins 2026 NPI Award for transforming volume pricing negotiations",
+      "url": "https://finance.yahoo.com/news/elisa-industriqs-calcuquote-wins-2026-132600827.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T13:26:00+00:00",
+      "summary": "CalcuQuote, a leading supply chain solutions provider for the electronics industry, has been named a 2026 New Product Introduction (NPI) Award winner in the Software - Management category for its Pric",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

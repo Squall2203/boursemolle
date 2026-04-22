@@ -1,0 +1,53 @@
+{
+  "ticker": "AKER.OL",
+  "last_updated": "2026-04-22T12:47:52.994211+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is It Too Late To Reassess Aker (OB:AKER) After Its Strong Share Price Run",
+      "url": "https://finance.yahoo.com/news/too-reassess-aker-ob-aker-100627551.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-15T10:06:27+00:00",
+      "summary": "If you are wondering whether Aker's share price still reflects fair value after a strong run, this article walks through what the numbers actually say about the stock today. Aker last closed at Nkr1,0",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nscale Secures $2B Funding for AI Infrastructure",
+      "url": "https://finance.yahoo.com/news/nscale-secures-2b-funding-ai-194120863.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T19:41:20+00:00",
+      "summary": "New investment values the AI data center startup at $14.6 billion.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nscale Raises $2 Billion in AI Infrastructure Funding",
+      "url": "https://finance.yahoo.com/news/nscale-raises-2-billion-ai-193710257.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T19:37:10+00:00",
+      "summary": "Nvidia-backed cloud startup reaches $14.6 billion valuation in Series C round",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nscale Raises $2 Billion, Reaches $14.6 Billion Valuation in AI Data Center Push",
+      "url": "https://finance.yahoo.com/news/nscale-raises-2-billion-reaches-191607561.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T19:16:07+00:00",
+      "summary": "AI data center developer secures Series C funding led by Aker and 8090 Industries as Sandberg and Clegg join board.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nvidia-backed Nscale raises $2 Billion to expand AI infrastructure",
+      "url": "https://finance.yahoo.com/news/nvidia-backed-nscale-raises-2-183429220.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T18:34:29+00:00",
+      "summary": "Nvidia, Dell and Citadel among backers",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

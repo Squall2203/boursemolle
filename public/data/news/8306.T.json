@@ -1,0 +1,53 @@
+{
+  "ticker": "8306.T",
+  "last_updated": "2026-04-22T13:42:25.094255+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "MUFG lending head signals further Asia dealmaking",
+      "url": "https://www.retailbankerinternational.com/news/mufg-lending-head-signals-further-asia-dealmaking/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:58:36+00:00",
+      "summary": "Masakazu Osawa told Bloomberg that non-bank financial companies could be potential targets.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Japan's financial watchdog to meet top banks to discuss Mythos AI model",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/japan-finance-minister-meet-banks-022035075.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T02:20:35+00:00",
+      "summary": "Japan's financial watchdog will meet with the country's biggest lenders ‌on Friday to discuss issues related ‌to Anthropic's advanced Mythos artificial intelligence model, Finance Minister Satsuki ​Ka",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fervo Energy Publicly Announces Filing of Registration Statement for Proposed Initial Public Offering",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fervo-energy-publicly-announces-filing-214900661.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T21:49:00+00:00",
+      "summary": "HOUSTON, April 17, 2026 (GLOBE NEWSWIRE) -- Fervo Energy today announced it has publicly filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission (the \"SEC\") relatin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "MUFG expands strategic business relationship with Finastra to power U.S. ACH payments",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/mufg-expands-strategic-business-relationship-130000191.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:00:00+00:00",
+      "summary": "Finastra, a global leader in financial services software, today announced that MUFG (Mitsubishi UFJ Financial Group), Japan's largest bank, has selected Global PAYplus to support ACH services in the U",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Forêt Domaniale Wind Project secures financial close",
+      "url": "https://www.power-technology.com/news/foret-domaniale-wind-financial-close/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T09:12:51+00:00",
+      "summary": "The project’s financing, structured under the Green Loan Principles, comes from a consortium of lenders.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "NOKIA.HE",
+  "last_updated": "2026-04-22T12:16:40.813205+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Nokia to Report Q1 Earnings: Can Strong Revenues Drive Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nokia-report-q1-earnings-strong-151800966.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:18:00+00:00",
+      "summary": "NOK eyes Q1 growth on AI network demand, 5G momentum and key partnerships as new deals and deployments begin driving revenues into 2026.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Neurophos Enters Hypergrowth Phase After $110M Series A",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/neurophos-enters-hypergrowth-phase-110m-130200303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:02:00+00:00",
+      "summary": "Neurophos, a leader in photonic AI chip technology, today announced it has nearly tripled in headcount since closing its $110M Series A round in January 2026. In less than six months, the company has ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Stock Market Today, April 20: Nokia Rises Ahead of Q1 Earnings on Strength in AI Networking Demand",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/04/20/stock-market-today-april-20-nokia-rises-ahead-of-q1-earnings-on-strength-in-ai-networking-demand/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T23:19:23+00:00",
+      "summary": "Nokia rose ahead of earnings on stronger AI networking demand, with investors weighing growth in data traffic against ongoing margin pressure in the telecom equipment sector.",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "China claims global auto sales lead from Japan, sets sights on quality",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/china-claims-global-auto-sales-152700244.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:27:00+00:00",
+      "summary": "A report from People's Daily",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nokia Oyj (HLSE:NOKIA) Is Up 7.6% After Expanding AI-RAN And Cybersecurity Alliances - Has The Bull Case Changed?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nokia-oyj-hlse-nokia-7-060714757.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T06:07:14+00:00",
+      "summary": "Nokia and partners recently announced a series of collaborations, including AI-powered RAN development with Orange and NVIDIA, a DDoS protection MSSP model with Cinia, and an integrated Wi‑Fi 7–optica",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

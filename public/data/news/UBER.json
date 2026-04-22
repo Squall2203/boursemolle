@@ -1,0 +1,53 @@
+{
+  "ticker": "UBER",
+  "last_updated": "2026-04-22T13:21:39.264625+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Uber and Block Expand Global Partnership to Transform Restaurant Operations and Launch Cash App Pay",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-block-expand-global-partnership-123000961.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:30:00+00:00",
+      "summary": "DISTRIBUTED WORKFORCE/OAKLAND, Calif. & SAN FRANCISCO, April 22, 2026--Block, Inc. (NYSE: XYZ) today announced a comprehensive global partnership with Uber Technologies, Inc. (NYSE: UBER) that expands",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Lucid Group (LCID) Surges 5.3%: Is This an Indication of Further Gains?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lucid-group-lcid-surges-5-114200093.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:42:00+00:00",
+      "summary": "Lucid Group (LCID) witnessed a jump in share price last session on above-average trading volume. The latest trend in earnings estimate revisions for the stock doesn't suggest further strength down the",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Uber Liability Trial Puts Rideshare Risks And Valuation In Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-liability-trial-puts-rideshare-100357147.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:03:57+00:00",
+      "summary": "A North Carolina federal jury recently found an Uber driver liable for sexual assault but awarded limited damages to the plaintiff. The case is part of a broader multidistrict litigation that challeng",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Why Is Lucid (LCID) Stock Soaring Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-lucid-lcid-stock-soaring-013351797.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T01:33:51+00:00",
+      "summary": "Shares of luxury electric car manufacturer Lucid (NASDAQ:LCID) jumped 5.6% in the afternoon session after Uber Technologies disclosed a significant 11.5% ownership stake in the company and announced p",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Lucid Stock Surged Today",
+      "url": "https://www.fool.com/investing/2026/04/21/why-lucid-stock-surged-today/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:38:23+00:00",
+      "summary": "One of Lucid's partners is betting on the company.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

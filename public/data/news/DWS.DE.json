@@ -1,0 +1,53 @@
+{
+  "ticker": "DWS.DE",
+  "last_updated": "2026-04-22T12:02:18.688986+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Buy These 3 DWS Mutual Funds for Solid Returns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-3-dws-mutual-funds-112000395.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T11:20:00+00:00",
+      "summary": "Consider investing in DWS mutual funds such as KTCAX, DBISX and SPGRX for a compelling investment approach.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Renovus Capital Partners Appoints Niklas Kuhlmann as Director of Investor Relations and Capital Formation, EMEA",
+      "url": "https://finance.yahoo.com/news/renovus-capital-partners-appoints-niklas-121500243.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-11T12:15:00+00:00",
+      "summary": "PHILADELPHIA & FRANKFURT, Germany, February 11, 2026--Renovus Capital Partners (\"Renovus\"), a Philadelphia-area based investment firm, today announced that Niklas Kuhlmann has joined the firm as Direc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Top European Dividend Stocks To Watch In February 2026",
+      "url": "https://finance.yahoo.com/news/top-european-dividend-stocks-watch-053151514.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T05:31:51+00:00",
+      "summary": "As the eurozone economy continues its modest recovery, bolstered by stronger investment and household consumption, European markets have shown resilience despite ongoing geopolitical uncertainties. Wi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Deutsche Bank and DWS explore investment in life insurer Frankfurter Leben",
+      "url": "https://www.lifeinsuranceinternational.com/news/deutsche-dws-frankfurter-leben-investment/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-30T09:27:34+00:00",
+      "summary": "Such a move would mark Deutsche Bank’s return to the life insurance space after it withdrew from the sector around ten years ago.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "DWS Group GmbH & Co KGaA (WBO:DWS) Q4 2025 Earnings Call Highlights: Strong Financial ...",
+      "url": "https://finance.yahoo.com/news/dws-group-gmbh-co-kgaa-150212982.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-29T15:02:12+00:00",
+      "summary": "DWS Group GmbH & Co KGaA reports robust earnings growth, improved cost efficiency, and ambitious future targets amidst market challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

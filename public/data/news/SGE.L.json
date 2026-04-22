@@ -1,0 +1,53 @@
+{
+  "ticker": "SGE.L",
+  "last_updated": "2026-04-22T12:26:08.166394+00:00",
+  "sentiment_score": 0.13,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Why The Sage Group (LSE:SGE) Narrative Is Shifting As Analysts Reset Valuation Assumptions",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-sage-group-lse-sge-020825837.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T02:08:25+00:00",
+      "summary": "The recent cut in Sage Group's fair value estimate from £12.97 to £11.40 has sharpened the focus on how analysts are recalibrating what they think the shares are worth. This shift lines up with resear",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sage Group (SGPYY) Upgraded to Buy: Here's Why",
+      "url": "https://finance.yahoo.com/news/sage-group-sgpyy-upgraded-buy-160003311.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T16:00:03+00:00",
+      "summary": "Sage Group (SGPYY) has been upgraded to a Zacks Rank #2 (Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Here's Why Sage Group (SGPYY) Is a Great 'Buy the Bottom' Stock Now",
+      "url": "https://finance.yahoo.com/news/heres-why-sage-group-sgpyy-145501224.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-20T14:55:01+00:00",
+      "summary": "Sage Group (SGPYY) witnesses a hammer chart pattern, indicating support found by the stock after losing some value lately. This coupled with an upward trend in earnings estimate revisions could mean a",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Stock market sectors that could be more vulnerable to AI disruption",
+      "url": "https://uk.finance.yahoo.com/news/stock-market-ftse-vulnerable-ai-disruption-060048098.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-18T06:00:48+00:00",
+      "summary": "Market nervousness around AI has recently spread beyond the big US tech names to UK market",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FTSE and European firms worst hit by software sell-off",
+      "url": "https://uk.finance.yahoo.com/news/ftse-european-firms-software-selloff-ai-155936747.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-05T15:59:36+00:00",
+      "summary": "In London, several prominent FTSE firms recorded steep weekly declines.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    }
+  ]
+}

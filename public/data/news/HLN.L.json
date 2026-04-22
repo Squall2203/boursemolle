@@ -1,0 +1,53 @@
+{
+  "ticker": "HLN.L",
+  "last_updated": "2026-04-22T12:23:16.750179+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "What Makes Haleon PLC Sponsored ADR (HLN) a New Buy Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/makes-haleon-plc-sponsored-adr-160004317.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T16:00:04+00:00",
+      "summary": "Haleon PLC Sponsored ADR (HLN) has been upgraded to a Zacks Rank #2 (Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Does Haleon (LON:HLN) Deserve A Spot On Your Watchlist?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-haleon-lon-hln-deserve-060338019.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T06:03:38+00:00",
+      "summary": "The excitement of investing in a company that can reverse its fortunes is a big draw for some speculators, so even...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Haleon set for slow start from weak flu season, with Middle East cushion",
+      "url": "https://www.proactiveinvestors.com/companies/news/1089761/haleon-set-for-slow-start-from-weak-flu-season-with-middle-east-cushion-1089761.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T15:22:00+00:00",
+      "summary": "Haleon PLC's (LSE:HLN, NYSE:HLN) first-quarter sales at the end of next month come with analysts expecting a subdued start to the year due to a weak cough and cold season. Both Citi and UBS forecast o",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Futura Medical, Ilika, Rome Resources, Galantas Gold, Supermarket Income REIT - Small Cap Snapshot",
+      "url": "https://finance.yahoo.com/video/futura-medical-ilika-rome-resources-091928048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T09:19:28+00:00",
+      "summary": "Futura Medical PLC (AIM:FUM, OTC:FAMDF, FRA:GYX) has secured a US patent for Eroxon, protecting it until 2040. The grant triggers a $2.5 million milestone payment from Haleon. Ilika PLC (AIM:IKA, OTCQ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Eli Lilly (LLY) to Invest $3 Billion in China Over the Next Decade, Reuters Reports",
+      "url": "https://finance.yahoo.com/news/eli-lilly-lly-invest-3-182526187.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-15T18:25:26+00:00",
+      "summary": "Eli Lilly and Company (NYSE:LLY) is one of the most profitable blue chip stocks to invest in now. Reuters reported on March 11 that Eli Lilly and Company (NYSE:LLY) plans to invest $3 billion in China",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

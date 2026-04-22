@@ -1,0 +1,53 @@
+{
+  "ticker": "TEF.MC",
+  "last_updated": "2026-04-22T12:10:33.119466+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Pericles Capital Acts as Lead Financial Advisor to U.S.-Led Consortium in Acquisition of Movistar Mexico",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pericles-capital-acts-lead-financial-120000014.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T12:00:00+00:00",
+      "summary": "NEW YORK, April 14, 2026--Pericles Capital acted as the lead financial advisor to the investor consortium led by OXIO Inc. and Newfoundland Capital Management in their landmark agreement to acquire Mo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Telefónica (BME:TEF) Pricing In Its Recent Share Price Recovery?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/telef-nica-bme-tef-pricing-151501397.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:15:01+00:00",
+      "summary": "This article examines whether Telefónica at around €3.90 is a bargain or already priced for its prospects, by exploring what the current share price might be implying about the company. Over the short",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Rise Sharply in Wednesday Trading After Two-Week Ceasefire of Middle East War",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-stocks-rise-sharply-wednesday-155456332.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T15:54:56+00:00",
+      "summary": "The European stock markets were surging higher in Wednesday trading after the US announced a two-wee",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Telefónica to sell Mexico unit for $450m",
+      "url": "https://www.investmentmonitor.ai/news/telefonica-sell-mexico-unit/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T15:50:15+00:00",
+      "summary": "The Spanish telecommunications group will divest its entire stake in Pegaso PCS and Celular de Telefonía (collectively Telefónica Mexico) via subsidiary Telefónica Hispanoamerica.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "U.S.-Led Consortium Agrees to Acquire Movistar Mexico to Build the Country’s Next-Generation Telecom Operator, Powered by OXIO’s Telecom-as-a-Service Platform",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/u-led-consortium-agrees-acquire-011400117.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T01:14:00+00:00",
+      "summary": "NEW YORK, April 08, 2026--OXIO Inc. and Newfoundland Capital Management today announced that a U.S.-investor consortium, led by both parties, has entered into an agreement to acquire Movistar Mexico f",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

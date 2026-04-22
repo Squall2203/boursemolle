@@ -1,0 +1,53 @@
+{
+  "ticker": "WDAY",
+  "last_updated": "2026-04-22T13:06:09.547196+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Managing agents isn't the same as managing either people or traditional IT - digging into Workday's Agent System of Record",
+      "url": "https://diginomica.com/managing-agents-isnt-same-people-or-it-workday-agent-system",
+      "source": "diginomica.com",
+      "published_at": "2026-04-22T09:38:05+00:00",
+      "summary": "I now understand a lot more about managing AI agents after speaking to one of the creators of Workday’s Agent System of Record. But some questions remain unanswered.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Workday: A Competitive Analysis With Oracle And SAP | $SAP $ORCL $WDAY",
+      "url": "https://seekingalpha.com/article/4892601-workday-stock-competitive-analysis-with-oracle-sap",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T01:07:19+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Software Is 2026's Strongest Buy Opportunity: Here's Why | $WDAY $ADBE $CRM $NOW $SNOW",
+      "url": "https://seekingalpha.com/article/4892471-software-is-2026s-strongest-buy-opportunity-heres-why",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-21T17:34:36+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "DocuSign, Snowflake, and Workday Shares Are Soaring, What You Need To Know",
+      "url": "https://stockstory.org/us/stocks/nasdaq/docu/news/why-up-down/docusign-snowflake-and-workday-shares-are-soaring-what-you-need-to-know",
+      "source": "stockstory.org",
+      "published_at": "2026-04-20T20:00:55+00:00",
+      "summary": "A number of stocks jumped in the afternoon session after investors continued to buy the dip despite renewed geopolitical jitters as the U.S.-Iran ceasefire came under doubt following the seizure of th",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "15,835 Shares in Workday, Inc. $WDAY Acquired by Journey Advisory Group LLC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-15835-shares-in-workday-inc-wday-acquired-by-journey-advisory-group-llc-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T11:02:06+00:00",
+      "summary": "Journey Advisory Group LLC purchased a new position in shares of Workday, Inc. (NASDAQ:WDAY - Free Report) in the 4th quarter, according to its most recent filing with the Securities and Exchange Comm",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

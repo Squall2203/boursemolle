@@ -1,0 +1,53 @@
+{
+  "ticker": "NESN.SW",
+  "last_updated": "2026-04-22T12:32:45.078568+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Keurig Dr Pepper and Nestlé extend Starbucks K-Cup deal",
+      "url": "https://qz.com/keurig-dr-pepper-nestle-starbucks-kcup-deal-042126?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:28:47+00:00",
+      "summary": "The companies plan to boost distribution of Starbucks-branded coffee pods within the Keurig brewing system across the U.S. and Canada",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Keurig Dr Pepper and Nestlé USA Extend Strategic Partnership",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/keurig-dr-pepper-nestl-usa-130000091.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:00:00+00:00",
+      "summary": "Keurig Dr Pepper (KDP) and Nestlé USA (Nestlé) today announced an extended agreement renewing and expanding their strategic partnership, including the manufacturing and distribution of Starbucks® K-Cu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Teamsters issues statement on Nestle’s ‘anti-worker’ agenda",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/teamsters-issues-statement-nestle-anti-150545166.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T15:05:45+00:00",
+      "summary": "Jesse Case, Director of the Teamsters Food Processing Division, made a statement regarding Nestle’s (NSRGY) “failure to respect workers’ union rights,” saying: “Nestle is actively engaging in union-bu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "TEAMSTERS STATEMENT ON NESTLÉ'S ANTI-WORKER AGENDA",
+      "url": "https://finance.yahoo.com/economy/policy/articles/teamsters-statement-nestl-anti-worker-145500409.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T14:55:00+00:00",
+      "summary": "The following is a statement from Jesse Case, Director of the Teamsters Food Processing Division, regarding Nestlé's failure to respect workers' union rights:",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nestlé sells majority Ankerkraut stake to family owners",
+      "url": "https://www.just-drinks.com/news/nestle-sells-majority-ankerkraut-stake/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T08:58:29+00:00",
+      "summary": "Nestlé described the transfer of its holding to AnkerKraut founders as “based on a common understanding of Ankerkraut's future needs and positioning”.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

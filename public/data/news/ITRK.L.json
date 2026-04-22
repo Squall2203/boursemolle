@@ -1,0 +1,53 @@
+{
+  "ticker": "ITRK.L",
+  "last_updated": "2026-04-22T12:31:43.655476+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Form 8.3",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/form-8-3-060000063.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:00:00+00:00",
+      "summary": "ATLANTA, April 22, 2026-- FORM 8.3",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Intertek Group (LSE:ITRK) Narrative Is Shifting With Mixed Analyst Targets And Valuations",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intertek-group-lse-itrk-narrative-010929733.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:09:29+00:00",
+      "summary": "The recent analyst update for Intertek Group trims Fair Value only slightly, from £52.66 to £52.47 per share. This points to a fairly contained reset in what the shares might be worth on updated assum",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Intertek Shares Jump 14% As Breakup Review Explores Separation",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intertek-shares-jump-14-breakup-174656032.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T17:46:56+00:00",
+      "summary": "Strategic review considers splitting testing and assurance from energy and infrastructure businesses, with options including sale or demerger by mid-2027",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Intertek Group Q1 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/intertek-group-q1-earnings-call-highlights-2026-04-14/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T10:17:33+00:00",
+      "summary": "Intertek Group (LON:ITRK) used its strategic review and 2026 first-quarter trading update call to announce a review of its corporate structure alongside reporting a “strong start” to the year and reaf",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Intertek Group (LSE:ITRK) Narrative Is Shifting As Analysts Recut Fair Value Targets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intertek-group-lse-itrk-narrative-231451638.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T23:14:51+00:00",
+      "summary": "Intertek Group’s fair value estimate has been trimmed slightly, with the central price target moving from £53.46 to £52.66 per share. That shift sits alongside a broader mix of analyst moves, where so",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

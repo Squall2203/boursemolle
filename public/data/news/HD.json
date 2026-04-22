@@ -1,0 +1,53 @@
+{
+  "ticker": "HD",
+  "last_updated": "2026-04-22T12:51:21.049330+00:00",
+  "sentiment_score": 0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/home-depot-delivers-customer-support-115800539.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:58:00+00:00",
+      "summary": "Cloud Next '26 -- The Home Depot, the world's largest home improvement retailer, today announced new AI-powered phone agents designed to get customers the help they need faster. Built on Google Cloud'",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Wall Street’s Bullish Stocks View Contrasts With Consumer Gloom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bullish-stocks-view-112800536.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:28:00+00:00",
+      "summary": "(Bloomberg) -- Stocks are trading near a record high, signaling Wall Street is learning to cope with lingering geopolitical risks. Main Street is struggling to catch up.Most Read from BloombergInside ",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Home Depot (HD) Falls More Steeply Than Broader Market: What Investors Need to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/home-depot-hd-falls-more-214503815.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:45:03+00:00",
+      "summary": "Home Depot (HD) closed at $343.92 in the latest trading session, marking a -2.01% move from the prior day.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Home Depot adds tech and infrastructure to fix customer friction",
+      "url": "https://www.thestreet.com/retail/home-depot-adds-tech-and-infrastructure-to-fix-customer-friction?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:17:00+00:00",
+      "summary": "Amazon popularized the idea of paid membership for unlimited two-day delivery through Prime. That created a new delivery table stakes where consumers expected two-day delivery, and aside from paying f",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Massive and Unusual Trading in Home Depot Call Options - Is the HD Stock Rally Over?",
+      "url": "https://www.barchart.com/story/news/1429881/massive-and-unusual-trading-in-home-depot-call-options-is-the-hd-stock-rally-over?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:30:02+00:00",
+      "summary": "Today, a huge and unusual amount of Home Depot call options have traded, as seen in a Barchart Unusual Stock Options Report. HD stock is up from recent lows, but could this signal the rally is over?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

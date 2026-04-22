@@ -1,0 +1,53 @@
+{
+  "ticker": "PGHN.SW",
+  "last_updated": "2026-04-22T12:35:36.666237+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "EdgeCore Digital Infrastructure Secures $1.5 Billion of Construction Financing for Two Fully Leased Hyperscale Data Centers in Northern Virginia",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/edgecore-digital-infrastructure-secures-1-120000612.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:00:00+00:00",
+      "summary": "Over 1.4 GWs of Capacity Currently Under Development by EdgeCore in Northern and Central Virginia STERLING, VA / ACCESS Newswire / April 21, 2026 /EdgeCore Digital Infrastructure, a wholesale data cen",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Arthur Law Named a 2026 World Economic Forum Young Global Leader",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/arthur-law-named-2026-world-020000193.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T02:00:00+00:00",
+      "summary": "The KALE Foundation today announced that Arthur Law, Co-founder and Managing Principal of Storefriendly Asia, has been named a Young Global Leader 2026 by the World Economic Forum.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks To Consider With Up To 11.6% Yield",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-dividend-stocks-consider-103156784.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T10:31:56+00:00",
+      "summary": "As European markets rally, buoyed by a U.S.-Iran ceasefire and positive investor sentiment, the pan-European STOXX Europe 600 Index has seen a notable increase of 3.05%. In this environment of cautiou",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Lingerfelt and Partners Group Announce $175 Million Sale of 1.16 Million SF Industrial Portfolio",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lingerfelt-partners-group-announce-175-110000209.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T11:00:00+00:00",
+      "summary": "Lingerfelt, a vertically integrated real estate investment management firm, and Partners Group, one of the largest firms in the global private markets industry, today announced the successful sale of ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CanTex Capital Announces Sale of Majority Interest in Dallas-Fort Worth Industrial Portfolio",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cantex-capital-announces-sale-majority-120000434.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T12:00:00+00:00",
+      "summary": "DALLAS, April 06, 2026--CanTex Capital (\"CanTex\" or the \"Firm\"), a real estate investment firm specializing in infill industrial assets, today announced the sale of a majority interest in a shallow ba",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

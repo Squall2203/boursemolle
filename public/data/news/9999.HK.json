@@ -1,0 +1,53 @@
+{
+  "ticker": "9999.HK",
+  "last_updated": "2026-04-22T13:33:09.158534+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "NetEase, Inc. Announces Filing of Annual Report on Form 20-F for Fiscal Year 2025",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/netease-inc-announces-filing-annual-110200889.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T11:02:00+00:00",
+      "summary": "NetEase, Inc. (NASDAQ: NTES and HKEX: 9999, \"NetEase\" or \"the Company\"), a leading internet and game services provider, today announced that it filed its annual report on Form 20-F for the fiscal year",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Do Options Traders Know Something About NetEase Stock We Don't?",
+      "url": "https://finance.yahoo.com/markets/options/articles/options-traders-know-something-netease-131100461.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:11:00+00:00",
+      "summary": "Investors need to pay close attention to NTES stock based on the movements in the options market lately.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The \"Spotify of China\" Just Got a Whole Lot Cheaper",
+      "url": "https://www.marketbeat.com/originals/the-spotify-of-china-just-got-a-whole-lot-cheaper/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T12:40:00+00:00",
+      "summary": "Investors have battered shares of the Chinese music streaming giant TME. However, multiple factors indicate that a significant recovery could be in store.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Checkout.com builds on APAC momentum with 71% TPV growth",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/checkout-com-builds-apac-momentum-053200566.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T05:32:00+00:00",
+      "summary": "Checkout.com, a leading global digital payments company, today announced a 71% year-over-year increase in its total processing volume across the APAC region, following a strong year for enterprise mer",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is There Now an Opportunity in NetEase (SEHK:9999) After This Year’s 23.2% Share Price Fall?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/now-opportunity-netease-sehk-9999-161734323.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T16:17:34+00:00",
+      "summary": "Investors may be wondering whether NetEase is offering fair value at today's price, or if the current share price leaves some room on the table. NetEase shares last closed at HK$175.8, with returns of",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

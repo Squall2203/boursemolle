@@ -1,0 +1,53 @@
+{
+  "ticker": "SAN.PA",
+  "last_updated": "2026-04-22T11:37:34.952419+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Press Release: Sanofi's Tzield approved in the US to delay the onset of stage 3 type 1 diabetes in young children",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/press-release-sanofis-tzield-approved-050500768.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:05:00+00:00",
+      "summary": "Sanofi's Tzield approved in the US to delay the onset of stage 3 type 1 diabetes in young children Expanded approval includes children aged one year and above with stage 2 T1D to delay the onset of st",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Press Release: Sanofi provides update on the regulatory submission for Sarclisa subcutaneous in the US",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/press-release-sanofi-provides-regulatory-050000746.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:00:00+00:00",
+      "summary": "Sanofi provides update on the regulatory submission for Sarclisa subcutaneous in the US Paris, April 22, 2026. The US Food and Drug Administration (FDA) has extended by up to three months the target a",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Merck Secures EU Nod for RSV Antibody Enflonsia in Infants",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/merck-secures-eu-nod-rsv-130300675.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:03:00+00:00",
+      "summary": "MRK gains EU approval for Enflonsia to prevent RSV in infants during their first season.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Sanofi (SNY) One of the Best Affordable Blue Chip Stocks to Buy Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sanofi-sny-one-best-affordable-072008843.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T07:20:08+00:00",
+      "summary": "Sanofi (NASDAQ:SNY) is included among the 10 Best Affordable Blue Chip Stocks to Buy Now. Sanofi (NASDAQ:SNY) is a healthcare biopharmaceutical company that engages in the research, development, manuf",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Regeneron Broadens Dupixent Use And Enters Radiopharmaceuticals With Telix",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/regeneron-broadens-dupixent-enters-radiopharmaceuticals-060331853.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T06:03:31+00:00",
+      "summary": "Regeneron Pharmaceuticals (NasdaqGS:REGN) and Sanofi secured European Commission approval for Dupixent in moderate to severe chronic spontaneous urticaria for children aged 2 to 11. The approval expan",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

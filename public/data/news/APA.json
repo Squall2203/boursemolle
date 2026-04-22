@@ -1,0 +1,53 @@
+{
+  "ticker": "APA",
+  "last_updated": "2026-04-22T13:25:52.361025+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "FTC probe into APA urged over contradictory stances on gender-affirming care for minors",
+      "url": "https://www.kpvi.com/news/national_news/ftc-probe-into-apa-urged-over-contradictory-stances-on-gender-affirming-care-for-minors/article_a02f3b9e-3828-5542-8047-2500c3d1f4de.html",
+      "source": "kpvi.com",
+      "published_at": "2026-04-21T20:43:00+00:00",
+      "summary": "(The Center Square) – Medical group Do No Harm sent a letter Monday to the Federal Trade Commission urging an investigation into the American Psychological Association, accusing APA of holding two con",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "APA (NASDAQ:APA) Price Target Raised to $31.00",
+      "url": "https://www.marketbeat.com/instant-alerts/apa-nasdaqapa-price-target-raised-to-3100-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T13:53:25+00:00",
+      "summary": "The Goldman Sachs Group upped their price objective on shares of APA from $30.00 to $31.00 and gave the company a \"sell\" rating in a research note on Tuesday.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Susquehanna Issues Positive Forecast for APA (NASDAQ:APA) Stock Price",
+      "url": "https://www.marketbeat.com/instant-alerts/susquehanna-issues-positive-forecast-for-apa-nasdaqapa-stock-price-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T13:53:24+00:00",
+      "summary": "Susquehanna boosted their target price on APA from $37.00 to $47.00 and gave the stock a \"positive\" rating in a report on Tuesday.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Detroit is Showcased to Nearly 4,000 Urban Planners",
+      "url": "https://www.prnewswire.com/news-releases/detroit-is-showcased-to-nearly-4-000-urban-planners-302748569.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-21T13:05:00+00:00",
+      "summary": "American Planning Association's National Planning Conference (NPC26), April 25 – 28, 2026. CHICAGO, April 21, 2026 /PRNewswire/ -- The American Planning Association (APA) to host the National Planning",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Evergreen Capital Management LLC Has $9.11 Million Stock Holdings in APA Corporation $APA",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-evergreen-capital-management-llc-has-911-million-stock-holdings-in-apa-corporation-apa-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T08:57:55+00:00",
+      "summary": "Evergreen Capital Management LLC lessened its holdings in APA Corporation (NASDAQ:APA - Free Report) by 63.3% in the 4th quarter, according to the company in its most recent disclosure with the Securi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

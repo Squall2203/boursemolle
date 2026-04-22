@@ -1,0 +1,53 @@
+{
+  "ticker": "SKF-B.ST",
+  "last_updated": "2026-04-22T12:40:06.250950+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SKF AB (SKFRY) Q1 2026 Earnings Call Highlights: Navigating Currency Headwinds with Strategic Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/skf-ab-skfry-q1-2026-070032213.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:00:32+00:00",
+      "summary": "Despite currency challenges, SKF AB (SKFRY) reports stable margins and strategic advancements in high-value industrial segments.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SKF completes previously announced divestment of non-core aerospace operation in Elgin, USA",
+      "url": "https://finance.yahoo.com/news/skf-completes-previously-announced-divestment-193600173.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-30T19:36:00+00:00",
+      "summary": "SKF has completed the previously announced divestment of its precision elastomeric device (PED) operation in Elgin, Illinois, USA. The divestment is part of SKF's strategic focus on its core aerospace",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks To Enhance Your Portfolio",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-enhance-portfolio-103211895.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-16T10:32:11+00:00",
+      "summary": "As the European markets continue to show optimism with indices like the STOXX Europe 600 Index ending higher amid a strengthening eurozone economy, investors are increasingly drawn to dividend stocks ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Pioneer Power Solutions (PPSI) Outperforming Other Industrial Products Stocks This Year?",
+      "url": "https://finance.yahoo.com/news/pioneer-power-solutions-ppsi-outperforming-144003142.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-31T14:40:03+00:00",
+      "summary": "Here is how Pioneer Power Solutions, Inc. (PPSI) and AB SKF (SKFRY) have performed compared to their sector so far this year.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Finally! U.S. Federal Jobs Data - Global Week Ahead",
+      "url": "https://finance.yahoo.com/news/finally-u-federal-jobs-data-164000356.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-15T16:40:00+00:00",
+      "summary": "The shutdown-delayed U.S. jobs report for November will shed light on the extent of labor market weakening that could help determine the Federal Reserve's next rate move.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

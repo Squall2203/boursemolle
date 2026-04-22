@@ -1,0 +1,53 @@
+{
+  "ticker": "SHELL.AS",
+  "last_updated": "2026-04-22T12:05:59.302903+00:00",
+  "sentiment_score": -0.13,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Here is Why Shell (SHEL) is Among the Best Crude Oil Stocks to Buy According to Analysts",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/why-shell-shel-among-best-063710426.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:37:10+00:00",
+      "summary": "Shell plc (NYSE:SHEL) is among the 13 Best Crude Oil Stocks to Buy According to Analysts. On April 17, BNP Paribas downgraded Shell plc (NYSE:SHEL) to Neutral from Outperform with a $101 price target.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "The Global Energy ETF That Turns a Middle East Crisis Into a Worldwide Dividend Machine",
+      "url": "https://247wallst.com/investing/2026/04/21/the-global-energy-etf-that-turns-a-middle-east-crisis-into-a-worldwide-dividend-machine/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:35:04+00:00",
+      "summary": "Oil crossed $114 a barrel in early April 2026, a level not seen since 2022, and iShares Global Energy ETF (NYSEARCA:IXC) was up nearly 29% year-to-date by mid-April, collecting dividends from Riyadh t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BP Faces Shareholder Backlash Despite Shares Reaching 16-Year High",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bp-faces-shareholder-backlash-despite-190903052.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:09:03+00:00",
+      "summary": "Investors push back on governance after BP declines climate resolution ahead of annual meeting",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Transaction in Own Shares",
+      "url": "https://finance.yahoo.com/news/transaction-own-shares-162700071.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:27:00+00:00",
+      "summary": "Transaction in Own Shares 21 April 2026 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 21 April 2026 it purchased the following number of Shares for cancellation. Aggregat",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Track Lower in Tuesday Trading; Euro Area Economic Sentiment Plunges",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-track-lower-tuesday-161422242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:14:22+00:00",
+      "summary": "The European stock markets were tracking lower in Tuesday trading as The Stoxx Europe was declining",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

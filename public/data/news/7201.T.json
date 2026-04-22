@@ -1,0 +1,53 @@
+{
+  "ticker": "7201.T",
+  "last_updated": "2026-04-22T13:51:23.606883+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Nissan Advances Solid-State Batteries, Targets 2028 EV Rollout",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nissan-advances-solid-state-batteries-150600001.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:06:00+00:00",
+      "summary": "NSANY targets 2028 EV rollout with solid-state batteries, achieving a key prototype milestone that can double range and slash charging times.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Zacks Industry Outlook Highlights  Nissan, NIO and Toyota",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-industry-outlook-highlights-nissan-071800201.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T07:18:00+00:00",
+      "summary": "Nissan, NIO and Toyota have been highlighted in this Industry Outlook article.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 Foreign Auto Stocks Poised to Benefit From Strength in Key Markets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-foreign-auto-stocks-poised-151300344.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:13:00+00:00",
+      "summary": "NSANY, NIO and TM are positioned to benefit as China's NEV surge and stable demand in Japan reshape global auto market dynamics.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nissan Advances AI and EV Strategy, Cuts Model Lineup to 45",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nissan-advances-ai-ev-strategy-165500616.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T16:55:00+00:00",
+      "summary": "NSANY unveils Mobility Intelligence for Everyday Life plan, boosting AI cars and cutting models from 56 to 45.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Chipmakers AMD, Arm, and Qualcomm are all investing in this buzzy self-driving tech startup",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/chipmakers-amd-arm-qualcomm-investing-130000152.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T13:00:00+00:00",
+      "summary": "The involvement of AMD, Arm, and the venture arm of Qualcomm is about more than money. It's also about tapping into the variety of compute platforms that Wayve's self-driving system will need to use.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

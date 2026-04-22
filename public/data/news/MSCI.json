@@ -1,0 +1,53 @@
+{
+  "ticker": "MSCI",
+  "last_updated": "2026-04-22T13:17:34.581731+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "MSCI Inc (MSCI) Q1 2026 Earnings Call Highlights: Robust Growth and Strategic Acquisitions ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/msci-inc-msci-q1-2026-070338588.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:03:38+00:00",
+      "summary": "MSCI Inc (MSCI) reports strong revenue and EPS growth, driven by strategic acquisitions and AI integration, despite challenges in sustainability and real assets.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "MSCI (MSCI) Stock Is Up, What You Need To Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/msci-msci-stock-know-215751512.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:57:51+00:00",
+      "summary": "Shares of investment analytics provider MSCI (NYSE:MSCI) jumped 3.7% in the afternoon session after the company reported strong first-quarter 2026 financial results that surpassed Wall Street's expect",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "MSCI Inc. Q1 2026 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-msci-inc-q1-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:44:11+00:00",
+      "summary": "Moby summary of MSCI Inc.'s Q1 2026 earnings call",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MSCI (MSCI) Q1 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/04/21/msci-msci-q1-2026-earnings-call-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:24:49+00:00",
+      "summary": "Jeremy Ulan: Thank you, Operator.  Let me remind you that this call contains forward-looking statements, which are governed by the language on the second slide of the presentation.  You are cautioned ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MSCI Q1 Earnings Beat Estimates, Revenues Rise Y/Y, Shares Up",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/msci-q1-earnings-beat-estimates-171100418.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:11:00+00:00",
+      "summary": "MSCI's Q1'26 earnings beat estimates as revenues jump 14% and margins expand, fueled by asset-based fees and recurring subscriptions.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

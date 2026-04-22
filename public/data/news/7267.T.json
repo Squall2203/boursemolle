@@ -1,0 +1,53 @@
+{
+  "ticker": "7267.T",
+  "last_updated": "2026-04-22T13:43:50.714596+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "AAA gas prices reveal a new trend for Americans",
+      "url": "https://www.thestreet.com/retail/aaa-gas-prices-reveal-a-new-trend-for-americans?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:17:00+00:00",
+      "summary": "For the last six weeks, pulling into a gas station to fill up the old flivver (be it Ford, Chevy, Honda, or maybe BMW) has been an exercise in hair-pulling, teeth-gnashing pain. The U.S. national pric",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Aisin contract manufacturing Mazda 6-speed auto transmission in US",
+      "url": "https://www.just-auto.com/news/aisin-contract-manufacturing-mazda-6-speed-auto-transmission-in-us/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:07:55+00:00",
+      "summary": "Aisin says it is promoting local production that meets customer needs globally.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "[Latest] Global Hydrogen Fuel Cell Vehicle Market Size/Share Worth USD 28.47 Billion by 2035 at a 18.7% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/latest-global-hydrogen-fuel-cell-113000257.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:30:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Hydrogen Fuel Cell Vehicle Market size & share revenue was valued at ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Todd Blue gets his Porsche store through 4 dealership purchase in California",
+      "url": "https://www.wardsauto.com/news/todd-blue-gets-his-porsche-store-through-4-dealership-purchase-in-californi/817860/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:00:00+00:00",
+      "summary": "The deal with Umansky Auto Group also included Audi, Land Rover and Honda dealerships in Livermore.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Honda & Sony End Afeela EV Project, Eye Non-EV Opportunities",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/honda-sony-end-afeela-ev-184400049.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T18:44:00+00:00",
+      "summary": "Honda ends Afeela EV with Sony, shifts focus to AI, audio tech, and non-EV opportunities while keeping partnership intact.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

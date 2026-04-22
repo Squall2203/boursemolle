@@ -1,0 +1,53 @@
+{
+  "ticker": "6752.T",
+  "last_updated": "2026-04-22T13:49:45.557394+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Panasonic NEP KAIROS Collaboration Adds New Angle To Valuation Debate",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/panasonic-nep-kairos-collaboration-adds-010812637.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T01:08:12+00:00",
+      "summary": "Panasonic Holdings and NEP Group are collaborating to integrate Panasonic's KAIROS live production system with NEP's Platform. The integration will be showcased at NAB Show 2026, targeting more flexib",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AIR INDIA SELECTS PANASONIC AVIONICS AS IFE MRO PROVIDER FOR 74 AIRCRAFT",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/air-india-selects-panasonic-avionics-140000874.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T14:00:00+00:00",
+      "summary": "Panasonic Avionics Corporation (Panasonic Avionics) has today announced that Air India has selected Panasonic Technical Services' (PTS) Total Care Package to maintain the airline's in-flight entertain",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Panasonic and NEP Advance IP-Based Live Production with NEP Platform and KAIROS Integration",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/panasonic-nep-advance-ip-based-130000245.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T13:00:00+00:00",
+      "summary": "NEWARK, N.J., April 14, 2026--Panasonic Video and Audio Systems North America and NEP Group, Inc. will showcase its third-party integration between NEP Platform, a new software orchestration system, a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Japan's Kansai Association of Corporate Executives praises SK Chemicals' recycling technologies",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/japans-kansai-association-corporate-executives-005700718.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T00:57:00+00:00",
+      "summary": "A Japanese business delegation visited SK Chemicals to gain a firsthand look at the company's recycled-plastics technologies and solutions.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Battery Separator Market Research Report 2026: Semcorp, Asahi Kasei, SK Group, W-SCOPE Lead the $8 Billion Industry - Forecast to 2031",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/battery-separator-market-research-report-081100045.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T08:11:00+00:00",
+      "summary": "The Battery Separator Market is anticipated to grow from USD 8.00 Billion in 2025 to USD 17.14 Billion by 2031, with a CAGR of 13.54%. Driven by rising EV and energy storage demands, the market is sig",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

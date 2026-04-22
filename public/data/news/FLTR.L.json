@@ -1,0 +1,53 @@
+{
+  "ticker": "FLTR.L",
+  "last_updated": "2026-04-22T12:24:18.101084+00:00",
+  "sentiment_score": -0.13,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Is Flutter Entertainment (NYSE:FLUT) Starting To Look Attractive After A 50% Share Price Slide",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/flutter-entertainment-nyse-flut-starting-050338544.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T05:03:38+00:00",
+      "summary": "If you are wondering whether Flutter Entertainment is starting to look attractively priced or still has more room to fall before it offers value, this article walks through what the current share pric",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Qualcomm downgraded, Okta upgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/news/marvell-upgraded-trade-desk-downgraded-143122342.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:47:39+00:00",
+      "summary": "Qualcomm downgraded, Okta upgraded: Wall Street's top analyst calls",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Citi cuts Flutter to \"sell\" with sharply reduced 700p price target as US growth concerns mount",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090670/citi-cuts-flutter-to-sell-with-sharply-reduced-700p-price-target-as-us-growth-concerns-mount-1090670.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:28:00+00:00",
+      "summary": "The investment bank slashes its price target by more than half, saying it has lost confidence in Flutter's ability to hit its own US profit targets. Citi has downgraded Flutter Entertainment PLC (LSE:",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "DKNG iGaming and Lottery Growth Quietly Powering the Story",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dkng-igaming-lottery-growth-quietly-130000547.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T13:00:00+00:00",
+      "summary": "DraftKings' iGaming and lottery units are quietly driving growth, boosting stability and diversifying revenue beyond its more volatile sportsbook business.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 Reasons to Sell FLUT and 1 Stock to Buy Instead",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sell-flut-1-174001677.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T17:40:01+00:00",
+      "summary": "Flutter Entertainment has gotten torched over the last six months - since October 2025, its stock price has dropped 58.8% to $102.78 per share. This was partly driven by its softer quarterly results a",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    }
+  ]
+}

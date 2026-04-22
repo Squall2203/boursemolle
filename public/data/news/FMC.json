@@ -1,0 +1,53 @@
+{
+  "ticker": "FMC",
+  "last_updated": "2026-04-22T13:24:10.408665+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "FMC (NYSE:FMC) Trading Down 5.4% - Here's Why",
+      "url": "https://www.marketbeat.com/instant-alerts/fmc-nysefmc-trading-down-54-heres-why-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T16:46:18+00:00",
+      "summary": "FMC (NYSE:FMC) Shares Down 5.4% - Time to Sell?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "FMC Maintained by Wells Fargo -- Price Target Raised to $17.00",
+      "url": "https://www.gurufocus.com/news/8806024/fmc-maintained-by-wells-fargo-price-target-raised-to-1700",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-21T14:06:37+00:00",
+      "summary": "Related Stocks: FMC,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "US has lost its maritime focus, says FMC’s DiBella",
+      "url": "https://www.freightwaves.com/news/us-has-lost-its-maritime-focus-says-fmcs-dibella",
+      "source": "freightwaves.com",
+      "published_at": "2026-04-21T11:00:00+00:00",
+      "summary": "Global reach, transformational change and customer service: Chair Laura DiBella says this isn’t the Federal Maritime Commission you thought you knew. The post US has lost its maritime focus, says FMC’",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "FMC CORP: Form 8-K - Current report",
+      "url": "https://www.sec.gov/Archives/edgar/data/37785/000119312526163937/0001193125-26-163937-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-20T20:05:15+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FMC CORP: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/37785/000003778526000069/0000037785-26-000069-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-17T20:37:48+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

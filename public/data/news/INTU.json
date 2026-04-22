@@ -1,0 +1,53 @@
+{
+  "ticker": "INTU",
+  "last_updated": "2026-04-22T12:54:03.694299+00:00",
+  "sentiment_score": 0.47,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Southern Capital Advisors LLC Has $2.65 Million Position in Intuit Inc. $INTU",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-southern-capital-advisors-llc-has-265-million-position-in-intuit-inc-intu-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:26:19+00:00",
+      "summary": "Southern Capital Advisors LLC boosted its holdings in Intuit Inc. (NASDAQ:INTU - Free Report) by 478.8% during the 4th quarter, according to its most recent disclosure with the Securities and Exchange",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Intuit Inc. $INTU Shares Sold by PFG Advisors",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-intuit-inc-intu-shares-sold-by-pfg-advisors-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T10:06:38+00:00",
+      "summary": "PFG Advisors lessened its holdings in shares of Intuit Inc. (NASDAQ:INTU - Free Report) by 42.2% during the fourth quarter, according to its most recent disclosure with the Securities and Exchange Com",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Adobe vs. Intuit: Which Beaten-Down Software Stock Is a Better Buy?",
+      "url": "https://www.fool.com/investing/2026/04/22/adobe-vs-intuit-which-beaten-down-software-stock-i/?source=iedfolrf0000001",
+      "source": "fool.com",
+      "published_at": "2026-04-22T05:53:00+00:00",
+      "summary": "Both of these market-leading software platforms have faced recent sell-offs. But one arguably looks more attractive. Year to date, many once-beloved software stocks have taken a beating as the market ",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "How to get multiple agents to play nice at scale",
+      "url": "https://stackoverflow.blog/2026/04/22/how-to-get-multiple-agents-to-play-nice-at-scale/",
+      "source": "stackoverflow.blog",
+      "published_at": "2026-04-22T04:40:00+00:00",
+      "summary": "Chase Roossin, group engineering manager, and Steven Kulesza, staff software engineer, from Intuit join the podcast to chat about what might be the hardest problem in engineering right now: getting mu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Intuit Gains FedNow Certification to Accelerate Instant Business Payments",
+      "url": "https://smallbiztrends.com/intuit-gains-fednow-certification-to-accelerate-instant-business-payments/",
+      "source": "smallbiztrends.com",
+      "published_at": "2026-04-21T19:11:00+00:00",
+      "summary": "Discover how Intuit's recent FedNow certification is set to revolutionize instant business payments, enhancing efficiency and speed for companies nationwide. Intuit, a leader in financial technology, ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

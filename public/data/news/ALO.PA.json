@@ -1,0 +1,53 @@
+{
+  "ticker": "ALO.PA",
+  "last_updated": "2026-04-22T11:32:27.852834+00:00",
+  "sentiment_score": 0.13,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Assessing Alstom (ENXTPA:ALO) Valuation After Profit Warning And Guidance Withdrawal",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-alstom-enxtpa-alo-valuation-140437613.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:04:37+00:00",
+      "summary": "Alstom (ENXTPA:ALO) is back in focus after a profit warning, the withdrawal of medium term financial guidance, and comments that slower project progress will weigh on near term profit margins and cash",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Shares in world’s second-biggest train maker plunge on profit downgrade",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/shares-world-second-biggest-train-082340129.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T08:23:40+00:00",
+      "summary": "Shares in French train maker Alstom plunged more than 30 per cent on Friday after the group’s new boss scrapped a free cash flow target and reduced...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alstom Shares Plunge on Profit Warning",
+      "url": "https://www.wsj.com/business/earnings/alstom-shares-plunge-on-profit-warning-c15f17f8?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T08:11:00+00:00",
+      "summary": "Shares in the trainmaker dropped 26% after it withdrew its medium-term cash flow and earnings targets.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "ALSTOM S.A: Alstom’s preliminary FY 2025/26 results: Record orders, Free Cash Flow within guidance, Adjusted EBIT at ~6%, Revised preliminary outlook for FY 2026/27",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alstom-alstom-preliminary-fy-2025-160000092.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T16:00:00+00:00",
+      "summary": "FY 2025/26 order intake and sales delivered as planned Record order intake1 of €27.6 billion, book-to-bill ratio1 of 1.4 and backlog of >€100 billionReported sales1 up 4%, equivalent to 7% on an organ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ALSTOM S.A: Alstom signs a new Signalling contract in Europe",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alstom-alstom-signs-signalling-contract-063000142.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T06:30:00+00:00",
+      "summary": "08 April 2026 – Alstom, a global leader in smart and sustainable mobility, is pleased to announce that it has received a Signalling contract in the Europe region for approximately €295 million. This o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

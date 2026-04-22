@@ -1,0 +1,53 @@
+{
+  "ticker": "HNR1.DE",
+  "last_updated": "2026-04-22T11:53:20.125274+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Dividend Stocks With Yields Up To 4.4%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-dividend-stocks-yields-4-103156358.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:31:56+00:00",
+      "summary": "As European markets respond to corporate earnings and geopolitical developments, the pan-European STOXX Europe 600 Index saw a notable rise of 1.91%, reflecting investor optimism amid Middle East de-e",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cardano CEO Announces Breakthrough: Can ADA Break Out?",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/cardano-ceo-announces-breakthrough-ada-233141094.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T23:31:41+00:00",
+      "summary": "Cardano CEO Frederik Gregaard said the network cut audit costs by 50% for institutions and listed a $100 million reinsurance product on the London Stock Exchange. The Audit Cost Breakthrough The Carda",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "A Look At Hannover Rück (XTRA:HNR1) Valuation After Higher Net Income And A Larger Dividend Commitment",
+      "url": "https://finance.yahoo.com/news/look-hannover-r-ck-xtra-181130782.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T18:11:30+00:00",
+      "summary": "Why Hannover Rück’s latest results matter for shareholders Hannover Rück (XTRA:HNR1) has grabbed investor attention after reporting its 2025 results, with higher group net income, a sizeable proposed ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Hannover Re Increases Earnings and Dividend, Reinforces Sustained Profitability Significantly",
+      "url": "https://finance.yahoo.com/news/hannover-increases-earnings-dividend-reinforces-223125563.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T22:31:25+00:00",
+      "summary": "Group net income rises sharply by 13.4% to EUR 2.6 billion Reinsurance revenue (gross) grows by 4.7% adjusted for exchange rate effects Property and casualty reinsurance: Good result with increased re",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Hannover Rueck SE (HVRRF) Full Year 2025 Earnings Call Highlights: Record Net Income and Robust ...",
+      "url": "https://finance.yahoo.com/news/hannover-rueck-se-hvrrf-full-190245822.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T19:02:45+00:00",
+      "summary": "For the complete transcript of the earnings call, please refer to the full earnings call transcript.  Hannover Rueck SE (HVRRF) reported a record net income of 2.64 billion for 2025, reflecting a sust",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

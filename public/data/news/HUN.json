@@ -1,0 +1,53 @@
+{
+  "ticker": "HUN",
+  "last_updated": "2026-04-22T13:24:26.712038+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Huntsman CORP: Form DEFA14A - Additional definitive proxy soliciting materials and Rule 14(a)(12) material",
+      "url": "https://www.sec.gov/Archives/edgar/data/1307954/000110465926045092/0001104659-26-045092-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-20T10:01:42+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Huntsman Sees Unusually Large Options Volume (NYSE:HUN)",
+      "url": "https://www.marketbeat.com/instant-alerts/huntsman-sees-unusually-large-options-volume-nysehun-2026-04-17/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-17T15:58:21+00:00",
+      "summary": "Huntsman Corporation (NYSE:HUN - Get Free Report) was the recipient of unusually large options trading on Friday. Traders purchased 43,280 put options on the stock. This is an increase of approximatel",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Huntsman Turns Regulatory Compliance into Innovation Advancements for Aerospace OEMs",
+      "url": "https://www.huntsman.com/investors/newsroom/news-releases/detail/622/huntsman-turns-regulatory-compliance-into-innovation",
+      "source": "huntsman.com",
+      "published_at": "2026-04-15T17:30:00+00:00",
+      "summary": "THE WOODLANDS, Texas Aerospace OEMs are preparing for increased build rates in commercial aviation, driven by record backlogs, rising travel demand, and an aging fleet in need of replacement. Keeping ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Huntsman Corp (HUN) Shares Fall 3.4% -- What GF Score of 76 Tells Investors",
+      "url": "https://www.gurufocus.com/news/8793552/huntsman-corp-hun-shares-fall-34-what-gf-score-of-76-tells-investors",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-14T23:51:07+00:00",
+      "summary": "Related Stocks: HUN,",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Twelve Points Wealth Management LLC Sells 87,742 Shares of Huntsman Corporation $HUN",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-twelve-points-wealth-management-llc-sells-87742-shares-of-huntsman-corporation-hun-2026-04-11/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-11T12:22:25+00:00",
+      "summary": "Twelve Points Wealth Management LLC lowered its position in shares of Huntsman Corporation (NYSE:HUN - Free Report) by 51.5% during the fourth quarter, according to its most recent filing with the Sec",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

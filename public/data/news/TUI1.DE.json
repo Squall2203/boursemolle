@@ -1,0 +1,53 @@
+{
+  "ticker": "TUI1.DE",
+  "last_updated": "2026-04-22T11:57:24.684804+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Solid Earnings Reflect TUI's (ETR:TUI1) Strength As A Business",
+      "url": "https://finance.yahoo.com/news/solid-earnings-reflect-tuis-etr-050129603.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T05:01:29+00:00",
+      "summary": "TUI AG's ( ETR:TUI1 ) earnings announcement last week was disappointing for investors, despite the decent profit...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "TUI AG (TUIFF) Q1 2026 Earnings Call Highlights: Resilient Performance Amid Challenges",
+      "url": "https://finance.yahoo.com/news/tui-ag-tuiff-q1-2026-150045737.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T15:00:45+00:00",
+      "summary": "TUI AG (TUIFF) reports strong EBIT growth and positive booking trends despite disruptions from the Melissa hurricane in Jamaica.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Should You Buy TUI AG (ETR:TUI1) For Its Upcoming Dividend?",
+      "url": "https://finance.yahoo.com/news/buy-tui-ag-etr-tui1-040441948.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T04:04:41+00:00",
+      "summary": "It looks like TUI AG ( ETR:TUI1 ) is about to go ex-dividend in the next four days. The ex-dividend date is two...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Here's Why TUI (ETR:TUI1) Has Caught The Eye Of Investors",
+      "url": "https://finance.yahoo.com/news/heres-why-tui-etr-tui1-052525396.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-22T05:25:25+00:00",
+      "summary": "It's common for many investors, especially those who are inexperienced, to buy shares in companies with a good story...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Cheapest and priciest airlines for extra legroom revealed",
+      "url": "https://uk.finance.yahoo.com/news/airlines-extra-legroom-seat-flights-cost-cheapest-123120937.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-13T12:31:20+00:00",
+      "summary": "Fees start from £5 on some short-haul routes, but can climb to £200 on long-haul flights.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

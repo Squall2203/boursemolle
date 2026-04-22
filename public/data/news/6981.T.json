@@ -1,0 +1,53 @@
+{
+  "ticker": "6981.T",
+  "last_updated": "2026-04-22T13:45:40.947105+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Murata to Showcase Advanced Sensors and Connectivity Innovation at Sensors Converge 2026",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/murata-showcase-advanced-sensors-connectivity-123000207.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:30:00+00:00",
+      "summary": "Murata, a global leader in advanced electronics, will exhibit its latest innovations in sensing, connectivity, and intelligent systems design at Sensors Converge 2026, held May 5-7 in Santa Clara, Cal",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Twelve New Member Companies join the AR Alliance as Strategic Growth Continues",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/twelve-member-companies-join-ar-161500365.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T16:15:00+00:00",
+      "summary": "BELLINGHAM, Wash., March 27, 2026--The AR Alliance, a division of SPIE that is focused on augmented reality (AR), proudly announces the addition of Ainstec, ams-Osram, Fraunhofer ISIT, Hong Kong Highp",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "QuantumScape Corporation Q4 2025 Earnings Call Summary",
+      "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-quantumscape-corporation-q4-2025-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T13:30:00+00:00",
+      "summary": "Moby summary of QuantumScape Corporation's Q4 2025 earnings call",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Buy, Sell or Hold QuantumScape Stock Ahead of Q4 Earnings?",
+      "url": "https://finance.yahoo.com/news/buy-sell-hold-quantumscape-stock-141100861.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T14:11:00+00:00",
+      "summary": "QS heads into Q4 earnings with narrowing losses, B1 cell shipments and Eagle Line live as shares slide 48% in three months.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Murata Manufacturing (TSE:6981) Valuation Check After Recent Share Price Pullback And Strong One Year Return",
+      "url": "https://finance.yahoo.com/news/murata-manufacturing-tse-6981-valuation-160349092.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T16:03:49+00:00",
+      "summary": "Murata Manufacturing (TSE:6981) has drawn fresh attention after recent share price moves, with a 1 day decline contrasting with a positive past week. This has prompted investors to reassess its role i",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

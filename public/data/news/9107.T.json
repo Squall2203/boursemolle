@@ -1,0 +1,53 @@
+{
+  "ticker": "9107.T",
+  "last_updated": "2026-04-22T13:54:39.647785+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Japanese shipping giants pull back as Strait of Hormuz ’practically closes’",
+      "url": "https://finance.yahoo.com/news/japanese-shipping-giants-pull-back-044408872.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-01T04:44:08+00:00",
+      "summary": "Investing.com — Japanese carriers operating in the Middle East have shifted their operations from \"high alert\" to a total standstill. On Sunday, Japan’s largest shipping companies announced a formal s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Diana Shipping Inc. Announces Time Charter Contract for m/v New Orleans With SwissMarine",
+      "url": "https://finance.yahoo.com/news/diana-shipping-inc-announces-time-131000354.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-15T13:10:00+00:00",
+      "summary": "ATHENS, Greece, Oct. 15, 2025 (GLOBE NEWSWIRE) -- Diana Shipping Inc. (NYSE: DSX), (the “Company”), a global shipping company specializing in the ownership and bareboat charter-in of dry bulk vessels,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Examining Kawasaki Kisen Kaisha After Five Year 2,150% Rally and Latest Industry Upswing",
+      "url": "https://finance.yahoo.com/news/examining-kawasaki-kisen-kaisha-five-113608902.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T11:36:08+00:00",
+      "summary": "If you’re wondering whether now is the right moment to make a move on Kawasaki Kisen Kaisha stock, you’re definitely not alone. Over the past several years, this shipping giant has delivered astoundin",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "K LINE completes phase one development of Seawing automated kite system",
+      "url": "https://www.ship-technology.com/news/k-line-completes-phase-one-development-seawing-automated-kite-system/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-05T17:46:10+00:00",
+      "summary": "The initial tests, conducted with a 300m2 kite, have yielded positive results, confirming the system's tensile strength and performance.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "QatarEnergy receives Al Zuwair LNG carrier",
+      "url": "https://www.ship-technology.com/news/qatarenergy-receives-al-zuwair-lng-carrier/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-20T18:44:24+00:00",
+      "summary": "The newly delivered LNG carrier will operate under a time-charter contract with QatarEnergy.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

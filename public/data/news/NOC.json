@@ -1,0 +1,53 @@
+{
+  "ticker": "NOC",
+  "last_updated": "2026-04-22T13:01:15.653130+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "NOC Q1 Deep Dive: Defense Demand, Production Ramps, and Margin Recovery Shape Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/noc-q1-deep-dive-defense-102923950.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:29:23+00:00",
+      "summary": "Security and aerospace company Northrop Grumman (NYSE:NOC) reported Q1 CY2026 results topping the market’s revenue expectations, with sales up 4.4% year on year to $9.88 billion. The company expects t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Northrop Grumman Corp (NOC) Q1 2026 Earnings Call Highlights: Strong Sales Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/northrop-grumman-corp-noc-q1-070301418.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:03:01+00:00",
+      "summary": "Northrop Grumman Corp (NOC) reports robust first-quarter performance with significant sales growth and strategic advancements in key defense programs.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing Northrop Grumman (NOC) Valuation After A Recent Pullback And Mixed Fair Value Signals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-northrop-grumman-noc-valuation-001751402.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T00:17:51+00:00",
+      "summary": "Recent share performance and business scale Northrop Grumman (NOC) has attracted fresh attention after a recent pullback, with the stock down about 14% over the past month and roughly 8% over the past",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Boeing Earnings Are Coming. Can They Avoid the Aerospace ‘Bloodbath?’",
+      "url": "https://finance.yahoo.com/m/74e5a257-54bd-3497-83e3-4ee06f72d453/boeing-earnings-are-coming..html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:23:00+00:00",
+      "summary": "For the quarter, Wall Street projects a per share loss of 68 cents from sales of $21.3 billion, according to FactSet.  A year ago, Boeing reported a per share loss of 49 cents from sales of $19.5 bill",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "RTX, Northrop, GE Aerospace Beat Views, But Stocks Diverge. Pentagon Details Budget Request.",
+      "url": "https://finance.yahoo.com/m/3f5af19c-a572-3ba9-a9bb-3f227ccea289/rtx%2C-northrop%2C-ge-aerospace.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:51:42+00:00",
+      "summary": "RTX, Northrop Grumman, GE Aerospace clear estimates, Lockheed Martin follows Thursday. Pentagon releases budget details amid Iran war.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "TSCO.L",
+  "last_updated": "2026-04-22T12:27:09.415860+00:00",
+  "sentiment_score": 0.67,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Tesco will do ‘whatever it can’ to keep down food prices amid Iran war",
+      "url": "https://uk.finance.yahoo.com/news/tesco-whatever-keep-down-food-091832011.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:29:18+00:00",
+      "summary": "Tesco said that profits could dip over the current year as it flagged increased uncertainty linked to the conflict in the Middle East.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tesco swapping barcodes for QR codes in UK 'first' - here's why",
+      "url": "https://uk.finance.yahoo.com/news/tesco-swapping-barcodes-qr-codes-104800294.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T10:48:00+00:00",
+      "summary": "Tesco is swapping barcodes for QR codes on a range of its own-brand products in a move the supermarket chain is describing as a UK \"first\".  Scanning the QR codes with a smartphone will give shoppers ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "United Kingdom Quick Commerce Databook Report 2026: Market to Reach $4.71 Trillion by 2029 - Tesco, Ocado, and Deliveroo Spearhead Growth as Strategic Grocery Alliances Redefine the Retail Landscape",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/united-kingdom-quick-commerce-databook-104000842.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T10:40:00+00:00",
+      "summary": "The UK quick commerce market presents opportunities for growth through integration with supermarket chains, leveraging delivery platform partnerships, enhancing omnichannel strategies, and focusing on",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tesco widens profit outlook amid geopolitical uncertainty",
+      "url": "https://www.retail-insight-network.com/news/tesco-widens-profit-outlook/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T09:04:08+00:00",
+      "summary": "The retailer expects adjusted operating profit in the range of £3bn to £3.3bn for the current financial year.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tesco PLC (TSCDF) Full Year 2026 Earnings Call Highlights: Record Market Share and Strategic ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesco-plc-tscdf-full-2026-090037715.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T09:00:37+00:00",
+      "summary": "Tesco PLC (TSCDF) reports robust financial performance with significant market share gains, while navigating competitive pressures and economic uncertainties.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "HO.PA",
+  "last_updated": "2026-04-22T11:38:48.445165+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Stocks Track Lower in Tuesday Trading; Euro Area Economic Sentiment Plunges",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-track-lower-tuesday-161422242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:14:22+00:00",
+      "summary": "The European stock markets were tracking lower in Tuesday trading as The Stoxx Europe was declining",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Thales reports strong growth as defence orders jump on Iran war tensions",
+      "url": "https://www.euronews.com/2026/04/21/thales-reports-strong-growth-as-defence-orders-jump-on-iran-war-tensions?utm_source=yahoo&utm_campaign=feeds_business_articles_2024&utm_medium=referral&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:18:33+00:00",
+      "summary": "The French company recorded five defence orders worth more than €100 million each, as global demand rises amid the Iran war.View on euronews",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Thales first-quarter sales jump nearly 10% as defence deliveries surge",
+      "url": "https://finance.yahoo.com/video/thales-first-quarter-sales-jump-074718888.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:47:18+00:00",
+      "summary": "STORY: Europe's largest defence technology group Thales reported first-quarter sales well above analyst forecasts.  Revenues rose nearly 10% largely due to surging defence deliveries.  The group poste",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Palantir Technologies Is About to Control the Skies With AI",
+      "url": "https://247wallst.com/investing/2026/04/20/palantir-technologies-is-about-to-control-the-skies-with-ai/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:16:27+00:00",
+      "summary": "U.S. airspace sees more than 45,000 flights every day, yet the Federal Aviation Administration still leans on systems prone to congestion and outages. Congress has released $12.5 billion of the $32.5 ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Open Text Targets Regulated European Cloud Growth With New Sovereign Alliances",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/open-text-targets-regulated-european-150639050.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T15:06:39+00:00",
+      "summary": "Open Text (NasdaqGS:OTEX) has partnered with S3NS, an alliance between Thales and Google Cloud, to offer a trusted hybrid cloud for sensitive data compliance in France. The company also plans to launc",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

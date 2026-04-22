@@ -1,0 +1,53 @@
+{
+  "ticker": "AF.PA",
+  "last_updated": "2026-04-22T11:40:02.174720+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Another airline shuts down for summer, cancels all flights",
+      "url": "https://www.thestreet.com/travel/another-airline-shuts-down-for-summer-cancels-all-flights?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:07:34+00:00",
+      "summary": "With any attempts at peace talks over Iran now fallen through multiple times, the war has created a major crisis for airlines when it comes to the cost of jet fuel and the safety of certain routes. Lo",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Airline Catering Members of UNITE HERE Local 11 Testify at Public Truth Commission on Working Conditions at LAX Facility",
+      "url": "https://finance.yahoo.com/economy/policy/articles/airline-catering-members-unite-local-234200975.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T23:42:00+00:00",
+      "summary": "LOS ANGELES, April 17, 2026--This week, airline catering workers employed by Flying Food Group at Los Angeles International Airport publicly shared their experiences before a Truth Commission composed",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "A Look At Air France-KLM (ENXTPA:AF) Valuation After Recent Share Price Strength",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-air-france-klm-enxtpa-121216184.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T12:12:16+00:00",
+      "summary": "Why Air France-KLM Is Back on Investors’ Radar Air France-KLM (ENXTPA:AF) is drawing fresh attention after recent price moves, with the stock showing mixed short term performance and a longer record t",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Air France-KLM in the race for Portugal's TAP with offer for minority stake",
+      "url": "https://www.euronews.com/2026/04/02/air-france-klm-in-the-race-for-portugals-tap-with-offer-for-minority-stake?utm_source=yahoo&utm_campaign=feeds_business_articles_2024&utm_medium=referral&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T13:37:57+00:00",
+      "summary": "The deadline for submitting bids for the privatisation of the national airline TAP Air Portugal is this Thursday. The Portuguese government expects to receive three bids.View on euronews",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Declaration of number of voting rights",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/declaration-number-voting-rights-154500452.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T15:45:00+00:00",
+      "summary": "Declaration of number of voting rights Information relating to the total number of voting rights and shares as required by L.233-8 II of the code of commerce and article 223-16 of the general rules of",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

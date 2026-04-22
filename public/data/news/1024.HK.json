@@ -1,0 +1,53 @@
+{
+  "ticker": "1024.HK",
+  "last_updated": "2026-04-22T13:33:45.800409+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "China AI Startups Surge Up To 750% As Token Demand Drives $40 Billion Valuations",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/china-ai-startups-surge-750-192240976.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:22:40+00:00",
+      "summary": "Low-cost models and rising token consumption lift MiniMax and Zhipu above major tech peers",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AI’s Token Economy Revolution Creates New China Tech Winners",
+      "url": "https://finance.yahoo.com/news/ais-token-economy-revolution-creates-new-china-tech-winners-035211861.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T03:52:11+00:00",
+      "summary": "(Bloomberg) -- China’s cheap artificial intelligence models are rapidly attracting global users and creating new winners in the nation’s stock market.Most Read from BloombergCruise Ships Seized Brief ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alibaba Leads $300 Million Bet on AI Video Platform ShengShu",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/alibaba-leads-300-million-bet-015637406.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T01:56:37+00:00",
+      "summary": "(Bloomberg) -- Alibaba Group Holding Ltd.’s cloud division led a 2 billion yuan ($293 million) funding round for ShengShu Technology, bolstering the war chest of a young contender in China’s crowded A",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Reassessing Kuaishou Technology (SEHK:1024) After Sharp Share Price Declines And DCF Upside",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reassessing-kuaishou-technology-sehk-1024-200445406.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T20:04:45+00:00",
+      "summary": "If you are wondering whether Kuaishou Technology is attractively priced or still too expensive, the key is to look past the headline share price and focus on what different valuation methods are actua",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Kuaishou Revenue Rises 12% as Kling AI Monetization Accelerates",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/kuaishou-revenue-rises-12-kling-194727206.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T19:47:27+00:00",
+      "summary": "Kling AI revenue hits 340 million yuan as adoption grows among creators and enterprise clients.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "6857.T",
+  "last_updated": "2026-04-22T13:52:00.355775+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Advantest Introduces Pin Scale 5000B Digital Test Solution to Extend Capabilities of V93000 EXA Scale Test Platform",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/advantest-introduces-pin-scale-5000b-070500674.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:05:00+00:00",
+      "summary": "Test Capabilities Designed to Address Increasing Complexity of Next-Generation HPC and AI Devices PS5000B Pin Scale 5000B TOKYO, April 22, 2026 (GLOBE NEWSWIRE) -- Advantest Corporation (TSE: 6857), a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "TER Expands Portfolio on Acquisitions: What's Ahead for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ter-expands-portfolio-acquisitions-whats-144300056.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:43:00+00:00",
+      "summary": "Teradyne's strong growth is driven by the AI surge and strategic acquisitions, with expanding semiconductor test demand boosting its long-term market opportunity.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Advantest Announces Strategic Partnership with Applied Materials and Joins EPIC Platform",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/advantest-announces-strategic-partnership-applied-073000299.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:30:00+00:00",
+      "summary": "Advantest and Applied Materials Advantest and Applied Materials announce strategic partnership TOKYO, April 21, 2026 (GLOBE NEWSWIRE) -- Leading semiconductor test equipment supplier Advantest Corpora",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Applied Materials Announces Advantest as Innovation Partner for EPIC Platform in Silicon Valley",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/applied-materials-announces-advantest-innovation-073000434.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:30:00+00:00",
+      "summary": "Companies will co-innovate to bridge the gap between front-end manufacturing and back-end testing of semiconductors and advanced packaging Advantest to co-locate new, state-of-the-art Innovation Cente",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider Advantest (TSE:6857) After A 410% One-Year Surge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-advantest-tse-6857-150620087.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T15:06:20+00:00",
+      "summary": "If you are wondering whether Advantest shares still offer value after a strong run, the next sections will break down what the current price might be implying. The stock last closed at ¥27,870, with r",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

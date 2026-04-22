@@ -1,0 +1,53 @@
+{
+  "ticker": "PDD",
+  "last_updated": "2026-04-22T13:39:50.051486+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Contractor Commerce launches AI-powered conversational buying experience",
+      "url": "https://www.prnewswire.com/news-releases/contractor-commerce-launches-ai-powered-conversational-buying-experience-302749472.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T11:01:00+00:00",
+      "summary": "New technology ushers in new era of e-commerce for home service contracting companies LEBANON, Ohio , April 22, 2026 /PRNewswire/ -- Contractor Commerce, a leading e-commerce and sales enablement plat",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Sam’s Club Launches Enhanced Express Delivery, Fueling Continued eCommerce Growth with Checkout to Doorstep Delivery in as Soon as an Hour – Often Less",
+      "url": "http://www.businesswire.com/news/home/20260422784492/en/Sam%E2%80%99s-Club-Launches-Enhanced-Express-Delivery-Fueling-Continued-eCommerce-Growth-with-Checkout-to-Doorstep-Delivery-in-as-Soon-as-an-Hour-%E2%80%93-Often-Less/?feedref=JjAwJuNHiystnCoBq_hl-egJG-Kjyo-lCtinJz6iqTI4plfPZtlGYRDUHCSmgbii6XkLWuQZD-HgGRnjQvCyg3iCfEFIaJW7-otp9V1XQiLWzBnVLoGMUm5vHAnWCBpN",
+      "source": "businesswire.com",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "BENTONVILLE, Ark.--(BUSINESS WIRE)--Sam’s Club, a leading membership retail club, has launched an enhanced tier to its popular Express delivery, enabling members to go from checkout to doorstep delive",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "eDreams ODIGEO further Scales Agentic AI Ecosystem by Integrating Conversational Planning and Immediate Booking Fulfilment",
+      "url": "http://www.businesswire.com/news/home/20260422792237/en/eDreams-ODIGEO-further-Scales-Agentic-AI-Ecosystem-by-Integrating-Conversational-Planning-and-Immediate-Booking-Fulfilment/?feedref=JjAwJuNHiystnCoBq_hl-XnALyoojlLpp6riwfFrRaSqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu7cQOdG8MoojhQswLTpnsLX",
+      "source": "businesswire.com",
+      "published_at": "2026-04-22T10:59:00+00:00",
+      "summary": "BARCELONA, Spain--(BUSINESS WIRE)--eDreams ODIGEO (the “Company” or “eDO”) (BME: EDR) (OTC: EDDRF), the world’s leading travel subscription company and one of Europe’s largest e-commerce firms, today ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Komar Distribution Services Opens New Distribution Center in Perris, California",
+      "url": "https://www.prweb.com/releases/komar-distribution-services-opens-new-distribution-center-in-perris-california-302749550.html",
+      "source": "prweb.com",
+      "published_at": "2026-04-22T10:00:00+00:00",
+      "summary": "Komar Distribution Services expands its West Coast footprint with a new Perris, CA distribution center, enhancing logistics capabilities for retail, e-commerce, and omnichannel brands. PERRIS, Calif.,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Build-in-Public: What I Learned Building an AI Image SaaS",
+      "url": "https://dev.to/gozel_t_8f2c084ded7672955/build-in-public-what-i-learned-building-an-ai-image-saas-2bnb",
+      "source": "dev.to",
+      "published_at": "2026-04-22T09:00:19+00:00",
+      "summary": "Build-in-Public: What I Learned Building an AI Image SaaS I launched AdLoft AI six months ago. It's an AI tool that turns product photos into ad creatives for e-commerce sellers. No design skills need",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

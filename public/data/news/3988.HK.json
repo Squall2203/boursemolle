@@ -1,0 +1,53 @@
+{
+  "ticker": "3988.HK",
+  "last_updated": "2026-04-22T13:31:06.367038+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "FRN Variable Rate Fix",
+      "url": "https://finance.yahoo.com/markets/options/articles/frn-variable-rate-fix-163700379.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T16:37:00+00:00",
+      "summary": "LONDON, April 14, 2026-- As Agent Bank, please be advised of the following rate determined on: 4/13/2026Issue",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ecopetrol S.A. obtains authorization to carry out a debt management transaction of up to USD 1.25 billion",
+      "url": "https://finance.yahoo.com/economy/policy/articles/ecopetrol-obtains-authorization-carry-debt-014900679.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T01:49:00+00:00",
+      "summary": "Ecopetrol S.A. (BVC: ECOPETROL; NYSE: EC) (\"Ecopetrol\" and together with its subsidiaries, the \"Ecopetrol Group\") hereby reports that, as part of its comprehensive debt management strategy, through Re",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sun Hung Kai Secures HK$20B Loan as Bank Demand Hits HK$26B",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sun-hung-kai-secures-hk-191551179.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T19:15:51+00:00",
+      "summary": "Strong lender participation and lower Hibor-linked pricing may reflect improving financing conditions for Hong Kong developers.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bank Of China Bond Redemption Offers Fresh Clues On Valuation And Capital Mix",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-china-bond-redemption-offers-080444607.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T08:04:44+00:00",
+      "summary": "Bank of China (SEHK:3988) has completed the early redemption of a tranche of its tier 2 capital bonds. The bank exercised its redemption option at the earliest permitted date, fully repaying investors",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Now The Time To Reassess Bank Of China (SEHK:3988) After Recent Share Price Gains",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/now-time-reassess-bank-china-210727643.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T21:07:27+00:00",
+      "summary": "Wondering whether Bank of China's current share price reflects its true worth, or if the market is missing something important. The stock last closed at HK$4.80, with returns of 2.6% over 7 days, 0.8%",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

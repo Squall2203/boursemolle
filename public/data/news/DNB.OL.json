@@ -1,0 +1,53 @@
+{
+  "ticker": "DNB.OL",
+  "last_updated": "2026-04-22T12:46:02.591886+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Havila Shipping ASA: Petition received to register arrest in certain assets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/havila-shipping-asa-petition-received-215000070.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T21:50:00+00:00",
+      "summary": "Reference is made to the stock exchange notice dated 12 December 2025 where it was advised that companies in the group had received notice from DNB Bank ASA, Swedbank AB (publ) and Danske Bank A/S NUF",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stolt-Nielsen Limited Distributes Material for the 2026 Annual General Meeting of Shareholders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stolt-nielsen-limited-distributes-material-150000047.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T15:00:00+00:00",
+      "summary": "LONDON, March 23, 2026 – Stolt-Nielsen Limited (Oslo Børs: SNI) announced today that materials for the Company's Annual General Meeting have been made available. Shareholders of record as at close of ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is DNB Bank (OB:DNB) Still Attractive After Its Strong Multi‑Year Share Price Performance",
+      "url": "https://finance.yahoo.com/news/dnb-bank-ob-dnb-still-060538478.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T06:05:38+00:00",
+      "summary": "If you are looking at DNB Bank and wondering whether the current share price still represents good value, you are not alone. This article will walk through the key numbers that matter. The stock recen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "DNB Bank ASA (DNBBF) Q4 2025 Earnings Call Highlights: Strong Fee Growth and Capital Position ...",
+      "url": "https://finance.yahoo.com/news/dnb-bank-asa-dnbbf-q4-190346113.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-04T19:03:46+00:00",
+      "summary": "DNB Bank ASA (DNBBF) reports robust fee growth and a solid capital position, while navigating increased costs and competitive challenges in the Norwegian market.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Successful placement of Bond Tap Issue",
+      "url": "https://finance.yahoo.com/news/successful-placement-bond-tap-issue-070000493.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T07:00:00+00:00",
+      "summary": "Diversified Energy Company (NYSE: DEC, LSE: DEC) (“Diversified” or the “Company”) announces that its wholly-owned subsidiary Diversified Gas & Oil Corporation has successfully placed a USD 200 million",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

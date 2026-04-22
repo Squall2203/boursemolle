@@ -1,0 +1,53 @@
+{
+  "ticker": "CABK.MC",
+  "last_updated": "2026-04-22T12:11:22.161524+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "BNP Paribas Primary New Issues: Post-STAB Notice - No Stab NEW IMMO HOLDING",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bnp-paribas-primary-issues-post-145000331.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T14:50:00+00:00",
+      "summary": "[17.04.2026] Not for distribution, directly or indirectly, in or into the United States or any jurisdiction in which such distribution would be unlawful. NEW IMMO HOLDING Post-stabilisation Period Ann",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Pre-stabilisation Announcement",
+      "url": "https://finance.yahoo.com/markets/options/articles/pre-stabilisation-announcement-084800399.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T08:48:00+00:00",
+      "summary": "LONDON, April 15, 2026-- PRE-STABILISATION ANNOUNCEMENT",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stabilization Notice - Pre-Stab - NEW IMMO HOLDING",
+      "url": "https://finance.yahoo.com/markets/options/articles/stabilization-notice-pre-stab-immo-073500070.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T07:35:00+00:00",
+      "summary": "15.04.2026 Not for distribution, directly or indirectly, in or into the United States or any jurisdiction in which such distribution would be unlawful. NEW IMMO HOLDING Pre-stabilisation Period Announ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "KBRA Assigns Preliminary Ratings to Lura Funding DAC",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kbra-assigns-preliminary-ratings-lura-205200825.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T20:52:00+00:00",
+      "summary": "DUBLIN, March 23, 2026--KBRA Europe (KBRA) assigns preliminary ratings to eight classes of notes issued by Lura Funding DAC (Lura 2026), a static RMBS transaction backed by mortgage participations and",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Banks’ Qivalis Targets H2 2026 Launch for MiCA-Era Euro Stablecoin",
+      "url": "https://www.ccn.com/news/crypto/qivalis-euro-stablecoin-h2-2026-launch/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T12:47:15+00:00",
+      "summary": "Qivalis is in advanced talks with exchanges and liquidity partners ahead of a planned H2 2026 euro stablecoin launch. The consortium includes 12 European banks, ...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

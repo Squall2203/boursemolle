@@ -1,0 +1,53 @@
+{
+  "ticker": "BEI.DE",
+  "last_updated": "2026-04-22T11:50:53.096344+00:00",
+  "sentiment_score": -0.33,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Beiersdorf AG (BDRFF) Q1 2026 Earnings Call Highlights: Navigating Sales Declines and Strategic ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/beiersdorf-ag-bdrff-q1-2026-070108678.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:01:08+00:00",
+      "summary": "Despite a challenging quarter with overall sales declines, Beiersdorf AG (BDRFF) remains optimistic about future growth driven by strong performance in its Derma segment and strategic initiatives.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Beiersdorf Aktiengesellschaft Q1 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/beiersdorf-aktiengesellschaft-q1-earnings-call-highlights-2026-04-21/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:04:38+00:00",
+      "summary": "Beiersdorf Aktiengesellschaft (ETR:BEI) reported a challenging start to 2026 but said results were broadly in line with expectations, supported by continued strength in its Derma business and improvin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Beiersdorf Aktiengesellschaft (ETR:BEI) Passed Our Checks, And It's About To Pay A €1.00 Dividend",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/beiersdorf-aktiengesellschaft-etr-bei-passed-040431958.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T04:04:31+00:00",
+      "summary": "Regular readers will know that we love our dividends at Simply Wall St, which is why it's exciting to see Beiersdorf...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Beiersdorf to Boost Its Innovation Agenda With New, 100 Million-euro Venture Capital Fund",
+      "url": "https://wwd.com/beauty-industry-news/skin-care/beiersdorf-new-venture-capital-fund-skincare-innovation-1238693211/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T08:00:00+00:00",
+      "summary": "The new Skin Care Innovation Fund doubles the volume of the one launched in 2020 and reinforces the German company’s ambition to lead innovation in skin care.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Azoma launches new merchant-side standard for ‘brand friendly’ agentic commerce",
+      "url": "https://finance.yahoo.com/news/azoma-launches-merchant-side-standard-110000769.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T11:00:00+00:00",
+      "summary": "LONDON & TORONTO, March 12, 2026--Azoma, the pioneers of Agentic Commerce Optimization, today launched Agentic Merchant Protocol (AMP), the powerful new foundational platform empowering retailers and ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ADBE",
+  "last_updated": "2026-04-22T12:53:06.967702+00:00",
+  "sentiment_score": 0.47,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "These Stocks Are Today’s Movers: Tesla, United Airlines, Capital One, DJT, Adobe, and More",
+      "url": "https://finance.yahoo.com/m/a5e3e203-0e5d-3cec-a71c-8613984ac293/these-stocks-are-today%E2%80%99s.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:16:00+00:00",
+      "summary": "Tesla climbs 0.8% ahead of first-quarter earnings, while United Airlines shares shrug off a full-year guidance cut.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Adobe Buyback And AI Partnerships Reframe Enterprise Growth Opportunity",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/adobe-buyback-ai-partnerships-reframe-070633711.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:06:33+00:00",
+      "summary": "Adobe (NasdaqGS:ADBE) approved a new US$25b share repurchase authorization, running through 2030. The company announced new AI driven marketing partnerships with DICK'S Sporting Goods and Xfinity at i",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Memory Stock Valuations Spark Debate Over ‘Supercycle’ Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/memory-stock-valuations-spark-debate-063735669.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:37:35+00:00",
+      "summary": "(Bloomberg) -- Memory makers are riding surging demand to record profits, yet their stocks are still trading at a fraction of the valuation multiples of other top artificial intelligence chip names.Mo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Adobe vs. Intuit: Which Beaten-Down Software Stock Is a Better Buy?",
+      "url": "https://www.fool.com/investing/2026/04/22/adobe-vs-intuit-which-beaten-down-software-stock-i/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:13:00+00:00",
+      "summary": "Both of these market-leading software platforms have faced recent sell-offs. But one arguably looks more attractive.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "What Does This Latest Adobe Practice Launch Mean for Omnicom Group (OMC)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-latest-adobe-practice-launch-024504201.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T02:45:04+00:00",
+      "summary": "Omnicom Group Inc. (NYSE:OMC) is one of the 8 best advertising agency stocks to buy according to hedge funds. On April 1, Omnicom Group Inc. (NYSE:OMC) announced that its consultancy for transformatio",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

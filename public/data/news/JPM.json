@@ -1,0 +1,53 @@
+{
+  "ticker": "JPM",
+  "last_updated": "2026-04-22T12:50:11.657675+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "J.P. Morgan: Apple will beat its own bullish guidance next week",
+      "url": "https://www.ped30.com/2026/04/22/apple-jpmorgan-beat-q22026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apple-jpmorgan-beat-q22026",
+      "source": "ped30.com",
+      "published_at": "2026-04-22T11:25:35+00:00",
+      "summary": "\"Our expectations for March-Q (F2Q) earnings include beats on revenue relative to the telegraphed outlook, helped by both better demand for iPhones... as well as better demand for Macs.\" — Analyst Sam",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "JPMORGAN CHASE & CO: Form 424B2 - Prospectus [Rule 424(b)(2)]",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000191870426010459/0001918704-26-010459-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-22T10:02:17+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Air France-KLM: JP Morgan Chase slips below 5% stake",
+      "url": "https://www.marketscreener.com/news/air-france-klm-jp-morgan-chase-slips-below-5-stake-ce7f59d8db80fe24",
+      "source": "marketscreener.com",
+      "published_at": "2026-04-22T09:57:18+00:00",
+      "summary": "",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "JPMorgan Chase Abruptly Hikes S&P 500 Target for 2026, Says One Investment Theme Driving Bullish Momentum: Report",
+      "url": "https://dailyhodl.com/2026/04/22/jpmorgan-chase-abruptly-hikes-sp-500-target-for-2026-says-one-investment-theme-driving-bullish-momentum-report/",
+      "source": "dailyhodl.com",
+      "published_at": "2026-04-22T09:15:50+00:00",
+      "summary": "Banking behemoth JPMorgan Chase is raising its year-end forecast for the S&P 500 for two main reasons. The bank’s team of strategists led by Dubravko Lakos-Bujas predicts that the S&P 500 will end 202",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "JM2 Capital Inc. Invests $1.98 Million in JPMorgan Chase & Co. $JPM",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-jm2-capital-inc-invests-198-million-in-jpmorgan-chase-co-jpm-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T09:08:12+00:00",
+      "summary": "JM2 Capital Inc. acquired a new position in JPMorgan Chase & Co. (NYSE:JPM - Free Report) in the 4th quarter, according to its most recent Form 13F filing with the Securities and Exchange Commission. ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

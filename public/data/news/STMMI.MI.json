@@ -1,0 +1,53 @@
+{
+  "ticker": "STMMI.MI",
+  "last_updated": "2026-04-22T12:15:39.414078+00:00",
+  "sentiment_score": 0.53,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "STMicroelectronics to Post Q1 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stmicroelectronics-post-q1-earnings-whats-142800751.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:28:00+00:00",
+      "summary": "STM eyes Q1 2026 revenue surge with AI, industrial demand tailwinds, but automotive weakness and macro pressures may temper overall performance.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "STMicroelectronics (STM) Surges 6.4%: Is This an Indication of Further Gains?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stmicroelectronics-stm-surges-6-4-063600701.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T06:36:00+00:00",
+      "summary": "STMicroelectronics (STM) saw its shares surge in the last session with trading volume being higher than average. The latest trend in earnings estimate revisions could translate into further price incr",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is It Too Late To Consider STMicroelectronics (ENXTPA:STMPA) After Its 1‑Year 110% Surge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-stmicroelectronics-enxtpa-stmpa-050455899.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T05:04:55+00:00",
+      "summary": "Wondering if STMicroelectronics at €37.21 is still offering value after a strong run, or if you might be turning up late to the story. The stock has delivered returns of 9.8% over the last 7 days, 38.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Satellite Boom Launches STMicroelectronics Stock Into Orbit",
+      "url": "https://finance.yahoo.com/m/1b1acf24-17d8-35f4-8b69-d637e32e57b6/satellite-boom-launches.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T20:20:01+00:00",
+      "summary": "STMicroelectronics is getting a lift from its exposure to the boom in low-earth-orbit communications satellites. STM stock earned an upgrade.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Apple upgraded, Qualcomm downgraded: Wall Street's top analyst calls",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/apple-upgraded-qualcomm-downgraded-wall-133634577.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:36:34+00:00",
+      "summary": "Apple upgraded, Qualcomm downgraded: Wall Street's top analyst calls",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

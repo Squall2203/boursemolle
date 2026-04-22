@@ -1,0 +1,53 @@
+{
+  "ticker": "CB",
+  "last_updated": "2026-04-22T13:04:27.164606+00:00",
+  "sentiment_score": 0.32,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Evercore ISI raises Chubb stock price target on earnings outlook",
+      "url": "https://www.investing.com/news/analyst-ratings/evercore-isi-raises-chubb-stock-price-target-on-earnings-outlook-93CH-4628302",
+      "source": "investing.com",
+      "published_at": "2026-04-22T08:57:22+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Strong start to 2026 for Chubb as Q1 P&C underwriting income hits $1.79bn",
+      "url": "https://www.reinsurancene.ws/strong-start-to-2026-for-chubb-as-q1-pc-underwriting-income-hits-1-79bn/",
+      "source": "reinsurancene.ws",
+      "published_at": "2026-04-22T08:30:59+00:00",
+      "summary": "Chubb has disclosed P&C underwriting income for Q1 2026 of $1.79 billion, up 306.3% from the same period last year, with a combined ratio of 84%. The firm’s net income and core operating income were $",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Alphinity Investment Management Pty Ltd Purchases 15,356 Shares of Chubb Limited $CB",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-alphinity-investment-management-pty-ltd-purchases-15356-shares-of-chubb-limited-cb-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T07:07:38+00:00",
+      "summary": "Alphinity Investment Management Pty Ltd raised its position in shares of Chubb Limited (NYSE:CB - Free Report) by 121.2% in the 4th quarter, according to the company in its most recent Form 13F filing",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Chubb Q1 Net Income Increases 74% on Fewer Catastrophe Losses",
+      "url": "https://www.insurancejournal.com/news/national/2026/04/22/866765.htm",
+      "source": "insurancejournal.com",
+      "published_at": "2026-04-22T04:07:06+00:00",
+      "summary": "First quarter 2026 net income at insurer Chubb was up more than 74% compared to the same period in 2025, with property/casualty underwriting income up 306%. Net income for the first three months finis",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Chubb Posts First-Quarter Profit Hike Amid Underwriting, Investment Gains",
+      "url": "https://news.ambest.com/newscontent.aspx?AltSrc=23&RefNum=273947",
+      "source": "ambest.com",
+      "published_at": "2026-04-21T23:22:55+00:00",
+      "summary": "Chubb Ltd. posted higher first-quarter net income on strong underwriting and investment income as its chief executive officer warned of inflation and slower economic growth made worse by Middle East .",
+      "sentiment": "positif",
+      "sentiment_score": 0.6
+    }
+  ]
+}

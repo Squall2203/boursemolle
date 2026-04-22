@@ -1,0 +1,53 @@
+{
+  "ticker": "6971.T",
+  "last_updated": "2026-04-22T13:53:38.489875+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Twelve New Member Companies join the AR Alliance as Strategic Growth Continues",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/twelve-member-companies-join-ar-161500365.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T16:15:00+00:00",
+      "summary": "BELLINGHAM, Wash., March 27, 2026--The AR Alliance, a division of SPIE that is focused on augmented reality (AR), proudly announces the addition of Ainstec, ams-Osram, Fraunhofer ISIT, Hong Kong Highp",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SouthernCarlson Begins Next Chapter of Growth with Greenwald Supply Direct Acquisition",
+      "url": "https://finance.yahoo.com/news/southerncarlson-begins-next-chapter-growth-130000215.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T13:00:00+00:00",
+      "summary": "SouthernCarlson, a leading distributor of fasteners, tools, and construction supplies, today announced the acquisition of Greenwald Supply Direct (\"GSD\").",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Kyocera Targets AI Data Centers With New PCIe 6.0 Optical Module",
+      "url": "https://finance.yahoo.com/news/kyocera-targets-ai-data-centers-100621761.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T10:06:21+00:00",
+      "summary": "Kyocera (TSE:6971) has introduced an advanced optoelectronic module that supports PCIe 6.0, developed in collaboration with AuthenX. The new module is designed to address data center challenges relate",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At Kyocera’s (TSE:6971) Valuation After Its Recent Share Price Pullback",
+      "url": "https://finance.yahoo.com/news/look-kyocera-tse-6971-valuation-091033463.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T09:10:33+00:00",
+      "summary": "Why Kyocera Is Back On Investor Radar Recent price action in Kyocera (TSE:6971), including a 3% one day pullback and a month return of about a 7% decline, has put the stock back in focus for investors",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Kyocera Develops Pluggable Optoelectronic Module Supporting PCIe® 6.0, Contributing to High-Speed, Power-Efficient AI Data Centers",
+      "url": "https://finance.yahoo.com/news/kyocera-develops-pluggable-optoelectronic-module-140500609.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-10T14:05:00+00:00",
+      "summary": "KYOTO, Japan, March 10, 2026--Kyocera Corporation (President: Hideo Tanimoto, hereinafter \"Kyocera\")(TOKYO:6971) is pleased to announce the development of a pluggable optoelectronic module (OSFP-XD*1)",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

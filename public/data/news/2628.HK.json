@@ -1,0 +1,53 @@
+{
+  "ticker": "2628.HK",
+  "last_updated": "2026-04-22T13:37:30.786776+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Asian Dividend Stocks To Enhance Your Portfolio",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-dividend-stocks-enhance-portfolio-224011748.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T22:40:11+00:00",
+      "summary": "As global markets experience a rebound due to easing geopolitical tensions and improved investor sentiment, the Asian market is also seeing positive momentum, particularly in regions like China and Ja",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "China Life Insurance Co Ltd (CILJF) (Full Year 2025) Earnings Call Highlights: Record Profits ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/china-life-insurance-co-ltd-070053371.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T07:00:53+00:00",
+      "summary": "China Life Insurance Co Ltd (CILJF) reports a 44.1% increase in net profit and outlines strategic priorities for 2026, focusing on digital transformation and diversified investments.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Matthews China Fund's Strategic Moves: Spotlight on China Life Insurance Co Ltd",
+      "url": "https://finance.yahoo.com/news/matthews-china-funds-strategic-moves-150626238.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-04T15:06:26+00:00",
+      "summary": "Exploring the Fund's Recent Investment Adjustments",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Does China Life (SEHK:2628) Board Shift And RMB8.5b Deal Recast Its Capital Allocation Playbook?",
+      "url": "https://finance.yahoo.com/news/does-china-life-sehk-2628-131340291.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-30T13:13:40+00:00",
+      "summary": "In January 2026, China Life Insurance announced board and committee changes, a RMB8.5 billion investment partnership with China Life Qiyuan, and fresh analyst endorsement of its business prospects in ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Asia-Pacific Life and Non-Life Insurance Market 2026-2031: Aging Population Widens Demand Gap for Health and Pension Products",
+      "url": "https://finance.yahoo.com/news/asia-pacific-life-non-life-153500810.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T15:35:00+00:00",
+      "summary": "The Asia-Pacific insurance market offers growth via digital adoption, regulatory liberalization, and demographic opportunities. Rising incomes in India, Indonesia, and Vietnam drive demand, while agin",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

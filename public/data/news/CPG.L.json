@@ -1,0 +1,53 @@
+{
+  "ticker": "CPG.L",
+  "last_updated": "2026-04-22T12:23:53.577309+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Change in trading currency of Compass Group's Ordinary Shares",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/change-trading-currency-compass-groups-060100035.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T06:01:00+00:00",
+      "summary": "Compass Group PLC (LSE: CPG) (OTCQX: CMPGY), a global leader in food services, confirms that the trading currency of its Ordinary Shares on the London Stock Exchange (LSE) has changed from sterling pe",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How Compass Group (LSE:CPG) Is Seeing Its Investment Story Quietly Rewritten By New Assumptions",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/compass-group-lse-cpg-seeing-210440053.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-28T21:04:40+00:00",
+      "summary": "Compass Group’s latest analyst update includes a £1.00 trim to the price target, alongside a refined fair value range moving from £28.56 to £28.62. Analysts describe this as fine tuning around core as",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Compass Group USA Integrates Climate Intelligence Across Menus and Supply Chain to Accelerate Emissions Reductions",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/compass-group-usa-integrates-climate-143200233.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T14:32:00+00:00",
+      "summary": "Compass Group USA is enhancing its climate strategy by integrating carbon intelligence directly into the digital systems that power menu development, procurement and supply chain operations. By placin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "How The Compass Group (LSE:CPG) Valuation Story Is Shifting After The Latest Target Trim",
+      "url": "https://finance.yahoo.com/news/compass-group-lse-cpg-valuation-031238969.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T03:12:38+00:00",
+      "summary": "Compass Group’s fair value estimate has been nudged from £28.19 to £28.03, a trim of about 0.6% that keeps the price target broadly in the same range. Bullish and bearish analysts are reading this mov",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Automated Retail Technologies Launches Reg CF Raise to Help Scale Just Baked™ Robotic Kiosks Nationwide",
+      "url": "https://finance.yahoo.com/news/automated-retail-technologies-launches-reg-054200291.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-25T05:42:00+00:00",
+      "summary": "Boston, MA, USA, Feb. 25, 2026 (GLOBE NEWSWIRE) -- In Partnership with Aramark, Compass Group, Sodexo, and more, ART is Bringing 24/7 Hot Food Access to High-Traffic Venues Across the U.S. Automated R",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "TSLA",
+  "last_updated": "2026-04-22T12:49:35.043704+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Ross Gerber Reiterates FSD Refund Demand, Says Elon Musk's Tesla Needs To Make People Whole: 'Never Worked As Promised'",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ross-gerber-reiterates-fsd-refund-123344034.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:33:44+00:00",
+      "summary": "Investor Ross Gerber of Gerber Kawasaki on Monday reiterated his demand that Elon Musk-led Tesla Inc. issue refunds for customers who have opted for the Full Self-Driving (FSD) package, slamming the s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What Makes Tesla (TSLA) a Long-Term Holding?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/makes-tesla-tsla-long-term-122808517.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:28:08+00:00",
+      "summary": "Investment management company Nightview Capital recently released its Q1 2026 investor letter. A copy of the letter can be downloaded here. In the first quarter of 2026, the market dynamics were drive",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tesla Earnings, Elon Musk Due With Stock Near Key Levels; What To Expect",
+      "url": "https://finance.yahoo.com/m/b52c0f67-0f81-3fc2-9cef-71997c28622f/tesla-earnings%2C-elon-musk-due.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:26:46+00:00",
+      "summary": "Tesla earnings are expected to rise, but the focus will be on CEO Elon Musk and robotaxi news. Tesla stock is near key levels",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tesla Stock Could Swing 5% After Today's Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-could-swing-5-121625503.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:16:25+00:00",
+      "summary": "Tesla Stock Falls This Year. Earnings May Not Spark Big Move",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Stock Market Today: Dow Rises On Trump Ceasefire; Tesla Earnings Due (Live Coverage)",
+      "url": "https://finance.yahoo.com/m/7ab1524e-92c4-32c9-81b7-f9d2fd027cef/stock-market-today%3A-dow-rises.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:06:10+00:00",
+      "summary": "Stock Market Today: The Dow Jones index rose Wednesday after Trump extended the U.S.-Iran ceasefire. Tesla earnings are due late.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "BLK",
+  "last_updated": "2026-04-22T12:57:31.550628+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Update: Market Chatter: Amazon's Jeff Bezos Nearing $10 Billion Fundraising for Project Prometheus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-amazon-apos-jeff-093647487.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:36:47+00:00",
+      "summary": "(Updates with JPMorgan's response in the fifth paragraph and the latest stock movement in the sixth",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing BlackRock (BLK) Valuation After Strong First Quarter 2026 Earnings Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-blackrock-blk-valuation-strong-001549850.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T00:15:49+00:00",
+      "summary": "BlackRock (BLK) just opened its 2026 story with first quarter results that put fresh numbers around the investment manager’s scale, with revenue of US$6,698 million and net income of US$2,212 million.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "What's driving the massive inflows for bitcoin ETFs in 2026",
+      "url": "https://finance.yahoo.com/video/whats-driving-the-massive-inflows-for-bitcoin-etfs-in-2026-165800616.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:58:00+00:00",
+      "summary": "Scott Melker, the host of \"The Wolf of All Streets\" podcast, breaks down the massive inflows going into bitcoin (BTC-USD) ETFs and what it means for the crypto market going forward. \"The Daily Wolf wi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fed chair nominee Kevin Warsh loves crypto",
+      "url": "https://finance.yahoo.com/video/fed-chair-nominee-kevin-warsh-loves-crypto-164635368.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:46:35+00:00",
+      "summary": "Scott Melker, the host of \"The Wolf of All Streets\" podcast, discusses how Kevin Warsh loves crypto and this today's latest crypto headlines, including most confusing market ever, BTC ETF inflows, and",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Crypto trade holds strong as bitcoin prices stay above $76K",
+      "url": "https://finance.yahoo.com/video/crypto-trade-holds-strong-as-bitcoin-prices-stay-above-76k-150255634.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:02:55+00:00",
+      "summary": "Yahoo Finance's Julie Hyman checks in on how cryptocurrencies and crypto-related stocks are moving, including bitcoin (BTC-USD), ethereum (ETH-USD), Robinhood (HOOD), Coinbase (COIN), and Strategy (MS",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

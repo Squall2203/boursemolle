@@ -1,0 +1,53 @@
+{
+  "ticker": "DDOG",
+  "last_updated": "2026-04-22T13:19:57.166486+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "How DoorDash Launches a New Country in One Week",
+      "url": "https://blog.bytebytego.com/p/how-doordash-launches-a-new-country",
+      "source": "bytebytego.com",
+      "published_at": "2026-04-21T15:30:21+00:00",
+      "summary": "In this article, we will look at how this architecture was designed and the challenges they faced. MongoDB Monitoring Cheatsheet (Sponsored)Skip the guesswork with this MongoDB cheatsheet from Datadog",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Capacity limits are becoming the main bottleneck to scaling AI",
+      "url": "https://betanews.com/article/capacity-limits-are-becoming-the-main-bottleneck-to-scaling-ai/",
+      "source": "betanews.com",
+      "published_at": "2026-04-21T14:18:30+00:00",
+      "summary": "As AI adoption accelerates it’s operational complexity rather than not model intelligence that is becoming the primary barrier to reliable AI at scale, according to new data from Datadog. It shows alm",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AI Is Hitting Operational Limits as Companies Rush to Scale, Datadog Report Finds",
+      "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-state-of-ai-engineering-report-2026/",
+      "source": "datadoghq.com",
+      "published_at": "2026-04-21T13:00:00+00:00",
+      "summary": "NEW YORK — As AI adoption accelerates, operational complexity – not model intelligence – is becoming the primary barrier to reliable AI at scale, according to new data from Datadog, Inc. (NASDAQ: DDOG",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Steganography at scale: Embedding share URLs in Datadog widget screenshots",
+      "url": "https://www.datadoghq.com/blog/engineering/steganography-at-scale/",
+      "source": "datadoghq.com",
+      "published_at": "2026-04-21T00:00:00+00:00",
+      "summary": "Learn how we embed widget metadata into screenshots using invisible, resilient watermarks, enabling self-describing visualizations at scale.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bringing observability data hosting to the UK on AWS",
+      "url": "https://www.datadoghq.com/blog/observability-data-hosting-uk-aws/",
+      "source": "datadoghq.com",
+      "published_at": "2026-04-21T00:00:00+00:00",
+      "summary": "Learn how Datadog’s UK availability zone on AWS enables organizations to host observability data in the UK while maintaining end-to-end visibility across their environments.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "KEY",
+  "last_updated": "2026-04-22T13:09:41.480069+00:00",
+  "sentiment_score": 0.23,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "KeyCorp to Acquire Clearwater UK, Expanding Financial Advisory Capabilities",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/keycorp-acquire-clearwater-uk-expanding-110000053.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "KeyCorp (NYSE: KEY) today announced a definitive agreement to acquire Clearwater Corporate Finance LLP (Clearwater UK), a leading UK-based middle market investment banking advisory firm. The transacti",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Zions Q1 Earnings Beat on Higher NII & Fee Income, Provision Benefit",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zions-q1-earnings-beat-higher-132200190.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:22:00+00:00",
+      "summary": "ZION tops Q1 EPS estimates on strong NII and fee income, with improving credit quality and margins, though rising expenses and revenue miss temper the outlook.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Alphabet Stock Has Further to Run, Analyst Says. Share Are Falling Anyway.",
+      "url": "https://finance.yahoo.com/m/0aa87225-70b6-3adc-a43d-b23c6e86bddd/alphabet-stock-has-further-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:11:00+00:00",
+      "summary": "Alphabet stock has been on a tear recently but the market is still under-appreciating Google’s cloud unit growth, according to KeyBanc analysts.  KeyBanc  raised their price target on Alphabet to $380",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "ALLY Q1 Earnings Beat as Revenues Rise & Costs Fall, Stock Up 8.1%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ally-q1-earnings-beat-revenues-125900964.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:59:00+00:00",
+      "summary": "Ally Financial shares jump 8.1% after Q1 earnings beat, driven by higher revenues, lower costs, and strong loan and deposit growth.",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "Is It Time To Reassess KeyCorp (KEY) After Its 60% Share Price Climb?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-keycorp-key-60-210529427.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T21:05:29+00:00",
+      "summary": "If you are wondering whether KeyCorp's current share price lines up with its underlying value, this article walks you through the key pieces you need to weigh that question. Over the last year the sto",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ENR.DE",
+  "last_updated": "2026-04-22T11:52:43.435529+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Triple Point Resources Advances Fischells Salt Dome Project Toward Registration",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/triple-point-resources-advances-fischells-150000681.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:00:00+00:00",
+      "summary": "Phased development model supports jobs, salt commercialization and future energy storage potentialSt. John's, Newfoundland--(Newsfile Corp. - April 21, 2026) - Triple Point Resources Ltd. (\"Triple Poi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Global Green Ammonia Market Forecast to Hit USD 18.3 Billion by 2036: Regional Growth Trends in USA, UK, Japan, India Led by Nutrien Ltd. & Siemens Energy",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/global-green-ammonia-market-forecast-094000301.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:40:00+00:00",
+      "summary": "According to the latest market analysis by Future Market Insights, the global green ammonia market is witnessing strong momentum as industries shift toward low-carbon production and renewable energy i",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing Siemens Energy (XTRA:ENR) Valuation After Strong Multi‑Year Share Price Gains",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-siemens-energy-xtra-enr-230542202.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T23:05:42+00:00",
+      "summary": "Why Siemens Energy is Back on Investor Radars Siemens Energy (XTRA:ENR) has recently drawn attention after a strong share price move, with the stock showing double digit total returns over the past ye",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Babcock & Wilcox (BW) AI Ride Propels 191% Jump This Year",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/babcock-wilcox-bw-ai-ride-110850303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:08:50+00:00",
+      "summary": "Babcock & Wilcox Enterprises Inc. (NYSE:BW) is one of the 11 Stocks With 3x-5x Returns This Year. Babcock & Wilcox has seen its stock price climb by 191 percent year-to-date as investors cheered its i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Synchronous Condenser Market Research and Global Forecast Report 2025-2030: Opportunities Driven by Conversion of Synchronous Generators into Synchronous Condensers Rising Adoption of HVDC Systems",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/synchronous-condenser-market-research-global-105100659.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T10:51:00+00:00",
+      "summary": "The synchronous condenser market is set to expand from USD 0.72 billion in 2025 to USD 0.84 billion by 2030, at a CAGR of 3.3%. This growth is propelled by infrastructure development and expansion of ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

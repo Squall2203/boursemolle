@@ -1,0 +1,53 @@
+{
+  "ticker": "DAL",
+  "last_updated": "2026-04-22T13:15:36.442740+00:00",
+  "sentiment_score": -0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Wall Street’s Bullish Stocks View Contrasts With Consumer Gloom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bullish-stocks-view-112800536.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:28:00+00:00",
+      "summary": "(Bloomberg) -- Stocks are trading near a record high, signaling Wall Street is learning to cope with lingering geopolitical risks. Main Street is struggling to catch up.Most Read from BloombergInside ",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Southwest Airlines Stock Has Defied the Turbulence. Earnings Threaten to Change That.",
+      "url": "https://finance.yahoo.com/m/a9c36198-8602-3e02-82c9-8f90a77db4ee/southwest-airlines-stock-has.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:05:00+00:00",
+      "summary": "The airline has been one of the better performers in the sector this year but earnings will be test of its resilience.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "United Airlines Cuts Guidance Due to Fuel Prices. The Stock Is Rising.",
+      "url": "https://finance.yahoo.com/m/799da8a9-440d-3065-806f-b439c70b8603/united-airlines-cuts-guidance.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:52:00+00:00",
+      "summary": "For the full year, United changed its profit guidance range to $7-$11 a share, compared with its previous earnings guidance of $12 to $14 a share.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Every Wall Street Analyst Says Buy Alaska Air. The Stock Has Lost 43% in a Decade.",
+      "url": "https://247wallst.com/investing/2026/04/21/every-wall-street-analyst-says-buy-alaska-air-the-stock-has-lost-43-in-a-decade/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:55:28+00:00",
+      "summary": "Alaska Air Group (NYSE: ALK) carries a unanimous Wall Street buy consensus: 4 Strong Buy and 12 Buy ratings, zero Holds, zero Sells, across 16 analysts covering the stock. The stock has delivered a −4",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Delta Eases Climate Targets As Fuel Challenges Reshape Long Term Risks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/delta-eases-climate-targets-fuel-020801920.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T02:08:01+00:00",
+      "summary": "Delta Air Lines has removed its 10% sustainable aviation fuel target for 2030 from its sustainability page. The airline has also softened its net zero emissions language, reflecting jet fuel supply ch",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

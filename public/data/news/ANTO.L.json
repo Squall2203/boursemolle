@@ -1,0 +1,53 @@
+{
+  "ticker": "ANTO.L",
+  "last_updated": "2026-04-22T12:32:32.863466+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "This Copper Stock Is Worth Mining. The Metal’s Boom Is On.",
+      "url": "https://finance.yahoo.com/m/90a43a68-827c-3283-bc9f-f1cfdbb13148/this-copper-stock-is-worth.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-14T02:03:00+00:00",
+      "summary": "Worries about the Iran war have rocked financial markets, raising concerns that higher oil prices will lead to a global economic slowdown.  Copper, one of the more highly cyclical metals, has pulled b",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Antofagasta upgraded to Buy from Hold at Canaccord",
+      "url": "https://finance.yahoo.com/news/antofagasta-upgraded-buy-hold-canaccord-141512706.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T14:15:12+00:00",
+      "summary": "Canaccord upgraded Antofagasta (ANFGF) to Buy from Hold with a price target of 4,750 GBp, up from 4,100 GBp. The firm says current spot pricing implies further upgrades to the copper miners heading in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Antofagasta PLC (ANFGF) Full Year 2025 Earnings Call Highlights: Record Financial Performance ...",
+      "url": "https://finance.yahoo.com/news/antofagasta-plc-anfgf-full-2025-010115494.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-21T01:01:15+00:00",
+      "summary": "Antofagasta PLC (ANFGF) reports a 30% revenue increase and a 52% rise in EBITDA, while maintaining a strong balance sheet and advancing key projects.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Antofagasta H2 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/antofagasta-h2-earnings-call-highlights-2026-02-17/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T11:11:12+00:00",
+      "summary": "Antofagasta (LON:ANTO) used its full-year results presentation to highlight record profitability in 2025, continued progress on a fully funded growth program, and a focus on safety and sustainability ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Antofagasta plc's (LON:ANTO) Stock's Recent Performance Being Led By Its Attractive Financial Prospects?",
+      "url": "https://finance.yahoo.com/news/antofagasta-plcs-lon-anto-stocks-062313685.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-20T06:23:13+00:00",
+      "summary": "Most readers would already be aware that Antofagasta's (LON:ANTO) stock increased significantly by 37% over the past...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

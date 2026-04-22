@@ -1,0 +1,53 @@
+{
+  "ticker": "NOVO-B.CO",
+  "last_updated": "2026-04-22T12:42:29.793737+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Amazon launching weight loss drug program via One Medical",
+      "url": "https://qz.com/amazon-one-medical-glp1-weight-loss-program-042126?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:25:29+00:00",
+      "summary": "The program combines virtual and in-person care, prescription management, and same-day pharmacy delivery starting at $25 a month with insurance",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "How CVS And Amazon Chipped Away At Eli Lilly, Novo Nordisk Stocks",
+      "url": "https://finance.yahoo.com/m/767b8085-c9a6-3cd0-b5a2-1e919208fdf1/how-cvs-and-amazon-chipped.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:17:35+00:00",
+      "summary": "Eli Lilly and Novo Nordisk stocks took a header Tuesday on reports CVS Health opted out of covering GLP-1s through Medicare.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Lilly and Novo Stocks Are Tumbling. How Amazon Is Shaking Up the GLP-1 Game.",
+      "url": "https://finance.yahoo.com/m/9447486d-462d-3c72-b9f9-2b09113966bc/lilly-and-novo-stocks-are.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:30:00+00:00",
+      "summary": "Eli Lilly and Novo Nordisk are fighting to capture the weight-loss drug market. Amazon could complicate things.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Did Amazon Just Wreck All of Hims & Hers Upside Potential?",
+      "url": "https://247wallst.com/investing/2026/04/21/did-amazon-just-wreck-all-of-hims-hers-upside-potential/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:04:01+00:00",
+      "summary": "The GLP-1 weight-loss category exploded into a multi-billion-dollar opportunity that blends medication access with ongoing patient support. This morning, Amazon‘s (NASDAQ:AMZN) One Medical platform ro",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "NVO's Etavopivat Hits Key Goals in Phase III Sickle Cell Disease Study",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/nvos-etavopivat-hits-key-goals-154200565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:42:00+00:00",
+      "summary": "Novo Nordisk's etavopivat meets phase III goals, cutting VOCs and boosting haemoglobin in sickle cell disease, with data backing a favorable safety profile.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

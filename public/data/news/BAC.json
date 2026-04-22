@@ -1,0 +1,53 @@
+{
+  "ticker": "BAC",
+  "last_updated": "2026-04-22T12:52:54.738718+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Here’s What BofA Securities Thinks About Grab Holdings Ltd (GRAB)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bofa-securities-thinks-grab-holdings-112606157.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:26:06+00:00",
+      "summary": "Grab Holdings Ltd (NASDAQ:GRAB) is among the must-buy penny stocks to invest in now. Despite high fuel prices presenting headwinds for Grab Holdings Ltd (NASDAQ:GRAB), BofA Securities sees a favorable",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Should You Buy NuScale Power While It's Below $20?",
+      "url": "https://www.fool.com/investing/2026/04/22/should-you-buy-nuscale-while-its-below-50/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:20:00+00:00",
+      "summary": "NuScale Power is trading over 75% below its most recent high.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How Yelp (YELP) Is Rewriting Its Investment Story After Mixed Q4 And Soft 2026 Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/yelp-yelp-rewriting-investment-story-211602548.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:16:02+00:00",
+      "summary": "Yelp’s fair value estimate has been reset slightly higher to US$25.63 per share, a small change that stands out against several recent target cuts from major firms. With JPMorgan trimming its target t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BAC's AI Edge Likely to Drive Margin Expansion: Should You Invest Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bacs-ai-edge-likely-drive-144700021.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:47:00+00:00",
+      "summary": "Bank of America's AI push and phygital strategy are driving margin expansion through cost cuts, smarter branches and revenue opportunities.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Piper Sandler, Truist Raise Bank of America (BAC) Targets After Q1 Beat",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/piper-sandler-truist-raise-bank-014735759.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:47:35+00:00",
+      "summary": "Bank of America Corporation (NYSE:BAC) is included among the 12 High Dividend Stocks Picked by Billionaire Ray Dalio. On April 16, R. Scott Siefers of Piper Sandler raised the firm’s price recommendat",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

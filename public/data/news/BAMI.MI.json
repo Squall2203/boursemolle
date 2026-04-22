@@ -1,0 +1,53 @@
+{
+  "ticker": "BAMI.MI",
+  "last_updated": "2026-04-22T12:14:26.074748+00:00",
+  "sentiment_score": 0.47,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Dividend Stocks To Consider In April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-dividend-stocks-consider-april-053210673.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T05:32:10+00:00",
+      "summary": "As European markets experience a positive uptick with the STOXX Europe 600 Index rising by 1.91% amid easing geopolitical tensions and stable economic indicators, investors are increasingly focused on",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How Recent Analyst Revisions Are Reframing The Banco BPM (BIT:BAMI) Investment Story",
+      "url": "https://finance.yahoo.com/news/recent-analyst-revisions-reframing-banco-121343163.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T12:13:43+00:00",
+      "summary": "Banco BPM’s fair value estimate has been nudged higher to €13.58 per share from €13.38, a €0.20 adjustment that lines up with recent target moves such as the €0.30 lift from JPMorgan. Behind this shif",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Crédit Agricole Q4 profit drops 24% on Banco BPM charge despite record revenues",
+      "url": "https://finance.yahoo.com/news/cr-dit-agricole-q4-profit-065921309.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-04T06:59:21+00:00",
+      "summary": "Investing.com -- Crédit Agricole SA (EPA:CAGR) reported fourth-quarter net income fell 24% to €1.63 billion as a €607 million first-consolidation charge from its Banco BPM stake overshadowed record an",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "CREDIT AGRICOLE SA: Fourth quarter 2025 and full-year 2025 results - DYNAMIC ACTIVITY AND STRONG RESULTS IN 2025",
+      "url": "https://finance.yahoo.com/news/credit-agricole-sa-fourth-quarter-060000698.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-04T06:00:00+00:00",
+      "summary": "DYNAMIC ACTIVITY AND STRONG RESULTS IN 2025 CRÉDIT AGRICOLE S.A.CRÉDIT AGRICOLE GROUP €m2025Var. 2025/20242025Var. 2025/2024 Revenues28,079+3.3%39,558+3.9% Expenses-15,628+4.9%-23,568+3.7% Gross Opera",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "UniCredit said to explore Delfin’s stake in Monte dei Paschi and Generali",
+      "url": "https://www.retailbankerinternational.com/news/unicredit-delfins-stake-monte-generali/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-13T13:10:10+00:00",
+      "summary": "UniCredit has also evaluated a direct investment in Delfin, the holding company of the Del Vecchio family.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

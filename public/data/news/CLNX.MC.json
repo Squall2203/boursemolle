@@ -1,0 +1,53 @@
+{
+  "ticker": "CLNX.MC",
+  "last_updated": "2026-04-22T12:12:11.230655+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Cellnex Telecom SA (CLNXF) Q4 2025 Earnings Call Highlights: Strong Financial Performance and ...",
+      "url": "https://finance.yahoo.com/news/cellnex-telecom-sa-clnxf-q4-010202645.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-05T01:02:02+00:00",
+      "summary": "Cellnex Telecom SA (CLNXF) reports robust growth in revenue and EBITDA, while enhancing shareholder returns and strategic positioning.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Stocks That May Be Undervalued By Up To 46.9%",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-may-undervalued-053802898.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-26T05:38:02+00:00",
+      "summary": "Amid renewed concerns over inflated AI stock valuations and receding expectations for a U.S. interest rate cut, European markets have experienced a downturn, with major indexes such as the STOXX Europ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Stocks That May Be Trading Below Estimated Value In July 2025",
+      "url": "https://finance.yahoo.com/news/european-stocks-may-trading-below-053752604.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-02T05:37:52+00:00",
+      "summary": "As the European markets show signs of recovery, with the STOXX Europe 600 Index climbing 1.32% and Germany's DAX up by nearly 3%, investor optimism is bolstered by easing geopolitical tensions and pot",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Stocks That May Be Priced Below Their Estimated Intrinsic Values",
+      "url": "https://finance.yahoo.com/news/european-stocks-may-priced-below-053748221.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-03T05:37:48+00:00",
+      "summary": "As European markets experience a slight uptick, with the pan-European STOXX Europe 600 Index rising by 0.65% amid trade negotiations and slowing inflation, investors are keenly observing potential shi",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Cellnex Telecom SA (CLNXF) Q1 2025 Earnings Call Highlights: Strong Organic Growth Amid ...",
+      "url": "https://finance.yahoo.com/news/cellnex-telecom-sa-clnxf-q1-170024858.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-10T17:00:24+00:00",
+      "summary": "Cellnex Telecom SA (CLNXF) reports solid revenue and EBITDA growth while navigating market challenges and strategic asset sales.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

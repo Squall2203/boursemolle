@@ -1,0 +1,53 @@
+{
+  "ticker": "ORK.OL",
+  "last_updated": "2026-04-22T12:46:51.637245+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "FERM FOOD Acquires Orkla’s Former Site and Scales Up: Up to 20,000 Tonnes of Fermented Ingredients Per Year",
+      "url": "https://finance.yahoo.com/news/ferm-food-acquires-orkla-former-060000387.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T06:00:00+00:00",
+      "summary": "BÆKKE, Denmark, March 11, 2026--FERM FOOD acquires Orkla’s former site and scales up: Up to 20,000 tonnes of fermented ingredients per year",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Orkla buys Austrian maker of margerines, sauces Senna",
+      "url": "https://www.just-food.com/news/orkla-buys-senna/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-18T13:31:00+00:00",
+      "summary": "In a statement, Vivatis said it is divesting Senna following a “comprehensive strategic process”.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Orkla ASA (ORKLY) Q4 2025 Earnings Call Highlights: Strong Organic Growth and Profitability Boost",
+      "url": "https://finance.yahoo.com/news/orkla-asa-orkly-q4-2025-150156075.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T15:01:56+00:00",
+      "summary": "Orkla ASA (ORKLY) reports a robust 4.5% organic growth and a 25% increase in adjusted earnings per share, despite challenges in certain markets.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Top European Dividend Stocks To Consider In February 2026",
+      "url": "https://finance.yahoo.com/news/top-european-dividend-stocks-consider-053141794.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T05:31:41+00:00",
+      "summary": "As European markets continue to show resilience amid global economic challenges, optimism about the eurozone economy has helped the STOXX Europe 600 Index reach new highs. With inflation stabilizing a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Top European Dividend Stocks For December 2025",
+      "url": "https://finance.yahoo.com/news/top-european-dividend-stocks-december-103149414.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-16T10:31:49+00:00",
+      "summary": "As the European markets navigate a mixed landscape, with indices like Germany's DAX showing gains while others such as France's CAC 40 experience slight declines, investors are keenly observing centra",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

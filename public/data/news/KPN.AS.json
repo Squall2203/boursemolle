@@ -1,0 +1,53 @@
+{
+  "ticker": "KPN.AS",
+  "last_updated": "2026-04-22T12:04:21.288952+00:00",
+  "sentiment_score": 0.67,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "KPN reports on progress of € 250m share buyback",
+      "url": "https://finance.yahoo.com/news/kpn-reports-progress-250m-share-164500098.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T16:45:00+00:00",
+      "summary": "KPN has repurchased 1,000,000 KPN ordinary shares in the period from 2 March to 6 March 2026. The shares were repurchased at an average price of € 4.75 per share for a total consideration of € 4.8m. T",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Publication of KPN’s AGM 2026 agenda",
+      "url": "https://finance.yahoo.com/news/publication-kpn-agm-2026-agenda-073000457.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T07:30:00+00:00",
+      "summary": "Today, Royal KPN N.V. (\"KPN\") published the agenda of the Annual General Meeting of Shareholders (\"AGM\"), which will take place at KPN's headquarters in Rotterdam on 15 April 2026. The AGM will be org",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "KPN presents Annual Report 2025: Value of Connection",
+      "url": "https://finance.yahoo.com/news/kpn-presents-annual-report-2025-073000181.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-23T07:30:00+00:00",
+      "summary": "Today, Royal KPN N.V. (\"KPN\") publishes its 2025 Annual Report: Value of Connection. In a year marked by strong focus on digitalization, AI, resilience and sustainability, KPN once again delivered sol",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "A Look At KPN (ENXTAM:KPN) Valuation After Recent Refinancing Moves And Share Buybacks",
+      "url": "https://finance.yahoo.com/news/look-kpn-enxtam-kpn-valuation-090736692.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T09:07:36+00:00",
+      "summary": "Koninklijke KPN (ENXTAM:KPN) has been active on its balance sheet in February, issuing a new €500 million bond, launching tender offers for existing GBP notes, and continuing a €250 million share buyb",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "KPN Debt Moves And Strong Share Gains Shift Risk Reward Balance",
+      "url": "https://finance.yahoo.com/news/kpn-debt-moves-strong-share-160514161.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-16T16:05:14+00:00",
+      "summary": "Koninklijke KPN completed a €500 million senior unsecured bond issuance. The company also finished tender offers to repurchase existing GBP bonds maturing in 2026 and 2029. The combined actions adjust",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

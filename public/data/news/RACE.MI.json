@@ -1,0 +1,53 @@
+{
+  "ticker": "RACE.MI",
+  "last_updated": "2026-04-22T12:13:49.191887+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Luxury Brands Rising Above Retail Volatility. What the Ralph Lauren, Tapestry, and Williams-Sonoma Charts Show.",
+      "url": "https://finance.yahoo.com/m/e3781346-357a-3db5-9696-8554ec56e51d/luxury-brands-rising-above.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:29:00+00:00",
+      "summary": "Luxury retail stocks have been firm, with shares of  Ralph Lauren Tapestry  and  Williams-Sonoma  leading the space as investors leaned into companies benefiting from resilient demand among higher-inc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Todd Blue gets his Porsche store through 4 dealership purchase in California",
+      "url": "https://www.wardsauto.com/news/todd-blue-gets-his-porsche-store-through-4-dealership-purchase-in-californi/817860/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:00:00+00:00",
+      "summary": "The deal with Umansky Auto Group also included Audi, Land Rover and Honda dealerships in Livermore.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Best Marketing Agency Pte Ltd Declares Traditional Marketing Roles Obsolete, Replaces Entire Account Team With AI-Powered Operators",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/best-marketing-agency-pte-ltd-010000830.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:00:00+00:00",
+      "summary": "Best Marketing Agency Pte Ltd (\"BMA\"), a Singapore-based digital marketing agency that has generated over $33 million in tracked revenue for its clients since 2019, today announced a complete restruct",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FERRARI N.V.: PERIODIC REPORT ON THE BUYBACK PROGRAM",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ferrari-n-v-periodic-report-150800863.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:08:00+00:00",
+      "summary": "Maranello (Italy), April 20 2026 – Ferrari N.V. (NYSE/EXM: RACE) (“Ferrari” or the “Company”) informs that the Company has purchased, under the Euro 250 million share buyback program announced on Apri",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Ferrari (NYSE:RACE) Pricing Too Much Future Growth After Recent Share Price Swings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ferrari-nyse-race-pricing-too-070653065.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T07:06:53+00:00",
+      "summary": "If you are wondering whether Ferrari's current share price lines up with its underlying value, this breakdown will help you frame that question clearly. Ferrari's shares last closed at US$372.85, with",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

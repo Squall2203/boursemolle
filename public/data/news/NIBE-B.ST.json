@@ -1,0 +1,35 @@
+{
+  "ticker": "NIBE-B.ST",
+  "last_updated": "2026-04-22T12:39:29.422731+00:00",
+  "sentiment_score": 1.0,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "NIBE Industrier AB (NDRBF) Q4 2025 Earnings Call Highlights: Strong Margin Recovery and ...",
+      "url": "https://finance.yahoo.com/news/nibe-industrier-ab-ndrbf-q4-170148450.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T17:01:48+00:00",
+      "summary": "NIBE Industrier AB (NDRBF) reports improved operating margins and robust cash flow, despite challenges in the Stoves segment and currency impacts.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "NIBE Industrier AB (NDRBF) Q3 2025 Earnings Call Highlights: Strong Growth in Climate Solutions ...",
+      "url": "https://finance.yahoo.com/news/nibe-industrier-ab-ndrbf-q3-170038528.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-14T17:00:38+00:00",
+      "summary": "NIBE Industrier AB (NDRBF) reports robust performance in Climate Solutions with significant profit improvements, despite facing headwinds in the Nordic market and currency fluctuations.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Growth Companies With High Insider Ownership Expecting Up To 27% Earnings Growth",
+      "url": "https://finance.yahoo.com/news/european-growth-companies-high-insider-053534920.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-01T05:35:34+00:00",
+      "summary": "As European markets experience a positive upswing, with major indices like Germany's DAX and France's CAC 40 posting notable gains, investors are increasingly attentive to the potential impacts of eas",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

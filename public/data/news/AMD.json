@@ -1,0 +1,53 @@
+{
+  "ticker": "AMD",
+  "last_updated": "2026-04-22T12:52:18.029203+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Intel and AMD CPU prices are increasing by up to 20%, say manufacturers, with further rises expected this year",
+      "url": "https://www.club386.com/cpu-price-rises-april-26/",
+      "source": "club386.com",
+      "published_at": "2026-04-22T10:47:28+00:00",
+      "summary": "AI demand has driven up the costs of consumer and server processors, with both AMD and Intel reportedly planning further price increases. The post Intel and AMD CPU prices are increasing by up to 20%,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "\"We hurt AMD's feelings\": Not even Gamers Nexus got Ryzen 9 9950X3D2 as AMD keeps review samples from many in media",
+      "url": "https://www.notebookcheck.net/We-hurt-AMD-s-feelings-Not-even-Gamers-Nexus-got-Ryzen-9-9950X3D2-as-AMD-keeps-review-samples-from-many-in-media.1280419.0.html",
+      "source": "notebookcheck.net",
+      "published_at": "2026-04-22T10:17:00+00:00",
+      "summary": "The AMD Ryzen 9 9950X3D2 is here. The CPU features 16x Zen 5 cores, two 3D V-Cache chiplets, and an up to 5.6 GHz boost clock. This is all sounds fantastic on paper. However, AMD has reportedly been v",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "UPS for RTX 5080 + Ryzen 9800X3D",
+      "url": "https://www.reddit.com/r/pcmasterrace/comments/1ssgrdw/ups_for_rtx_5080_ryzen_9800x3d/",
+      "source": "reddit.com",
+      "published_at": "2026-04-22T09:46:02+00:00",
+      "summary": "Hi, I’m looking for a UPS for my setup and I have some doubts. Setup: CPU: AMD Ryzen 7 9800X3D GPU: MSI GeForce RTX 5080 Ventus 3X OC Motherboard: MSI MPG B850 EDGE TI WIFI RAM: 32GB DDR5 Corsair Veng",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Advanced Micro Devices (AMD) Stock Surges on Stifel’s Bullish $320 Price Target",
+      "url": "https://blockonomi.com/advanced-micro-devices-amd-stock-surges-on-stifels-bullish-320-price-target/",
+      "source": "blockonomi.com",
+      "published_at": "2026-04-22T08:58:33+00:00",
+      "summary": "AMD stock jumped 3.47% after Stifel raised its price target to $320, driven by surging AI demand and major deals with Meta and OpenAI. The post Advanced Micro Devices (AMD) Stock Surges on Stifel’s Bu",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Found an Old Beast in an E-Waste Bin (ATI Radeon HD 5970)",
+      "url": "https://www.reddit.com/r/pcmasterrace/comments/1ssfua6/found_an_old_beast_in_an_ewaste_bin_ati_radeon_hd/",
+      "source": "reddit.com",
+      "published_at": "2026-04-22T08:53:27+00:00",
+      "summary": "One of my best finds yet! Paid by weight, so it was 2-3 USD. Still fetches a pretty penny on eBay, but I'll be keeping this one for myself ^^. Apparently this was one of the most powerful GPUs in the ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

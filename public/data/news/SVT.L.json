@@ -1,0 +1,44 @@
+{
+  "ticker": "SVT.L",
+  "last_updated": "2026-04-22T12:30:05.407645+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "How The Severn Trent (LSE:SVT) Investment Story Is Shifting Around Valuation And Analyst Targets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/severn-trent-lse-svt-investment-011031446.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T01:10:31+00:00",
+      "summary": "Severn Trent’s fair value estimate has shifted from £31.26 to £31.88, bringing it closer to the cluster of analyst price targets around £33.00. Analysts are broadly aligned on that £33.00 level, but r",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Some of our apprentices can’t tell the time, HR boss admits",
+      "url": "https://uk.finance.yahoo.com/news/apprentices-t-tell-time-says-174257360.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T17:42:57+00:00",
+      "summary": "Some apprentices at water company Severn Trent struggle to tell the time, an executive at the company has said.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "How The Severn Trent (LSE:SVT) Investment Story Is Shifting As Analyst Views Diverge",
+      "url": "https://finance.yahoo.com/news/severn-trent-lse-svt-investment-100708042.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-05T10:07:08+00:00",
+      "summary": "Severn Trent’s analyst fair value estimate has shifted only slightly, from about £30.22 to roughly £30.45. This keeps the price target story very much about fine tuning rather than big swings. That mo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Looking At The Severn Trent LSE SVT Story After Mixed Rating Shifts",
+      "url": "https://finance.yahoo.com/news/looking-severn-trent-lse-svt-043646191.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T04:36:46+00:00",
+      "summary": "The latest update on Severn Trent edges the fair value estimate to £30.22 per share versus £30.20 previously, with a discount rate of 7.20% compared with 7.07% and long term revenue growth assumptions",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

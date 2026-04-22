@@ -1,0 +1,53 @@
+{
+  "ticker": "GOOGL",
+  "last_updated": "2026-04-22T12:48:58.296388+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Commvault Extends the Full Breadth of its Next-Generation Cyber Resilience Platform to Google Cloud",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/commvault-extends-full-breadth-next-123000696.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:30:00+00:00",
+      "summary": "Commvault (NASDAQ: CVLT), a leader in unified resilience at enterprise scale, today announced the Commvault Cloud platform will be available on Google Cloud, bringing new levels of resilience to custo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Google Cloud: New AI Accelerators, Enterprise Agentic Platform Debut",
+      "url": "https://finance.yahoo.com/m/eae41f57-ae0f-3639-b79e-972546e8662a/google-cloud%3A-new-ai.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:16:47+00:00",
+      "summary": "Google will disclose a change in its AI processor strategy at its cloud computing event. Google stock has advanced nearly 8% in 2026.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SiriusXM to sell YouTube audio ads exclusively in US",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/siriusxm-sell-youtube-audio-ads-120555610.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:05:55+00:00",
+      "summary": "SiriusXM has struck a deal with Alphabet's YouTube to ‌become its exclusive audio advertising ‌sales partner in the U.S., it said on ​Wednesday. YouTube is stepping up efforts to monetize its growing ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Dow Jones Futures Rise As Trump Extends Iran Ceasefire; Tesla Earnings Due",
+      "url": "https://finance.yahoo.com/m/f46ecdb3-fa89-3d35-b084-1638a1ef6475/dow-jones-futures-rise-as.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:05:21+00:00",
+      "summary": "President Trump extended an Iran ceasefire after the stock market fell on canceled talks. Tesla earnings are on deck.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Google puts AI agents at heart of its enterprise money-making push",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/google-puts-ai-agents-heart-120308019.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:03:08+00:00",
+      "summary": "Alphabet CEO Sundar Pichai is deepening a push into enterprise software, signaling to investors at Google's annual cloud conference that AI agents — human-like digital assistants — are a lynchpin of i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "9888.HK",
+  "last_updated": "2026-04-22T13:32:56.935640+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Uber vs. Baidu: Which Stock Holds the Edge Now in the AV Space?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-vs-baidu-stock-holds-142800560.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:28:00+00:00",
+      "summary": "UBER edges ahead of BIDU in the AV race, backed by global robotaxi rollout, stronger earnings outlook, and price performance.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "China’s Netflix Expects AI to Create Bulk of Shows in Five Years",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/china-netflix-expects-ai-create-090424212.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T09:04:24+00:00",
+      "summary": "(Bloomberg) -- IQiyi Inc. expects AI to create the bulk of its films and shows in five years, a monumental industry shift that spurred the Netflix-style streaming service to begin the biggest corporat",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AI’s Token Economy Revolution Creates New China Tech Winners",
+      "url": "https://finance.yahoo.com/news/ais-token-economy-revolution-creates-new-china-tech-winners-035211861.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T03:52:11+00:00",
+      "summary": "(Bloomberg) -- China’s cheap artificial intelligence models are rapidly attracting global users and creating new winners in the nation’s stock market.Most Read from BloombergCruise Ships Seized Brief ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Baidu (NasdaqGS:BIDU) Valuation After New AI Cloud Wins And Kunlunxin Chip Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-baidu-nasdaqgs-bidu-valuation-060748432.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T06:07:48+00:00",
+      "summary": "Fresh interest in Baidu (BIDU) stock has been sparked by new AI cloud wins and attention on its Kunlunxin chip unit, as investors reassess how these businesses fit into the broader Baidu story. See ou",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "New Strong Sell Stocks for April 17th",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/strong-sell-stocks-april-17th-095000539.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T09:50:00+00:00",
+      "summary": "BIDU, CCL and BRK.B have been added to the Zacks Rank #5 (Strong Sell) List on April 17th, 2026.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

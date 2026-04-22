@@ -1,0 +1,53 @@
+{
+  "ticker": "SAND.ST",
+  "last_updated": "2026-04-22T12:38:15.895726+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Sandvik - Interim report first quarter 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sandvik-interim-report-first-quarter-095000586.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:50:00+00:00",
+      "summary": "Sandvik - Interim report first quarter 2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Microsoft's Dynamics 365 Adoption Deepens: Is Growth Sustainable?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsofts-dynamics-365-adoption-deepens-150600031.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:06:00+00:00",
+      "summary": "MSFT's Dynamics 365 is evolving into an AI-driven platform, boosting enterprise adoption, deepening workflows and expanding revenue potential.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "TTNDY or SDVKY: Which Is the Better Value Stock Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ttndy-sdvky-better-value-stock-154004499.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:40:04+00:00",
+      "summary": "TTNDY vs. SDVKY: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Sandvik’s (OM:SAND) Valuation After Aris Mining Order And Sector Optimism",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-sandvik-om-sand-valuation-181207552.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T18:12:07+00:00",
+      "summary": "Sandvik (OM:SAND) has secured a SEK 250 million order from Aris Mining for underground trucks, loaders and drill rigs at the Marmato gold mine in Colombia, along with ongoing maintenance and repair se",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Barclays flags preferred mining equipment stocks in this gold-driven cycle",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/barclays-flags-preferred-mining-equipment-104944328.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T10:49:44+00:00",
+      "summary": "Investing.com -- Barclays has singled out Epiroc and Sandvik as its top picks in the mining equipment sector, contending that a surging gold price is driving a spending cycle that will sharply separat",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

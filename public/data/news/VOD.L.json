@@ -1,0 +1,53 @@
+{
+  "ticker": "VOD.L",
+  "last_updated": "2026-04-22T12:26:44.951987+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Vodafone Warns Customers About Scam Calls Before They Answer, Powered by Hiya",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/vodafone-warns-customers-scam-calls-113000569.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:30:00+00:00",
+      "summary": "SEATTLE, April 22, 2026--Hiya, a global leader in trusted voice solutions, today announced it is powering Vodafone’s Scam Call Protection feature, a new scam and spam call detection capability embedde",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vodafone Business Launch New AI and Cybersecurity Solutions to Accelerate Small Business Digital Transformation in Partnership with Google Cloud",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/vodafone-business-launch-ai-cybersecurity-070000512.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:00:00+00:00",
+      "summary": "Cloud Next '26 -- Today Vodafone Business and Google Cloud announce an expansion of their strategic partnership with two new solutions to equip small-and medium-sized businesses (SMBs) with advanced c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vodafone offers small businesses cybersecurity, AI capability with Google tie-up",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/vodafone-offers-small-businesses-cybersecurity-230744486.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T23:07:44+00:00",
+      "summary": "European mobile and broadband operator Vodafone said it would offer its ‌small business customers advanced cybersecurity and agentic ‌AI through its $1 billion strategic tie-up with Google Cloud agree",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "‘Big four’ mobile firms outperformed by smaller rivals in annual survey",
+      "url": "https://uk.finance.yahoo.com/news/big-four-mobile-firms-outperformed-230100923.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T23:01:00+00:00",
+      "summary": "Three, O2 and Lycamobile were the lowest performing networks in the survey of more than 5,000 mobile users by Which?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Vodafone Group (LSE:VOD) Investment Story Is Shifting As Analysts Rework Valuations",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vodafone-group-lse-vod-investment-170545200.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:05:45+00:00",
+      "summary": "Vodafone Group’s modelled fair value per share has shifted from £1.02 to £1.04, a small move that still matters if you are tracking where analysts think the shares sit versus their central valuation r",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

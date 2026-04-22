@@ -1,0 +1,53 @@
+{
+  "ticker": "MDB",
+  "last_updated": "2026-04-22T13:20:13.573703+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "How DoorDash Launches a New Country in One Week",
+      "url": "https://blog.bytebytego.com/p/how-doordash-launches-a-new-country",
+      "source": "bytebytego.com",
+      "published_at": "2026-04-21T15:30:21+00:00",
+      "summary": "In this article, we will look at how this architecture was designed and the challenges they faced. MongoDB Monitoring Cheatsheet (Sponsored)Skip the guesswork with this MongoDB cheatsheet from Datadog",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MongoDB’s (MDB) Long-Term Growth Trajectory Overshadows Guidance Shortfall",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mongodb-mdb-long-term-growth-142816160.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-20T14:28:16+00:00",
+      "summary": "Fred Alger Management, an investment management company, released its “Alger Mid Cap Fund” first-quarter 2025 investor letter. A copy of the letter can be downloaded here. In the first quarter of 2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Exane Asset Management Increases Position in MongoDB, Inc. $MDB",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-exane-asset-management-increases-position-in-mongodb-inc-mdb-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T08:16:26+00:00",
+      "summary": "Exane Asset Management boosted its position in shares of MongoDB, Inc. (NASDAQ:MDB - Free Report) by 35,742.7% during the fourth quarter, according to its most recent Form 13F filing with the Securiti",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why I Built My Own URL Shortener (9rl.io) with Node.js and MongoDB",
+      "url": "https://dev.to/haengjin_noh_eacadf562c45/why-i-built-my-own-url-shortener-9rlio-with-nodejs-and-mongodb-5895",
+      "source": "dev.to",
+      "published_at": "2026-04-19T00:13:21+00:00",
+      "summary": "Why I Built My Own URL Shortener (9rl.io) with Node.js and MongoDB Building a URL shortener is often seen as a \"hello world\" project for backend developers. However, when you combine Technical SEO wit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Hello Dev.to — I’m Emenike Nathaniel I’m excited to officially join this amazing developer community.",
+      "url": "https://dev.to/githubnath/hello-devto-im-nathaniel-emenike-im-excited-to-officially-join-this-amazing-developer-21cd",
+      "source": "dev.to",
+      "published_at": "2026-04-18T00:29:07+00:00",
+      "summary": "I’m a Full Stack Software Developer (MERN Stack), working with TypeScript, React, Node.js, Express, MongoDB, and Vite to build scalable, high-performance web applications. I started from an Electrical",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

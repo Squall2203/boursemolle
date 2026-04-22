@@ -1,0 +1,53 @@
+{
+  "ticker": "CRH.L",
+  "last_updated": "2026-04-22T12:18:30.948940+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "CRH Completes LSE Delisting",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crh-completes-lse-delisting-073000179.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T07:30:00+00:00",
+      "summary": "NEW YORK, April 20, 2026-- Further to the announcement made on March 13, 2026, CRH (NYSE: CRH) today confirms that the listings of its ordinary shares and its 7% preference shares on the official list",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Transaction in Own Shares",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/transaction-own-shares-060000544.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T06:00:00+00:00",
+      "summary": "NEW YORK, April 20, 2026-- 20th April 2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CRH Buyback Program Weighs $300m Repurchases Against Valuation And Debt",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crh-buyback-program-weighs-300m-050424744.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T05:04:24+00:00",
+      "summary": "CRH, traded as NYSE:CRH, has initiated a share buyback program of up to $300 million. The company is actively acquiring its own shares in the market with plans to cancel repurchased stock. These trans",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "CRH (CRH) Stock Slides as Market Rises: Facts to Know Before You Trade",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crh-crh-stock-slides-market-220003528.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T22:00:03+00:00",
+      "summary": "In the latest trading session, CRH (CRH) closed at $114.36, marking a -1.59% move from the previous day.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CRH Confirms Date for Q1 2026 Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crh-confirms-date-q1-2026-120000559.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T12:00:00+00:00",
+      "summary": "NEW YORK, April 16, 2026--CRH (NYSE: CRH), the leading provider of building materials, will publish its Q1 2026 financial results before market open on Thursday, Apr. 30, 2026, in advance of a confere",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

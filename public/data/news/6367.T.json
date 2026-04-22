@@ -1,0 +1,53 @@
+{
+  "ticker": "6367.T",
+  "last_updated": "2026-04-22T13:44:51.998869+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Elliott Management Statement on Daikin Industries, Ltd.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elliott-management-statement-daikin-industries-210000359.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T21:00:00+00:00",
+      "summary": "Elliott Investment Management L.P. and Elliott Advisors (UK) Limited (\"Elliott\"), which advise funds that together have a significant investment in Daikin Industries, Ltd. (\"Daikin\" or the \"Company\"),",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At Daikin Industries (TSE:6367) Valuation As Multi Year Returns Start To Rebuild",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-daikin-industries-tse-6367-201546118.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T20:15:46+00:00",
+      "summary": "Daikin Industries Ltd (TSE:6367) has drawn investor attention after a recent move in its share price, with the stock showing gains over the past week, month and past 3 months. See our latest analysis ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "HPF Market Forecast by Type, Form, Application, End-Use Industry, and Region to 2030 - Daikin Industries, AGC, and Chemours Co. Lead the Industry, Growing by $2 Billion Through 2030",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hpf-market-forecast-type-form-093200744.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T09:32:00+00:00",
+      "summary": "Key market opportunities include growth in components like seals and gaskets due to demand from aerospace and automotive industries. PFA/MFA types are expanding, driven by electronics and semiconducto",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "[Latest] Global Electronic Grade Hydrofluoric Acid Market Size/Share Worth USD 3.47 Billion by 2035 at a 11.4% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/latest-global-electronic-grade-hydrofluoric-083000631.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T08:30:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Electronic Grade Hydrofluoric Acid Market size & share revenue was va",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Daikin Industries Selects Outerport to Make Unstructured Engineering Design Data AI-Ready",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/daikin-industries-selects-outerport-unstructured-130000304.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T13:00:00+00:00",
+      "summary": "Daikin Industries has selected Outerport as its core platform for extracting structured data from complex engineering documents, drawings and diagrams. The Outerport platform has been fully deployed t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

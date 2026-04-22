@@ -1,0 +1,53 @@
+{
+  "ticker": "RHM.DE",
+  "last_updated": "2026-04-22T11:55:10.124857+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "European defense stocks cool as investors reassess war winners",
+      "url": "https://finance.yahoo.com/video/european-defense-stocks-cool-investors-105304550.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:02:27+00:00",
+      "summary": "STORY: Investors have recently cooled their interest in European defense stocks.  Profit taking and stretched valuations have joined with growing uncertainty about the future of warfare.  That as the ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Rheinmetall (XTRA:RHM) Valuation Check After Recent Share Price Volatility",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rheinmetall-xtra-rhm-valuation-check-141320430.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T14:13:20+00:00",
+      "summary": "Rheinmetall overview and recent share performance Rheinmetall (XTRA:RHM) has been on many investors’ radars after a mixed run in the shares, with a 2.16% gain over the past day but declines over the p",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Stocks Fall in Monday Trading After US-Iran Peace Talks Collapse",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-fall-monday-trading-155326122.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T15:53:26+00:00",
+      "summary": "European stock markets fell in Monday trading following President Donald Trump's threat to block the",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Persian Gulf Turmoil Blunts European Bourses Midday",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/persian-gulf-turmoil-blunts-european-113807794.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T11:38:07+00:00",
+      "summary": "European bourses tracked moderately lower midday Monday after President Donald Trump said the US wil",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "THEON Signs Strategic Agreement with RHEINMETALL for the Development and Supply of the PHYLAX Stabilized Multi-Sensor System",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/theon-signs-strategic-agreement-rheinmetall-124700425.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T12:47:00+00:00",
+      "summary": "New 3rd factory in Koropi New 3rd factory in Koropi PHYLAX PHYLAX Signing aggrement THEON and RHEINMENTALL.jpg Timo HAAS, CEO Division Digital Systems of RHEINMETALL and Christian Hadjiminas, Founder ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

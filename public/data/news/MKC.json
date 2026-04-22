@@ -1,0 +1,53 @@
+{
+  "ticker": "MKC",
+  "last_updated": "2026-04-22T13:29:57.082352+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "New Mexico’s Bet on Universal Child Care",
+      "url": "https://thedispatch.com/newsletter/morning/new-mexicos-bet-on-universal-child-care/",
+      "source": "thedispatch.com",
+      "published_at": "2026-04-22T10:41:59+00:00",
+      "summary": "Plus: Fed chair nominee Kevin Warsh pledges independence at Senate hearing, Rep. Cherfilus-McCormick resigns ahead of expulsion vote, and a farmer has inconveniently cute cows.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Boston Trust Walden Corp Has $72.84 Million Stock Holdings in McCormick & Company, Incorporated $MKC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-boston-trust-walden-corp-has-7284-million-stock-holdings-in-mccormick-company-incorporated-mkc-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T07:31:37+00:00",
+      "summary": "Boston Trust Walden Corp lowered its position in shares of McCormick & Company, Incorporated (NYSE:MKC - Free Report) by 3.7% in the fourth quarter, according to the company in its most recent 13F fil",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Florida Rep. Cherfilus-McCormick resigns ahead of high-stakes ethics sanctions",
+      "url": "https://thebrunswicknews.com/news/national_news/florida-rep-cherfilus-mccormick-resigns-ahead-of-high-stakes-ethics-sanctions/article_9d5b0f39-379a-568c-9231-065a4f9850c0.html",
+      "source": "thebrunswicknews.com",
+      "published_at": "2026-04-21T22:31:00+00:00",
+      "summary": "Florida Congresswoman Sheila Cherfilus-McCormick resigned Tuesday afternoon, minutes before a scheduled Ethics Committee hearing and vote on what sanctions she should face for the more than two dozen ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cherfilus-McCormick resignation makes some Democrats regret vote to expel George Santos",
+      "url": "https://www.axios.com/2026/04/21/cherfilus-mccormick-george-santos-expel-democrats",
+      "source": "axios.com",
+      "published_at": "2026-04-21T22:30:36+00:00",
+      "summary": "Rep. Sheila Cherfilus-McCormick's resignation has some Democrats fuming about what they say was an unfair process and even expressing buyer's remorse about voting to expel George Santos from Congress.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Cherfilus-McCormick resigns from U.S. House",
+      "url": "https://www.kpvi.com/news/national_news/cherfilus-mccormick-resigns-from-u-s-house/article_36a4faf5-b880-5146-bf97-88a7513a1dd6.html",
+      "source": "kpvi.com",
+      "published_at": "2026-04-21T20:34:00+00:00",
+      "summary": "(The Center Square) – U.S. Rep. Sheila Cherfilus-McCormick, a Democrat from Florida, resigned from Congress Tuesday minutes before a House Ethics Committee hearing that would have decided sanctions ag",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

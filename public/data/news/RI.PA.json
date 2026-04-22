@@ -1,0 +1,53 @@
+{
+  "ticker": "RI.PA",
+  "last_updated": "2026-04-22T11:36:33.709352+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Why Brown-Forman (BF.B) Remains at the Center of Active Deal Talks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-brown-forman-bf-b-182127060.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:21:27+00:00",
+      "summary": "Brown-Forman Corporation (NYSE:BF.B) is one of the 12 Takeover Rumors Targeted by Short Sellers. Brown-Forman Corporation (NYSE:BF.B) is one of the takeover rumors targeted by short sellers. The lates",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sector Update: Consumer Stocks Decline Late Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-decline-afternoon-195343452.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:53:43+00:00",
+      "summary": "Consumer stocks were lower late Monday afternoon, with the State Street Consumer Staples Select Sect",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pernod Ricard Weighs Indian IPO And Brown Forman Merger As Valuation Lags",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pernod-ricard-weighs-indian-ipo-190606707.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:06:06+00:00",
+      "summary": "Pernod Ricard is reportedly preparing a potential IPO of its Indian business. The group is also in advanced merger talks with Brown Forman, according to recent reports. Both potential moves could resh",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sector Update: Consumer Stocks Decline in Afternoon Trading",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-decline-afternoon-174603697.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T17:46:03+00:00",
+      "summary": "Consumer stocks were lower Monday afternoon, with the State Street Consumer Staples Select Sector SP",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pernod says Brown-Forman talks 'ongoing' after reported rival offer",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pernod-says-brown-forman-talks-145804791.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T14:58:04+00:00",
+      "summary": "French drinks giant Pernod Ricard said Thursday that talks to buy Brown-Forman, the US owner of Jack Daniel's whiskey, were continuing after reports of a rival American offer by Sazerac.But the compan",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

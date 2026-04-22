@@ -1,0 +1,53 @@
+{
+  "ticker": "ASM.AS",
+  "last_updated": "2026-04-22T12:03:19.956243+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European chip, electrical stocks surge as AI optimism builds on earnings",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/european-chip-electrical-stocks-surge-110002562.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:00:02+00:00",
+      "summary": "Shares in European chip and electrical equipment makers rallied on Wednesday as investors piled into stocks set to ‌benefit from the artificial intelligence investment boom, following upbeat earnings ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ASM International forecasts second-quarter revenue that beats estimates",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/asm-international-forecasts-second-quarter-180404450.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:04:04+00:00",
+      "summary": "Computer chip equipment maker ASM International on Tuesday forecast stronger ‌second-quarter revenue guidance than markets expected, after a first-quarter ‌report above expectations.  \"Customers are s",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ASM reports first quarter 2026 results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asm-reports-first-quarter-2026-160000890.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:00:00+00:00",
+      "summary": "Almere, The NetherlandsApril 21, 2026, 6 p.m. CET Q1 revenue at high end of guidance; record operating margin ASM International N.V. (Euronext Amsterdam: ASM) today reports its first quarter 2026 resu",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Broadcom (AVGO) Stock Outpacing Its Computer and Technology Peers This Year?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-avgo-stock-outpacing-computer-134003071.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T13:40:03+00:00",
+      "summary": "Here is how Broadcom Inc. (AVGO) and ASM International NV (ASMIY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What Makes ASM International (ASMIY) a New Strong Buy Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/makes-asm-international-asmiy-strong-160005256.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T16:00:05+00:00",
+      "summary": "ASM International (ASMIY) has been upgraded to a Zacks Rank #1 (Strong Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "EDP.LS",
+  "last_updated": "2026-04-22T12:15:51.660314+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is Energias de Portugal (EDPFY) Stock Outpacing Its Utilities Peers This Year?",
+      "url": "https://finance.yahoo.com/news/energias-portugal-edpfy-stock-outpacing-144002986.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-04T14:40:02+00:00",
+      "summary": "Here is how Energias de Portugal (EDPFY) and ENGIE BRASL EGA (EGIEY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is EDP's Italian Solar Sale Reshaping Its Asset Rotation Strategy And Investment Case (ENXTLS:EDP)?",
+      "url": "https://finance.yahoo.com/news/edps-italian-solar-sale-reshaping-160538277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-15T16:05:38+00:00",
+      "summary": "EDP has completed the sale of a 207‑MW solar portfolio in Italy, a move that fits its ongoing renewable asset rotation strategy. This transaction highlights how EDP is actively reallocating capital wi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EDP (ENXTLS:EDP) Valuation After Italian Solar Portfolio Sale and Renewables Asset Mix Shift",
+      "url": "https://finance.yahoo.com/news/edp-enxtls-edp-valuation-italian-161026809.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-14T16:10:26+00:00",
+      "summary": "EDP (ENXTLS:EDP) just wrapped up the sale of a 207 MW solar portfolio in Italy, a move that fits its ongoing reshuffle of renewable assets and quietly reshapes how investors think about its growth mix",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Are Utilities Stocks Lagging  Brookfield Renewable Partners (BEP) This Year?",
+      "url": "https://finance.yahoo.com/news/utilities-stocks-lagging-brookfield-renewable-144005169.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-25T14:40:05+00:00",
+      "summary": "Here is how Brookfield Renewable Energy Partners (BEP) and Energias de Portugal (EDPFY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Are Utilities Stocks Lagging  Atmos Energy (ATO) This Year?",
+      "url": "https://finance.yahoo.com/news/utilities-stocks-lagging-atmos-energy-144004871.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-07T14:40:04+00:00",
+      "summary": "Here is how Atmos Energy (ATO) and Energias de Portugal (EDPFY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

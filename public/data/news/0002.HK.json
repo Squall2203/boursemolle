@@ -1,0 +1,35 @@
+{
+  "ticker": "0002.HK",
+  "last_updated": "2026-04-22T13:37:59.503321+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "CLP Holdings Ltd (CLPHF) Full Year 2025 Earnings Call Highlights: Navigating Challenges with ...",
+      "url": "https://finance.yahoo.com/news/clp-holdings-ltd-clphf-full-010059978.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-05T01:00:59+00:00",
+      "summary": "Despite a decline in total earnings, CLP Holdings Ltd (CLPHF) showcases resilience with increased dividends and strategic advancements in renewable energy projects.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Fosun International Receives \"Certificate of Excellence in Environmental, Social and Governance Reporting\" from Hong Kong Management Association",
+      "url": "https://finance.yahoo.com/news/fosun-international-receives-certificate-excellence-010000036.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-27T01:00:00+00:00",
+      "summary": "On 23 February 2026, The Hong Kong Management Association (HKMA) held the 2025 HKMA Best Annual Reports Awards presentation ceremony in Hong Kong. Fosun International received the \"Certificate of Exce",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Fresh Look at CLP Holdings (SEHK:2) Valuation as Shares Show Modest, Steady Gains",
+      "url": "https://finance.yahoo.com/news/fresh-look-clp-holdings-sehk-115056553.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-11T11:50:56+00:00",
+      "summary": "Steady Performance Raises Fresh Questions Around CLP Holdings (SEHK:2) Investors keeping an eye on CLP Holdings (SEHK:2) may be scratching their heads after the company's shares edged up a modest 0.6%",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

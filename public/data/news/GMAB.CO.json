@@ -1,0 +1,53 @@
+{
+  "ticker": "GMAB.CO",
+  "last_updated": "2026-04-22T12:44:49.022487+00:00",
+  "sentiment_score": -0.1,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Genmab gains as Goldman upgrades stock to Buy on increased pipeline confidence",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/genmab-gains-goldman-upgrades-stock-101434484.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:14:34+00:00",
+      "summary": "Investing.com -- Goldman Sachs upgraded Genmab to Buy from Neutral on Wednesday, citing growing confidence in three key pipeline assets that the bank believes could de-risk more than $5 billion in pea",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "Genmab (CPSE:GMAB) Valuation Check After Mixed Recent Share Performance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/genmab-cpse-gmab-valuation-check-090557714.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T09:05:57+00:00",
+      "summary": "Genmab share performance sets the stage Genmab (CPSE:GMAB) has drawn investor attention after a month return of about 10%, alongside a past 3 months decline near 10% and a near 40% total return over t",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Genmab A/S Share Capital Reduction",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/genmab-share-capital-reduction-145600628.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T14:56:00+00:00",
+      "summary": "Company Announcement COPENHAGEN, Denmark; April 17, 2026 – Genmab A/S (Nasdaq: GMAB) At Genmab A/S’ Annual General Meeting on March 19, 2026, it was decided to reduce the Company’s share capital with ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Major Shareholder Announcement",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/major-shareholder-announcement-144400152.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T14:44:00+00:00",
+      "summary": "Company Announcement Major shareholder announcement for Genmab A/S COPENHAGEN, Denmark; April 14, 2026 – Genmab A/S (Nasdaq: GMAB) announces under reference to Section 30 of the Danish Capital Markets",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Genmab Announces Net Sales of DARZALEX® (daratumumab) for First Quarter of 2026",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/genmab-announces-net-sales-darzalex-102300735.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T10:23:00+00:00",
+      "summary": "Company Announcement Net sales of DARZALEX® in the first quarter of 2026 totaled USD 3,964 millionGenmab receives royalties on worldwide net sales from Johnson & Johnson (J&amp;J, legal entity Janssen",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

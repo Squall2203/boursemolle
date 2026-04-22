@@ -1,0 +1,53 @@
+{
+  "ticker": "ENT.L",
+  "last_updated": "2026-04-22T12:31:31.489155+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Entain Q1 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/entain-q1-earnings-call-highlights-2026-04-16/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T10:05:20+00:00",
+      "summary": "Entain (LON:ENT) reported a first-quarter trading update that executives said kept the group “in line with expectations,” while highlighting accelerating underlying volume growth and continued momentu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FTSE 100 Live: London blue-chips edge higher, Tesco, Entain and miners lead",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090648/ftse-100-live-london-blue-chip-handbrake-on-while-us-and-asia-stocks-surge-1090648.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T06:17:00+00:00",
+      "summary": "FTSE up 18 points to 10,577 US and Iran may extend ceasefire to enable peace talks Tesco, easyJet, Entain and Rentokil release results 10.12am: UK food disruption planning, Tesco says 'no supply chain",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MGM Resorts' BetMGM Reports Steady Q1, Lowers 2026 Revenue Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mgm-resorts-betmgm-reports-steady-152800367.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T15:28:00+00:00",
+      "summary": "MGM slips as BetMGM posts 6% Q1 net revenue growth and 11% EBITDA gain but trims 2026 revenue view to $2.9-$3.1B as iGaming leads.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "FTSE 100 Live: Shares mixed as Iran talks awaited, Ceres and Rank jump",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090568/ftse-100-live-blue-chips-set-for-another-tug-of-war-as-oil-prices-retreat-further-1090568.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T07:17:00+00:00",
+      "summary": "FTSE 100 down 31 points at 10,578 Trump says more talks likely with Iran this week Oil prices remain volatile as Hormuz strait blockade continues Rank are Ceres are top risers on FTSE 350 4.10pm: FTSE",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "UK Market Highlights 3 Stocks Estimated Below Intrinsic Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uk-market-highlights-3-stocks-063759391.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T06:37:59+00:00",
+      "summary": "In recent weeks, the United Kingdom's FTSE 100 index has faced downward pressure, influenced by weak trade data from China and broader global cues, reflecting challenges in key sectors such as mining ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

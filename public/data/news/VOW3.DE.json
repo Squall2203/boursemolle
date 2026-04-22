@@ -1,0 +1,53 @@
+{
+  "ticker": "VOW3.DE",
+  "last_updated": "2026-04-22T11:56:35.706024+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "AI Weekly: Amazon deepens Anthropic ties, VW fights back in China",
+      "url": "https://finance.yahoo.com/video/ai-weekly-amazon-deepens-anthropic-100847581.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:08:47+00:00",
+      "summary": "STORY: From Amazon deepening ties with Anthropic to Volkswagen trying to fight back in China, this is AI Weekly  :: AI Weekly  Amazon said it will invest up to $25 billion in Anthropic.  That's as the",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Volkswagen to expand China-made EV exports to emerging markets",
+      "url": "https://www.just-auto.com/news/volkswagen-expand-china-made-ev-exports/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:08:11+00:00",
+      "summary": "The move comes as China’s car market faces softer demand, leaving the industry with excess capacity and sharper price competition while domestic carmakers increase their overseas presence.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The Post-Squeeze Reckoning: What’s Next for Avis Stock Once the Shorts Have Fled?",
+      "url": "https://finance.yahoo.com/m/f77fb518-c5a4-3936-ba13-138385caba1a/the-post-squeeze-reckoning%3A.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:10:00+00:00",
+      "summary": "The wild trading in  Avis Budget Group  stock continued on Tuesday as shares of the rental-car company gained another 17% and have risen more than sixfold over the past month—and it could result in a ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Forge Nano, U.S. Advanced Manufacturing Leader for AI-Era Chips and Defense Batteries, to List on NASDAQ through Merger with Archimedes Tech SPAC Partners II Co.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/forge-nano-u-advanced-manufacturing-140000666.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:00+00:00",
+      "summary": "Advanced Manufacturing Platform Supporting Critical Industries: U.S. advanced manufacturing company enabling next-generation semiconductors and batteries through its proprietary Atomic Layer Depositio",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What Is Powering the Avis Short Squeeze? Inside the Math of a Supply-Demand Crisis.",
+      "url": "https://finance.yahoo.com/m/00de6749-f885-3726-a1f0-ac0c4a4f618f/what-is-powering-the-avis.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:44:00+00:00",
+      "summary": "One of the wildest short squeezes of recent years continues to play out in shares of  Avis Budget Group  as the stock of the rental-car company rose about 23% Monday to a record high, capping a more t",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "LUV",
+  "last_updated": "2026-04-22T13:16:00.848992+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "FAA probes JFK near miss after another recent close call fuels scrutiny of air traffic safety",
+      "url": "https://www.foxnews.com/us/faa-probes-jfk-near-miss-after-another-recent-close-call-fuels-scrutiny-air-traffic-safety",
+      "source": "foxnews.com",
+      "published_at": "2026-04-22T00:25:41+00:00",
+      "summary": "The incident is the latest in a string of close calls, days after FAA investigated a Southwest Airlines near miss Two passenger jets came too close to each other while approaching John F. Kennedy Inte",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Flight makes emergency landing after Southwest pilot gets concussion",
+      "url": "https://www.reviewjournal.com/business/tourism/flight-makes-emergency-landing-after-pilot-gets-concussion-from-fallen-display-3790759/",
+      "source": "reviewjournal.com",
+      "published_at": "2026-04-22T00:03:19+00:00",
+      "summary": "The first officer aboard Southwest Flight 568 landed the Boeing 737 jet after an instrument display hit the pilot in the head and he suffered a mild concussion.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Soaring with the Eagles! Southwest's Aniya Harris to follow mother's footsteps at NC Central",
+      "url": "https://greensboro.com/sports/high-school/softball/article_7ec594a6-22b8-4eb7-a51c-e03014a475fa.html",
+      "source": "greensboro.com",
+      "published_at": "2026-04-21T22:45:00+00:00",
+      "summary": "Aniya Harris of Southwest Guilford High School is the News & Record Athlete of the Week, sponsored by Deuterman Law Group.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Southwest Airlines (LUV) Set to Report Q1 Earnings with Strong Expectations",
+      "url": "https://www.gurufocus.com/news/8807574/southwest-airlines-luv-set-to-report-q1-earnings-with-strong-expectations",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-21T22:33:22+00:00",
+      "summary": "Related Stocks: LUV,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "American Airlines Served Broken Glass In First Class — That’s Worth A $100 Voucher [Roundup]",
+      "url": "https://viewfromthewing.com/american-airlines-served-broken-glass-in-first-class-thats-worth-a-100-voucher-roundup/",
+      "source": "viewfromthewing.com",
+      "published_at": "2026-04-21T22:04:14+00:00",
+      "summary": "American Airlines served a business class meal with glass in it, plus Southwest gate-checking bags despite empty bin space, Alaska and Bank of America extending their card deal, better meals returning",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "WCH.DE",
+  "last_updated": "2026-04-22T12:01:17.290112+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Wacker Chemie AG (WKCMF) Q4 2025 Earnings Call Highlights: Navigating Restructuring and Future ...",
+      "url": "https://finance.yahoo.com/news/wacker-chemie-ag-wkcmf-q4-010029530.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T01:00:29+00:00",
+      "summary": "Despite a challenging year with significant restructuring costs, Wacker Chemie AG (WKCMF) outlines a path to recovery and growth in 2026.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Wacker Chemie Q4 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/wacker-chemie-q4-earnings-call-highlights-2026-03-11/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T17:01:39+00:00",
+      "summary": "Wacker Chemie (ETR:WCH) reported full-year 2025 sales of EUR 5.5 billion and EBITDA before special items of around EUR 529 million, results that management said were in line with the company’s revised",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Wacker Chemie AG's (ETR:WCH) On An Uptrend But Financial Prospects Look Pretty Weak: Is The Stock Overpriced?",
+      "url": "https://finance.yahoo.com/news/wacker-chemie-ags-etr-wch-040738615.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-16T04:07:38+00:00",
+      "summary": "Wacker Chemie's (ETR:WCH) stock is up by a considerable 10% over the past three months. However, in this article, we...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "US Live Biotherapeutics Market Research 2025, Competitive Analysis of Arrant Bio, 4D Pharma, Cerbios, Biose, Assembly Biosciences, Wacker Chemie, Quay Pharmaceuticals, NIZO, Lonza, Inpac Probiotics",
+      "url": "https://finance.yahoo.com/news/us-live-biotherapeutics-market-research-144000968.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-10T14:40:00+00:00",
+      "summary": "The US Live Biotherapeutics Market offers growth opportunities driven by advancements in microbiome research and rising chronic diseases. Innovations are expanding treatment options for conditions lik",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Waterproofing Chemicals Market Size | Companies Analysis 2025- 2034",
+      "url": "https://finance.yahoo.com/news/waterproofing-chemicals-market-size-companies-185600127.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-03T18:56:00+00:00",
+      "summary": "According to Towards Chemical and Materials, the global waterproofing chemicals market size is calculated at USD 8.39 billion in 2025 and is expected to be worth around USD 15.23 billion by 2034, grow",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "PANW",
+  "last_updated": "2026-04-22T12:59:17.530836+00:00",
+  "sentiment_score": 0.67,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "1 of Wall Street’s Favorite Stock with Exciting Potential and 2 That Underwhelm",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stock-174951359.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:49:51+00:00",
+      "summary": "Wall Street is overwhelmingly bullish on the stocks in this article, with price targets suggesting significant upside potential. However, it’s worth remembering that analysts rarely issue sell ratings",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Is It Too Late To Consider Palo Alto Networks (PANW) After Strong Five Year Share Gains?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-palo-alto-networks-170805114.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:08:05+00:00",
+      "summary": "How Palo Alto Networks' Share Price Sets Up a Valuation Question Before weighing up Palo Alto Networks against your watchlist, it helps to be clear on what you are really paying for, and whether the c",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why Palo Alto Networks Stock Popped Today",
+      "url": "https://www.fool.com/investing/2026/04/21/why-palo-alto-networks-stock-popped-today/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:09:19+00:00",
+      "summary": "AI will not eat this software stock.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Palo Alto Networks Inc. (PANW): One of the Best Stocks to Buy According to Nancy Pelosi",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-networks-inc-panw-144950286.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:49:50+00:00",
+      "summary": "We just covered the 10 Best Stocks to Buy According to Nancy Pelosi and Palo Alto Networks, Inc. (NASDAQ:PANW) ranks 9th on this list. Per mandatory filings released last year, Nancy Pelosi exercised ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Berenberg Initiates Palo Alto Networks at Buy: Is AI the Next Inflection for Cybersecurity’s Quality Compounder?",
+      "url": "https://247wallst.com/investing/2026/04/21/berenberg-initiates-palo-alto-networks-at-buy-is-ai-the-next-inflection-for-cybersecuritys-quality-compounder/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:21:44+00:00",
+      "summary": "Palo Alto Networks (NASDAQ:PANW) stock picked up a fresh analyst endorsement Tuesday morning, as Berenberg initiated coverage with a Buy rating and a $215 price target. The firm calls Palo Alto a “rar",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

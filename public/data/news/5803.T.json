@@ -1,0 +1,53 @@
+{
+  "ticker": "5803.T",
+  "last_updated": "2026-04-22T13:56:17.974186+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "AFL and Inligo Partner to Advance Fibre Manufacturing for Unite Cable System",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/afl-inligo-partner-advance-fibre-024100536.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T02:41:00+00:00",
+      "summary": "MELBOURNE, Australia, April 02, 2026--Inligo Networks, the developer behind the Asia-Pacific’s next generation of digital infrastructure, has officially appointed global leader American Fujikura Limit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Middle East Woes Undercut Asian Stock Markets",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/middle-east-woes-undercut-asian-103632407.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T10:43:17+00:00",
+      "summary": "Asian stock markets again sank Tuesday as traders monitored Iran war news, and sought clarity on a r",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "US Conec, Corning Incorporated, Fujikura and Sumitomo Electric Lightwave Announce Multi-Source Framework for PRIZM® TMT Expanded Beam Ferrules and Associated MMC Connectors",
+      "url": "https://finance.yahoo.com/news/us-conec-corning-incorporated-fujikura-121700457.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T12:17:00+00:00",
+      "summary": "US Conec, Corning, Fujikura and Sumitomo Electric Lightwave announce separate agreements to broaden the MMC VSFF (Very Small Form Factor) platform to include expanded beam optics. The PRIZM® TMT ferru",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Does Fujikura’s 3,981% Five Year Surge Still Leave Room for Upside in 2025?",
+      "url": "https://finance.yahoo.com/news/does-fujikura-3-981-five-031929496.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-18T03:19:29+00:00",
+      "summary": "If you are wondering whether Fujikura's huge run up has already priced in the upside, you are in the right place to unpack what the current share price really implies. Even after a sharp pullback of 1",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Asian Markets Retreat at Tuesday's Close as Investors Await US Jobs, Inflation Reports",
+      "url": "https://finance.yahoo.com/news/asian-markets-retreat-tuesday-apos-105408082.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-16T10:54:08+00:00",
+      "summary": "Asian stock markets retreated at Tuesday's close as investors continued to manage risks ahead of the",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

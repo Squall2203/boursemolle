@@ -1,0 +1,53 @@
+{
+  "ticker": "UCG.MI",
+  "last_updated": "2026-04-22T12:13:24.659034+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "In Full: UniCredit CEO Orcel on His Pursuit of Commerzbank",
+      "url": "https://finance.yahoo.com/video/full-unicredit-ceo-orcel-pursuit-091030459.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:10:30+00:00",
+      "summary": "UniCredit CEO Andrea Orcel discusses the status of the lender's bid to buy Commerzbank. The Italian bank is already the largest investor in Commerzbank and currently owns just under 30% in it. Orcel h",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "UniCredit outlines Commerzbank overhaul roadmap amid takeover pursuit",
+      "url": "https://www.retailbankerinternational.com/news/unicredit-underperforming-commerzbank-plan/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:05:04+00:00",
+      "summary": "UniCredit pitched the plan as an intervention to correct \"structural weaknesses” at Commerzbank.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "UniCredit’s Commerzbank Push Just Turned Into a Banking Power Play",
+      "url": "https://app.moby.co/home/news/news-unicredits-commerzbank-push-just-turned-into-a-banking-power-play?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T18:42:47+00:00",
+      "summary": "UniCredit’s latest pitch is a full public case for why Germany’s lender needs fixing and why Italy thinks it should do the fixing.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "UniCredit woos Commerzbank shareholders in takeover battle",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/unicredit-woos-commerzbank-shareholders-takeover-121130403.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T17:42:01+00:00",
+      "summary": "Italian bank UniCredit wooed shareholders in Germany's Commerzbank with promises of higher returns on Monday in moves the German bank dismissed as \"hostile tactics\" and \"misleading characterisations\".",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Commerzbank After Rebuffing UniCredit What Valuation Signals And Risks Suggest",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/commerzbank-rebuffing-unicredit-valuation-signals-140938838.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T14:09:38+00:00",
+      "summary": "UniCredit made a takeover approach for Commerzbank (XTRA:CBK), which was rejected by Commerzbank's board over concerns about value and strategic fit for the business. The German government, a key shar",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

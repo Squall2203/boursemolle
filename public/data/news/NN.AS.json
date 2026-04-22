@@ -1,0 +1,53 @@
+{
+  "ticker": "NN.AS",
+  "last_updated": "2026-04-22T12:04:33.533143+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "NNGRY vs. BWIN: Which Stock Should Value Investors Buy Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nngry-vs-bwin-stock-value-154003549.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T15:40:03+00:00",
+      "summary": "NNGRY vs. BWIN: Which Stock Is the Better Value Option?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "NNGRY or BWIN: Which Is the Better Value Stock Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nngry-bwin-better-value-stock-154004563.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T15:40:04+00:00",
+      "summary": "NNGRY vs. BWIN: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing NN Group (ENXTAM:NN) Valuation After Mixed Recent Share Performance",
+      "url": "https://finance.yahoo.com/news/assessing-nn-group-enxtam-nn-092328997.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T09:23:28+00:00",
+      "summary": "Why investors are watching NN Group after recent share performance NN Group (ENXTAM:NN) has come onto more investors’ radar after a mixed spell in its share price, with a small decline over the past w",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "What Makes NN Group NV Unsponsored ADR (NNGRY) a Strong Momentum Stock: Buy Now?",
+      "url": "https://finance.yahoo.com/news/makes-nn-group-nv-unsponsored-170004646.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-23T17:00:04+00:00",
+      "summary": "Does NN Group NV Unsponsored ADR (NNGRY) have what it takes to be a top stock pick for momentum investors? Let's find out.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "NNGRY vs. BWIN: Which Stock Is the Better Value Option?",
+      "url": "https://finance.yahoo.com/news/nngry-vs-bwin-stock-better-164004544.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-20T16:40:04+00:00",
+      "summary": "NNGRY vs. BWIN: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

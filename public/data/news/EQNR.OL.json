@@ -1,0 +1,53 @@
+{
+  "ticker": "EQNR.OL",
+  "last_updated": "2026-04-22T12:45:50.293254+00:00",
+  "sentiment_score": -0.33,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Top Stock Reports for Goldman Sachs, NextEra Energy & Shopify",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-stock-reports-goldman-sachs-201700073.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:17:00+00:00",
+      "summary": "Goldman Sachs, NextEra Energy and Shopify headline fresh analyst reports, spotlighting strong gains, expansion plans and key risks shaping outlooks.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "European Equities Traded in the US as American Depositary Receipts Sharply Lower in Tuesday Trading",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-151428886.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:14:28+00:00",
+      "summary": "European equities traded in the US as American depositary receipts were falling sharply late Tuesday",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "This Week In Energy Transition - CIP Advances Major Energy Storage Project in Chile",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/week-energy-transition-cip-advances-113727076.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:37:27+00:00",
+      "summary": "Copenhagen Infrastructure Partners (CIP) has initiated construction on the Patache project, a substantial 300 MW/1,500 MWh battery energy storage system (BESS) in Chile. This project marks CIP's ongoi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Fall Sharply in Monday Trading as Hopes of Middle East Ceasefire Dim",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-fall-sharply-monday-154929600.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:49:29+00:00",
+      "summary": "European markets were tracking lower Monday as investors are discouraged by reports that Tehran will",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Equinor ASA: Notice of annual general meeting 12 May 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/equinor-asa-notice-annual-general-100000683.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:00:00+00:00",
+      "summary": "The annual general meeting of Equinor ASA (OSE: EQNR, NYSE: EQNR) will be held Tuesday 12 May 2026 at 15:00 CEST. The annual general meeting will be held in Equinor Business Center, Forusbeen 50, 4035",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

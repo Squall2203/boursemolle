@@ -1,0 +1,53 @@
+{
+  "ticker": "0728.HK",
+  "last_updated": "2026-04-22T13:34:59.521745+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Alibaba Just Unveiled a Massive AI Chip Cluster. Does That Make BABA Stock a Buy Here?",
+      "url": "https://www.barchart.com/story/news/1224985/alibaba-just-unveiled-a-massive-ai-chip-cluster-does-that-make-baba-stock-a-buy-here?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T16:09:45+00:00",
+      "summary": "Alibaba unveiled a 10,000-chip AI cluster in China, marking a major step toward controlling its own AI infrastructure while keeping the bull case intact.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Alibaba’s Zhenwu AI Chips Power New China Telecom Data Center",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/alibaba-zhenwu-ai-chips-power-002055223.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T00:20:55+00:00",
+      "summary": "Alibaba Group Holding (NYSE:BABA) and China Telecom have launched a major AI data center in China. The facility is powered by Alibaba's self-developed Zhenwu AI semiconductors. This is the first large",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alibaba Stock Jumps. Builds AI Data Center Without Nvidia Chips",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-stock-jumps-builds-ai-205026195.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T20:50:26+00:00",
+      "summary": "Alibaba Launches Massive Data Center With Own Semiconductors",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alibaba Builds AI Data Center With Own Chips",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/alibaba-builds-ai-data-center-182813851.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T18:28:13+00:00",
+      "summary": "New facility highlights China's push for semiconductor independence.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alibaba Stock Rises. How It’s Trying to Catch Up in the AI Race.",
+      "url": "https://finance.yahoo.com/m/0b4a75c0-1eeb-325e-b4c5-198af5133c29/alibaba-stock-rises.-how-it%E2%80%99s.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T15:21:00+00:00",
+      "summary": "Alibaba is ramping up AI efforts with new chips and a data center buildout as it tries to compete with U.S. rivals like Nvidia and Anthropic.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

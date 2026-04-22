@@ -1,0 +1,53 @@
+{
+  "ticker": "ABF.L",
+  "last_updated": "2026-04-22T12:27:21.715178+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Associated British Foods PLC (ASBFF) (H1 2026) Earnings Call Highlights: Navigating Challenges ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/associated-british-foods-plc-asbff-070057609.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:00:57+00:00",
+      "summary": "Despite a challenging first half, Associated British Foods PLC (ASBFF) focuses on strategic growth and market expansion to drive future performance.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Primark Is Getting Its Own Stock. Here's What That Means for the Brand",
+      "url": "https://app.moby.co/home/news/news-primark-flies-solo-as-abf-breaks-up-the-bundle?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:07:32+00:00",
+      "summary": "Associated British Foods has finally done the thing investors have been muttering about for years.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "“This is quite a big day for us” – key takeaways as ABF splits food from Primark",
+      "url": "https://www.just-drinks.com/features/abf-spins-off-food-primark-demerger-key-takeaways/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:04:45+00:00",
+      "summary": "CEO George Weston said ABF’s food assets “position us well for long-term structural growth trends that we see in food demand”.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Billionaire Weston family to spin off Primark",
+      "url": "https://www.telegraph.co.uk/business/2026/04/21/billionaire-weston-family-to-spin-off-primark/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:54:35+00:00",
+      "summary": "The billionaire family behind Primark is to spin off the fashion chain from its food business, breaking up one of Britain’s biggest consumer conglomerates after 65 years.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AB Foods to split Primark from its food businesses",
+      "url": "https://finance.yahoo.com/video/ab-foods-split-primark-food-123556981.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:35:56+00:00",
+      "summary": "STORY: Associated British Foods will split Primark from its foods business...  and says the fashion chain will be stronger as a standalone company with its own board and dedicated investors.  AB Foods",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

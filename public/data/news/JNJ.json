@@ -1,0 +1,53 @@
+{
+  "ticker": "JNJ",
+  "last_updated": "2026-04-22T12:50:56.611558+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "IMAAVY® (nipocalimab-aahu) shows over two years of sustained disease control in a broad population with generalized myasthenia gravis (gMG)",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/imaavy-nipocalimab-aahu-shows-over-120500831.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:05:00+00:00",
+      "summary": "Johnson & Johnson (NYSE: JNJ) today announced new data from the Phase 3 Vivacity-MG3 study and ongoing open label extension (OLE) in a broad population of antibody-positive (including anti-AChR+a and ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Intuitive Surgical Earnings Show Big Beats Don’t Always Spark Stock Rallies",
+      "url": "https://finance.yahoo.com/m/d8e2508e-832e-3dfb-a1d9-91f701864178/intuitive-surgical-earnings.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:25:00+00:00",
+      "summary": "Intuitive Surgical  posted quarterly earnings and revenue that handily beat Wall Street’s projections.  The maker of surgical robots posted first-quarter adjusted earnings of $2.50 a share, outstrippi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Drug Delivery Devices Market Insights, Competitive Landscape, and Forecast Report 2025-2032 - Growing Use of Biologics and Biosimilars, Technological Advancements, and Active Product Developments",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/drug-delivery-devices-market-insights-090800271.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:08:00+00:00",
+      "summary": "The drug delivery devices market offers opportunities in self-administration, home healthcare, and biologics due to rising chronic diseases. North America dominates this growing market with advanced i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Johnson & Johnson’s AI Cardiac Tools Add Detail To Valuation Story",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/johnson-johnson-ai-cardiac-tools-060416687.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:04:16+00:00",
+      "summary": "Johnson & Johnson (NYSE:JNJ) introduced the AI powered CARTOSOUND SONATA Module for cardiac arrhythmia care at the Heart Rhythm Society 2026 meeting. The new module integrates artificial intelligence ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GDV’s 6.1% Yield Faces a Hidden Test in 2026 Small-Cap Downturn",
+      "url": "https://247wallst.com/investing/2026/04/21/gdvs-6-1-yield-faces-a-hidden-test-in-2026-small-cap-downturn/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:34:00+00:00",
+      "summary": "Gabelli Dividend & Income Trust (NYSE:GDV) trades near $29 and pays a $0.15 monthly distribution, up from $0.11 per month in 2024 to $0.14 in 2025 to $0.15 starting January 2026. At the current price,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

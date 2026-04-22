@@ -1,0 +1,53 @@
+{
+  "ticker": "MPCC.OL",
+  "last_updated": "2026-04-22T12:48:05.354721+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "MPC Container Ships ASA (MPZZF) Q4 2025 Earnings Call Highlights: Strong Financial Performance ...",
+      "url": "https://finance.yahoo.com/news/mpc-container-ships-asa-mpzzf-010219280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T01:02:19+00:00",
+      "summary": "MPC Container Ships ASA (MPZZF) reports robust earnings, declares dividends, and outlines strategic plans amidst market uncertainties.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "In a Chaotic Shipping Market, MPC Is Selling Certainty",
+      "url": "https://app.moby.co/home/news/news-mpc-container-ships-bets-on-visibility-in-a-volatile-market?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-24T19:16:42+00:00",
+      "summary": "With nearly all of 2026 already fixed on charter, MPC is turning a volatile shipping cycle into contracted cash flow.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Uncovering Three European Stocks With Strong Potential",
+      "url": "https://finance.yahoo.com/news/uncovering-three-european-stocks-strong-103323473.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-29T10:33:23+00:00",
+      "summary": "As European markets navigate renewed trade and geopolitical uncertainties, with the STOXX Europe 600 Index ending 0.98% lower, investors are increasingly focusing on small-cap stocks that may offer un",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Capital Link’s 2026 Virtual Company Presentation Series Continues",
+      "url": "https://finance.yahoo.com/news/capital-2026-virtual-company-presentation-140700231.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-22T14:07:00+00:00",
+      "summary": "NEW YORK, Jan. 22, 2026 (GLOBE NEWSWIRE) -- Capital Link is hosting a series of online Company Presentations, during which the Senior Management teams of leading publicly listed maritime companies wil",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Navigating The Future of Shipping: Leadership Insights – Q4 2025",
+      "url": "https://finance.yahoo.com/news/navigating-future-shipping-leadership-insights-133000854.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-14T13:30:00+00:00",
+      "summary": "NEW YORK, Jan. 14, 2026 (GLOBE NEWSWIRE) -- Capital Link is pleased to release the Q4 2025 edition of its Quarterly Shipping Insights—a carefully curated collection of original articles based on exclu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

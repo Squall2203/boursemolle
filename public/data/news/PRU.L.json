@@ -1,0 +1,53 @@
+{
+  "ticker": "PRU.L",
+  "last_updated": "2026-04-22T12:23:29.012292+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "3 Insurance Stocks We Keep Off Our Radar",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-insurance-stocks-keep-off-201827294.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T20:18:27+00:00",
+      "summary": "Insurance providers use their expertise in risk assessment to help protect assets while offering consumers peace of mind through comprehensive coverage options. Furthermore, favorable market condition",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Prudential Health Summit: Improving Care for Every Patient brings healthcare leaders together to support patients in Hong Kong and the Greater Bay Area",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/prudential-health-summit-improving-care-105300727.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T10:53:00+00:00",
+      "summary": "Prudential Hong Kong Limited (\"Prudential\") hosted the Prudential Health Summit: Improving care for every patient (\"the Summit\") on 27 March, 2026. The Summit brought together healthcare experts, prov",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JPMorgan Lowers its Price Target on Prudential plc (PUK) to 1,450 GBp",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-lowers-price-target-prudential-071131840.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T07:11:31+00:00",
+      "summary": "Prudential plc (NYSE:PUK) is one of the 7 Fastest Growing Asian Stocks to Buy. On March 26, 2026, JPMorgan lowered the price target on Prudential plc (NYSE:PUK) to 1,450 GBp from 1,500 GBp previously ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Deutsche Bank Lifts PT on Prudential plc (PUK) to 1,440 GBp From 1,355 GBp – Here’s Why",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-bank-lifts-pt-prudential-190937446.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T19:09:37+00:00",
+      "summary": "Prudential plc (NYSE:PUK) is one of the best undervalued stocks under $50 to invest in now. On March 19, Deutsche Bank lifted the price target on Prudential plc (NYSE:PUK) to 1,440 GBp from 1,355 GBp ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Investment Story For Prudential (LSE:PRU) Is Shifting With New Targets And Assumptions",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investment-story-prudential-lse-pru-151510668.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T15:15:10+00:00",
+      "summary": "Price targets around Prudential have been reset in a fairly tight range, with several analysts now grouping between about £1,270 and £1,500. These updated targets sit alongside commentary that weighs ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

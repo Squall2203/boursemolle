@@ -1,0 +1,53 @@
+{
+  "ticker": "6503.T",
+  "last_updated": "2026-04-22T13:47:31.171379+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "$137.25+ Bn Elevators and Escalators Market Forecasts 2025-2030, Profiles of Schindler, Kone, Mitsubishi Electric, Toshiba, and United Technologies",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/137-25-bn-elevators-escalators-101500634.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:15:00+00:00",
+      "summary": "The elevators and escalators market offers growth opportunities fueled by rapid urbanization, increased construction investments, aging populations, and advancements in smart technologies. Key challen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Mitsubishi Electric to Launch Railway Energy Management Solution Proof of Concept for Krakow Tram Network in Poland",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/mitsubishi-electric-launch-railway-energy-030000264.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T03:00:00+00:00",
+      "summary": "TOKYO, April 20, 2026--Mitsubishi Electric Corporation (TOKYO: 6503) announced today that it will launch a proof of concept (PoC) project for a railway energy management solution (railway EMS) to be t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Here's Why Mitsubishi Electric Corporation (MIELY) is a Great Momentum Stock to Buy",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-mitsubishi-electric-corporation-160005471.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T16:00:05+00:00",
+      "summary": "Does Mitsubishi Electric Corporation (MIELY) have what it takes to be a top stock pick for momentum investors? Let's find out.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Mitsubishi Electric (TSE:6503) Using AI Patent Strength To Redefine Its Digital Transformation Story?",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/mitsubishi-electric-tse-6503-using-191418423.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T19:14:18+00:00",
+      "summary": "In early 2026, Mitsubishi Electric Corporation was recognized by Clarivate Plc as a Clarivate AI50 2026 organization for its leadership in artificial intelligence inventions and AI-related intellectua",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mitsubishi Electric Named to Clarivate AI50 2026 as an Organization Leading Artificial Intelligence Inventions",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/mitsubishi-electric-named-clarivate-ai50-060000156.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T06:00:00+00:00",
+      "summary": "TOKYO, April 10, 2026--Mitsubishi Electric Corporation (TOKYO: 6503) announced today that Clarivate Plc, a global information services company based in the United Kingdom, has recognized Mitsubishi El",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "6861.T",
+  "last_updated": "2026-04-22T13:43:01.839172+00:00",
+  "sentiment_score": -0.13,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Capstreet-backed SmartSights Names Michael Santoli Vice President, Enterprise Sales",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/capstreet-backed-smartsights-names-michael-110000387.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T11:00:00+00:00",
+      "summary": "AUSTIN, Texas, April 13, 2026 (GLOBE NEWSWIRE) -- SmartSights, a provider of operational intelligence software for industrial plants, today announced that it has appointed Michael Santoli as Vice Pres",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Keyence (TSE:6861): Evaluating Valuation as Investors Weigh Modest Share Price Shifts",
+      "url": "https://finance.yahoo.com/news/keyence-tse-6861-evaluating-valuation-131527727.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-03T13:15:27+00:00",
+      "summary": "Keyence (TSE:6861) shares edged up today, catching some extra attention as investors assess recent performance and valuation trends. The stock has moved slightly this month, prompting a closer look at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JPM starts Cognex with Neutral view, sees AI potential but near-term risks",
+      "url": "https://finance.yahoo.com/news/jpm-starts-cognex-neutral-view-160050118.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-15T16:00:50+00:00",
+      "summary": "Investing.com -- JPMorgan initiated coverage of Cognex with a Neutral rating and a $45 price target, saying the machine vision company has strong long-term prospects but limited upside at current leve",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Central Bank Outlooks, Politics Lift Asian Stock Markets",
+      "url": "https://finance.yahoo.com/news/central-bank-outlooks-politics-lift-104540142.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-08T10:45:40+00:00",
+      "summary": "Asian stock markets tracked moderately higher Monday on the outlook for a rate cut from the Federal",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Trade, Central Bank Outlooks Mix Asian Stock Markets",
+      "url": "https://finance.yahoo.com/news/trade-central-bank-outlooks-mix-103831409.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-30T10:38:31+00:00",
+      "summary": "Asian stock markets finished unevenly Wednesday on the China-US trade outlook and ahead of central b",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

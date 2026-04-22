@@ -1,0 +1,53 @@
+{
+  "ticker": "8766.T",
+  "last_updated": "2026-04-22T13:53:13.896736+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Berkshire Hathaway’s Valuation After New Yen Bond Issuance And Greg Abel’s Japan Investment Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-valuation-yen-bond-070734147.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-12T07:07:34+00:00",
+      "summary": "Why Berkshire’s New Yen Bonds Matter for Stock Investors Berkshire Hathaway (BRK.A) has just raised several tranches of yen debt, totaling more than ¥272 billion, at fixed coupons ranging from 2.077% ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Berkshire Hathaway Extends Global Risk Reach While Valuation Gap Persists",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-extends-global-risk-081506753.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-05T08:15:06+00:00",
+      "summary": "Berkshire Hathaway (NYSE:BRK.B) has joined an insurance syndicate covering ships transiting the Strait of Hormuz, taking on geopolitical risk exposure in a key global shipping corridor. The company ha",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Greg Abel Resumes Berkshire Buybacks And Commits Capital As CEO Transition Unfolds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/greg-abel-resumes-berkshire-buybacks-170722829.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T17:07:22+00:00",
+      "summary": "Greg Abel has restarted Berkshire Hathaway's (NYSE:BRK.B) share buyback program after a 21 month pause, with Warren Buffett’s approval. Abel is committing his entire 2026 salary to purchase Berkshire ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Berkshire Hathaway Deploys Cash Into Tokio Marine And Buybacks Under Abel",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-deploys-cash-tokio-070735246.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T07:07:35+00:00",
+      "summary": "Berkshire Hathaway (NYSE:BRK.A), under new CEO Greg Abel, has taken a $1.8b stake in Tokio Marine Holdings with a quota share reinsurance commitment. The company has restarted share buybacks for the f",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Greg Abel’s First Big Move as Berkshire CEO Had Warren Buffett’s Personal Approval",
+      "url": "https://247wallst.com/investing/2026/04/01/greg-abels-first-big-move-as-berkshire-ceo-had-warren-buffetts-personal-approval/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T15:55:41+00:00",
+      "summary": "Many investors expected Greg Abel to rock the boat and make significant changes to Berkshire Hathaway (NYSE:BRK.B), but that has not been the case. Instead, he has been following in the footsteps of h",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

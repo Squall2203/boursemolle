@@ -1,0 +1,53 @@
+{
+  "ticker": "ROG.SW",
+  "last_updated": "2026-04-22T12:32:57.320997+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Roche inaugurates new research home for the Institute of Human Biology, pioneering human model systems to accelerate drug discovery and development",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/roche-inaugurates-research-home-institute-150000998.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T15:00:00+00:00",
+      "summary": "The new building is part of a CHF 1.4 billion site investment, reinforcing Roche’s commitment to Switzerland and the Basel life sciences clusterThe Institute of Human Biology (IHB) enables scientists ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Can Anktiva's Label Expansion Unlock the Next Growth Phase for IBRX?",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/anktivas-label-expansion-unlock-next-135700992.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T13:57:00+00:00",
+      "summary": "ImmunityBio bets on Anktiva label expansion to drive growth, but intense Big Pharma competition and premium valuation raise questions about its next phase.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why The Roche Holding (SWX:ROG) Narrative Is Shifting On Mixed Pipeline Signals And Valuation",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/why-roche-holding-swx-rog-200509311.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-22T20:05:09+00:00",
+      "summary": "Roche Holding’s updated fair value estimate has shifted from CHF 358.45 to CHF 363.47, a modest move that keeps the focus on how the story is evolving rather than on a sweeping reset. That small chang",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Recursion Pharmaceuticals Details AI-Driven Drug Pipeline, Sanofi/Roche Milestones, Runway to 2028",
+      "url": "https://www.marketbeat.com/instant-alerts/recursion-pharmaceuticals-details-ai-driven-drug-pipeline-sanofiroche-milestones-runway-to-2028-2026-03-22/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-22T05:04:18+00:00",
+      "summary": "Recursion Pharmaceuticals (NASDAQ:RXRX) Chief Financial Officer Ben Taylor outlined the company’s integrated approach to AI-enabled drug discovery and development, recent portfolio decisions, partners",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Prothena Partners Present Data Supporting Next Generation Treatments for Parkinson’s and Alzheimer’s Disease at AD/PD™ 2026",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/prothena-partners-present-data-supporting-200500074.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-21T20:05:00+00:00",
+      "summary": "DUBLIN, March 21, 2026--Prothena partners presented clinical data updates for prasinezumab for Parkinson’s and BMS-986446 for Alzheimer’s disease at AD/PD™ 2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

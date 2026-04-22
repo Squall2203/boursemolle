@@ -1,0 +1,53 @@
+{
+  "ticker": "7261.T",
+  "last_updated": "2026-04-22T13:56:42.544643+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Aisin contract manufacturing Mazda 6-speed auto transmission in US",
+      "url": "https://www.just-auto.com/news/aisin-contract-manufacturing-mazda-6-speed-auto-transmission-in-us/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:07:55+00:00",
+      "summary": "Aisin says it is promoting local production that meets customer needs globally.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "South African Agency Boundless Delivers Mazda’s First AI-produced Commercial Using Luma Agents",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/south-african-agency-boundless-delivers-190700141.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T19:07:00+00:00",
+      "summary": "PALO ALTO, Calif., April 15, 2026--Boundless produced Mazda's first-ever AI-generated commercial by utilizing Luma's AI agents; new step in creating scalable, AI-native commercials",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Amazon Expands Auto Marketplace With New Brands",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-expands-auto-marketplace-brands-180001211.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T18:00:01+00:00",
+      "summary": "Move broadens vehicle selection and deepens push into online car sales",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Continental Battery Systems Selected by Mazda as Nationwide Battery Partner Across U.S. Dealer Network",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/continental-battery-systems-selected-mazda-135400015.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:54:00+00:00",
+      "summary": "DALLAS, April 10, 2026--CBS named Mazda’s U.S. battery supplier, delivering reliable solutions, nationwide distribution, and dealer support to drive growth.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Mazda pauses Japan output for Middle East exports until May – report",
+      "url": "https://www.just-auto.com/news/mazda-pauses-japan-output/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T12:18:10+00:00",
+      "summary": "Shipments to the region had already been suspended in March, with the company now shifting production capacity towards vehicles headed for the US and Europe.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ORSTED.CO",
+  "last_updated": "2026-04-22T12:43:06.617501+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Hitachi Energy becomes Ørsted’s end-to-end partner for offshore wind electrical systems",
+      "url": "https://finance.yahoo.com/m/7350b9de-22ea-3ca4-88c9-0afa5b4e7a0c/hitachi-energy-becomes.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:00:00+00:00",
+      "summary": "Hitachi Energy and Ørsted have entered a strategic partnership designed to support large scale offshore wind projects.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How the U.S. and Europe Are Betting Differently on Energy Security",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/u-europe-betting-differently-energy-200000866.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T20:00:00+00:00",
+      "summary": "Europe is accelerating offshore wind as Hornsea 3 connects its first cable and France tenders 12 GW — while the U.S. pays $1B to cancel projects.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "U.S. Green Light For Ørsted Projects Shifts Focus To Execution And Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/u-green-light-rsted-projects-161728004.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T16:17:28+00:00",
+      "summary": "U.S. regulators have lifted government stop work orders on Ørsted’s offshore wind projects, including Revolution Wind and Sunrise Wind. Recent legal and policy decisions, including the Trump administr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BofA upgrades Ørsted outlook, cites diminishing offshore wind risk from Trump",
+      "url": "https://www.utilitydive.com/news/bofa-upgrades-rsted-outlook-citing-offshore-wind-benefit-from-iran-war/816210/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T10:12:36+00:00",
+      "summary": "Bank of America analyst Peter Bisztyga said the risks facing Ørsted’s U.S. projects \"have significantly diminished in the last few weeks.\"",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Orsted Gets a Second Wind",
+      "url": "https://app.moby.co/home/news/news-orsted-gets-a-second-wind?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T19:01:02+00:00",
+      "summary": "The Danish offshore wind giant is back in favor with investors as political risk in the US fades and energy geopolitics tilt back toward renewables.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

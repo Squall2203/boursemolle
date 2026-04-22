@@ -1,0 +1,53 @@
+{
+  "ticker": "TME",
+  "last_updated": "2026-04-22T13:40:55.439695+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Atlanta Braves Holdings (BATRK) Soars 5.1%: Is Further Upside Left in the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/atlanta-braves-holdings-batrk-soars-104900385.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:49:00+00:00",
+      "summary": "Atlanta Braves Holdings (BATRK) saw its shares surge in the last session with trading volume being higher than average. The latest trend in earnings estimate revisions may not translate into further p",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tencent Music Entertainment Group Releases 2025 ESG Report",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/tencent-music-entertainment-group-releases-100500186.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:05:00+00:00",
+      "summary": "Tencent Music Entertainment Group (\"TME\", or the \"Company\") (NYSE: TME and HKEX: 1698), the leading online music and audio entertainment platform in China, today released its 2025 Environmental, Socia",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why The Tencent Music Entertainment Group (TME) Story Is Shifting As Valuation And Views Reset",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-tencent-music-entertainment-group-030858385.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T03:08:58+00:00",
+      "summary": "Tencent Music Entertainment Group has seen its fair value estimate reset from about US$26.92 to about US$17.98, a sizable shift that points to a more restrained view of potential upside at current lev",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tencent Music (TME) Valuation Check After Recent Share Price Rebound And Mixed Returns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tencent-music-tme-valuation-check-130250160.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T13:02:50+00:00",
+      "summary": "Why Tencent Music Entertainment Group (TME) is on investors’ radar Tencent Music Entertainment Group (TME) has drawn attention after a stretch of mixed share performance, with gains over the past week",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tencent Music Entertainment Group Filed 2025 Annual Report on Form 20-F",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tencent-music-entertainment-group-filed-113000541.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:30:00+00:00",
+      "summary": "Tencent Music Entertainment Group (\"TME\", or the \"Company\") (NYSE: TME and HKEX: 1698), the leading online music and audio entertainment platform in China, today announced that it has filed its annual",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

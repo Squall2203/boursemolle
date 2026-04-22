@@ -1,0 +1,53 @@
+{
+  "ticker": "STB.OL",
+  "last_updated": "2026-04-22T12:47:28.524486+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "A Look At Storebrand (OB:STB) Valuation After Profit Jump Dividend Hike And Planned Share Buyback",
+      "url": "https://finance.yahoo.com/news/look-storebrand-ob-stb-valuation-181319797.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T18:13:19+00:00",
+      "summary": "Storebrand (OB:STB) is back in focus after reporting 2025 results, including a 42% rise in group profit, a higher annual dividend proposal, and a planned NOK 2b share buyback for 2026. See our latest ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Storebrand ASA (SREDF) Q4 2025 Earnings Call Highlights: Record Profits and Strategic Growth ...",
+      "url": "https://finance.yahoo.com/news/storebrand-asa-sredf-q4-2025-150325232.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-11T15:03:25+00:00",
+      "summary": "Storebrand ASA (SREDF) reports a 42% increase in group profit, robust dividend growth, and strategic plans for 2026 amidst challenges in the disability segment.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Suspension is lifted and trading can resume",
+      "url": "https://finance.yahoo.com/news/suspension-lifted-trading-resume-095400341.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-28T09:54:00+00:00",
+      "summary": "Lysaker, 28 October 2025 The suspension is lifted for the below funds, and the live trading on Nasdaq Copenhagen can resume. Regards Storebrand Asset Management AS Contacts: Henrik Budde Gantzel, Dire",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Suspended trading due to challenges with NAV calculations",
+      "url": "https://finance.yahoo.com/news/suspended-trading-due-challenges-nav-092100459.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-28T09:21:00+00:00",
+      "summary": "Lysaker, 28 October 2025 The below funds are suspended from the live trading on Nasdaq Copenhagen due to technical issues which affect NAV calculations, and hence, challenges to provide intrinsic valu",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

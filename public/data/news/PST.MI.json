@@ -1,0 +1,53 @@
+{
+  "ticker": "PST.MI",
+  "last_updated": "2026-04-22T12:15:27.196016+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Italy fines Poste Italiane and PostePay over alleged personal data access",
+      "url": "https://www.electronicpaymentsinternational.com/news/italy-fines-poste-italiane/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:32:44+00:00",
+      "summary": "Poste Italiane plans to appeal to the Court of Rome seeking annulment of the decision.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Poste’s TIM Bid Is Really a Bet on Rebuilding Italy Inc",
+      "url": "https://app.moby.co/home/news/news-postes-tim-bid-is-really-a-bet-on-rebuilding-italy-inc?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T18:11:32+00:00",
+      "summary": "Rome is trying to turn an old telecom problem into a strategic asset again.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Poste Italiane (BIT:PST) Valuation Check After Strong Multi‑Year Share Price Rally",
+      "url": "https://finance.yahoo.com/news/poste-italiane-bit-pst-valuation-130634804.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-23T13:06:34+00:00",
+      "summary": "Poste Italiane (BIT:PST) has quietly kept its momentum going, with the stock up about 57% this year and nearly 70% over the past year, inviting a closer look at what is driving that performance. See o",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Has Poste Italiane’s 57% Rally in 2025 Already Priced In Its Transformation Story?",
+      "url": "https://finance.yahoo.com/news/poste-italiane-57-rally-2025-050829471.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-23T05:08:29+00:00",
+      "summary": "If you are wondering whether Poste Italiane is still worth buying after its big run, you are not alone. This article is going to unpack what the current share price really implies about its value. The",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Italy’s Treasury agrees to sell digital payments unit PagoPA to Poste Italiane",
+      "url": "https://www.electronicpaymentsinternational.com/news/pagopa-poste-italiane/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-22T11:33:13+00:00",
+      "summary": "Earlier this year, PagoPA encountered disagreements over its valuation in the planned sale to Poste Italiane.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "7974.T",
+  "last_updated": "2026-04-22T13:43:14.007887+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Microsoft cuts Xbox Game Pass price, to remove 'Call of Duty' day one inclusions",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-cuts-xbox-game-pass-171608802.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:16:08+00:00",
+      "summary": "Microsoft has dropped the price of its video game subscription service and the platform will ‌not include future \"Call of Duty\" game releases on launch ‌day, the company said on Tuesday, in the first ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Nintendo (TSE:7974) Valuation After Recent Share Price Softness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-nintendo-tse-7974-valuation-220550251.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T22:05:50+00:00",
+      "summary": "Recent performance snapshot Nintendo (TSE:7974) has drawn fresh attention after a period of mixed share performance, with the stock showing a 1 day decline, gains over the past week, and weaker return",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "United States Video Game Analysis Market Report 2026-2034, Profiles of Activision Blizzard, Electronic Arts, Microsoft, Nintendo, Take- Two Interactive Software, Sony, Apple, and Bandai Namco",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/united-states-video-game-analysis-155800843.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:58:00+00:00",
+      "summary": "Driven by strong consumer spending, online gaming, and advancements in gaming tech, the market encompasses consoles, PCs, and mobiles. Key growth factors include the rise of online multiplayer gaming,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Australia’s BIG W cuts prices on 2,000 items amid cost pressures",
+      "url": "https://www.retail-insight-network.com/news/big-w-cuts-prices-2000-items/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:46:42+00:00",
+      "summary": "The retailer said the price cuts cover areas such as beauty, gaming, home decor, kitchenware, skincare, toys and technology.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Super Mario Dominates Box Office: Will Nintendo, Comcast Or AMC Stock Be The Biggest Winner?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-mario-dominates-box-office-233130493.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T23:31:30+00:00",
+      "summary": "Animated film \"The Super Mario Galaxy Movie\" is a box office hit and the current highest-grossing film of 2026. The film's success could mean big things for three publicly traded companies with Ninten",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

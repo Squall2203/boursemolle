@@ -1,0 +1,53 @@
+{
+  "ticker": "RED.MC",
+  "last_updated": "2026-04-22T12:11:46.697027+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Redeia Corporacion SA (RDEIF) Full Year 2025 Earnings Call Highlights: Record Investments and ...",
+      "url": "https://finance.yahoo.com/news/redeia-corporacion-sa-rdeif-full-170316013.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T17:03:16+00:00",
+      "summary": "Redeia Corporacion SA (RDEIF) reports significant revenue and net profit growth, driven by strategic investments and asset sales, while addressing operational challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Redeia a Good Pick After Recent Earnings Amid 2025 Utilities Market Shifts?",
+      "url": "https://finance.yahoo.com/news/redeia-good-pick-recent-earnings-110656146.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-15T11:06:56+00:00",
+      "summary": "Thinking about what to do next with Redeia Corporación stock? You are not alone, especially at a time when investors are re-evaluating risk and growth potential across the European utilities sector. T",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Spanish lobby warns saturated grid needs major investment for new connections",
+      "url": "https://www.power-technology.com/news/spanish-lobby-saturated-grid-major-investment-new-connections/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-10T11:34:24+00:00",
+      "summary": "The grid's current limitation reportedly risks instability and a reduction in efficiency.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "The five seconds that plunged Spain into blackouts",
+      "url": "https://uk.finance.yahoo.com/news/five-seconds-plunged-spain-blackouts-180000417.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-04-29T18:00:00+00:00",
+      "summary": "The power cuts that swept across Spain, Portugal and parts of southern France plunged the Iberian peninsula into chaos.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Net zero blamed for Europe’s biggest power cut",
+      "url": "https://uk.finance.yahoo.com/news/blackout-risk-made-worse-net-201539284.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-04-28T20:15:39+00:00",
+      "summary": "A reliance on net zero energy left Spain and Portugal vulnerable to the mass blackouts engulfing the region, experts said on Monday night.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

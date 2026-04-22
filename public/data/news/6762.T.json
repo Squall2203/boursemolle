@@ -1,0 +1,53 @@
+{
+  "ticker": "6762.T",
+  "last_updated": "2026-04-22T13:52:24.845669+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Persian Gulf, China Economic Outlooks Lift Asian Stock Markets",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/persian-gulf-china-economic-outlooks-103646440.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T10:36:46+00:00",
+      "summary": "Asian stock markets marched unevenly higher Thursday, as traders reviewed major economic reports fro",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Global Magnetic Sensors Market 2026-2036: $6 Billion Industry Driven by Hall Effect, Anisotropic Magnetoresistance, Giant Magnetoresistance, and Tunnelling Magnetoresistance Sensors",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/global-magnetic-sensors-market-2026-091000103.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T09:10:00+00:00",
+      "summary": "The global magnetic sensors market is poised for significant growth, projected to exceed $6 billion by 2036. Key technologies driving this expansion include Hall effect, anisotropic magnetoresistance,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Gelion is advancing its battery tech closer to commercialisation - ICYMI",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090345/gelion-is-advancing-its-battery-tech-closer-to-commercialisation-icymi-1090345.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T11:46:00+00:00",
+      "summary": "Gelion PLC (AIM:GELN, OTC:GELNF, FRA:X0S) this week outlined progress in its battery technology development and an expanded collaboration with TDK, as chief technology officer Louis Adriaenssens detai",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sunda Energy, Gelion, Coiled Therapeutics, Solvonis Therapeutics, Genflow, Rome Resources",
+      "url": "https://finance.yahoo.com/video/sunda-energy-gelion-coiled-therapeutics-094813968.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T09:48:13+00:00",
+      "summary": "Sunda Energy PLC (AIM:SNDA) has made a transformational acquisition in New Zealand, giving it immediate production of over 1,000 barrels a day. The deal adds a third pillar to its portfolio alongside ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The TDK (TSE:6762) Investment Story Is Shifting After A Conviction Downgrade",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tdk-tse-6762-investment-story-011536835.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-04T01:15:36+00:00",
+      "summary": "The updated fair value for TDK now sits at ¥2,644, up from ¥2,611, giving you a refreshed reference point for where analysts currently peg the shares. This refined price target comes alongside TDK bei",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

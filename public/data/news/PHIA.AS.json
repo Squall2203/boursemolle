@@ -1,0 +1,53 @@
+{
+  "ticker": "PHIA.AS",
+  "last_updated": "2026-04-22T12:04:45.794206+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "1 S&P 500 Stock for Long-Term Investors and 2 We Turn Down",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-p-500-stock-long-094426739.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T09:44:26+00:00",
+      "summary": "While the S&amp;P 500 (^GSPC) includes industry leaders, not every stock in the index is a winner. Some companies are past their prime, weighed down by poor execution, weak financials, or structural h",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Equities Traded in the US as American Depositary Receipts Sharply Higher in Friday Trading",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-150503382.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:05:03+00:00",
+      "summary": "European equities traded in the US as American depositary receipts were climbing higher late Friday",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Philips secures FDA clearance for AI-enabled CT system",
+      "url": "https://www.medtechdive.com/news/philips-secures-fda-clearance-for-ai-enabled-ct-system/817786/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T04:51:19+00:00",
+      "summary": "The company aims to increase its share of the premium CT device market through 2028.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nanox Continues Expanding Nanox.ARC in U.S. & Israel",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/nanox-continues-expanding-nanox-arc-213358447.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T21:33:58+00:00",
+      "summary": "By Karen Roman Nano-X Imaging Ltd. (Nasdaq: NNOX) announced it signed two new partnerships to continue deploying its digital tomosynthesis system Nanox.ARC both nationally and globally. The first coll",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Philips receives FDA 510(k) clearance for Verida, the world’s first AI-powered detector-based spectral CT*, advancing diagnostic precision across clinical applications",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/philips-receives-fda-510-k-130000669.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:00:00+00:00",
+      "summary": "Philips Verida detector-based spectral CT - 01 Philips Verida detector-based spectral CT Philips Verida detector-based spectral CT - 02 Philips Verida detector-based spectral CT Philips Verida detecto",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

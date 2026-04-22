@@ -1,0 +1,53 @@
+{
+  "ticker": "NESTE.HE",
+  "last_updated": "2026-04-22T12:17:41.943183+00:00",
+  "sentiment_score": -0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Evaluating Neste Oyj (HLSE:NESTE) Valuation After Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/news/evaluating-neste-oyj-hlse-neste-152010114.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T15:20:10+00:00",
+      "summary": "Neste Oyj (HLSE:NESTE) has drawn investor attention after recent share price moves, with the stock showing strong returns over the past month and past 3 months. This has prompted fresh questions about",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Mahoney Environmental Announces Retirement of Tim Zak and Promotion of Beau Mega",
+      "url": "https://finance.yahoo.com/news/mahoney-environmental-announces-retirement-tim-100000180.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T10:00:00+00:00",
+      "summary": "Mahoney Environmental today announced that Tim Zak, SVP of Sales and Marketing, will retire effective April 6, 2026, after 12 years of distinguished service. Succeeding him in the role is Beau Mega, w",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Renewable Diesel Industry Report 2026-2035: A $38.85 Billion Market by 2030 with Neste, Valero Energy, Marathon Petroleum, Chevron, Phillips 66, BP, and Shell Leading",
+      "url": "https://finance.yahoo.com/news/renewable-diesel-industry-report-2026-090200037.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T09:02:00+00:00",
+      "summary": "Key market opportunities for renewable diesel include rising demand for sustainable fuels due to stricter emission regulations, expansion in aviation and marine sectors, increased feedstock availabili",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Mahoney Environmental Celebrates 73 Years of Service to the Food Service Industry",
+      "url": "https://finance.yahoo.com/news/mahoney-environmental-celebrates-73-years-110000401.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-20T11:00:00+00:00",
+      "summary": "Mahoney Environmental marks a significant milestone today, celebrating 73 years of dedicated service to restaurants and food service operations of all sizes. Mahoney Environmental has grown from a loc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks That May Be Trading Below Their Estimated Value In February 2026",
+      "url": "https://finance.yahoo.com/news/european-stocks-may-trading-below-103811159.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T10:38:11+00:00",
+      "summary": "As European markets experience volatility amid concerns about AI disruption and digest strong U.S. job data, the pan-European STOXX Europe 600 Index has reached new highs but remains largely unchanged",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    }
+  ]
+}

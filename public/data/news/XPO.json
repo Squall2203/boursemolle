@@ -1,0 +1,53 @@
+{
+  "ticker": "XPO",
+  "last_updated": "2026-04-22T13:16:25.325651+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Turning Insight into Action: Why Leaders Go to Gartner Supply Chain Symposium/Xpo™ U.S.",
+      "url": "https://www.e2open.com/blog/why-attend-gartner-supply-chain-symposium-xpo-us-2026/",
+      "source": "e2open.com",
+      "published_at": "2026-04-22T08:32:10+00:00",
+      "summary": "Key Takeaway Supply chain leaders attend the Gartner Supply Chain Symposium/Xpo™ U.S. for research‑backed guidance on AI, cost optimization, and resilience. But many executives are asking a more pract",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "XPO (XPO) Reported Strong Results in a Challenging Environment",
+      "url": "https://www.insidermonkey.com/blog/xpo-xpo-reported-strong-results-in-a-challenging-environment-1742544/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-21T13:41:52+00:00",
+      "summary": "Carillon Tower Advisers, an investment management company, released its first-quarter 2026 investor letter for the “Carillon Eagle Mid Cap Growth Fund”. A copy of the letter can be downloaded here. Mi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Stock Of The Day: Trucking Company, Up 140% In A Year, Jumps On Iran, Oil Prices",
+      "url": "https://finance.yahoo.com/m/52a5820f-1869-35aa-b138-19dd4c57c4ea/stock-of-the-day%3A-trucking.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-17T17:28:07+00:00",
+      "summary": "Trucking company XPO jumped up on Friday because of changing oil prices and the opening of the Strait of Hormuz.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "XPO (NYSE:XPO) Hits New 12-Month High - What's Next?",
+      "url": "https://www.marketbeat.com/instant-alerts/xpo-nysexpo-hits-new-12-month-high-whats-next-2026-04-16/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-16T18:22:30+00:00",
+      "summary": "XPO (NYSE:XPO) Reaches New 1-Year High - Time to Buy?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Gartner Announces Gartner Finance Symposium/Xpo 2026 in London",
+      "url": "http://www.businesswire.com/news/home/20260416801501/en/Gartner-Announces-Gartner-Finance-SymposiumXpo-2026-in-London/?feedref=JjAwJuNHiystnCoBq_hl-Q-tiwWZwkcswR1UZtV7eGe24xL9TZOyQUMS3J72mJlQ7fxFuNFTHSunhvli30RlBNXya2izy9YOgHlBiZQk2LOzmn6JePCpHPCiYGaEx4DL1Rq8pNwkf3AarimpDzQGuQ==",
+      "source": "businesswire.com",
+      "published_at": "2026-04-16T08:30:00+00:00",
+      "summary": "LONDON--(BUSINESS WIRE)--Gartner (NYSE: IT): What: Gartner Finance Symposium/Xpo 2026 When: 8-9 June 2026 Where: InterContinental London - The O2 1 Waterview Drive London, England SE10 0TW United King",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

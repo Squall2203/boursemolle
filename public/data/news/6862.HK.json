@@ -1,0 +1,53 @@
+{
+  "ticker": "6862.HK",
+  "last_updated": "2026-04-22T13:36:29.614828+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Super Hi Reports Unaudited Financial Results for the Fourth Quarter and Full Year 2025",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-hi-reports-unaudited-financial-100000453.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T10:00:00+00:00",
+      "summary": "SINGAPORE, March 31, 2026 (GLOBE NEWSWIRE) -- Super Hi International Holding Ltd. (NASDAQ: HDL and HKEX: 9658) (“Super Hi” or the “Company”), a leading Chinese cuisine restaurant brand operating Haidi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Super Hi to Report Fourth Quarter and Full Year 2025 Financial Results on Tuesday, March 31, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-hi-report-fourth-quarter-100000888.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T10:00:00+00:00",
+      "summary": "- Earnings Call Scheduled for 8:00 a.m. ET on March 31, 2026 SINGAPORE, March 19, 2026 (GLOBE NEWSWIRE) -- Super Hi International Holding Ltd. (\"Super Hi\" or the \"Company\") (NASDAQ: HDL and HKEX: 9658",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Michael Burry Exposes 'Vulnerability' In Chinese Tech, Warns Of Hong Kong's 'Cayman Islands Shell' Trap",
+      "url": "https://finance.yahoo.com/news/michael-burry-exposes-vulnerability-chinese-153106831.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T15:31:06+00:00",
+      "summary": "Famous ‘Big Short’ investor Michael Burry has issued a stark warning regarding the structural integrity of Chinese technology stocks, cautioning that most investors do not actually own the companies t",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Super Hi Reports Unaudited Financial Results for the Third Quarter of 2025",
+      "url": "https://finance.yahoo.com/news/super-hi-reports-unaudited-financial-100000272.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-26T10:00:00+00:00",
+      "summary": "SINGAPORE, Nov. 26, 2025 (GLOBE NEWSWIRE) -- Super Hi International Holding Ltd. (NASDAQ: HDL and HKEX: 9658) (\"Super Hi\" or the \"Company\"), a leading Chinese cuisine restaurant brand operating Haidil",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Super Hi to Report Third Quarter 2025 Financial Results on Wednesday, November 26, 2025",
+      "url": "https://finance.yahoo.com/news/super-hi-report-third-quarter-093000350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-14T09:30:00+00:00",
+      "summary": "- Earnings Call Scheduled for 7:00 a.m. ET on November 26, 2025 SINGAPORE, Nov. 14, 2025 (GLOBE NEWSWIRE) -- Super Hi International Holding Ltd. (\"Super Hi\" or the \"Company\") (NASDAQ: HDL and HKEX: 96",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

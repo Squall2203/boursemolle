@@ -1,0 +1,53 @@
+{
+  "ticker": "VER.VI",
+  "last_updated": "2026-04-22T12:20:00.677058+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "BASFY Initiates Production of BMB Polyether Polyols in Geismar",
+      "url": "https://finance.yahoo.com/news/basfy-initiates-production-bmb-polyether-155200362.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T15:52:00+00:00",
+      "summary": "BASF begins commercial production of biomass balance polyether polyols in North America at its Geismar site, expanding its portfolio of sustainable polyurethane raw materials.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks To Consider In November 2025",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-consider-november-053221350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-05T05:32:21+00:00",
+      "summary": "As the European market experiences mixed performance, with the pan-European STOXX Europe 600 Index recently pulling back after reaching a new high, investors are closely watching for opportunities ami",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks Offering Up To 7.4% Yield",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-offering-103148678.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-07T10:31:48+00:00",
+      "summary": "As European markets rally, with the STOXX Europe 600 Index reaching record levels amid optimism for lower U.S. borrowing costs, investors are increasingly turning their attention to dividend stocks as",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks To Consider For Your Portfolio",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-consider-portfolio-103144994.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-16T10:31:44+00:00",
+      "summary": "As European markets navigate the complexities of new trade tariffs and economic contractions, the pan-European STOXX Europe 600 Index has shown resilience with a modest increase, although recent tarif",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "EXO.AS",
+  "last_updated": "2026-04-22T12:06:52.916062+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Update: Market Chatter: Stellantis, Ferrari Chairman John Elkann's Bid to Exclude Mother From Estate Rejected by Swiss Court",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-stellantis-ferrari-chairman-181446526.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T18:14:46+00:00",
+      "summary": "(Updates with statement from Exor in the fifth paragraph.) Stellantis (STLA) and Ferrari (RACE) C",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Exor Press Release - Png and Della Chiesa Nominations",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exor-press-release-png-della-155100344.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T15:51:00+00:00",
+      "summary": "Amsterdam, 8 April 2026 EXOR NOMINATES TEMASEK CFO PNG CHIN YEE AND BENEDETTO DELLA CHIESA TO ITS BOARD Exor nominates Png Chin Yee and Benedetto Della Chiesa as non-executive members of its Board of ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Exor (ENXTAM:EXO) Valuation As Portfolio Sales Earnings Swing And Dividend Plan Reshape The Story",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-exor-enxtam-exo-valuation-090608738.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T09:06:08+00:00",
+      "summary": "Exor (ENXTAM:EXO) is in the spotlight after outlining a portfolio reshaping plan that includes divestments of Iveco, GEDI, Lifenet and NUO, alongside a proposed €0.49 per share dividend and a full yea",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EXOR NV (EXXRF) Full Year 2025 Earnings Call Highlights: Strategic Moves and Financial Resilience",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exor-nv-exxrf-full-2025-210035368.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-24T21:00:35+00:00",
+      "summary": "EXOR NV (EXXRF) showcases robust asset management growth and strategic buybacks amid market challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Agnelli Family’s Vehicle Exor Sells Gedi Media Company",
+      "url": "https://wwd.com/business-news/mergers-acquisitions/agnelli-ferrari-owner-holding-exor-sells-gedi-media-company-1238687376/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-24T15:49:40+00:00",
+      "summary": "The company also plans to divest its stakes in Nuo as it’s “simplifying our portfolio,” said chief executive officer John Elkann.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

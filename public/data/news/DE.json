@@ -1,0 +1,53 @@
+{
+  "ticker": "DE",
+  "last_updated": "2026-04-22T12:58:53.089335+00:00",
+  "sentiment_score": -0.23,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Deere’s Right to Repair Settlement and Software Access Shift Might Change The Case For Investing In (DE)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deere-repair-settlement-software-access-220631531.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:06:31+00:00",
+      "summary": "In early April 2026, Deere & Company reached a settlement agreement, including a US$99.00 million class settlement fund, to resolve multidistrict “right to repair” litigation in US federal court, with",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Otis Worldwide to Report Q1 Earnings: Here's What You Need to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/otis-worldwide-report-q1-earnings-142200720.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:22:00+00:00",
+      "summary": "Is OTIS heading for a mixed quarter as service strength offsets ongoing weakness in its new equipment business?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Packaging Corp Ready to Report Q1 Earnings: Here's What to Expect",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/packaging-corp-ready-report-q1-135700932.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:57:00+00:00",
+      "summary": "PKG heads into Q1 results with strong revenue growth expectations, but earnings estimates fall and our model signals no beat.",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "Dover Set to Report Q1 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dover-set-report-q1-earnings-135300289.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:53:00+00:00",
+      "summary": "DOV heads into Q1 earnings release with solid growth forecasts, but our model signals no beat as supply-chain woes and weak vehicle services cloud the outlook.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Worthington Steel Earns John Deere’s Highest Supplier Rating for 14th Consecutive Year; Receives Inaugural Community Engagement Award",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/worthington-steel-earns-john-deere-123000381.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:30:00+00:00",
+      "summary": "COLUMBUS, Ohio, April 20, 2026--Worthington Steel, Inc. (NYSE: WS) recognized as a Partner-level supplier by John Deere and presented with their inaugural Community Engagement Award.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "TGT",
+  "last_updated": "2026-04-22T13:04:10.900119+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "I applied to 2,000 jobs before getting offers at Target and a startup. Here's how I decided which to pick.",
+      "url": "https://www.businessinsider.com/engineer-lands-target-internship-and-startup-offer-2026-4",
+      "source": "businessinsider.com",
+      "published_at": "2026-04-22T09:10:01+00:00",
+      "summary": "Dianna Dimambro applied to roughly 2,000 software engineering jobs.Dianna DimambroDianna Dimambro, 29, applied to roughly 2,000 developer jobs over the last two years.She finally got offers from Targe",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alliance Entertainment: Higher Margins And A Low Float | $PSKY $AMZN $WMT $TGT $UMGP",
+      "url": "https://seekingalpha.com/article/4892684-alliance-entertainment-stock-higher-margins-and-a-low-float",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T08:39:33+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Prospecting: New Target Baby Layout Emphasizes In-Store Testing.",
+      "url": "https://www.insideradio.com/free/prospecting-new-target-baby-layout-emphasizes-in-store-testing/article_6dcbf973-4cfe-4376-8295-94bb0b525300.html",
+      "source": "insideradio.com",
+      "published_at": "2026-04-22T06:51:00+00:00",
+      "summary": "Here’s the latest in retail sales and strategy: Retailer revamps with interactive “Baby Boutiques” in 200 stores… Gap teams with Victoria Beckham on new fashion collaboration… The Farmer’s Dog moves i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Did Americans Scrimp At Other Retailers To Buy Gas? Nope, Not Americans. Born To Splurge | $WMT $M $COST $AMZN $TGT",
+      "url": "https://seekingalpha.com/article/4892641-did-americans-scrimp-at-other-retailers-to-buy-gas-nope-not-americans-born-to-splurge",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T03:30:00+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "What progress is Target making on its promise to revive the brand?",
+      "url": "https://insideretail.asia/2026/04/22/is-new-target-ceo-michael-fiddelke-delivering-on-his-promise-to-rehab-the-brand/",
+      "source": "insideretail.asia",
+      "published_at": "2026-04-22T01:31:45+00:00",
+      "summary": "New CEO Michael Fiddelke pledged 2025 was a year of cleanup, while 2026 would centre on profit. The post What progress is Target making on its promise to revive the brand? appeared first on Inside Ret",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

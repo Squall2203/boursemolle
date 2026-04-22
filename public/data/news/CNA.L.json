@@ -1,0 +1,53 @@
+{
+  "ticker": "CNA.L",
+  "last_updated": "2026-04-22T12:29:28.629026+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Centrica brings two Swedish battery storage systems online",
+      "url": "https://finance.yahoo.com/m/07c7ac5c-7733-38f3-a18d-f5eb9647563b/centrica-brings-two-swedish.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T12:00:00+00:00",
+      "summary": "Centrica has brought two battery energy storage systems online in Sweden.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Centrica (LSE:CNA) Investment Story Is Shifting With Mixed Targets And New Projects",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/centrica-lse-cna-investment-story-160905603.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-12T16:09:05+00:00",
+      "summary": "Centrica’s modelled fair value has shifted slightly from £2.16 to £2.19, a small move that still matters if you are tracking price targets closely. That change sits alongside Street research that spli",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ceres Power shares fall 8.6% as broker downgrades to 'sell' on valuation concerns",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090255/ceres-power-shares-fall-8-6-as-broker-downgrades-to-sell-on-valuation-concerns-1090255.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T10:15:06+00:00",
+      "summary": "Ceres Power Holdings PLC (LSE:CWR, OTC:CPWHF) fell 7% to 320p on Thursday after Peel Hunt downgraded the fuel cell technology developer to 'sell' from 'hold', arguing the shares reflect an overly opti",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "FTSE 100 Live: Index rockets at open as miners and airlines climb on Iran ceasefire",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090159/ftse-100-live-index-to-rocket-300-points-as-oil-drops-on-us-iran-ceasefire-1090159.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T07:13:00+00:00",
+      "summary": "8.12am: FTSE 100 flies at the open There we go: the FTSE 100 has been launched 248 points higher to 10,596 in just over 10 minutes. Miners and airline-associated shares are topping the early risers, w",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Centrica (LSE:CNA) Narrative Is Shifting Around Valuation And Earnings Expectations",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/centrica-lse-cna-narrative-shifting-070606691.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-29T07:06:06+00:00",
+      "summary": "Centrica’s central fair value estimate has shifted from £2.05 to £2.16 per share, giving you an updated reference point for how analysts are framing the share price. Around this £2.16 level, recent re",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "WPP.L",
+  "last_updated": "2026-04-22T12:25:55.905854+00:00",
+  "sentiment_score": -0.1,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "WPP bridges the gap between digital marketing and physical reality with unique 'Google Earth AI' integration",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/wpp-bridges-gap-between-digital-115800670.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:58:00+00:00",
+      "summary": "Cloud Next '26 -- Following the expansion of its Cloud and AI partnership with Google in October 2025, WPP has become one of the first media and marketing services companies to integrate Earth AI mode",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "OMC Balances Solid Growth Drivers With Near-Term Headwinds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/omc-balances-solid-growth-drivers-160200394.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:02:00+00:00",
+      "summary": "Omnicom balances diversified growth, strategic investments, and shareholder returns with competitive pressures, integration risks and liquidity concerns.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.5
+    },
+    {
+      "title": "IAB Tech Lab Launches Industry Council to Address Transparency in $200B U.S. Programmatic Ad Market",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/iab-tech-lab-launches-industry-140000597.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:00+00:00",
+      "summary": "With more than $200 billion in digital advertising now traded programmatically in the United States and automation increasingly shaping how media is bought and sold, industry leaders are moving to bri",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Advertising leaders join Rocketium to scale AI-powered creative production platform",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/advertising-leaders-join-rocketium-scale-120000948.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:00:00+00:00",
+      "summary": "Rocketium announced the appointment of Hitesh Mehta and Sharon Foo as Executive Partners to lead enterprise growth for AI Studio, its creative production platform for global brands.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Adobe Expands Partner Ecosystem to Deliver Frictionless Workflows for Customer Experience Orchestration",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/adobe-expands-partner-ecosystem-deliver-130000760.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:00:00+00:00",
+      "summary": "LAS VEGAS, April 20, 2026--Today, at Adobe Summit—the flagship customer experience conference—Adobe (Nasdaq:ADBE), the global technology leader that unleashes creativity, productivity and customer exp",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

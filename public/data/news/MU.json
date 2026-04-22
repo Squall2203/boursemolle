@@ -1,0 +1,53 @@
+{
+  "ticker": "MU",
+  "last_updated": "2026-04-22T12:59:05.309567+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "A Micron And Western Digital Peer Flashes Fresh Buy Zone With Earnings On Tap",
+      "url": "https://finance.yahoo.com/m/f7791f6e-97e4-3ca4-93ae-4619cf9668e5/a-micron-and-western-digital.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:13:02+00:00",
+      "summary": "As AI fuels demand for data storage names like Micron and Western Digital, industry peer Silicon Motion stock etches a buy zone.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "36 S&P 500 Stocks Blew Away Tim Cook's Apple With Less Fanfare",
+      "url": "https://finance.yahoo.com/m/a1f7a25d-d36b-3571-a3f3-866874e6fa24/36-s%26p-500-stocks-blew-away.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:00:59+00:00",
+      "summary": "The 1,881% gain of Apple shares with Tim Cook as CEO might look stellar at first glance. But the stock was far from No. 1.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AI Chips Update - Forge Nano's Public Debut Aims to Revolutionize Semiconductor Manufacturing",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ai-chips-forge-nanos-public-113742929.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:37:42+00:00",
+      "summary": "Recent developments in AI-era chip manufacturing have unfolded with Forge Nano's announcement of its plan to go public through a merger with Archimedes Tech SPAC Partners II. Forge Nano, known for its",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What SK Hynix’s New $13 Billion Memory Plant Means for Micron Stock",
+      "url": "https://finance.yahoo.com/m/a3c56112-0308-36b9-8e02-de9b5be51903/what-sk-hynix%E2%80%99s-new-%2413.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:19:00+00:00",
+      "summary": "Micron stock is on an incredible run but investors should keep an eye on capacity additions from rival SK Hynix.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Micron pushes US Congress to crack down on chip tool sales to Chinese rivals, sources say",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/micron-pushes-us-congress-crack-100134923.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:01:34+00:00",
+      "summary": "Micron Technology, the largest U.S. memory chipmaker, is a driving force pushing the U.S. Congress to pass legislation that would put new export restrictions on equipment its Chinese competitors use t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

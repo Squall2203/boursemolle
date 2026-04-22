@@ -1,0 +1,53 @@
+{
+  "ticker": "DASH",
+  "last_updated": "2026-04-22T13:21:27.043673+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Stablecoins Push Into Mainstream Payments as DoorDash Joins Tempo Network",
+      "url": "https://beincrypto.com/doordash-stablecoins-tempo-blockchain-worker-payments/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:42:07+00:00",
+      "summary": "DoorDash joins Stripe and Visa paying workers in stablecoins on Tempo blockchain, signaling crypto replacing traditional banking rails",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "DoorDash Stablecoin Payments Move Could Expand Mainstream Crypto Checkout",
+      "url": "https://www.coinspeaker.com/doordash-stablecoin-payments-mainstream-crypto-checkout/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:34:46+00:00",
+      "summary": "DoorDash announced on April 21, 2026, that it is integrating stablecoin crypto payment infrastructure through Tempo – a layer-1 blockchain that raised $500 million at a $5 billion valuation ahead of i",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Criteo S.A. (CRTO) Committed Towards Geographic Expansion",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/criteo-crto-committed-towards-geographic-024454763.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T02:44:54+00:00",
+      "summary": "Criteo S.A. (NASDAQ:CRTO) is one of the 8 best advertising agency stocks to buy according to hedge funds. Criteo S.A. (NASDAQ:CRTO) has been grabbing headlines lately because of its expansion into new",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Popular food delivery app plans crypto payouts for employees",
+      "url": "https://www.thestreet.com/crypto/markets/popular-food-delivery-app-plans-crypto-payouts-for-employees?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:48:52+00:00",
+      "summary": "DoorDash is making its most significant move yet into digital finance. On April 21, Tempo, the payments blockchain backed by Stripe and venture capital firm Paradigm, announced its partnership with Do",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "DoorDash Backs Tempo for Merchant and Dasher Stablecoin Payments",
+      "url": "https://www.cryptoprowl.com/releases/doordash-backs-tempo-for-merchant-and-dasher-stablecoin-payments-4237?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:00:00+00:00",
+      "summary": "DoorDash (NASDAQ: $DASH) is moving deeper into stablecoin payments as it looks for faster and cheaper ways to move ...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

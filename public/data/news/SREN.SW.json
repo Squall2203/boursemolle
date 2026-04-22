@@ -1,0 +1,53 @@
+{
+  "ticker": "SREN.SW",
+  "last_updated": "2026-04-22T12:34:59.826155+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Why You Might Be Interested In Swiss Re AG (VTX:SREN) For Its Upcoming Dividend",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-might-interested-swiss-ag-044718027.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T04:47:18+00:00",
+      "summary": "Readers hoping to buy Swiss Re AG ( VTX:SREN ) for its dividend will need to make their move shortly, as the stock is...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Swiss Re AG (SSREF) Full Year 2025 Earnings Call Highlights: Record Net Income and Strategic ...",
+      "url": "https://finance.yahoo.com/news/swiss-ag-ssref-full-2025-190138516.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-27T19:01:38+00:00",
+      "summary": "Swiss Re AG (SSREF) surpasses financial targets with a USD 4.8 billion net income and outlines strategic initiatives for future growth.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "A Winter Storm Is on Track to Hit Insurers. Why the Damage Could Be Huge.",
+      "url": "https://finance.yahoo.com/m/fe1ac97d-9472-3ea3-9959-73ada1e051da/a-winter-storm-is-on-track-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-24T00:53:00+00:00",
+      "summary": "A major winter storm advancing across the southern and eastern United States this weekend won’t just test municipal snow crews and utility companies’ gridlines.  With freezing temperatures, snow, slee",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Will Weakness in Swiss Re AG's (VTX:SREN) Stock Prove Temporary Given Strong Fundamentals?",
+      "url": "https://finance.yahoo.com/news/weakness-swiss-ags-vtx-sren-075058254.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-10T07:50:58+00:00",
+      "summary": "With its stock down 13% over the past month, it is easy to disregard Swiss Re (VTX:SREN). However, stock prices are...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Swiss Re AG (SSREF) Q3 2025 Earnings Call Highlights: Strong Net Income Amid Revenue Challenges",
+      "url": "https://finance.yahoo.com/news/swiss-ag-ssref-q3-2025-190107275.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-14T19:01:07+00:00",
+      "summary": "Swiss Re AG (SSREF) reports robust net income and investment returns, despite a decline in insurance revenue and challenges in Life and Health portfolios.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

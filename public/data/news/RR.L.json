@@ -1,0 +1,53 @@
+{
+  "ticker": "RR.L",
+  "last_updated": "2026-04-22T12:30:42.265786+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Stocks Track Lower in Tuesday Trading; Euro Area Economic Sentiment Plunges",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-track-lower-tuesday-161422242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:14:22+00:00",
+      "summary": "The European stock markets were tracking lower in Tuesday trading as The Stoxx Europe was declining",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Are You Looking for a Top Momentum Pick? Why Rolls-Royce Holdings PLC (RYCEY) is a Great Choice",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/looking-top-momentum-pick-why-160003249.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:00:03+00:00",
+      "summary": "Does Rolls-Royce Holdings PLC (RYCEY) have what it takes to be a top stock pick for momentum investors? Let's find out.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Rolls-Royce Holdings (LSE:RR.) Valuation After Strong Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-rolls-royce-holdings-lse-220539420.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T22:05:39+00:00",
+      "summary": "Rolls-Royce Holdings (LSE:RR.) has drawn fresh attention after its recent share price move, with a 4.8% gain over the past day and 12.9% over the past month prompting closer scrutiny from investors. S",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Rolls-Royce Nightingale is a $5 million limited-edition EV, and it's already sold out",
+      "url": "https://finance.yahoo.com/markets/article/rolls-royce-nightingale-is-a-5-million-limited-edition-ev-and-its-already-sold-out-193250036.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T19:32:50+00:00",
+      "summary": "In the rarefied world of luxury automobiles, Rolls-Royce just upped the altitude.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Boeing, GE Supplier Woodward Has Clear Skies Ahead",
+      "url": "https://finance.yahoo.com/m/e58ad443-6f6d-3a03-b144-5d9d8c9d043b/why-boeing%2C-ge-supplier.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T12:00:01+00:00",
+      "summary": "Woodward's energy conversion and control systems help to power the Boeing 737 MAX, Joint Direct Attack Munitions and data centers — three of the engines key to fueling growth for the S&amp;P 400 MidCa",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

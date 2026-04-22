@@ -1,0 +1,53 @@
+{
+  "ticker": "WRT1V.HE",
+  "last_updated": "2026-04-22T12:17:54.109461+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Wärtsilä to supply 412MW of engine power for US data centre",
+      "url": "https://www.power-technology.com/news/wartsila-to-supply-engine-power/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:29:37+00:00",
+      "summary": "Wärtsilä’s 34SG engines will provide primary power to the Ohio facility, bypassing local grid dependence.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Wärtsilä’s 34SG engine makes its data center debut with new 412 MW U.S. project",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/w-rtsil-34sg-engine-makes-141000002.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T14:10:00+00:00",
+      "summary": "Wärtsilä’s 34SG engine Wärtsilä’s 34SG engine makes its data center debut with new 412 MW U.S. project HOUSTON, April 16, 2026 (GLOBE NEWSWIRE) -- Technology group Wärtsilä has received an order to su",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "[Latest] Global Digital Twin in Marine Market Size/Share Worth USD 13.26 Billion by 2035 at a 11.7% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/latest-global-digital-twin-marine-203000223.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T20:30:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Digital Twin in Marine Market size & share revenue was valued at appr",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is It Too Late To Reassess Wärtsilä (HLSE:WRT1V) After Its 5 Year Surge?",
+      "url": "https://finance.yahoo.com/news/too-reassess-w-rtsil-hlse-180723648.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T18:07:23+00:00",
+      "summary": "If you are wondering whether Wärtsilä Oyj Abp is still offering value after a strong run, the starting point is to look closely at what the current share price implies about the company. The stock las",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "H2SITE Appoints Javier Cavada as New Chairman of the Board of Directors",
+      "url": "https://finance.yahoo.com/news/h2site-appoints-javier-cavada-chairman-060000378.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T06:00:00+00:00",
+      "summary": "BILBAO, Spain, March 17, 2026--H2SITE, a technology company delivering hydrogen production and separation solutions, announces the appointment of Javier Cavada as the new Chairman of the Board of Dire",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

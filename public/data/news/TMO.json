@@ -1,0 +1,53 @@
+{
+  "ticker": "TMO",
+  "last_updated": "2026-04-22T12:53:35.201245+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Thermo Fisher (TMO) Reports Q1: Everything You Need To Know Ahead Of Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/thermo-fisher-tmo-reports-q1-090923077.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:09:23+00:00",
+      "summary": "Life sciences company Thermo Fisher (NYSE:TMO) will be reporting earnings this Thursday before the bell. Here’s what to look for.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "$10+ Bn Microbiology Testing Market Analysis by Product, Technology, End User - Global Forecast to 2031",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/10-bn-microbiology-testing-market-082400993.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:24:00+00:00",
+      "summary": "The global microbiology testing market is set to reach USD 10.09 billion by 2031, growing from USD 7.79 billion in 2026 at a CAGR of 5.3%. Growth is driven by rising contamination risks in food, water",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "WST Likely to Beat Q1 Earnings Estimates: How to Play the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wst-likely-beat-q1-earnings-152800571.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:28:00+00:00",
+      "summary": "WST enters Q1 earnings with strong momentum, steady GLP-1 demand, and growth across high-value products, positioning it for another potential beat.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AxoGen (AXGN) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/axogen-axgn-reports-next-week-140018404.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:18+00:00",
+      "summary": "AxoGen (AXGN) possesses the right combination of the two key ingredients for a likely earnings beat in its upcoming report. Get prepared with the key expectations.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "TD Cowen Lowers Thermo Fisher (TMO) Price Target, Keeps Buy Rating",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/td-cowen-lowers-thermo-fisher-105322432.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:53:22+00:00",
+      "summary": "Thermo Fisher Scientific Inc. (NYSE:TMO) is one of the 8 Best Large Cap Stocks to Invest In Right Now. On April 13, TD Cowen reduced its price target on Thermo Fisher Scientific Inc. (NYSE:TMO) from $",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

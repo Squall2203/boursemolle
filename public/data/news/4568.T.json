@@ -1,0 +1,53 @@
+{
+  "ticker": "4568.T",
+  "last_updated": "2026-04-22T13:46:17.851069+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "5 Best Small-Cap Biotech Stocks According to Hedge Funds",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/5-best-small-cap-biotech-181612162.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:16:12+00:00",
+      "summary": "In this article, we will look at the 5 Best Small-Cap Biotech Stocks According to Hedge Funds. Please visit 10 Best Small-Cap Biotech Stocks According to Hedge Funds if you’d like to see an extended l",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dana-Farber Cancer Institute Study Demonstrates Predictive Value of Ignite Proteomics’ RPPA Platform for T-DXd (Enhertu®) Therapy in Metastatic Breast Cancer Patients",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/dana-farber-cancer-institute-study-121500086.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:15:00+00:00",
+      "summary": "MOUNTAIN VIEW, Calif., April 20, 2026--Aditxt, Inc. (Nasdaq: ADTX) (\"Aditxt\" or the \"Company\"), a social innovation platform accelerating promising health innovations, today announced that its precisi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Merck’s Priority Review Cancer Drug Adds To Undervalued Growth Story",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/merck-priority-review-cancer-drug-042918064.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T04:29:18+00:00",
+      "summary": "U.S. FDA accepts and grants Priority Review for the Biologics License Application for ifinatamab deruxtecan. The application covers treatment of adult patients with extensive stage small cell lung can",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Interna Therapeutics Announces Research Collaboration with Daiichi Sankyo to Advance MNM-Based Targeted Delivery Technologies",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/interna-therapeutics-announces-research-collaboration-094800734.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T09:48:00+00:00",
+      "summary": "Interna Therapeutics, a clinical stage biotechnology company advancing its Molecular Nano Motor (MNM) intracellular delivery platform, today announced a research collaboration with Daiichi Sankyo (TSE",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Wayfinder Biosciences Advances Collaboration with Daiichi Sankyo on Key Neurodegeneration Target to Second Phase",
+      "url": "https://finance.yahoo.com/news/wayfinder-biosciences-advances-collaboration-daiichi-130400335.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T13:04:00+00:00",
+      "summary": "Wayfinder Biosciences, a biotechnology company using small molecules to target undruggable proteins at the RNA level, today announced the advancement to the second phase of its research collaboration ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "VTR",
+  "last_updated": "2026-04-22T13:11:03.037200+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "What's in the Offing for Ventas Stock This Earnings Season?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/whats-offing-ventas-stock-earnings-163900916.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:39:00+00:00",
+      "summary": "VTR's Q1 earnings are expected to show solid revenue and FFO growth, driven by SHOP & OM&amp;R portfolio strength despite weakness in triple-net leased properties.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Alexandria to Post Q1 Earnings: What to Expect From the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alexandria-post-q1-earnings-expect-163600841.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:36:00+00:00",
+      "summary": "ARE is set to report Q1 results on April 27, with the consensus pointing to lower revenues and adjusted FFO as occupancy pressures weigh on performance.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Are You Looking for a High-Growth Dividend Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/looking-high-growth-dividend-stock-154502832.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:45:02+00:00",
+      "summary": "Dividends are one of the best benefits to being a shareholder, but finding a great dividend stock is no easy task. Does Ventas (VTR) have what it takes? Let's find out.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "What to Expect From AvalonBay Communities Stock in Q1 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/expect-avalonbay-communities-stock-q1-150200495.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:02:00+00:00",
+      "summary": "AVB to report Q1 2026 results on April 27 as demand improves and supply cools. Investors watch occupancy, rents and core FFO outlook.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Has Ventas (VTR) Already Reflected Its Strong Multi Year Share Price Performance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ventas-vtr-already-reflected-strong-220533424.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T22:05:33+00:00",
+      "summary": "If you are wondering whether Ventas at around US$84.65 still offers value, it helps to step back and look at what the recent share performance is really pricing in. Ventas has posted returns of 0.3% o",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

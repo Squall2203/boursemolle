@@ -1,0 +1,53 @@
+{
+  "ticker": "NVDA",
+  "last_updated": "2026-04-22T12:48:29.809048+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
+      "url": "https://www.fool.com/investing/2026/04/22/ranking-magnificent-seven-most-to-least-attractive/",
+      "source": "fool.com",
+      "published_at": "2026-04-22T11:26:00+00:00",
+      "summary": "Among Nvidia, Alphabet, Apple, Microsoft, Amazon, Meta Platforms, and Tesla, there are two screaming bargains and one pricey company whose valuation can't be justified. Key PointsThe Magnificent Seven",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Data, not guessing: Looking at Nvidia's past GPUs to predict the specs for its future RTX 60-series graphics cards",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/data-not-guessing-looking-at-nvidias-past-gpus-to-predict-the-specs-for-its-future-rtx-60-series-graphics-cards/",
+      "source": "pcgamer.com",
+      "published_at": "2026-04-22T11:02:15+00:00",
+      "summary": "I've stared at Excel so much, I'm dreaming about spreadsheets now. Nvidia RTX 5070 Ti graphics card",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CEO Jensen Huang Says NVIDIA ‘Never’ Sells Chips to the Highest Bidder",
+      "url": "https://247wallst.com/investing/2026/04/22/ceo-jensen-huang-says-nvidia-never-sells-chips-to-the-highest-bidder/",
+      "source": "247wallst.com",
+      "published_at": "2026-04-22T11:02:14+00:00",
+      "summary": "NVIDIA (NASDAQ:NVDA) CEO Jensen Huang recently appeared on the Dwarkesh Podcast and said something that stands out in an industry where supply shortages routinely trigger price spikes. “I understand t",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Nvidia's groundbreaking VRAM solution only works best on its fastest GPUs",
+      "url": "https://www.xda-developers.com/nvidias-neural-texture-compression-vram-solution-needs-its-fastest-gpus/",
+      "source": "xda-developers.com",
+      "published_at": "2026-04-22T11:00:21+00:00",
+      "summary": "Nvidia's new VRAM trick only works on cards expensive enough to not need it I’ve always been in favor of smarter tech solving brute-force problems, especially when it comes to PC gaming. More efficien",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What will happen if CUDA becomes redundant?",
+      "url": "https://www.reddit.com/r/nvidia/comments/1ssi3om/what_will_happen_if_cuda_becomes_redundant/",
+      "source": "reddit.com",
+      "published_at": "2026-04-22T10:58:38+00:00",
+      "summary": "As above, how much of Nvidia's future depends on CUDA remaining something other companies need? submitted by /u/Ok-Willingness-5016 [link] [comments] As above, how much of Nvidia's future depends on C",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "EL",
+  "last_updated": "2026-04-22T13:28:15.075399+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Invesco Equity And Income Fund Q1 2026 Portfolio Review | $EL $PG $CRM $ORCL $RAL",
+      "url": "https://seekingalpha.com/article/4892424-invesco-equity-income-fund-q1-2026-portfolio-review",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-21T16:23:00+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Puig stock gains on Estee Lauder takeover financing report",
+      "url": "https://www.investing.com/news/stock-market-news/puig-stock-gains-on-estee-lauder-takeover-financing-report-93CH-4625176",
+      "source": "investing.com",
+      "published_at": "2026-04-21T08:01:46+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Estée Lauder Seeks €5 Billion Funding for Puig Deal, Report Says",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-21/estee-lauder-seeks-5-billion-funding-for-puig-deal-report-says",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-21T06:52:05+00:00",
+      "summary": "Estée Lauder Cos. has hired JPMorgan Chase & Co. to take the lead on structuring a financing package of about €5 billion ($5.9 billion) to fund its potential tie-up with Spanish company Puig Brands SA",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Estee Lauder taps JP Morgan to finance Puig takeover bid, Spanish daily Expansion says",
+      "url": "https://www.investing.com/news/stock-market-news/estee-lauder-taps-jp-morgan-to-finance-puig-takeover-bid-spanish-daily-expansion-says-4625054",
+      "source": "investing.com",
+      "published_at": "2026-04-21T06:12:52+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How to get Clinique's glow-boosting moisturiser for better than half price, if you're quick",
+      "url": "https://www.mirror.co.uk/money/shopping-deals/how-cliniques-glow-boosting-moisturiser-37043474",
+      "source": "mirror.co.uk",
+      "published_at": "2026-04-20T15:01:48+00:00",
+      "summary": "Clinique's Moisture Surge is one of the brand's best love creams, and today you can pick it up in the large 75ml size, for more than 50% off it's normal price",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

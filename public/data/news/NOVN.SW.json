@@ -1,0 +1,53 @@
+{
+  "ticker": "NOVN.SW",
+  "last_updated": "2026-04-22T12:33:09.532573+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Sjogren's Syndrome Market Analysis Report 2025-2035 Featuring Novartis, Otsuka Pharmaceutical, Nicox, and Bristol Myers Squibb",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/sjogrens-syndrome-market-analysis-report-100400382.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:04:00+00:00",
+      "summary": "The global Sjögren’s Syndrome market is poised for growth, driven by increasing autoimmune disorder prevalence, rising awareness, and advances in diagnostic tools. While challenges like lack of curati",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Neuroblastoma Treatment Market Analysis Report 2025-2035 - Regional Players and Local Manufacturers are Expected to Play an Important Role in Future Growth",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/neuroblastoma-treatment-market-analysis-report-100100385.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:01:00+00:00",
+      "summary": "Neuroblastoma, an aggressive cancer mainly affecting infants, is seeing advances in treatment options, driving market growth. Immunotherapy, significantly boosting survival rates in high-risk cases, a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "This Biotech Stock Is Up 460% Over the Past Year. Why Analysts See It Rising Higher.",
+      "url": "https://finance.yahoo.com/m/bab0893e-5b5b-3c9b-8328-5b753164bf02/this-biotech-stock-is-up-460%25.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:39:00+00:00",
+      "summary": "Shares of  Arrowhead Pharmaceuticals  have soared 460% over the past year, far eclipsing the broader market.  Morgan Stanley analyst Michael Ulz is eagerly awaiting the release of Phase 3 study data i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BIIB Inks Deal to Acquire Rights to Felzartamab in China, Stock Up",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/biib-inks-deal-acquire-rights-155200815.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:52:00+00:00",
+      "summary": "Biogen gains after securing Greater China rights to felzartamab, giving it worldwide control as phase III studies advance in immune diseases.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AstraZeneca's Ultomiris Meets Goal in Rare Kidney Disease Study",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/astrazenecas-ultomiris-meets-goal-rare-151900847.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:19:00+00:00",
+      "summary": "AZN's Ultomiris hits key goal in IgAN study, showing early proteinuria reduction as it eyes accelerated approval in major markets.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

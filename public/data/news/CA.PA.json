@@ -1,0 +1,53 @@
+{
+  "ticker": "CA.PA",
+  "last_updated": "2026-04-22T11:33:41.446555+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "France Quick Commerce Databook Report 2026: Market to Surpass $18.5 Billion by 2029 - Carrefour, Casino Group, and Monoprix Lead as Hybrid Store-Platform Models Dominate",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/france-quick-commerce-databook-report-154400637.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:44:00+00:00",
+      "summary": "Key opportunities in France's quick commerce sector include leveraging supermarket-platform alliances to enhance delivery services, focusing on urban areas for dense delivery missions, and integrating",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Italy Quick Commerce Databook Report 2026: Market to Reach $2.68 Billion by 2029 - Glovo, Deliveroo, and Everli Lead as Grocery Alliances with Carrefour, Conad, and Coop Scale Nationwide",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/italy-quick-commerce-databook-report-152600966.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:26:00+00:00",
+      "summary": "Key market opportunities in Italy's quick commerce sector include forming robust retailer-platform partnerships for ultra-fast delivery, focusing on multi-vertical platforms post-pure-play exits, segm",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider Carrefour (ENXTPA:CA) After A 36% One Year Rally?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-carrefour-enxtpa-ca-140329171.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T14:03:29+00:00",
+      "summary": "If you are wondering whether Carrefour at €16.55 is still good value or starting to look stretched, the next sections will help you put a clear price tag on what you are actually buying. Over the past",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AMCON Rallies 23% Year to Date: Should You Buy the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amcon-rallies-23-date-buy-174000738.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:40:00+00:00",
+      "summary": "DIT leverages a vast distribution network, strong CPG partnerships, and strategic investments to drive growth, margin expansion, and resilience across both traditional and health-focused retail segmen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "French regulator fines organic food retail groups for price collusion",
+      "url": "https://www.just-food.com/news/french-regulator-fines-organic-retail-groups/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:57:32+00:00",
+      "summary": "According to the authority, the aim was to prevent the same brands from being sold across multiple channels, limiting comparisons on products and prices.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

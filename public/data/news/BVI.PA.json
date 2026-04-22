@@ -1,0 +1,44 @@
+{
+  "ticker": "BVI.PA",
+  "last_updated": "2026-04-22T11:44:07.880380+00:00",
+  "sentiment_score": 0.25,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "HyOrc Successfully Completes Independent Process and Technology Verification for Waste-to-Methanol Platform",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/hyorc-successfully-completes-independent-process-084800908.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:48:00+00:00",
+      "summary": "HOUSTON, April 22, 2026 (GLOBE NEWSWIRE) -- HyOrc Corporation (OTCQB: HYOR) today announced that an independent third-party has successfully validated its RDF-to-methanol pilot methanol synthesis unit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bureau Veritas: A Steady Organic Revenue Growth in the First Quarter 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bureau-veritas-steady-organic-revenue-053000262.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:30:00+00:00",
+      "summary": "COURBEVOIE, France, April 22, 2026--Bureau Veritas (BOURSE:BVI):",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 5.7%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-dividend-stocks-yielding-103208299.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T10:32:08+00:00",
+      "summary": "As European markets rally following a ceasefire agreement between the U.S. and Iran, investors are closely watching economic indicators amid concerns of potential stagflation in the region. In this en",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HyOrc Completes Independent Process and Technology Verification for Waste-to-Methanol Platform",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/hyorc-completes-independent-process-technology-192500072.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T19:25:00+00:00",
+      "summary": "HOUSTON, April 15, 2026 (GLOBE NEWSWIRE) -- HyOrc Corporation (OTCQB: HYOR) today announced the successful completion of the on-site process verification phase with Bureau Veritas, a globally recogniz",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

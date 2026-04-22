@@ -1,0 +1,53 @@
+{
+  "ticker": "DB1.DE",
+  "last_updated": "2026-04-22T11:52:06.662118+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Crypto Weekly: Circle eyes yuan-backed stablecoin, WLF's proposal",
+      "url": "https://finance.yahoo.com/video/crypto-weekly-circle-eyes-yuan-131943924.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:19:43+00:00",
+      "summary": "STORY: From Circle's views of a yuan-backed stablecoin... to why World Liberty Financial's early investors could be restricted... This is Crypto Weekly.  :: Crypto Weekly  :: Circle eyes yuan-backed s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Deutsche Boerse buys $200 million stake in crypto giant Kraken",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/deutsche-boerse-acquires-200-million-103118318.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T10:31:18+00:00",
+      "summary": "German exchange operator Deutsche Boerse said on Tuesday that it had acquired ‌a 200 million dollar stake in US-based ‌cryptocurrency exchange Kraken.  The investment is being made through the acquisi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "CME Group Outperforms Industry, Trades at a Premium: Hold Now?",
+      "url": "https://finance.yahoo.com/news/cme-group-outperforms-industry-trades-194000416.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T19:40:00+00:00",
+      "summary": "CME shows steady growth, strong dividends, and resilience, but with limited upside at current valuations, investors may consider holding the stock for now.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Deutsche Boerse AG (DBOEF) Q4 2025 Earnings Call Highlights: Record Revenue Growth and ...",
+      "url": "https://finance.yahoo.com/news/deutsche-boerse-ag-dboef-q4-190245389.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T19:02:45+00:00",
+      "summary": "Deutsche Boerse AG (DBOEF) reports a 9% increase in net revenue for 2025, announces a dividend hike, and unveils a EUR500 million share buyback program.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Germany Deal Value More Than Doubles to $26 Billion Early 2026",
+      "url": "https://finance.yahoo.com/news/germany-deal-value-more-doubles-164327372.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T16:43:27+00:00",
+      "summary": "German M&amp;A activity surged to about $26 billion, matching past boom years and outpacing Europe after a weak 2025.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

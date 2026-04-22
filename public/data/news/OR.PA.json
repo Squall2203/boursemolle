@@ -1,0 +1,53 @@
+{
+  "ticker": "OR.PA",
+  "last_updated": "2026-04-22T11:35:43.806640+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "L'Oréal Backs Hanni To Tap Premium Clean Beauty Growth Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lor-al-backs-hanni-tap-150415810.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T15:04:15+00:00",
+      "summary": "L’Oréal’s BOLD venture fund has invested in eco conscious body care brand Hanni. The deal expands L’Oréal’s presence in premium, vegan and cruelty free body care. The move reflects growing consumer in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "L’Oréal’s BOLD Venture Fund Invests in Hanni",
+      "url": "https://wwd.com/beauty-industry-news/body-care/loreal-bold-venture-fund-invests-hanni-body-care-1238920097/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T16:27:46+00:00",
+      "summary": "The body care category is becoming more sophisticated.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dollar General bets on beauty with savings event",
+      "url": "https://www.retaildive.com/news/dollar-general-beauty-savings-event/817104/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T11:44:00+00:00",
+      "summary": "The discount retailer, which recently reported strong Q4 earnings results, is adding to a broader effort to become a beauty destination.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Beauty for Every Budget: DG Announces 7 Days of Savings Event",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/beauty-every-budget-dg-announces-105500290.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T10:55:00+00:00",
+      "summary": "GOODLETTSVILLE, Tenn., April 09, 2026--Beauty for Every Budget: DG Announces 7 Days of Savings Event",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The L'Oréal (ENXTPA:OR) Investment Story Is Shifting With New Analyst Price Targets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lor-al-enxtpa-investment-story-161616168.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T16:16:16+00:00",
+      "summary": "Recent research has pushed several L'Oréal price targets toward the upper end of the current €360 to €437 range, with some analysts now talking about levels around €430 to €437. These moves sit alongs",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

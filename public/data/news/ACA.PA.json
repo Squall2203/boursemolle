@@ -1,0 +1,53 @@
+{
+  "ticker": "ACA.PA",
+  "last_updated": "2026-04-22T11:33:53.787905+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "A Look At Crédit Agricole’s (ENXTPA:ACA) Valuation After Recent Share Price Pullback",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-cr-dit-agricole-enxtpa-021322778.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T02:13:22+00:00",
+      "summary": "How Crédit Agricole’s Share Performance Looks After Recent Moves Crédit Agricole (ENXTPA:ACA) has seen mixed share performance recently, with a 3.2% gain over the past week alongside declines of 2.5% ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "CREDIT AGRICOLE S.A. ANNOUNCES REDEMPTION OF  EUR 750,000,000 Senior Non-Preferred Callable Fixed to Floating Rate Notes issued on April 22, 2022 (ISIN: FR0014009UH8)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/credit-agricole-announces-redemption-eur-061500406.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T06:15:00+00:00",
+      "summary": "Montrouge, April 1, 2026 CREDIT AGRICOLE S.A. ANNOUNCES REDEMPTION OF EUR 750,000,000 Senior Non-Preferred Callable Fixed to Floating Rate Notes issued on April 22, 2022 (ISIN: FR0014009UH8)* Crédit A",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CREDIT AGRICOLE S.A. ANNOUNCES REDEMPTION OF SGD 325,000,000 Subordinated Fixed Rate Resettable Notes issued on April 30, 2019 (ISIN: XS1989533184)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/credit-agricole-announces-redemption-sgd-061500003.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T06:15:00+00:00",
+      "summary": "Montrouge, April 1, 2026 CREDIT AGRICOLE S.A. ANNOUNCES REDEMPTION OF SGD 325,000,000 Subordinated Fixed Rate Resettable Notes issued on April 30, 2019 (ISIN: XS1989533184)* Crédit Agricole S.A. (the ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CREDIT AGRICOLE SA: Availability of Crédit Agricole S.A.’s 2025 Universal Registration Document and Annual Financial Report",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/credit-agricole-sa-availability-cr-170200433.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T17:02:00+00:00",
+      "summary": "Press release Montrouge, 27 March 2026 Availability of Crédit Agricole S.A.’s 2025 Universal Registration Document and Annual Financial Report Crédit Agricole S.A. informs the public that the French v",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Crédit Agricole seals deal to acquire Ukraine-based Bank Lviv",
+      "url": "https://www.retailbankerinternational.com/news/credit-agricole-acquire-ukraine-bank-lviv/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T11:20:35+00:00",
+      "summary": "Bank Lviv currently works with more than 37,000 individual clients and operates mainly in western Ukraine.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

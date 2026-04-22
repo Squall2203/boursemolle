@@ -1,0 +1,53 @@
+{
+  "ticker": "ASML.AS",
+  "last_updated": "2026-04-22T12:03:32.170907+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "ASML discloses 2026 AGM results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asml-discloses-2026-agm-results-113000450.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:30:00+00:00",
+      "summary": "ASML discloses 2026 AGM results Veldhoven, the Netherlands, April 22, 2026 – ASML Holding N.V. (ASML) today announces the results of its Annual General Meeting (AGM) held on April 22, 2026. At the AGM",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ASML says firm will not be chip industry's bottleneck",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/asml-says-firm-not-chip-102215600.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:22:15+00:00",
+      "summary": "Top computer chip equipment maker ASML will not be a bottleneck for the industry, ‌as it was early in the decade, its CEO said on ‌Wednesday, pointing to recent investments in capacity and productivit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "NVIDIA CEO Jensen Huang Says Manufacturing Bottlenecks Are a ‘2–3 Year Problem.’ Here’s What That Means for Investors",
+      "url": "https://247wallst.com/investing/2026/04/21/nvidia-ceo-jensen-huang-says-manufacturing-bottlenecks-are-a-2-3-year-problem-heres-what-that-means-for-investors/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:01:54+00:00",
+      "summary": "“Once you can build one, you can build 10. And once you can build 10, you can build a million.” That is how NVIDIA (NASDAQ:NVDA) CEO Jensen Huang frames the manufacturing bottleneck question that keep",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ASML Rockets 38% With Rising Profit Views; Nears Buy Point",
+      "url": "https://finance.yahoo.com/m/128d80d7-5ff5-34fc-9c61-87f61856778c/asml-rockets-38%25-with-rising.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:06:28+00:00",
+      "summary": "ASML stock is in a cup base that has a buy point at 1547.22 after first-quarter results beat Wall Street's estimates.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ASM International forecasts second-quarter revenue that beats estimates",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/asm-international-forecasts-second-quarter-180404450.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:04:04+00:00",
+      "summary": "Computer chip equipment maker ASM International on Tuesday forecast stronger ‌second-quarter revenue guidance than markets expected, after a first-quarter ‌report above expectations.  \"Customers are s",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

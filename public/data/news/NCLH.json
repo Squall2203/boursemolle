@@ -1,0 +1,53 @@
+{
+  "ticker": "NCLH",
+  "last_updated": "2026-04-22T13:15:24.218254+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Introducing Oceania Aurelia™, The Ultimate Explorer",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/introducing-oceania-aurelia-ultimate-explorer-130000797.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T13:00:00+00:00",
+      "summary": "Oceania Cruises®, the world's leading culinary- and destination-focused luxury cruise line, today unveiled Oceania Aurelia™, The Ultimate Explorer, purposefully designed for extended global discoverie",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Time To Reassess Norwegian Cruise Line Holdings (NCLH) After Recent Debt Refinancing?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-norwegian-cruise-line-160724280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:07:24+00:00",
+      "summary": "If you are wondering whether Norwegian Cruise Line Holdings is attractively priced at its current level, the key is to understand what the market is paying for its future cash flows and recovery poten",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 Cash-Burning Stocks We Keep Off Our Radar",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-cash-burning-stocks-keep-125351395.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:53:51+00:00",
+      "summary": "While some companies burn cash to fuel expansion, others struggle to turn spending into sustainable growth. A high cash burn rate without a strong balance sheet can leave investors exposed to signific",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Comparing 3 Cruise Stocks: Which Has the Most Upside in 2026?",
+      "url": "https://www.marketbeat.com/stock-ideas/comparing-3-cruise-stocks-which-has-the-most-upside-in-2026/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:45:00+00:00",
+      "summary": "Cruise stocks have upside, but performance may vary as Carnival, Royal Caribbean, and Norwegian face different fundamentals, fuel exposure, and execution challenges.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Does Norwegian’s Philadelphia Homeport Expansion Reshape the Bull Case For Norwegian Cruise Line Holdings (NCLH)?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-norwegian-philadelphia-homeport-expansion-100512132.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:05:12+00:00",
+      "summary": "Norwegian Cruise Line has already returned to Philadelphia after a 15-year absence, deploying Norwegian Jewel and Norwegian Pearl on Bermuda and Canada & New England routes through 2028, alongside con",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

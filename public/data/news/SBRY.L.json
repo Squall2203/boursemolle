@@ -1,0 +1,53 @@
+{
+  "ticker": "SBRY.L",
+  "last_updated": "2026-04-22T12:27:58.479502+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Supreme strikes UK Carabao tie-up",
+      "url": "https://www.just-drinks.com/news/supreme-distribute-carabao-drinks-uk/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:40:30+00:00",
+      "summary": "Supreme said the deal will help “accelerate” Carabao's growth in the UK, where the brand has sponsored one of the country's principal football competitions since 2017.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AMCON Rallies 23% Year to Date: Should You Buy the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amcon-rallies-23-date-buy-174000738.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:40:00+00:00",
+      "summary": "DIT leverages a vast distribution network, strong CPG partnerships, and strategic investments to drive growth, margin expansion, and resilience across both traditional and health-focused retail segmen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Sainsbury’s to shed light on Iran war impact amid recent sales growth",
+      "url": "https://uk.finance.yahoo.com/news/sainsbury-shed-light-iran-war-080032057.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T08:00:32+00:00",
+      "summary": "Shares in the UK’s second largest supermarket chain sit close to a 12-year high after increasing its share of the grocery market.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The J Sainsbury (LSE:SBRY) Narrative Is Shifting As Analyst Targets Tighten Around £3.50",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/j-sainsbury-lse-sbry-narrative-211055146.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T21:10:55+00:00",
+      "summary": "Price targets for J Sainsbury now cluster in a relatively tight band between about £3.45 and £3.77, with some analysts moving from £3.66 to £3.60 and from £3.50 to £3.45. These tweaks sit alongside co",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "NatWest and Sainsbury’s partner to launch new finance products",
+      "url": "https://www.retailbankerinternational.com/news/natwest-sainsburys-finance-products/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T12:01:11+00:00",
+      "summary": "The move comes after NatWest’s 2025 purchase of Sainsbury’s Bank’s personal loan, credit card and retail deposit books.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

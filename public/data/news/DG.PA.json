@@ -1,0 +1,53 @@
+{
+  "ticker": "DG.PA",
+  "last_updated": "2026-04-22T11:39:37.582625+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Disclosure of transactions in on shares from April 15th to April 17th ,2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/disclosure-transactions-shares-april-15th-154500227.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:45:00+00:00",
+      "summary": "Nanterre, April 21st, 2026 Disclosure of transactions in on shares from April 15th to April 17th ,2026 Within the framework of the authorization granted by the General Meeting of VINCI SA of April 14t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vinci Airports Q1 passenger traffic grows as Middle East conflict impact limited",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vinci-airports-q1-passenger-traffic-172943742.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T17:29:43+00:00",
+      "summary": "Investing.com -- Vinci Airports handled more than 74 million passengers in the first quarter of 2026, a 1.5% increase year-on-year, as strong momentum in Latin America and Cabo Verde helped offset hea",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "VINCI: Disclosure of transactions in on shares from April 06th to April 14th,2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vinci-disclosure-transactions-shares-april-160000682.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T16:00:00+00:00",
+      "summary": "Nanterre, April 15th, 2026 Disclosure of transactions in on shares from April 06th to April 14th,2026 Within the framework of the authorization granted by the General Meeting of VINCI SA of April 17th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "VINCI: Disclosure of transactions in on shares from March 30th to April 02nd ,2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vinci-disclosure-transactions-shares-march-154500644.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:45:00+00:00",
+      "summary": "Nanterre, April 08th, 2026 Disclosure of transactions in on shares from March 30th to April 02nd ,2026 Within the framework of the authorization granted by the General Meeting of VINCI SA of April 17t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "VINCI: Disclosure of transactions in on shares from March 23rd to March 27th, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vinci-disclosure-transactions-shares-march-154500151.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T15:45:00+00:00",
+      "summary": "Nanterre, March 30th, 2026 Disclosure of transactions in on shares from March 23rd to March 27th, 2026 Within the framework of the authorization granted by the General Meeting of VINCI SA of April 17t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

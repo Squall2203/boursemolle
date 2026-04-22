@@ -1,0 +1,53 @@
+{
+  "ticker": "ISRG",
+  "last_updated": "2026-04-22T12:57:07.108153+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Intuitive Surgical Earnings Show Big Beats Don’t Always Spark Stock Rallies",
+      "url": "https://finance.yahoo.com/m/d8e2508e-832e-3dfb-a1d9-91f701864178/intuitive-surgical-earnings.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:25:00+00:00",
+      "summary": "Intuitive Surgical  posted quarterly earnings and revenue that handily beat Wall Street’s projections.  The maker of surgical robots posted first-quarter adjusted earnings of $2.50 a share, outstrippi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Stocks Rise Pre-Bell as Trump Extends Iran Ceasefire; Tesla Earnings On Deck",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-rise-pre-bell-trump-111350233.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:13:50+00:00",
+      "summary": "The main US stock measures were trending higher in Wednesday's premarket activity after President Do",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Intuitive Surgical Raises 2026 Procedure Growth Outlook Following First-Quarter Beat",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/intuitive-surgical-raises-2026-procedure-102313878.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:23:13+00:00",
+      "summary": "Intuitive Surgical (ISRG) shares rose early Wednesday as the company lifted the full-year procedure",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Intuitive Surgical Inc (ISRG) Q1 2026 Earnings Call Highlights: Robust Revenue Growth and ...",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/intuitive-surgical-inc-isrg-q1-070409934.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:04:09+00:00",
+      "summary": "Intuitive Surgical Inc (ISRG) reports a 23% revenue increase and significant progress in digital innovation, despite challenges in international markets.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ISRG Q1 2026 Earnings Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/04/21/isrg-q1-2026-earnings-transcript/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T02:21:15+00:00",
+      "summary": "Q1 was a solid start to the year for Intuitive, driven by 17% total procedure growth and broad-based adoption across da Vinci and Ion as customers continue to advance minimally invasive care.  In Q1, ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

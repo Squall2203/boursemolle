@@ -1,0 +1,53 @@
+{
+  "ticker": "CS.PA",
+  "last_updated": "2026-04-22T11:32:52.517882+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "AXA Launches Limited Offer of a 2-Year Premium Payment Term for \"WealthAhead II Savings Insurance\" Series",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/axa-launches-limited-offer-2-072900216.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T07:29:00+00:00",
+      "summary": "AXA Hong Kong and Macau (\"AXA\") is pleased to introduce a limited offer of a 2-year premium payment option for the WealthAhead II Savings Insurance Series[1](\"WealthAhead II Series\" or the \"Series\"). ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AM Best Assigns Credit Ratings to AXA XL Excess & Surplus Lines Insurance Company",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/am-best-assigns-credit-ratings-134500024.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T13:45:00+00:00",
+      "summary": "OLDWICK, N.J., March 25, 2026--AM Best has assigned a Financial Strength Rating of A+ (Superior) and a Long-Term Issuer Credit Rating of \"aa\" (Superior) to AXA XL Excess & Surplus Lines Insurance Comp",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At AXA (ENXTPA:CS) Valuation After Recent Share Price Pullback",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-axa-enxtpa-cs-valuation-080902437.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-20T08:09:02+00:00",
+      "summary": "AXA stock performance snapshot AXA (ENXTPA:CS) has attracted investor attention after recent share price moves, with the stock showing mixed returns over the past week, month and past 3 months against",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Axa (AXAHY) Upgraded to Buy: What Does It Mean for the Stock?",
+      "url": "https://finance.yahoo.com/news/axa-axahy-upgraded-buy-does-160002732.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T16:00:02+00:00",
+      "summary": "Axa (AXAHY) might move higher on growing optimism about its earnings prospects, which is reflected by its upgrade to a Zacks Rank #2 (Buy).",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Cybersecurity Insurance Company Evaluation Report 2025: Chubb, AXA and Travelers Strengthen Leadership with Advanced Risk Engineering, Global Coverage and Expanding Cyber Risk Protection Solutions",
+      "url": "https://finance.yahoo.com/news/cybersecurity-insurance-company-evaluation-report-142200339.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-05T14:22:00+00:00",
+      "summary": "The Cybersecurity Insurance Companies Quadrant offers a comprehensive analysis of the global cybersecurity insurance market, spotlighting the industry's top 18 companies. This report evaluates over 10",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

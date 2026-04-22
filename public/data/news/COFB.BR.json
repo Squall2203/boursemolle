@@ -1,0 +1,53 @@
+{
+  "ticker": "COFB.BR",
+  "last_updated": "2026-04-22T12:08:42.856159+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Aedifica NV/SA: 2025 annual results",
+      "url": "https://finance.yahoo.com/news/aedifica-nv-sa-2025-annual-063000900.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-13T06:30:00+00:00",
+      "summary": "Please find below a press release from Aedifica (a public regulated real estate company under Belgian law, listed on Euronext Brussels and Euronext Amsterdam), regarding its 2025 annual results. Aedif",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Aedifica NV/SA: Interim financial report – 3rd quarter 2025",
+      "url": "https://finance.yahoo.com/news/aedifica-nv-sa-interim-financial-164000605.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-28T16:40:00+00:00",
+      "summary": "Please find below Aedifica’s interim financial report for the 3rd quarter of the 2025 financial year. Progress on Aedifica’s exchange offer on all Cofinimmo shares Aedifica has formally filed its requ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cofinimmo (ENXTBR:COFB) Valuation in Focus as Investors Weigh Underlying Value and Market Signals",
+      "url": "https://finance.yahoo.com/news/cofinimmo-enxtbr-cofb-valuation-focus-115644903.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T11:56:44+00:00",
+      "summary": "Cofinimmo (ENXTBR:COFB) might not be making headlines for dramatic corporate shake-ups or major transactions this week, but the stock’s underlying movement is enough to catch the eye of investors who ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cofinimmo SA/NV (WBO:COFB) (H1 2025) Earnings Call Highlights: Strong Performance and Strategic ...",
+      "url": "https://finance.yahoo.com/news/cofinimmo-sa-nv-wbo-cofb-070248468.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-26T07:02:48+00:00",
+      "summary": "Cofinimmo SA/NV reports robust earnings growth and a high occupancy rate, while maintaining a stable cost of debt and focusing on strategic divestments.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

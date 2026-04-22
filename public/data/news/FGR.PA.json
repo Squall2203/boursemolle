@@ -1,0 +1,53 @@
+{
+  "ticker": "FGR.PA",
+  "last_updated": "2026-04-22T11:41:15.879719+00:00",
+  "sentiment_score": 0.47,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Eiffage and Jan de Nul win Port of Callao expansion contract",
+      "url": "https://www.worldconstructionnetwork.com/news/eiffage-port-callao-contract/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T09:42:03+00:00",
+      "summary": "The contract includes the demolition of docks 4 and 5C, and the building of a new dock 5C on pilings.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Eiffage SA (EFGSY) Full Year 2025 Earnings Call Highlights: Strong Growth Amidst Market Challenges",
+      "url": "https://finance.yahoo.com/news/eiffage-sa-efgsy-full-2025-230236211.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-25T23:02:36+00:00",
+      "summary": "Eiffage SA (EFGSY) showcases robust performance in energy systems and strategic expansions, while navigating real estate pressures and infrastructure uncertainties.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Top European Dividend Stocks To Consider In February 2026",
+      "url": "https://finance.yahoo.com/news/top-european-dividend-stocks-consider-053141794.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T05:31:41+00:00",
+      "summary": "As European markets continue to show resilience amid global economic challenges, optimism about the eurozone economy has helped the STOXX Europe 600 Index reach new highs. With inflation stabilizing a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Global Road Maintenance Market Study 2026 with Company Ranking and Benchmarks Featuring Vinci, CRH, Group ACS, Hochtief, Eiffage and More",
+      "url": "https://finance.yahoo.com/news/global-road-maintenance-market-study-130100591.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T13:01:00+00:00",
+      "summary": "Key opportunities include the adoption of smart maintenance systems, investment in sustainable materials, expansion of automated repair technology, and connected traffic assets. Growth is driven by ri",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Dividend Stocks Eiffage And 2 More Top Picks",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-eiffage-2-053154969.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-08T05:31:54+00:00",
+      "summary": "As the European market continues to thrive, with the STOXX Europe 600 Index hitting new highs and closing 2025 with its strongest annual performance since 2021, investors are increasingly looking towa",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

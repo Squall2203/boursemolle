@@ -1,0 +1,53 @@
+{
+  "ticker": "LIN",
+  "last_updated": "2026-04-22T12:53:22.977227+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Ethisphere Names Linde to 2026 World's Most Ethical Companies® List",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/ethisphere-names-linde-2026-worlds-100000778.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:00:00+00:00",
+      "summary": "WOKING, England, April 22, 2026--Linde (Nasdaq: LIN) today announced it has been included in the World's Most Ethical Companies® list for the sixth consecutive year.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is It Time To Reassess Linde (LIN) After Its Strong Multi Year Share Price Run?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-linde-lin-strong-011234992.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T01:12:34+00:00",
+      "summary": "If you are wondering whether Linde shares offer good value at around US$494.84, it helps to step back and look at what the recent price action and fundamentals are really telling you. The stock has se",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "FuelCell Energy's Tech Push Reshapes Hydrogen Economics",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/fuelcell-energys-tech-push-reshapes-121900369.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:19:00+00:00",
+      "summary": "FCEL's solid oxide electrolyzers and tri-generation systems target better hydrogen economics via efficiency, on-site output and nuclear integration.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Will Linde (LIN) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/linde-lin-beat-estimates-again-161002293.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:10:02+00:00",
+      "summary": "Linde (LIN) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why Investors Need to Take Advantage of These 2 Basic Materials Stocks Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-investors-advantage-2-basic-130003904.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:00:03+00:00",
+      "summary": "The Zacks Earnings ESP is a great way to find potential earnings surprises. Why investors should take advantage now.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

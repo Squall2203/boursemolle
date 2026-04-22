@@ -1,0 +1,53 @@
+{
+  "ticker": "6902.T",
+  "last_updated": "2026-04-22T13:54:15.243453+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Japan Automakers Face Aluminum Crunch As Prices Jump 13%",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/japan-automakers-face-aluminum-crunch-193412294.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:34:12+00:00",
+      "summary": "Middle East supply disruptions force production cuts and alternative sourcing across Japan's auto sector",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Should Value Investors Buy Denso (DNZOY) Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/value-investors-buy-denso-dnzoy-134002843.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:40:02+00:00",
+      "summary": "Here at Zacks, our focus is on the proven Zacks Rank system, which emphasizes earnings estimates and estimate revisions to find great stocks. Nevertheless, we are always paying attention to the latest",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Denso (DNZOY) Upgraded to Buy: Here's Why",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/denso-dnzoy-upgraded-buy-heres-160004035.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T16:00:04+00:00",
+      "summary": "Denso (DNZOY) might move higher on growing optimism about its earnings prospects, which is reflected by its upgrade to a Zacks Rank #2 (Buy).",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Are Investors Undervaluing Denso (DNZOY) Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-undervaluing-denso-dnzoy-now-134002932.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T13:40:02+00:00",
+      "summary": "Here at Zacks, our focus is on the proven Zacks Rank system, which emphasizes earnings estimates and estimate revisions to find great stocks. Nevertheless, we are always paying attention to the latest",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rohm, Toshiba, Mitsubishi Electric to begin power chip integration talks, Nikkei says",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/rohm-toshiba-mitsubishi-elec-begin-085637172.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T08:56:37+00:00",
+      "summary": "Japan's Rohm, Toshiba and Mitsubishi Electric will start talks to integrate their power semiconductor businesses to ‌form the world's second-biggest power chip group after Germany's Infineon, ‌the Nik",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

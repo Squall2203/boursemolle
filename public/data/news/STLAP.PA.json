@@ -1,0 +1,53 @@
+{
+  "ticker": "STLAP.PA",
+  "last_updated": "2026-04-22T11:38:11.696034+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Aisin contract manufacturing Mazda 6-speed auto transmission in US",
+      "url": "https://www.just-auto.com/news/aisin-contract-manufacturing-mazda-6-speed-auto-transmission-in-us/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:07:55+00:00",
+      "summary": "Aisin says it is promoting local production that meets customer needs globally.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Introducing Mopaw From Mopar: Experts Equipping Four Paws and Four Wheels",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/introducing-mopaw-mopar-experts-equipping-153000938.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:30:00+00:00",
+      "summary": "Introducing Mopaw From Mopar: Experts Equipping Four Paws and Four Wheels",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Electra Vehicles, Inc. and Iron Horse Acquisition II Corp. (Nasdaq: IRHO) Announce a Definitive Business Combination Agreement to Create the World's First Publicly Traded AI Battery Intelligence Company",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/electra-vehicles-inc-iron-horse-132500486.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:25:00+00:00",
+      "summary": "BOSTON & BOCA RATON, Fla., April 21, 2026--Electra Vehicles and Iron Horse Acquisition II (Nasdaq: IRHO) announce a agreement creating the world's first public AI Battery Intelligence Company",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stellantis fleet chief Jeff Hines leaves company amid leadership changes",
+      "url": "https://www.freep.com/story/money/cars/stellantis/2026/04/21/stellantis-jeff-hines-fleet-executive-leadership-departures/89701738007/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:24:47+00:00",
+      "summary": "Stellantis' fleet operations leader, Jeff Hines, has left the company, adding to recent leadership changes at the automaker.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Microsoft Deepens Industrial AI Role With Stellantis And Hannover Messe Deals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-deepens-industrial-ai-role-120637799.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:06:37+00:00",
+      "summary": "Microsoft (NasdaqGS:MSFT) and Stellantis agreed a five year collaboration to co-develop over 100 AI and cybersecurity projects and modernize Stellantis' digital infrastructure with Microsoft Azure. Th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

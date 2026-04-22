@@ -1,0 +1,53 @@
+{
+  "ticker": "MCD",
+  "last_updated": "2026-04-22T12:53:47.424770+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Are consumers finally cracking under the weight of $4 gas?",
+      "url": "https://finance.yahoo.com/news/are-consumers-finally-cracking-under-the-weight-of-4-gas-111859680.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:18:59+00:00",
+      "summary": "The warning signals from the consumer mount.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "McDonald’s UK boss says ‘hard to do business’ but will keep investing in workers",
+      "url": "https://uk.finance.yahoo.com/news/mcdonald-uk-boss-says-hard-230100968.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T23:01:00+00:00",
+      "summary": "The firm has unveiled its largest paid work experience programme to help tackle rising youth unemployment.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Under $3 Deals and $4 Bundles: McDonald’s Doubles Down on Value to Win Back Diners.",
+      "url": "https://finance.yahoo.com/m/7503c755-f8e7-3de9-86c6-f1b042bb4102/under-%243-deals-and-%244.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:18:00+00:00",
+      "summary": "The fast-food giant is up against diminishing returns from promotions, potential margin compression, and rising costs.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "McDonald’s Q1 profit seen slightly below estimates as Jefferies trims sales outlook",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090942/mcdonald-s-q1-profit-seen-slightly-below-estimates-as-jefferies-trims-sales-outlook-1090942.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:49:00+00:00",
+      "summary": "McDonald's Corp (NYSE:MCD, XETRA:MDO) is expected to report first-quarter earnings slightly below Wall Street expectations, as analysts at Jefferies trimmed their sales forecasts on signs of softer co",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dutch Bros' Q1 Beat May Lift Full-Year 2026 Guidance, Competition Remains an Overhang, RBC Says",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dutch-bros-apos-q1-beat-154135579.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:41:35+00:00",
+      "summary": "Dutch Bros' (BROS) Q1 beat could allow higher full-year 2026 guidance, but competition remains the p",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

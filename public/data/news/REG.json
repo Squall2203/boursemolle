@@ -1,0 +1,53 @@
+{
+  "ticker": "REG",
+  "last_updated": "2026-04-22T13:13:38.122863+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "PECO vs. REG: Which Stock Is the Better Value Option?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/peco-vs-reg-stock-better-154002099.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:40:02+00:00",
+      "summary": "PECO vs. REG: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Regency Centers' Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://www.barchart.com/story/news/1301838/regency-centers-quarterly-earnings-preview-what-you-need-to-know?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T17:18:04+00:00",
+      "summary": "Regency Centers is ready to release its fiscal first-quarter earnings this month, and analysts project a single-digit FFO rise.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Regency Centers (REG) Offering Value After Recent Gains In Retail REIT Sentiment?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/regency-centers-reg-offering-value-230921817.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T23:09:21+00:00",
+      "summary": "Wondering if Regency Centers at around US$77.86 is offering solid value or if most of the upside is already reflected in the price? This breakdown is designed to help you make sense of where it stands",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Realty Income's $14T TAM: Can Partnerships and Scale Unlock Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/realty-incomes-14t-tam-partnerships-152300082.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T15:23:00+00:00",
+      "summary": "O eyes a $14T market, using partnerships, scale and capital strategies to expand beyond traditional net lease into a global growth platform.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why Is Regency Centers Corporation (REG) In Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-regency-centers-corporation-reg-142802571.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T14:28:02+00:00",
+      "summary": "Regency Centers Corporation (NASDAQ:REG) is among the 14 Most Profitable Real Estate Stocks Right Now. On March 24, Scotiabank raised its price target on Regency Centers Corporation (NASDAQ:REG) to $8",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

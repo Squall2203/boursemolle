@@ -1,0 +1,53 @@
+{
+  "ticker": "SRG.MI",
+  "last_updated": "2026-04-22T12:15:02.718093+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Snam SpA (SNMRF) Full Year 2025 Earnings Call Highlights: Strong Financial Performance Amid ...",
+      "url": "https://finance.yahoo.com/news/snam-spa-snmrf-full-2025-010033644.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-14T01:00:33+00:00",
+      "summary": "Snam SpA (SNMRF) reports robust EBITDA growth and strategic investments while navigating geopolitical uncertainties and regulatory impacts.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why The Narrative Around Snam Is Shifting As Growth Lags But Valuation Edges Higher",
+      "url": "https://finance.yahoo.com/news/why-narrative-around-snam-shifting-050830700.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-16T05:08:30+00:00",
+      "summary": "Snam’s fair value estimate has edged up from €5.54 to €5.61 per share, a small but telling shift that reflects a slightly more constructive view on its long term prospects. While the discount rate is ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Snam to buy Igneo’s entire stake in Offshore LNG Toscana",
+      "url": "https://www.offshore-technology.com/news/snam-to-buy-igneo-olt/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-12T11:59:19+00:00",
+      "summary": "The transaction will increase Snam’s ownership in OLT to 97.3%.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Snam SpA (SNMRF) Q3 2025 Earnings Call Highlights: Strategic Growth Amid Regulatory Challenges",
+      "url": "https://finance.yahoo.com/news/snam-spa-snmrf-q3-2025-230040284.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-06T23:00:40+00:00",
+      "summary": "Snam SpA (SNMRF) reports increased exports and EBITDA growth, while navigating regulatory hurdles and investment opportunities in energy transition.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Energy tycoon to build giant gas storage site to prevent UK blackouts",
+      "url": "https://uk.finance.yahoo.com/news/energy-tycoon-build-giant-gas-043000326.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-22T04:30:00+00:00",
+      "summary": "An Irish entrepreneur has unveiled plans to build a vast new gas storage site in the eastern Irish Sea to help protect Britain from the threat of blackouts.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

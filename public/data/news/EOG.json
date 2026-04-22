@@ -1,0 +1,53 @@
+{
+  "ticker": "EOG",
+  "last_updated": "2026-04-22T13:03:01.552774+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SLB Gears Up to Report Q1 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/slb-gears-report-q1-earnings-154600711.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:46:00+00:00",
+      "summary": "SLB heads into Q1 2026 earnings with estimates falling, as weak early-quarter oil prices offset a late-quarter surge boosting demand.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "ExxonMobil vs. EOG: The Better Bet as Oil Prices Stay Elevated",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/exxonmobil-vs-eog-better-bet-123900099.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:39:00+00:00",
+      "summary": "Oil above $85 has lifted XOM and EOG; valuation and dividends show why the article leans toward one stock now.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "EOG Resources Quarterly Earnings Preview: What You Need to Know",
+      "url": "https://www.barchart.com/story/news/1420161/eog-resources-quarterly-earnings-preview-what-you-need-to-know?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:41:15+00:00",
+      "summary": "EOG Resources is gearing up to announce its Q1 results by early May, and analysts expect its EPS to rise in the low single digits.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EOG Resources (EOG) Price Target Trimmed by $8",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/eog-resources-eog-price-target-181933286.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T18:19:33+00:00",
+      "summary": "EOG Resources, Inc. (NYSE:EOG) is included among the 12 Most Undervalued Natural Gas Stocks to Buy Now. EOG Resources, Inc. (NYSE:EOG) is one of the largest crude oil and natural gas exploration and p",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 Under‑the‑Radar Energy Stocks Quietly Benefiting From Trump's Push to Reshore Supply Chains",
+      "url": "https://www.fool.com/investing/2026/04/18/under-radar-energy-stocks-benefit-trump-reshore/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T00:50:20+00:00",
+      "summary": "These stocks might not be household names, but successful investments don't need to win popularity contests.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

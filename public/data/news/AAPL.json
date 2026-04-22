@@ -1,0 +1,53 @@
+{
+  "ticker": "AAPL",
+  "last_updated": "2026-04-22T12:48:13.555377+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Apple's incoming CEO faces a fresh set of marketing challenges",
+      "url": "https://www.businessinsider.com/apples-incoming-ceo-faces-a-fresh-set-of-marketing-challenges-2026-4",
+      "source": "businessinsider.com",
+      "published_at": "2026-04-22T11:40:01+00:00",
+      "summary": "Apple's John Ternus will inherit a brand in fine shape from Tim Cook. The dilemma: Is Apple at a peak? Apple's incoming CEO pick is a bet on going back to its hardware roots, but that could be less of",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
+      "url": "https://www.fool.com/investing/2026/04/22/ranking-magnificent-seven-most-to-least-attractive/",
+      "source": "fool.com",
+      "published_at": "2026-04-22T11:26:00+00:00",
+      "summary": "Among Nvidia, Alphabet, Apple, Microsoft, Amazon, Meta Platforms, and Tesla, there are two screaming bargains and one pricey company whose valuation can't be justified. Key PointsThe Magnificent Seven",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "J.P. Morgan: Apple will beat its own bullish guidance next week",
+      "url": "https://www.ped30.com/2026/04/22/apple-jpmorgan-beat-q22026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apple-jpmorgan-beat-q22026",
+      "source": "ped30.com",
+      "published_at": "2026-04-22T11:25:35+00:00",
+      "summary": "\"Our expectations for March-Q (F2Q) earnings include beats on revenue relative to the telegraphed outlook, helped by both better demand for iPhones... as well as better demand for Macs.\" — Analyst Sam",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Apple Watch Series 11 vs. Series 10: How These Nearly Identical Watches Compare",
+      "url": "https://www.cnet.com/tech/mobile/apple-watch-series-11-vs-series-10-how-these-nearly-identical-watches-compare/",
+      "source": "cnet.com",
+      "published_at": "2026-04-22T11:15:47+00:00",
+      "summary": "You might think Apple forgot to improve its latest flagship Apple Watch, but there are some differences from last year's model.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Warranty in india - With this dent will apple still give me warranty on my phone ...",
+      "url": "https://www.reddit.com/r/iphone/comments/1ssi91h/warranty_in_india/",
+      "source": "reddit.com",
+      "published_at": "2026-04-22T11:05:45+00:00",
+      "summary": "With this dent will apple still give me warranty on my phone in bangalore. Device working fine no issues at all just curios if anything goes wrong within the warranty period will apple still honour th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

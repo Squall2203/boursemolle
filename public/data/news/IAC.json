@@ -1,0 +1,53 @@
+{
+  "ticker": "IAC",
+  "last_updated": "2026-04-22T13:22:28.379685+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "IAC Inc. (NASDAQ:IAC) Given Average Recommendation of \"Moderate Buy\" by Brokerages",
+      "url": "https://www.marketbeat.com/instant-alerts/iac-inc-nasdaqiac-given-average-recommendation-of-moderate-buy-by-brokerages-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T06:09:59+00:00",
+      "summary": "IAC Inc. (NASDAQ:IAC - Get Free Report) has been given a consensus recommendation of \"Moderate Buy\" by the fifteen analysts that are currently covering the company, Marketbeat.com reports. One equitie",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Terraform 1.14 — The Complete Guide to List Resources (.tfquery.hcl), Actions Block, and `terraform query`: IaC's First Paradigm Shift in 5 Years",
+      "url": "https://dev.to/x4nent/terraform-114-the-complete-guide-to-list-resources-tfqueryhcl-actions-block-and-terraform-350j",
+      "source": "dev.to",
+      "published_at": "2026-04-22T01:15:37+00:00",
+      "summary": "On November 19, 2025, HashiCorp shipped Terraform v1.14.0, and on April 20, 2026 they released the v1.14.9 patch that fixes a Stacks plugin installation bug. This minor release is not just a feature b",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "IAC (NASDAQ:IAC) Sets New 52-Week High - What's Next?",
+      "url": "https://www.marketbeat.com/instant-alerts/iac-nasdaqiac-sets-new-52-week-high-whats-next-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T15:09:04+00:00",
+      "summary": "IAC (NASDAQ:IAC) Sets New 1-Year High - Here's What Happened",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "IAC: Sum-Of-The-Parts Suggests Shares Remain Undervalued | $MGM $IAC",
+      "url": "https://seekingalpha.com/article/4891259-iac-sum-of-the-parts-suggests-shares-remain-undervalued",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-16T15:09:30+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "IAC Inc. Has Surged Over 25% In Six Months, Here Is Why?",
+      "url": "https://www.insidermonkey.com/blog/iac-inc-has-surged-over-25-in-six-months-here-is-why-1739163/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-16T06:46:03+00:00",
+      "summary": "IAC Inc. (NASDAQ:IAC) is one of the 10 Best Internet Content and Information Stocks to Buy. Over the past six months, IAC Inc. (NASDAQ:IAC) has surged over 25%, and in the last month, the shares rose ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

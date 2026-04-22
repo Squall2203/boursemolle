@@ -1,0 +1,53 @@
+{
+  "ticker": "RAND.AS",
+  "last_updated": "2026-04-22T12:05:10.321682+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Randstad N.V. (AMS:RAND) Stock Goes Ex-Dividend In Just Three Days",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/randstad-n-v-ams-rand-043502153.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T04:35:02+00:00",
+      "summary": "Randstad N.V. ( AMS:RAND ) is about to trade ex-dividend in the next three days. Typically, the ex-dividend date is two...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "U.S. Demand for Skilled Trades Grows 3x Faster than Professional Roles",
+      "url": "https://finance.yahoo.com/economy/articles/u-demand-skilled-trades-grows-120000284.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T12:00:00+00:00",
+      "summary": "While today's discussions focus on how AI might automate desk jobs, the current reality overlooks the demand for the skilled trade talent required to train, implement and sustain this technology. New ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AI boom is fueling demand for skilled trades—and demand for technicians, HVAC workers, and electricians is soaring, with six-figure salaries to match",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ai-boom-fueling-demand-skilled-160828693.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-20T16:08:28+00:00",
+      "summary": "Big Tech is cutting office jobs while also fueling a surge in six-figure skilled trade roles for Gen Z—demand for technicians, HVAC workers, and electricians is soaring.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Worker Confidence in Tech Skills Drops 14 Percentage Points Annually as Employer Optimism and Talent Reality Clash",
+      "url": "https://finance.yahoo.com/news/worker-confidence-tech-skills-drops-120000784.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T12:00:00+00:00",
+      "summary": "New research from Randstad USA reveals shifting workplace priorities amid a landscape dominated by AI adoption and economic uncertainty. These findings are part of Randstad's Workmonitor 2026 report, ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Cloudstaff Strengthens North American Leadership with Appointment of Macon Albertson as General Manager",
+      "url": "https://finance.yahoo.com/news/cloudstaff-strengthens-north-american-leadership-025400277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T02:54:00+00:00",
+      "summary": "Cloudstaff, a global leader in virtual staffing solutions, announces the appointment of Macon Albertson as General Manager, North America. Based in Charlotte, North Carolina, he will head Cloudstaff's",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "TKA.DE",
+  "last_updated": "2026-04-22T11:57:36.894826+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "A Look At Thyssenkrupp (XTRA:TKA) Valuation After A Steep Recent Share Price Slide",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-thyssenkrupp-xtra-tka-valuation-131138323.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T13:11:38+00:00",
+      "summary": "thyssenkrupp (XTRA:TKA) has drawn fresh attention after recent trading left the shares with a one-month return of a 30% decline and a past three-month return of a 20% decline, prompting closer scrutin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "[Latest] Global Lactic Acid and Polylactic Acid PLA Market Size/Share Worth USD 12.96 Billion by 2035 at a 11.9% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/latest-global-lactic-acid-polylactic-180000076.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T18:00:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Lactic Acid and Polylactic Acid PLA Market size & share revenue was v",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is It Too Late To Consider Thyssenkrupp (XTRA:TKA) After Its Transformation-Fueled Rally?",
+      "url": "https://finance.yahoo.com/news/too-consider-thyssenkrupp-xtra-tka-221704747.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T22:17:04+00:00",
+      "summary": "Curious whether thyssenkrupp is still good value after a strong run, or if the easy gains are behind it? This article breaks down what the current share price might be implying about the company. The ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Smart Adaptive Elevator Algorithm Research Report 2026-2035: A $6.99 Billion Market by 2030 with Hitachi, Thyssenkrupp, Mitsubishi Electric, Toshiba, and Otis Worldwide Leading",
+      "url": "https://finance.yahoo.com/news/smart-adaptive-elevator-algorithm-research-151700546.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T15:17:00+00:00",
+      "summary": "The smart adaptive elevator algorithm market offers significant opportunities due to rising adoption of AI-driven systems, cloud-based management, and smart building integration. Increased demand is d",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Elevator Safety System Analysis Report 2026-2035: A $21.98 Billion Market by 2030 with Hitachi, ThyssenKrupp, Mitsubishi Electric, and Otis Leading",
+      "url": "https://finance.yahoo.com/news/elevator-safety-system-analysis-report-151500038.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T15:15:00+00:00",
+      "summary": "The elevator safety system market offers opportunities from urban skyscraper growth, stricter safety standards, smart building trends, and digital tech integration. Demand for smart systems, IoT solut",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "LLOY.L",
+  "last_updated": "2026-04-22T12:25:06.999492+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "UK’s FCA names eight banks for AI testing",
+      "url": "https://www.retailbankerinternational.com/news/fca-ai-testing-eight-banks/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:54:28+00:00",
+      "summary": "The programme aims setto help participating firms examine issues such as risk controls and live oversight to use AI in services.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "JPMorgan Raises its Price Target on Lloyds Banking (LYG) to 121 GBp",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-raises-price-target-lloyds-103942583.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:39:42+00:00",
+      "summary": "Lloyds Banking Group plc (NYSE:LYG) is one of the 10 Fastest-Growing Financial Stocks to Invest In. On April 13, 2026, JPMorgan analyst Sheel Shah has raised the price target on Lloyds Banking Group p",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Lloyds pilots AI investment guidance tool as UK regulator studies impact",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/lloyds-pilots-ai-investment-guidance-123026045.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:30:26+00:00",
+      "summary": "Lloyds Banking Group  has become the first UK lender to introduce an artificial intelligence tool to help customers make investment decisions, even as AI's impact on the ‌tightly regulated financial a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "New Lloyds Banking Group partnership aims to cut hassle for home buyers",
+      "url": "https://uk.finance.yahoo.com/news/lloyds-banking-group-partnership-aims-100218845.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:02:18+00:00",
+      "summary": "The digital service, involving Lloyds, Connells Group and conveyancing provider LMS, aims to reduce delays and uncertainty when buying a home.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Lloyds taps chief data and AI officer",
+      "url": "https://www.ciodive.com/news/lloyds-taps-chief-data-ai-officer/817991/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:31:44+00:00",
+      "summary": "Sameer Gupta will join Lloyds Banking Group in June, the latest in a string of AI-focused appointments across the financial services industry.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

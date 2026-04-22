@@ -1,0 +1,53 @@
+{
+  "ticker": "LAND.L",
+  "last_updated": "2026-04-22T12:30:30.051213+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "How The Investment Story Is Shifting For Land Securities Group (LSE:LAND)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investment-story-shifting-land-securities-170605678.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T17:06:05+00:00",
+      "summary": "The latest update around Land Securities Group highlights small shifts in price targets, with fair value estimates edging to £7.01 from £7.03 and some houses moving headline targets such as £6.70 from",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Story On Landsec (LSE:LAND) Is Shifting As Analysts Turn More Cautious",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/story-landsec-lse-land-shifting-070606226.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T07:06:06+00:00",
+      "summary": "Price targets around £6.70 sit just below a fair value estimate that has edged from £7.05 to about £7.03 per share, signalling only a slight adjustment in how analysts are framing Land Securities Grou",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "BP moves back to central London as it chooses Bankside development for new global HQ",
+      "url": "https://www.standard.co.uk/business/bp-moves-back-central-london-chooses-bankside-global-hq-b1275584.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T10:32:30+00:00",
+      "summary": "Energy giant will occupy at 15 storeys of the Ink building at Timer Square",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Analysts Are Rewriting The Story For Land Securities Group (LSE:LAND) After Target Cuts",
+      "url": "https://finance.yahoo.com/news/why-analysts-rewriting-story-land-190736564.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-15T19:07:36+00:00",
+      "summary": "What Has Actually Changed in the Latest Price Target Update? Recent updates on Land Securities Group are less about ripping up the script and more about tightening the screws on existing valuation mod",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Property sector hit as investors bet AI can replace estate agents",
+      "url": "https://www.telegraph.co.uk/business/2026/02/12/property-sector-investors-bet-ai-replace-estate-agents/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T17:40:52+00:00",
+      "summary": "Property companies have been caught up in the AI sell-off as traders bet on chatbots replacing estate agents.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

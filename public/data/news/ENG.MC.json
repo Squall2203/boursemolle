@@ -1,0 +1,53 @@
+{
+  "ticker": "ENG.MC",
+  "last_updated": "2026-04-22T12:11:34.438572+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Enagás Expands Into France With Teréga Stake, Refocuses Hydrogen Strategy",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/enag-expands-france-ter-ga-075922523.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:59:22+00:00",
+      "summary": "Enagás is acquiring a 31.5% stake in France’s Teréga while divesting part of its renewable arm to sharpen its focus on regulated infrastructure and hydrogen development.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Enagás (BME:ENG) Valuation After Recent Gradual Share Price Strength",
+      "url": "https://finance.yahoo.com/news/assessing-enag-bme-eng-valuation-021155595.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T02:11:55+00:00",
+      "summary": "With no single headline event on the calendar, Enagás (BME:ENG) is drawing attention after a recent share move. This is encouraging investors to reconsider how its current valuation lines up with its ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "H2Pro and Doral Hydrogen Partner on World's First Entirely Off-Grid Solar-to-Hydrogen Project for Gas Grid Blending in Spain",
+      "url": "https://finance.yahoo.com/news/h2pro-doral-hydrogen-partner-worlds-103200643.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T10:32:00+00:00",
+      "summary": "H2Pro and Doral Hydrogen announced today the signing of an agreement during the European Hydrogen Energy Conference (EHEC) to co-develop a solar-powered hydrogen production project in Extremadura, Spa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Enagás selects Emerson for digital management of Spain’s gas grid",
+      "url": "https://www.offshore-technology.com/news/enagas-selects-emerson-for-digital-management-of-spains-gas-grid/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-18T11:22:00+00:00",
+      "summary": "Enagás is utilising Emerson's AspenTech digital grid management solutions to operate and improve Spain's national gas transmission network.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Enagas SA (ENGGF) Full Year 2025 Earnings Call Highlights: Strong Financial Performance Amid ...",
+      "url": "https://finance.yahoo.com/news/enagas-sa-enggf-full-2025-150049076.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T15:00:49+00:00",
+      "summary": "Enagas SA (ENGGF) surpasses 2025 targets with robust financial results and strategic progress in green hydrogen, despite regulatory uncertainties.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

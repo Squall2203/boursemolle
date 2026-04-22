@@ -1,0 +1,53 @@
+{
+  "ticker": "PNDORA.CO",
+  "last_updated": "2026-04-22T12:45:13.544754+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Pandora reduces treasury shares to less than 5% of share capital",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pandora-reduces-treasury-shares-less-104200857.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T10:42:00+00:00",
+      "summary": "In accordance with Section 31 of the Capital Market Act, it is hereby announced that Pandora A/S as of today owns a total of 199,368 treasury shares of nominally DKK 1, hence less than 5% of the total",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Reduction of Pandora A/S’ share capital",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reduction-pandora-share-capital-084400862.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T08:44:00+00:00",
+      "summary": "At Pandora A/S’ Annual General Meeting on 11 March 2026, it was resolved to reduce theCompany’s share capital with a nominal amount of DKK 4,000,000 by cancellation of 4,000,000 treasury shares of DKK",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Course of Annual General Meeting",
+      "url": "https://finance.yahoo.com/news/course-annual-general-meeting-115600172.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T11:56:00+00:00",
+      "summary": "On 11 March 2026 the Annual General Meeting (the “Meeting”) in Pandora A/S (the “Company”) was held. The Meeting considered the following agenda items. The Board of Directors' (the “Board”) report on ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Trading in Pandora A/S shares by Board members, Executives and Associated persons",
+      "url": "https://finance.yahoo.com/news/trading-pandora-shares-board-members-082400494.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T08:24:00+00:00",
+      "summary": "Pandora A/S has been notified of transactions in the Pandora A/S share by a person discharging managerial responsibilities and/or closely associated persons. Lars Sandahl Sørensen, Board member of Pan",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Major shareholder announcement",
+      "url": "https://finance.yahoo.com/news/major-shareholder-announcement-094300885.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-18T09:43:00+00:00",
+      "summary": "In accordance with section 30 of the Capital Markets Act, Pandora A/S hereby announces that BlackRock, Inc. has notified the company that it now holds 6,888,727 shares (previously 6,729,003 shares), c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

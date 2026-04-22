@@ -1,0 +1,53 @@
+{
+  "ticker": "WMT",
+  "last_updated": "2026-04-22T12:50:27.914525+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Sam's Club introduces a one-hour delivery option",
+      "url": "https://seekingalpha.com/news/4577678-sams-club-introduces-one-hour-delivery-option",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T10:58:14+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Osborne Partners Capital Management LLC Decreases Holdings in Walmart Inc. $WMT",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-osborne-partners-capital-management-llc-decreases-holdings-in-walmart-inc-wmt-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T10:06:40+00:00",
+      "summary": "Osborne Partners Capital Management LLC cut its holdings in shares of Walmart Inc. (NASDAQ:WMT - Free Report) by 11.3% in the 4th quarter, according to the company in its most recent filing with the S",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Back to the Roots Scales Regenerative Movement Nationwide; Expanding Pioneering Soil Health Set to Walmart Stores for Year Two",
+      "url": "https://www.globenewswire.com/en/news-release/2026/04/22/3278753/0/en/Back-to-the-Roots-Scales-Regenerative-Movement-Nationwide-Expanding-Pioneering-Soil-Health-Set-to-Walmart-Stores-for-Year-Two.html",
+      "source": "globenewswire.com",
+      "published_at": "2026-04-22T10:05:00+00:00",
+      "summary": "The expanding Soil Health Set by Back to the Roots & Walmart brings the tools of large-scale regenerative organic farming to millions of home gardeners nationwide The expanding Soil Health Set by Back",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sam’s Club launches one-hour US delivery with shoppers in ‘on-demand phase’",
+      "url": "https://www.ft.com/content/95a0561d-9ec1-4d7a-8b4e-221c10d0b76a",
+      "source": "ft.com",
+      "published_at": "2026-04-22T10:00:06+00:00",
+      "summary": "Walmart-owned warehouse chain will compete for market share from rivals Amazon and Costco",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Asda deploys Definely’s contract review technology to innovate its legal workflows",
+      "url": "https://retailtimes.co.uk/asda-deploys-definelys-contract-review-technology-to-innovate-its-legal-workflows/",
+      "source": "retailtimes.co.uk",
+      "published_at": "2026-04-22T08:57:11+00:00",
+      "summary": "Discover what's happening in retail today, Retail Times publishes international & UK retail news covering products, data, tech, packaging, people, research, comment and much more. Definely, an AI-powe",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "CHRW",
+  "last_updated": "2026-04-22T13:16:45.702829+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "C.H. Robinson to Report Q1 Earnings: What's in the Cards?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/c-h-robinson-report-q1-142800313.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:28:00+00:00",
+      "summary": "CHRW heads into Q1 earnings facing weak freight demand, pricing pressure and lower volumes, with cost controls emerging as a key offset.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "After CBS report, C.H. Robinson seeks to deflect safety responsibility to FMCSA",
+      "url": "https://finance.yahoo.com/economy/policy/articles/cbs-report-c-h-robinson-173918340.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T17:39:18+00:00",
+      "summary": "A report by CBS on trucking and brokerages spurred a lengthy response from C.H. Robinson. The post After CBS report, C.H. Robinson seeks to deflect safety responsibility to FMCSA appeared first on Fre",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Will C.H. Robinson’s New Fuel Card Perks Reshape Its Margin Story and AI Edge (CHRW)?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/c-h-robinson-fuel-card-021039985.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T02:10:39+00:00",
+      "summary": "In early April 2026, C.H. Robinson Worldwide eased cost pressures for its network of contract carriers by launching the C.H. Robinson Fuel Card with waived application fees and free fuel cash advance ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Stocks making big moves this week: Richardson Electronics, Tesla, C.H. Robinson Worldwide, IPG Photonics, and Zscaler",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-making-big-moves-week-215044369.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T21:50:44+00:00",
+      "summary": "Check out the companies making headlines this week:",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 Cash-Producing Stocks That Fall Short",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-cash-producing-stocks-fall-214244209.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T21:42:44+00:00",
+      "summary": "Generating cash is essential for any business, but not all cash-rich companies are great investments. Some produce plenty of cash but fail to allocate it effectively, leading to missed opportunities.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "IPN.PA",
+  "last_updated": "2026-04-22T11:45:54.457702+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Elkedonia strengthens Board of Directors with appointment of Pierre d’Epenoux as Independent Chairman",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/elkedonia-strengthens-board-directors-appointment-063000631.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:30:00+00:00",
+      "summary": "Appointment strengthens Elkedonia's governance as the company continues its development and prepares for its next phases of growthPierre d’Epenoux is former CEO of ImCheck Therapeutics, a clinical-sta",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Ojemda® approved in the European Union as the first targeted therapy in relapsed or refractory pediatric low-grade glioma regardless of BRAF alteration",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/ojemda-approved-european-union-first-050000783.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:00:00+00:00",
+      "summary": "New treatment option for rare, life-altering pediatric brain tumors Less than 10% of new medicine approvals over the past five years have focused on pediatric diseases; Ojemda® (tovorafenib) represent",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Time To Reassess Ipsen (ENXTPA:IPN) After Its 65% One-Year Share Price Jump",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-ipsen-enxtpa-ipn-131314573.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-04T13:13:14+00:00",
+      "summary": "If you are wondering whether Ipsen's current share price reflects its real worth, this breakdown of the numbers is designed to help you frame that question clearly. The stock recently closed at €167.5",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ipsen announces that Beech Tree has obtained an exemption from the obligation to submit a public tender offer",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ipsen-announces-beech-tree-obtained-050000628.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T05:00:00+00:00",
+      "summary": "PARIS, FRANCE, 3 April 2026 — Ipsen (Euronext: IPN; ADR: IPSEY) announces that Beech Tree — which directly and indirectly holds 26.03% of Ipsen S.A.’s share capital and 33.05% of its voting rights — h",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GENFIT Reports Full-Year 2025 Financial Results and Provides Corporate Update",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/genfit-reports-full-2025-financial-163000850.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T16:30:00+00:00",
+      "summary": "2025 financial highlights: Cash and cash equivalents totaled €101.1 million as of December 31, 2025Revenues amounting to €65.4 million for the period ended December 31, 2025, including €43.6 million i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

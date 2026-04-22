@@ -1,0 +1,53 @@
+{
+  "ticker": "P911.DE",
+  "last_updated": "2026-04-22T11:54:33.538178+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "VELO3D and ANDRETTI PERFORMANCE PARTNER FOR 2026 IMSA MICHELIN PILOT CHALLENGE",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/velo3d-andretti-performance-partner-2026-133000279.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:30:00+00:00",
+      "summary": "Velo3D, Inc. (NASDAQ: VELO), an industry leading metal additive manufacturing company, will partner with Andretti Performance as an official sponsor and additive manufacturing technology provider for ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Todd Blue gets his Porsche store through 4 dealership purchase in California",
+      "url": "https://www.wardsauto.com/news/todd-blue-gets-his-porsche-store-through-4-dealership-purchase-in-californi/817860/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:00:00+00:00",
+      "summary": "The deal with Umansky Auto Group also included Audi, Land Rover and Honda dealerships in Livermore.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Porsche (XTRA:P911) Pricing Look Interesting After 3-Year 61% Share Price Decline?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/porsche-xtra-p911-pricing-look-050400850.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T05:04:00+00:00",
+      "summary": "Investors may be wondering whether Dr. Ing. h.c. F. Porsche is priced attractively right now, or if the current share price already reflects most of its potential value. The stock last closed at €41.4",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Volkswagen's first-quarter deliveries drop 4% on weak China, US",
+      "url": "https://finance.yahoo.com/video/volkswagens-first-quarter-deliveries-drop-120555376.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T12:05:55+00:00",
+      "summary": "STORY: Volkswagen reported a 4% fall in global deliveries in the first three months of the year.  The German auto giant was hit by weak demand in China and the U.S.  VW said first-quarter deliveries d",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Porsche deliveries tumble further in first quarter",
+      "url": "https://finance.yahoo.com/video/porsche-deliveries-tumble-further-first-093052924.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T09:30:52+00:00",
+      "summary": "STORY: Porsche AG's deliveries slumped further in the first three months of the year.  It saw sharp declines in key markets China and the US.  The German sports carmaker said Friday that global delive",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

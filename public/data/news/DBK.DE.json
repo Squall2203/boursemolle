@@ -1,0 +1,53 @@
+{
+  "ticker": "DBK.DE",
+  "last_updated": "2026-04-22T11:51:54.385450+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Iran War May Erase Most of Reeves’ Buffer, UK Study Says",
+      "url": "https://finance.yahoo.com/economy/policy/articles/iran-war-may-erase-most-064254975.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:42:54+00:00",
+      "summary": "(Bloomberg) -- The war in Iran could wipe out most of Rachel Reeves’ fiscal buffer, according to new research pointing to a £16 billion ($22 billion) hit to Britain’s public finances.Most Read from Bl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What Is Powering the Avis Short Squeeze? Inside the Math of a Supply-Demand Crisis.",
+      "url": "https://finance.yahoo.com/m/00de6749-f885-3726-a1f0-ac0c4a4f618f/what-is-powering-the-avis.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:44:00+00:00",
+      "summary": "One of the wildest short squeezes of recent years continues to play out in shares of  Avis Budget Group  as the stock of the rental-car company rose about 23% Monday to a record high, capping a more t",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "TSX Penny Stock Picks Alithya Group And 2 Other Promising Opportunities",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsx-penny-stock-picks-alithya-130508564.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:05:08+00:00",
+      "summary": "Amid a backdrop of mixed economic signals and market uncertainty, Canadian investors are navigating a landscape where the potential for growth remains intertwined with caution. Penny stocks, often rep",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Deutsche Bank self-reports potential Russian sanctions breach",
+      "url": "https://www.privatebankerinternational.com/news/deutsche-bank-russian-sanctions-breach/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:49:25+00:00",
+      "summary": "The German bank found its retail division accepted deposits over €100,000 from individuals sanctioned by the EU.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The BBVA (BME:BBVA) Investment Story Is Shifting As Street Views Diverge",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bbva-bme-bbva-investment-story-210416182.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T21:04:16+00:00",
+      "summary": "Banco Bilbao Vizcaya Argentaria’s modelled fair value has been trimmed slightly to €20.97 from €21.12, signalling a small reset in where the shares are seen as fairly priced. This tweak sits alongside",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

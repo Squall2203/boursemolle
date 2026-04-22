@@ -1,0 +1,53 @@
+{
+  "ticker": "AFL",
+  "last_updated": "2026-04-22T13:08:52.598762+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "BP and Sonic have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bp-sonic-highlighted-zacks-bull-131900664.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:19:00+00:00",
+      "summary": "BP and Sonic have been highlighted as Zacks Bull and Bear of the Day",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Berkshire Taps Yen Bonds: Does This Signal Confidence in Japan?",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/berkshire-taps-yen-bonds-does-180800958.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T18:08:00+00:00",
+      "summary": "BRK.B sells 272.3B in yen bonds, hedging currency risk and funding Japan bets as its trading-house stakes jump in value.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 Unpopular Stocks with Open Questions",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-unpopular-stocks-open-questions-104227001.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T10:42:27+00:00",
+      "summary": "When Wall Street turns bearish on a stock, it’s worth paying attention. These calls stand out because analysts rarely issue grim ratings on companies for fear their firms will lose out in other busine",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Aflac Insiders Sell US$8.7m Of Stock, Possibly Signalling Caution",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aflac-insiders-sell-us-8-120015184.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T12:00:15+00:00",
+      "summary": "In the last year, many Aflac Incorporated ( NYSE:AFL ) insiders sold a substantial stake in the company which may have...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is Aflac (AFL) Pricing Reflect Its Strong Multi‑Year Run And Mixed Valuation Signals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aflac-afl-pricing-reflect-strong-101016581.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T10:10:16+00:00",
+      "summary": "Investors may be wondering whether Aflac's share price lines up with its real worth, or if the market is missing something important about this insurer. Aflac's stock closed at US$113.07, with returns",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

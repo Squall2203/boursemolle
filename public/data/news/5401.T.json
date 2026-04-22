@@ -1,0 +1,53 @@
+{
+  "ticker": "5401.T",
+  "last_updated": "2026-04-22T13:48:44.353897+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Sony, Honda Motor, SoftBank, NEC Reportedly Form AI Joint Venture for Domestic Foundation Model",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/sony-honda-motor-softbank-nec-112432347.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T11:24:32+00:00",
+      "summary": "Sony (SONY), SoftBank, NEC and Honda Motor (HMC) have jointly established a new artificial intellige",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nucor (NUE) Shares Up Since Jim Cramer Advised Selling The Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nucor-nue-shares-since-jim-150353643.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T15:03:53+00:00",
+      "summary": "Nucor Corporation (NYSE:NUE) is one of the 20 Stocks Jim Cramer Wanted You To Sell & Immediately Get Out Of. Steel company Nucor Corporation (NYSE:NUE)’s shares are up by 57% over the past year and by",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Asahi Kasei, Nippon Steel, and Nippon Steel Trading Recycle Chlor-Alkali Electrolysis Cell Production Scrap Back into High-Quality Pure Titanium",
+      "url": "https://finance.yahoo.com/news/asahi-kasei-nippon-steel-nippon-123000048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T12:30:00+00:00",
+      "summary": "TOKYO, March 18, 2026--Asahi Kasei, Nippon Steel, and Nippon Steel Trading have launched a recycling initiative to convert titanium scrap into a raw material for titanium.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At Nippon Steel (TSE:5401) Valuation As P/S Signals Undervaluation Against DCF Caution",
+      "url": "https://finance.yahoo.com/news/look-nippon-steel-tse-5401-020655728.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T02:06:55+00:00",
+      "summary": "Nippon Steel (TSE:5401) has drawn fresh attention after recent share price swings, with the stock up 0.6% on the day but showing weaker performance over the week, month, and past 3 months. See our lat",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Steel Stocks Have Been Flying Higher. The Chart Says Another Monster Move Could Be Coming.",
+      "url": "https://www.barchart.com/story/news/537633/steel-stocks-have-been-flying-higher-the-chart-says-another-monster-move-could-be-coming?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T15:52:30+00:00",
+      "summary": "Investors need patience here, but steel stocks could once again be a source of shiny returns.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

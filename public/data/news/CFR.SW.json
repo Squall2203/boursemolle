@@ -1,0 +1,53 @@
+{
+  "ticker": "CFR.SW",
+  "last_updated": "2026-04-22T12:33:46.315197+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Iran tensions drag down UAE luxury retail sales – report",
+      "url": "https://www.retail-insight-network.com/news/iran-uae-luxury-retail-sales/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T10:59:25+00:00",
+      "summary": "Boutiques at the Mall of the Emirates recorded year-on-year sales declines of between 30% and 50% in March while overall footfall at the venue fell by 15%",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Fashion Stocks Zoom on Ceasefire in Iran",
+      "url": "https://wwd.com/business-news/financial/fashion-stocks-rise-iran-ceasefire-market-rally-1238893048/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T15:11:00+00:00",
+      "summary": "European luxury players were among the biggest gainers on Wednesday.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Swiss-U.S. trade talks to blow past March deadline amid tariff uncertainty",
+      "url": "https://finance.yahoo.com/economy/policy/articles/swiss-u-trade-talks-blow-102602002.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-29T10:26:02+00:00",
+      "summary": "Investing.com -- Trade negotiations between Switzerland and the United States will extend beyond the initial March target, according to Swiss President Guy Parmelin. The delay comes as both nations st",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Luxury and Contemporary Brands Are Competing for Prime Retail Space Across Europe",
+      "url": "https://wwd.com/business-news/retail/luxury-contemporary-brands-seek-prime-retail-europe-cities-1238685846/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T17:00:51+00:00",
+      "summary": "Space is increasingly scarce and rental prices are on the rise as brands race to open flagships and create worlds of their own.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Luxury Needs a Reboot, Say Guests at ‘The Front Row,’ a New Dinner Series for Industry Leaders",
+      "url": "https://wwd.com/fashion-news/fashion-features/luxury-reboot-front-row-dinner-series-top-female-leaders-1238685629/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T13:40:11+00:00",
+      "summary": "Cohosted by Caroline Pill and Charlotte Reeve of executive search firm Heidrick & Struggles, the first \"Front Row\" dinner took place in London with female executives from companies including Richemont",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

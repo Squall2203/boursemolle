@@ -1,0 +1,53 @@
+{
+  "ticker": "4502.T",
+  "last_updated": "2026-04-22T13:44:02.941412+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Takeda Ends Veritas In Silico Pact As mRNA Focus And Valuation Watched",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/takeda-ends-veritas-silico-pact-070746350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:07:46+00:00",
+      "summary": "Takeda Pharmaceutical (TSE:4502) has ended its collaborative research agreement with Veritas In Silico Inc. on mRNA targeted small molecule drugs. The decision concludes a research partnership that fo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "KROS 2026 Watchlist: 3 Catalysts That Could Reset Sentiment",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/kros-2026-watchlist-3-catalysts-154100806.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:41:00+00:00",
+      "summary": "Keros heads into 2026 with three key catalysts, including DMD study start, ALS regulatory talks, and Takeda progress, that could reshape investor sentiment.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "KROS Rinvatercept: What to Know Before DMD Phase II Starts",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/kros-rinvatercept-know-dmd-phase-152900356.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:29:00+00:00",
+      "summary": "KROS sharpens focus on rinvatercept as a phase II DMD study looms in 2026, shifting the story toward execution and high-stakes clinical catalysts.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "DNLI Gains 25.4% Year to Date: Should You Buy, Sell or Hold the Stock?",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/dnli-gains-25-4-date-173800744.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:38:00+00:00",
+      "summary": "DNLI secures FDA nod for Avlayah, a first-in-decades Hunter syndrome therapy, but pipeline risks and Takedas exit complicate the outlook.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Does ADMA Biologics' Growth Story Outweigh Short-Seller Concerns?",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/does-adma-biologics-growth-story-165400016.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T16:54:00+00:00",
+      "summary": "ADMA stock slides after a short report sparks volatility, but management pushes back, citing strong Asceniv demand and steady fundamentals.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

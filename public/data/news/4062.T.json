@@ -1,0 +1,53 @@
+{
+  "ticker": "4062.T",
+  "last_updated": "2026-04-22T13:53:50.685975+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Easing Crude Oil Prices Lift Asian Stock Markets",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/easing-crude-oil-prices-lift-103320080.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:33:20+00:00",
+      "summary": "Asian stock markets gained ground on Wednesday, as traders noted easing global crude prices and weig",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Beijing Economic Reports, Strait of Hormuz Outlook Lift Asian Stock Markets",
+      "url": "https://finance.yahoo.com/news/beijing-economic-reports-strait-hormuz-103933207.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T10:39:33+00:00",
+      "summary": "Asian stock markets largely gained Monday following solid economic releases from Beijing and reports",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Has Ibiden (TSE:4062) Run Too Far After Its 323% One Year Share Price Surge?",
+      "url": "https://finance.yahoo.com/news/ibiden-tse-4062-run-too-043124810.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T04:31:24+00:00",
+      "summary": "If you are wondering whether IbidenLtd's share price still reflects reasonable value after a strong run, this article will help you unpack what the current market price might be implying. The stock la",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing Ibiden (TSE:4062) Valuation After A Sharp One Day Share Price Move",
+      "url": "https://finance.yahoo.com/news/assessing-ibiden-tse-4062-valuation-031056364.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T03:10:56+00:00",
+      "summary": "IbidenLtd (TSE:4062) came into focus after a sharp 10.0% one day move, prompting investors to reassess how its recent share performance and fundamentals might fit into a broader portfolio approach. Se",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ibiden Capital Plan Deepens AI Substrate Exposure After Strong Share Gains",
+      "url": "https://finance.yahoo.com/news/ibiden-capital-plan-deepens-ai-231402606.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T23:14:02+00:00",
+      "summary": "IbidenLtd (TSE:4062) has approved a major capital investment plan to expand production of high performance IC package substrates for AI and high performance servers. The plan involves a multi year bui",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

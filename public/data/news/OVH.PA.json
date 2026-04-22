@@ -1,0 +1,53 @@
+{
+  "ticker": "OVH.PA",
+  "last_updated": "2026-04-22T11:47:32.806576+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "The DEEP, OVHcloud and Clever Cloud consortium is selected for the sovereign cloud for European institutions",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/deep-ovhcloud-clever-cloud-consortium-154000645.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:40:00+00:00",
+      "summary": "Roubaix – April 17th 2026 – The consortium comprised of DEEP by POST Luxembourg Group, OVHcloud and Clever Cloud today announces that it has been selected by the European Commission as part of a major",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing OVH Groupe (ENXTPA:OVH) Valuation After Mixed Share Performance And Modest Net Loss",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-ovh-groupe-enxtpa-ovh-060535163.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T06:05:35+00:00",
+      "summary": "Why OVH Groupe is Drawing Attention Now OVH Groupe (ENXTPA:OVH) has been catching investor attention after a recent period of mixed share performance, with gains over the past 3 months and year to dat",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Netic and OVHcloud Forge Strategic Partnership to Bolster Digital Sovereignty for Danish Enterprises, Public & Highly Regulated Sectors",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/netic-ovhcloud-forge-strategic-partnership-050000045.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T05:00:00+00:00",
+      "summary": "Press ReleaseNetic and OVHcloud Forge Strategic Partnership to Bolster Digital Sovereignty for Danish Enterprises, Public & Highly Regulated Sectors Aalborg Denmark, 13 April 2026 Danish managed servi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "OVH Groupe (OVHFF) H1 2026 Earnings Call Highlights: Record EBITDA Margin and Strategic AI ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ovh-groupe-ovhff-h1-2026-150039770.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:00:39+00:00",
+      "summary": "OVH Groupe (OVHFF) reports strong financial performance with a focus on AI and defense market expansion, despite challenges in private cloud growth.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "OVHcloud launches new unit to meet demand from European militaries",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ovhcloud-posts-5-5-organic-051715144.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T05:17:15+00:00",
+      "summary": "France's OVHcloud is creating a dedicated defence unit after several European defence ministries approached it to support ‌their military digital transformation, the datacentre operator said on Thursd",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

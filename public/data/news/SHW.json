@@ -1,0 +1,53 @@
+{
+  "ticker": "SHW",
+  "last_updated": "2026-04-22T13:02:37.074711+00:00",
+  "sentiment_score": 0.47,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Benjamin Moore vs. Sherwin-Williams: Painting pros explain the differences and why both make great paint",
+      "url": "https://www.businessinsider.com/guides/home/benjamin-moore-vs-sherwin-williams-paint",
+      "source": "businessinsider.com",
+      "published_at": "2026-04-21T22:42:44+00:00",
+      "summary": "Picking a paint brand for your walls can be overwhelming. Five housepainters explain the differences between Benjamin Moore and Sherwin-Williams. When you buy through our links, Business Insider may e",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Wells Fargo Adjusts Sherwin-Williams (SHW) Outlook to Equal Weight",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-adjusts-sherwin-williams-192646708.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T19:26:46+00:00",
+      "summary": "The Sherwin-Williams Company (NYSE:SHW) is one of the 10 High Growth Chemical Stocks to Buy. On April 9, 2026, Wells Fargo downgraded The Sherwin-Williams Company (NYSE:SHW) from Overweight to Equal W",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Sherwin-Williams (NYSE:SHW) Price Target Cut to $365.00 by Analysts at Bank of America",
+      "url": "https://www.marketbeat.com/instant-alerts/sherwin-williams-nyseshw-price-target-cut-to-36500-by-analysts-at-bank-of-america-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T15:19:58+00:00",
+      "summary": "Bank of America dropped their target price on Sherwin-Williams from $370.00 to $365.00 and set a \"neutral\" rating on the stock in a research report on Tuesday.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sherwin-Williams (SHW) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sherwin-williams-shw-reports-next-140018476.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T14:00:18+00:00",
+      "summary": "Sherwin-Williams (SHW) doesn't possess the right combination of the two key ingredients for a likely earnings beat in its upcoming report. Get prepared with the key expectations.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "The Sherwin-Williams Company $SHW Shares Acquired by Zurcher Kantonalbank Zurich Cantonalbank",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-the-sherwin-williams-company-shw-shares-acquired-by-zurcher-kantonalbank-zurich-cantonalbank-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T12:02:40+00:00",
+      "summary": "Zurcher Kantonalbank Zurich Cantonalbank raised its stake in The Sherwin-Williams Company (NYSE:SHW - Free Report) by 294.3% during the 4th quarter, according to its most recent filing with the Securi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

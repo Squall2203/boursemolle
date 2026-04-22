@@ -1,0 +1,53 @@
+{
+  "ticker": "GLE.PA",
+  "last_updated": "2026-04-22T11:37:59.476759+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Societe Generale takes on more crypto firms as clients, SG-FORGE CEO says",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/societe-generale-takes-more-crypto-113047378.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:30:47+00:00",
+      "summary": "French bank Societe Generale is taking on more crypto companies as customers and expects the use of stablecoins by its corporate clients to grow, ‌SG-Forge CEO Jean-Marc Stenger told Reuters, although",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Societe Generale Expands Stablecoin Access To MetaMask's Millions Of Users",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/societe-generale-expands-stablecoin-access-191837971.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T19:18:37+00:00",
+      "summary": "Bank integrates USD CoinVertible with MetaMask, enabling fiat conversion, trading, and blockchain payments",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EIB and Société Générale to support new renewable energy capacity in Sicily",
+      "url": "https://finance.yahoo.com/m/5a7c1365-ff87-3676-a0fe-78ea95fba592/eib-and-soci%C3%A9t%C3%A9-g%C3%A9n%C3%A9rale-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T15:00:00+00:00",
+      "summary": "The European Investment Bank and Société Générale have signed a €153 million financing agreement to support the construction and operation of a 137 MW photovoltaic plant located in Sicily.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EIB, Société Générale secure $177m for Sand Solar Project in Sicily",
+      "url": "https://www.power-technology.com/news/eib-societe-generale-177m-sand-solar-project/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T13:50:54+00:00",
+      "summary": "Once operational, the plant is expected to generate around 256GWh of renewable electricity each year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What Happened to the U.S. Economy, after so much Policy Uncertainty?",
+      "url": "https://finance.yahoo.com/economy/policy/articles/happened-u-economy-much-policy-202300765.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T20:23:00+00:00",
+      "summary": "U.S. Policy Uncertainty has been very high - for over a full year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

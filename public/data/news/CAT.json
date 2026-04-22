@@ -1,0 +1,53 @@
+{
+  "ticker": "CAT",
+  "last_updated": "2026-04-22T12:55:21.194189+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Dow Jones Futures Rise As Trump Extends Iran Ceasefire; Tesla Earnings Due",
+      "url": "https://finance.yahoo.com/m/f46ecdb3-fa89-3d35-b084-1638a1ef6475/dow-jones-futures-rise-as.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:05:21+00:00",
+      "summary": "President Trump extended an Iran ceasefire after the stock market fell on canceled talks. Tesla earnings are on deck.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Caterpillar, IBD Stock Of The Day, Rises In Buy Zone Amid Data Center Strength",
+      "url": "https://finance.yahoo.com/m/2bedbc11-337f-3e39-bee1-edab2aa8a79d/caterpillar%2C-ibd-stock-of-the.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:39:40+00:00",
+      "summary": "Caterpillar is Tuesday's IBD Stock Of The Day as the Dow Jones Industrial Average heavyweight got a big price target hike for the second straight day on AI data center demand and the broader industria",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Does United Rentals Stock Qualify As A Top-Tier Capital Compounder?",
+      "url": "https://www.trefis.com/articles/597038/does-united-rentals-stock-qualify-as-a-top-tier-capital-compounder/2026-04-21?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:27:09+00:00",
+      "summary": "United Rentals (URI) has grown net income at a 6% average clip over the past three years. Yet earnings per share have expanded by a much faster 9.3% over the same period.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Caterpillar Stock Can Gain 20%, Analyst Says. How Meta Might Give Shares a Boost.",
+      "url": "https://finance.yahoo.com/m/e1dc1f18-e6af-3552-b1fd-2d80a3e793a5/caterpillar-stock-can-gain.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:08:00+00:00",
+      "summary": "Monday, Well Fargo analyst Jerry Revich raised his Cat price target by 10% to $960 from $870. He kept his Buy rating on the stock.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "These Are The 5 Best Stocks To Buy Or Watch Now",
+      "url": "https://finance.yahoo.com/m/5f695c14-bc91-363c-995e-e994c1f0807e/these-are-the-5-best-stocks.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:27:46+00:00",
+      "summary": "Buying a stock is easy, but buying the right stock without a good strategy is incredibly hard. Here are five top-performing stocks to buy now or put on a watchlist.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

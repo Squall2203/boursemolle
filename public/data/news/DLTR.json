@@ -1,0 +1,53 @@
+{
+  "ticker": "DLTR",
+  "last_updated": "2026-04-22T13:26:57.608252+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Are consumers finally cracking under the weight of $4 gas?",
+      "url": "https://finance.yahoo.com/news/are-consumers-finally-cracking-under-the-weight-of-4-gas-111859680.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:18:59+00:00",
+      "summary": "The warning signals from the consumer mount.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Brightstar Capital Partners Invests in Bendon, a Provider of Screen-Free Children’s Activity Products",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/brightstar-capital-partners-invests-bendon-110000950.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "NEW YORK & WEST PALM BEACH, Fla., April 22, 2026--Brightstar Capital Partners (\"Brightstar\"), a private equity firm focused on partnering with entrepreneurs and management teams, today announced its a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "1 Mid-Cap Stock Worth Your Attention and 2 Facing Challenges",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-mid-cap-stock-worth-173351287.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:33:51+00:00",
+      "summary": "Many investors pay attention to mid-cap stocks because they have established business models and expansive market opportunities. However, their paths to becoming $100 billion corporations are ripe wit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Goldman Sachs warns US consumers could have a challenging few months",
+      "url": "https://finance.yahoo.com/news/goldman-sachs-warns-us-consumers-could-have-a-challenging-few-months-113704421.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:37:04+00:00",
+      "summary": "It could be a few months of consumer weakness, warns Goldman Sachs.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Why the Trade Down Effect May Not Be Enough for Dollar Tree (DLTR) Stock",
+      "url": "https://www.barchart.com/story/news/1402370/why-the-trade-down-effect-may-not-be-enough-for-dollar-tree-dltr-stock?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:24:38+00:00",
+      "summary": "Although rough economic conditions should help businesses like Dollar Tree, DLTR stock might not be the best bullish bet available.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

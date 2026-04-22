@@ -1,0 +1,53 @@
+{
+  "ticker": "ACS.MC",
+  "last_updated": "2026-04-22T12:11:59.001249+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Growth Stocks With Strong Insider Commitment",
+      "url": "https://finance.yahoo.com/news/european-growth-stocks-strong-insider-053607771.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T05:36:07+00:00",
+      "summary": "As the European markets continue to show resilience, with the STOXX Europe 600 Index reaching new highs and optimism about the eurozone economy offsetting recent volatility, investors are increasingly",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Stocks That May Be Trading Below Their Estimated Value",
+      "url": "https://finance.yahoo.com/news/european-stocks-may-trading-below-053751529.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T05:37:51+00:00",
+      "summary": "As the eurozone economy continues its modest recovery, bolstered by stronger investment and household consumption, the pan-European STOXX Europe 600 Index has shown resilience despite mixed performanc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Growth Companies With High Insider Ownership In January 2026",
+      "url": "https://finance.yahoo.com/news/european-growth-companies-high-insider-053539489.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-09T05:35:39+00:00",
+      "summary": "As we step into 2026, the European market is riding a wave of optimism, with the STOXX Europe 600 Index reaching new highs and closing out 2025 with its strongest annual performance since 2021. This b",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Stocks Priced Below Estimated Value For Savvy Investors",
+      "url": "https://finance.yahoo.com/news/european-stocks-priced-below-estimated-053803738.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-22T05:38:03+00:00",
+      "summary": "As European markets continue to show signs of steady economic growth, with the pan-European STOXX Europe 600 Index rising by 1.60%, investors are increasingly on the lookout for opportunities that may",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Growth Stocks With Insider Ownership Expecting 41% Earnings Growth",
+      "url": "https://finance.yahoo.com/news/european-growth-stocks-insider-ownership-053603908.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-11T05:36:03+00:00",
+      "summary": "As the European market navigates a landscape of mixed returns and fluctuating economic indicators, investor optimism is buoyed by hopes for interest rate cuts in major economies. In this environment, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

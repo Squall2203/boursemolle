@@ -1,0 +1,53 @@
+{
+  "ticker": "T",
+  "last_updated": "2026-04-22T12:57:51.905251+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "AT&T (T) Stock Gains Following Strong Q1 Performance and Subscriber Momentum",
+      "url": "https://blockonomi.com/att-t-stock-gains-following-strong-q1-performance-and-subscriber-momentum/",
+      "source": "blockonomi.com",
+      "published_at": "2026-04-22T11:28:13+00:00",
+      "summary": "AT&T (T) stock rises after beating Q1 estimates with $0.57 EPS, $31.5B revenue, and 294K postpaid adds. Company reaffirms 2026 guidance. The post AT&T (T) Stock Gains Following Strong Q1 Performance a",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AT&T posted stronger-than-expected wireless subscriber growth in Q1 as bundling paid off",
+      "url": "https://qz.com/att-q1-2026-wireless-subscribers-earnings-bundle-042226",
+      "source": "qz.com",
+      "published_at": "2026-04-22T11:20:39+00:00",
+      "summary": "About 42% of AT&T home internet customers also chose a wireless plan, a convergence rate the company called its fastest-ever organic growth",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Stock Movers: GE Vernova, AT&T, United (Podcast)",
+      "url": "https://www.bloomberg.com/news/audio/2026-04-22/stock-movers-ge-vernova-at-t-united-podcast",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-22T11:02:04+00:00",
+      "summary": "Source: Bloomberg, 4:18 General Electric Co Photographer: Daniel Acker/Bloomberg",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Best AT&T Plans: How to Choose and Which Ones to Pick in 2026",
+      "url": "https://www.cnet.com/tech/mobile/best-att-plans/",
+      "source": "cnet.com",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "AT&T overhauled its wireless plans in 2026, with four options that can be mixed and matched.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Earnings Snapshot: AT&T advanced connectivity revenue up on service and equipment growth; postpaid churn rises to 0.89%",
+      "url": "https://seekingalpha.com/news/4577687-earnings-snapshot-att-advanced-connectivity-revenue-rises-on-service-and-equipment-growth-postpaid-phone-churn-rose-to-089",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T10:51:27+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

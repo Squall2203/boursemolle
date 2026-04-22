@@ -1,0 +1,53 @@
+{
+  "ticker": "3968.HK",
+  "last_updated": "2026-04-22T13:37:18.447471+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Visa Enables Apple Pay Support for Chinese Visa Cardholders",
+      "url": "https://finance.yahoo.com/news/visa-enables-apple-pay-support-180854851.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-22T18:08:54+00:00",
+      "summary": "Visa Inc. (NYSE:V) is one of the 15 Best S&amp;P 500 Stocks to Look For in 2026. On January 15, Visa Inc. (NYSE:V) announced that it has enabled Apple Pay support for Chinese Visa cardholders. Eligibl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Thunes and UnionPay International Launch Instant Money Transfers to China's mainland",
+      "url": "https://finance.yahoo.com/news/thunes-unionpay-international-launch-instant-080000888.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-22T08:00:00+00:00",
+      "summary": "Thunes, the Smart Superhighway to move money around the world, today announces the launch of faster, more reliable, and more transparent payments into China's mainland following a deepened collaborati",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mercuria Successfully Closes USD 2.3 Billion Equivalent Asian Revolving Credit Facilities",
+      "url": "https://finance.yahoo.com/news/mercuria-successfully-closes-usd-2-085500738.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-24T08:55:00+00:00",
+      "summary": "Mercuria Energy Group Ltd. (\"Mercuria\") is pleased to announce the successful closing of its 2025 Asian Syndicated Revolving Credit Facilities (the \"Facilities\"), totaling over USD 2.3 billion equival",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BNB is Now Down 11% From Its Record High Despite Coinbase Roadmap Listing",
+      "url": "https://www.coindesk.com/markets/2025/10/16/bnb-is-now-down-11-from-its-record-high-despite-coinbase-roadmap-listing?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-16T12:04:12+00:00",
+      "summary": "The token's recent addition to Coinbase's listing roadmap has failed to boost its price, but corporate treasury accumulation continues.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "CZ Demands Coinbase to List More BNB Projects",
+      "url": "https://www.coinspeaker.com/cz-demands-coinbase-to-list-more-bnb-projects/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-16T10:32:26+00:00",
+      "summary": "Binance founder Changpeng Zhao has publicly called on Coinbase to list more projects built on the BNB Chain, arguing that fairness should guide exchanges’ listing policies. His comments followed Coinb",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

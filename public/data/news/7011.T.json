@@ -1,0 +1,53 @@
+{
+  "ticker": "7011.T",
+  "last_updated": "2026-04-22T13:50:59.141647+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Horizon Aircraft Reports Results for Third Quarter of Fiscal Year 2026 and Provides Business Update",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/horizon-aircraft-reports-results-third-110000457.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T11:00:00+00:00",
+      "summary": "TORONTO, ON / ACCESS Newswire / April 14, 2026 / New Horizon Aircraft Ltd. (\"Horizon Aircraft\" or the \"Company\") (NASDAQ:HOVR), an advanced aerospace company developing one of the first hybrid-electri",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Evaluating Mitsubishi Heavy Industries (TSE:7011) Valuation After Strong Backlog Growth And Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/evaluating-mitsubishi-heavy-industries-tse-231222652.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T23:12:22+00:00",
+      "summary": "Mitsubishi Heavy Industries (TSE:7011) has drawn investor attention after a recent share price move, with the stock down about 1% over the past day but higher over the past week and month. See our lat",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Fervo Locks In 1.7 GW Turbine Supply as Geothermal Ambitions Accelerate",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/fervo-locks-1-7-gw-190000519.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T19:00:00+00:00",
+      "summary": "The deal underscores Fervo Energy’s push to industrialize enhanced geothermal systems.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fervo enters 1.75-GW geothermal turbine supply deal with Turboden",
+      "url": "https://www.utilitydive.com/news/fervo-turboden-enhanced-geothermal-turbines-vallourec/817096/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T12:11:00+00:00",
+      "summary": "The commitment is a step up from a previous agreement between the companies for Turboden to supply Fervo with turbines to support 150 MW in capacity.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Horizon Aircraft and MHIRJ Join Forces to Advance Regional Air Mobility",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/horizon-aircraft-mhirj-join-forces-120000116.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T12:00:00+00:00",
+      "summary": "Promising collaboration with MHI RJ Aviation Group (MHIRJ) will advance the development of the Cavorite X7 through specialist engineering services and deep regional aviation expertise TORONTO, ON / AC",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

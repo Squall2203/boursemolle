@@ -1,0 +1,53 @@
+{
+  "ticker": "JMT.LS",
+  "last_updated": "2026-04-22T12:16:16.254225+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Biedronka signals interest in Carrefour’s Polish assets",
+      "url": "https://www.retail-insight-network.com/news/biedronka-interested-in-carrefour-poland/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T14:37:38+00:00",
+      "summary": "French media reported last year that Carrefour was considering an exit from Poland and had brought in JP Morgan to advise on a possible transaction.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Should Value Investors Buy Jeronimo Martins SGPS (JRONY) Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/value-investors-buy-jeronimo-martins-134005769.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T13:40:05+00:00",
+      "summary": "Here at Zacks, our focus is on the proven Zacks Rank system, which emphasizes earnings estimates and estimate revisions to find great stocks. Nevertheless, we are always paying attention to the latest",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Stocks Estimated To Be 21.9% To 46.4% Below Intrinsic Value",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-estimated-21-053755446.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-11T05:37:55+00:00",
+      "summary": "In recent weeks, the European stock market has experienced a notable upswing, with the pan-European STOXX Europe 600 Index climbing 2.11% on the back of robust corporate earnings and optimism surround",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Stock Picks That May Be Undervalued In May 2025",
+      "url": "https://finance.yahoo.com/news/european-stock-picks-may-undervalued-054144950.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-22T05:41:44+00:00",
+      "summary": "As of mid-May 2025, European markets have shown resilience, with the pan-European STOXX Europe 600 Index climbing 2.10% following a positive shift in global trade relations and an uptick in economic a",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Has Hennes & Mauritz (HNNMY) Outpaced Other Retail-Wholesale Stocks This Year?",
+      "url": "https://finance.yahoo.com/news/hennes-mauritz-hnnmy-outpaced-other-134011385.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-20T13:40:11+00:00",
+      "summary": "Here is how Hennes & Mauritz AB (HNNMY) and Jeronimo Martins SGPS SA (JRONY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ICE",
+  "last_updated": "2026-04-22T13:01:56.391893+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Accenture, Vodafone, SAP Pilot Humanoid Robots In Warehouse Operation",
+      "url": "https://www.benzinga.com/markets/tech/26/04/51963469/accenture-vodafone-sap-pilot-humanoid-robots-in-warehouse-operation?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+      "source": "benzinga.com",
+      "published_at": "2026-04-22T11:26:43+00:00",
+      "summary": "Accenture plc (NYSE:ACN) shares are trading lower during Wednesday’s premarket session as the stock underperforms a risk-on tape where tech is leading early, down 0.21%. Nasdaq futures are up 0.69% wh",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Camping World (CWH) to Release Quarterly Earnings on Wednesday",
+      "url": "https://www.marketbeat.com/instant-alerts/camping-world-cwh-to-release-quarterly-earnings-on-wednesday-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:23:55+00:00",
+      "summary": "Camping World (NYSE:CWH) will be releasing its Q1 2026 earnings after the market closes on Wednesday, April 29. (View Earnings Report at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tetra Technologies (TTI) Expected to Announce Earnings on Wednesday",
+      "url": "https://www.marketbeat.com/instant-alerts/tetra-technologies-tti-expected-to-announce-earnings-on-wednesday-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:23:55+00:00",
+      "summary": "Tetra Technologies (NYSE:TTI) will be releasing its Q1 2026 earnings after the market closes on Wednesday, April 29. (View Earnings Report at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Lemonade (LMND) to Release Quarterly Earnings on Wednesday",
+      "url": "https://www.marketbeat.com/instant-alerts/lemonade-lmnd-to-release-quarterly-earnings-on-wednesday-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:23:54+00:00",
+      "summary": "Lemonade (NYSE:LMND) will be releasing its Q1 2026 earnings before the market opens on Wednesday, April 29. (View Earnings Report at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "American Financial Group (AFG) Projected to Post Quarterly Earnings on Wednesday",
+      "url": "https://www.marketbeat.com/instant-alerts/american-financial-group-afg-projected-to-post-quarterly-earnings-on-wednesday-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:23:54+00:00",
+      "summary": "American Financial Group (NYSE:AFG) will be releasing its Q1 2026 earnings after the market closes on Wednesday, April 29. (View Earnings Report at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

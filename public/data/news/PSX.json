@@ -1,0 +1,53 @@
+{
+  "ticker": "PSX",
+  "last_updated": "2026-04-22T13:26:33.076521+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "M&T Bank Corp Increases Stock Holdings in Phillips 66 $PSX",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-mt-bank-corp-increases-stock-holdings-in-phillips-66-psx-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:26:26+00:00",
+      "summary": "M&T Bank Corp increased its holdings in Phillips 66 (NYSE:PSX - Free Report) by 462.9% in the fourth quarter, according to the company in its most recent Form 13F filing with the Securities & Exchange",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Phillips 66 (PSX) Projected to Post Quarterly Earnings on Wednesday",
+      "url": "https://www.marketbeat.com/instant-alerts/phillips-66-psx-projected-to-post-quarterly-earnings-on-wednesday-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:51:10+00:00",
+      "summary": "Phillips 66 (NYSE:PSX) will be releasing its Q1 2026 earnings before the market opens on Wednesday, April 29. (View Earnings Report at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Phillips 66, Kinder Morgan Advance Gulf Coast-to-California Pipe",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-20/phillips-66-kinder-morgan-advance-gulf-coast-to-california-pipe",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-20T18:57:51+00:00",
+      "summary": "Phillips 66 and Kinder Morgan Inc. will move ahead with the Western Gateway pipeline that will ship fuel from US Gulf Coast and Midwest refiners to California. Storage tanks at a Kinder Morgan facilit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Phillips 66, Kinder Morgan advance Western Gateway pipeline",
+      "url": "https://seekingalpha.com/news/4576580-phillips-66-kinder-morgan-advance-western-gateway-pipeline",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-20T13:26:01+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Jet.AI and flyExclusive Solidify Merger Timeline: Second Quarter 2026 Closing Target Confirmed",
+      "url": "https://marketchameleon.com/Blogpost/2026/04/20/jetai-flyexclusive-merger-timeline-sec-review-2026",
+      "source": "marketchameleon.com",
+      "published_at": "2026-04-20T12:33:48+00:00",
+      "summary": "Jet.AI and flyExclusive have agreed to extend the outside date of their merger to June 30, 2026, with both companies expressing strong mutual commitment as they advance toward closing in the second qu",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

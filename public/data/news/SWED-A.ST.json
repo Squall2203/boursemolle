@@ -1,0 +1,53 @@
+{
+  "ticker": "SWED-A.ST",
+  "last_updated": "2026-04-22T12:39:04.883486+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Kvika banki hf.: Kvika issues inaugural SEK 300 million AT1 notes",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kvika-banki-hf-kvika-issues-103600678.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:36:00+00:00",
+      "summary": "Kvika has today successfully completed the issuance of Additional Tier 1 (AT1) notes. The issuance is a key component of the Bank’s capital optimisation, as presented alongside the Bank’s year‑end res",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Digital Payment Today - Balancing Digital Growth With Cash Access For Financial Inclusion",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/digital-payment-today-balancing-digital-123832919.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T12:38:32+00:00",
+      "summary": "Despite the increasing dominance of digital payments, cash continues to hold a vital role in ensuring financial inclusion and economic resilience, particularly for lower-income, rural, and tech-exclud",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Havila Shipping ASA: Petition received to register arrest in certain assets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/havila-shipping-asa-petition-received-215000070.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T21:50:00+00:00",
+      "summary": "Reference is made to the stock exchange notice dated 12 December 2025 where it was advised that companies in the group had received notice from DNB Bank ASA, Swedbank AB (publ) and Danske Bank A/S NUF",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Swedbank (OM:SWED A) Valuation After Strong 1 Year Shareholder Returns",
+      "url": "https://finance.yahoo.com/news/assessing-swedbank-om-swed-valuation-091236186.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-01T09:12:36+00:00",
+      "summary": "Swedbank (OM:SWED A) is drawing investor attention after its recent share performance, with the stock showing mixed short term moves but stronger gains over the past 3 years and 5 years. See our lates",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Rait Riim appointed as the new CEO of Arco Vara AS",
+      "url": "https://finance.yahoo.com/news/rait-riim-appointed-ceo-arco-070000301.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T07:00:00+00:00",
+      "summary": "The Supervisory Board of Arco Vara has appointed Rait Riim as the new CEO of Arco Vara AS. According to the decision of the Supervisory Board, Rait Riim’s authority will take effect on April 1, 2026 a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

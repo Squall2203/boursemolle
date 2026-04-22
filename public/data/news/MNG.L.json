@@ -1,0 +1,53 @@
+{
+  "ticker": "MNG.L",
+  "last_updated": "2026-04-22T12:32:20.465806+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "M&G PLC (MGPUF) Full Year 2025 Earnings Call Highlights: Strong Net Inflows and Strategic ...",
+      "url": "https://finance.yahoo.com/news/m-g-plc-mgpuf-full-170043804.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T17:00:43+00:00",
+      "summary": "M&amp;G PLC (MGPUF) reports robust asset management inflows and international expansion, despite facing some operational challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "M&G H2 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/mg-h2-earnings-call-highlights-2026-03-12/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T12:35:41+00:00",
+      "summary": "M&amp;G (LON:MNG) outlined what it described as strong progress against its strategy during its full-year 2025 results call, pointing to record net inflows, continued international expansion, and a fu",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "UK Stocks Estimated To Be Trading Below Intrinsic Value In February 2026",
+      "url": "https://finance.yahoo.com/news/uk-stocks-estimated-trading-below-063815692.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T06:38:15+00:00",
+      "summary": "The United Kingdom's stock market has recently faced challenges, with the FTSE 100 index experiencing a downturn influenced by weak trade data from China and declining commodity prices. As these globa",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "UK Stocks Estimated To Be Trading Below Fair Value In January 2026",
+      "url": "https://finance.yahoo.com/news/uk-stocks-estimated-trading-below-063801918.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-05T06:38:01+00:00",
+      "summary": "The United Kingdom's stock market has recently faced challenges, with the FTSE 100 index declining due to weak trade data from China and falling commodity prices impacting major companies. As global e",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 UK Stocks That May Be Trading Below Intrinsic Value By Up To 30.9%",
+      "url": "https://finance.yahoo.com/news/3-uk-stocks-may-trading-063748099.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-05T06:37:48+00:00",
+      "summary": "The UK stock market has recently faced challenges, with the FTSE 100 and FTSE 250 indices experiencing declines amid concerns over weak trade data from China and its impact on global demand. In this e",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "SCMN.SW",
+  "last_updated": "2026-04-22T12:34:47.582399+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Ondas' Sentrycs Supports Airspace Protection at World Economic Forum 2026 in Davos",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ondas-sentrycs-supports-airspace-protection-123000997.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T12:30:00+00:00",
+      "summary": "Integrated into Swisscom Broadcast's DroneDefence Deployment, Ondas' Subsidiary Sentrycs' Cyber-Over-RF Technology Enabled Early Detection and Tiered Mitigation Capabilities During One of the World's ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Swisscom (SWX:SCMN) Valuation After A Strong Multi‑Year Shareholder Return Run",
+      "url": "https://finance.yahoo.com/news/assessing-swisscom-swx-scmn-valuation-100902216.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-08T10:09:02+00:00",
+      "summary": "Swisscom (SWX:SCMN) is drawing fresh interest after a strong past 3 months, with the share price up about 29%, which is putting recent performance and underlying financial metrics back in focus for in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Qualcomm leads new 6G coalition",
+      "url": "https://www.just-auto.com/news/qualcomm-leads-new-6g-coalition/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T11:43:22+00:00",
+      "summary": "An aim of the wide consortium - among its many objectives - is to address future connected mobility in vehicles.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Qualcomm and Other Industry Leaders Commit to 6G Trajectory Towards Commercialization Starting from 2029 Onwards",
+      "url": "https://finance.yahoo.com/news/qualcomm-other-industry-leaders-commit-072200319.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T07:22:00+00:00",
+      "summary": "BARCELONA, Spain, March 02, 2026--Qualcomm Technologies, Inc. (NASDAQ: QCOM) today announced a new strategic coalition with leading industry partners to accelerate the development and global deploymen",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Swisscom AG (SCMWY) Full Year 2025 Earnings Call Highlights: Dividend Boost and Strategic ...",
+      "url": "https://finance.yahoo.com/news/swisscom-ag-scmwy-full-2025-010100794.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T01:01:00+00:00",
+      "summary": "Swisscom AG (SCMWY) announces a significant dividend increase and successful integration of Vodafone Italy amidst revenue challenges.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

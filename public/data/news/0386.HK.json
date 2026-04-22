@@ -1,0 +1,53 @@
+{
+  "ticker": "0386.HK",
+  "last_updated": "2026-04-22T13:31:43.433292+00:00",
+  "sentiment_score": -0.23,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Eni finds 5tcf of gas in Indonesia’s Kutei Basin",
+      "url": "https://www.offshore-technology.com/news/eni-finds-5tcf-gas-indonesias-kutei-basin/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T08:33:45+00:00",
+      "summary": "Early estimates also indicate the presence of 300mbbl of condensate.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At China Petroleum & Chemical’s Valuation After Recent Share Price Weakness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-china-petroleum-chemical-valuation-060741415.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T06:07:41+00:00",
+      "summary": "China Petroleum & Chemical (SEHK:386) has drawn attention after recent share price weakness, with a decline of around 19% over the past month and a smaller drop over the past 3 months. See our latest ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sinopec Reports 34% Profit Drop as Fuel Demand Weakens",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sinopec-reports-34-profit-drop-174504960.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T17:45:04+00:00",
+      "summary": "Net income fell to 32.5 billion yuan as declining fuel sales and petrochemical oversupply weighed on margins.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Sinopec Announced 2025 Annual Results Annual Payout Ratio Reached 81%",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sinopec-announced-2025-annual-results-113200777.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T11:32:00+00:00",
+      "summary": "The Board Considered and Approved the Proposal to Grant to a Mandate for New Round of Share Repurchase BEIJING, CHINA / ACCESS Newswire / March 23, 2026 /China Petroleum & Chemical Corporation (\"Sinop",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sinopec Profit Slumps in 2025 as Oil Prices and Chemicals Weigh",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sinopec-profit-slumps-2025-oil-043738720.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T04:37:38+00:00",
+      "summary": "Sinopec reported weaker 2025 earnings as lower crude prices and weak chemicals margins offset record oil and gas output and steady progress in new energy and refining upgrades.",
+      "sentiment": "positif",
+      "sentiment_score": 0.2
+    }
+  ]
+}

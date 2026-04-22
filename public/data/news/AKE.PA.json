@@ -1,0 +1,53 @@
+{
+  "ticker": "AKE.PA",
+  "last_updated": "2026-04-22T11:43:55.580098+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Arkema Announces Expansion of Kynar PVDF Production Capacity in China",
+      "url": "https://finance.yahoo.com/news/arkema-announces-expansion-kynar-pvdf-151300917.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T15:13:00+00:00",
+      "summary": "ARKAY expands Kynar PVDF capacity by 20% in China, targeting rising demand across EVs, energy storage and advanced industries.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Arkema Expands Its Kynar® PVDF Production Capacity in China to Support Strong Market Growth",
+      "url": "https://finance.yahoo.com/news/arkema-expands-kynar-pvdf-production-073000604.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T07:30:00+00:00",
+      "summary": "PARIS LA DÉFENSE, March 16, 2026--Regulatory News: Arkema (Paris:AKE) unveils a 20% expansion of its Kynar® PVDF production capacity at its Changshu site in China, with the new unit expected to start ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Arkema SA (ARKAF) Full Year 2025 Earnings Call Highlights: Navigating Challenges with Strategic ...",
+      "url": "https://finance.yahoo.com/news/arkema-sa-arkaf-full-2025-170245045.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T17:02:45+00:00",
+      "summary": "Despite a challenging macroeconomic environment, Arkema SA (ARKAF) achieved significant cost savings and strong sales growth in key markets, while maintaining a robust cash flow.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ARKEMA: Full-Year 2025 Results",
+      "url": "https://finance.yahoo.com/news/arkema-full-2025-results-060000050.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T06:00:00+00:00",
+      "summary": "PARIS, February 26, 2026--Regulatory News: Arkema (PARIS:AKE):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Arkema (ENXTPA:AKE) Valuation After New Battery Alliance And Sustainability Recognition",
+      "url": "https://finance.yahoo.com/news/assessing-arkema-enxtpa-ake-valuation-141449139.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T14:14:49+00:00",
+      "summary": "Why this new battery alliance matters for Arkema stock Arkema (ENXTPA:AKE) has just signed a Memorandum of Understanding with Senior to work more closely across the battery value chain, focusing on ma",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "MRK.DE",
+  "last_updated": "2026-04-22T11:53:56.778960+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "$10+ Bn Microbiology Testing Market Analysis by Product, Technology, End User - Global Forecast to 2031",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/10-bn-microbiology-testing-market-082400993.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:24:00+00:00",
+      "summary": "The global microbiology testing market is set to reach USD 10.09 billion by 2031, growing from USD 7.79 billion in 2026 at a CAGR of 5.3%. Growth is driven by rising contamination risks in food, water",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MilliporeSigma Launches First Bio-Based Solvent Portfolio for High-Performance Liquid Chromatography",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/milliporesigma-launches-first-bio-based-150000816.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:00:00+00:00",
+      "summary": "BURLINGTON, MA / ACCESS Newswire / April 21, 2026 /Solvents made from renewable feedstocks help reduce reliance on fossil-fuel-based materials Drop-in replacements preserve established chromatography ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Merck KGaA (XTRA:MRK) Valuation After Mixed Recent Share Performance And Healthcare Pipeline Developments",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/assessing-merck-kgaa-xtra-mrk-230642249.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T23:06:42+00:00",
+      "summary": "Recent performance and business mix Merck KGaA (XTRA:MRK) has drawn investor attention after a mixed share performance, with an 8.3% gain over the past month set against a 9.1% decline over the past 3",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Generalized Myasthenia Gravis Market on the Brink of Change: 8 Promising Late-Stage Drugs Signal a New Treatment Era | DelveInsight",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/generalized-myasthenia-gravis-market-brink-170000755.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T17:00:00+00:00",
+      "summary": "The generalized myasthenia gravis treatment pipeline features several promising late-stage candidates, including IMVT-1402 (Immunovant/Roivant Sciences), Descartes-08 (Cartesian Therapeutics), Remibru",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cell Therapy Technology Market Research and Global Forecast Report 2025-2030: Rising Chronic Disease Burden and CRISPR-Driven Gene Editing Innovations Driving Growth",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/cell-therapy-technology-market-research-101100869.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T10:11:00+00:00",
+      "summary": "The global cell therapy technologies market is set to grow from USD 4.41 billion in 2025 to USD 7.91 billion by 2030, achieving a CAGR of 12.4%. Key growth drivers include advancements in regenerative",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

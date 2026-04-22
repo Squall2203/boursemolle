@@ -1,0 +1,53 @@
+{
+  "ticker": "RF",
+  "last_updated": "2026-04-22T13:09:04.819216+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Northern Trust Q1 Earnings Beat Estimates on Higher NII & AUM Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/northern-trust-q1-earnings-beat-162100383.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:21:00+00:00",
+      "summary": "NTRS Q1 results benefit from higher net interest income and strong AUM and AUC growth amid rising expenses.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bank of Hawaii Q1 Earnings Miss on Lower Fee Income, Expenses Rise Y/Y",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-hawaii-q1-earnings-miss-144900367.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:49:00+00:00",
+      "summary": "BOH Q1 earnings miss estimates as fee income drops and expenses rise, but higher NII, loan growth and improved credit quality provide partial support.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "US FINANCIAL 15 SPLIT CORP. Preferred Dividend Declared",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/us-financial-15-split-corp-130000036.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:00:00+00:00",
+      "summary": "TORONTO, April 20, 2026 (GLOBE NEWSWIRE) -- US Financial 15 Split Corp (\"US Financial 15\") declares its monthly distribution of $0.06850 for each Preferred share, or 10.00% annually based on the previ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Company News for Apr 20, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/company-news-apr-20-2026-111600674.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:16:00+00:00",
+      "summary": "Companies In The Article Are:RF,ALLY,BMI,TFC",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Regions Financial (RF) Still Attractively Priced After Its Strong 1‑Year Share Price Run?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/regions-financial-rf-still-attractively-200258906.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T20:02:58+00:00",
+      "summary": "Investors may be wondering whether Regions Financial at about US$28.13 is still offering value after a strong run, or if most of the easy gains are already on the table. The share price sits around US",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

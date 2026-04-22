@@ -1,0 +1,53 @@
+{
+  "ticker": "SGO.PA",
+  "last_updated": "2026-04-22T11:37:22.743087+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Proposed appointment to the Board of Directors at the Annual General Meeting on May 21st, 2026: Thierry Fournier candidate director – Appointed censor with immediate effect",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/proposed-appointment-board-directors-annual-160000723.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T16:00:00+00:00",
+      "summary": "Proposed appointment to the Board of Directors at the Annual General Meeting on May 21st, 2026: Thierry Fournier candidate director – Appointed censor with immediate effect _PRESS RELEASE_ Paris, Apri",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "L…for Lean Construction, a Saint-Gobain Podcast",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/l-lean-construction-saint-gobain-140000777.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T14:00:00+00:00",
+      "summary": "MALVERN, PA / ACCESS Newswire / April 2, 2026 / With nearly 40% of carbon emissions coming from the built environment, the construction industry is building and renovating more and more sustainably. W",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "A Look At Compagnie de Saint-Gobain’s (ENXTPA:SGO) Valuation After Recent Share Price Weakness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-compagnie-saint-gobain-enxtpa-141215712.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T14:12:15+00:00",
+      "summary": "Compagnie de Saint-Gobain (ENXTPA:SGO) has appeared on many watchlists after a one-month return of about a 19% decline and a three-month return of about a 19% decline, raising fresh questions around v",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Saint-Gobain Video Series: Success in the Making: Don Roberts",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/saint-gobain-video-series-success-140000268.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T14:00:00+00:00",
+      "summary": "MALVERN, PA / ACCESS Newswire / March 31, 2026 / Having pride in what you do is one of the reasons Don Roberts, Plant Manager for CertainTeed Roofing, has been with the company for over 37 years. He k",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "O...for Offsite Construction, a Saint-Gobain Podcast",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/o-offsite-construction-saint-gobain-140000797.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T14:00:00+00:00",
+      "summary": "MALVERN, PA / ACCESS Newswire / March 26, 2026 / With nearly 40% of carbon emissions coming from the built environment, the construction industry is building and renovating more and more sustainably. ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

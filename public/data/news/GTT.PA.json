@@ -1,0 +1,44 @@
+{
+  "ticker": "GTT.PA",
+  "last_updated": "2026-04-22T11:42:05.243575+00:00",
+  "sentiment_score": 0.12,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Disclosure of the total number of voting rights and shares composing the share capital as at February 28, 2026",
+      "url": "https://finance.yahoo.com/news/disclosure-total-number-voting-rights-164500829.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T16:45:00+00:00",
+      "summary": "Disclosure of the total number of voting rights and shares composing the share capital as at February 28, 2026 Articles L. 233-8-II of the French Commercial Code and 223-16 of the General Regulation o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Gaztransport et technigaz SA (GZPZF) Full Year 2025 Earnings Call Highlights: Record Revenue ...",
+      "url": "https://finance.yahoo.com/news/gaztransport-et-technigaz-sa-gzpzf-010500407.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-21T01:05:00+00:00",
+      "summary": "Gaztransport et technigaz SA (GZPZF) reports a stellar year with a 25% revenue increase, robust order book, and strategic digital expansion.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "GTT : Full Year 2025 Results - Strong growth in revenues (+25%) and EBITDA (+40%) for the third consecutive year.",
+      "url": "https://finance.yahoo.com/news/gtt-full-2025-results-strong-164500058.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T16:45:00+00:00",
+      "summary": "FY 2025 resultsStrong growth in revenues (+25%) and EBITDA (+40%) for the third consecutive year.Strong upturn in vessel orders since the fourth quarter of 2025.2025 dividend at a record level of €8.9",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "European Dividend Stocks To Watch In February 2026",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-watch-february-103209505.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T10:32:09+00:00",
+      "summary": "As European markets navigate volatility with the STOXX Europe 600 Index reaching new highs but ending largely unchanged, investors are closely monitoring the impact of AI disruption concerns and robus",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

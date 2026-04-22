@@ -1,0 +1,53 @@
+{
+  "ticker": "9432.T",
+  "last_updated": "2026-04-22T13:42:12.930680+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Inside NTT Research’s push to commercialize deep tech",
+      "url": "https://www.fastcompany.com/91527309/inside-ntt-researchs-push-to-commercialize-deep-tech?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T15:41:02+00:00",
+      "summary": "With its new ‘NTT Research 2.0’ strategy, the lab is trying to translate long-term scientific bets into viable companies without sacrificing the research itself.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "NTT Research Names Tetsuomi Sogawa New Physics & Informatics Lab Director",
+      "url": "https://finance.yahoo.com/news/ntt-research-names-tetsuomi-sogawa-130200884.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T13:02:00+00:00",
+      "summary": "SUNNYVALE, Calif., April 15, 2026--NTT Research, Inc., a division of NTT, today announced Dr. Tetsuomi Sogawa as the new director of its Physics & Informatics (PHI) Lab.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "NTT Research Launches Scale Academy and New Quantum-Safe Security Platform",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ntt-research-launches-scale-academy-130000691.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T13:00:00+00:00",
+      "summary": "SUNNYVALE, Calif., April 15, 2026--NTT Research launched Scale Academy, an incubator to bring to market products based upon technologies from the labs of NTT Research and NTT R&amp;D.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing NTT (TSE:9432) Valuation After Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-ntt-tse-9432-valuation-170357125.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-28T17:03:57+00:00",
+      "summary": "Why NTT (TSE:9432) is Back on Investor Radar NTT (TSE:9432) has recently drawn attention after a solid month, with the share price return around 5% and a 1 year total return above 10%, prompting fresh",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The Journey from Research to Reality Comes to Life at NTT’s Upgrade 2026",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/journey-research-reality-comes-life-160000097.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T16:00:00+00:00",
+      "summary": "SUNNYVALE, Calif., March 23, 2026--NTT Research, Inc., a division of NTT (TYO:9432), today announced the return of Upgrade 2026 to Silicon Valley from April 15-16, 2026, at the Signia Hotel by Hilton ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

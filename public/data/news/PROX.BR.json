@@ -1,0 +1,53 @@
+{
+  "ticker": "PROX.BR",
+  "last_updated": "2026-04-22T12:09:19.725938+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "EU Commission awards 180 million euro cloud contract to four European providers",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/eu-commission-awards-180-million-082258822.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T08:22:58+00:00",
+      "summary": "The European Commission on Friday awarded a 180 million euro ($212 million) tender for ‌sovereign cloud services to four European providers for a ‌six-year period, as part of a push to reduce the bloc",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Nextensa obtains permit for Lake Side project",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nextensa-obtains-permit-lake-side-195500545.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T19:55:00+00:00",
+      "summary": "Lake Side Lake Side - Tour & Taxis, Brussels NON-REGULATED INFORMATION Brussels, 02/04/2026 Nextensa obtains permit for Lake Side project Nextensa obtained the urban planning permit for the Lake Side ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The Bull Case For Nokia Oyj (HLSE:NOKIA) Could Change Following Proximus Deal And New Leveraged ETF",
+      "url": "https://finance.yahoo.com/news/bull-case-nokia-oyj-hlse-120606440.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-26T12:06:06+00:00",
+      "summary": "In recent days Proximus announced it will replace a rival platform by migrating its entire fixed and mobile customer base to Nokia’s cloud‑native Converged Charging and voice core solutions, while Def",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Proximus selects Nokia to modernize its charging system and voice core",
+      "url": "https://finance.yahoo.com/news/proximus-selects-nokia-modernize-charging-080000104.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-20T08:00:00+00:00",
+      "summary": "Press ReleaseProximus selects Nokia to modernize its charging system and voice core The move enables greater automation, new business models and future-ready services.Migration to cloud-native Nokia C",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Proximus (ENXTBR:PROX): Exploring Potential Undervaluation After Recent Momentum Shift",
+      "url": "https://finance.yahoo.com/news/proximus-enxtbr-prox-exploring-potential-123025394.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-03T12:30:25+00:00",
+      "summary": "Proximus (ENXTBR:PROX) has experienced some interesting swings lately, with its shares slipping over the past 3 months but maintaining a strong year-to-date gain. Investors may be reconsidering their ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

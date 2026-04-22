@@ -1,0 +1,53 @@
+{
+  "ticker": "SAN.MC",
+  "last_updated": "2026-04-22T12:09:44.188308+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "A Look At Banco Santander’s (BME:SAN) Valuation After Strong 1 Year Shareholder Returns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-banco-santander-bme-san-200336728.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:03:36+00:00",
+      "summary": "Recent share performance and scale of Banco Santander Banco Santander (BME:SAN) has caught investor attention after a 15% share price gain over the past month, following a more moderate rise of about ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "‘Much‑needed relief’ for homeowners as more lenders poised to cut mortgage rates",
+      "url": "https://uk.finance.yahoo.com/news/much-needed-relief-homeowners-more-103133743.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:31:33+00:00",
+      "summary": "Some mortgage lenders have said they will reduce rates from Wednesday.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pre-stabilisation Announcement",
+      "url": "https://finance.yahoo.com/markets/options/articles/pre-stabilisation-announcement-082400317.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T08:24:00+00:00",
+      "summary": "LONDON, April 21, 2026-- PRE-STABILISATION ANNOUNCEMENT",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SAN- An Attractive Stock in the Financial Sector",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/san-attractive-stock-financial-sector-050100573.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T05:01:00+00:00",
+      "summary": "Markets have proved to be resilient despite the backdrop of the conflict in the Middle East. The churning of sectors earlier this year has led to some bargains and momentum in stocks. One name I like ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Press Release: ESCMID: Sanofi's Nuvaxovid COVID-19 vaccine showed better tolerability than mNEXSPIKE in head-to-head study",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/press-release-escmid-sanofis-nuvaxovid-100000421.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T10:00:00+00:00",
+      "summary": "ESCMID: Sanofi's Nuvaxovid COVID-19 vaccine showed better tolerability than mNEXSPIKE in head-to-head study First head-to-head, double-blind, randomized phase 4 study powered to directly compare the t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

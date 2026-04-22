@@ -1,0 +1,53 @@
+{
+  "ticker": "BP.L",
+  "last_updated": "2026-04-22T12:21:14.192740+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "BP Stock Gets Upgraded As Energy Sentiment Turns Higher",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/bp-stock-gets-upgraded-energy-063640987.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:36:40+00:00",
+      "summary": "BP p.l.c. (NYSE:BP) is among the 13 Best Crude Oil Stocks to Buy According to Analysts. On April 17, BNP Paribas upgraded BP p.l.c. (NYSE:BP) to Outperform from Neutral with a $57 price target. The up",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "The Global Energy ETF That Turns a Middle East Crisis Into a Worldwide Dividend Machine",
+      "url": "https://247wallst.com/investing/2026/04/21/the-global-energy-etf-that-turns-a-middle-east-crisis-into-a-worldwide-dividend-machine/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:35:04+00:00",
+      "summary": "Oil crossed $114 a barrel in early April 2026, a level not seen since 2022, and iShares Global Energy ETF (NYSEARCA:IXC) was up nearly 29% year-to-date by mid-April, collecting dividends from Riyadh t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BP Faces Shareholder Backlash Despite Shares Reaching 16-Year High",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bp-faces-shareholder-backlash-despite-190903052.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:09:03+00:00",
+      "summary": "Investors push back on governance after BP declines climate resolution ahead of annual meeting",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sector Update: Energy Stocks Rise Tuesday Afternoon",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-rise-tuesday-181020624.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:10:20+00:00",
+      "summary": "Energy stocks were higher Tuesday afternoon, with the NYSE Energy Sector Index rising 0.8% and the S",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sector Update: Energy Stocks Edge Higher Premarket Tuesday",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-edge-higher-132415500.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:24:15+00:00",
+      "summary": "Energy stocks were edging higher premarket Tuesday, with the State Street Energy Select Sector SPDR",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

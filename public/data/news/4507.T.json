@@ -1,0 +1,53 @@
+{
+  "ticker": "4507.T",
+  "last_updated": "2026-04-22T13:54:51.907351+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "D-Wave CEO on quantum computing's ChatGPT moment, Nvidia, & more",
+      "url": "https://finance.yahoo.com/video/d-wave-ceo-on-quantum-computings-chatgpt-moment-nvidia--more-152350565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T15:23:50+00:00",
+      "summary": "D-Wave Quantum (QBTS) president and CEO Alan Baratz sits down with Yahoo Finance Executive Editor Brian Sozzi to discuss Nvidia's (NVDA) artificial intelligence (AI) models for quantum computing, the ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Shionogi’s Fetroja Contract And Data Shift U.S. Growth And Valuation Outlook",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/shionogi-fetroja-contract-data-shift-002127044.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T00:21:27+00:00",
+      "summary": "Shionogi has received a major U.S. government contract to manufacture its antibiotic Fetroja domestically. New real world clinical data supports Fetroja's effectiveness and safety against high priorit",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "The Time to Talk about HIV is Now: ViiV Healthcare Launches \"Still Here\" PSA to Ignite Action Around HIV on National Youth HIV/AIDS Awareness Day",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/time-talk-hiv-now-viiv-120000155.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T12:00:00+00:00",
+      "summary": "DURHAM, N.C., April 10, 2026--ViiV Healthcare, the global specialist HIV company majority owned by GSK, with Shionogi as a shareholder, today released \"Still Here,\" a social media video campaign desig",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "RFK Jr. rewrites ACIP rules; Gilead, Roche dig into protein degraders",
+      "url": "https://www.biopharmadive.com/news/rfk-acip-vivatides-gilead-roche-c4-kymera-shionogi/817047/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T11:10:07+00:00",
+      "summary": "The newly published charter widens the required expertise to become an ACIP member and stresses vaccine safety. Elsewhere, Gilead licensed a Kymera drug and a new RNA-focused startup emerged.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Shionogi secures $482m BARDA contract to tackle AMR crisis",
+      "url": "https://www.pharmaceutical-technology.com/news/shionogi-secures-482m-barda-contract-antibiotic-antimicrobial-resistance/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T10:06:58+00:00",
+      "summary": "This funding will boost the US’s antibiotic manufacturing capacity, while helping to curb the threat of antimicrobial resistance (AMR) across America.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

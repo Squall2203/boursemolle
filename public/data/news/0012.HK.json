@@ -1,0 +1,35 @@
+{
+  "ticker": "0012.HK",
+  "last_updated": "2026-04-22T13:38:11.698436+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Hong Kong’s Henderson Land Unveils Central Yards Shopping and Cultural Center at Paris Party",
+      "url": "https://wwd.com/business-news/retail/central-yards-henderson-land-hong-kong-project-1238362887/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-26T15:15:50+00:00",
+      "summary": "The expansive two-phase development was unveiled during a gala dinner with fashion and cultural executives.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Does Henderson Land Still Offer Value After Its Strong 25% Rebound in 2024?",
+      "url": "https://finance.yahoo.com/news/does-henderson-land-still-offer-114139822.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T11:41:39+00:00",
+      "summary": "If you are eyeing Henderson Land Development for your portfolio, you are definitely not alone. This stock has been catching more attention lately, especially after a strong rebound earlier this year. ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Henderson Land upgraded to Overweight from Equal Weight at Morgan Stanley",
+      "url": "https://finance.yahoo.com/news/henderson-land-upgraded-overweight-equal-132531456.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-20T13:25:31+00:00",
+      "summary": "Morgan Stanley upgraded Henderson Land (HLDCY) to Overweight from Equal Weight with a price target of HK$31, up from HK$26.50, as the firm refreshed its ratings and preferences among its Hong Kong pro",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

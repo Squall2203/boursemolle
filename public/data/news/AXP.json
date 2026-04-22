@@ -1,0 +1,53 @@
+{
+  "ticker": "AXP",
+  "last_updated": "2026-04-22T12:55:08.973751+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "3 Warren Buffett Stocks to Hold Forever",
+      "url": "https://www.fool.com/investing/2026/04/22/3-warren-buffett-stocks-to-hold-forever/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:30:00+00:00",
+      "summary": "These are stocks Buffett said that he'd never sell.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "American Express (AXP) Valuation Check As Earnings, Dividend Rise And New AI Payment Tools Draw Attention",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/american-express-axp-valuation-check-070446684.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:04:46+00:00",
+      "summary": "American Express (AXP) is back in focus as investors weigh expectations for Thursday’s earnings, a recent 16% dividend increase, and fresh AI driven payment offerings built around its ACE Developer Ki",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "American Express (AXP) Reports Earnings Tomorrow: What To Expect",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/american-express-axp-reports-earnings-034923235.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T03:49:23+00:00",
+      "summary": "Global payments company American Express (NYSE:AXP) will be reporting results this Thursday before market open. Here’s what to expect.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2 Warren Buffett Dividend Stocks to Scoop Up in April",
+      "url": "https://www.barchart.com/story/news/1436718/2-warren-buffett-dividend-stocks-to-scoop-up-in-april?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T23:30:02+00:00",
+      "summary": "Warren Buffett is known for favoring durable businesses with strong cash flows, the kind that can sustain and grow dividends over time.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Warren Buffett’s American Express rides platinum card change wave",
+      "url": "https://www.thestreet.com/investing/stocks/warren-buffetts-american-express-rides-platinum-card-change-wave?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:07:00+00:00",
+      "summary": "Warren Buffett owns American Express as one of Berkshire Hathaway's largest positions, and he's held it for decades. In fact, the Oracle of Omahaearns over $575 million in annual dividends from Americ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

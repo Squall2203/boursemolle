@@ -1,0 +1,53 @@
+{
+  "ticker": "BIDU",
+  "last_updated": "2026-04-22T13:40:06.419462+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Baidu Inc (BIDU) Stock Down 3.3% but Still Overvalued -- GF Score: 81/100",
+      "url": "https://www.gurufocus.com/news/8807495/baidu-inc-bidu-stock-down-33-but-still-overvalued-gf-score-81100",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-21T22:33:37+00:00",
+      "summary": "Related Stocks: BIDU,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "iQIYI (NASDAQ:IQ) Stock Price Down 5.4% - Here's What Happened",
+      "url": "https://www.marketbeat.com/instant-alerts/iqiyi-nasdaqiq-stock-price-down-54-heres-what-happened-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T16:46:18+00:00",
+      "summary": "iQIYI (NASDAQ:IQ) Shares Down 5.4% - Should You Sell?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Volkswagen is adding AI voice assistants to its China-market cars this year",
+      "url": "https://qz.com/volkswagen-ai-voice-assistant-china-cars-042126",
+      "source": "qz.com",
+      "published_at": "2026-04-21T13:40:36+00:00",
+      "summary": "The AI agent, drawing on tech from Tencent, Alibaba, and Baidu, will run locally on the car rather than the cloud",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Chinese streaming site iQiyi debuts AI actor 'database'",
+      "url": "https://www.youtube.com/watch?v=DJZfIPBqyNQ",
+      "source": "youtube.com",
+      "published_at": "2026-04-21T12:27:12+00:00",
+      "summary": "Chinese streaming site iQiyi debuts AI actor 'database' Video streaming site iQiyi — China's equivalent of Netflix — is pushing forward a controversial initiative that it says will facilitate the use ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "New Strong Sell Stocks for April 21st",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/strong-sell-stocks-april-21st-100400892.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T10:04:00+00:00",
+      "summary": "ACI, BIDU and CBFV have been added to the Zacks Rank #5 (Strong Sell) List on April 21st, 2026.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

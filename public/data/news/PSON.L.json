@@ -1,0 +1,44 @@
+{
+  "ticker": "PSON.L",
+  "last_updated": "2026-04-22T12:31:55.930068+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Equities Traded in the US as American Depositary Receipts Sharply Lower in Tuesday Trading",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-151428886.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:14:28+00:00",
+      "summary": "European equities traded in the US as American depositary receipts were falling sharply late Tuesday",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pearson (PSO) Upgraded to Buy: What Does It Mean for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pearson-pso-upgraded-buy-does-160003503.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:00:03+00:00",
+      "summary": "Pearson (PSO) has been upgraded to a Zacks Rank #2 (Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Can Scholastic's Entertainment Growth Accelerate Profitability by 2027?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/scholastics-entertainment-growth-accelerate-profitability-152300118.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:23:00+00:00",
+      "summary": "SCHL's entertainment revenues jump 25% as digital views spike, narrowing operating losses and teeing up a bid for profit acceleration by 2027.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Scholastic Stock Up 34% YTD: Book Profits or Invest More?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/scholastic-stock-34-ytd-book-155800075.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:58:00+00:00",
+      "summary": "SCHL is up 34% year to date as Book Fairs, publishing franchises and digital entertainment momentum build - should investors cash out or stay in?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

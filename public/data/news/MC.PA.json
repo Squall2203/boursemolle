@@ -1,0 +1,53 @@
+{
+  "ticker": "MC.PA",
+  "last_updated": "2026-04-22T11:35:56.047614+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "The U.S. Is Luxury’s Best — and Maybe Only — Bet for Growth",
+      "url": "https://wwd.com/business-news/business-features/us-luxury-market-growth-opportunities-1238923471/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:48:38+00:00",
+      "summary": "But with war in the Middle East and an AI-dependent stock market, it remains to be seen how solid the market really is.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lvmh-share-transactions-disclosure-154700086.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:47:00+00:00",
+      "summary": "Paris, April 21st, 2026 The disclosure of share transactions carried out from April 13th to April 17th, 2026, was sent to the AMF on April 21st 2026. As required by current law, this document is publi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Luxury Brands Rising Above Retail Volatility. What the Ralph Lauren, Tapestry, and Williams-Sonoma Charts Show.",
+      "url": "https://finance.yahoo.com/m/e3781346-357a-3db5-9696-8554ec56e51d/luxury-brands-rising-above.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:29:00+00:00",
+      "summary": "Luxury retail stocks have been firm, with shares of  Ralph Lauren Tapestry  and  Williams-Sonoma  leading the space as investors leaned into companies benefiting from resilient demand among higher-inc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The Iran war is taking a toll on luxury retail. Here's how.",
+      "url": "https://finance.yahoo.com/video/the-iran-war-is-taking-a-toll-on-luxury-retail-heres-how-210423692.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T21:04:23+00:00",
+      "summary": "Pauline Brown, former LVMH (MC.PA) chairman of North America, sits down with Yahoo Finance's Josh Lipton to discuss the luxury retail sector and how it's being impacted by geopolitical shocks.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Louis Vuitton, Gucci, Hermès luxury sales decline as Iran war hits crucial Middle East demand",
+      "url": "https://finance.yahoo.com/markets/stocks/article/louis-vuitton-gucci-hermes-luxury-sales-decline-as-iran-war-hits-crucial-middle-east-demand-114914361.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:49:14+00:00",
+      "summary": "The US-Israeli war with Iran is having knock-on effects everywhere, including energy markets, materials, and travel. One usually immune sector is also getting hit hard: luxury.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "PUB.PA",
+  "last_updated": "2026-04-22T11:36:45.924707+00:00",
+  "sentiment_score": 0.3,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "OMC Balances Solid Growth Drivers With Near-Term Headwinds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/omc-balances-solid-growth-drivers-160200394.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:02:00+00:00",
+      "summary": "Omnicom balances diversified growth, strategic investments, and shareholder returns with competitive pressures, integration risks and liquidity concerns.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.5
+    },
+    {
+      "title": "Advertising leaders join Rocketium to scale AI-powered creative production platform",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/advertising-leaders-join-rocketium-scale-120000948.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:00:00+00:00",
+      "summary": "Rocketium announced the appointment of Hitesh Mehta and Sharon Foo as Executive Partners to lead enterprise growth for AI Studio, its creative production platform for global brands.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks To Consider Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-dividend-stocks-consider-now-053222251.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T05:32:22+00:00",
+      "summary": "As European markets rally, with the pan-European STOXX Europe 600 Index climbing over 3% amid easing geopolitical tensions and a temporary ceasefire between the U.S. and Iran, investors are keenly obs",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Publicis addresses Trade Desk spat, calls Sora shutdown ‘symbolic’",
+      "url": "https://www.marketingdive.com/news/publicis-addresses-trade-desk-spat-calls-sora-shutdown-symbolic/817410/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T10:55:00+00:00",
+      "summary": "The group delivered its 20th consecutive quarter of growth in Q1 despite the Middle East conflict, which executives said hasn’t rattled client spending.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Publicis Groupe : First Quarter 2026 Revenue",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/publicis-groupe-first-quarter-2026-052900986.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T05:29:00+00:00",
+      "summary": "Strong Q1 Expecting sequential acceleration in Q2 Confirming full year guidance despite macro context April 14, 2026 Revenue organic growth of +6.4% leading to net revenue organic growth of +4.5%, in ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

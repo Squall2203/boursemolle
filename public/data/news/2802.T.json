@@ -1,0 +1,53 @@
+{
+  "ticker": "2802.T",
+  "last_updated": "2026-04-22T13:49:21.209164+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "A Look At Ajinomoto (TSE:2802) Valuation After Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-ajinomoto-tse-2802-valuation-150557543.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T15:05:57+00:00",
+      "summary": "Ajinomoto stock snapshot after recent performance moves Ajinomoto (TSE:2802) has drawn fresh attention after recent share price moves, with the stock showing mixed short term returns but stronger gain",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Palliser Takes Stake in Ajinomoto, Urges 30%+ ABF Price Increase",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/palliser-takes-stake-ajinomoto-urges-190225754.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T19:02:25+00:00",
+      "summary": "Activist fund targets semiconductor insulation business, pushing pricing changes and segment disclosure to capture AI-driven demand",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Palliser Capital Publishes Value Enhancement Plan for Ajinomoto",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/palliser-capital-publishes-value-enhancement-070000421.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T07:00:00+00:00",
+      "summary": "LONDON, March 31, 2026--Palliser Capital (\"Palliser\"), a top 25 shareholder of Ajinomoto Co., Inc. (\"Ajinomoto\" or the \"Company\"), today published a comprehensive presentation outlining the opportunit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Global Tech Jitters Rattle Asian Stock Markets",
+      "url": "https://finance.yahoo.com/news/global-tech-jitters-rattle-asian-103818596.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T10:38:18+00:00",
+      "summary": "Asian stock markets finished mixed on the low side Friday, as traders weighed soggy software-sector",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Investors in Ajinomoto (Malaysia) Berhad (KLSE:AJI) have seen returns of 10% over the past five years",
+      "url": "https://finance.yahoo.com/news/investors-ajinomoto-malaysia-berhad-klse-230443304.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-08T23:04:43+00:00",
+      "summary": "In order to justify the effort of selecting individual stocks, it's worth striving to beat the returns from a market...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

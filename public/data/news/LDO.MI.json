@@ -1,0 +1,53 @@
+{
+  "ticker": "LDO.MI",
+  "last_updated": "2026-04-22T12:14:01.444015+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Leonardo DRS Launches New Maritime Counter-UAS Capability to Defeat Aerial Unmanned Threats at Sea",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/leonardo-drs-launches-maritime-counter-120000897.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:00:00+00:00",
+      "summary": "ARLINGTON, Va., April 20, 2026--Leonardo DRS, Inc. (Nasdaq: DRS) announced today it has successfully integrated its Maritime Mission Equipment Package (M-MEP) on an autonomous unmanned surface vessel ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Leonardo DRS Guard Conference Appearance And What It May Mean For Shares",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/leonardo-drs-guard-conference-appearance-010705432.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T01:07:05+00:00",
+      "summary": "Leonardo DRS (NasdaqGS:DRS) took part in the Alabama National Guard Conference 2026, engaging directly with Guard leadership and procurement teams. The company used the event to showcase defense solut",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Leonardo DRS (NASDAQ:DRS) Q4 Earnings: Leading The Defense Contractors Pack",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/leonardo-drs-nasdaq-drs-q4-081607699.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T08:16:07+00:00",
+      "summary": "The end of the earnings season is always a good time to take a step back and see who shined (and who not so much). Let’s take a look at how defense contractors stocks fared in Q4, starting with Leonar",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2 Reasons to Like DRS (and 1 Not So Much)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-drs-1-not-231427374.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T23:14:27+00:00",
+      "summary": "Leonardo DRS’s 16.4% return over the past six months has outpaced the S&amp;P 500 by 11.3%, and its stock price has climbed to $46.11 per share. This was partly thanks to its solid quarterly results, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Foreign Contractors Stand To Gain As NATO Countries Spend Big On Defense",
+      "url": "https://finance.yahoo.com/m/78f25fd4-b0fa-3d5b-8fc3-a0f4d4c2d0d3/foreign-contractors-stand-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T18:48:51+00:00",
+      "summary": "European countries are in rush to buy more defense equipment than the U.S. can supply them with. A crop of foreign military contractors are poised to cash in on the new demand.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

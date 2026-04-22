@@ -1,0 +1,53 @@
+{
+  "ticker": "DHER.DE",
+  "last_updated": "2026-04-22T11:57:00.178600+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Prosus to offload 4.5% Delivery Hero stake to Uber for €270m",
+      "url": "https://www.verdictfoodservice.com/news/prosus-offload-delivery-hero-stake/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T09:09:41+00:00",
+      "summary": "The deal involves selling 13.58 million ordinary shares in the Berlin-based food delivery group.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Delivery Hero (XTRA:DHER) Valuation After A Sharp Short-Term Share Price Rebound",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-delivery-hero-xtra-dher-230513168.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T23:05:13+00:00",
+      "summary": "What recent performance says about Delivery Hero shares Delivery Hero (XTRA:DHER) has drawn attention after a 5.2% move in the latest session, extending a month gain of 38.6%, even as the past 3 month",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Uber Expands Delivery Hero Stake as Prosus Trims Holdings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/b-riley-lifts-amc-target-021405845.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T02:14:05+00:00",
+      "summary": "Uber Technologies, Inc. (NYSE:UBER) is included among the Top 10 Reddit Stocks That Will Skyrocket. On April 17, CNBC reported that Uber Technologies, Inc. (NYSE:UBER) agreed to buy an additional 4.5%",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Uber Buys More Delivery Hero Shares in $318M Deal",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-buys-more-delivery-hero-175900554.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:59:00+00:00",
+      "summary": "Stake increase ties into regulatory-driven selloff by Prosus",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Uber Bets on Europe as Delivery Hero's Clock Ticks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-bets-europe-delivery-heros-153745913.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:37:45+00:00",
+      "summary": "This article first appeared on GuruFocus.  Uber Technologies (NYSE:UBER) rose 0.54% in premarket trading after the company agreed to acquire an additional 4.5% stake in Delivery Hero for approximately",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

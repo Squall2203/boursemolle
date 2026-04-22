@@ -1,0 +1,53 @@
+{
+  "ticker": "AC.PA",
+  "last_updated": "2026-04-22T11:31:51.109590+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "MSREI and QuinSpark sell Pullman Paris Tour Eiffel Hotel",
+      "url": "https://www.hotelmanagement-network.com/news/msrei-quinspark-sell-pullman-paris-tour-eiffel-hotel/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T09:59:52+00:00",
+      "summary": "MSREI and QuinSpark acquired the Pullman Paris Tour Eiffel Hotel in 2024, as part of a strategy focused on hotel investments.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Top European Dividend Stocks For April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-european-dividend-stocks-april-103153801.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T10:31:53+00:00",
+      "summary": "As European markets see a rise in optimism due to hopes of a shorter-than-expected Middle East conflict, the pan-European STOXX Europe 600 Index has climbed 3.92%, reflecting positive sentiment across",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Accor (ENXTPA:AC) Investment Story Is Shifting With Mixed Analyst Valuation Calls",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/accor-enxtpa-ac-investment-story-080756343.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T08:07:56+00:00",
+      "summary": "Analysts recently adjusted their fair value estimate for Accor from €56.68 to €55.71, a reduction of about €0.96 per share. This tweak sits within a broader mix of target cuts and target raises and re",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Accor Welcomes Aimie, a New Team Member and Performance Engine for Finance",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/accor-welcomes-aimie-team-member-063500983.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T06:35:00+00:00",
+      "summary": "In a move that underscores the accelerating evolution of enterprise finance, Accor, a global leader in hospitality, has introduced a modern addition to its finance teams across the Middle East, Africa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "I was paid to write fake Google reviews – then my ‘bosses’ tried to scam me",
+      "url": "https://uk.finance.yahoo.com/news/paid-write-fake-google-reviews-083148110.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T08:31:48+00:00",
+      "summary": "Undercover reporter gets a taste of the sprawling fraud industry in which cryptocurrencies play a crucial role",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "G.MI",
+  "last_updated": "2026-04-22T12:13:36.941611+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Iris 2026 ICC Survey Highlights Consumer Gap Between Feeling Secure and Actually Staying Secure",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/iris-2026-icc-survey-highlights-130000196.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T13:00:00+00:00",
+      "summary": "Iris® Powered by Generali (\"Iris\"), provider of a proprietary identity and cyber protection platform, today released the findings of the second annual Identity & Cybersecurity Concerns (ICC) Survey, w",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "A Look At Generali (BIT:G) Valuation After Record Results Higher Dividend And AI Transformation Push",
+      "url": "https://finance.yahoo.com/news/look-generali-bit-g-valuation-110727848.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-14T11:07:27+00:00",
+      "summary": "Assicurazioni Generali (BIT:G) has put investors on alert after reporting record operating and net results, double digit adjusted net profit growth and a higher dividend, while pushing ahead with AI l",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Generali annual net profit rises 12% on broad-based growth",
+      "url": "https://www.lifeinsuranceinternational.com/news/generali-2025-annual-net-profit/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T09:35:10+00:00",
+      "summary": "In the life segment, GWPs stood at €61.9bn ($70.78bn), an increase of 1.4%.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Generali (ARZGF) Q4 2025 Earnings Call Highlights: Record-Breaking Performance and Strategic ...",
+      "url": "https://finance.yahoo.com/news/generali-arzgf-q4-2025-earnings-170155891.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T17:01:55+00:00",
+      "summary": "Generali (ARZGF) reports a robust 9.7% increase in operating results and unveils strategic plans for sustained growth amid market challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Zurich to buy Generali’s Irish non-life unit for $389m",
+      "url": "https://www.lifeinsuranceinternational.com/news/zurich-buy-generali-irish-non-life-unit/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-10T09:25:55+00:00",
+      "summary": "The deal aligns with Zurich’s retail strategy in the EMEA region and is expected to strengthen its competitive position in Ireland.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

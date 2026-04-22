@@ -1,0 +1,53 @@
+{
+  "ticker": "TMUS",
+  "last_updated": "2026-04-22T12:58:24.452021+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Deutsche Telekom explores merger with T-Mobile, sources say",
+      "url": "https://www.youtube.com/watch?v=b18s3fp5INU",
+      "source": "youtube.com",
+      "published_at": "2026-04-22T10:52:30+00:00",
+      "summary": "Deutsche Telekom shares fell 1.5% on reports of a potential merger between the German telecoms conglomerate and US-based T-Mobile US which would be the largest ‌ever public merger if it goes ahead. #N",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "These are the best phone plan providers, according to Consumer Reports",
+      "url": "https://qz.com/best-cell-phone-providers-consumer-reports",
+      "source": "qz.com",
+      "published_at": "2026-04-22T09:10:23+00:00",
+      "summary": "The publication looked beyond the big three providers of AT&T, Verizon, and T-Mobile",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Deutsche Telekom shares drop as reports of T-Mobile U.S. merger weigh",
+      "url": "https://www.investing.com/news/stock-market-news/deutsche-telekom-shares-drop-as-reports-of-tmobile-us-merger-weigh-4628290",
+      "source": "investing.com",
+      "published_at": "2026-04-22T08:48:53+00:00",
+      "summary": "",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Deutsche Telekom eyes full combination with T-Mobile US",
+      "url": "https://www.mobileworldlive.com/deutsche-telekom/deutsche-telekom-eyes-full-combination-with-t-mobile-us/",
+      "source": "mobileworldlive.com",
+      "published_at": "2026-04-22T08:25:20+00:00",
+      "summary": "Deutsche Telekom is reportedly exploring a merger with its subsidiary T-Mobile US which would create the world's largest wireless operator by market capitalisation. The post Deutsche Telekom eyes full",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Deutsche Telekom, T-Mobile Would Be World’s Biggest M&A Deal",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-22/deutsche-telekom-t-mobile-would-be-world-s-biggest-m-a-deal",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-22T08:24:20+00:00",
+      "summary": "The technology, media and telecommunications sector has been behind the world’s largest public M&A deals and could be on course to deliver a fresh record. A T-Mobile store in New York.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

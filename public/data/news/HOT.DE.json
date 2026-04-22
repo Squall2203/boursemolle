@@ -1,0 +1,53 @@
+{
+  "ticker": "HOT.DE",
+  "last_updated": "2026-04-22T11:58:38.194609+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "HOCHTIEF consortium to build next phase of Prague Metro Line D",
+      "url": "https://www.worldconstructionnetwork.com/news/hochtief-prague-metro-line-d/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T10:58:40+00:00",
+      "summary": "The construction will add three new stations and nearly 6km of tunnels to the expanding Prague Metro Line D.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Vulcan Energy Resources (ASX:VUL) Valuation After Roberto Gallardo Joins The Board",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-vulcan-energy-resources-asx-021121464.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T02:11:21+00:00",
+      "summary": "Vulcan Energy Resources (ASX:VUL) has drawn fresh attention after appointing Roberto Gallardo, Chief Strategy Officer at HOCHTIEF and President and Executive Director at CIMIC Group, to its Board of D",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "HSBC Continental Europe: Pre Stabilisation Notice",
+      "url": "https://finance.yahoo.com/markets/options/articles/hsbc-continental-europe-pre-stabilisation-100700837.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T10:07:00+00:00",
+      "summary": "PARIS, April 08, 2026 (GLOBE NEWSWIRE) -- HOCHTIEF Aktiengesellschaft Pre Stabilisation Notice HSBC (contact: syndexecution@noexternalmail.hsbc.com) hereby gives notice, as Stabilisation Coordinator, ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "HOCHTIEF-led consortium secures $232m Southampton student housing contract",
+      "url": "https://www.worldconstructionnetwork.com/news/hochtief-secures-southampton-housing-contract/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T11:00:33+00:00",
+      "summary": "The project will add new student housing, refurbish existing units and restore a historic university building by 2029.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HOCHTIEF wins $1.04bn contract for 26km East Link rail expansion",
+      "url": "https://www.worldconstructionnetwork.com/news/hochtief-east-link0rail-contract-sweden/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T09:09:31+00:00",
+      "summary": "HOCHTIEF will design and expand the line, with construction set to continue until 2034.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

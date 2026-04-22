@@ -1,0 +1,53 @@
+{
+  "ticker": "IBE.MC",
+  "last_updated": "2026-04-22T12:10:20.948285+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Iberdrola Raises Generation Capacity to Nearly 59GW",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/iberdrola-raises-generation-capacity-nearly-131607108.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:16:07+00:00",
+      "summary": "The Spanish company's U.S. portfolio saw the biggest growth (+693MW), while battery energy storage led growth by technology across Iberdrola's global portfolio.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Iberdrola Buys Italian Solar Plant To Support Contracted Growth Story",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/iberdrola-buys-italian-solar-plant-210512353.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T21:05:12+00:00",
+      "summary": "Iberdrola has agreed to acquire a 42 MW solar photovoltaic plant in Italy. The transaction adds a new renewable asset to its portfolio and extends its presence in the Italian market. The deal aligns w",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Iberdrola acquires Italian solar plant",
+      "url": "https://finance.yahoo.com/m/40a219d5-8f94-3c33-96eb-8a83a23b139b/iberdrola-acquires-italian.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T14:00:00+00:00",
+      "summary": "Iberdrola has reached an agreement to acquire a solar photovoltaic plant located in Italy with an installed capacity of 42 MW from CCE.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vineyard Wind sues GE Vernova over $4.5bn offshore wind project",
+      "url": "https://www.power-technology.com/news/vineyard-wind-sues-ge-vernova/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T11:11:11+00:00",
+      "summary": "The offshore wind farm’s future is uncertain as Vineyard Wind and GE Vernova dispute contract terms and outstanding payments.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Iberdrola to secure 98% stake in Brazilian arm Neoenergia",
+      "url": "https://www.power-technology.com/news/iberdrola-to-secure-stake-neoenergia/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:38:17+00:00",
+      "summary": "The Spanish multinational purchased an additional 14.2% of Neoenergia shares at 33.77 reais ($6.62) each.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "4901.T",
+  "last_updated": "2026-04-22T13:51:11.440099+00:00",
+  "sentiment_score": 0.3,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Fujifilm Powers U.S. and Canadian Operations with 100% Renewable Energy through Solar Partnership",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/fujifilm-powers-u-canadian-operations-133000029.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:30:00+00:00",
+      "summary": "TOKYO, April 21, 2026--FUJIFILM Holdings Corporation announced today that it is offsetting 100 percent of its group companies’ electricity usage in the United States and Canada through renewable energ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FUJIFILM Q3 Earnings & Revenues Up Y/Y, FY25 View Revised",
+      "url": "https://finance.yahoo.com/news/fujifilm-q3-earnings-revenues-y-141300787.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T14:13:00+00:00",
+      "summary": "FUJIY posted record Q3 fiscal 2025 revenue and profits as Healthcare, Electronics and Imaging gains offset weakness in Business Innovation.",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "Ultrasound Device Market Competitive Analysis Report 2025: Key Players, Company Profiles, Strategic Developments, Mergers, Product Innovations, Revenue Insights, and Future Forecasts to 2033",
+      "url": "https://finance.yahoo.com/news/ultrasound-device-market-competitive-analysis-152600011.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T15:26:00+00:00",
+      "summary": "The ultrasound devices market is projected to grow from US$9.84 billion in 2025 to approximately US$15.23 billion by 2033, with a CAGR of 5.61%. This expansion is fueled by rising demands for non-inva",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FUJIFILM (TSE:4901): Assessing Valuation After Recent Share Price Pullback and Solid Multi‑Year Returns",
+      "url": "https://finance.yahoo.com/news/fujifilm-tse-4901-assessing-valuation-031032191.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-05T03:10:32+00:00",
+      "summary": "FUJIFILM Holdings (TSE:4901) has been quietly reshaping itself around healthcare, electronics, and imaging, and the stock’s recent drift masks a much stronger long term performance story than the past",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "FUJIFILM Unveils LTO Ultrium 10 (40TB) for Secure, High-Capacity Storage",
+      "url": "https://finance.yahoo.com/news/fujifilm-unveils-lto-ultrium-10-140100904.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-26T14:01:00+00:00",
+      "summary": "FUJIY launches LTO Ultrium 10 (40TB), shipping January 2026, delivering up to 100TB per cartridge while staying compatible with existing LTO-10 drives.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

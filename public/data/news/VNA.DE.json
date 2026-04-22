@@ -1,0 +1,53 @@
+{
+  "ticker": "VNA.DE",
+  "last_updated": "2026-04-22T11:56:23.420296+00:00",
+  "sentiment_score": 0.53,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Vonovia (ETR:VNA) Is Posting Solid Earnings, But It Is Not All Good News",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vonovia-etr-vna-posting-solid-080459209.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T08:04:59+00:00",
+      "summary": "Investors appear disappointed with Vonovia SE's ( ETR:VNA ) recent earnings, despite the decent statutory profit...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Vonovia (XTRA:VNA) Story Is Shifting As Analysts Recalibrate Upside And Risks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vonovia-xtra-vna-story-shifting-100449920.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T10:04:49+00:00",
+      "summary": "Vonovia’s analyst story has shifted slightly, with JPMorgan lifting its price target from €35.50 to €36.00 while the fair value estimate is held at €34.36. Bullish voices point to the higher target an",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Vonovia SE (VNNVF) Full Year 2025 Earnings Call Highlights: Strong EBITDA Growth and Strategic ...",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vonovia-se-vnnvf-full-2025-010229828.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-24T01:02:29+00:00",
+      "summary": "Vonovia SE (VNNVF) reports robust financial performance with significant growth in key segments, while outlining strategies to manage debt and enhance shareholder value.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Vonovia Q4 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/vonovia-q4-earnings-call-highlights-2026-03-19/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T14:56:25+00:00",
+      "summary": "Vonovia (ETR:VNA) used its full-year 2025 analyst and investor call to reaffirm its near-term targets while outlining a more ambitious medium-term agenda under new CEO Luka Mucic. Management said 2025",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MLP Builds Momentum on Leasing Growth & Maui Land Value",
+      "url": "https://finance.yahoo.com/news/mlp-builds-momentum-leasing-growth-155000041.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-25T15:50:00+00:00",
+      "summary": "Maui Land & Pineapple is strengthening recurring revenues, unlocking Maui land value, and boosting EBITDA as leasing surges and pension risks fade.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "TSN",
+  "last_updated": "2026-04-22T13:29:40.792929+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Tyson Foods (TSN) Advances While Market Declines: Some Information for Investors",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tyson-foods-tsn-advances-while-221505048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:15:05+00:00",
+      "summary": "In the closing of the recent trading day, Tyson Foods (TSN) stood at $64.57, denoting a +1.41% move from the preceding trading day.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "DOJ reportedly pursuing criminal antitrust probe of major meatpacking companies",
+      "url": "https://www.foxbusiness.com/economy/doj-reportedly-pursuing-criminal-antitrust-probe-major-meatpacking-companies?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:19:49+00:00",
+      "summary": "The DOJ is reportedly investigating four major beef companies in a criminal antitrust probe after Trump claimed meatpackers manipulated cattle prices.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BUD's Non-Alcohol Beer Growth: Can Zero Products Drive Momentum?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buds-non-alcohol-beer-growth-154500345.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:45:00+00:00",
+      "summary": "AB InBev's non-alcoholic beer revenues jump 34% as Corona Cero and Michelob ULTRA Zero gain traction, making zero products a key growth driver.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Sysco Corporation Raises Dividend, Reinforces Growth Strategy",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sysco-corporation-raises-dividend-reinforces-143200405.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:32:00+00:00",
+      "summary": "SYY raises its dividend to 55 cents, signaling confidence in cash flow strength and steady growth.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Philip Morris' IQOS Retains FDA Modified-Risk Authorization",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/philip-morris-iqos-retains-fda-141600954.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:16:00+00:00",
+      "summary": "Philip Morris wins renewed FDA backing for IQOS, keeping its modified-risk claims alive as the company accelerates its shift beyond cigarettes.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

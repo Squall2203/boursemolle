@@ -1,0 +1,53 @@
+{
+  "ticker": "LYFT",
+  "last_updated": "2026-04-22T13:21:47.484848+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Zocdoc Names Lyft’s Brian Irving as Its First CMO",
+      "url": "https://www.adweek.com/brand-marketing/zocdoc-names-lyfts-brian-irving-as-its-first-cmo/",
+      "source": "adweek.com",
+      "published_at": "2026-04-22T07:09:45+00:00",
+      "summary": "Irving arrives as Zocdoc expands beyond scheduling to play a more active role in how patients find and access care.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "We Took a Waymo: The Financial Disruption Matches the Technological One (Part 1)",
+      "url": "https://automarketplace.substack.com/p/we-took-a-waymo-the-financial-disruption",
+      "source": "substack.com",
+      "published_at": "2026-04-22T06:24:21+00:00",
+      "summary": "Waymo was up to 30% cheaper than than Uber and Lyft in Los Angeles. The driver's paycheck is the line item that disappears. The financial disruption deserves as much attention as the technological one",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Do Rideshare Drivers Need Special Car Insurance?",
+      "url": "https://www.jalopnik.com/2149681/why-rideshare-drivers-need-special-insurance/",
+      "source": "jalopnik.com",
+      "published_at": "2026-04-22T01:25:00+00:00",
+      "summary": "You're a driver for Uber or Lyft, and you get into an accident. Surely the company's insurance will cover you, right? Ah, but there's a catch or two. You're a driver for Uber or Lyft, and you get into",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Insider Selling: Lyft (NASDAQ:LYFT) Insider Sells 23,661 Shares of Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/insider-selling-lyft-nasdaqlyft-insider-sells-23661-shares-of-stock-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T00:40:44+00:00",
+      "summary": "Lyft, Inc. (NASDAQ:LYFT - Get Free Report) insider Lindsay Catherine Llewellyn sold 23,661 shares of Lyft stock in a transaction dated Friday, April 17th. The shares were sold at an average price of $",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Lyft Service Ends, New FSU SAFE Ride Takes Over",
+      "url": "https://www.bocaratontribune.com/bocaratonnews/2026/04/lyft-service-ends-new-fsu-safe-ride-takes-over/",
+      "source": "bocaratontribune.com",
+      "published_at": "2026-04-21T21:20:52+00:00",
+      "summary": "Florida State ended its long-standing Lyft partnership on April 11, replacing the service with FSU SAFE Ride, an all-new university-managed transit system. While students previously used Student Alert",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "NK.PA",
+  "last_updated": "2026-04-22T11:42:17.502231+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "STOP SLAGGING. START SAVING: Maximize Boiler Availability with Aurora™ at the 2026 International BioMass Show",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/stop-slagging-start-saving-maximize-213000759.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T21:30:00+00:00",
+      "summary": "For energy producers, pulp & board mills, and pellet manufacturers, the equation is simple: Cleaner boilers equal higher profits. At the International BioMass Show in Nashville, TN, Imerys is highligh",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Imerys (IMYSF) Full Year 2025 Earnings Call Highlights: Resilient Performance Amid Market Challenges",
+      "url": "https://finance.yahoo.com/news/imerys-imysf-full-2025-earnings-150040336.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-20T15:00:40+00:00",
+      "summary": "Imerys (IMYSF) reports stable revenue and significant sustainability achievements, despite facing currency headwinds and goodwill impairments.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fluorspar mine restart makes Newfoundland the only North American producer of critical mineral",
+      "url": "https://ca.finance.yahoo.com/news/fluorspar-mine-restart-makes-newfoundland-161602342.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-28T16:16:02+00:00",
+      "summary": "Used in technology and defence supply chains, but 80 per cent of the mineral comes from China",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Imerys (ENXTPA:NK) Is Up 8.1% After Swinging to Profit on Lower Sales in Q3 2025",
+      "url": "https://finance.yahoo.com/news/imerys-enxtpa-nk-8-1-130904671.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-12T13:09:04+00:00",
+      "summary": "Imerys S.A. recently announced third quarter 2025 results, reporting sales of €827 million and net income of €39 million, a turnaround from a net loss of €285 million in the same period last year. Thi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Starlink rival Eutelsat makes surprise CFO change ahead of fund raising",
+      "url": "https://finance.yahoo.com/news/french-satellite-operator-eutelsat-taps-074111166.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-05T07:41:11+00:00",
+      "summary": "Eutelsat has appointed Sébastien Rouge as its new finance chief, the satellite operator said on Wednesday, weeks before it plans to raise fresh funding to help it compete with Space X's Starlink. Roug",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

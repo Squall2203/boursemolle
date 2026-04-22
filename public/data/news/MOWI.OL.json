@@ -1,0 +1,53 @@
+{
+  "ticker": "MOWI.OL",
+  "last_updated": "2026-04-22T12:46:27.027365+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Mowi ASA (OSE:MOWI): Q1 2026 Trading update",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mowi-asa-ose-mowi-q1-043000478.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T04:30:00+00:00",
+      "summary": "Harvest volumes Q1 2026 (1) Farming Norway75.5 thousand tonnes Farming Scotland20.5 thousand tonnes Farming Chile21.0 thousand tonnes Farming Canada8.0 thousand tonnes Farming Ireland2.0 thousand tonn",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mowi Expands Norwegian Farming As US Tariff Dispute Clouds Valuation",
+      "url": "https://finance.yahoo.com/news/mowi-expands-norwegian-farming-us-182206320.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-14T18:22:06+00:00",
+      "summary": "Mowi (OB:MOWI) has agreed to acquire Torghatten Aqua's seawater salmon farming operations in Northern Norway. The deal expands Mowi's ocean-based farming footprint in a key Norwegian production region",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mowi enters into Transaction Agreement to purchase Torghatten Aqua’s salmon farming seawater business",
+      "url": "https://finance.yahoo.com/news/mowi-enters-transaction-agreement-purchase-060000257.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-10T06:00:00+00:00",
+      "summary": "(Bergen, 10 March 2026). Mowi is pleased to announce that we have entered into a Transaction Agreement to purchase all of Torghatten Aqua AS’s salmon farming seawater business. Torghatten Aqua is a sa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mowi continues to 'edutain' the nation on salmon",
+      "url": "https://finance.yahoo.com/news/mowi-continues-edutain-nation-salmon-170200630.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T17:02:00+00:00",
+      "summary": "Mowi, the world's largest producer of farm-raised salmon and a global leader in sustainable protein, is expanding its MOWI Brand edutainment platform in the US market, reinforcing its commitment to ed",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Fish Farming Industry Report 2025: Market to Reach $479.5 Billion by 2033, Driven by Rising Seafood Demand, Sustainable Aquaculture Practices and RAS Technology Adoption Drive",
+      "url": "https://finance.yahoo.com/news/fish-farming-industry-report-2025-113200856.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T11:32:00+00:00",
+      "summary": "The Fish Farming Market is poised for substantial growth, projected to reach US$ 479.5 billion by 2033 from US$ 334.09 billion in 2025, at a CAGR of 4.62%. This expansion is fueled by increasing seafo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

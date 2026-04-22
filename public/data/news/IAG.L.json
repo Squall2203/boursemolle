@@ -1,0 +1,53 @@
+{
+  "ticker": "IAG.L",
+  "last_updated": "2026-04-22T12:30:54.539901+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Australian watchdog sends IAG-RAC deal to Phase 2 review",
+      "url": "https://www.lifeinsuranceinternational.com/news/iag-rac-deal-phase-2-review/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T08:45:11+00:00",
+      "summary": "The regulator said it has not formed a final opinion and will continue its assessment during Phase 2.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Europe's Blue-Chip Indexes Slide on Oil Surge",
+      "url": "https://finance.yahoo.com/m/a6ac249d-44ce-36ef-b94e-3d0031009a97/europe%27s-blue-chip-indexes.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T08:24:17+00:00",
+      "summary": "European blue-chip indexes were falling sharply after oil prices surged in response to the failure in U.S.-Iran peace talks over the weekend. Banks and consumer-sensitive stocks slid as the Europe-wid",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Strength Seen in United (UAL): Can Its 7.9% Jump Turn into More Strength?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/strength-seen-united-ual-7-085500497.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T08:55:00+00:00",
+      "summary": "United (UAL) saw its shares surge in the last session with trading volume being higher than average. The latest trend in earnings estimate revisions may not translate into further price increase in th",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Iran ceasefire relief sends shares soaring and energy prices sharply down",
+      "url": "https://www.standard.co.uk/business/iran-ceasefire-relief-shares-soaring-and-energy-prices-down-b1277950.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T07:38:30+00:00",
+      "summary": "The stock market soared today as a relieved City cheered the ceasefire in the Middle East and oil prices slumped.  Within the first few minutes of trading the FTSE 100 index of leading British company",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "FTSE 100 Live: Index rockets at open as miners and airlines climb on Iran ceasefire",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090159/ftse-100-live-index-to-rocket-300-points-as-oil-drops-on-us-iran-ceasefire-1090159.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T07:13:00+00:00",
+      "summary": "8.12am: FTSE 100 flies at the open There we go: the FTSE 100 has been launched 248 points higher to 10,596 in just over 10 minutes. Miners and airline-associated shares are topping the early risers, w",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

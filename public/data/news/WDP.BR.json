@@ -1,0 +1,26 @@
+{
+  "ticker": "WDP.BR",
+  "last_updated": "2026-04-22T12:09:31.961440+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Warehouses De Pauw SA (WDPSF) Full Year 2025 Earnings Call Highlights: Strong Growth and ...",
+      "url": "https://finance.yahoo.com/news/warehouses-pauw-sa-wdpsf-full-010530920.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T01:05:30+00:00",
+      "summary": "WDPSF reports robust financial performance with a 7% EPS growth and unveils ambitious goals for 2030, including expansion into new markets.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Warehouses De Pauw’s 2025 Recovery for Real After Improving Logistics Demand?",
+      "url": "https://finance.yahoo.com/news/warehouses-pauw-2025-recovery-real-105715497.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-15T10:57:15+00:00",
+      "summary": "Trying to decide what to do with your Warehouses De Pauw shares? You are not alone. After a year that saw the stock drop by 11.3% and five-year performance down 20.3%, it is no wonder investors are we",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

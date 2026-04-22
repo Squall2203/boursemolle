@@ -1,0 +1,53 @@
+{
+  "ticker": "6758.T",
+  "last_updated": "2026-04-22T13:42:37.304435+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Honda & Sony End Afeela EV Project, Eye Non-EV Opportunities",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/honda-sony-end-afeela-ev-184400049.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T18:44:00+00:00",
+      "summary": "Honda ends Afeela EV with Sony, shifts focus to AI, audio tech, and non-EV opportunities while keeping partnership intact.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vadzo Imaging Expands NDAA Compliant Innova GigE Camera Portfolio with Six High Performance Industrial Vision Camera Models",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/vadzo-imaging-expands-ndaa-compliant-163000230.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:30:00+00:00",
+      "summary": "The Innova GigE camera lineup covers resolutions from 2MP to 8.46MP across six production ready models built on Sony STARVIS 2 IMX678, Sony STARVIS IMX715, Sony STARVIS IMX662, Sony Pregius S IMX900, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sony-Honda JV explores new options after EV cancellation – report",
+      "url": "https://www.just-auto.com/news/sony-honda-jv-explores-new-options/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T09:51:17+00:00",
+      "summary": "The JV said last month that development of the Afeela 1 had been halted after changes to Honda’s electrification plans.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sony (SONY) Advances But Underperforms Market: Key Facts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sony-sony-advances-underperforms-market-215004696.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T21:50:04+00:00",
+      "summary": "The latest trading day saw Sony (SONY) settling at $21.7, representing a +1.12% change from its previous close.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sector Update: Consumer Stocks Rise Late Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-rise-afternoon-195025786.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T19:50:25+00:00",
+      "summary": "Consumer stocks were higher late Friday afternoon, with the State Street Consumer Staples Select Sec",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

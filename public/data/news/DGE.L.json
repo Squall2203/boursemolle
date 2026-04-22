@@ -1,0 +1,53 @@
+{
+  "ticker": "DGE.L",
+  "last_updated": "2026-04-22T12:21:50.878210+00:00",
+  "sentiment_score": -0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "The Captain's Serving Summer: NEW Captain Morgan Sliced Colada Variety Pack Is On Shelves Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/captains-serving-summer-captain-morgan-140000959.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:00+00:00",
+      "summary": "No plans required. No flights booked. No out-of-office notes needed. The Captain Morgan Sliced lineup is officially taking a mini vacation with its NEW Captain Morgan Sliced Colada Style Drink Variety",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Diageo (LSE:DGE) Valuation As Mixed Share Price Momentum Draws Investor Attention",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-diageo-lse-dge-valuation-140604415.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T14:06:04+00:00",
+      "summary": "Why Diageo (LSE:DGE) is on investors’ radar today Diageo (LSE:DGE) has been drawing attention after a period where the share price shows mixed short term moves and weaker longer term returns. This has",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "United States Beer Market Report 2025-2033 Featuring Asahi, Molson Coors, Tetra Laval, Kirin,  Beijing Yanjing Beer, Diageo, Dogfish Head Craft Brewery, Sierra Nevada, Modelo Oettinger Brauerei",
+      "url": "https://finance.yahoo.com/markets/articles/united-states-beer-market-report-153300001.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T15:33:00+00:00",
+      "summary": "Growth factors include a rising demand for craft beers, an emphasis on sustainability, and innovative brewing methods. With a vibrant culture of over a thousand craft breweries, American consumers are",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "DEO- New CEO, Turnaround Plan Make this an Attractive Value Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deo-ceo-turnaround-plan-attractive-050100835.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T05:01:00+00:00",
+      "summary": "Diageo Plc’s (DEO) 1H FY2026 earnings report was a textbook “kitchen sink” quarter, the kind you tend to see whenever a brand-new CEO steps into a turnaround situation. The idea is simple: Take all yo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "5 Alcohol Stocks Battling Cost Pressures, Betting on Premiumization",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-alcohol-stocks-battling-cost-134300360.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T13:43:00+00:00",
+      "summary": "Alcohol stocks face rising costs and tariff risks, but premium drinks and innovation are key to sustaining growth in a shifting alcohol market. Players like BUD, DEO, STZ, BF.B and TAP look well poise",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    }
+  ]
+}

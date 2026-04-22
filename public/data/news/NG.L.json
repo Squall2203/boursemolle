@@ -1,0 +1,53 @@
+{
+  "ticker": "NG.L",
+  "last_updated": "2026-04-22T12:22:27.729035+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "How The National Grid (LSE:NG.) Story Is Shifting With New Targets And GridCARE Partnership",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/national-grid-lse-ng-story-100944217.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T10:09:44+00:00",
+      "summary": "The latest analyst update nudges National Grid’s fair value price target to £13.63 from £13.53, putting a fresh spotlight on how the story is evolving. Analysts link this revised target to questions a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "National Grid (NGG) Partners With GridCARE to Accelerate Large-Load Interconnections",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/national-grid-ngg-partners-gridcare-044409730.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T04:44:09+00:00",
+      "summary": "National Grid (NYSE:NGG) is one of the 7 Most Profitable Value Stocks to Buy Right Now. National Grid (NYSE:NGG) is one of the most profitable value stocks to buy right now. On March 25, GridCARE and ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "National Grid (NGG) PT Increased by £200, ‘Overweight’ Rating Maintained",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/national-grid-ngg-pt-increased-020040791.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T02:00:40+00:00",
+      "summary": "National Grid plc (NYSE:NGG) is included among the 15 Utility Stocks with Highest Dividends. National Grid plc (NYSE:NGG) engages in the transmission and distribution of electricity and gas. It operat",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Eversource, Avangrid ask FERC to stay $1.5B refund decision",
+      "url": "https://www.utilitydive.com/news/eversource-avangrid-ferc-roe-refund-iso-ne/816797/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T08:38:04+00:00",
+      "summary": "The utility companies asked the agency to put a hold on a recent return on equity decision, saying consumers could be hurt by “rate whiplash” if the refunds are overturned in court.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "National Grid, GridCARE partnership could cut ‘time to power’ for large loads in New York",
+      "url": "https://www.utilitydive.com/news/national-grid-gridcare-partnership-could-cut-time-to-power-for-large-loa/816344/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T11:13:37+00:00",
+      "summary": "The initiative aims to boost grid utilization and keep bills in check in a region that has drawn high-profile data center and advanced manufacturing projects.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

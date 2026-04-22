@@ -1,0 +1,53 @@
+{
+  "ticker": "9961.HK",
+  "last_updated": "2026-04-22T13:33:21.407762+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Cooler Destinations, Hotter Demand: Travellers Seek 'Coolcations' as Temperatures Rise",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/cooler-destinations-hotter-demand-travellers-020000162.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T02:00:00+00:00",
+      "summary": "Earth is heating up: The global surface temperature has increased faster since 1970 than in any other 50-year period over at least the last 2000 years, with February 2026 recorded as the fifth-warmest",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "These 2 Consumer Discretionary Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-consumer-discretionary-stocks-could-130003056.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:00:03+00:00",
+      "summary": "Why investors should use the Zacks Earnings ESP tool to help find stocks that are poised to top quarterly earnings estimates.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Trip.com (TCOM) Exceeds Market Returns: Some Facts to Consider",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trip-com-tcom-exceeds-market-221503039.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T22:15:03+00:00",
+      "summary": "In the closing of the recent trading day, Trip.com (TCOM) stood at $54.12, denoting a +2.95% move from the preceding trading day.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Trip.com Group (NasdaqGS:TCOM) Investment Story Is Shifting With New Risks And Repriced Targets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trip-com-group-nasdaqgs-tcom-130559739.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T13:05:59+00:00",
+      "summary": "Trip.com Group’s fair value estimate has been adjusted slightly from $76.21 to $76.50 per share, signaling only a modest reset to the headline price target. Across the Street, many analysts are trimmi",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Trip.com (TCOM) Stock Dips While Market Gains: Key Facts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trip-com-tcom-stock-dips-221504473.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T22:15:04+00:00",
+      "summary": "In the closing of the recent trading day, Trip.com (TCOM) stood at $51.34, denoting a -1.02% move from the preceding trading day.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

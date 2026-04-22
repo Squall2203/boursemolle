@@ -1,0 +1,53 @@
+{
+  "ticker": "2269.HK",
+  "last_updated": "2026-04-22T13:34:34.977449+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "WuXi Biologics Recognized by Morningstar Sustainalytics as Industry and Regional ESG Leader for Sixth Year",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/wuxi-biologics-recognized-morningstar-sustainalytics-053000129.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T05:30:00+00:00",
+      "summary": "WuXi Biologics (2269.HK), a leading global Contract Research, Development and Manufacturing Organization (CRDMO), announced that it has been named by Morningstar Sustainalytics as both an Industry ESG",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "WuXi Biologics Achieves ISO 13485 Certification, Signifying Strong Capabilities in Drug-Device Combination Product Development and Manufacturing",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/wuxi-biologics-achieves-iso-13485-023900008.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T02:39:00+00:00",
+      "summary": "WuXi Biologics (2269.HK), a leading global Contract Research, Development and Manufacturing Organization (CRDMO), announced that it has successfully achieved ISO 13485:2016 Medical Device Quality Mana",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing WuXi Biologics (SEHK:2269) Valuation After Choppy Returns And An Undervalued Narrative",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-wuxi-biologics-sehk-2269-151349352.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:13:49+00:00",
+      "summary": "What WuXi Biologics (Cayman) SEHK:2269’s recent returns suggest WuXi Biologics (Cayman) SEHK:2269 has seen mixed share performance, with a 1 day return of 1.0% and a 1 year total return of 84.9%, alon",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "WuXi Biologics Honored with CDMO Leadership Awards for Ninth Consecutive Year",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/wuxi-biologics-honored-cdmo-leadership-053300477.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T05:33:00+00:00",
+      "summary": "WuXi Biologics (\"WuXi Bio\") (2269.HK), a leading global Contract Research, Development and Manufacturing Organization (CRDMO), announced that it has won \"Biologics CDMO of the Year\" (Large CDMOs) in t",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "WuXi Biologics Reports Record 2025 Annual Results, Operational Excellence Driven by Digital-Native Architecture",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/wuxi-biologics-reports-record-2025-102200736.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T10:22:00+00:00",
+      "summary": "WuXi Biologics (\"WuXi Bio\") (2269.HK), a leading global Contract Research, Development and Manufacturing Organization (CRDMO), has released its annual results for 2025, demonstrating record growth and",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "0857.HK",
+  "last_updated": "2026-04-22T13:31:55.717366+00:00",
+  "sentiment_score": 0.29,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "CATL Surges To $306 Billion Valuation, Overtakes PetroChina Again",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/catl-surges-306-billion-valuation-142948053.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T14:29:48+00:00",
+      "summary": "Battery maker's profit beat and storage momentum lift shares as oil prices ease on ceasefire talks",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "PetroChina Balances Softer Earnings With Output Growth And Dividend Plans",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/petrochina-balances-softer-earnings-output-111950362.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T11:19:50+00:00",
+      "summary": "PetroChina (SEHK:857) released its latest full year results, showing resilient performance despite a pullback in annual earnings linked to weaker oil prices and softer fuel demand. The company reporte",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "PetroChina Profit Falls to 157.3B Yuan as Brent Drops 15%",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/petrochina-profit-falls-157-3b-160742793.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T16:07:42+00:00",
+      "summary": "Lower crude prices and weaker fuel demand weigh on earnings, while natural gas growth and higher refining profits provide partial support.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.2
+    },
+    {
+      "title": "PetroChina reports 4.47% drop in 2025 net profit",
+      "url": "https://www.offshore-technology.com/news/petrochina-reports-drop-2025-net-profit/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T10:26:03+00:00",
+      "summary": "The company’s 2025 revenue declined by 2.5% to 2,864.47bn yuan from 2,937.9bn yuan in 2024.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "PetroChina Profit Slips From Record as Five-Year Plan Ends Strong",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/petrochina-profit-slips-record-five-032018668.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T03:20:18+00:00",
+      "summary": "hina’s top oil and gas producer posts lower annual profit but maintains high output and cash flow.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

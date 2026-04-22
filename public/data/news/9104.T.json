@@ -1,0 +1,53 @@
+{
+  "ticker": "9104.T",
+  "last_updated": "2026-04-22T13:50:46.909042+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "China Tankers Join Line to Test Hormuz Exit and Iran Truce",
+      "url": "https://finance.yahoo.com/news/china-tankers-join-line-test-060713781.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T07:38:06+00:00",
+      "summary": "(Bloomberg) -- Two fully laden Chinese oil tankers are waiting near the Strait of Hormuz with a third on its way, putting them in a position to become the first such vessels to leave the Persian Gulf ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Elliott Management Statement on Mitsui O.S.K. Lines, Ltd.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elliott-management-statement-mitsui-o-035500121.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T03:55:00+00:00",
+      "summary": "Elliott Investment Management L.P. and Elliott Advisors (UK) Limited (\"Elliott\"), which advise funds that together have a significant investment in Mitsui O.S.K. Lines, Ltd. (\"Mitsui O.S.K.\" or the \"C",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At Mitsui O.S.K. Lines (TSE:9104) Valuation After Its Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-mitsui-o-k-lines-010650367.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T01:06:50+00:00",
+      "summary": "Recent performance snapshot for Mitsui O.S.K. Lines Mitsui O.S.K. Lines (TSE:9104) has drawn attention after a strong recent share price run, with returns of 17.8% over the past month and 40.0% over t",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Elliott takes stake in Mitsui OSK as shares jump up to 12%",
+      "url": "https://finance.yahoo.com/news/elliott-takes-stake-mitsui-osk-174234891.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T17:42:34+00:00",
+      "summary": "Activist investor flags undervaluation and may push review of real estate portfolio",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Global gas markets face their biggest shock since 2022 on Iran conflict",
+      "url": "https://finance.yahoo.com/news/global-gas-markets-face-biggest-061911008.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-01T06:19:11+00:00",
+      "summary": "Investing.com — The global energy sector is bracing for its most significant disruption since the invasion of Ukraine four years ago. As the conflict in Iran escalates, the Strait of Hormuz, the world",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

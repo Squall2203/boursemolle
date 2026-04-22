@@ -1,0 +1,53 @@
+{
+  "ticker": "GILD",
+  "last_updated": "2026-04-22T13:00:06.373319+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Merck steps up as 'meaningful competitor' to Gilead with HIV pill approval",
+      "url": "https://www.biospace.com/fda/merck-steps-up-as-meaningful-competitor-to-gilead-with-hiv-pill-approval",
+      "source": "biospace.com",
+      "published_at": "2026-04-22T11:06:44+00:00",
+      "summary": "The newly approved HIV drug Idvynso will also help Merck diversify as loss of exclusivity looms over its top-selling product, the mega-blockbuster cancer drug Keytruda.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Merck gains approval of HIV drug regimen Idvynso | $MRK $GILD",
+      "url": "https://seekingalpha.com/news/4577563-merck-gains-approval-hiv-drug-regimen-idvynso",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-21T21:52:28+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bristol Myers vs Gilead Sciences: Which Biotech Stock Is a Better Bet Now?",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/bristol-myers-vs-gilead-sciences-152600887.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T15:26:00+00:00",
+      "summary": "BMY stands out vs GILD, supported by a cheaper valuation, strong growth portfolio, and improving earnings outlook despite generic headwinds.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "The Testaments is the most radical TV show of 2026 and should be shown in schools",
+      "url": "https://www.mirror.co.uk/tv/tv-news/testaments-most-radical-tv-show-37048973",
+      "source": "mirror.co.uk",
+      "published_at": "2026-04-21T13:49:00+00:00",
+      "summary": "The sequel to The Handmaid’s Tale focuses on the young teens of Gilead",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "7,568 Shares in Gilead Sciences, Inc. $GILD Acquired by Ticino Wealth",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-7568-shares-in-gilead-sciences-inc-gild-acquired-by-ticino-wealth-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T13:37:44+00:00",
+      "summary": "Ticino Wealth purchased a new position in shares of Gilead Sciences, Inc. (NASDAQ:GILD - Free Report) in the 4th quarter, according to the company in its most recent filing with the Securities and Exc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "GET.PA",
+  "last_updated": "2026-04-22T11:41:52.800362+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is It Too Late To Consider Buying Getlink (ENXTPA:GET) After Strong Multi‑Year Gains?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-buying-getlink-enxtpa-070525300.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:05:25+00:00",
+      "summary": "If you are wondering whether Getlink shares offer fair value at today’s price, you are not alone. The numbers give plenty to think about. The stock last closed at €19.45, with returns of 0.1% over 7 d",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Getlink SE: Shuttle Traffic in March 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/getlink-se-shuttle-traffic-march-060000768.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T06:00:00+00:00",
+      "summary": "PARIS, April 10, 2026--Regulatory News: Getlink SE (Paris:GET):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Getlink SE: Information Relating to the Total Number of Shares and Voting Rights Which Form the Share Capital",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/getlink-se-information-relating-total-160000140.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T16:00:00+00:00",
+      "summary": "PARIS, April 03, 2026--Regulatory News: Getlink SE (Paris: GET)",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Getlink’s 2025 Universal Registration Document made available",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/getlink-2025-universal-registration-document-163500286.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-20T16:35:00+00:00",
+      "summary": "PARIS, March 20, 2026--Regulatory News: Getlink SE (Paris:GET) announces that it made available to the public and filed with the French Autorité des Marchés Financiers (the French financial market reg",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Getlink SE: Shuttle Traffic in February 2026",
+      "url": "https://finance.yahoo.com/news/getlink-se-shuttle-traffic-february-070000564.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T07:00:00+00:00",
+      "summary": "PARIS, March 06, 2026--Regulatory News: Getlink (Paris:GET):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

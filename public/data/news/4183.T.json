@@ -1,0 +1,53 @@
+{
+  "ticker": "4183.T",
+  "last_updated": "2026-04-22T13:56:30.250991+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "This Khosla-backed autonomous pod startup just raised $170M — now it’s aiming for more",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/khosla-backed-autonomous-pod-startup-174628480.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T17:46:28+00:00",
+      "summary": "Glydways is in talks to raise another $250 million as it prepares to launch three pilot programs.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Glydways Raises Oversubscribed $170M Series C as First Autonomous Vehicle Networks Enter Public Operation in 2026",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/glydways-raises-oversubscribed-170m-series-155300363.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T15:53:00+00:00",
+      "summary": "Round was co-led by Suzuki Motor Corporation, ACS Group, and Khosla VenturesWith pilot operations beginning this year in the UAE, the greater NYC area, and Atlanta, Glydways proves that profitable urb",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Japanese companies join forces to decarbonise ethylene production",
+      "url": "https://www.offshore-technology.com/news/japanese-firms-join-forces-to-decarbonise-ethylene-production/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T12:17:10+00:00",
+      "summary": "The companies aim to tackle GHG emissions by sharing technology and implementing carbon-neutral initiatives.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Mitsui Chemicals (TSE:4183) Valuation Check After Alliance To Consolidate Decarbonized Ethylene Production",
+      "url": "https://finance.yahoo.com/news/mitsui-chemicals-tse-4183-valuation-231112969.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T23:11:12+00:00",
+      "summary": "Asahi Kasei, Mitsui Chemicals (TSE:4183) and Mitsubishi Chemical are forming a joint operating entity to consolidate ethylene production in western Japan, supported by a government decarbonization pro",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Asahi Kasei, Mitsui Chemicals, and Mitsubishi Chemical enter basic agreement to promote decarbonization of ethylene production in western Japan",
+      "url": "https://finance.yahoo.com/news/asahi-kasei-mitsui-chemicals-mitsubishi-133000496.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T13:30:00+00:00",
+      "summary": "TOKYO, January 27, 2026--Asahi Kasei, Mitsui Chemicals, and Mitsubishi Chemical promote decarbonization and optimize production capacity for ethylene manufacturing facilities.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

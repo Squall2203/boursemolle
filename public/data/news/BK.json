@@ -1,0 +1,53 @@
+{
+  "ticker": "BK",
+  "last_updated": "2026-04-22T13:10:22.168888+00:00",
+  "sentiment_score": -0.8,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Financial Plan Inc. Invests $1.43 Million in BNY $BK",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-financial-plan-inc-invests-143-million-in-bny-bk-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:16:58+00:00",
+      "summary": "Financial Plan Inc. bought a new position in BNY (NYSE:BK - Free Report) during the fourth quarter, according to the company in its most recent 13F filing with the SEC. The fund bought 12,297 shares o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BNY (NYSE:BK) EVP Alejandro Perez Sells 12,504 Shares",
+      "url": "https://www.marketbeat.com/instant-alerts/bny-nysebk-evp-alejandro-perez-sells-12504-shares-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T22:38:47+00:00",
+      "summary": "BNY (NYSE:BK - Get Free Report) EVP Alejandro Perez sold 12,504 shares of the firm's stock in a transaction that occurred on Friday, April 17th. The shares were sold at an average price of $137.01, fo",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Shannon Marie Hobbs Sells 297 Shares of BNY (NYSE:BK) Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/shannon-marie-hobbs-sells-297-shares-of-bny-nysebk-stock-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T21:09:57+00:00",
+      "summary": "BNY (NYSE:BK - Get Free Report) VP Shannon Marie Hobbs sold 297 shares of BNY stock in a transaction that occurred on Friday, April 17th. The shares were sold at an average price of $137.05, for a tot",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "BNY (NYSE:BK) Insider Sells $719,545.80 in Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/bny-nysebk-insider-sells-71954580-in-stock-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T21:09:48+00:00",
+      "summary": "BNY (NYSE:BK - Get Free Report) insider Kurtis Kurimsky sold 5,290 shares of the stock in a transaction that occurred on Friday, April 17th. The shares were sold at an average price of $136.02, for a ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "BNY (NYSE:BK) EVP Sells $4,095,000.00 in Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/bny-nysebk-evp-sells-409500000-in-stock-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T21:09:39+00:00",
+      "summary": "BNY (NYSE:BK - Get Free Report) EVP J Kevin Mccarthy sold 30,000 shares of the stock in a transaction dated Friday, April 17th. The stock was sold at an average price of $136.50, for a total transacti",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

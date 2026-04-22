@@ -1,0 +1,53 @@
+{
+  "ticker": "AGN.AS",
+  "last_updated": "2026-04-22T12:02:55.510831+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "EG Stock Trading at a Discount to Industry at 0.9X: Time to Hold?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/eg-stock-trading-discount-industry-153100865.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:31:00+00:00",
+      "summary": "Everest Group's reinsurance strength, rising investment income, and global expansion fuel growth as it scales operations and boosts shareholder returns.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing Aegon (ENXTAM:AGN) Valuation After Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-aegon-enxtam-agn-valuation-070827155.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:08:27+00:00",
+      "summary": "What recent performance suggests about Aegon (ENXTAM:AGN) Aegon (ENXTAM:AGN) has drawn fresh attention after recent share price moves, with the stock showing a month return of 15.2% and a past 3 month",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider Aegon (ENXTAM:AGN) After Its Strong Multi‑Year Rally?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-aegon-enxtam-agn-060449156.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T06:04:49+00:00",
+      "summary": "If you are wondering whether Aegon shares still offer value after recent gains, the key is to look closely at what the current price implies about the business. The stock last closed at €6.86, with re",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Active Energy says Ghummud has been fully energised ahead of schedule",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090819/active-energy-says-ghummud-has-been-fully-energised-ahead-of-schedule-1090819.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T06:37:00+00:00",
+      "summary": "Active Energy Group PLC (AIM:AEG, OTCID:AEUSF) shares were up 11% on Monday, to 0.11p, after the firm told investors that its Ghummud site in the UAE has been fully energised ahead of schedule, potent",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Aegon NV (AEG) Is Up 6.93% in One Week: What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aegon-nv-aeg-6-93-160006700.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T16:00:06+00:00",
+      "summary": "Does Aegon NV (AEG) have what it takes to be a top stock pick for momentum investors? Let's find out.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

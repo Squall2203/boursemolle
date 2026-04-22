@@ -1,0 +1,53 @@
+{
+  "ticker": "0941.HK",
+  "last_updated": "2026-04-22T13:30:29.721713+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Deutsche Telekom Weighs Full Combination With T-Mobile",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-telekom-weighs-full-combination-115107414.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:51:07+00:00",
+      "summary": "(Bloomberg) -- Deutsche Telekom AG is discussing a potential combination with its American arm T-Mobile US Inc., people familiar with the matter said, a move that would create the world’s biggest phon",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Deutsche Telekom exploring merger with T-Mobile, Bloomberg News reports",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-telekom-exploring-merger-t-182010144.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:20:10+00:00",
+      "summary": "Deutsche Telekom is considering a full combination with T-Mobile US that could result in the largest public M&amp;A deal on record, Bloomberg ‌News reported on Tuesday, citing people familiar with the",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "China Mobile (SEHK:941): A Closer Look at Valuation After Steady Share Price Gains This Year",
+      "url": "https://finance.yahoo.com/news/china-mobile-sehk-941-closer-154022664.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-02T15:40:22+00:00",
+      "summary": "China Mobile (SEHK:941) shares edged higher today, closing at HK$84.95. The stock has delivered a steady 12% year-to-date return, supported by modest revenue and net income growth over the past year. ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Computility Fuels Tomorrow, Forging Innovation in Hong Kong | CMI Successfully Held AI+ Intelligent Computility Collaboration Launch",
+      "url": "https://finance.yahoo.com/news/computility-fuels-tomorrow-forging-innovation-115400667.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-07T11:54:00+00:00",
+      "summary": "China Mobile International Limited (CMI) successfully held \"AI+ Intelligent Computility Collaboration Launch\" in Hong Kong, China on August 6, 2025, with a concurrent branch venue in Guangdong, China.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HKBN's chief executive says China Mobile offer not good enough, open to more bidders",
+      "url": "https://finance.yahoo.com/news/hkbns-chief-executive-says-china-105430150.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-26T10:54:30+00:00",
+      "summary": "HONG KONG (Reuters) -China Mobile's HK$7.8 billion ($996.1 million)  takeover offer for broadband operator HKBN is not good enough and the Hong Kong-based company is open to engage with more bidders t",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

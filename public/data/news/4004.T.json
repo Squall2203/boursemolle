@@ -1,0 +1,53 @@
+{
+  "ticker": "4004.T",
+  "last_updated": "2026-04-22T13:57:06.979996+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Asian Stock Markets Rise, Following Tech-Led Wall Street Gains",
+      "url": "https://finance.yahoo.com/news/asian-stock-markets-rise-following-104258230.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-22T10:42:58+00:00",
+      "summary": "Asian stock markets closed higher Monday, following Wall Street gains sparked by a rebound in techno",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Does Resonac Still Have Room to Run After 35% Jump and Sector Optimism in 2025?",
+      "url": "https://finance.yahoo.com/news/does-resonac-still-room-run-123226277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T12:32:26+00:00",
+      "summary": "If you have been watching Resonac Holdings lately, you are not alone. Plenty of investors are weighing whether the stock still has room to run or if it might be time to sit out. After all, Resonac has",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Resonac Holdings (TSE:4004) Valuation in Focus as ‘JOINT3’ Consortium Launches Next-Gen Semiconductor Packaging Initiative",
+      "url": "https://finance.yahoo.com/news/resonac-holdings-tse-4004-valuation-140109327.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-08T14:01:09+00:00",
+      "summary": "Resonac Holdings (TSE:4004) just marked a big milestone, and investors are watching. The company has brought together a global cohort of 27 heavyweight firms to launch ‘JOINT3,’ a consortium focused o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Resonac Launches 27-Member \"JOINT3\" Consortium to Develop Next-Generation Semiconductor Packaging",
+      "url": "https://finance.yahoo.com/news/resonac-launches-27-member-joint3-063000724.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-03T06:30:00+00:00",
+      "summary": "TOKYO, September 03, 2025--Resonac Corporation (President and CEO: Hidehito Takahashi, hereinafter \"Resonac\") today announced the establishment of \"JOINT3,\" a co-creation evaluation framework formed b",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Resonac Holdings Corporation Unsponsored ADR (SHWDY) Stock Undervalued Right Now?",
+      "url": "https://finance.yahoo.com/news/resonac-holdings-corporation-unsponsored-adr-134002980.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-30T13:40:02+00:00",
+      "summary": "Here at Zacks, our focus is on the proven Zacks Rank system, which emphasizes earnings estimates and estimate revisions to find great stocks. Nevertheless, we are always paying attention to the latest",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "UAL",
+  "last_updated": "2026-04-22T13:15:44.578480+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Stock Movers: GE Vernova, AT&T, United (Podcast)",
+      "url": "https://www.bloomberg.com/news/audio/2026-04-22/stock-movers-ge-vernova-at-t-united-podcast",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-22T11:02:04+00:00",
+      "summary": "Source: Bloomberg, 4:18 General Electric Co Photographer: Daniel Acker/Bloomberg",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "$137.25+ Bn Elevators and Escalators Market Forecasts 2025-2030, Profiles of Schindler, Kone, Mitsubishi Electric, Toshiba, and United Technologies",
+      "url": "https://www.globenewswire.com/en/news-release/2026/04/22/3278764/28124/en/137-25-Bn-Elevators-and-Escalators-Market-Forecasts-2025-2030-Profiles-of-Schindler-Kone-Mitsubishi-Electric-Toshiba-and-United-Technologies.html",
+      "source": "globenewswire.com",
+      "published_at": "2026-04-22T10:15:00+00:00",
+      "summary": "The elevators and escalators market offers growth opportunities fueled by rapid urbanization, increased construction investments, aging populations, and advancements in smart technologies. Key challen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "American-United merger buzz fades, but could another big airline deal be coming?",
+      "url": "https://thepointsguy.com/news/american-united-airline-merger-talk-fades-another-deal-coming/",
+      "source": "thepointsguy.com",
+      "published_at": "2026-04-22T10:00:11+00:00",
+      "summary": "President Trump says he \"doesn't like\" the idea of an American-United merger, but speculation over an airline corporate deal is heating up. It has been just over a week since rumors began to swirl abo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stock Market Today: Dow Jones, S&P 500 Futures Surge After Trump Extends Iran Ceasefire—Tesla, Boeing, United Airlines In Focus",
+      "url": "https://www.benzinga.com/markets/equities/26/04/51961356/stock-market-today-dow-jones-sp-500-futures-surge-after-trump-extends-iran-ceasefire-tesla-boein?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+      "source": "benzinga.com",
+      "published_at": "2026-04-22T09:52:35+00:00",
+      "summary": "U.S. stock futures rose on Wednesday following Tuesday's decline. Futures of major benchmark indices were higher after President Donald Trump extended the Iran ceasefire. On Tuesday, the Dow Jones ind",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "United Airlines offers wary outlook as fuel prices bite",
+      "url": "https://www.youtube.com/watch?v=-mQZ04bEuQQ",
+      "source": "youtube.com",
+      "published_at": "2026-04-22T09:23:49+00:00",
+      "summary": "United Airlines forecast second-quarter and full-year profits below Wall ​Street estimates as higher jet fuel prices squeeze margins and cloud its near-term outlook, even as demand for premium travel ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "CL",
+  "last_updated": "2026-04-22T13:03:46.442096+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "3 Dividend Aristocrats That Look Cheap and Just Hiked Payouts",
+      "url": "https://finance.yahoo.com/m/8e87f4fb-cc70-369c-bbac-b60db47a0e22/3-dividend-aristocrats-that.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T14:15:00+00:00",
+      "summary": "Aristocrats that have recently extended their streak for at least one more year include Sysco, Colgate-Palmolive, and Chubb.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Colgate-Palmolive upgraded to buy on resilient growth profile",
+      "url": "https://www.investing.com/news/analyst-ratings/colgatepalmolive-upgraded-to-buy-on-resilient-growth-profile-4626546",
+      "source": "investing.com",
+      "published_at": "2026-04-21T13:54:44+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Colgate-Palmolive Company $CL Shares Sold by Zurcher Kantonalbank Zurich Cantonalbank",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-colgate-palmolive-company-cl-shares-sold-by-zurcher-kantonalbank-zurich-cantonalbank-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T13:04:56+00:00",
+      "summary": "Zurcher Kantonalbank Zurich Cantonalbank trimmed its position in shares of Colgate-Palmolive Company (NYSE:CL - Free Report) by 21.4% during the fourth quarter, according to the company in its most re",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "147,445 Shares in Colgate-Palmolive Company $CL Acquired by SageGuard Financial Group LLC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-147445-shares-in-colgate-palmolive-company-cl-acquired-by-sageguard-financial-group-llc-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T11:56:23+00:00",
+      "summary": "SageGuard Financial Group LLC purchased a new position in shares of Colgate-Palmolive Company (NYSE:CL - Free Report) in the 4th quarter, according to its most recent Form 13F filing with the SEC. The",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Analyst recommendations: Colgate-Palmolive, Intel, Netflix, Spotify, Dell…",
+      "url": "https://www.marketscreener.com/news/analyst-recommendations-colgate-palmolive-intel-netflix-spotify-della--ce7f59dad18ef721",
+      "source": "marketscreener.com",
+      "published_at": "2026-04-21T08:43:41+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

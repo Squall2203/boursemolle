@@ -1,0 +1,53 @@
+{
+  "ticker": "SAAB-B.ST",
+  "last_updated": "2026-04-22T12:40:55.391845+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European defense stocks cool as investors reassess war winners",
+      "url": "https://finance.yahoo.com/video/european-defense-stocks-cool-investors-105304550.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:02:27+00:00",
+      "summary": "STORY: Investors have recently cooled their interest in European defense stocks.  Profit taking and stretched valuations have joined with growing uncertainty about the future of warfare.  That as the ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "A Look At Saab (OM:SAAB B) Valuation After Recent Share Price Weakness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-saab-om-saab-b-200724545.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T20:07:24+00:00",
+      "summary": "Why Saab (OM:SAAB B) is on investors’ radar today Saab (OM:SAAB B) has drawn fresh attention after recent trading showed a 2.2% decline over the past day and a negative return over the past month and ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Saab AB Digital Transformation Strategy Analysis Report 2025: Accelerators, Innovation Programs, Technology Initiatives, ICT, Partnerships, Investments & Acquisitions, Network Map",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/saab-ab-digital-transformation-strategy-141400967.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T14:14:00+00:00",
+      "summary": "Saab AB's market opportunities lie in enhancing defense capabilities, protecting borders, and improving resilience against threats. Potential growth areas include international expansion across over 1",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Invitation to Saab's Q1 2026 interim report presentation",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invitation-saabs-q1-2026-interim-071600880.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T07:16:00+00:00",
+      "summary": "Saab's CEO and President Micael Johansson and CFO Anna Wijkander will present Saab's interim report for January-March 2026.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EXCLUSIVE: Silver's Wild Swings Haven't Broken The Bull Market, Says Texas Precious Metals CEO",
+      "url": "https://finance.yahoo.com/news/exclusive-silvers-wild-swings-havent-153122170.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-15T15:31:22+00:00",
+      "summary": "Few commodities are as volatile as silver. After surging to record highs earlier this year, the metal experienced a sharp pullback that rattled investors and reignited debate about whether the rally h",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

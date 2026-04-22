@@ -1,0 +1,53 @@
+{
+  "ticker": "BA.L",
+  "last_updated": "2026-04-22T12:22:52.163545+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Stocks Track Lower in Tuesday Trading; Euro Area Economic Sentiment Plunges",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-track-lower-tuesday-161422242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:14:22+00:00",
+      "summary": "The European stock markets were tracking lower in Tuesday trading as The Stoxx Europe was declining",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BAE Systems Target Raised Toward $108 Billion Valuation On Defense Spending Surge",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bae-systems-target-raised-toward-172135725.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:21:35+00:00",
+      "summary": "Morgan Stanley lifts price target to 2,662p, citing Iran war and rising US, Gulf military budgets as key drivers.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Foreign Contractors Stand To Gain As NATO Countries Spend Big On Defense",
+      "url": "https://finance.yahoo.com/m/78f25fd4-b0fa-3d5b-8fc3-a0f4d4c2d0d3/foreign-contractors-stand-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T18:48:51+00:00",
+      "summary": "European countries are in rush to buy more defense equipment than the U.S. can supply them with. A crop of foreign military contractors are poised to cash in on the new demand.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "BAE Systems’ M776 U.S. Contract And What It Means For The Shares",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bae-systems-m776-u-contract-010913133.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T01:09:13+00:00",
+      "summary": "BAE Systems (LSE:BA.) has received a major undefinitized contract to produce M776 cannons for the U.S. Army. The company will establish second source U.S. based production at its Kentucky facility, su",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BAE Systems introduces Ascent™ spacecraft to support space superiority and exploration",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/bae-systems-introduces-ascent-spacecraft-120000778.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T12:00:00+00:00",
+      "summary": "BAE Systems (LON: BA) has introduced its Ascent spacecraft, a new addition to the company's Elevation spacecraft line that supports superiority and exploration missions across the space domain.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

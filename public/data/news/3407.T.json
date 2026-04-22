@@ -1,0 +1,53 @@
+{
+  "ticker": "3407.T",
+  "last_updated": "2026-04-22T13:54:27.453013+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Asahi Kasei acquires German company Aicuris",
+      "url": "https://www.hospitalmanagement.net/news/asahi-kasei-acquires-aicuris/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:34:42+00:00",
+      "summary": "Aicuris’ overall revenue is anticipated to reach $500m by 2030, not including AIC468.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Are Investors Undervaluing Asahi Kasei (AHKSY) Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-undervaluing-asahi-kasei-ahksy-134002326.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:40:02+00:00",
+      "summary": "Here at Zacks, our focus is on the proven Zacks Rank system, which emphasizes earnings estimates and estimate revisions to find great stocks. Nevertheless, we are always paying attention to the latest",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "PeptiDream Announces the Initiation of Phase 1 Clinical Trial by Its Collaboration Partner",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/peptidream-announces-initiation-phase-1-124000035.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:40:00+00:00",
+      "summary": "KAWASAKI, Japan, April 20, 2026--PeptiDream Inc., a public Kanagawa, Japan-based biopharmaceutical company (President: Patrick C. Reid, hereinafter \"PeptiDream\") today announced that Asahi Kasei Thera",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Asahi Kasei Completes Acquisition of Aicuris to Advance Its Global Pharmaceutical Strategy",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/asahi-kasei-completes-acquisition-aicuris-113000913.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:30:00+00:00",
+      "summary": "TOKYO, April 20, 2026--Asahi Kasei has announced the successful completion of its acquisition of Aicuris Anti-infective Cures AG (Aicuris).",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Healthcare Filtration Markets 2025-2035 with Focus on Biologics Manufacturing Featuring Alfa Laval, Asahi Kasei, Cobetter, Corning, Merck, Pall, Parker Hannifin, Sartorius, Thermo Fisher Scientific",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/healthcare-filtration-markets-2025-2035-104400026.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:44:00+00:00",
+      "summary": "Rapid growth in biologics is fueling the biopharmaceutical filtration market. Key opportunities include membrane filtration systems and single-use technologies, with North America and Europe leading. ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

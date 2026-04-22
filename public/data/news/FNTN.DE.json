@@ -1,0 +1,53 @@
+{
+  "ticker": "FNTN.DE",
+  "last_updated": "2026-04-22T12:00:16.043421+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "freenet AG (FRTAF) Q4 2025 Earnings Call Highlights: Record Postpaid Additions and Strategic ...",
+      "url": "https://finance.yahoo.com/news/freenet-ag-frtaf-q4-2025-150200745.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T15:02:00+00:00",
+      "summary": "Despite challenges, freenet AG (FRTAF) showcases strong financial performance and innovation with AI integration and strategic partnerships.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Top 3 European Dividend Stocks Offering Up To 5% Yield",
+      "url": "https://finance.yahoo.com/news/top-3-european-dividend-stocks-103147685.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T10:31:47+00:00",
+      "summary": "As European markets experience volatility amidst global concerns about AI disruption and economic data releases, the pan-European STOXX Europe 600 Index has managed to reach new highs, reflecting a co",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 19%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-053151055.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T05:31:51+00:00",
+      "summary": "As European markets experience volatility and investors weigh the impact of AI disruption, the pan-European STOXX Europe 600 Index managed a slight gain, reflecting a cautiously optimistic outlook ami",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks With Up To 5.4% Yield For Your Portfolio",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-5-103159901.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-11T10:31:59+00:00",
+      "summary": "As the European markets show resilience amid global volatility, with the STOXX Europe 600 Index reaching new highs and optimism about the eurozone economy bolstering investor sentiment, dividend stock",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks Offering Up To 5.5% Yield",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-offering-053210287.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T05:32:10+00:00",
+      "summary": "As optimism about the eurozone economy bolsters investor sentiment, European markets have shown resilience amid recent volatility, with major indexes like Germany's DAX and France's CAC 40 posting gai",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "COP",
+  "last_updated": "2026-04-22T12:59:29.753359+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "SLB Gears Up to Report Q1 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/slb-gears-report-q1-earnings-154600711.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:46:00+00:00",
+      "summary": "SLB heads into Q1 2026 earnings with estimates falling, as weak early-quarter oil prices offset a late-quarter surge boosting demand.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "ConocoPhillips vs. Enbridge: Which Energy Stock Should You Buy?",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/conocophillips-vs-enbridge-energy-stock-145900261.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:59:00+00:00",
+      "summary": "COP benefits from rising oil prices and low-cost supply, while ENB's contract-backed model delivers stable, predictable cash flows.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ConocoPhillips (COP) Gained from a Favorable Macroeconomic Backdrop",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/conocophillips-cop-gained-favorable-macroeconomic-132909956.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T03:41:09+00:00",
+      "summary": "Harris Oakmark recently released its first-quarter 2026 investor letter for the “Oakmark Fund”. The objective of the fund is to deliver capital appreciation by investing in a diverse set of large-cap ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "WFRD to Report Q1 Earnings: Here's What You Need to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wfrd-report-q1-earnings-heres-153700528.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:37:00+00:00",
+      "summary": "WFRD is set to report Q1 2026 results on April 22, with EPS estimates cut to $1.02 and revenue seen down to $1.14B.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Adams Natural Resources Fund Yields 8% While Energy Stocks Face Sector Headwinds",
+      "url": "https://247wallst.com/investing/2026/04/20/adams-natural-resources-fund-yields-8-while-energy-stocks-face-sector-headwinds/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:56:31+00:00",
+      "summary": "Adams Natural Resources Fund (NYSE:PEO) trades at a roughly 10% discount to its net asset value and has delivered a 27% one-year total return. The fund’s 8% trailing yield based on its $2.05 per share",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

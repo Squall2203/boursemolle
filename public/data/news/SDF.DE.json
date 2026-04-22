@@ -1,0 +1,53 @@
+{
+  "ticker": "SDF.DE",
+  "last_updated": "2026-04-22T11:57:49.089476+00:00",
+  "sentiment_score": -0.3,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Further weakness as K+S (ETR:SDF) drops 7.4% this week, taking three-year losses to 42%",
+      "url": "https://finance.yahoo.com/news/further-weakness-k-etr-sdf-070251888.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-21T07:02:51+00:00",
+      "summary": "As an investor its worth striving to ensure your overall portfolio beats the market average. But in any portfolio...",
+      "sentiment": "négatif",
+      "sentiment_score": -0.5
+    },
+    {
+      "title": "individual investors who own 57% along with institutions invested in K+S Aktiengesellschaft (ETR:SDF) saw increase in their holdings value last week",
+      "url": "https://finance.yahoo.com/news/individual-investors-own-57-along-082009570.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-24T08:20:09+00:00",
+      "summary": "Key Insights K+S' significant individual investors ownership suggests that the key decisions are influenced by...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "K+S Second Quarter 2025 Earnings: Misses Expectations",
+      "url": "https://finance.yahoo.com/news/k-second-quarter-2025-earnings-041731493.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-14T04:17:31+00:00",
+      "summary": "XTRA:SDF 1 Year Share Price vs Fair Value Explore K+S's Fair Values from the Community and select yours K+S ( ETR:SDF...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "While shareholders of K+S (ETR:SDF) are in the black over 5 years, those who bought a week ago aren't so fortunate",
+      "url": "https://finance.yahoo.com/news/while-shareholders-k-etr-sdf-062526920.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-11T06:25:26+00:00",
+      "summary": "When you buy shares in a company, it's worth keeping in mind the possibility that it could fail, and you could lose...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "K+S First Quarter 2025 Earnings: EPS: €0.48 (vs €0.10 in 1Q 2024)",
+      "url": "https://finance.yahoo.com/news/k-first-quarter-2025-earnings-044654769.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-15T04:46:54+00:00",
+      "summary": "K+S ( ETR:SDF ) First Quarter 2025 Results Key Financial Results Revenue: €964.7m (down 2.4% from 1Q 2024). Net income...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

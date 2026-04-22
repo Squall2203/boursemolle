@@ -1,0 +1,53 @@
+{
+  "ticker": "NFLX",
+  "last_updated": "2026-04-22T12:52:26.161754+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Southern Capital Advisors LLC Invests $2.03 Million in Netflix, Inc. $NFLX",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-southern-capital-advisors-llc-invests-203-million-in-netflix-inc-nflx-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:26:19+00:00",
+      "summary": "Southern Capital Advisors LLC acquired a new position in Netflix, Inc. (NASDAQ:NFLX - Free Report) in the 4th quarter, according to its most recent 13F filing with the Securities and Exchange Commissi",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Wall Street Breakfast Podcast: OpenAI Faces Florida Probe | $NFLX $IMBBY $IMBBF $BTI $BTAFF",
+      "url": "https://seekingalpha.com/article/4892774-wall-street-breakfast-podcast-openai-faces-florida-probe",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T11:03:51+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stranger Things: Tales From '85: When to Watch the New Animated Spin-Off on Netflix",
+      "url": "https://www.cnet.com/tech/services-and-software/stranger-things-tales-from-85-when-to-watch-the-new-animated-spinoff-on-netflix/",
+      "source": "cnet.com",
+      "published_at": "2026-04-22T11:01:14+00:00",
+      "summary": "Eleven and company return with a new retro-inspired cartoon.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Jordan Makes The Ultimate Sacrifice For Rose | 18th Rose | Netflix Philippines",
+      "url": "https://www.youtube.com/watch?v=vpPFEy2unfo",
+      "source": "youtube.com",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "Spurred by her chemotherapy treatment, Rose (Xyriel Manabat) makes the decision to cut off all her hair as she finally turns eighteen. As she enters her special debut celebration, her escort Jordan (K",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Who is Johnboy Fury? Inside Netflix star's life and connection to Tyson Fury",
+      "url": "https://www.mirror.co.uk/3am/celebrity-news/who-johnboy-fury-inside-netflix-37052531",
+      "source": "mirror.co.uk",
+      "published_at": "2026-04-22T10:46:42+00:00",
+      "summary": "Johnboy Fury appears throughout Season 2 of Netflix's At Home with the Furys",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

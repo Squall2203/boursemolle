@@ -1,0 +1,53 @@
+{
+  "ticker": "DHL.DE",
+  "last_updated": "2026-04-22T11:52:18.908195+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "UPS, FedEx and DHL file for tariff refunds. What it means for consumers.",
+      "url": "https://www.cbsnews.com/news/ups-fedex-dhl-tariff-refund-consumers/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:08:16+00:00",
+      "summary": "Shippers have pledged to share refunds with customers who paid tariffs once the government issues refunds.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FedEx, UPS and DHL detail tariff refund approach for customers",
+      "url": "https://www.supplychaindive.com/news/fedex-ups-and-dhl-detail-tariff-refund-approach-for-customers/818057/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T07:26:00+00:00",
+      "summary": "The parcel carriers say they will return duties to parties that originally bore the cost for invalidated levies once they receive refunds from Customs and Border Protection.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JLR manufacturing threatened by possible DHL logistics strike",
+      "url": "https://www.just-auto.com/news/jlr-manufacturing-threatened-by-possible-dhl-logistics-strike/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T12:38:02+00:00",
+      "summary": "The pay dispute threatens to disrupt JLR logistics and manufacturing operations from 7 May.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "New Ownership of Pak Mail in Grand Rapids, Michigan Brings Fresh Energy to the Business--Serving the Community with Shipping and Office Services for More Than 30 Years",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ownership-pak-mail-grand-rapids-123900028.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T12:39:00+00:00",
+      "summary": "Annex Brands, Inc., a leading franchisor in the packing, shipping, and office services industries, is pleased to announce the successful transfer of ownership of an existing Pak Mail location in Grand",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider Deutsche Post (XTRA:DHL) After A 44% One Year Rally?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-deutsche-post-xtra-100857355.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T10:08:57+00:00",
+      "summary": "Wondering if Deutsche Post at €49.14 is still offering value after a strong run, or if most of the opportunity is already priced in. The stock has returned 6.5% over the last week, 9.1% over the last ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

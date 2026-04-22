@@ -1,0 +1,53 @@
+{
+  "ticker": "2501.T",
+  "last_updated": "2026-04-22T13:55:28.662114+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Sapporo to sell Stone Brewing assets",
+      "url": "https://www.just-drinks.com/news/sapporo-to-sell-stone-brewing-assets/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:58:12+00:00",
+      "summary": "Sapporo is also making changes to its production in the US.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pokka Sapporo to sell vending machine business to Lifedrink",
+      "url": "https://www.just-drinks.com/news/pokka-sapporo-sell-vending-machine-business/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T13:04:18+00:00",
+      "summary": "The subsidiary of Sapporo Holdings said it had entered an “absorption-type” split agreement with Lifedrink.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Most Asian Markets Gain at Friday's Close Amid Thin Holiday Trading",
+      "url": "https://finance.yahoo.com/news/most-asian-markets-gain-friday-104759552.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-26T10:47:59+00:00",
+      "summary": "Most Asian markets gained at Friday's close amid thin holiday trading as several markets remained cl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "PAG and KKR to Acquire Sapporo Real Estate from Sapporo Holdings",
+      "url": "https://finance.yahoo.com/news/pag-kkr-acquire-sapporo-real-065000123.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-24T06:50:00+00:00",
+      "summary": "TOKYO, December 24, 2025--PAG and KKR to Acquire Sapporo Real Estate from Sapporo Holdings",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sapporo Holdings (TSE:2501): Assessing Valuation After Recent Share Price Movement",
+      "url": "https://finance.yahoo.com/news/sapporo-holdings-tse-2501-assessing-141415124.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-01T14:14:15+00:00",
+      "summary": "Sapporo Holdings (TSE:2501) recently drew investor attention after a shift in its stock price, prompting a closer look at the company’s fundamentals and performance. The move comes as investors weigh ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

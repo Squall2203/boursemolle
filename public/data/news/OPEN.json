@@ -1,0 +1,53 @@
+{
+  "ticker": "OPEN",
+  "last_updated": "2026-04-22T13:22:48.843566+00:00",
+  "sentiment_score": 0.13,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Stock Market Today, April 21: Opendoor Technologies Rises as Trading Activity Picks Up Around Its iBuying Model",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/04/21/stock-market-today-april-21-opendoor-technologies-rises-as-trading-activity-picks-up-around-its-ibuying-model/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:45:43+00:00",
+      "summary": "Opendoor rose on elevated trading activity, bringing renewed focus to its iBuying model as housing market constraints continue to weigh on resale volumes and pricing stability.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Opendoor (OPEN): Buy, Sell, or Hold Post Q4 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/opendoor-open-buy-sell-hold-194151612.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:41:51+00:00",
+      "summary": "What a brutal six months it’s been for Opendoor. The stock has dropped 23.2% and now trades at $5.35, rattling many shareholders. This might have investors contemplating their next move.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Opendoor Climbs 11% on Breakout Hopes: Is the AI-Driven Housing Stack Finally Getting Its Due?",
+      "url": "https://247wallst.com/investing/2026/04/21/opendoor-climbs-11-on-breakout-hopes-is-the-ai-driven-housing-stack-finally-getting-its-due/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:52:46+00:00",
+      "summary": "Opendoor Technologies (NASDAQ:OPEN) stock is up 11% in Tuesday’s session, rising from $5.35 to $5.94, as retail and institutional investors pile into a name that’s been quietly building momentum. The ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Consumer Discretionary - Real Estate Services Stocks Q4 Results: Benchmarking Opendoor (NASDAQ:OPEN)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/consumer-discretionary-real-estate-services-133351281.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:33:51+00:00",
+      "summary": "As the craze of earnings season draws to a close, here’s a look back at some of the most exciting (and some less so) results from Q4. Today, we are looking at consumer discretionary - real estate serv",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The Hedge Fund Manager Who Called Carvana's 100x Move Thinks This Mid-Cap Fintech Could Be the Next Parabolic Stock",
+      "url": "https://www.fool.com/investing/2026/04/19/the-hedge-fund-manager-who-called-carvanas-100x-mo/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T18:22:00+00:00",
+      "summary": "Eric Jackson is a hedge fund manager known for identifying undervalued stocks before they skyrocket.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "BARC.L",
+  "last_updated": "2026-04-22T12:25:19.278505+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Barclays shifts semiconductor ratings ahead of earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/barclays-shifts-semiconductor-ratings-ahead-115639471.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:56:39+00:00",
+      "summary": "Investing.com -- Barclays has reshuffled its semiconductor coverage ahead of first-quarter earnings, upgrading three names and downgrading one as the firm steers investors toward what it sees as pocke",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why DigitalOcean (DOCN) Stock Is Up Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-digitalocean-docn-stock-today-214151574.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:41:51+00:00",
+      "summary": "Shares of cloud computing platform DigitalOcean (NYSE:DOCN) jumped 7.2% in the afternoon session after several analyst firms raised their price targets on the stock, signaling confidence in the compan",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How The Kingfisher (LSE:KGF) Investment Story Is Shifting With Conflicting Analyst Targets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kingfisher-lse-kgf-investment-story-211637448.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:16:37+00:00",
+      "summary": "Kingfisher’s fair value estimate has shifted slightly from £3.19 to £3.20, keeping the price target closely aligned with earlier expectations. This small move reflects a mix of bullish and bearish ana",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why The Narrative Around Iron Mountain (IRM) Is Shifting On Subtle Valuation And Guidance Updates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-narrative-around-iron-mountain-150712819.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:07:12+00:00",
+      "summary": "The latest update leaves Iron Mountain’s internal fair value almost unchanged, trimming it by about $0.09 from $122.82 to $122.73. That tiny move sits alongside external analysts holding to a $127 pri",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Market Chatter: Barclays Faces UK Regulatory Review Over Risk Transfer Deals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-barclays-faces-uk-101204019.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T10:12:04+00:00",
+      "summary": "Barclays (BCS) is facing scrutiny from UK regulators over its use of significant risk transfer, or S",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

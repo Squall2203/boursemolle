@@ -1,0 +1,53 @@
+{
+  "ticker": "STT",
+  "last_updated": "2026-04-22T13:10:14.033923+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Mixed-use Moyle Junction development announced for Star",
+      "url": "https://www.idahopress.com/news/local/mixed-use-moyle-junction-development-announced-for-star/article_5aa24466-c45a-4466-b030-3d62e35998de.html",
+      "source": "idahopress.com",
+      "published_at": "2026-04-21T19:11:00+00:00",
+      "summary": "A property belonging to Idaho House Speaker Mike Moyle's family has been announced as the site for a planned mixed-use development along State Street.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "STT Upgraded by Argus Research -- Price Target Raised to $168",
+      "url": "https://www.gurufocus.com/news/8806814/stt-upgraded-by-argus-research-price-target-raised-to-168",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-21T18:08:09+00:00",
+      "summary": "Related Stocks: STT,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Sector Update: Consumer Stocks Ease in Afternoon Trading",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-ease-afternoon-175815264.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T17:58:15+00:00",
+      "summary": "Consumer stocks were lower Tuesday afternoon, with the State Street Consumer Staples Select Sector S",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sector Update: Tech Stocks Rise Tuesday Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-rise-tuesday-174702535.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T17:47:02+00:00",
+      "summary": "Tech stocks advanced Tuesday afternoon, with the State Street Technology Select Sector SPDR ETF (XLK",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SPY and GLD: Are There More Affordable Alternatives to These Very Popular ETFs?",
+      "url": "https://www.fool.com/coverage/etfs/2026/04/21/spy-and-gld-are-there-more-affordable-alternatives-to-these-very-popular-etfs/?source=iedfolrf0000001",
+      "source": "fool.com",
+      "published_at": "2026-04-21T14:29:48+00:00",
+      "summary": "SPY and GLD are two of the largest ETFs by Assets Under Management (AUM), but there are more affordable options. SPDR Gold Shares (NYSEMKT:GLD) serves as a specialized commodity play on physical gold,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

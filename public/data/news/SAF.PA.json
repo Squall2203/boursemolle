@@ -1,0 +1,53 @@
+{
+  "ticker": "SAF.PA",
+  "last_updated": "2026-04-22T11:37:10.449444+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "European Stocks Track Lower in Tuesday Trading; Euro Area Economic Sentiment Plunges",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-track-lower-tuesday-161422242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:14:22+00:00",
+      "summary": "The European stock markets were tracking lower in Tuesday trading as The Stoxx Europe was declining",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stock Indexes Mostly Higher at Open as Markets Await Iran News",
+      "url": "https://finance.yahoo.com/m/e63503b7-ae5e-35af-afad-ba1c90b7b47f/european-stock-indexes-mostly.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T08:46:24+00:00",
+      "summary": "European stocks were largely higher at market open as traders await news on whether peace talks between the U.S. and Iran will go ahead before the end of a two-week cease-fire Wednesday. Technology st",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "H55 selects Safran to supply the electric propulsion unit for the Bristell B23 Energic",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/h55-selects-safran-supply-electric-132800230.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T13:28:00+00:00",
+      "summary": "Safran Electrical & Power and H55 have signed an agreement to integrate the Safran ENGINeUSelectric motor into the H55 electric propulsion system, powering the fully electric Bristell B23 Energic airc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why GE Aerospace Stock Is Having Its Best Day In Nearly a Year",
+      "url": "https://finance.yahoo.com/m/009b468a-544c-3367-a5f0-50c8c50155ea/why-ge-aerospace-stock-is.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T20:17:00+00:00",
+      "summary": "Commercial aerospace stocks are jumping in relief to President Donald Trump’s cease-fire announcement.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Infleqtion Quantum Timing Deal Tests GPS Resilience And Market Sentiment",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/infleqtion-quantum-timing-deal-tests-121233824.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T12:12:33+00:00",
+      "summary": "Infleqtion (NYSE:INFQ) and Safran Electronics & Defense launched a quantum enabled precision timing solution built on quantum optical clock technology. The offering targets vulnerabilities in global t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

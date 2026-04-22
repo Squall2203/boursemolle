@@ -1,0 +1,53 @@
+{
+  "ticker": "DEMANT.CO",
+  "last_updated": "2026-04-22T12:43:31.160603+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "3 European Stocks Estimated To Be Trading At Discounts Up To 43.8%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-stocks-estimated-trading-103757168.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T10:37:57+00:00",
+      "summary": "As European markets show signs of optimism with the STOXX Europe 600 Index rising by 3.92% amid hopes for a brief Middle East conflict, investors are increasingly looking for opportunities in underval",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Stocks Estimated To Be Undervalued By Up To 48.7%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-stocks-estimated-undervalued-053756622.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T05:37:56+00:00",
+      "summary": "As European markets experience a surge in optimism, with the STOXX Europe 600 Index gaining nearly 4% amid hopes of a swift resolution to Middle East tensions, investors are increasingly on the lookou",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Stocks That May Offer Value In April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-stocks-may-offer-103818350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T10:38:18+00:00",
+      "summary": "As European markets navigate the complexities of Middle East tensions and energy market volatility, investor sentiment has shown resilience, with the STOXX Europe 600 Index rising by nearly 4% in earl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Value Stocks Offering Estimated Opportunities In April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-value-stocks-offering-estimated-053757246.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T05:37:57+00:00",
+      "summary": "As European markets experience a boost in sentiment due to hopes for a shorter-lived Middle East conflict, the pan-European STOXX Europe 600 Index has risen by 3.92%, reflecting optimism across the re",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Market Insights: 3 Stocks That May Be Priced Below Their Estimated Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-market-insights-3-stocks-103804449.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T10:38:04+00:00",
+      "summary": "As European markets experience a positive shift, with the STOXX Europe 600 Index rising by 3.92% amid hopes for a swift resolution to Middle East tensions, investors are increasingly focused on identi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

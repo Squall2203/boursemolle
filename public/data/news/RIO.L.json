@@ -1,0 +1,53 @@
+{
+  "ticker": "RIO.L",
+  "last_updated": "2026-04-22T12:21:26.411872+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "GMG Appoints New Chief Production Growth Officer and Provides Update on Global Production Plans",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/gmg-appoints-chief-production-growth-113800788.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:38:00+00:00",
+      "summary": "Brisbane, Queensland, Australia--(Newsfile Corp. - April 22, 2026) - Graphene Manufacturing Group Ltd (TSXV: GMG) (OTCQX: GMGMF) (\"GMG\" or the \"Company\") is pleased to announce that Stuart Watson — fo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LABRADOR IRON ORE ROYALTY CORPORATION (TSX:LIF) - RIO TINTO RELEASES IOC PRODUCTION AND SALES INFORMATION",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/labrador-iron-ore-royalty-corporation-140200202.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:02:00+00:00",
+      "summary": "Rio Tinto released its quarterly operational report for the first quarter ending March 31, 2026, which included Iron Ore Company of Canada (IOC) production and sales information. Specifically, Rio Tin",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Blue Gold Enhances Operational Leadership with Appointment of Industry Veteran Gustavo Gomes as COO and EVP, Mining",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/blue-gold-enhances-operational-leadership-123000780.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:30:00+00:00",
+      "summary": "NEW YORK CITY, NY / ACCESS Newswire / April 21, 2026 / Blue Gold Limited (Nasdaq:BGL) (\"Blue Gold\" or the \"Company\"), a next-generation gold exploration, development and mining company, today announce",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rio Tinto donates A$1.5 million to support Qld and NT communities impacted by Severe Tropical Cyclone Narelle and recent widespread flooding",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/rio-tinto-donates-1-5-032900386.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T03:29:00+00:00",
+      "summary": "MELBOURNE, Australia, April 21, 2026--Rio Tinto will donate A$1.5 million to support disaster relief efforts for communities in Queensland and the Northern Territory impacted by Severe Tropical Cyclon",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Solis expands into Brazil lithium with Rio Tinto project acquisition",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090874/solis-expands-into-brazil-lithium-with-rio-tinto-project-acquisition-1090874.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:09:00+00:00",
+      "summary": "Solis Minerals Ltd (TSX-V:SLMN, ASX:SLM, OTCQB:SLMFF, FRA:08WA) is expanding beyond Peru and into Brazil’s fast-emerging lithium sector through the acquisition of a large-scale exploration package in ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "NKE",
+  "last_updated": "2026-04-22T13:27:50.629051+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Nike criticized for walking back Boston Marathon ad following ‘pace shaming’ backlash",
+      "url": "https://www.foxnews.com/media/nike-criticized-walking-back-boston-marathon-ad-following-pace-shaming-backlash",
+      "source": "foxnews.com",
+      "published_at": "2026-04-21T18:08:16+00:00",
+      "summary": "'Gutfeld!' reacts after running coach called sign 'offensive' in TikTok post Nike is facing backlash after a now-viral Boston Marathon ad reading \"Runners welcome. Walkers tolerated.\" drew criticism o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fresh Nike markdowns from $23: Dunk Low Retro SE Shoes, Victori Slides, Therma-FIT Full-Zip Hoodie, more",
+      "url": "https://9to5toys.com/2026/04/21/nike-dunk-low-retro-se-mens-shoes/",
+      "source": "9to5toys.com",
+      "published_at": "2026-04-21T17:41:22+00:00",
+      "summary": "Your Tuesday list of the latest Nike markdowns is ready and waiting with several top picks down below. If you have some time, you can peruse the entire sale page here. Highlights this time around incl",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Apparel Stocks To Keep An Eye On - April 21st",
+      "url": "https://www.marketbeat.com/instant-alerts/apparel-stocks-to-keep-an-eye-on-april-21st-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T16:52:25+00:00",
+      "summary": "NIKE, Target, TJX Companies, Ross Stores, lululemon athletica, Ralph Lauren, and Kohl's are the seven Apparel stocks to watch today, according to MarketBeat's stock screener tool. Apparel stocks are s",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nike released a bunch of new sneakers today in celebration of Air Max Day — here's a look at the coolest new and classic pairs",
+      "url": "https://www.businessinsider.com/guides/style/nike-air-max-day-sneakers-roundup",
+      "source": "businessinsider.com",
+      "published_at": "2026-04-21T16:42:57+00:00",
+      "summary": "To celebrate 34 years of Nike Air Max sneakers, we rounded up the best places to shop on Air Max Day — or any other day. When you buy through our links, Business Insider may earn an affiliate commissi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Score up to 40% off best-selling running & walking shoes on Amazon — Nike, Hoka, Sketchers, Brooks, and more",
+      "url": "https://www.techradar.com/health-fitness/score-up-to-40-percent-off-best-selling-running-and-walking-shoes-on-amazon-nike-hoka-sketchers-brooks-and-more",
+      "source": "techradar.com",
+      "published_at": "2026-04-21T15:33:21+00:00",
+      "summary": "Just in time for spring, Amazon has a huge sale on its best-selling walking and running shoes, and I've rounded up the best deals, including up to 40% off Nike, Hoka, Sketchers, and more. Running & wa",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

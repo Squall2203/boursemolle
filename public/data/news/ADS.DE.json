@@ -1,0 +1,53 @@
+{
+  "ticker": "ADS.DE",
+  "last_updated": "2026-04-22T11:49:51.928173+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Are NIKE's Inventory Fixes Boosting Global Profitability Yet?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nikes-inventory-fixes-boosting-global-162400626.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:24:00+00:00",
+      "summary": "NKE's inventory cleanup is underway, but margin pressure persists as heavy discounts and product mix issues delay a meaningful profitability rebound.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Can Footwear and Men's Wear Power lululemon's Next Chapter?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/footwear-mens-wear-power-lululemons-151200055.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:12:00+00:00",
+      "summary": "LULU bets on men's wear and footwear to fuel growth beyond yoga roots, using innovation and new styles to capture untapped demand.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Adidas (XTRA:ADS) Valuation Check As Shares Rebound But 1 Year Returns Stay Under Pressure",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/adidas-xtra-ads-valuation-check-180431847.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T18:04:31+00:00",
+      "summary": "adidas (XTRA:ADS) is back in focus after recent share price moves, with the stock up over the past month but lower across the past 3 months and year. Investors are reassessing what the current valuati",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Nike Removes ‘Walkers Tolerated’ Boston Marathon Ad After Criticism for Alienation",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/nike-controversial-boston-marathon-ad-walkers-tolerated-1238920154/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:47:52+00:00",
+      "summary": "The ad lasted just a day after blowback for its lack of inclusivity.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Puma Taps Adidas Alum James Carnes to Lead Creative Direction",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/puma-james-carnes-svp-creative-direction-1238917207/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T17:44:21+00:00",
+      "summary": "He will report to chief brand officer Maria Valdes.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

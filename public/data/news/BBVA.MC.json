@@ -1,0 +1,53 @@
+{
+  "ticker": "BBVA.MC",
+  "last_updated": "2026-04-22T12:09:56.481195+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "How The BBVA (BME:BBVA) Investment Story Is Shifting As Street Views Diverge",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bbva-bme-bbva-investment-story-210416182.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T21:04:16+00:00",
+      "summary": "Banco Bilbao Vizcaya Argentaria’s modelled fair value has been trimmed slightly to €20.97 from €21.12, signalling a small reset in where the shares are seen as fairly priced. This tweak sits alongside",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "A Look At BBVA (BME:BBVA) Valuation After Strong Longer Term Shareholder Returns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-bbva-bme-bbva-valuation-080341838.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T08:03:41+00:00",
+      "summary": "Banco Bilbao Vizcaya Argentaria (BME:BBVA) is back on investor radars after recent share price moves, with the stock up around 11% over the past month and modestly lower over the past 3 months. See ou",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Fervo Energy Publicly Announces Filing of Registration Statement for Proposed Initial Public Offering",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fervo-energy-publicly-announces-filing-214900661.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T21:49:00+00:00",
+      "summary": "HOUSTON, April 17, 2026 (GLOBE NEWSWIRE) -- Fervo Energy today announced it has publicly filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission (the \"SEC\") relatin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Equities Traded in the US as American Depositary Receipts Sharply Higher in Friday Trading",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-150503382.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:05:03+00:00",
+      "summary": "European equities traded in the US as American depositary receipts were climbing higher late Friday",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ripple (XRP) News: Ripple and Kyobo Life Insurance Partner to Pioneer Korea’s First Blockchain Bond Settlement",
+      "url": "https://247wallst.com/investing/2026/04/15/ripple-xrp-news-ripple-and-kyobo-life-insurance-partner-to-pioneer-koreas-first-blockchain-bond-settlement/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T18:31:57+00:00",
+      "summary": "Ripple (CRYPTO: XRP) just partnered with Kyobo Life Insurance, one of South Korea’s Big 3 life insurers with over $92 billion in assets. Together, they’re piloting Korea’s first tokenized government b",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "MKS.L",
+  "last_updated": "2026-04-22T12:27:46.258201+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Marks & Spencer Introduces its new 'Love That' campaign - Inspired by the power of a simple compliment",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/marks-spencer-introduces-love-campaign-101900253.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T10:19:00+00:00",
+      "summary": "M&amp;S introduces Love That, a new campaign that celebrates the power of compliments.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Annabel’s and The Ivy sold to Arab sheikh for £1.4bn",
+      "url": "https://uk.finance.yahoo.com/news/annabel-ivy-sold-arab-sheikh-112726408.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-12T11:27:26+00:00",
+      "summary": "Richard Caring has struck a £1.4bn deal to sell his Ivy restaurant empire to an Abu Dhabi sheikh.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "M&S commits £2.1bn to UK meat supply deals",
+      "url": "https://www.retail-insight-network.com/news/ms-2-1bn-uk-meat-supply-deals/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T09:08:06+00:00",
+      "summary": "The agreements are expected to support around 3,500 M&amp;S Select Farms while securing long-term domestic supply of lamb and beef across the retailer’s Foodhall business.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The youth unemployment crisis fuelling chaos on London’s streets",
+      "url": "https://uk.finance.yahoo.com/news/youth-unemployment-crisis-fuelling-chaos-060000556.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T06:00:00+00:00",
+      "summary": "Even to a public wearily familiar with scenes of shoplifting and thuggery in stores, the scenes filmed in a Marks & Spencer in south London last week were shocking.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FTSE 100 Live: Aero and defence stocks lead decline as Trump's Iran deadline looms",
+      "url": "https://www.proactiveinvestors.com/companies/news/1090080/ftse-100-live-stocks-set-for-cautious-start-as-trump-iran-deal-awaited-1090080.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T15:04:00+00:00",
+      "summary": "FTSE down 82 points at 10,354 Oil and gas prices remain elevated Pres Trump set a 1am GMT deadline for Iran deal 4.03pm: Defence and aerospace stocks slide Investors seem to be betting on a downturn i",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

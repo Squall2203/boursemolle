@@ -1,0 +1,53 @@
+{
+  "ticker": "AI.PA",
+  "last_updated": "2026-04-22T11:32:03.422645+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Forge Nano, U.S. Advanced Manufacturing Leader for AI-Era Chips and Defense Batteries, to List on NASDAQ through Merger with Archimedes Tech SPAC Partners II Co.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/forge-nano-u-advanced-manufacturing-140000666.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:00+00:00",
+      "summary": "Advanced Manufacturing Platform Supporting Critical Industries: U.S. advanced manufacturing company enabling next-generation semiconductors and batteries through its proprietary Atomic Layer Depositio",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JMPLY or AIQUY: Which Is the Better Value Stock Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jmply-aiquy-better-value-stock-154003520.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:40:03+00:00",
+      "summary": "JMPLY vs. AIQUY: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JMPLY vs. AIQUY: Which Stock Is the Better Value Option?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jmply-vs-aiquy-stock-better-154002809.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T15:40:02+00:00",
+      "summary": "JMPLY vs. AIQUY: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Time To Reassess Air Liquide (ENXTPA:AI) After Recent Share Price Weakness?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-air-liquide-enxtpa-230707833.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-24T23:07:07+00:00",
+      "summary": "If you are wondering whether L'Air Liquide at €169.16 is offering good value today, or if the price already reflects what you are paying for, this article breaks down what the current market is really",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "AI boom threatened as Iran war triggers helium rationing",
+      "url": "https://uk.finance.yahoo.com/news/ai-boom-threatened-iran-war-163718532.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T16:37:18+00:00",
+      "summary": "The AI boom is under threat from the Iran war as helium rationing leads to a shortage of fibre-optic cables.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

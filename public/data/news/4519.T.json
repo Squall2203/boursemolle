@@ -1,0 +1,53 @@
+{
+  "ticker": "4519.T",
+  "last_updated": "2026-04-22T13:45:53.161919+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is Chugai Pharmaceutical (TSE:4519) Still Attractively Priced After Its Strong Multi Year Run",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/chugai-pharmaceutical-tse-4519-still-230546155.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T23:05:46+00:00",
+      "summary": "Wondering if Chugai Pharmaceutical's share price still offers value after a strong multi year run? This article unpacks how the current price compares with several valuation checks. The stock last clo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Mitsubishi Electric Announces Director Candidates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mitsubishi-electric-announces-director-candidates-073000797.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T07:30:00+00:00",
+      "summary": "TOKYO, March 30, 2026--Mitsubishi Electric Corporation (TOKYO: 6503) announced today that the candidates for Directors, who will be proposed for election at the Ordinary General Meeting of Shareholder",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rani Therapeutics Q4 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/rani-therapeutics-q4-earnings-call-highlights-2026-03-26/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T21:48:59+00:00",
+      "summary": "Rani Therapeutics (NASDAQ:RANI) executives highlighted what they described as a “transformational” 2025 during the company’s fourth-quarter and full-year earnings call, pointing to progress advancing ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Rani Therapeutics Reports Fourth Quarter and Full Year 2025 Financial Results; Provides Corporate Update",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/rani-therapeutics-reports-fourth-quarter-200500625.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T20:05:00+00:00",
+      "summary": "- Announced up to $1.085 billion collaboration with Chugai Pharmaceutical Co. for multiple high-value therapeutics and completed $60.3 million oversubscribed private placement led by Samsara BioCapita",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Roche stops work on experimental SMA drug",
+      "url": "https://www.biopharmadive.com/news/roche-sma-emugrobart-development-genentech-chugai-rare-muscle/815274/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-20T11:52:55+00:00",
+      "summary": "In a letter to European patients, Roche said its decision to end development of “emugrobart” was based on the drug “not consistently” improving muscle growth and motor function in a key study.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

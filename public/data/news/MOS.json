@@ -1,0 +1,53 @@
+{
+  "ticker": "MOS",
+  "last_updated": "2026-04-22T13:24:02.232179+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Mosaic Raises $18M Series A To Build AI-Driven Operating System For Deal Makers",
+      "url": "https://www.prnewswire.com/news-releases/mosaic-raises-18m-series-a-to-build-ai-driven-operating-system-for-deal-makers-302749548.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T10:00:00+00:00",
+      "summary": "Radical Ventures leads financing to expand Mosaic's deterministic deal modeling platform across investing workflows and asset classes NEW YORK, April 22, 2026 /PRNewswire/ -- Mosaic, the AI-driven dea",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mosaic Company (MOS) Leads Oversold Stocks in Materials Sector",
+      "url": "https://www.gurufocus.com/news/8806841/mosaic-company-mos-leads-oversold-stocks-in-materials-sector",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-21T18:59:41+00:00",
+      "summary": "Related Stocks: MOS,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fertilizer Stocks To Watch Now - April 21st",
+      "url": "https://www.marketbeat.com/instant-alerts/fertilizer-stocks-to-watch-now-april-21st-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T17:54:11+00:00",
+      "summary": "CF Industries, Nutrien, and Mosaic are the three Fertilizer stocks to watch today, according to MarketBeat's stock screener tool. Fertilizer stocks are shares of companies that manufacture, distribute",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Avesi Partners-backed Mosaic Consulting Group Launches Dedicated SAP Practice",
+      "url": "https://www.prnewswire.com/news-releases/avesi-partners-backed-mosaic-consulting-group-launches-dedicated-sap-practice-302748824.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-21T14:04:00+00:00",
+      "summary": "Mosaic's Newly Launched SAP Practice Leverages an AI-Forward Approach to Enterprise Modernization STAMFORD, Conn., April 21, 2026 /PRNewswire/ -- Avesi Partners (\"Avesi\") announced that its portfolio ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting Models",
+      "url": "https://arxiv.org/abs/2604.16429",
+      "source": "arxiv.org",
+      "published_at": "2026-04-21T04:00:00+00:00",
+      "summary": "arXiv:2604.16429v1 Announce Type: new Abstract: We introduce Mosaic, a probabilistic weather forecasting model that addresses two principal sources of spectral degradation in ML-based weather predicti",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

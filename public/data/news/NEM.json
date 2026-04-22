@@ -1,0 +1,53 @@
+{
+  "ticker": "NEM",
+  "last_updated": "2026-04-22T13:23:01.066593+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "5 Top Earnings Charts to Watch This Week",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-top-earnings-charts-watch-233500499.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T23:35:00+00:00",
+      "summary": "AI infrastructure, semiconductors, a top software company, and a gold miner are set to report earnings.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How to Boost Your Portfolio with Top Basic Materials Stocks Set to Beat Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/boost-portfolio-top-basic-materials-130002401.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:00:02+00:00",
+      "summary": "Why investors should use the Zacks Earnings ESP tool to help find stocks that are poised to top quarterly earnings estimates.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Here's How to Play Newmont Stock Before Q1 Earnings Release",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-play-newmont-stock-q1-120600050.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:06:00+00:00",
+      "summary": "NEM is expected to have benefited from higher gold prices amid production and cost headwinds in the first quarter.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "U.S. mining stocks dive as gold and other metals under pressure on Iran tensions",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/u-mining-stocks-dive-gold-175107538.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T17:51:07+00:00",
+      "summary": "Investing.com -- U.S. Mining stocks fell on Monday after gold and silver prices dived amid fears of inflation sparked by the closure of the Strait of Hormuz, as crude oil prices jumped.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Newmont’s Operational Setbacks Test Cost Discipline And Margin Resilience",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/newmont-operational-setbacks-test-cost-170510934.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T17:05:10+00:00",
+      "summary": "Newmont (NYSE:NEM) has suspended underground mining at its Cadia operation after an earthquake, creating uncertainty around near term production. Ghana has introduced a new tax framework that adds fur",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

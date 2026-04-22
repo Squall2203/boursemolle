@@ -1,0 +1,53 @@
+{
+  "ticker": "2914.T",
+  "last_updated": "2026-04-22T13:46:05.518326+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "D-Wave CEO on quantum computing's ChatGPT moment, Nvidia, & more",
+      "url": "https://finance.yahoo.com/video/d-wave-ceo-on-quantum-computings-chatgpt-moment-nvidia--more-152350565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T15:23:50+00:00",
+      "summary": "D-Wave Quantum (QBTS) president and CEO Alan Baratz sits down with Yahoo Finance Executive Editor Brian Sozzi to discuss Nvidia's (NVDA) artificial intelligence (AI) models for quantum computing, the ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Asian Dividend Stocks Featuring Japan Tobacco And Two More Top Picks",
+      "url": "https://finance.yahoo.com/news/asian-dividend-stocks-featuring-japan-043141588.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T04:31:41+00:00",
+      "summary": "As global markets navigate a landscape marked by economic shifts and technological disruptions, Asian equities have shown resilience, with Japan's stock indices rising amid domestic optimism and China",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Japan Tobacco (TSE:2914) Still Attractively Priced After A 47% One-Year Rally?",
+      "url": "https://finance.yahoo.com/news/japan-tobacco-tse-2914-still-230847496.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-01T23:08:47+00:00",
+      "summary": "If you have been wondering whether Japan Tobacco's share price still offers value after a strong run, this article walks through what the current valuation is really telling you. Japan Tobacco's stock",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Jefferies Sees Limited Re-Rating Upside for Philip Morris (PM) in 2026",
+      "url": "https://finance.yahoo.com/news/jefferies-sees-limited-rating-upside-071159143.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T07:11:59+00:00",
+      "summary": "Philip Morris International Inc. (NYSE:PM) is included among the 15 Best S&amp;P 500 Dividend Stocks to Buy in 2026. On January 20, Jefferies analyst Edward Mundy moved Philip Morris International Inc",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "D-Wave Quantum's Expanded Global Customer Base Is Gaining Attention",
+      "url": "https://finance.yahoo.com/news/d-wave-quantums-expanded-global-121900469.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-14T12:19:00+00:00",
+      "summary": "QBTS signed multiple Q3 customer deals across airlines, banking and pharma, lifting bookings to $2.4M and spotlighting growing adoption.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

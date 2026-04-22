@@ -1,0 +1,53 @@
+{
+  "ticker": "BIRG.L",
+  "last_updated": "2026-04-22T12:19:11.920921+00:00",
+  "sentiment_score": 0.27,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Assessing Bank of Ireland Group (ISE:BIRG) Valuation After Recent Share Price Weakness",
+      "url": "https://finance.yahoo.com/news/assessing-bank-ireland-group-ise-191309198.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T19:13:09+00:00",
+      "summary": "What recent performance signals for Bank of Ireland Group (ISE:BIRG) investors Bank of Ireland Group (ISE:BIRG) has recently drawn attention after a 0.9% one day decline, extending to an 8.1% fall ove",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Bank of Ireland Resets as Profits Slip, but Payout Rises",
+      "url": "https://app.moby.co/home/news/news-bank-of-ireland-resets-as-profits-slip-but-payout-rises?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T18:27:02+00:00",
+      "summary": "Lower rates bite, but management bets on growth, AI and €1.2 billion returns.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bank of Ireland Group PLC (BKRIF) Full Year 2025 Earnings Call Highlights: Strong Growth Amid ...",
+      "url": "https://finance.yahoo.com/news/bank-ireland-group-plc-bkrif-170115120.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T17:01:15+00:00",
+      "summary": "Bank of Ireland Group PLC (BKRIF) reports robust financial performance with increased shareholder distributions and strategic growth plans, despite facing geopolitical and competitive pressures.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Bank of Ireland Group Q4 Earnings Call Highlights",
+      "url": "https://www.marketbeat.com/instant-alerts/bank-of-ireland-group-q4-earnings-call-highlights-2026-03-02/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T11:26:13+00:00",
+      "summary": "Bank of Ireland Group (LON:BIRG) used its 2025 results and strategy update to outline strong recent performance, a 2025 shareholder distribution package totaling €1.2 billion, and new targets running ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bank of Ireland UK fined £3.7m after introducing anti-fraud tool a year late",
+      "url": "https://uk.finance.yahoo.com/news/bank-ireland-uk-fined-3-104120062.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T11:08:02+00:00",
+      "summary": "The safeguard was not applied to payments totalling around £6.9 billion, the Payment Systems Regulator (PSR) said.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

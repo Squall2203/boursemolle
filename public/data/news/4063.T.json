@@ -1,0 +1,53 @@
+{
+  "ticker": "4063.T",
+  "last_updated": "2026-04-22T13:44:39.722807+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Oil, Middle East Outlooks Undercut Asian Stock Markets",
+      "url": "https://finance.yahoo.com/news/oil-middle-east-outlooks-undercut-104528122.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T10:45:28+00:00",
+      "summary": "Asian stock markets largely fell back Thursday, as traders weighed triple-digit global crude oil pri",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "The Next AI Stock Trade Starts With Makers of Chemicals and Cooling Systems",
+      "url": "https://finance.yahoo.com/m/bde99f52-340c-3c49-9acf-617be9017e5f/the-next-ai-stock-trade.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-25T19:48:00+00:00",
+      "summary": "Hyperscalers are spending hundreds of billions of dollars annually to gain an advantage in the AI arms race.  Spending has sent shares of chip makers, memory companies, and data center builders soarin",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Shin‑Etsu Chemical (TSE:4063) Valuation Check After Recent Mixed Share Price Moves",
+      "url": "https://finance.yahoo.com/news/shin-etsu-chemical-tse-4063-080704356.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-08T08:07:04+00:00",
+      "summary": "Recent performance context for Shin-Etsu Chemical Shin-Etsu Chemical (TSE:4063) has recently drawn investor attention after a period where the share price showed mixed short term moves but positive re",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Automotive Silicone Research Report 2025: A $3.49 Billion Market by 2029, Driven by EV Adoption, Connected Vehicles, Sustainability Focus, and Asia-Pacific Growth",
+      "url": "https://finance.yahoo.com/news/automotive-silicone-research-report-2025-090100046.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T09:01:00+00:00",
+      "summary": "In 2023, the global automotive silicone market was valued at $2.34 billion and is projected to reach $3.49 billion by 2029, driven by the increasing demand for energy-efficient vehicles, particularly ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Silicon EPI Wafers Market to Grow by 26% During 2026-2030 Driven by AI and 5G Expansion - Shin-Etsu Chemical Co., Siltronic, GlobalWafers Co., and SK Siltron Co. Dominate",
+      "url": "https://finance.yahoo.com/news/silicon-epi-wafers-market-grow-120600829.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T12:06:00+00:00",
+      "summary": "Key opportunities include the rise in high-performance computing & automotive applications, the expansion driven by 5G infrastructure, and innovation in next-gen epitaxy technologies Silicon EPI Wafer",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

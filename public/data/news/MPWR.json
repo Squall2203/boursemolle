@@ -1,0 +1,53 @@
+{
+  "ticker": "MPWR",
+  "last_updated": "2026-04-22T13:05:24.423879+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Will Monolithic (MPWR) Beat Estimates Again in Its Next Earnings Report?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/monolithic-mpwr-beat-estimates-again-161003696.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:10:03+00:00",
+      "summary": "Monolithic (MPWR) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "STMicroelectronics to Post Q1 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stmicroelectronics-post-q1-earnings-whats-142800751.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:28:00+00:00",
+      "summary": "STM eyes Q1 2026 revenue surge with AI, industrial demand tailwinds, but automotive weakness and macro pressures may temper overall performance.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "TXN to Report Q1 Earnings: What's in the Cards for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/txn-report-q1-earnings-whats-140600179.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:06:00+00:00",
+      "summary": "Texas Instruments heads into Q1 2026 earnings with robust growth expected, but rising costs and geopolitical pressures can test its momentum.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "These 2 Computer and Technology Stocks Could Beat Earnings: Why They Should Be on Your Radar",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-computer-technology-stocks-could-130004277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:00:04+00:00",
+      "summary": "The Zacks Earnings ESP is a great way to find potential earnings surprises. Why investors should take advantage now.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "If You Invested $1000 in Monolithic Power a Decade Ago, This is How Much It'd Be Worth Now",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invested-1000-monolithic-power-decade-123004174.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:30:04+00:00",
+      "summary": "Investing in certain stocks can pay off in the long run, especially if you hold on for a decade or more.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

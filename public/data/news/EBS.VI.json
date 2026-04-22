@@ -1,0 +1,53 @@
+{
+  "ticker": "EBS.VI",
+  "last_updated": "2026-04-22T12:19:48.517861+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "How The Deutsche Telekom (XTRA:DTE) Narrative Is Shifting With Mixed Analyst Targets And Telecom Deals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-telekom-xtra-dte-narrative-111559189.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:15:59+00:00",
+      "summary": "Deutsche Telekom’s model fair value has shifted to €38.28, compared with a previous level of €38.14. This provides a fresh reference point for where analysts see the share price over the longer term. ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Erste Group FICO Award Spotlights Fair Isaac Valuation And Adoption Story",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/erste-group-fico-award-spotlights-060516619.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T06:05:16+00:00",
+      "summary": "Erste Group Bank AG has adopted Fair Isaac's FICO optimization technology to refine pricing and lending decisions. The bank's project received the 2026 FICO Decision Award for AI, Machine Learning & O",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Erste Group Offers Tailored Financing Solutions Across Countries Using FICO AI",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/erste-group-offers-tailored-financing-080000600.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T08:00:00+00:00",
+      "summary": "BERLIN, April 20, 2026--Erste Group Bank AG, the leading financial services provider in Central and Eastern Europe, has deployed optimization technology from FICO (NYSE: FICO) to enhance its customize",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Credicorp (BAP) Soars 7.5%: Is Further Upside Left in the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/credicorp-bap-soars-7-5-120800880.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T12:08:00+00:00",
+      "summary": "Credicorp (BAP) saw its shares surge in the last session with trading volume being higher than average. The latest trend in earnings estimate revisions may not translate into further price increase in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Jim Cramer Discusses RTX Corporation (RTX) Stock Amidst Iran War",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-discusses-rtx-corporation-164415589.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T16:44:15+00:00",
+      "summary": "We recently published Jim Cramer Said Allbirds Management Are “Jokers” & Discussed These 18 Stocks. RTX Corporation (NYSE:RTX) is one of the stocks discussed by Jim Cramer. RTX Corporation (NYSE:RTX) ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

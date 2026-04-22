@@ -1,0 +1,53 @@
+{
+  "ticker": "TYL",
+  "last_updated": "2026-04-22T13:19:16.438213+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Tyler Technologies Publishes 2025 Corporate Responsibility Report",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/tyler-technologies-publishes-2025-corporate-131700122.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:17:00+00:00",
+      "summary": "PLANO, Texas, April 16, 2026--Tyler Technologies has released its seventh annual corporate responsibility report.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tyler Technologies Schedules First Quarter 2026 Earnings Conference Call and Webcast",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tyler-technologies-schedules-first-quarter-131700441.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T13:17:00+00:00",
+      "summary": "PLANO, Texas, April 15, 2026--Tyler Technologies will discuss its first quarter 2026 results during a conference call and webcast on Thursday, April 30, 2026.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tyler Technologies Completes Acquisition of For The Record",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tyler-technologies-completes-acquisition-record-144700050.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T14:47:00+00:00",
+      "summary": "PLANO, Texas, April 14, 2026--Tyler Technologies announced today it has completed the previously announced acquisition of For The Record.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "A Look At Tyler Technologies (TYL) Valuation After Michigan Contract Win And US$200 Million Buyback Authorization",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-tyler-technologies-tyl-valuation-181222792.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T18:12:22+00:00",
+      "summary": "Tyler Technologies (TYL) has drawn fresh investor attention after securing a multi county public safety software deployment in Michigan and authorizing a $200 million share repurchase, combining contr",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tyler Technologies Announces 2026 Public Sector Excellence Award Winners",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/tyler-technologies-announces-2026-public-131700129.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T13:17:00+00:00",
+      "summary": "PLANO, Texas, April 07, 2026--Tyler Technologies is proud to announce its 2026 Public Sector Excellence Award winners.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

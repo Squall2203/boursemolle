@@ -1,0 +1,53 @@
+{
+  "ticker": "7735.T",
+  "last_updated": "2026-04-22T13:55:04.186738+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Japan's Nikkei Closes at Record High, Led by Metal, Tech Stocks",
+      "url": "https://finance.yahoo.com/m/5f51c580-5bcc-3c5b-95a4-39804ca47c90/japan%27s-nikkei-closes-at.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-25T08:12:11+00:00",
+      "summary": "The Nikkei Stock Average rose 2.2% to close at a fresh record of 58583.12, led by metal—and tech-related names following Wall Street's rebound overnight. \"It must be said that somewhat more positive r",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "These ‘safer’ chip stocks have boomed this year. Is it too late to buy in?",
+      "url": "https://www.marketwatch.com/story/these-safer-chip-stocks-have-boomed-this-year-is-it-too-late-to-buy-in-98a3e509?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-14T14:30:00+00:00",
+      "summary": "Valuations have risen for many semiconductor-equipment producers — but some are still relatively cheap.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Screen Holdings (TSE:7735) Valuation Check After Strong Recent Share Price Performance",
+      "url": "https://finance.yahoo.com/news/screen-holdings-tse-7735-valuation-210808053.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-11T21:08:08+00:00",
+      "summary": "SCREEN Holdings (TSE:7735) has caught investor attention after recent share price moves, with the stock’s returns over the past month and past 3 months prompting closer scrutiny of its semiconductor e",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Holiday Season Lull on Asian Stock Markets",
+      "url": "https://finance.yahoo.com/news/holiday-season-lull-asian-stock-104125614.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-24T10:41:25+00:00",
+      "summary": "Asian stock markets were in tepid form Wednesday, as traders looked forward to the holiday season am",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tech Strength Lifts Asian Stock Markets Outside China",
+      "url": "https://finance.yahoo.com/news/tech-strength-lifts-asian-stock-104738394.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-03T10:47:38+00:00",
+      "summary": "Asian stock markets outside of China gained on Wednesday, as traders took cues from overnight gains",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

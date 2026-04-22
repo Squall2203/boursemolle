@@ -1,0 +1,53 @@
+{
+  "ticker": "ABBV",
+  "last_updated": "2026-04-22T12:51:53.630417+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "TABR Capital Management LLC Purchases Shares of 47,486 AbbVie Inc. $ABBV",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-tabr-capital-management-llc-purchases-shares-of-47486-abbvie-inc-abbv-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:14:58+00:00",
+      "summary": "TABR Capital Management LLC purchased a new position in shares of AbbVie Inc. (NYSE:ABBV - Free Report) during the fourth quarter, according to the company in its most recent filing with the Securitie",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AbbVie Inc. $ABBV Shares Bought by Migdal Insurance & Financial Holdings Ltd.",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-abbvie-inc-abbv-shares-bought-by-migdal-insurance-financial-holdings-ltd-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T10:53:55+00:00",
+      "summary": "Migdal Insurance & Financial Holdings Ltd. raised its stake in AbbVie Inc. (NYSE:ABBV - Free Report) by 29.3% in the fourth quarter, according to the company in its most recent disclosure with the Sec",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "FORM Wealth Advisors LLC Takes $1.97 Million Position in AbbVie Inc. $ABBV",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-form-wealth-advisors-llc-takes-197-million-position-in-abbvie-inc-abbv-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:56:38+00:00",
+      "summary": "FORM Wealth Advisors LLC bought a new stake in AbbVie Inc. (NYSE:ABBV - Free Report) in the 4th quarter, according to its most recent 13F filing with the Securities and Exchange Commission. The fund b",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "AbbVie (ABBV) Projected to Post Quarterly Earnings on Wednesday",
+      "url": "https://www.marketbeat.com/instant-alerts/abbvie-abbv-projected-to-post-quarterly-earnings-on-wednesday-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:03:06+00:00",
+      "summary": "AbbVie (NYSE:ABBV) will be releasing its Q1 2026 earnings before the market opens on Wednesday, April 29. (View Earnings Report at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dorzagliatin-Empagliflozin Interaction Study in Diabetic Patients",
+      "url": "https://bioengineer.org/dorzagliatin-empagliflozin-interaction-study-in-diabetic-patients/",
+      "source": "bioengineer.org",
+      "published_at": "2026-04-21T23:32:17+00:00",
+      "summary": "In recent years, the landscape of therapeutic interventions for type 2 diabetes mellitus (T2DM) has undergone significant transformations, driven primarily by the advent of novel pharmacological agent",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

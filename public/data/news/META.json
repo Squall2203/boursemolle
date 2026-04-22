@@ -1,0 +1,53 @@
+{
+  "ticker": "META",
+  "last_updated": "2026-04-22T12:48:46.072296+00:00",
+  "sentiment_score": 0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
+      "url": "https://www.fool.com/investing/2026/04/22/ranking-magnificent-seven-most-to-least-attractive/",
+      "source": "fool.com",
+      "published_at": "2026-04-22T11:26:00+00:00",
+      "summary": "Among Nvidia, Alphabet, Apple, Microsoft, Amazon, Meta Platforms, and Tesla, there are two screaming bargains and one pricey company whose valuation can't be justified. Key PointsThe Magnificent Seven",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Meta deploys employee tracking software to train AI models",
+      "url": "https://crypto.news/meta-deploys-employee-tracking-software-to-train-ai-models/",
+      "source": "crypto.news",
+      "published_at": "2026-04-22T11:13:50+00:00",
+      "summary": "Meta Platforms has started rolling out internal tracking software on devices used by its U.S.-based employees, gathering data such as mouse movements and keystrokes to support the training of artifici",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Photographers Raise Concerns as AI Use Surges Among Clients",
+      "url": "https://petapixel.com/2026/04/22/photographers-raise-concerns-as-ai-use-surges-among-clients/",
+      "source": "petapixel.com",
+      "published_at": "2026-04-22T10:53:29+00:00",
+      "summary": "Are photographers competing against AI? It's a question posed by a recent Vogue article after photographer Jack Davison questioned his Instagram followers on whether it is increasingly becoming an iss",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Meta Faces ‘Scam Ads’ Suit - The watchdog Consumer Federation of America alleges in a new ...",
+      "url": "https://tvnewscheck.com/regulation/article/meta-faces-scam-ads-suit/",
+      "source": "tvnewscheck.com",
+      "published_at": "2026-04-22T10:44:58+00:00",
+      "summary": "The watchdog Consumer Federation of America alleges in a new lawsuit that Meta Platforms misleads Facebook and Instagram users about the risk that they will encounter scams, and by \"knowingly targetin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "New Gas-Powered Data Centers Could Emit More Greenhouse Gases Than Entire Nations",
+      "url": "https://www.wired.com/story/new-gas-powered-data-centers-could-emit-more-greenhouse-gases-than-entire-nations/",
+      "source": "wired.com",
+      "published_at": "2026-04-22T10:30:00+00:00",
+      "summary": "A WIRED review of permits for data center projects using natural gas and linked to OpenAI, Meta, Microsoft, and xAI shows they could emit more than 129 million tons of greenhouse gases per year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

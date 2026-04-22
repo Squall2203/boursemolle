@@ -1,0 +1,35 @@
+{
+  "ticker": "8801.T",
+  "last_updated": "2026-04-22T13:48:32.188712+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Mitsui Garden Hotel Sapporo Reopens Following Comprehensive Transformation",
+      "url": "https://finance.yahoo.com/news/mitsui-garden-hotel-sapporo-reopens-030000869.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T03:00:00+00:00",
+      "summary": "Mitsui Fudosan Co., Ltd. and Mitsui Fudosan Hotel Management Co., Ltd. today announced the reopening of Mitsui Garden Hotel Sapporo, a hotel in the heart of Sapporo, on February 1, 2026, following a c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mitsui Fudosan (TSE:8801): Assessing Valuation After a Steady Climb This Year",
+      "url": "https://finance.yahoo.com/news/mitsui-fudosan-tse-8801-assessing-122851687.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-14T12:28:51+00:00",
+      "summary": "If you’ve been watching Mitsui Fudosan (TSE:8801) lately, you might be wondering what’s driving the interest. While there’s no headline-grabbing event this week, sometimes the absence of news can be j",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Mitsui Garden Hotel Sendai Reopens After Full Renovation, Blending Nature and Modern Comfort",
+      "url": "https://finance.yahoo.com/news/mitsui-garden-hotel-sendai-reopens-030000617.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-27T03:00:00+00:00",
+      "summary": "Mitsui Fudosan Hotel Management Co., Ltd., in collaboration with Mitsui Fudosan Co., Ltd., is pleased to announce the completion of renovation work on Mitsui Garden Hotel Sendai. The hotel officially ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "PUM.DE",
+  "last_updated": "2026-04-22T11:59:51.625395+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Puma Taps Adidas Alum James Carnes to Lead Creative Direction",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/puma-james-carnes-svp-creative-direction-1238917207/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T17:44:21+00:00",
+      "summary": "He will report to chief brand officer Maria Valdes.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Allbirds Is an AI Company Now… Seriously",
+      "url": "https://app.moby.co/home/news/news-allbirds-is-an-ai-company-now-seriously?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T14:03:28+00:00",
+      "summary": "The $2.2 billion wool sneaker darling that became a $39 million cautionary tale would now like to talk to you about its GPU infrastructure vision",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Anta Sports: Sporting Goods in China Remains a Challenge",
+      "url": "https://wwd.com/footwear-news/shoe-industry-news/confidence-chinese-mass-market-sporting-goods-anta-nike-1238915210/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T19:39:07+00:00",
+      "summary": "A delay in the recovery of confidence among the Chinese mass-market base fuels the challenges in the sporting goods category, impacting Anta and Nike.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stock Market Today, April 2: Nike Shares Slide After Numerous Price Target Cuts From Wall Street",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/04/02/stock-market-today-april-2-nike-shares-slide-after-numerous-price-target-cuts-from-wall-street/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T21:58:16+00:00",
+      "summary": "Today, April 2, 2026, investors analyze over 20 price target cuts from analysts on the global sportswear giant.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Puma Biotechnology Reports Inducement Awards Under Nasdaq Listing Rule 5635(c)(4)",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/puma-biotechnology-reports-inducement-awards-211500115.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T21:15:00+00:00",
+      "summary": "LOS ANGELES, April 02, 2026--Puma Biotechnology, Inc. (NASDAQ: PBYI), a biopharmaceutical company, announced that on April 1, 2026, the Compensation Committee of Puma’s Board of Directors approved the",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

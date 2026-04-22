@@ -1,0 +1,53 @@
+{
+  "ticker": "PAH3.DE",
+  "last_updated": "2026-04-22T11:54:45.709116+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Porsche Goes Hunting for Ammo, Not Autos",
+      "url": "https://app.moby.co/home/news/news-porsche-goes-hunting-for-ammo-not-autos?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T16:43:02+00:00",
+      "summary": "Volkswagen’s biggest backer is leaning harder into defense after another grim reminder that Germany’s car empire is no longer the easy money machine it used to be.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Porsche considers cutting electric sports vehicles, Bloomberg reports",
+      "url": "https://finance.yahoo.com/news/porsche-considers-cutting-electric-sports-161530554.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T16:15:30+00:00",
+      "summary": "Porsche (POAHY) is considering shelving an electric sports car line to cut costs that have ballooned due its overly ambitious EV bet, according to people familiar with the matter, Bloomberg’s Monica R",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Porsche Automobil Holding (XTRA:PAH3) Valuation After Recent Mixed Share Price Performance",
+      "url": "https://finance.yahoo.com/news/assessing-porsche-automobil-holding-xtra-211053414.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-30T21:10:53+00:00",
+      "summary": "Why Porsche Automobil Holding is on investors’ radar today Porsche Automobil Holding (XTRA:PAH3) has drawn fresh attention after recent price moves left the shares with a mixed return pattern, includi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Waabi raises up to $1 billion and partners with Uber to deploy 25,000 robotaxis as the race to dominate self-driving heats up",
+      "url": "https://finance.yahoo.com/news/waabi-raises-1-billion-partners-111834875.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T11:18:34+00:00",
+      "summary": "The AI company, which had been focused on software to enable autonomous trucking, has now expanded into robotaxis.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Waabi hauls in $750M Series C to become Canada’s newest autonomous vehicle unicorn",
+      "url": "https://finance.yahoo.com/news/waabi-hauls-750m-series-c-110000192.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T11:00:00+00:00",
+      "summary": "Oversubscribed round led by Khosla and G2 catapults Toronto startup into robotaxi race with massive Uber deal The post Waabi hauls in $750M Series C to become Canada’s newest autonomous vehicle unicor",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "SHL.DE",
+  "last_updated": "2026-04-22T11:55:46.691499+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Telehealth Market Report 2025-2036: Key Segments, Share, Regulatory, Reimbursement and Forecasts Featuring Philips Healthcare, American Well, Teladoc Health, Siemens Healthineers",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/telehealth-market-report-2025-2036-113400304.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:34:00+00:00",
+      "summary": "Telehealth offers opportunities through remote patient monitoring, key industry trends, competitive dynamics, and regulatory insights across 39 countries. It enables strategic planning, investment, an",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ScreenPoint Medical raises $16m with continued investment from Siemens Healthineers",
+      "url": "https://www.medicaldevice-network.com/news/screenpoint-medical-raises-16m-with-continued-investment-from-siemens-healthineers/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:43:00+00:00",
+      "summary": "ScreenPoint’s Transpara AI is integrated with Siemens Healthineers tools, including syngo.Breast Care and its MAMMOMAT range.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Siemens Healthineers (XTRA:SHL) Narrative Is Shifting As Analysts Revisit Price Targets",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/siemens-healthineers-xtra-shl-narrative-230436573.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T23:04:36+00:00",
+      "summary": "Siemens Healthineers has seen its modeled fair value trimmed from €55.02 to €54.02, a change of about €1 that keeps the debate squarely on price targets rather than any sweeping reset of expectations.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Radiology AI Global Market Research and Forecast Report 2026-2030: Opportunities in Growing Demand for Platform, Multi-Modal Data, and OEM Integration (Pacs/Ehr/Marketplaces)",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/radiology-ai-global-market-research-162000364.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T16:20:00+00:00",
+      "summary": "The radiology AI market is set to explode from USD 0.76 billion in 2025 to USD 2.27 billion by 2030, growing at a 24.5% CAGR. The surge is driven by the adoption of AI tools for cancer detection, lesi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Siemens plans shareholder vote on Siemens Healthineers spinoff",
+      "url": "https://www.medtechdive.com/news/siemens-plans-shareholder-vote-on-siemens-healthineers-spinoff/817886/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T16:13:37+00:00",
+      "summary": "The German parent, which is giving up its majority stake in Siemens Healthineers, said preparations for the transaction are progressing toward a vote at its February annual meeting.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

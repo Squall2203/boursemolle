@@ -1,0 +1,53 @@
+{
+  "ticker": "DTE.DE",
+  "last_updated": "2026-04-22T11:52:31.227922+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "How The Deutsche Telekom (XTRA:DTE) Narrative Is Shifting With Mixed Analyst Targets And Telecom Deals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-telekom-xtra-dte-narrative-111559189.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:15:59+00:00",
+      "summary": "Deutsche Telekom’s model fair value has shifted to €38.28, compared with a previous level of €38.14. This provides a fresh reference point for where analysts see the share price over the longer term. ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Deutsche Telekom exploring merger with T-Mobile, Bloomberg News reports",
+      "url": "https://finance.yahoo.com/video/deutsche-telekom-exploring-merger-t-095927014.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:59:27+00:00",
+      "summary": "STORY: Deutsche Telekom is considering a full combination with T-Mobile US...  and it could result in the largest public M&amp;A deal on record.  Bloomberg News reported the story on Tuesday, citing p",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "T-Mobile Stock Falls on Report of Possible Deutsche Telekom Combination",
+      "url": "https://finance.yahoo.com/m/a71fc9f5-a1ed-3e08-bacd-5f375c807a8e/t-mobile-stock-falls-on.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:13:00+00:00",
+      "summary": "Deutsche Telekom  is weighing a merger with  T-Mobile US  according to a report on Tuesday.  Shares of the German telecommunications provider closed down 2.6% after the Bloomberg report.  Shares of Be",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Deutsche Telekom, T-Mobile in early talks for potential mega merger, sources say",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-telekom-shares-slip-t-082256924.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:22:56+00:00",
+      "summary": "Deutsche Telekom is exploring a deal to combine with its U.S. unit, T-Mobile US , to create a $400 ‌billion telecoms giant in what would be the largest ever public merger, two people ‌familiar with th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sector Update: Consumer Stocks Decline Late Afternoon",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-decline-afternoon-195430285.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:54:30+00:00",
+      "summary": "Consumer stocks were lower late Tuesday afternoon, with the State Street Consumer Staples Select Sec",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

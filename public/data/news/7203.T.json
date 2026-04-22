@@ -1,0 +1,53 @@
+{
+  "ticker": "7203.T",
+  "last_updated": "2026-04-22T13:42:00.767892+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Foreign carmaker BMW imported fewer cars to U.S. than the Detroit 3",
+      "url": "https://www.freep.com/story/money/cars/ford/2026/04/22/us-vehicle-imports-2025-ford-bmw/89704785007/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:51:54+00:00",
+      "summary": "A new report shows which automakers imported the most and fewest finished vehicles in 2025. Ford came out the best of the Detroit 3.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Chinese EVs look to sideline foreign brands at Beijing auto show",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/chinese-evs-look-sideline-foreign-124346048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:43:46+00:00",
+      "summary": "The world's biggest auto show opens in Beijing on Friday, as Chinese manufacturers solidify their status as industry innovators and foreign brands face ferocious competition in the country's giant car",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Japan records 5th straight fiscal year of trade deficits as Trump's tariffs hit auto exports",
+      "url": "https://finance.yahoo.com/economy/policy/articles/japan-records-5th-straight-fiscal-034052288.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T03:40:52+00:00",
+      "summary": "Japan's trade deficit was 1.7 trillion yen ($10.7 billion) in the fiscal year that ended in March, the government said Wednesday, the fifth straight fiscal year of deficits.  Exports rose 4% from the ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Aisin contract manufacturing Mazda 6-speed auto transmission in US",
+      "url": "https://www.just-auto.com/news/aisin-contract-manufacturing-mazda-6-speed-auto-transmission-in-us/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:07:55+00:00",
+      "summary": "Aisin says it is promoting local production that meets customer needs globally.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "[Latest] Global Hydrogen Fuel Cell Vehicle Market Size/Share Worth USD 28.47 Billion by 2035 at a 18.7% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/latest-global-hydrogen-fuel-cell-113000257.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:30:00+00:00",
+      "summary": "[220+ Pages Latest Report] According to a market research study published by Custom Market Insights, the demand analysis of Global Hydrogen Fuel Cell Vehicle Market size & share revenue was valued at ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

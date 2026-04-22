@@ -1,0 +1,53 @@
+{
+  "ticker": "BR",
+  "last_updated": "2026-04-22T13:17:58.999094+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Broadridge Launches Central Risk and Liquidity Optimization Solution to Unify Trade Execution, Liquidity and Risk Management",
+      "url": "https://www.prnewswire.com/news-releases/broadridge-launches-central-risk-and-liquidity-optimization-solution-to-unify-trade-execution-liquidity-and-risk-management-302749699.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T06:00:00+00:00",
+      "summary": "New integrated front-office solution enables firms centralize risk, internalize client flow, optimize liquidity, and improve capital efficiency NEW YORK, April 22, 2026 /PRNewswire/ -- Today, Broadrid",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Tavira selects Broadridge to Support its Agency Brokerage Platform and Market Connectivity",
+      "url": "https://www.prnewswire.com/news-releases/tavira-selects-broadridge-to-support-its-agency-brokerage-platform-and-market-connectivity-302747829.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-21T05:00:00+00:00",
+      "summary": "Broadridge's integrated High Touch OMS, connectivity, and middle office capabilities will provide the scale, automation, and global market access to support Tavira's next phase of growth LONDON, April",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Broadridge Schedules Webcast and Conference Call to Review Third Quarter Fiscal Year 2026 Results on April 30, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/broadridge-schedules-webcast-conference-call-010000144.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-21T01:00:00+00:00",
+      "summary": "Broadridge Financial Solutions, Inc. (NYSE:BR) is scheduled to release its financial results for the third quarter of fiscal year 2026 on Thursday, April 30, 2026. Broadridge will host a webcast and c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Broadridge Announces Strategic Investment in CENTRL to Enhance Due Diligence and RFP Solutions for Asset Management and Retirement Industry",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/broadridge-announces-strategic-investment-centrl-110000455.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-20T11:00:00+00:00",
+      "summary": "Broadridge Financial Solutions, Inc. (NYSE: BR), a global Fintech leader, today announced a strategic partnership and minority investment in CENTRL, a leading provider of AI-powered due diligence solu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assetmark Inc. Acquires 9,914 Shares of Broadridge Financial Solutions, Inc. $BR",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-assetmark-inc-acquires-9914-shares-of-broadridge-financial-solutions-inc-br-2026-04-18/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-18T07:23:36+00:00",
+      "summary": "Assetmark Inc. increased its holdings in shares of Broadridge Financial Solutions, Inc. (NYSE:BR - Free Report) by 30.0% during the 4th quarter, according to the company in its most recent 13F filing ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "BKR",
+  "last_updated": "2026-04-22T13:26:08.634512+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "IDC ProductScape: Worldwide Utilities Asset Performance Management, 2026",
+      "url": "https://my.idc.com/getdoc.jsp?containerId=US54466726&utm_medium=rss_feed&utm_source=alert&utm_campaign=rss_syndication",
+      "source": "idc.com",
+      "published_at": "2026-04-22T04:00:00+00:00",
+      "summary": "This IDC ProductScape offers a comprehensive guide on the key functionalities within the worldwide utilities asset performance management space, featuring products from Emerson’s Aspen Technology, AVE",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Baker Hughes (BKR) To Report Earnings Tomorrow: Here Is What To Expect",
+      "url": "https://stockstory.org/us/stocks/nasdaq/bkr/news/earnings/baker-hughes-bkr-to-report-earnings-tomorrow-here-is-what-to-expect",
+      "source": "stockstory.org",
+      "published_at": "2026-04-22T03:10:50+00:00",
+      "summary": "Energy technology company Baker Hughes (NASDAQ:BKR) will be reporting results this Thursday after market hours. Here’s what to look for. Energy technology company Baker Hughes (NASDAQ:BKR) will be rep",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Baker Hughes to Report Q1 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/baker-hughes-report-q1-earnings-144300224.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-20T14:43:00+00:00",
+      "summary": "Weaker U.S. drilling activity and Middle East challenges are likely to have weighed on BKR's Q1 earnings.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Mirae Asset Global Investments Co. Ltd. Buys 72,714 Shares of Baker Hughes Company $BKR",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-mirae-asset-global-investments-co-ltd-buys-72714-shares-of-baker-hughes-company-bkr-2026-04-19/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-19T09:39:32+00:00",
+      "summary": "Mirae Asset Global Investments Co. Ltd. lifted its stake in Baker Hughes Company (NASDAQ:BKR - Free Report) by 17.7% during the fourth quarter, according to the company in its most recent Form 13F fil",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "US rig count down two as prices drop",
+      "url": "https://www.oaoa.com/?p=359296&.tsrc=rss",
+      "source": "oaoa.com",
+      "published_at": "2026-04-18T00:09:00+00:00",
+      "summary": "The rig count in the Permian Basin was unchanged this week, the latest count Friday by Baker Hughes shows, with 242 rigs active in the region. A year ago, 289 rigs were active in the region. Nationall",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

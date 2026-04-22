@@ -1,0 +1,53 @@
+{
+  "ticker": "AKZA.AS",
+  "last_updated": "2026-04-22T12:03:07.724242+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "New Strong Sell Stocks for April 13th",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/strong-sell-stocks-april-13th-090900644.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T09:09:00+00:00",
+      "summary": "LAZ, ARES and AKZOY have been added to the Zacks Rank #5 (Strong Sell) List on April 13th, 2026.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Wolters Kluwer nominates Maarten de Vries for appointment to the Supervisory Board",
+      "url": "https://finance.yahoo.com/news/wolters-kluwer-nominates-maarten-vries-070000057.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T07:00:00+00:00",
+      "summary": "PRESS RELEASE Wolters Kluwer nominates Maarten de Vries for appointment to the Supervisory Board Alphen aan den Rijn — March 11, 2026 — Wolters Kluwer, a global leader in professional information solu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "United States Specialty Chemicals Industry Research Report 2025-2033 Featuring Solvay, Evonik, Clariant, Akzo Nobel, Dupont De Nemours, BASF, Kemira, LANXESS, Croda, Lubrizol",
+      "url": "https://finance.yahoo.com/news/united-states-specialty-chemicals-industry-142000529.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T14:20:00+00:00",
+      "summary": "The United States Specialty Chemicals Market is on track to reach $299.46 billion by 2033, up from $204.08 billion in 2025, at a CAGR of 4.91%. Key growth drivers include innovation, industrial expans",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Axalta Akzo Nobel Merger Proposal Tests Growth Story And Recent Weakness",
+      "url": "https://finance.yahoo.com/news/axalta-akzo-nobel-merger-proposal-191336613.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T19:13:36+00:00",
+      "summary": "Axalta Coating Systems (NYSE:AXTA) has announced a proposed merger with Akzo Nobel N.V. The combination is intended to expand Axalta's market position and operational capabilities across global coatin",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Akzo Nobel (AMS:AKZA) Strong Profits May Be Masking Some Underlying Issues",
+      "url": "https://finance.yahoo.com/news/akzo-nobel-ams-akza-strong-062537028.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-15T06:25:37+00:00",
+      "summary": "Akzo Nobel N.V.'s ( AMS:AKZA ) healthy profit numbers didn't contain any surprises for investors. We think this is due...",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

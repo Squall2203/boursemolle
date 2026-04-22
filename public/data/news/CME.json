@@ -1,0 +1,53 @@
+{
+  "ticker": "CME",
+  "last_updated": "2026-04-22T13:02:04.520229+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "CME Group Q1 earnings, revenue growth fall short of consensus",
+      "url": "https://seekingalpha.com/news/4577696-cme-group-q1-earnings-revenue-growth-fall-short-of-consensus",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T11:20:49+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CME Group profit rises as market volatility drives hedging demand",
+      "url": "https://www.investing.com/news/economy-news/cme-group-profit-rises-as-market-volatility-drives-hedging-demand-4628799",
+      "source": "investing.com",
+      "published_at": "2026-04-22T11:13:29+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "CME: Q1 Earnings Snapshot - CHICAGO (AP) — CHICAGO (AP) — CME Group Inc. (CME) on Wednesday ...",
+      "url": "https://pantagraph.com/news/state-and-regional/illinois/article_1cd9c4d5-1d79-5b97-8c15-efa21ca29fdd.html",
+      "source": "pantagraph.com",
+      "published_at": "2026-04-22T11:06:10+00:00",
+      "summary": "CHICAGO (AP) — CHICAGO (AP) — CME Group Inc. (CME) on Wednesday reported first-quarter net income of $1.15 billion.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CME Non-GAAP EPS of $3.36 misses by $0.02, revenue of $1.88B misses by $30M",
+      "url": "https://seekingalpha.com/news/4577697-cme-non-gaap-eps-of-3_36-misses-by-0_02-revenue-of-1_88b-misses-by-30m",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T11:02:18+00:00",
+      "summary": "",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "CME Group Inc. Reports Record Revenue, Adjusted Operating Income, Adjusted Net Income and Adjusted Earnings Per Share for Q1 2026",
+      "url": "https://www.benzinga.com/pressreleases/26/04/n51962817/cme-group-inc-reports-record-revenue-adjusted-operating-income-adjusted-net-income-and-adjusted-ea?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+      "source": "benzinga.com",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "Record revenue of $1.9 billion, up 14% Net income and diluted earnings per share both up 20% CHICAGO, April 22, 2026 /PRNewswire/ -- CME Group Inc. (NASDAQ:CME) today reported financial results for th",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "AM.PA",
+  "last_updated": "2026-04-22T11:40:51.144188+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Best Value Stocks to Buy for April 22nd",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/best-value-stocks-buy-april-083600816.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:36:00+00:00",
+      "summary": "PARR, AMN and PLOW made it to the Zacks Rank #1 (Strong Buy) value stocks list on April 22nd, 2026.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is OMRON’s (TSE:6645) Virtual Twin Push Quietly Redefining Its Industrial Automation Edge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/omron-tse-6645-virtual-twin-190333801.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:03:33+00:00",
+      "summary": "Dassault Systèmes and OMRON recently announced a partnership to link Dassault’s 3D virtual design and simulation tools with OMRON’s Sysmac industrial automation platform, creating a unified way for ma",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Time To Reassess Dassault Aviation (ENXTPA:AM) After Its Recent Share Price Pullback?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-dassault-aviation-enxtpa-210549006.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T21:05:49+00:00",
+      "summary": "Wondering if Dassault Aviation société anonyme is fairly priced or if the recent share price is giving you a chance to buy in at a discount? This article focuses squarely on what the current valuation",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why AMN Healthcare Services (AMN) is a Top Value Stock for the Long-Term",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-amn-healthcare-services-amn-134003466.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:40:03+00:00",
+      "summary": "Whether you're a value, growth, or momentum investor, finding strong stocks becomes easier with the Zacks Style Scores, a top feature of the Zacks Premium research service.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Marsh (MRSH) Beats Q1 Earnings and Revenue Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marsh-mrsh-beats-q1-earnings-125503917.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T12:55:03+00:00",
+      "summary": "Marsh (MRSH) delivered earnings and revenue surprises of +2.46% and +2.88%, respectively, for the quarter ended March 2026. Do the numbers hold clues to what lies ahead for the stock?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

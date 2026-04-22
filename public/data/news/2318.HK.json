@@ -1,0 +1,53 @@
+{
+  "ticker": "2318.HK",
+  "last_updated": "2026-04-22T13:31:18.679659+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Ping An Bank Upgraded to AAA in MSCI ESG Ratings, Ranking Among the Leading Global Banks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ping-bank-upgraded-aaa-msci-063200465.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T06:32:00+00:00",
+      "summary": "Ping An Insurance (Group) Company of China, Ltd. (\"Ping An\" or \"the Group\"; HKEX: 2318/82318; SSE: 601318) is pleased to announce that its subsidiary, Ping An Bank Co., Ltd. (\"Ping An Bank\" or \"the Ba",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Ping An Seeks To Sell $1 Billion In Software-Focused Private Equity Stakes",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ping-seeks-sell-1-billion-184220811.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T18:42:20+00:00",
+      "summary": "China's largest insurer taps Campbell Lutyens to offload Vista and KKR fund stakes amid shifting software investment conditions",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Ping An Launches \"Service Year 2026\": Upgrades AI‑Powered Express Service and Global Emergency Assistance",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ping-launches-2026-upgrades-ai-093600531.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T09:36:00+00:00",
+      "summary": "Ping An Insurance (Group) Company of China, Ltd. (\"Ping An\" or \"the Group\"; HKEX: 2318/82318; SSE: 601318) today announced major upgrades to its AI‑powered Express Service and Global Emergency Assista",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Ping An targets doubling valuation as 60% of claims go automated",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ping-targets-doubling-valuation-60-185810031.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T18:58:10+00:00",
+      "summary": "AI adoption accelerates efficiency and cost savings, but investors remain cautious with shares still 37% below peak.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Ping An Reports 2025 Performance on Positive Trends, Operating Profit[1] Up 10.3% YoY",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ping-reports-2025-performance-positive-110500217.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T11:05:00+00:00",
+      "summary": "Ping An Insurance (Group) Company of China, Ltd. (hereafter \"Ping An\" or the \"Group\", HKEX: 2318; SSE: 601318) today announced its financial results for the year ended December 31, 2025.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

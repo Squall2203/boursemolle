@@ -1,0 +1,53 @@
+{
+  "ticker": "INTC",
+  "last_updated": "2026-04-22T13:01:48.255986+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Intel and AMD CPU prices are increasing by up to 20%, say manufacturers, with further rises expected this year",
+      "url": "https://www.club386.com/cpu-price-rises-april-26/",
+      "source": "club386.com",
+      "published_at": "2026-04-22T10:47:28+00:00",
+      "summary": "AI demand has driven up the costs of consumer and server processors, with both AMD and Intel reportedly planning further price increases. The post Intel and AMD CPU prices are increasing by up to 20%,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The opportunities and risks of AI in classrooms: Lenovo + Intel",
+      "url": "https://www.youtube.com/watch?v=31ENz1MPPA4",
+      "source": "youtube.com",
+      "published_at": "2026-04-22T10:15:23+00:00",
+      "summary": "AI is supporting new possibilities for students and educators around learning and connections to real-world skills. With that progress comes real questions about risk and responsibility. How can schoo",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pragmata is yet another launch day fail for Intel's GPUs, but its quick response to game issues shows it's still working hard for gamers",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/pragmata-is-yet-another-launch-day-fail-for-intels-gpus-but-its-quick-response-to-game-issues-shows-its-still-working-hard-for-gamers/",
+      "source": "pcgamer.com",
+      "published_at": "2026-04-22T09:54:42+00:00",
+      "summary": "The dad sim is back on the table for Intel GPUs. Sci-fi shooter Pragmata",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "OpenAI Patent Reveals Custom AI Chip With 20 HBM Stacks, Using Intel EMIB-Style Bridges to Smash Current Limits",
+      "url": "https://wccftech.com/openai-patent-custom-ai-chip-hbm-memory-stacks-using-intel-emib-like-bridges/",
+      "source": "wccftech.com",
+      "published_at": "2026-04-22T09:50:10+00:00",
+      "summary": "OpenAI has published a new patent in which it discloses an AI chip housing several compute chiplets, surrounded by a large number of HBM memory stacks. One Compute Chiplet, Several HBM Memory Stacks: ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Intel (INTC) Stock Rockets 78% in 2026 — Will Q1 Earnings Justify the Rally?",
+      "url": "https://blockonomi.com/intel-intc-stock-rockets-78-in-2026-will-q1-earnings-justify-the-rally/",
+      "source": "blockonomi.com",
+      "published_at": "2026-04-22T09:32:14+00:00",
+      "summary": "Intel (INTC) stock has jumped 78% YTD on strategic deals and 18A chip progress. Q1 2026 earnings on April 23 will test whether the rally can continue. The post Intel (INTC) Stock Rockets 78% in 2026 —",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

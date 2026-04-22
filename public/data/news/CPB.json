@@ -1,0 +1,53 @@
+{
+  "ticker": "CPB",
+  "last_updated": "2026-04-22T13:29:16.345443+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "3 Consumer Stocks That Concern Us",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-consumer-stocks-concern-us-185351877.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:53:51+00:00",
+      "summary": "Regarded as defensive investments, consumer staples stocks are generally safe bets in choppy markets. The flip side is that they frequently fall behind growth industries when times are good, and this ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Little Pressure Helped Pepsi. Can the Rest of the Food Industry Follow?",
+      "url": "https://www.wsj.com/business/retail/a-little-pressure-helped-pepsi-can-the-rest-of-the-food-industry-follow-b662abbb?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T09:30:00+00:00",
+      "summary": "PepsiCo is defying the odds in a brutal environment, but its path isn’t easy to replicate.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "General Mills' Price Mix vs. Volume: What Drives Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/general-mills-price-mix-vs-142500907.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:25:00+00:00",
+      "summary": "GIS navigates pricing and volume pressures as it invests in value and competitiveness, with early signs of demand stabilization emerging.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Prego® Partners with StoryCorps to Transform the Everyday Dinner into Cherished Family Memories",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/prego-partners-storycorps-transform-everyday-130000215.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:00:00+00:00",
+      "summary": "For generations, the dinner table has been a place to share meals, stories, bond over life's moments, and create lasting memories. To celebrate and modernize this tradition, Prego®, in partnership wit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Campbell’s Isn’t Cheap - It’s Trapped",
+      "url": "https://www.barchart.com/story/news/1353751/campbells-isnt-cheap-its-trapped?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T19:59:56+00:00",
+      "summary": "Campbell’s isn’t cheap—it's mispriced until something forces change.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

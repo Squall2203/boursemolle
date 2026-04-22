@@ -1,0 +1,53 @@
+{
+  "ticker": "TTWO",
+  "last_updated": "2026-04-22T13:22:12.003153+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "'If AI were to take anyone's job, wouldn't it take Elon Musk's job? The richest guy on Earth?' — Take-Two CEO says AI won't get rid of jobs, but allow artists to do 'higher quality work' instead",
+      "url": "https://www.techradar.com/gaming/if-ai-were-to-take-anyones-job-wouldnt-it-take-elon-musks-job-the-richest-guy-on-earth-take-two-ceo-says-ai-wont-get-rid-of-jobs-but-allow-artists-to-do-higher-quality-work-instead",
+      "source": "techradar.com",
+      "published_at": "2026-04-21T15:08:20+00:00",
+      "summary": "Take-Two CEO Strauss Zelnick has said that artificial intelligence (AI) won't steal artists' jobs, but that it will allow them to do \"higher quality work\" instead of tedious tasks. Grand Theft Auto 6.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rockstar Games Co-Founder Dan Houser Unveils Cast of His Sprawling ‘Absurdverse’ Video Game-TV Series Franchise; First Animated Shorts to Premiere in May (EXCLUSIVE)",
+      "url": "https://variety.com/2026/tv/news/dan-houser-absurdverse-tv-show-video-game-cast-1236726823/",
+      "source": "variety.com",
+      "published_at": "2026-04-21T15:00:00+00:00",
+      "summary": "Rockstar Games co-founder Dan Houser has unveiled the first round of voice castings for his upcoming TV and video game franchise, “Absurdverse,” ahead of formally revealing a first look at the project",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Take-Two Interactive Software, Inc. $TTWO Shares Purchased by Zurcher Kantonalbank Zurich Cantonalbank",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-take-two-interactive-software-inc-ttwo-shares-purchased-by-zurcher-kantonalbank-zurich-cantonalbank-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T13:04:53+00:00",
+      "summary": "Zurcher Kantonalbank Zurich Cantonalbank boosted its position in Take-Two Interactive Software, Inc. (NASDAQ:TTWO - Free Report) by 221.2% during the fourth quarter, according to the company in its mo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Two weeks after laying off AI team, GTA 6 boss says we must embrace the technology",
+      "url": "https://www.pcgamesn.com/grand-theft-auto-vi/ai-take-two",
+      "source": "pcgamesn.com",
+      "published_at": "2026-04-21T11:24:11+00:00",
+      "summary": "Take-Two CEO Strauss Zelnick is talking about AI again, but he seems to have U-turned on his opinion since we last heard from him. Take-Two CEO Strauss Zelnick can't seem to make up his mind about AI.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GTA 6 Boss Admits 'AI Can Be Used For Evil'—But Dismisses AI Job Loss Panic",
+      "url": "https://www.ibtimes.co.uk/take-two-ceo-ai-gaming-industry-1792781",
+      "source": "ibtimes.co.uk",
+      "published_at": "2026-04-21T05:49:19+00:00",
+      "summary": "Take-Two CEO says AI can be used for evil but dismisses fears it will cause widespread job losses in gaming and creative industries. Take-Two Interactive chief executive Strauss Zelnick, the executive",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

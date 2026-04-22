@@ -1,0 +1,53 @@
+{
+  "ticker": "AHT.L",
+  "last_updated": "2026-04-22T12:29:16.328028+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Returns On Capital At Ashtead Group (LON:AHT) Have Hit The Brakes",
+      "url": "https://finance.yahoo.com/news/returns-capital-ashtead-group-lon-075417817.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-08T07:54:17+00:00",
+      "summary": "What are the early trends we should look for to identify a stock that could multiply in value over the long term...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Ashtead Group plc (LON:AHT) Looks Like A Quality Company",
+      "url": "https://finance.yahoo.com/news/why-ashtead-group-plc-lon-072417524.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-25T07:24:17+00:00",
+      "summary": "One of the best investments we can make is in our own knowledge and skill set. With that in mind, this article will...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "UK Stocks Priced Below Estimated Value In January 2026",
+      "url": "https://finance.yahoo.com/news/uk-stocks-priced-below-estimated-063801361.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-06T06:38:01+00:00",
+      "summary": "The United Kingdom's FTSE 100 index recently experienced a downturn, influenced by weak trade data from China that highlighted ongoing challenges in the global economic landscape. As the market naviga",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "FTSE 100: London market ends best year since 2009 with a wobble",
+      "url": "https://uk.finance.yahoo.com/news/ftse-100-live-london-market-stocks-090044535.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-31T09:00:44+00:00",
+      "summary": "London's premier index is more than 21% in the green this year despite a series of global economic headwinds.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ashtead Group PLC (ASHTF) Q2 2026 Earnings Call Highlights: Strong Cash Flow and Shareholder ...",
+      "url": "https://finance.yahoo.com/news/ashtead-group-plc-ashtf-q2-170049638.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-09T17:00:49+00:00",
+      "summary": "Ashtead Group PLC (ASHTF) reports robust free cash flow growth and announces a new share buyback program, while navigating market headwinds and restructuring efforts in the UK.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

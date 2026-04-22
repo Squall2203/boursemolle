@@ -1,0 +1,53 @@
+{
+  "ticker": "EXPN.L",
+  "last_updated": "2026-04-22T12:24:05.802931+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "UK’s FCA names eight banks for AI testing",
+      "url": "https://www.retailbankerinternational.com/news/fca-ai-testing-eight-banks/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:54:28+00:00",
+      "summary": "The programme aims setto help participating firms examine issues such as risk controls and live oversight to use AI in services.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Experian Launches AI-Powered ‘Transaction Forensics’ to Bolster Fraud Prevention Across UK Financial Services",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/experian-launches-ai-powered-transaction-070000421.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:00:00+00:00",
+      "summary": "LONDON, April 22, 2026--Experian today announces the go-live of ‘Transaction Forensics’, a pioneering AI-powered fraud and anti-money laundering solution designed to help financial services detect and",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Equifax Stock Falls After Earnings. What Iran War Means for Mortgages.",
+      "url": "https://finance.yahoo.com/m/228c9020-dc8a-34d0-b206-db4f2df3f64b/equifax-stock-falls-after.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:52:00+00:00",
+      "summary": "Equifax posts better-than-expected earnings and revenue for the first quarter but leaves guidance unchanged.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Experian Teams With TazWorks to Enable Faster Hiring With Instant Employment Verification",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/experian-teams-tazworks-enable-faster-120000879.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T12:00:00+00:00",
+      "summary": "COSTA MESA, Calif., April 20, 2026--Experian, a global data and technology company, today announced a joint effort with TazWorks, a leading technology platform for background screening companies power",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Money secrets that can take you from debt to millionaire",
+      "url": "https://finance.yahoo.com/video/money-secrets-that-can-take-you-from-debt-to-millionaire-100000510.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T10:00:00+00:00",
+      "summary": "Ross Mac answers your questions on navigating market volatility, using credit cards wisely, managing student loan debt, and building wealth through consistent investing.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

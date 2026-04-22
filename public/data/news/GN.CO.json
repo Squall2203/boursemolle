@@ -1,0 +1,53 @@
+{
+  "ticker": "GN.CO",
+  "last_updated": "2026-04-22T12:43:43.433074+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is GN Store Nord (CPSE:GN) Now Fairly Priced After Volatile Recent Share Performance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gn-store-nord-cpse-gn-101206486.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T10:12:06+00:00",
+      "summary": "If you are wondering whether GN Store Nord is priced attractively today, the recent share performance gives you some useful clues before getting into the valuation work. The stock last closed at DKK 9",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Trading in GN Store Nord shares by board members, executives and associated persons",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trading-gn-store-nord-shares-123700727.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T12:37:00+00:00",
+      "summary": "GN Store Nord has received notification pursuant to article 19 of regulation (EU) no. 596/2014 of the below transactions related to shares in GN Store Nord made by persons discharging managerial respo",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Amplifon’s Big Bet Has Investors Hearing Alarm Bells",
+      "url": "https://app.moby.co/home/news/news-amplifons-big-bet-has-investors-hearing-alarm-bells?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T17:57:51+00:00",
+      "summary": "The Italian hearing care group says buying GN Hearing will create an audiology powerhouse, but the market is worried it is paying a high price to fix a slowing growth story.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Amplifon to acquire GN Hearing in $2.6bn deal",
+      "url": "https://www.investmentmonitor.ai/news/amplifon-to-acquire-gn-hearing/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T14:07:29+00:00",
+      "summary": "The transaction will see GN receive cash and shares, with completion targeted by the end of 2026, pending approvals.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Amplifon to Buy GN Store Nord Hearing-Aid Unit in $2.6 Billion Deal",
+      "url": "https://finance.yahoo.com/news/amplifon-buy-gn-store-nord-204544999.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-16T20:45:44+00:00",
+      "summary": "GN Store Nord shares jump 42% after Amplifon agrees to acquire its hearing-aid business for 17 billion Danish kroner.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

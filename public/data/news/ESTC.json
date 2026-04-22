@@ -1,0 +1,53 @@
+{
+  "ticker": "ESTC",
+  "last_updated": "2026-04-22T13:20:50.280921+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Elastic Delivers First Embedded AI Experiences for Observability and Security Inside Third-Party AI Tools",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/elastic-delivers-first-embedded-ai-191000139.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:10:00+00:00",
+      "summary": "SAN FRANCISCO, April 21, 2026--Elastic (NYSE: ESTC), the Search AI Company, today announced MCP Apps for Elastic, delivering first-of-their-kind agent-native UI experiences for security and observabil",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Elastic Wins 2026 Google Cloud Partner of the Year Award for Marketplace Category for Data Management & AI",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/elastic-wins-2026-google-cloud-190500681.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:05:00+00:00",
+      "summary": "SAN FRANCISCO, April 21, 2026--Elastic (NYSE: ESTC), the Search AI Company, announced it has received the 2026 Google Cloud Partner of the Year Award in the Marketplace category for Data Management & ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Goldman Sachs initiates Dynatrace at buy as AI reshapes observability",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/goldman-sachs-initiates-dynatrace-buy-144945079.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:49:45+00:00",
+      "summary": "Investing.com -- Goldman Sachs has initiated coverage of Dynatrace and Elastic, rating the former a buy with a $45 price target and the latter neutral with a $50 price target, as analyst Matthew Marti",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "April 2026's Top Growth Companies With Strong Insider Ownership",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/april-2026s-top-growth-companies-113550199.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:35:50+00:00",
+      "summary": "In the face of a challenging period where the United States market has seen a 29% drop in just seven days and an 82% decline over the past year, investors are closely watching for signs of recovery, w",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Elastic Well Positioned for Enterprise AI Adoption, RBC Says",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/elastic-well-positioned-enterprise-ai-145739075.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T14:57:39+00:00",
+      "summary": "Elastic (ESTC) is well-positioned to benefit from enterprise artificial intelligence adoption, parti",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

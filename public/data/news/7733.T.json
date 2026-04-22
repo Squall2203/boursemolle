@@ -1,0 +1,53 @@
+{
+  "ticker": "7733.T",
+  "last_updated": "2026-04-22T13:49:33.380612+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Disposable Endoscope Analysis Report 2025: A $4.95 Billion Market by 2029 - Aging Population and Growing Healthcare Expenditure Accelerate Shift Toward Disposable Endoscopic Solutions",
+      "url": "https://finance.yahoo.com/news/disposable-endoscope-analysis-report-2025-154000051.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T15:40:00+00:00",
+      "summary": "The global disposable endoscope market, valued at US$1.89 billion in 2023, is projected to reach US$4.95 billion by 2029, driven by rising hospital-acquired infections and demand for safer diagnostic ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EAGLE Trial Shows Olympus(R) CADDIE(TM) AI Solution Aids in the Detection of High-Risk and Hard-to-Detect Colorectal Lesions",
+      "url": "https://finance.yahoo.com/news/eagle-trial-shows-olympus-r-141430160.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T14:14:30+00:00",
+      "summary": "Cloud-based AI Application for Colorectal Cancer Prevention: Enhancing Detection of Clinically Significant Lesions Without Compromising Safety and Workflow Efficiency TOKYO, JAPAN - February 3, 2026 (",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Olympus launches second VC fund with $150m commitment",
+      "url": "https://www.medicaldevice-network.com/news/olympus-launches-second-vc-fund-with-150m-commitment/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-15T17:13:07+00:00",
+      "summary": "Olympus’s second fund, launched via Olympus Innovation Ventures, will invest in promising GI, urology and respiratory startups.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Should Olympus’ PolyLoop Recall and VIABIL Deal Reshape the Medtech Story for Olympus (TSE:7733) Investors?",
+      "url": "https://finance.yahoo.com/news/olympus-polyloop-recall-viabil-deal-231214973.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-08T23:12:14+00:00",
+      "summary": "In December 2025, Olympus Corporation announced a voluntary corrective action for its Single-Use Ligating Device (“PolyLoop”) after reports that the device could fail to release as intended, potential",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Olympus, Gore, and ConMed Announce Transition of Commercial Support for the GORE® VIABIL® Biliary Endoprosthesis in the United States",
+      "url": "https://finance.yahoo.com/news/olympus-gore-conmed-announce-transition-130000190.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-05T13:00:00+00:00",
+      "summary": "Olympus Corporation (\"Olympus\"), W. L. Gore & Associates, Inc. (\"Gore\"), and ConMed Corporation (\"ConMed\") jointly announced today the upcoming transition of commercial support and distribution for th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

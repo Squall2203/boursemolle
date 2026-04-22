@@ -1,0 +1,53 @@
+{
+  "ticker": "ISS.CO",
+  "last_updated": "2026-04-22T12:44:12.277127+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Transactions in connection with share buyback programme",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/transactions-connection-share-buyback-programme-112800241.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:28:00+00:00",
+      "summary": "Company Announcement Copenhagen, 20 April 2026No. 24/2026 ISS A/S, a leading workplace experience and facility management company, announced on 19 February 2026 a new share buyback programme, see comp",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Results of the Annual General Meeting of ISS A/S",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/results-annual-general-meeting-iss-114100732.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:41:00+00:00",
+      "summary": "Company Announcement Copenhagen, 16 April 2026No. 23/2026 Results of the Annual General Meeting of ISS A/S Today, ISS A/S (the “Company”), held its Annual General Meeting at ISS A/S, Buddingevej 197, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Notice to convene the Annual General Meeting of ISS A/S",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/notice-convene-annual-general-meeting-111600487.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-20T11:16:00+00:00",
+      "summary": "Company Announcement Copenhagen, 20 March 2026No. 18/2026 Notice to convene the Annual General Meeting of ISS A/S ISS A/S, a leading workplace experience and facility management company, today announc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing ISS (CPSE:ISS) Valuation After New Share Buyback And 2026 Margin Guidance",
+      "url": "https://finance.yahoo.com/news/assessing-iss-cpse-iss-valuation-091939638.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-05T09:19:39+00:00",
+      "summary": "Why ISS’s new buyback and guidance matter for shareholders ISS (CPSE:ISS) has put a sizeable buyback on the table, authorising repurchases of up to 24,000,000 shares for DKK 2,500 million, alongside g",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Vesting of Performance Share Units and Restricted Share Units and delivery of ISS shares on 1 March 2026",
+      "url": "https://finance.yahoo.com/news/vesting-performance-share-units-restricted-162600030.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T16:26:00+00:00",
+      "summary": "Company Announcement Copenhagen, 2 March 2026No. 15/2026 Vesting of Performance Share Units and Restricted Share Units and delivery of ISS shares on 1 March 2026 ISS A/S, a leading workplace experienc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

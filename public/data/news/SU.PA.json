@@ -1,0 +1,53 @@
+{
+  "ticker": "SU.PA",
+  "last_updated": "2026-04-22T11:37:47.157123+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Regal Rexnord Corporation Announces Aamir Paul As Its Next Chief Executive Officer",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/regal-rexnord-corporation-announces-aamir-110000663.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "Regal Rexnord Corporation (NYSE: RRX) announced today that its Board of Directors has appointed Aamir Paul to serve as Chief Executive Officer (CEO) commencing no later than July 1, 2026, upon the con",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "TIME Kid of the Year Nominee and Vigil CEO Shanya Gill to Join CONNECTIONS™, Along with Leaders from Deako, Schneider Electric, SmartThings, Alarm.com, and More",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/time-kid-nominee-vigil-ceo-125900849.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:59:00+00:00",
+      "summary": "Parks Associates today announced the keynote speakers at the 30th annual CONNECTIONS™ conference will include Shanya Gill, founder and CEO of Vigil Inc. and TIME Kid of the Year Nominee. Gill will joi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Microsoft Deepens Industrial AI Role With Stellantis And Hannover Messe Deals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-deepens-industrial-ai-role-120637799.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:06:37+00:00",
+      "summary": "Microsoft (NasdaqGS:MSFT) and Stellantis agreed a five year collaboration to co-develop over 100 AI and cybersecurity projects and modernize Stellantis' digital infrastructure with Microsoft Azure. Th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Schneider Electric Advances Pathways to Close U.S. Power Gap at BNEF NY 2026",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/schneider-electric-advances-pathways-close-110000008.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T11:00:00+00:00",
+      "summary": "Schneider Electric, a global energy technology leader, today began its participation at the 2026 BloombergNEF (BNEF) Summit (April 21–22) in New York, outlining the importance of addressing both an en",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Oracle Taps Hilary Maxson As CFO To Steer AI Infrastructure Push",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-taps-hilary-maxson-cfo-170737373.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T17:07:37+00:00",
+      "summary": "Oracle (NYSE:ORCL) has appointed Hilary Maxson as its new Chief Financial Officer. Maxson brings experience in infrastructure investment and business transformation from roles at Schneider Electric an",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

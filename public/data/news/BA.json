@@ -1,0 +1,53 @@
+{
+  "ticker": "BA",
+  "last_updated": "2026-04-22T13:01:40.128112+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "TSX futures climb after Trump announces Iran ceasefire extension",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-climb-trump-announces-124813352.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:48:13+00:00",
+      "summary": "Investing.com - Futures linked to Canada’s main stock index rose on Wednesday, as investors weighed U.S. President Donald Trump’s announcement of an extended ceasefire with Iran against ongoing oil su",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Boeing beats estimates as deliveries rise, stock jumps",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/boeing-beats-estimates-deliveries-rise-121328445.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:13:28+00:00",
+      "summary": "Investing.com -- Boeing Co. (NYSE:BA) reported a narrower-than-expected first-quarter loss as the aerospace manufacturer delivered more commercial aircraft and improved operational performance, sendin",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dow Jones Futures Rise As Trump Extends Iran Ceasefire; Tesla Earnings Due",
+      "url": "https://finance.yahoo.com/m/f46ecdb3-fa89-3d35-b084-1638a1ef6475/dow-jones-futures-rise-as.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:05:21+00:00",
+      "summary": "President Trump extended an Iran ceasefire after the stock market fell on canceled talks. Tesla earnings are on deck.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Boeing Trounces Estimates, FAA Sees Path To Key Certifications",
+      "url": "https://finance.yahoo.com/m/72cda898-59ae-3fe3-ac7a-3432f440607e/boeing-trounces-estimates%2C.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:01:08+00:00",
+      "summary": "Boeing reports narrower-than-expected loss on a record backlog. FAA says 737 MAX 7, MAX 10 certifications on track for approval this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Boeing’s (NYSE:BA) Q1 CY2026 Sales Top Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/boeing-nyse-ba-q1-cy2026-114154808.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:41:54+00:00",
+      "summary": "Aerospace and defense company Boeing (NYSE:BA) reported Q1 CY2026 results beating Wall Street’s revenue expectations, with sales up 14% year on year to $22.22 billion. Its non-GAAP loss of $0.20 per s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

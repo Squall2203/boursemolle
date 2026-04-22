@@ -1,0 +1,53 @@
+{
+  "ticker": "EAPI.PA",
+  "last_updated": "2026-04-22T11:44:44.745261+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "2025 results: Core EBITDA margin improved despite sales headwinds, driven by strong cost discipline",
+      "url": "https://finance.yahoo.com/news/2025-results-core-ebitda-margin-170700517.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T17:07:00+00:00",
+      "summary": "Press Release Paris, 3rd March, 2026 Progress against FOCUS-27 in a deteriorating environment Accelerated transformation to strengthen the operating model Full-year 2025 results €848.2 million net sal",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Market update",
+      "url": "https://finance.yahoo.com/news/market-164700909.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-16T16:47:00+00:00",
+      "summary": "Press Release Paris – December 16, 2025 - EUROAPI announced today that its main shareholders, Sanofi and EPIC Bpifrance, have agreed to extend further the duration of their lock-up until December 18, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tristan Imbert co-opted as Independent Director",
+      "url": "https://finance.yahoo.com/news/tristan-imbert-co-opted-independent-164500527.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-10T16:45:00+00:00",
+      "summary": "Press Release Paris – December 10, 2025 - EUROAPI today announces that, following the resignation of Rodolfo Savitzky from his position as Independent Director (effective December 31, 2025)1, and upon",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "With Med4Cure, EUROAPI accelerates pharmaceutical innovation at the service of health sovereignty",
+      "url": "https://finance.yahoo.com/news/med4cure-euroapi-accelerates-pharmaceutical-innovation-154500526.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-23T15:45:00+00:00",
+      "summary": "Press Release The project launch event, held at the Vertolaye site, brought together State officials, elected representatives, and several project partners to accelerate pharmaceutical innovation in E",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Change in Board’s Composition",
+      "url": "https://finance.yahoo.com/news/change-board-composition-154500572.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-30T15:45:00+00:00",
+      "summary": "Press Release Paris – September 30, 2025 - EUROAPI today announces that, in line with best governance’s practices, and following his appointment as Recipharm’s Chief Financial Officer, effective Octob",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

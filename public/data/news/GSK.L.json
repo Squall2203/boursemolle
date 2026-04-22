@@ -1,0 +1,53 @@
+{
+  "ticker": "GSK.L",
+  "last_updated": "2026-04-22T12:21:38.625717+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "GSK Respiratory Breakthrough And Pipeline Advances Reshape Long Term Outlook",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/gsk-respiratory-breakthrough-pipeline-advances-030635930.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T03:06:35+00:00",
+      "summary": "GSK (LSE:GSK) secured multi region regulatory approvals in China and the European Union for depemokimab, branded as Exdensur, as a first in class ultra long acting biologic for certain respiratory con",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Will Livmarli Continue to Aid Mirum's Top Line in Q1 Earnings?",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/livmarli-continue-aid-mirums-top-153600835.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:36:00+00:00",
+      "summary": "MIRM heads into Q1 earnings with Livmarli sales in focus after 69% year-over-year growth in 2025. Bile acid products broaden revenue momentum.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SMMT Stock Up 24% in Three Months: Here's What You Need to Know",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/smmt-stock-24-three-months-152600010.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T15:26:00+00:00",
+      "summary": "Summit Therapeutics stock jumps as FDA accepts ivonescimab BLA. Strong trial data and partnerships boost confidence in its cancer therapy pipeline.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Adimab Collaborator GSK Receives Additional Marketing Approval for Depemokimab",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/adimab-collaborator-gsk-receives-additional-160300576.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T16:03:00+00:00",
+      "summary": "Adimab, LLC, the global leader in the discovery and engineering of fully human monoclonal and multispecific antibodies, congratulates GSK plc for recently receiving approvals by the European Commissio",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "GSK Plans Five Late-Stage Cancer Trials As Shares Rise Nearly 50%",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/gsk-plans-five-stage-cancer-164832357.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T16:48:32+00:00",
+      "summary": "Mo-Rez program expands into ovarian and endometrial cancers with encouraging early response rates",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

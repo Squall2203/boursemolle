@@ -1,0 +1,26 @@
+{
+  "ticker": "2382.HK",
+  "last_updated": "2026-04-22T13:35:40.625848+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Microchip Strengthens Global ASA‑ML Ecosystem Through Strategic Collaboration with Leading Camera Manufacturer Sunny Smartlead",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/microchip-strengthens-global-asa-ml-120000627.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T12:00:00+00:00",
+      "summary": "Collaboration delivers ASA‑ML–based ADAS camera modules for the automotive marketCHANDLER, Ariz. and YUYAO CITY, China, April 13, 2026 (GLOBE NEWSWIRE) -- Microchip Technology (Nasdaq: MCHP), a broadl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sunny Optical Technology Group SEHK 2382 Valuation After Strong Full Year Results And Higher Dividend",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sunny-optical-technology-group-sehk-200829397.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-06T20:08:29+00:00",
+      "summary": "Sunny Optical Technology (Group) (SEHK:2382) drew investor attention after reporting full year 2025 results, with sales of CN¥43,229.13m, net income of CN¥4,639.11m, and an annual dividend of HK$1.206",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

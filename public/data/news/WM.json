@@ -1,0 +1,53 @@
+{
+  "ticker": "WM",
+  "last_updated": "2026-04-22T13:17:10.147827+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Waste Management (WM) Reports Next Week: Wall Street Expects Earnings Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/waste-management-wm-reports-next-140005029.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:00:05+00:00",
+      "summary": "Waste Management (WM) doesn't possess the right combination of the two key ingredients for a likely earnings beat in its upcoming report. Get prepared with the key expectations.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "This Trash‑Hauling Giant Could Be the Only Industrial Stock I'd Buy and Never Sell",
+      "url": "https://www.fool.com/investing/2026/04/19/this-trashhauling-giant-could-be-the-only-industri/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T12:20:00+00:00",
+      "summary": "WM turns trash into shareholder value.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Possible Bearish Signals With Waste Management Insiders Disposing Stock",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/possible-bearish-signals-waste-management-110017908.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T11:00:17+00:00",
+      "summary": "Over the past year, many Waste Management, Inc. ( NYSE:WM ) insiders sold a significant stake in the company which may...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Waste Management (WM) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/waste-management-wm-sees-more-221505818.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T22:15:05+00:00",
+      "summary": "Waste Management (WM) concluded the recent trading session at $229.45, signifying a -1.57% move from its prior day's close.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What to Expect From Waste Management's Q1 2026 Earnings Report",
+      "url": "https://www.barchart.com/story/news/1241570/what-to-expect-from-waste-management-s-q1-2026-earnings-report?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:00:25+00:00",
+      "summary": "Waste Management will release its first-quarter earnings later this month, and analysts anticipate a single-digit bottom-line growth.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

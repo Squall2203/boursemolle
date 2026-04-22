@@ -1,0 +1,53 @@
+{
+  "ticker": "0883.HK",
+  "last_updated": "2026-04-22T13:31:31.088092+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "CNOOC Limited Released 2025 Environmental, Social and Governance Report",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/cnooc-limited-released-2025-environmental-093600518.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T09:36:00+00:00",
+      "summary": "CNOOC Limited (\"the Company\", SEHK: 00883 (HKD counter) and 80883 (RMB counter), SSE: 600938) released its 2025 Environmental, Social and Governance (ESG) Report in Hong Kong today.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "A Look At CNOOC (SEHK:883) Valuation As Recent Momentum Draws Investor Attention",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-cnooc-sehk-883-valuation-171104608.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T17:11:04+00:00",
+      "summary": "Why CNOOC (SEHK:883) is on investors’ radar today CNOOC (SEHK:883) has drawn fresh attention after recent trading left the share price at HK$26.96, with a month return near flat and a solid gain over ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CNOOC reports 11.5% drop in 2025 net profit",
+      "url": "https://www.offshore-technology.com/news/cnooc-reports-drop-2025-net-profit/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T12:02:35+00:00",
+      "summary": "The company's net production increased to 777.3mboe in 2025, an increase of 7% compared to the previous year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Record Oil and Gas Output Fails to Shield CNOOC from Market Volatility",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/record-oil-gas-output-fails-163000040.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T16:30:00+00:00",
+      "summary": "Chinese offshore giant CNOOC reported an 11.5 percent drop in 2025 net profit as a significant decline in realized crude oil prices outweighed record-breaking oil and gas production levels.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CNOOC Limited Hits New Records of Reserves and Production in 2025, Profit Resilience Continues to Consolidate",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/cnooc-limited-hits-records-reserves-102800398.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T10:28:00+00:00",
+      "summary": "CNOOC Limited (the \"Company\", SEHK: 00883 (HKD Counter) and 80883 (RMB Counter), SSE: 600938) today announced its 2025 annual results for the year ended December 31, 2025.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

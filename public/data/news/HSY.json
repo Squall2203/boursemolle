@@ -1,0 +1,53 @@
+{
+  "ticker": "HSY",
+  "last_updated": "2026-04-22T13:30:05.224117+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Hershey (NYSE:HSY) CFO Sells $291,150.00 in Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/hershey-nysehsy-cfo-sells-29115000-in-stock-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T21:09:51+00:00",
+      "summary": "Hershey Company (The) (NYSE:HSY - Get Free Report) CFO Steven Voskuil sold 1,500 shares of the stock in a transaction dated Monday, April 20th. The stock was sold at an average price of $194.10, for a",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Jones Kertz & Associates Inc. Purchases New Stake in Hershey Company (The) $HSY",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-jones-kertz-associates-inc-purchases-new-stake-in-hershey-company-the-hsy-2026-04-21/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-21T11:56:19+00:00",
+      "summary": "Jones Kertz & Associates Inc. purchased a new stake in shares of Hershey Company (The) (NYSE:HSY - Free Report) during the 4th quarter, according to its most recent Form 13F filing with the Securities",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sonny Milano Linked To Swiss League",
+      "url": "https://www.prohockeyrumors.com/2026/04/sonny-milano-linked-to-swiss-league.html",
+      "source": "prohockeyrumors.com",
+      "published_at": "2026-04-21T00:55:40+00:00",
+      "summary": "Pending unrestricted free agent winger Sonny Milano is expected to sign in Switzerland for next season. From a health perspective, this has been a good year for Capitals winger Sonny Milano. However, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HERSHEY CO: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/47111/000095014226001154/0000950142-26-001154-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-20T20:04:21+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JPMorgan Chase & Co. Lowers Hershey (NYSE:HSY) Price Target to $211.00",
+      "url": "https://www.marketbeat.com/instant-alerts/jpmorgan-chase-co-lowers-hershey-nysehsy-price-target-to-21100-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T19:14:13+00:00",
+      "summary": "JPMorgan Chase & Co. cut their target price on shares of Hershey from $230.00 to $211.00 and set a \"neutral\" rating for the company in a research note on Monday.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "SNPS",
+  "last_updated": "2026-04-22T13:18:31.530361+00:00",
+  "sentiment_score": 0.14,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Private Trust Co. NA Lowers Stock Position in Synopsys, Inc. $SNPS",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-private-trust-co-na-lowers-stock-position-in-synopsys-inc-snps-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T09:23:44+00:00",
+      "summary": "Private Trust Co. NA cut its position in shares of Synopsys, Inc. (NASDAQ:SNPS - Free Report) by 90.6% during the fourth quarter, according to its most recent Form 13F filing with the SEC. The institu",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "360 One Wam Q4 Results Breakdown: Did Its AUM Face an Impact from ₹55 Cr MTM Losses?",
+      "url": "https://tradebrains.in/360-one-wam-q4-results-breakdown-did-its-aum-face-an-impact-from-55-cr-mtm-losses/",
+      "source": "tradebrains.in",
+      "published_at": "2026-04-22T06:54:01+00:00",
+      "summary": "Synopsys:- Shares fell nearly 6% after mixed Q4FY26 results despite 36% YoY revenue growth and 16% profit rise. MTM losses of ₹55 crore and QoQ pressure impacted performance. However, strong 24% broke",
+      "sentiment": "positif",
+      "sentiment_score": 0.2
+    },
+    {
+      "title": "Tata Group Stock Jumps 14% After Reporting Strong Q4 FY26 Performance",
+      "url": "https://tradebrains.in/tata-group-stock-jumps-14-after-reporting-strong-q4-fy26-performance/",
+      "source": "tradebrains.in",
+      "published_at": "2026-04-21T08:06:13+00:00",
+      "summary": "Synopsys:- A Tata Group stock surged up to 14% after turning profitable in Q4FY26, signalling operational recovery. Improved cost control, better execution, and a Rs 1 dividend announcement supported ",
+      "sentiment": "positif",
+      "sentiment_score": 0.5
+    },
+    {
+      "title": "SYNOPSYS INC: Form 8-K - Current report",
+      "url": "https://www.sec.gov/Archives/edgar/data/883241/000119312526164085/0001193125-26-164085-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-20T20:30:22+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Zurcher Kantonalbank Zurich Cantonalbank Increases Holdings in Synopsys, Inc. $SNPS",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-zurcher-kantonalbank-zurich-cantonalbank-increases-holdings-in-synopsys-inc-snps-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T12:02:33+00:00",
+      "summary": "Zurcher Kantonalbank Zurich Cantonalbank boosted its holdings in shares of Synopsys, Inc. (NASDAQ:SNPS - Free Report) by 15.5% in the fourth quarter, according to its most recent disclosure with the S",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

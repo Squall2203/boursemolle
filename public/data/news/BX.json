@@ -1,0 +1,53 @@
+{
+  "ticker": "BX",
+  "last_updated": "2026-04-22T13:06:58.447715+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Blackstone Earnings: What To Look For From BX",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/blackstone-earnings-look-bx-051723475.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:17:23+00:00",
+      "summary": "Alternative investment manager Blackstone (NYSE:BX) will be reporting earnings this Thursday before market hours. Here’s what investors should know.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AUM Growth Likely to Aid Ameriprise's Q1 Earnings Despite Cost Woes",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aum-growth-likely-aid-ameriprises-144900839.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:49:00+00:00",
+      "summary": "AMP's rising AUM and fee growth may lift Q1 results, even as higher tech and hiring costs weigh on margins.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Q4 Asset Management Earnings Review: First Prize Goes to Blackstone (NYSE:BX)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/q4-asset-management-earnings-review-144551975.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:45:51+00:00",
+      "summary": "As the Q4 earnings season comes to a close, it’s time to take stock of this quarter’s best and worst performers in the asset management industry, including Blackstone (NYSE:BX) and its peers.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Flurry of US IPOs Race to Tap Market Ahead of SpaceX Debut",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/flurry-us-ipos-race-tap-123809159.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:38:09+00:00",
+      "summary": "(Bloomberg) -- The US IPO market has gone from desolate to bustling in a matter of weeks, with companies looking to raise as much as $17.3 billion this month alone and capitalize on stocks’ resilience",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Labor Chief Chavez-DeRemer Leaves Cabinet Amid Investigation",
+      "url": "https://finance.yahoo.com/economy/policy/articles/labor-chief-chavez-deremer-leaving-213605337.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T02:12:30+00:00",
+      "summary": "(Bloomberg) -- Labor Secretary Lori Chavez-DeRemer is departing her post, becoming the latest member of President Donald Trump’s cabinet to exit as he reshapes his team ahead of midterm elections.Most",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

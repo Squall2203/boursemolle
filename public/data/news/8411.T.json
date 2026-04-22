@@ -1,0 +1,53 @@
+{
+  "ticker": "8411.T",
+  "last_updated": "2026-04-22T13:46:42.218687+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Intel Stock Is Dropping—and Analysts Are Getting Nervous",
+      "url": "https://finance.yahoo.com/m/212ca27e-7286-3343-9abf-5b52a20fa50f/intel-stock-is-dropping%E2%80%94and.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T19:22:00+00:00",
+      "summary": "Intel stock has surged on AI-driven server demand, prompting analysts to lift earnings estimates even as valuation concerns linger.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Exelon Gets Hit With a Triple Downgrade From Barclays, BMO and Mizuho: Three Firms Agree the Regulatory Tide Has Turned",
+      "url": "https://247wallst.com/investing/2026/04/17/exelon-gets-hit-with-a-triple-downgrade-from-barclays-bmo-and-mizuho-three-firms-agree-the-regulatory-tide-has-turned/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T14:37:06+00:00",
+      "summary": "When three major Wall Street firms downgrade the same stock on the same day, it demands attention. That’s exactly what happened to Exelon (NASDAQ:EXC) on April 17, as Barclays, BMO Capital, and Mizuho",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "MAYFAIR COMPLETES PRIVATE PLACEMENT WITH KEVIN ANNETT",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mayfair-completes-private-placement-kevin-010500156.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T01:05:00+00:00",
+      "summary": "Mayfair Gold Corp. (\"Mayfair\", \"Mayfair Gold\" or the \"Company\") (TSXV: MFG) (NYSE American: MINE) is pleased to announce that it has completed its previously announced private placement with Kevin Ann",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "FICO Scores Aren’t Going Away, Analyst Says. Buy Fair Isaac Stock.",
+      "url": "https://finance.yahoo.com/m/2cd9c11b-352c-3b39-b5d8-b648e5b01040/fico-scores-aren%E2%80%99t-going.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T14:25:00+00:00",
+      "summary": "To make matters simple: Shares of  Fair Isaac  have tumbled as its eponymous FICO score faces more scrutiny from regulators and fiercer competition from rivals.  The firm initiated coverage of  Fair I",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Sandisk Can Gain Another 175%, Analyst Says. Here’s Why.",
+      "url": "https://finance.yahoo.com/m/49cf7a49-6161-3aa4-8e18-842f8aacd13d/sandisk-can-gain-another.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T20:16:00+00:00",
+      "summary": "Sandisk shares are falling Tuesday but came into the session up nearly 300% this year. An analyst team sees the stock possibly hitting $2,600 a share.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

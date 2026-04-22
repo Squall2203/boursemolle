@@ -1,0 +1,53 @@
+{
+  "ticker": "BNP.PA",
+  "last_updated": "2026-04-22T11:33:04.731406+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "BP Stock Gets Upgraded As Energy Sentiment Turns Higher",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/bp-stock-gets-upgraded-energy-063640987.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:36:40+00:00",
+      "summary": "BP p.l.c. (NYSE:BP) is among the 13 Best Crude Oil Stocks to Buy According to Analysts. On April 17, BNP Paribas upgraded BP p.l.c. (NYSE:BP) to Outperform from Neutral with a $57 price target. The up",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bearish Tesla analyst has good news for Rivian stock investors",
+      "url": "https://www.thestreet.com/automotive/bearish-tesla-analyst-has-good-news-for-rivian-stock-investors?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:17:00+00:00",
+      "summary": "Analysts at BNP Paribas have been pretty steady on Tesla, making the Wall Street firm one of the few with a bearish outlook on the stock. BNP Paribas has an underperform rating and a $280 price target",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Magnum Ice Cream Among Biggest Short Seller Bets in Europe",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/magnum-ice-cream-ranks-among-110505448.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:49:08+00:00",
+      "summary": "(Bloomberg) -- Magnum Ice Cream Co., the maker of Ben & Jerry’s, Breyers and Klondike bars, has become one of the most popular short bets in Europe as it grapples with shrinking profits and changing c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Qualcomm’s Best Run in Years Barely Puts a Dent in Brutal Selloff",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/qualcomm-best-run-years-barely-104501460.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:45:01+00:00",
+      "summary": "(Bloomberg) -- By most objective measures, Qualcomm Inc. appears to be in the midst of a stock market heater. Most Read from BloombergInside Alex Cooper’s Unwell: Tears, Screaming and Employees Lookin",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pre-stabilisation Announcement",
+      "url": "https://finance.yahoo.com/markets/options/articles/pre-stabilisation-announcement-082400317.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T08:24:00+00:00",
+      "summary": "LONDON, April 21, 2026-- PRE-STABILISATION ANNOUNCEMENT",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

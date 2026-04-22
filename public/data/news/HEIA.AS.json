@@ -1,0 +1,53 @@
+{
+  "ticker": "HEIA.AS",
+  "last_updated": "2026-04-22T12:03:56.813531+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Serena Williams returns to the court as new Heineken® 0.0 global ambassador, celebrating the social spirit of padel",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/serena-williams-returns-court-heineken-140500806.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:05:00+00:00",
+      "summary": "Heineken® 0.0 has announced Serena Williams as its new global ambassador in a multi-year partnership. Heineken® 0.0 has announced Serena Williams as its new global ambassador in a multi-year partnersh",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Heineken N.V. reports the progress of transactions under its current share buyback programme",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heineken-n-v-reports-progress-100000202.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:00:00+00:00",
+      "summary": "Heineken N.V. reports the progress of transactions under its current share buyback programme Amsterdam, 20 April 2026 - Heineken N.V. (EURONEXT: HEIA; OTCQX: HEINY) hereby reports transaction details ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Heineken sells DR Congo unit Bralima",
+      "url": "https://www.just-drinks.com/news/heineken-sells-drc-unit-bralima/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:18:00+00:00",
+      "summary": "The brewer's local operations have been significantly hit by armed conflict in DR Congo.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "HEINEKEN sells Bralima in the Democratic Republic of Congo and establishes long-term brand partnership",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heineken-sells-bralima-democratic-republic-073100015.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T07:31:00+00:00",
+      "summary": "HEINEKEN sells Bralima in the Democratic Republic of Congo and establishes long-term brand partnership AMSTERDAM, 10th April 2026: HEINEKEN today announces that it has sold its shareholding in Brasser",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is Heineken (ENXTAM:HEIA) Offering Value After Flat 2026 Share Price Performance?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heineken-enxtam-heia-offering-value-170617194.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T17:06:17+00:00",
+      "summary": "Wondering whether Heineken shares at €69.08 are offering value right now, or if you would be overpaying for a familiar brand? This breakdown aims to give you a clear, numbers-first view of the stock. ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

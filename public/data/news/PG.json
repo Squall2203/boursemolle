@@ -1,0 +1,53 @@
+{
+  "ticker": "PG",
+  "last_updated": "2026-04-22T12:51:08.830351+00:00",
+  "sentiment_score": -0.13,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Wall Street’s Bullish Stocks View Contrasts With Consumer Gloom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bullish-stocks-view-112800536.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:28:00+00:00",
+      "summary": "(Bloomberg) -- Stocks are trading near a record high, signaling Wall Street is learning to cope with lingering geopolitical risks. Main Street is struggling to catch up.Most Read from BloombergInside ",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Are consumers finally cracking under the weight of $4 gas?",
+      "url": "https://finance.yahoo.com/news/are-consumers-finally-cracking-under-the-weight-of-4-gas-111859680.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:18:59+00:00",
+      "summary": "The warning signals from the consumer mount.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Procter And Gamble Resets Priorities With New CEO And Dreft Overhaul",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/procter-gamble-resets-priorities-ceo-100251388.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:02:51+00:00",
+      "summary": "Procter & Gamble (NYSE:PG) has announced a CEO transition from Jon R. Moeller to Shailesh Jejurikar. The company is launching a two year restructuring plan focused on portfolio simplification, supply ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Zefiro Subsidiary Generates First Revenue Through Deployment of Radial Casing Solutions' Patented Downhole Casing Expansion Tool",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/zefiro-subsidiary-generates-first-revenue-234100546.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T23:41:00+00:00",
+      "summary": "Zefiro has realized its very first earnings from a patented casing expansion tool, after two corporate clients of ZEFI subsidiary Plants & Goodwin, Inc. have utilized Radial Casing Solutions' REED dev",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fifth Third Bancorp Announces Preliminary Results of Annual Shareholders Meeting",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fifth-third-bancorp-announces-preliminary-201500133.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T20:15:00+00:00",
+      "summary": "CINCINNATI, April 21, 2026--Fifth Third Bancorp (Nasdaq: FITB) has announced that preliminary results from the Annual Shareholders Meeting held earlier today have indicated the following directors wer",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

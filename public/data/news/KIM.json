@@ -1,0 +1,53 @@
+{
+  "ticker": "KIM",
+  "last_updated": "2026-04-22T13:13:25.865150+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Riley Exploration Permian and FitLife Brands have been highlighted as Zacks Bull and Bear of the Day",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/riley-exploration-permian-fitlife-brands-134100369.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:41:00+00:00",
+      "summary": "Riley Exploration Permian and FitLife Brands have been highlighted as Zacks Bull and Bear of the Day",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Kimco Realty's Q1 2025 Earnings: What to Expect",
+      "url": "https://www.barchart.com/story/news/1422116/kimco-realty-s-q1-2025-earnings-what-to-expect?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:24:19+00:00",
+      "summary": "Kimco Realty will release its first-quarter earnings later this month, and analysts anticipate a single-digit FFO growth.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Deal Flow Rises: Is Realty Income Scaling Smartly?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-deal-flow-rises-realty-143100861.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:31:00+00:00",
+      "summary": "Realty Income treats Europe as a repeatable deal engine with 618 properties and 19% of base rent. Can it scale with discipline?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Simon Property Stock Rallies 34.3% in a Year: Will the Trend Last?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/simon-property-stock-rallies-34-140400481.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T14:04:00+00:00",
+      "summary": "SPG stock jumps 34% in a year as strong leasing, high occupancy and mixed-use growth fuel momentum, with rising AFFO estimates adding to the optimism.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Kimco Realty (KIM) Could Be a Great Choice",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kimco-realty-kim-could-great-154505224.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T15:45:05+00:00",
+      "summary": "Dividends are one of the best benefits to being a shareholder, but finding a great dividend stock is no easy task. Does Kimco Realty (KIM) have what it takes? Let's find out.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "AAL.L",
+  "last_updated": "2026-04-22T12:24:30.365045+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "How The Teck Merger And Mixed Analyst Views Are Shaping The Anglo American (LSE:AAL) Story",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/teck-merger-mixed-analyst-views-160542684.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:05:42+00:00",
+      "summary": "Anglo American’s fair value estimate has been nudged to £35.09 per share from £35.05, a small adjustment that still matters if you are tracking where analysts think the shares should sit. That change ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "NEXA vs. NGLOY: Which Stock Is the Better Value Option?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nexa-vs-ngloy-stock-better-154002025.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T15:40:02+00:00",
+      "summary": "NEXA vs. NGLOY: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MMD to acquire TraxIQ rights from Anglo American",
+      "url": "https://www.mining-technology.com/news/mmd-to-acquire-traxiq-rights-anglo-american/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:59:35+00:00",
+      "summary": "Initially developed by Anglo American, TraxIQ is a comprehensive material handling solution.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Appian appoints Paulo Castellari as new CEO of Critical Minerals",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/appian-appoints-paulo-castellari-ceo-120000531.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T12:00:00+00:00",
+      "summary": "ABU DHABI, United Arab Emirates, April 15, 2026 (GLOBE NEWSWIRE) -- Appian Capital Advisory Limited (“Appian”), the investment advisor to long-term value-focused private capital funds investing in com",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Copper Is a ‘Peace’ Commodity. Own These Miners in a Market Recovery.",
+      "url": "https://finance.yahoo.com/m/6c4a5141-ed5c-3e29-bb39-02fbf7e257d9/copper-is-a-%E2%80%98peace%E2%80%99.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T18:38:00+00:00",
+      "summary": "Miners like Freeport-McMoRan should rally if Iran fears fade and copper rebounds. Gold miners look Newmont may pop as well.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

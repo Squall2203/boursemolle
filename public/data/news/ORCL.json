@@ -1,0 +1,53 @@
+{
+  "ticker": "ORCL",
+  "last_updated": "2026-04-22T12:56:26.317609+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Oracle Advances Multi-Cloud Connectivity: Faster, Simpler, More Flexible",
+      "url": "https://cloudwars.com/cloud-wars-minute/oracle-advances-multi-cloud-connectivity-faster-simpler-more-flexible/",
+      "source": "cloudwars.com",
+      "published_at": "2026-04-22T11:30:00+00:00",
+      "summary": "By leveraging AWS Interconnect multicloud, Oracle enhances its cloud offerings with private, high-speed connections that simplify multi-cloud deployments and unlock new opportunities for enterprise ag",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Oracle Corporation $ORCL Holdings Cut by Southern Capital Advisors LLC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-oracle-corporation-orcl-holdings-cut-by-southern-capital-advisors-llc-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T11:26:20+00:00",
+      "summary": "Southern Capital Advisors LLC decreased its stake in Oracle Corporation (NYSE:ORCL - Free Report) by 65.1% in the fourth quarter, according to the company in its most recent filing with the Securities",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Oracle Corporation $ORCL Shares Sold by Migdal Insurance & Financial Holdings Ltd.",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-oracle-corporation-orcl-shares-sold-by-migdal-insurance-financial-holdings-ltd-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T10:53:56+00:00",
+      "summary": "Migdal Insurance & Financial Holdings Ltd. cut its position in shares of Oracle Corporation (NYSE:ORCL - Free Report) by 46.9% in the 4th quarter, according to its most recent disclosure with the Secu",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Oracle Patches 450 Vulnerabilities With April 2026 CPU",
+      "url": "https://www.securityweek.com/oracle-patches-450-vulnerabilities-with-april-2026-cpu/",
+      "source": "securityweek.com",
+      "published_at": "2026-04-22T08:41:10+00:00",
+      "summary": "The company released 481 new security patches across 28 product families, including over 300 fixes for remotely exploitable, unauthenticated flaws. The post Oracle Patches 450 Vulnerabilities With Apr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Oracle Corporation $ORCL Position Cut by Boston Trust Walden Corp",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-oracle-corporation-orcl-position-cut-by-boston-trust-walden-corp-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T07:31:36+00:00",
+      "summary": "Boston Trust Walden Corp trimmed its stake in Oracle Corporation (NYSE:ORCL - Free Report) by 21.5% during the fourth quarter, according to its most recent disclosure with the SEC. The fund owned 397,",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "ticker": "8308.T",
+  "last_updated": "2026-04-22T13:57:19.271928+00:00",
+  "sentiment_score": -0.5,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "JCB, With Resona, to Commercialize Ultra-Wideband (UWB) Payments",
+      "url": "https://finance.yahoo.com/news/jcb-resona-commercialize-ultra-wideband-195724946.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T19:57:24+00:00",
+      "summary": "TOKYO - March 4, 2026 (NEWMEDIAWIRE) - JCB Co., Ltd. (JCB), together with Resona Holdings, Inc. (Resona; TSE: 8308), announced the start of a project to commercialize ultra-wideband (UWB) payments tha",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nintendo announces $1.9 billion share sale by Kyoto bank and others",
+      "url": "https://finance.yahoo.com/news/exclusive-nintendo-plans-around-1-033225950.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-27T03:32:25+00:00",
+      "summary": "Nintendo announced on Friday an unwinding of strategic shareholdings that ‌will see companies including MUFG Bank and the Bank ‌of Kyoto selling shares in the company behind gaming franchises such as ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is There Still Opportunity in Resona Holdings After Its 47.5% Rise Over the Past Year?",
+      "url": "https://finance.yahoo.com/news/still-opportunity-resona-holdings-47-115557277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-18T11:55:57+00:00",
+      "summary": "Deciding whether to hold, buy, or sell a stock like Resona Holdings can feel like a high-stakes game. If you have been watching, you have already seen a journey worth talking about. Over the past five",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Oasis Announcement of the Agreement to Sell its Digital Garage, Inc. Shares to Resona Holdings, Inc.",
+      "url": "https://finance.yahoo.com/news/oasis-announcement-agreement-sell-digital-072600617.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-31T07:26:00+00:00",
+      "summary": "HONG KONG, July 31, 2025--Oasis Management Company Ltd. (together with private funds that it manages, \"Oasis\" or \"we\"), announces today that it has agreed to sell all the Digital Garage, Inc. (\"DG\") s",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

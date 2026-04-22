@@ -1,0 +1,53 @@
+{
+  "ticker": "AMBU-B.CO",
+  "last_updated": "2026-04-22T12:45:01.267719+00:00",
+  "sentiment_score": -0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "3 European Stocks That May Offer Value In April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-stocks-may-offer-103818350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T10:38:18+00:00",
+      "summary": "As European markets navigate the complexities of Middle East tensions and energy market volatility, investor sentiment has shown resilience, with the STOXX Europe 600 Index rising by nearly 4% in earl",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Growth Companies With High Insider Ownership March 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-growth-companies-high-insider-103553731.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T10:35:53+00:00",
+      "summary": "Amidst heightened uncertainty and inflation risks, the European market has been navigating a challenging landscape, with the STOXX Europe 600 Index recently experiencing a decline of 3.79% due to geop",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "February 2026's European Stocks Estimated To Be Below Fair Market Value",
+      "url": "https://finance.yahoo.com/news/february-2026s-european-stocks-estimated-103812919.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T10:38:12+00:00",
+      "summary": "As European markets remain buoyant, with the STOXX Europe 600 Index reaching new highs and optimism about the eurozone economy prevailing, investors are keenly observing potential opportunities amid r",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Growth Stocks With High Insider Ownership In February 2026",
+      "url": "https://finance.yahoo.com/news/european-growth-stocks-high-insider-103555994.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T10:35:55+00:00",
+      "summary": "As of early 2026, the European markets are showing signs of cautious optimism, with the pan-European STOXX Europe 600 Index experiencing modest gains driven by positive earnings forecasts despite ongo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Ambu AS (AMBFF) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amidst Margin Pressures",
+      "url": "https://finance.yahoo.com/news/ambu-ambff-q1-2026-earnings-150120267.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-04T15:01:20+00:00",
+      "summary": "Ambu AS (AMBFF) reports robust growth in endoscopy solutions while navigating tariff impacts and geopolitical challenges.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

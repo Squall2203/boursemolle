@@ -1,0 +1,53 @@
+{
+  "ticker": "CI",
+  "last_updated": "2026-04-22T12:59:50.110888+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "2nd Circ. Chilly To Additional Discovery In Cigna Pension Suit",
+      "url": "https://www.law360.com/benefits/articles/2464240?utm_source=rss&utm_medium=rss&utm_campaign=section",
+      "source": "law360.com",
+      "published_at": "2026-04-21T17:29:49+00:00",
+      "summary": "The Second Circuit on Tuesday seemed reluctant to restart proceedings in a long-running suit against Cigna from retirees who challenged changes to their pensions, appearing unwilling to upend a decisi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "UnitedHealth lifts managed care peers after Q1 beat, guidance raise | $UNH $CVS $CI $HUM $CLOV",
+      "url": "https://seekingalpha.com/news/4577024-unitedhealth-stock-spikes-after-q1-2026-results",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-21T10:15:51+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Waterfront Wealth Inc. Grows Stock Position in Cigna Group $CI",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-waterfront-wealth-inc-grows-stock-position-in-cigna-group-ci-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T12:16:30+00:00",
+      "summary": "Waterfront Wealth Inc. lifted its stake in Cigna Group (NYSE:CI - Free Report) by 226.9% during the 4th quarter, according to the company in its most recent disclosure with the Securities and Exchange",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Mirae Asset Global Investments Co. Ltd. Raises Stake in Cigna Group $CI",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-mirae-asset-global-investments-co-ltd-raises-stake-in-cigna-group-ci-2026-04-19/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-19T09:39:43+00:00",
+      "summary": "Mirae Asset Global Investments Co. Ltd. lifted its stake in Cigna Group (NYSE:CI - Free Report) by 24.9% during the 4th quarter, according to its most recent disclosure with the SEC. The institutional",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Cigna Group $CI Shares Bought by Cwm LLC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-cigna-group-ci-shares-bought-by-cwm-llc-2026-04-18/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-18T08:13:10+00:00",
+      "summary": "Cwm LLC grew its holdings in shares of Cigna Group (NYSE:CI - Free Report) by 12.7% during the 4th quarter, according to its most recent 13F filing with the Securities and Exchange Commission. The fir",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

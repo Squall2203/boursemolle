@@ -1,0 +1,53 @@
+{
+  "ticker": "MGM",
+  "last_updated": "2026-04-22T13:14:47.534925+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "VICI Properties Inc. Enters Into Lease Agreement With Clairvest Related to MGM Northfield Park in Northfield, OH",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vici-properties-inc-enters-lease-210500402.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:05:00+00:00",
+      "summary": "NEW YORK, April 21, 2026--VICI Properties Inc. (NYSE: VICI) (\"VICI Properties\", \"VICI\" or the \"Company\") announced today that, in connection with the closing of MGM Resorts International’s (NYSE: MGM)",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How to Find Strong Consumer Discretionary Stocks Slated for Positive Earnings Surprises",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/strong-consumer-discretionary-stocks-slated-130003490.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:00:03+00:00",
+      "summary": "Why investors should use the Zacks Earnings ESP tool to help find stocks that are poised to top quarterly earnings estimates.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing MGM Resorts (MGM) Valuation After Recent Share Price Momentum And Conflicting Fair Value Signals",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-mgm-resorts-mgm-valuation-220823412.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T22:08:23+00:00",
+      "summary": "Why MGM Resorts International (MGM) is on investor radars MGM Resorts International (MGM) has attracted attention after recent share price moves, with the stock showing double digit returns over the p",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2019 MGM Data Incident: NOTICE OF A CLASS ACTION SETTLEMENT APPROVAL HEARING",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/2019-mgm-data-incident-notice-110000211.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:00:00+00:00",
+      "summary": "The Supreme Court of British Columbia has certified, for settlement purposes only, a class action regarding a data incident in or about July 2019 (the \"2019 Data Incident\") involving MGM Resorts Inter",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MGM - CLASS ACTION ARISING OUT OF A 2023 CONFIDENTIALITY INCIDENT INVOLVING PERSONAL INFORMATION",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/mgm-class-action-arising-2023-110000490.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:00:00+00:00",
+      "summary": "The Superior Court of Québec will hold a hearing to decide whether to approve a proposed settlement of a class action arising out of a confidentiality incident involving personal information of its cu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

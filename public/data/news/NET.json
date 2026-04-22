@@ -1,0 +1,53 @@
+{
+  "ticker": "NET",
+  "last_updated": "2026-04-22T13:20:21.708163+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "kimiflare - kimi k2.6 cli code editor hosted on cloudflare workers AI Discussion ...",
+      "url": "https://www.producthunt.com/products/kimiflare",
+      "source": "producthunt.com",
+      "published_at": "2026-04-22T07:14:43+00:00",
+      "summary": "kimi k2.6 cli code editor hosted on cloudflare workers AI Discussion | Link kimi k2.6 cli code editor hosted on cloudflare workers AI Discussion | Link",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cloudflare Just Shipped 20+ Features for AI Agents in One Week",
+      "url": "https://www.youtube.com/watch?v=GE5oiUQPl1Q",
+      "source": "youtube.com",
+      "published_at": "2026-04-22T04:02:43+00:00",
+      "summary": "#ThisWeekinNET — Episode 132 In this special Agents Week edition of This Week in NET, host João Tomé is joined by Ming Lu (Principal Product Manager) and Anni Wang (Product Manager) to recap Cloudflar",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Building MailSink: a temp email API with MCP server on Cloudflare Workers",
+      "url": "https://dev.to/heocoi/building-mailsink-a-temp-email-api-with-mcp-server-on-cloudflare-workers-4g65",
+      "source": "dev.to",
+      "published_at": "2026-04-22T00:35:35+00:00",
+      "summary": "The problem Testing email flows in CI has been painful for years. MailSlurp is $79/mo, Mailtrap's API isn't built for AI agents, and most alternatives want you to run your own SMTP server. I wanted so",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "NymVPN Adds Split-Tunneling Feature for Windows Customers",
+      "url": "https://www.cnet.com/tech/services-and-software/nymvpn-adds-split-tunneling-feature-for-windows-customers/",
+      "source": "cnet.com",
+      "published_at": "2026-04-21T20:48:48+00:00",
+      "summary": "The VPN also unveiled a new post-quantum cryptography protocol.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How I Deployed a Full-Stack Bookstore with Docker Compose on Azure (Capstone Project)",
+      "url": "https://dev.to/vivian_okose/how-i-deployed-a-full-stack-bookstore-with-docker-compose-on-azure-capstone-project-11dc",
+      "source": "dev.to",
+      "published_at": "2026-04-21T20:37:28+00:00",
+      "summary": "What I Deployed The EpicBook is an online bookstore with a Node.js + Express backend, MySQL database, Handlebars frontend, and Nginx reverse proxy. It has real data: 54 books and 53 authors. The archi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "AMZN",
+  "last_updated": "2026-04-22T12:48:37.944358+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Oracle Advances Multi-Cloud Connectivity: Faster, Simpler, More Flexible",
+      "url": "https://cloudwars.com/cloud-wars-minute/oracle-advances-multi-cloud-connectivity-faster-simpler-more-flexible/",
+      "source": "cloudwars.com",
+      "published_at": "2026-04-22T11:30:00+00:00",
+      "summary": "By leveraging AWS Interconnect multicloud, Oracle enhances its cloud offerings with private, high-speed connections that simplify multi-cloud deployments and unlock new opportunities for enterprise ag",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
+      "url": "https://www.fool.com/investing/2026/04/22/ranking-magnificent-seven-most-to-least-attractive/",
+      "source": "fool.com",
+      "published_at": "2026-04-22T11:26:00+00:00",
+      "summary": "Among Nvidia, Alphabet, Apple, Microsoft, Amazon, Meta Platforms, and Tesla, there are two screaming bargains and one pricey company whose valuation can't be justified. Key PointsThe Magnificent Seven",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "OpsGuru Signs Strategic Collaboration Agreement with Amazon Web Services",
+      "url": "https://www.prnewswire.com/news-releases/opsguru-signs-strategic-collaboration-agreement-with-amazon-web-services-302746269.html",
+      "source": "prnewswire.com",
+      "published_at": "2026-04-22T11:03:00+00:00",
+      "summary": "TORONTO, April 22, 2026 /PRNewswire/ - OpsGuru, an AWS Premier Tier Services Partner, announced today the signing of a strategic collaboration agreement (SCA) with Amazon Web Services (AWS), reinforci",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "MGM Resorts: Potential Upside From Osaka Expansion | $MGM",
+      "url": "https://seekingalpha.com/article/4892747-mgm-resorts-potential-upside-from-osaka-expansion",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-22T11:01:15+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "AI Weekly: Amazon deepens Anthropic ties, Volkswagen fights back in China",
+      "url": "https://www.youtube.com/watch?v=xwXFvmLzGtc",
+      "source": "youtube.com",
+      "published_at": "2026-04-22T11:00:35+00:00",
+      "summary": "From Amazon deepening ties with Anthropic to Volkswagen trying to fight back in China, we report on the top AI stories making headlines this week. #News #Reuters #Newsfeed #artificialintelligence #ai ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

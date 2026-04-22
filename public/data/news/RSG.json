@@ -1,0 +1,53 @@
+{
+  "ticker": "RSG",
+  "last_updated": "2026-04-22T13:16:57.922760+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "City of San Pablo Celebrates California's First Fully Electric Residential Recycling and Waste Collection Fleet",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/city-san-pablo-celebrates-californias-130400734.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T13:04:00+00:00",
+      "summary": "Republic Services, Inc. (NYSE: RSG) and the City of San Pablo have partnered to roll out California's first fully electric residential recycling and waste collection fleet. In addition to being the fi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "HTO or RSG: Which Is the Better Value Stock Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hto-rsg-better-value-stock-154003129.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T15:40:03+00:00",
+      "summary": "HTO vs. RSG: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Got $5,000? This Boring Waste Business Might Be a Quiet Multimillionaire Maker by 2036.",
+      "url": "https://www.fool.com/investing/2026/04/18/got-5000-this-boring-waste-business-might-be-a/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T21:05:00+00:00",
+      "summary": "Republic Services is in the business of trash, but its long-term potential is anything but junk.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Waste Management Market Aids Republic Services Amid Low Liquidity",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/waste-management-market-aids-republic-134100528.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T13:41:00+00:00",
+      "summary": "RSG taps into rising waste demand and EV adoption to drive growth, but liquidity strain and stiff competition weigh on profitability.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Rocky Shore Gold Commences Drill Program At The Gold Anchor Project And Acquires Additional Claims",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/rocky-shore-gold-commences-drill-110000470.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:00:00+00:00",
+      "summary": "TORONTO, ON / ACCESS Newswire / April 16, 2026 / Rocky Shore Gold Ltd. (\"Rocky Shore\" or the \"Company\") (CSE:RSG)(OTCQB:RSGLF) is pleased to announce that the Company has begun a first-phase drill pro",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

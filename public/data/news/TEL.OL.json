@@ -1,0 +1,53 @@
+{
+  "ticker": "TEL.OL",
+  "last_updated": "2026-04-22T12:46:14.817645+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Super Micro Computer Alliances Spotlight AI Growth Potential And Valuation Discount",
+      "url": "https://finance.yahoo.com/news/super-micro-computer-alliances-spotlight-182422004.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T18:24:22+00:00",
+      "summary": "Super Micro Computer (NasdaqGS:SMCI) has expanded its role in sovereign AI and telecom AI by forming new global alliances with Nokia, SK Telecom, Telenor, Mirantis, CPower, and Bentaus. The company to",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Supermicro Expands Support for AI-RAN and Sovereign AI Solutions to Deliver High-Performance, Efficient, and Scalable AI Infrastructure",
+      "url": "https://finance.yahoo.com/news/supermicro-expands-support-ai-ran-070000813.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T07:00:00+00:00",
+      "summary": "Supermicro, Inc. (NASDAQ: SMCI), a Total IT Solution Provider for AI/ML, HPC, Cloud, Storage, and 5G/Edge, is announcing expanded support for infrastructure solutions powering sovereign AI platforms a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Red Hat and Telenor AI Factory Bring Scale, Sovereignty and Control to Production AI",
+      "url": "https://finance.yahoo.com/news/red-hat-telenor-ai-factory-030000890.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-02T03:00:00+00:00",
+      "summary": "BARCELONA, Spain – MWC BARCELONA, March 02, 2026--Telenor AI Factory and Red Hat power sovereign AI for the enterprise",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Telenor ASA (TELNY)'s Technical Outlook is Bright After Key Golden Cross",
+      "url": "https://finance.yahoo.com/news/telenor-asa-telny-technical-outlook-145502087.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-23T14:55:02+00:00",
+      "summary": "Should investors be excited or worried when a stock's 50-day simple moving average crosses above the 200-day simple moving average?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Telenor reports strong results and announces NOK 15 billion share buyback programme",
+      "url": "https://finance.yahoo.com/news/telenor-reports-strong-results-announces-060000556.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T06:00:00+00:00",
+      "summary": "IMG_TEL-Q4-2025 CFO Torbjørn Wist & CEO Benedicte Schilbred Fasmer Telenor enters 2026 with strong Nordic growth, a solid financial position, and a simplified portfolio in line with the ambitions pres",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "FCX",
+  "last_updated": "2026-04-22T13:23:13.286251+00:00",
+  "sentiment_score": 0.13,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "FCX vs. BHP: Which Copper Mining Giant Should You Invest in Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/fcx-vs-bhp-copper-mining-115100057.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:51:00+00:00",
+      "summary": "Freeport and BHP Group capitalize on favorable copper prices, both pushing ahead with growth projects leveraging strong financial health.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Freeport-McMoRan (FCX) the Best Beginner Stock to Buy Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/freeport-mcmoran-fcx-best-beginner-094704557.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:47:04+00:00",
+      "summary": "Freeport-McMoRan Inc. (NYSE:FCX) is one of the 8 Best Beginner Stocks to Buy Right Now. On April 15, 2026, Deutsche Bank raised its price target on Freeport-McMoRan Inc. (NYSE:FCX) to $72 from $58 and",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Should You Buy, Sell or Hold FCX Stock Ahead of Q1 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-fcx-stock-120900817.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:09:00+00:00",
+      "summary": "FCX's first-quarter results are expected to reflect the benefits of higher realized copper prices amid cost and volume pressures.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Option Volatility And Earnings Report For April 20-24",
+      "url": "https://www.barchart.com/story/news/1397510/option-volatility-and-earnings-report-for-april-20-24?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:00:02+00:00",
+      "summary": "It’s a big week on the earnings front with some key names due to report this week. We have Tesla, Intel, UnitedHealth Group, Boeing, Servicenow, Freeport McMoran and Newmont Mining all reporting.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dow Jones Futures Fall, Oil Prices Jump; Trump Announces New Iran Talks With Hormuz Shut",
+      "url": "https://finance.yahoo.com/m/2e86a733-79d1-31a8-aaf2-9bbf4acaa122/dow-jones-futures-fall%2C-oil.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T04:15:26+00:00",
+      "summary": "Futures fell and oil prices jumped with Iran keeping the Strait of Hormuz under \"strict control.\" President Trump announced new talks Monday. Tesla earnings loom.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

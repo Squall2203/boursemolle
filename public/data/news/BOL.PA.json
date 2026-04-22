@@ -1,0 +1,53 @@
+{
+  "ticker": "BOL.PA",
+  "last_updated": "2026-04-22T11:40:38.933706+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Yacktman Fund's Strategic Moves: Significant Reduction in Samsung Electronics Co Ltd",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/yacktman-funds-strategic-moves-significant-160111098.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T16:01:11+00:00",
+      "summary": "Exploring Yacktman Fund (Trades, Portfolio)'s Recent Investment Adjustments",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Bolloré (ENXTPA:BOL) Valuation After A €1.5 Per Share Exceptional Dividend Proposal",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-bollor-enxtpa-bol-valuation-170522124.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-21T17:05:22+00:00",
+      "summary": "Bolloré (ENXTPA:BOL) drew fresh attention after its board proposed a one off exceptional dividend of €1.5 per share, around €4.2b, funded from past disposal gains despite weaker 2025 results. See our ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Compagnie de l'Odet : Results for fiscal year 2025",
+      "url": "https://finance.yahoo.com/news/compagnie-lodet-results-fiscal-2025-164500280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T16:45:00+00:00",
+      "summary": "COMPAGNIE DE L'ODET Results for fiscal year 2025March 17, 2026 Net profit, Group share: €218 million Proposal to pay a dividend of €4.80 per share, an increase of 9% Revenue: €2,924 million, -9% at co",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bolloré : Financial information for Q3 2025",
+      "url": "https://finance.yahoo.com/news/bollor-financial-information-q3-2025-154000407.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-23T15:40:00+00:00",
+      "summary": "BOLLORÉ Financial information for Q3 2025 23 October 2025 Revenue (at constant scope and exchange rates): -24% in third-quarter 2025 -10% in the first nine months of 2025 Revenue for Q3 2025 At consta",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bolloré :First-half 2025 results",
+      "url": "https://finance.yahoo.com/news/bollor-first-half-2025-results-154000969.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-17T15:40:00+00:00",
+      "summary": "BOLLORÉ First-half 2025 results September 17, 2025 Results in line with expectations Revenue: 1,547 million euros, -3% at constant scope and exchange rates. Adjusted operating income (EBITA (1) (2)): ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

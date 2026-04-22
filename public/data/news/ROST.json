@@ -1,0 +1,53 @@
+{
+  "ticker": "ROST",
+  "last_updated": "2026-04-22T13:27:09.832487+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Warning signs the US consumer is beginning to crack",
+      "url": "https://finance.yahoo.com/video/warning-signs-the-us-consumer-is-beginning-to-crack-153000105.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:30:00+00:00",
+      "summary": "Consumers may be facing spending challenges in the coming months, according to Goldman Sachs' Ronnie Walker. Yahoo Finance Senior Reporter Brooke DiPalma and B. Riley Wealth Chief Market Strategist Ar",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is Ross Stores (ROST) Pricing In Too Much Optimism After A 65% One Year Rally?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ross-stores-rost-pricing-too-160556565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T16:05:56+00:00",
+      "summary": "If you are wondering whether Ross Stores at US$227.82 is priced for perfection or still offers value, this article breaks down what the current share price might be implying about the stock. With retu",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why Ross Stores (ROST) Outpaced the Stock Market Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-ross-stores-rost-outpaced-220002635.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T22:00:02+00:00",
+      "summary": "In the latest trading session, Ross Stores (ROST) closed at $227.82, marking a +2.64% move from the previous day.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "1 Profitable Stock to Research Further and 2 Facing Headwinds",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/1-profitable-stock-research-further-150407764.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T15:04:07+00:00",
+      "summary": "While profitability is essential, it doesn’t guarantee long-term success. Some companies that rest on their margins will lose ground as competition intensifies - as Jeff Bezos said, \"Your margin is my",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Buy 5 Stocks With High ROE as Markets Hit Record High on Likely Truce",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-5-stocks-high-roe-144600666.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T14:46:00+00:00",
+      "summary": "ROST, TEL, AVGO, GLW and ANET emerge as potential winners as markets notch new highs on truce hopes.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

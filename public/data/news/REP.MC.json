@@ -1,0 +1,53 @@
+{
+  "ticker": "REP.MC",
+  "last_updated": "2026-04-22T12:10:45.334900+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Sector Update: Energy Stocks Rise Tuesday Afternoon",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-rise-tuesday-181020624.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:10:20+00:00",
+      "summary": "Energy stocks were higher Tuesday afternoon, with the NYSE Energy Sector Index rising 0.8% and the S",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sector Update: Energy Stocks Edge Higher Premarket Tuesday",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-edge-higher-132415500.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:24:15+00:00",
+      "summary": "Energy stocks were edging higher premarket Tuesday, with the State Street Energy Select Sector SPDR",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sector Update: Energy Stocks Mixed Late Afternoon",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-mixed-afternoon-200003275.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T20:00:03+00:00",
+      "summary": "Energy stocks were mixed late Monday afternoon with the NYSE Energy Sector Index rising 0.2% and the",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Market Chatter: Eni, Repsol Reach Deal With Venezuela to Boost Output, Export LNG From Offshore Field",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/market-chatter-eni-repsol-reach-135158095.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:51:58+00:00",
+      "summary": "Eni (E) and Repsol have reached a deal with the Venezuelan government to begin exporting natural gas",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Repsol (BME:REP) Is Down 8.7% After Regaining Control Of Venezuelan Oil Venture Petroquiriquire",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/why-repsol-bme-rep-down-060407918.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T06:04:07+00:00",
+      "summary": "Repsol recently reached an agreement with the Venezuelan government and PDVSA to regain operational control of its Petroquiriquire oil venture, aiming to sharply increase production and establish more",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

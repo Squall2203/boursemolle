@@ -1,0 +1,53 @@
+{
+  "ticker": "VIV.PA",
+  "last_updated": "2026-04-22T11:39:49.855807+00:00",
+  "sentiment_score": -0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Vivendi: the 2026 Annual General Shareholders’ Meeting Approves All Resolutions",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vivendi-2026-annual-general-shareholders-142800139.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:28:00+00:00",
+      "summary": "PARIS, April 21, 2026--Regulatory News: The Combined Annual General Meeting (AGM) of Vivendi (Paris:VIV) shareholders was held today at the Casino de Paris under the chairmanship of Yannick Bolloré, w",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vivendi: Revenues for the First Quarter of 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vivendi-revenues-first-quarter-2026-062500352.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T06:25:00+00:00",
+      "summary": "PARIS, April 21, 2026--Regulatory News: Yannick Bolloré, Chairman of Vivendi’s (Paris:VIV) Supervisory Board, and Arnaud de Puyfontaine, Chief Executive Officer, said:",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Vivendi’s 2025 Profit Return Tested By Lagardère Probe And Prisma Talks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vivendi-2025-profit-return-tested-190614206.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T19:06:14+00:00",
+      "summary": "Vivendi reports a return to profitability in 2025, following a prior year of significant losses. The company remains under an ongoing European Commission probe related to its Lagardère acquisition. Vi",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Compagnie de l'Odet : Results for fiscal year 2025",
+      "url": "https://finance.yahoo.com/news/compagnie-lodet-results-fiscal-2025-164500280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T16:45:00+00:00",
+      "summary": "COMPAGNIE DE L'ODET Results for fiscal year 2025March 17, 2026 Net profit, Group share: €218 million Proposal to pay a dividend of €4.80 per share, an increase of 9% Revenue: €2,924 million, -9% at co",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bolloré : Results for fiscal year 2025",
+      "url": "https://finance.yahoo.com/news/bollor-results-fiscal-2025-164000774.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T16:40:00+00:00",
+      "summary": "Results for fiscal year 2025 March 17, 2026 Net income, Group share: €348 million Proposed ordinary dividend of €0.08 and exceptional dividend of €1.5 per share Revenue: €2,926 million, -9% at constan",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

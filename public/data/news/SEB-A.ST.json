@@ -1,0 +1,53 @@
+{
+  "ticker": "SEB-A.ST",
+  "last_updated": "2026-04-22T12:38:40.391330+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "A Look At Skandinaviska Enskilda Banken (OM:SEB A) Valuation After Recent Share Price Cooling",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-skandinaviska-enskilda-banken-om-031313649.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-05T03:13:13+00:00",
+      "summary": "Event context and recent share performance Skandinaviska Enskilda Banken (OM:SEB A) shares have been in focus after recent trading left the stock around SEK175.85, with returns showing a 1.1% decline ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "SANOMA CORPORATION: ACQUISITION OF OWN SHARES 27 March 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sanoma-corporation-acquisition-own-shares-163000172.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T16:30:00+00:00",
+      "summary": "Sanoma Corporation, Stock exchange release, 27 March 2026 at 18:30 EET SANOMA CORPORATION: ACQUISITION OF OWN SHARES 27 March 2026Nasdaq Helsinki Ltd: Date27 March 2026 Exchange transactionBuy Share c",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SANOMA CORPORATION: ACQUISITION OF OWN SHARES 26 March 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sanoma-corporation-acquisition-own-shares-163000864.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T16:30:00+00:00",
+      "summary": "Sanoma Corporation, Stock exchange release, 26 March 2026 at 18:30 EET SANOMA CORPORATION: ACQUISITION OF OWN SHARES 26 March 2026Nasdaq Helsinki Ltd: Date26 March 2026 Exchange transactionBuy Share c",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SANOMA CORPORATION: ACQUISITION OF OWN SHARES 25 March 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sanoma-corporation-acquisition-own-shares-163000868.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T16:30:00+00:00",
+      "summary": "Sanoma Corporation, Stock exchange release, 25 March 2026 at 18:30 EET SANOMA CORPORATION: ACQUISITION OF OWN SHARES 25 March 2026Nasdaq Helsinki Ltd: Date25 March 2026 Exchange transactionBuy Share c",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SANOMA CORPORATION: ACQUISITION OF OWN SHARES 24 March 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sanoma-corporation-acquisition-own-shares-163000594.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-24T16:30:00+00:00",
+      "summary": "Sanoma Corporation, Stock exchange release, 24 March 2026 at 18:30 EET SANOMA CORPORATION: ACQUISITION OF OWN SHARES 24 March 2026Nasdaq Helsinki Ltd: Date24 March 2026 Exchange transactionBuy Share c",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

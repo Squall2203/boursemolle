@@ -1,0 +1,53 @@
+{
+  "ticker": "HAG.DE",
+  "last_updated": "2026-04-22T12:01:54.225715+00:00",
+  "sentiment_score": 0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Investors Can Find Comfort In Hensoldt's (ETR:HAG) Earnings Quality",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-comfort-hensoldts-etr-hag-055959371.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T05:59:59+00:00",
+      "summary": "Soft earnings didn't appear to concern Hensoldt AG's ( ETR:HAG ) shareholders over the last week. We did some digging...",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Hensoldt AG FY25 net profit drops 18% as tax bill triples despite record orders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hensoldt-ag-fy25-net-profit-085921571.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T08:59:21+00:00",
+      "summary": "Investing.com -- German defense electronics maker Hensoldt AG on Thursday reported an 18% drop in full-year net profit for 2025, as its income tax bill nearly tripled, despite record order intake and ",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Hensoldt (XTRA:HAG) Valuation Check After Recent Share Price Swings",
+      "url": "https://finance.yahoo.com/news/hensoldt-xtra-hag-valuation-check-051115717.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-15T05:11:15+00:00",
+      "summary": "Hensoldt (XTRA:HAG) is back on investors’ radar after recent share price swings. This has prompted a closer look at how its defense sensor business, current valuation metrics, and recent return profil",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "114-year-old defense stock offers a $3 billion dividend payout in 2026",
+      "url": "https://www.thestreet.com/investing/stocks/114-year-old-defense-lockheed-martin-stock-offers-a-3-billion-dividend-payout-in-2026?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-12T18:47:00+00:00",
+      "summary": "When geopolitical tensions flare up, defense stocks tend to gain momentum. That's precisely what happened in the past week. After the U.S. and Israel launched widespread strikes on Iran, killing Supre",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "1 Defense Stock Cathie Wood Is Buying Now as the U.S.-Israel War on Iran Heats Up",
+      "url": "https://www.barchart.com/story/news/613201/1-defense-stock-cathie-wood-is-buying-now-as-the-u-s-israel-war-on-iran-heats-up?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T19:09:43+00:00",
+      "summary": "Defense stocks are surging. And Cathie Wood just made a $21 million bet on one name that could be at the center of it all.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

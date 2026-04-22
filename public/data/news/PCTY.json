@@ -1,0 +1,53 @@
+{
+  "ticker": "PCTY",
+  "last_updated": "2026-04-22T13:19:40.884164+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Paylocity Launches Elevate Solutions to Help HR and Payroll Teams Scale More Efficiently",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/paylocity-launches-elevate-solutions-help-130000733.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:00:00+00:00",
+      "summary": "New offering combines Paylocity’s unified platform with expert operational support to reduce administrative burden and free teams to focus on strategic prioritiesSCHAUMBURG, Ill., April 21, 2026 (GLOB",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Paylocity announces Q3 FY26 earnings conference call",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/paylocity-announces-q3-fy26-earnings-200500444.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T20:05:00+00:00",
+      "summary": "SCHAUMBURG, Ill., April 16, 2026 (GLOBE NEWSWIRE) -- Paylocity Holding Corporation (Nasdaq: PCTY), a leading provider of cloud-based HR, Finance, and IT solutions, today announced that it has schedule",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 Reasons PCTY is Risky and 1 Stock to Buy Instead",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-pcty-risky-1-181027792.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T18:10:27+00:00",
+      "summary": "What a brutal six months it’s been for Paylocity. The stock has dropped 32.5% and now trades at $100.30, rattling many shareholders. This might have investors contemplating their next move.",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Autodesk, Paylocity, Rapid7, DigitalOcean, and Manhattan Associates Shares Plummet, What You Need To Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/autodesk-paylocity-rapid7-digitalocean-manhattan-023747720.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T02:37:47+00:00",
+      "summary": "A number of stocks fell in the afternoon session after Anthropic launched Managed Agents, autonomous AI systems that execute complex tasks.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Paylocity Acquires Grayscale to Expand AI-Powered Recruiting Capabilities",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/paylocity-acquires-grayscale-expand-ai-130000309.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T13:00:00+00:00",
+      "summary": "The acquisition brings intelligent AI-driven automation to high-volume recruiting, helping organizations engage candidates earlier and accelerate hiringSCHAUMBURG, Ill., April 07, 2026 (GLOBE NEWSWIRE",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

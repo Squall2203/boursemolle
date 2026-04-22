@@ -1,0 +1,53 @@
+{
+  "ticker": "9983.T",
+  "last_updated": "2026-04-22T13:48:56.588738+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Foreign Brands Rebound In China With Over 30% Online Sales Growth",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/foreign-brands-rebound-china-over-193353543.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:33:53+00:00",
+      "summary": "Consumers shift back to global labels like Gap and Zara as pricing power improves and nationalism fades.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "A Look At Fast Retailing (TSE:9983) Valuation After Strong Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-fast-retailing-tse-9983-090841211.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T09:08:41+00:00",
+      "summary": "Fast Retailing stock snapshot after recent performance shift Fast Retailing (TSE:9983) has drawn fresh attention after a recent run that includes a 16% gain over the past month and an 18% rise over th",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Ceasefire Prospects Lift Asian Stock Markets",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/ceasefire-prospects-lift-asian-stock-104934538.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T10:49:34+00:00",
+      "summary": "Asian stock markets gained ground Friday, after media reports that US-Iran ceasefire negotiations wi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Fast Retailing posts record H1 revenue and profit, lifts 2026 outlook",
+      "url": "https://www.just-style.com/news/fast-retailing-uniqlo-h1/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T10:24:38+00:00",
+      "summary": "Fast Retailing has reported a record increase in both revenue and profit for the first half of fiscal year 2026 (H1 FY26), driven by strong growth in Uniqlo operations across all regions.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Aritzia Shares Jump 9.5% As Weekly Sales More Than Double",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aritzia-shares-jump-9-5-224908962.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T22:49:08+00:00",
+      "summary": "Spring collection demand and easing Iran tensions lift sentiment and consumer discretionary stocks",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

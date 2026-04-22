@@ -1,0 +1,53 @@
+{
+  "ticker": "TT",
+  "last_updated": "2026-04-22T13:06:46.226875+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "NRILY vs. TT: Which Stock Is the Better Value Option?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nrily-vs-tt-stock-better-154002787.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:40:02+00:00",
+      "summary": "NRILY vs. TT: Which Stock Is the Better Value Option?",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2 Large-Cap Stocks to Research Further and 1 We Brush Off",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-large-cap-stocks-research-103732534.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:37:32+00:00",
+      "summary": "Large-cap stocks usually command their industries because they have the scale to drive market trends. The flip side though is that their sheer size can limit growth as expanding further becomes an inc",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Trane Technologies to Present at the Oppenheimer Industrial Growth Conference",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-present-oppenheimer-industrial-103000942.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T10:30:00+00:00",
+      "summary": "SWORDS, Ireland, April 20, 2026--Trane Technologies plc (NYSE: TT), a global climate innovator, today announced that company leadership will participate in a fireside chat at the Oppenheimer Industria",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Trane Technologies Expands HVAC Training And Workforce As Valuation Stays Rich",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-expands-hvac-training-210456673.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-19T21:04:56+00:00",
+      "summary": "Trane Technologies (NYSE:TT) has opened the Trane Advanced Technology Training Center, described as the largest and most technologically advanced HVAC training facility in the world. The company also ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Backdoor AI Play And Cool Nvidia Partner Warms Up Buy Point",
+      "url": "https://finance.yahoo.com/m/d9b81941-4fca-3a44-9529-e940319fc3c9/backdoor-ai-play-and-cool.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T20:00:40+00:00",
+      "summary": "A key collaborator with Nvidia on AI infrastructure, Trane Technologies looks to forge a breakout in new market uptrend.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

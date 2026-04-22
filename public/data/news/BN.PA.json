@@ -1,0 +1,53 @@
+{
+  "ticker": "BN.PA",
+  "last_updated": "2026-04-22T11:34:06.060478+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Danone: Solid Q1 performance amid a challenging context",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/danone-solid-q1-performance-amid-053000220.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:30:00+00:00",
+      "summary": "2026 First Quarter SalesPress release – Paris, April 22, 2026, at 7:30am CEST Solid Q1 performance amid a challenging context Sales of €6,708m in Q1 2026, up +2.7% on a like-for-like (LFL) basisGrowth",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Danone to invest in skyr production in France",
+      "url": "https://www.just-food.com/news/danone-invest-france-skyr-production/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T13:23:18+00:00",
+      "summary": "The investment will be split between two of the company’s facilities at Ferrières-en-Bray and Le Molay-Littry in Normandy.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Circus to Acquire Belgian Food Robotics Company Alberts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/circus-acquire-belgian-food-robotics-112100936.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:21:00+00:00",
+      "summary": "MUNICH, April 16, 2026--Circus SE (ISIN: DE000A2YN355 / XETRA: CA1) has signed a binding agreement for the acquisition of the Belgian food robotics company Alberts, a European provider and market-lead",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Danone: Information on the total number of voting rights and shares",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/danone-information-total-number-voting-162500409.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T16:25:00+00:00",
+      "summary": "DANONE French Société anonyme with a capital of €170,348,620.75.Registered Office: 59-61, rue La Fayette, 75009 Paris.Registered with the Paris Commerce and Company Registry under number 552 032 534 I",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How Danone (ENXTPA:BN) Is Rewriting Its Investment Story As Analyst Views Diverge",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/danone-enxtpa-bn-rewriting-investment-210855554.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-12T21:08:55+00:00",
+      "summary": "Danone’s fair value estimate has been trimmed slightly from €79.59 to €79.36, a move of about €0.23 that keeps the overall valuation framework broadly intact. Around this, you are seeing a split analy",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

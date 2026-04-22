@@ -1,0 +1,53 @@
+{
+  "ticker": "NDA-SE.ST",
+  "last_updated": "2026-04-22T12:42:17.588135+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Kvika banki hf.: Kvika issues inaugural SEK 300 million AT1 notes",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kvika-banki-hf-kvika-issues-103600678.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T10:36:00+00:00",
+      "summary": "Kvika has today successfully completed the issuance of Additional Tier 1 (AT1) notes. The issuance is a key component of the Bank’s capital optimisation, as presented alongside the Bank’s year‑end res",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nordea Bank Abp: First-quarter results 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nordea-bank-abp-first-quarter-054000274.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:40:00+00:00",
+      "summary": "Nordea Bank Abp: First-quarter results 2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nordea completes its share buy-back programme announced in December 2025",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nordea-completes-share-buy-back-122200432.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:22:00+00:00",
+      "summary": "Nordea Bank Abp Stock exchange release – Other information disclosed according to the rules of the Exchange 21 April 2026 at 15.00 EET",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nordea Bank Abp: Repurchase of own shares on 20.04.2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nordea-bank-abp-repurchase-own-213200020.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T21:32:00+00:00",
+      "summary": "Nordea Bank Abp: Repurchase of own shares on 20.04.2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bavarian Nordic – Transactions in Connection with Share Buy-Back Program",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bavarian-nordic-transactions-connection-share-112800723.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:28:00+00:00",
+      "summary": "COPENHAGEN, Denmark, April 20, 2026 – Bavarian Nordic A/S (OMX: BAVA) announces transactions under the share buy-back program launched on March 12, 2026, under which the Company will repurchase shares",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

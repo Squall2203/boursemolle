@@ -1,0 +1,53 @@
+{
+  "ticker": "3382.T",
+  "last_updated": "2026-04-22T13:49:57.809726+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "This Popular Convenience Store Is Shrinking For The 5th Year In A Row",
+      "url": "https://www.moneydigest.com/2150901/popular-convenience-store-shrinking-fifth-year-in-row/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T10:30:00+00:00",
+      "summary": "One of the largest and most well-known convenience store chains in the world has had a tough few years, and it's closing quite a few locations in response.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Assessing Seven & i Holdings (TSE:3382) Valuation After Recent Share Price Weakness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-seven-holdings-tse-3382-060453986.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T06:04:53+00:00",
+      "summary": "Event context and recent share performance Seven & i Holdings (TSE:3382) has attracted attention after recent share price moves, with the stock up about 1.7% over the past day but showing a roughly 10",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "7-Eleven Closing More Than 600 Stores This Year",
+      "url": "https://www.cheapism.com/7-eleven-closing-600-stores-2026/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T16:43:01+00:00",
+      "summary": "Iconic convenience store chain 7-Eleven just announced that it's closing over 600 locations over the next year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "7-Eleven to close 645 North America stores in fiscal 2026",
+      "url": "https://qz.com/7-eleven-store-closures-north-america-fiscal-2026-041526?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T14:30:08+00:00",
+      "summary": "The Japan-based parent of the convenience chain projects it will open only 205 locations in the same period, far fewer than the stores being shuttered",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "7-Eleven plans to close 645 stores this year",
+      "url": "https://www.cbsnews.com/news/7-eleven-store-closures-fiscal-year-2026/?ftag=YHF4eb9d17&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T02:12:13+00:00",
+      "summary": "The chain's North American operator forecast it will open 205 stores in 2026, although those openings will be outpaced by a series of closures.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "MT.PA",
+  "last_updated": "2026-04-22T11:32:40.229234+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Blue Gold Enhances Operational Leadership with Appointment of Industry Veteran Gustavo Gomes as COO and EVP, Mining",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/blue-gold-enhances-operational-leadership-123000780.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T12:30:00+00:00",
+      "summary": "NEW YORK CITY, NY / ACCESS Newswire / April 21, 2026 / Blue Gold Limited (Nasdaq:BGL) (\"Blue Gold\" or the \"Company\"), a next-generation gold exploration, development and mining company, today announce",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ArcelorMittal Faces White House Steel Debate As Shares Trade Below Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/arcelormittal-faces-white-house-steel-080619910.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T08:06:19+00:00",
+      "summary": "ArcelorMittal has been drawn into a controversy over European steel supplied for a renovation of the White House ballroom linked to Donald Trump. The project has attracted attention because it contras",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Trump pushed 50% steel tariffs to protect US jobs — now his $400M White House ballroom may be built with European steel",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-pushed-50-steel-tariffs-161500242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-12T16:15:00+00:00",
+      "summary": "Trump’s America-first steel agenda is under the spotlight as his $400M White House ballroom may depend on foreign supply.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Tracking Higher in Friday Trading Amid US-Iran Ceasefire Talks; German Inflation Rises in March",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-tracking-higher-friday-155523895.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T15:55:23+00:00",
+      "summary": "The European stock markets were moving modestly higher Friday amid reports that US and Iran ceasefir",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Barclays sees limited steel impact from Iran strikes, flags China reliance",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/barclays-sees-limited-steel-impact-082806685.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-04T08:28:06+00:00",
+      "summary": "Investing.com -- Recent airstrikes targeting critical industrial infrastructure in Iran have disrupted production at two of the country’s largest steel facilities, according to a new equity research r",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

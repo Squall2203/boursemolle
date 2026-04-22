@@ -1,0 +1,53 @@
+{
+  "ticker": "AMP",
+  "last_updated": "2026-04-22T13:07:10.663045+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Earnings To Watch: Ameriprise Financial (AMP) Reports Q1 Results Tomorrow",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-ameriprise-financial-amp-054123752.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T05:41:23+00:00",
+      "summary": "Financial services company Ameriprise Financial (NYSE:AMP) will be reporting earnings this Thursday after the bell. Here’s what you need to know.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "AUM Growth Likely to Aid Ameriprise's Q1 Earnings Despite Cost Woes",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aum-growth-likely-aid-ameriprises-144900839.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:49:00+00:00",
+      "summary": "AMP's rising AUM and fee growth may lift Q1 results, even as higher tech and hiring costs weigh on margins.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Morgan Stanley Turns Bearish on Ameriprise (AMP), KBW Takes More Balanced View",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-turns-bearish-ameriprise-014117664.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:41:17+00:00",
+      "summary": "Ameriprise Financial, Inc. (NYSE:AMP) is included among the 12 High Dividend Stocks Picked by Billionaire Ray Dalio. On April 10, Morgan Stanley lowered its price recommendation on Ameriprise Financia",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Ameriprise Financial Recognized by Newsweek as One of \"America’s Most Charitable Companies\"",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ameriprise-financial-recognized-newsweek-one-190000409.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:00:00+00:00",
+      "summary": "MINNEAPOLIS, April 20, 2026--Ameriprise Financial has been recognized by Newsweek as one of the \"Most Trustworthy Companies in America 2026.\"",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Why Ameriprise (AMP) is Poised to Beat Earnings Estimates Again",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-ameriprise-amp-poised-beat-161004213.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:10:04+00:00",
+      "summary": "Ameriprise (AMP) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

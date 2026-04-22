@@ -1,0 +1,53 @@
+{
+  "ticker": "ENI.MI",
+  "last_updated": "2026-04-22T12:12:47.939484+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Eni S.p.A.: This Upgrade Signals Growing Confidence In A Global Oil Giant",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/eni-p-upgrade-signals-growing-063610456.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:36:10+00:00",
+      "summary": "Eni S.p.A. (NYSE:E) is among the 13 Best Crude Oil Stocks to Buy According to Analysts. On April 17, BNP Paribas upgraded Eni S.p.A. (NYSE:E) to Outperform from Neutral with a $64.30 price target. The",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "A Look At Eni (BIT:ENI) Valuation After Recent Share Price Volatility",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/look-eni-bit-eni-valuation-180503484.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T18:05:03+00:00",
+      "summary": "Eni share performance and recent context Eni (BIT:ENI) has drawn investor attention after recent share price swings, with the stock showing a roughly 0.4% gain over the past day but a mid single digit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Halliburton Q1 Earnings and Revenues Beat Estimates, Both down Y/Y",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/halliburton-q1-earnings-revenues-beat-140500839.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T14:05:00+00:00",
+      "summary": "HAL delivers $273 million in cash flow from operations and achieves $123 million in free cash flow in the first quarter.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Eni finds 5tcf of gas in Indonesia’s Kutei Basin",
+      "url": "https://www.offshore-technology.com/news/eni-finds-5tcf-gas-indonesias-kutei-basin/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T08:33:45+00:00",
+      "summary": "Early estimates also indicate the presence of 300mbbl of condensate.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Eni’s Indonesia Gas Find Raises Kutei Basin Growth Ambitions",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/eni-indonesia-gas-raises-kutei-012500169.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:25:00+00:00",
+      "summary": "Eni has made a giant gas and condensate discovery offshore Indonesia, strengthening the case for faster Kutei Basin development.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "8035.T",
+  "last_updated": "2026-04-22T13:43:26.213212+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Lam Research to Report Earnings. Chip Demand Has Been Driving Record Sales.",
+      "url": "https://finance.yahoo.com/m/3e2cecdd-1957-3b45-bf45-fe6426870e32/lam-research-to-report.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:00:00+00:00",
+      "summary": "Analysts expect Lam Research to report adjusted earnings per share of $1.36 and sales of $5.75 billion.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Tokyo Electron (TSE:8035) Valuation Check After 130% One Year Total Return",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tokyo-electron-tse-8035-valuation-230322296.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-18T23:03:22+00:00",
+      "summary": "Tokyo Electron: recent performance snapshot Tokyo Electron (TSE:8035) has been on many watchlists after a strong 1 year total return of 130%, alongside revenue of ¥2,387,117m and net income of ¥503,13",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Musk Moving at “Light Speed” to Sign Up Suppliers for $25B Terafab Chip Dream",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/musk-moving-light-speed-sign-110616588.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T11:06:16+00:00",
+      "summary": "Elon Musk is working at “light speed” to sign up chip suppliers to fulifill his $25B Terafab semiconductor dream.Claim 30% Off TipRanksUnlock hedge fund-level data and powerful investing tools for sma",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Tesla, SpaceX Search For Suppliers For Elon Musk's Terafab Project: Report",
+      "url": "https://finance.yahoo.com/m/dbfbad02-9177-3c1b-89c0-da3330cad1da/tesla%2C-spacex-search-for.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T20:18:34+00:00",
+      "summary": "Staff working on Elon Musk's Terafab project have been reaching out to suppliers of semiconductor manufacturing equipment. Tesla stock is up more than 11% this week.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Elon Musk Advances Terafab Plan Targeting $13 Trillion Chip Investment",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/elon-musk-advances-terafab-plan-125648951.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T12:56:48+00:00",
+      "summary": "Supplier outreach and pilot plans signal early progress toward a massive AI chip manufacturing initiative",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

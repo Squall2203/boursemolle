@@ -1,0 +1,53 @@
+{
+  "ticker": "TFI.PA",
+  "last_updated": "2026-04-22T11:48:34.100441+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Television Francaise 1 SA (TVFCF) Full Year 2025 Earnings Call Highlights: Navigating ...",
+      "url": "https://finance.yahoo.com/news/television-francaise-1-sa-tvfcf-010638853.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-13T01:06:38+00:00",
+      "summary": "Despite a decline in traditional advertising revenue, Television Francaise 1 SA (TVFCF) leverages digital expansion and strategic partnerships to maintain a strong financial position.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks To Consider",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-consider-103146664.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-02T10:31:46+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index edges higher, nearing record levels amid positive sentiment about future earnings and economic conditions, investors are increasingly exploring opportunities",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 9.8%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-053146934.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-10T05:31:46+00:00",
+      "summary": "Amid concerns about global growth following weak U.S. jobs data and a stronger euro, the pan-European STOXX Europe 600 Index ended slightly lower, reflecting mixed performances across major stock inde",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Societe Generale: shares & voting rights as of 31 August 2025",
+      "url": "https://finance.yahoo.com/news/societe-generale-shares-voting-rights-153700303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:37:00+00:00",
+      "summary": "NUMBER OF SHARES COMPOSING CURRENT SHARE CAPITAL AND TOTAL NUMBER OF VOTING RIGHTS AS OF 31 AUGUST 2025Regulated Information Paris, 9 September 2025 Information about the total number of voting rights",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bayer Foundation Backs 15 Women Entrepreneurs Scaling Urgent Healthcare and Food Solutions",
+      "url": "https://finance.yahoo.com/news/bayer-foundation-backs-15-women-070000833.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T07:00:00+00:00",
+      "summary": "The Bayer Foundation Women Entrepreneurs Award (BFWEA), powered by the Impact Hub Network, honours 15 women from Latin America, Africa & the Middle East, and Asia Pacific who are addressing critical c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "DSY.PA",
+  "last_updated": "2026-04-22T11:34:18.267647+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Is OMRON’s (TSE:6645) Virtual Twin Push Quietly Redefining Its Industrial Automation Edge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/omron-tse-6645-virtual-twin-190333801.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T19:03:33+00:00",
+      "summary": "Dassault Systèmes and OMRON recently announced a partnership to link Dassault’s 3D virtual design and simulation tools with OMRON’s Sysmac industrial automation platform, creating a unified way for ma",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "OMRON and Dassault Systèmes Partner to Revolutionize Manufacturing with Virtual and Real Integration",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/omron-dassault-syst-mes-partner-050000033.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T05:00:00+00:00",
+      "summary": "VELIZY-VILLACOUBLAY, France, April 21, 2026--Dassault Systèmes (Euronext Paris: FR0014003TT8, DSY.PA) and OMRON (TSE:6645), a global leader in industrial automation technologies, today announced their",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Groupe Rocher and Dassault Systèmes Embark on New Collaboration to Transform Natural Cosmetics Formulation Through Virtual Twin Technology",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/groupe-rocher-dassault-syst-mes-050000228.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T05:00:00+00:00",
+      "summary": "VELIZY-VILLACOUBLAY, France, April 14, 2026--Dassault Systèmes (Euronext Paris: FR0014003TT8, DSY.PA) and the France-based pioneer of natural cosmetics Groupe Rocher today announced their collaboratio",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Fall in Monday Trading After US-Iran Peace Talks Collapse",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-fall-monday-trading-155326122.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T15:53:26+00:00",
+      "summary": "European stock markets fell in Monday trading following President Donald Trump's threat to block the",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Is Dassault Systèmes (ENXTPA:DSY) Finally Attractive After Prolonged Share Price Weakness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dassault-syst-mes-enxtpa-dsy-060856850.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T06:08:56+00:00",
+      "summary": "If you are wondering whether Dassault Systèmes at €16.93 is priced attractively or still looks expensive, starting with a clear check on value can help frame your next move. The share price recently c",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

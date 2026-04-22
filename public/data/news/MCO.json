@@ -1,0 +1,53 @@
+{
+  "ticker": "MCO",
+  "last_updated": "2026-04-22T13:04:47.753009+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Moody’s (NYSE:MCO) Q1 CY2026 Sales Beat Estimates",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/moody-nyse-mco-q1-cy2026-111631063.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:16:31+00:00",
+      "summary": "Credit rating agency Moody's (NYSE:MCO) reported Q1 CY2026 results beating Wall Street’s revenue expectations, with sales up 8.1% year on year to $2.08 billion. Its non-GAAP profit of $4.33 per share ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Moody's Corporation Achieved Record Results For First Quarter 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/moodys-corporation-achieved-record-results-110000268.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T11:00:00+00:00",
+      "summary": "NEW YORK, April 22, 2026--Moody's Corporation (NYSE: MCO) today announced results for the first quarter 2026 and updated select metrics within its outlook for full year 2026.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bank of Åland Plc: Moody’s Ratings upgrades Bank of Åland’s Baseline Credit Assessment",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-land-plc-moody-ratings-063000806.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:30:00+00:00",
+      "summary": "Bank of Åland PlcStock exchange releaseApril 22, 2026, 9.30 EEST Moody’s Ratings upgrades Bank of Åland’s Baseline Credit Assessment Moody’s Ratings (Moody’s) has upgraded Bank of Åland’s Baseline Cre",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Moody's upgraded AB Artea bankas ratings and its outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/moodys-upgraded-ab-artea-bankas-060000288.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T06:00:00+00:00",
+      "summary": "On 21 April 2026, the international rating agency Moody’s Ratings (Moody’s) upgraded AB Artea bankas long-term deposit rating from Baa1 to A3 and revised the outlook from stable to positive. Moody's a",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "US Equity Indexes Fall as Vance's Trip to Pakistan on Hold Ahead of Iran Ceasefire Deadline",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-vance-210530947.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T21:05:30+00:00",
+      "summary": "US equity indexes fell on Tuesday, while crude oil futures jumped as President Donald Trump reported",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

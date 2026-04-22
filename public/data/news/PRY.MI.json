@@ -1,0 +1,53 @@
+{
+  "ticker": "PRY.MI",
+  "last_updated": "2026-04-22T12:15:14.934565+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Copper Wire & Cable Market by Insulation Type, Voltage Type, Installation, Application, End-use Industry, and Region - Forecast to 2032",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/copper-wire-cable-market-insulation-082100573.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T08:21:00+00:00",
+      "summary": "The global copper wire and cable market is projected to expand from USD 182 billion in 2025 to USD 324.7 billion by 2032, at a CAGR of 8.6%. Key growth drivers include rising investments in power infr",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Prysmian Texas Expansion Tests High Valuation And Strong Share Momentum",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/prysmian-texas-expansion-tests-high-190308567.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T19:03:08+00:00",
+      "summary": "Prysmian has opened a new Copper Building Wire Plant in McKinney, Texas. The company has also expanded its McKinney Service Center, which it states is now the largest in the industry. These developmen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Prysmian | Encore Wire Unveils New Industry-Leading Plant and 1M Square Foot Service Center",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/prysmian-encore-wire-unveils-industry-152200695.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T15:22:00+00:00",
+      "summary": "New McKinney facilities combine scale, efficiency, and innovation to deliver among the most advanced wire and cable operations in the industry MCKINNEY, TX / ACCESS Newswire / April 13, 2026 / Prysmia",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CORRECTION FROM SOURCE: Prysmian Announces Strategic Leadership Transitions in North America",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/correction-source-prysmian-announces-strategic-171500811.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T17:15:00+00:00",
+      "summary": "A previous version of this release announced a promotion that has yet to take effect HIGHLAND HEIGHTS, KY / ACCESS Newswire / March 31, 2026 / Prysmian , a world leader in energy and data wire and cab",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Iberdrola awards $4bn contracts for EGL4 subsea interconnector",
+      "url": "https://www.power-technology.com/news/iberdrola-4bn-contracts-egl4-subsea-interconnector/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T07:52:27+00:00",
+      "summary": "EGL 4 will have a capacity of 2GW, linking Fife in Scotland with Norfolk in England.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

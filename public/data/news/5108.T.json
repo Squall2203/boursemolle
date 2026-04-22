@@ -1,0 +1,53 @@
+{
+  "ticker": "5108.T",
+  "last_updated": "2026-04-22T13:52:37.064935+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Baum Family Investments Announces Strong Q1 2026 Investment Activity and Expanding Pipeline",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/baum-family-investments-announces-strong-150700439.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T15:07:00+00:00",
+      "summary": "Baum Family Investments (BFI) announces a strong start to 2026, highlighting robust first quarter investment activity across both acquisitions and dispositions, alongside a rapidly expanding pipeline.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bridgestone (TSE:5108) Valuation Check After Recent Flat Trading And Solid One Year Returns",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bridgestone-tse-5108-valuation-check-121231902.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T12:12:31+00:00",
+      "summary": "Bridgestone (TSE:5108) is back on investors’ radar after recent share price moves, with the stock roughly flat over the past month and slightly weaker over the past 3 months despite solid trailing mul",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Truck Tire Market Research Report 2026-2031: Chinese Manufacturers are Leveraging Smart Factories for Producing High-quality Radials with a Price Advantage of 30 to 40% Over Western Tiers",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/truck-tire-market-research-report-082100916.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T08:21:00+00:00",
+      "summary": "Key trends include technological advancements like connected tires and smart materials, and the rise of electric vehicle-specific tires addressing unique load requirements. Major market drivers includ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "DUNN TIRE & AUTO OPENS FIRST LOCATION IN PHOENIX",
+      "url": "https://finance.yahoo.com/news/dunn-tire-auto-opens-first-140300648.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T14:03:00+00:00",
+      "summary": "Dunn Tire & Auto, a trusted tire retailer and automotive service shop, opened its first location in Phoenix, Arizona. The new full-service store is located at 1530 W Bell Rd, across from Sam's Club. H",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bridgestone Debuts Advanced Digital Fleet Portal Experience",
+      "url": "https://finance.yahoo.com/news/bridgestone-debuts-advanced-digital-fleet-140000552.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-10T14:00:00+00:00",
+      "summary": "Bridgestone Americas (Bridgestone) today announced plans to debut its new Fleet Portal platform at the Truck Maintenance Council (TMC) Annual Meeting and Transportation Technology Exhibition, March 16",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

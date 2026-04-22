@@ -1,0 +1,44 @@
+{
+  "ticker": "MMB.PA",
+  "last_updated": "2026-04-22T11:46:19.043684+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Lagardere SA (LGDDF) Full Year 2025 Earnings Call Highlights: Strong Revenue Growth Amidst ...",
+      "url": "https://finance.yahoo.com/news/lagardere-sa-lgddf-full-2025-230356478.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T23:03:56+00:00",
+      "summary": "Lagardere SA (LGDDF) reports robust financial performance with record revenues and reduced debt, despite facing market-specific hurdles.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Vivendi in last ditch effort to avert EU fine for closing Lagardere deal too soon",
+      "url": "https://finance.yahoo.com/news/vivendi-last-ditch-effort-avert-120209627.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-10T12:02:09+00:00",
+      "summary": "French media conglomerate Vivendi made a ​last-ditch effort on Wednesday to stave off ‌a potential EU antitrust fine, following charges it closed ‌its acquisition of publisher Lagardere before receivi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is Lagardere Set for Growth After Recent Resilience in the Media Sector?",
+      "url": "https://finance.yahoo.com/news/lagardere-set-growth-recent-resilience-123042309.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T12:30:42+00:00",
+      "summary": "If you are watching Lagardere and wondering whether now is the moment to jump in or hold back, you are not alone. Lately, the stock has been sending mixed signals that have caught the eye of both seas",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "SW.PA",
+  "last_updated": "2026-04-22T11:43:18.839161+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Sodexo Appoints Orla Muldoon as General Counsel, North America, to Lead Legal, Compliance, Government Affairs and Governance",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/sodexo-appoints-orla-muldoon-general-140000706.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T14:00:00+00:00",
+      "summary": "NORTH BETHESDA, Md., April 20, 2026--Sodexo, a global leader in food and services, today announced the appointment of Orla Muldoon as General Counsel, North America, effective March 23, 2026. In this ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Circus to Acquire Belgian Food Robotics Company Alberts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/circus-acquire-belgian-food-robotics-112100936.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:21:00+00:00",
+      "summary": "MUNICH, April 16, 2026--Circus SE (ISIN: DE000A2YN355 / XETRA: CA1) has signed a binding agreement for the acquisition of the Belgian food robotics company Alberts, a European provider and market-lead",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Sodexo Profit Warning Tests Turnaround Plan Under New CEO Delaporte",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sodexo-profit-warning-tests-turnaround-230644437.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T23:06:44+00:00",
+      "summary": "Sodexo (ENXTPA:SW) has issued a profit warning and cut its 2026 financial targets. The company has launched a broad review of its operations, including potential asset sales or restructuring. New CEO ",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "Is It Time To Reassess Sodexo (ENXTPA:SW) After Recent Share Price Slide?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/time-reassess-sodexo-enxtpa-sw-210804524.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T21:08:04+00:00",
+      "summary": "If you are wondering whether Sodexo at €38.62 is starting to look interesting or still carries too much risk, it helps to first step back and look at how the market has been treating the stock recentl",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Sodexo cuts annual guidance amid operational setbacks",
+      "url": "https://www.verdictfoodservice.com/news/sodexo-cuts-annual-guidance/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T11:38:47+00:00",
+      "summary": "The catering company forecasts organic revenue growth of 0.5% to 1%, down from 1.5% to 2.5%.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

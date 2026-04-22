@@ -1,0 +1,53 @@
+{
+  "ticker": "OKTA",
+  "last_updated": "2026-04-22T13:20:29.842159+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Insider Buying: Okta (NASDAQ:OKTA) Director Purchases 3,712 Shares of Stock",
+      "url": "https://www.marketbeat.com/instant-alerts/insider-buying-okta-nasdaqokta-director-purchases-3712-shares-of-stock-2026-04-20/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-20T21:34:48+00:00",
+      "summary": "Okta, Inc. (NASDAQ:OKTA - Get Free Report) Director David Schellhase acquired 3,712 shares of the firm's stock in a transaction on Thursday, April 16th. The shares were bought at an average cost of $7",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Okta director David Schellhase buys $267,408 in company stock",
+      "url": "https://www.investing.com/news/insider-trading-news/okta-director-david-schellhase-buys-267408-in-company-stock-93CH-4624767",
+      "source": "investing.com",
+      "published_at": "2026-04-20T21:16:58+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Okta, Inc.: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/1660134/000129473526000001/0001294735-26-000001-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-20T21:08:55+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Okta’s stock is surging. Here’s why identity security has become the next hot thing.",
+      "url": "https://www.marketwatch.com/story/oktas-stock-is-surging-heres-why-identity-security-has-become-the-next-hot-thing-d547fc03?mod=mw_rss_topstories",
+      "source": "marketwatch.com",
+      "published_at": "2026-04-20T20:27:00+00:00",
+      "summary": "Barclays turned bullish on Okta just days after Raymond James did, as customers are reinvigorating investment into identity security for the first time in years.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Why Okta (OKTA) Stock Is Up Today",
+      "url": "https://stockstory.org/us/stocks/nasdaq/okta/news/why-up-down/why-okta-okta-stock-is-up-today",
+      "source": "stockstory.org",
+      "published_at": "2026-04-20T19:24:39+00:00",
+      "summary": "Shares of identity management company Okta (NASDAQ:OKTA) jumped 4.9% in the afternoon session after analyst upgrades from Raymond James and Barclays fueled optimism about the company's strategy for se",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

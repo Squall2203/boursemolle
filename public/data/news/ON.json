@@ -1,0 +1,53 @@
+{
+  "ticker": "ON",
+  "last_updated": "2026-04-22T13:05:44.935885+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "ON Semiconductor (NASDAQ:ON) Sets New 1-Year High - Still a Buy?",
+      "url": "https://www.marketbeat.com/instant-alerts/on-semiconductor-nasdaqon-sets-new-1-year-high-still-a-buy-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:59:04+00:00",
+      "summary": "ON Semiconductor (NASDAQ:ON) Reaches New 1-Year High - Here's Why",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ON Semiconductor Corporation $ON Shares Sold by Asset Management One Co. Ltd.",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-on-semiconductor-corporation-on-shares-sold-by-asset-management-one-co-ltd-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T07:19:28+00:00",
+      "summary": "Asset Management One Co. Ltd. lowered its position in shares of ON Semiconductor Corporation (NASDAQ:ON - Free Report) by 13.7% in the fourth quarter, according to its most recent filing with the Secu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "This Week's Wolf Pick - ON Semiconductor; ON Gets 11x More Silicon Per Nvidia Rack",
+      "url": "https://www.benzinga.com/Opinion/26/04/51927467/this-week-wolf-pick-on-semiconductor-on-gets-11x-more-silicon-per-nvidia-rack",
+      "source": "benzinga.com",
+      "published_at": "2026-04-20T20:56:41+00:00",
+      "summary": "Every 800V rack NVIDIA ships in 2027 is worth roughly 11x more ON silicon than the 54V racks shipping today. Consensus still hasn't put that math in its model. Importance Rank: 1 read more",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Navitas Is One Misstep Away From A Sharp Re-Rating | $NVDA $IFNNY $IFNNF $ON $RNECF",
+      "url": "https://seekingalpha.com/article/4892051-navitas-is-one-misstep-away-from-a-sharp-re-rating",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-20T15:46:56+00:00",
+      "summary": "",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Industrial Stocks To Add to Your Watchlist - April 19th",
+      "url": "https://www.marketbeat.com/instant-alerts/industrial-stocks-to-add-to-your-watchlist-april-19th-2026-04-19/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-19T18:03:34+00:00",
+      "summary": "Caterpillar, Coherent, Linde, ON Semiconductor, Eaton, DOW, and Honeywell International are the seven Industrial stocks to watch today, according to MarketBeat's stock screener tool. Industrial stocks",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

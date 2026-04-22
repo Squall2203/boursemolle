@@ -1,0 +1,53 @@
+{
+  "ticker": "GS",
+  "last_updated": "2026-04-22T12:56:34.448634+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "BHP Turns To Africa, As Hormuz Threatens Copper Surplus Thesis",
+      "url": "https://www.benzinga.com/markets/commodities/26/04/51961314/bhp-turns-to-africa-as-hormuz-threatens-copper-surplus-thesis?utm_source=benzinga_taxonomy&utm_medium=rss_feed_free&utm_content=taxonomy_rss&utm_campaign=channel",
+      "source": "benzinga.com",
+      "published_at": "2026-04-22T09:47:46+00:00",
+      "summary": "Goldman Sachs is sticking with its $12,650-per-metric-ton price target for copper in 2026. According to Reuters, the bank sees a 490,000-ton market surplus. However, the forecast rests on a fragile pr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Genmab gains as Goldman upgrades stock to Buy on increased pipeline confidence",
+      "url": "https://www.investing.com/news/stock-market-news/genmab-gains-as-goldman-upgrades-stock-to-buy-on-increased-pipeline-confidence-4628381",
+      "source": "investing.com",
+      "published_at": "2026-04-22T09:44:34+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Goldman Sachs recaps Warsh defense of Fed independence at Senate hearing",
+      "url": "https://www.investing.com/news/stock-market-news/goldman-sachs-recaps-warsh-defense-of-fed-independence-at-senate-hearing-93CH-4628353",
+      "source": "investing.com",
+      "published_at": "2026-04-22T09:29:50+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Goldman Sachs Strategist: U.S. Investors Are Returning to Japanese Stocks",
+      "url": "https://nai500.com/blog/2026/04/goldman-sachs-strategist-u-s-investors-are-returning-to-japanese-stocks/",
+      "source": "nai500.com",
+      "published_at": "2026-04-22T08:17:11+00:00",
+      "summary": "Bruce Kirk, chief Japan equity strategist at Goldman Sachs Japan, said that U.S. investors are returning to the Japanese stock market as their confidence recovers from the initial shock of the Middle ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Goldman Sachs downgrades Valneva stock rating to sell on Lyme vaccine uncertainty",
+      "url": "https://www.investing.com/news/analyst-ratings/goldman-sachs-downgrades-valneva-stock-rating-to-sell-on-lyme-vaccine-uncertainty-93CH-4628062",
+      "source": "investing.com",
+      "published_at": "2026-04-22T05:45:15+00:00",
+      "summary": "",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

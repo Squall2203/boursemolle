@@ -1,0 +1,53 @@
+{
+  "ticker": "8031.T",
+  "last_updated": "2026-04-22T13:48:07.812406+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Is Marubeni (MARUY) Stock Outpacing Its Conglomerates Peers This Year?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marubeni-maruy-stock-outpacing-conglomerates-134004939.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T13:40:04+00:00",
+      "summary": "Here is how Marubeni Corp. (MARUY) and Mitsui & Co. (MITSY) have performed compared to their sector so far this year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "POSCO Partners With Mobilint to Expand NPU Use in Industrial AI",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/posco-partners-mobilint-expand-npu-120900115.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T12:09:00+00:00",
+      "summary": "PKX speeds up AI factory push as POSCO DX backs domestic NPU tech, aiming to cut GPU reliance and boost real-time, secure manufacturing efficiency.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Mitsui & Co. (MITSY) Upgraded to Buy: Here's What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mitsui-co-mitsy-upgraded-buy-160004014.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T16:00:04+00:00",
+      "summary": "Mitsui & Co. (MITSY) might move higher on growing optimism about its earnings prospects, which is reflected by its upgrade to a Zacks Rank #2 (Buy).",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Marubeni (MARUY) Outperforming Other Conglomerates Stocks This Year?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marubeni-maruy-outperforming-other-conglomerates-134004147.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T13:40:04+00:00",
+      "summary": "Here is how Marubeni Corp. (MARUY) and Mitsui & Co. (MITSY) have performed compared to their sector so far this year.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Anew Climate Joins Carbon Measures to Advance Global Carbon Accounting Standards and Policies Supporting Market-Based Solutions",
+      "url": "https://finance.yahoo.com/economy/policy/articles/anew-climate-joins-carbon-measures-130000396.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T13:00:00+00:00",
+      "summary": "HOUSTON, TX / ACCESS Newswire / March 23, 2026 / Anew Climate, a global leader in low-carbon fuels and climate solutions, today announced it has joined Carbon Measures, a cross-industry coalition work",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

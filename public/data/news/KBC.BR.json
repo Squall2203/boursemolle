@@ -1,0 +1,53 @@
+{
+  "ticker": "KBC.BR",
+  "last_updated": "2026-04-22T12:07:54.110928+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "KBC Group: Publication of transparancy notification(s) received by KBC Group NV",
+      "url": "https://finance.yahoo.com/news/kbc-group-publication-transparancy-notification-070000817.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T07:00:00+00:00",
+      "summary": "(Art. 14, 1st section of the Act of 2 May 2007 concerning the disclosure of significant participations) Summary of the notification(s) KBC Group NV has received an updated transparency notification on",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "KBC Group (KBCSY) Upgraded to Strong Buy: Here's What You Should Know",
+      "url": "https://finance.yahoo.com/news/kbc-group-kbcsy-upgraded-strong-170005891.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-23T17:00:05+00:00",
+      "summary": "KBC Group (KBCSY) might move higher on growing optimism about its earnings prospects, which is reflected by its upgrade to a Zacks Rank #1 (Strong Buy).",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing KBC Group (ENXTBR:KBC) Valuation After Recent Share Price Pullback",
+      "url": "https://finance.yahoo.com/news/assessing-kbc-group-enxtbr-kbc-021546490.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-13T02:15:46+00:00",
+      "summary": "Recent share performance and business snapshot KBC Group (ENXTBR:KBC) has seen mixed short term share performance, with a 1 day return of a 4.04% decline and a 7 day return of a 2.14% decline, while t",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "KBC Group Deepens Central European Reach While Rewarding Shareholders And Staff",
+      "url": "https://finance.yahoo.com/news/kbc-group-deepens-central-european-011508281.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-13T01:15:08+00:00",
+      "summary": "KBC Group (ENXTBR:KBC) has acquired Business Lease Czech Republic and Slovakia, expanding its leasing footprint in Central Europe. The transaction covers Business Lease operations in both countries an",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "KBC Group grants extraordinary bonus to all employees after strong 2025 performance",
+      "url": "https://finance.yahoo.com/news/kbc-group-grants-extraordinary-bonus-061500756.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T06:15:00+00:00",
+      "summary": "KBC Group today announced that it will award an extraordinary collective bonus to all employees working within the Group’s core banking and insurance activities across its key markets. With this decis",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

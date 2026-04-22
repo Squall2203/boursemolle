@@ -1,0 +1,53 @@
+{
+  "ticker": "RCO.PA",
+  "last_updated": "2026-04-22T11:42:42.007063+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Beyond Beer Push: Can Molson Coors Drive Long-Term Growth?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-beer-push-molson-coors-135700930.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:57:00+00:00",
+      "summary": "TAP's Beyond Beer push hits nearly 10% of revenue as premiumization, Topo Chico gains and cost savings fuel long-term growth ambitions.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Remy Cointreau (REMYY) Outperforming Other Consumer Staples Stocks This Year?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/remy-cointreau-remyy-outperforming-other-134002120.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:40:02+00:00",
+      "summary": "Here is how Remy Cointreau (REMYY) and Ryohin Keikaku Co. Ltd. (RYKKY) have performed compared to their sector so far this year.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "New Ground Promotions Scales National Retail and Experiential Execution for Global Spirits Brands on PINATA’s AI-Powered Platform",
+      "url": "https://finance.yahoo.com/news/ground-promotions-scales-national-retail-120000040.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T12:00:00+00:00",
+      "summary": "NEW YORK, March 17, 2026--New Ground Promotions (NGP), a national experiential and field marketing agency supporting corporate clients and globally recognized spirits portfolios including Moët Henness",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Brandy Market Forecast and Company Analysis Report 2025-2033 Featuring F. Korbel & Bros, Martell, Courvoisie, Diageo, Thomas HINE, Yantai Changyu Pioneer Wine, E. & J. Gallo, Emperador, Remy Cointreau",
+      "url": "https://finance.yahoo.com/news/brandy-market-forecast-company-analysis-162900769.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T16:29:00+00:00",
+      "summary": "The global brandy market is set to grow from $26.71 billion in 2025 to $36.02 billion by 2033, with a CAGR of 3.81%. This growth is fueled by rising trends in premiumization and increasing interest in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing Rémy Cointreau (ENXTPA:RCO) Valuation After Recent Share Price Momentum",
+      "url": "https://finance.yahoo.com/news/assessing-r-cointreau-enxtpa-rco-151158716.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-11T15:11:58+00:00",
+      "summary": "Why Rémy Cointreau is on investors’ radar today Rémy Cointreau (ENXTPA:RCO) has drawn fresh attention after recent share price moves, with the stock showing mixed return patterns over the past year th",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "NDX1.DE",
+  "last_updated": "2026-04-22T12:00:52.884072+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Nordex Group lands 80 MW contract in Spain",
+      "url": "https://finance.yahoo.com/m/5e08b818-45d7-33b4-a1d3-2e6887a238c3/nordex-group-lands-80-mw.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T09:00:00+00:00",
+      "summary": "The Nordex Group has received a new order in Spain for initially 80 MW.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Innergex Announces the Full Commissioning of the La Cense Wind Farm in the Oise Region of France",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/innergex-announces-full-commissioning-la-053000631.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T05:30:00+00:00",
+      "summary": "Innergex Renewable Energy Inc. (\"Innergex\") and EOLFI are pleased to announce the full commissioning of the La Cense wind farm, located in the municipality of Saint-André-Farivillers, approximately 25",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Nordex Group receives 35 MW order for wind farm in the Sauerland region in Germany",
+      "url": "https://finance.yahoo.com/m/ca1906b3-f4e9-31e2-a14b-3ff8c04e9b08/nordex-group-receives-35-mw.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T10:00:00+00:00",
+      "summary": "Nordex Group has received a 35 MW order for a wind farm in the Sauerland region in Germany.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider Nordex (XTRA:NDX1) After Its 207% One Year Surge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-nordex-xtra-ndx1-180819256.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-30T18:08:19+00:00",
+      "summary": "If you are wondering whether Nordex's share price still offers value after a strong run, this article walks through what the current market price might imply about the company. The stock recently clos",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nordex Group receives order for 28 MW in Saxony-Anhalt, Germany",
+      "url": "https://finance.yahoo.com/m/ff67612e-4660-33f7-816e-38f2226b589b/nordex-group-receives-order.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-26T10:00:00+00:00",
+      "summary": "The Nordex Group has received a 28 MW order from Windpark Nuscheler GmbH.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

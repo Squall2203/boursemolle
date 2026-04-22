@@ -1,0 +1,53 @@
+{
+  "ticker": "WIE.VI",
+  "last_updated": "2026-04-22T12:20:12.977779+00:00",
+  "sentiment_score": 0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "How The Wienerberger (WBAG:WIE) Investment Story Is Shifting As Analyst Targets Tighten Around €30",
+      "url": "https://finance.yahoo.com/news/wienerberger-wbag-wie-investment-story-011341213.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-27T01:13:41+00:00",
+      "summary": "Analysts have trimmed Wienerberger’s fair value estimate from about €32.94 to about €31.94, a modest cut that keeps the updated fair value close to recent Street targets. Recent research now clusters ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Wienerberger AG (WBRBF) (FY 2025) Earnings Call Highlights: Doubling Profits Amidst Market ...",
+      "url": "https://finance.yahoo.com/news/wienerberger-ag-wbrbf-fy-2025-010336285.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T01:03:36+00:00",
+      "summary": "Wienerberger AG (WBRBF) reports a significant profit increase and strategic acquisition plans despite facing market volatility and cost inflation.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Wienerberger AG (WBRBF) Full Year 2025 Earnings Call Highlights: Doubling Profits Amid Market ...",
+      "url": "https://finance.yahoo.com/news/wienerberger-ag-wbrbf-full-2025-010031879.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T01:00:31+00:00",
+      "summary": "Wienerberger AG (WBRBF) reports a significant profit increase and strategic growth plans despite facing market volatility and regional revenue declines.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Stocks to watch this week: Walmart, Analog Devices, BAE Systems and Rio Tinto",
+      "url": "https://uk.finance.yahoo.com/news/walmart-analog-devices-bae-systems-rio-tinto-stocks-to-watch-133135464.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-13T13:31:35+00:00",
+      "summary": "Earnings preview of key companies reporting this week and what to look out for.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Wienerberger AG (WBRBF) Q3 2025 Earnings Call Highlights: Navigating Market Challenges with ...",
+      "url": "https://finance.yahoo.com/news/wienerberger-ag-wbrbf-q3-2025-010146039.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-19T01:01:46+00:00",
+      "summary": "Wienerberger AG (WBRBF) reports steady revenue growth and strategic expansions despite facing cost pressures and market headwinds.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

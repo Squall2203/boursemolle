@@ -1,0 +1,53 @@
+{
+  "ticker": "EN.PA",
+  "last_updated": "2026-04-22T11:33:17.016027+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "France’s Telecom Giants Want to Break Up SFR and Rewire the Market",
+      "url": "https://app.moby.co/home/news/news-frances-telecom-giants-want-to-break-up-sfr-and-rewire-the-market?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T16:20:25+00:00",
+      "summary": "France’s mobile market may be about to lose a player and gain a giant argument.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "JPM stays constructive on French telcos with or without consolidation",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jpm-stays-constructive-french-telcos-131520130.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T13:15:20+00:00",
+      "summary": "Investing.com -- J.P. Morgan maintained “overweight” ratings on Orange SA and Bouygues on Friday, arguing both stocks offer double-digit equity free cash flow compound annual growth rates on a standal",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Bouygues: Monthly disclosure of the total number of shares and voting rights",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bouygues-monthly-disclosure-total-number-154500225.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T15:45:00+00:00",
+      "summary": "Monthly disclosure of the total number of shares and voting rights Paris, 1 April 2026 Article 223-16 of the AMF General Regulation Date Shares Voting rightsTheoritical (1)Exercisable (2)31 March 2026",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bouygues: Press release of 19 March 2026 - Access to the 2025 Universal Registration Document",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bouygues-press-release-19-march-164500366.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T16:45:00+00:00",
+      "summary": "Paris, 19 March 2026PRESS RELEASE ACCESS TO THE 2025 UNIVERSAL REGISTRATION DOCUMENTREGULATED INFORMATION Bouygues filed its 2025 Universal Registration Document with the Autorité des Marchés Financie",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "How The Bouygues (ENXTPA:EN) Story Is Shifting As Price Targets And Risks Rebalance",
+      "url": "https://finance.yahoo.com/news/bouygues-enxtpa-en-story-shifting-140424824.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-18T14:04:24+00:00",
+      "summary": "Bouygues’ central price target has been reset higher, with fair value moving from €50.31 to €54.98, which points to a 9.3% uplift in the core valuation anchor. This aligns with recent research where m",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

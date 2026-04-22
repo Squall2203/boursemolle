@@ -1,0 +1,53 @@
+{
+  "ticker": "NEM.DE",
+  "last_updated": "2026-04-22T11:58:01.339162+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Nemetschek Group acquires HCSS in latest contech M&A",
+      "url": "https://www.constructiondive.com/news/nemetschek-group-acquires-hcss-contech-merger-acquisition/817673/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T10:23:00+00:00",
+      "summary": "With the acquisition, Munich-based Nemetschek, owner of Bluebeam and Nevaris, aims to create a technology powerhouse.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nemetschek to Buy HCSS in Biggest Deal Ever, Expanding North America Heavy Civil Software Reach",
+      "url": "https://www.marketbeat.com/instant-alerts/nemetschek-to-buy-hcss-in-biggest-deal-ever-expanding-north-america-heavy-civil-software-reach-2026-04-14/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T12:38:52+00:00",
+      "summary": "Nemetschek (ETR:NEM) announced it has signed a definitive agreement to acquire Heavy Construction Systems Specialists (HCSS), a provider of software for infrastructure and heavy civil construction con",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Thoma Bravo Announces Agreement to Combine HCSS with the Nemetschek Group's Build & Construct Segment and Create Next Global Construction Technology Leader",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/thoma-bravo-announces-agreement-combine-203800328.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T20:38:00+00:00",
+      "summary": "Thoma Bravo, the world's largest software-focused investment firm, today announced it has entered into a definitive agreement to combine HCSS, one of the world's largest heavy civil construction softw",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Possibly Trading Below Estimated Value In April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-stocks-possibly-trading-below-103801242.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T10:38:01+00:00",
+      "summary": "As European markets navigate the complexities of Middle East tensions and energy market volatility, the pan-European STOXX Europe 600 Index has shown resilience, ending a recent week with a notable ga",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Global Market Insights Samsung Electronics And 2 Other Stocks Estimated To Be Trading Below Their Intrinsic Value",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/global-market-insights-samsung-electronics-093753034.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-03T09:37:53+00:00",
+      "summary": "In a global market environment characterized by geopolitical tensions and energy market volatility, investors are seeing major U.S. stock indexes rally amid signs of potential de-escalation in the Mid",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

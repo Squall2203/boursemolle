@@ -1,0 +1,53 @@
+{
+  "ticker": "KOF.PA",
+  "last_updated": "2026-04-22T11:46:06.732206+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "European Dividend Stocks To Boost Your Portfolio",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-boost-portfolio-103145765.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-16T10:31:45+00:00",
+      "summary": "As European markets navigate volatility amid global concerns about AI disruption and a mixed economic landscape, the pan-European STOXX Europe 600 Index recently hit a new high, reflecting some resili",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Dividend Stocks To Consider With Up To 6% Yield",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-consider-053141401.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-16T05:31:41+00:00",
+      "summary": "As European markets experience volatility amid global concerns over AI disruption, the pan-European STOXX Europe 600 Index managed to hit a new high, ending the week with a slight gain. In such an env",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 7.7%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-103201919.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T10:32:01+00:00",
+      "summary": "As the European market experiences a modest recovery, with the pan-European STOXX Europe 600 Index edging higher amid earnings optimism, investors are increasingly looking towards dividend stocks as a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Top European Dividend Stocks For February 2026",
+      "url": "https://finance.yahoo.com/news/top-european-dividend-stocks-february-103229989.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-02T10:32:29+00:00",
+      "summary": "As the eurozone economy continues its modest recovery, bolstered by stronger investment and household consumption, European markets are showing signs of resilience despite ongoing geopolitical uncerta",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Dividend Stocks To Enhance Your Investment Portfolio",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-enhance-investment-053202905.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-02T05:32:02+00:00",
+      "summary": "As the European market experiences a modest recovery, with the STOXX Europe 600 Index rising slightly amid a backdrop of economic optimism and geopolitical concerns, dividend stocks continue to be an ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

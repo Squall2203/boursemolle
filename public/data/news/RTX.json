@@ -1,0 +1,53 @@
+{
+  "ticker": "RTX",
+  "last_updated": "2026-04-22T12:56:54.873554+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "RTX's Pratt & Whitney invests $100 million to increase production capacity, add advanced capabilities in Poland",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/rtxs-pratt-whitney-invests-100-124500500.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:45:00+00:00",
+      "summary": "Pratt & Whitney, an RTX (NYSE: RTX) business, is investing $100 million in its facility in Rzeszów to expand production capacity, add advanced capabilities and meet growing global demand for its comme",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "RTX Q1 Deep Dive: Defense Outperformance and Supply Chain Challenges Shape 2026 Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rtx-q1-deep-dive-defense-123723786.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T12:37:23+00:00",
+      "summary": "Aerospace and defense company Raytheon (NYSE:RTX) reported revenue ahead of Wall Street’s expectations in Q1 CY2026, with sales up 8.7% year on year to $22.08 billion. On the other hand, the company’s",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "RTX Corp (RTX) Q1 2026 Earnings Call Highlights: Strong Growth Amid Supply Chain Challenges",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rtx-corp-rtx-q1-2026-070213450.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:02:13+00:00",
+      "summary": "RTX Corp (RTX) reports robust sales and profit growth, raises full-year outlook despite ongoing supply chain and tariff hurdles.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "RTX (RTX) Is Down 7.7% After Raising 2026 Guidance On Broad-Based Strength - Has The Bull Case Changed?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rtx-rtx-down-7-7-042733764.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T04:27:33+00:00",
+      "summary": "RTX Corporation has already reported first-quarter 2026 results, with sales rising to US$22.08 billion and net income reaching US$2.06 billion, alongside higher earnings per share and a lift to full-y",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Stock Market Today, April 21: Markets in Wait-and-See Mode as Hopes for New U.S.-Iran Peace Talks Fade",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/04/21/stock-market-today-april-21-markets-in-wait-and-see-mode-as-hopes-for-new-u-s-iran-peace-talks-fade/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T22:21:20+00:00",
+      "summary": "Waning peace-talk optimism rattled major U.S. benchmarks as UnitedHealth Group outperformed on strong earnings today, April 21, 2026.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

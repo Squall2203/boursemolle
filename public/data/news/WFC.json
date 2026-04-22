@@ -1,0 +1,53 @@
+{
+  "ticker": "WFC",
+  "last_updated": "2026-04-22T12:54:28.168796+00:00",
+  "sentiment_score": 0.57,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Evergreen Capital Management LLC Buys 26,394 Shares of Wells Fargo & Company $WFC",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-evergreen-capital-management-llc-buys-26394-shares-of-wells-fargo-company-wfc-2026-04-22/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-22T08:04:25+00:00",
+      "summary": "Evergreen Capital Management LLC boosted its position in shares of Wells Fargo & Company (NYSE:WFC) by 77.6% during the 4th quarter, according to its most recent Form 13F filing with the Securities & ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Suncor Energy Stock May Be Worth Watching If Oil Pulls Back",
+      "url": "https://www.insidermonkey.com/blog/suncor-energy-stock-may-be-worth-watching-if-oil-pulls-back-1743320/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-22T06:35:28+00:00",
+      "summary": "Suncor Energy Inc. (NYSE:SU) is among the 13 Best Crude Oil Stocks to Buy According to Analysts. On April 9, Wells Fargo lowered its price target on Suncor Energy Inc. (NYSE:SU) to C$96 from C$97 whil",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Wells Fargo says own YOLO stocks ahead of an expected rush of buying from retail traders",
+      "url": "https://www.businessinsider.com/yolo-stocks-retail-trader-buy-speculative-rally-wells-fargo-investing-2026-4",
+      "source": "businessinsider.com",
+      "published_at": "2026-04-21T20:33:06+00:00",
+      "summary": "Wells Fargo expects retail trader buying to pick up, fueled by tax refunds and lower volatility. It maintains a basket of YOLO stocks favored by retail. NYSEWells Fargo expects increased retail trader",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Wells Fargo Chief’s Stark Warning: No Fed Rate Cuts Until Iran War Fades",
+      "url": "https://www.webpronews.com/wells-fargo-chiefs-stark-warning-no-fed-rate-cuts-until-iran-war-fades/",
+      "source": "webpronews.com",
+      "published_at": "2026-04-21T20:00:07+00:00",
+      "summary": "Wells Fargo CEO Charlie Scharf warns against Fed rate cuts until the Iran conflict resolves, citing oil-driven risks and consumer resilience amid market fragility. Consensus builds for patience as inf",
+      "sentiment": "négatif",
+      "sentiment_score": -0.5
+    },
+    {
+      "title": "Job Cuts Driven By AI Are Rising On Wall Street",
+      "url": "https://news.slashdot.org/story/26/04/21/194240/job-cuts-driven-by-ai-are-rising-on-wall-street?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "source": "slashdot.org",
+      "published_at": "2026-04-21T20:00:00+00:00",
+      "summary": "Firms like Bank of America, Citi, Wells Fargo, and others are reporting strong profits while reducing head count and automating more work. \"All of them credited A.I. to some degree ... in areas rangin",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}
