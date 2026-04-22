@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/news/
+          git add --force public/data/news/
           git commit -m "chore: update news data $(date -u +%F)" || { echo "No changes to commit"; exit 0; }
           git pull origin main --ff-only || git push --force-with-lease origin HEAD:main
           git push origin HEAD:main
