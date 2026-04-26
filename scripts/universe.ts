@@ -117,7 +117,6 @@ const DAX40: TickerEntry[] = [
   { ticker: "BEI.DE", expectedName: "Beiersdorf", indices: ["DAX 40"] },
   { ticker: "BMW.DE", expectedName: "BMW", indices: ["DAX 40"] },
   { ticker: "BNR.DE", expectedName: "Brenntag", indices: ["DAX 40"] },
-  { ticker: "CON.DE", expectedName: "Continental", indices: ["DAX 40"] },
   { ticker: "1COV.DE", expectedName: "Covestro", indices: ["DAX 40"] },
   { ticker: "DBK.DE", expectedName: "Deutsche Bank", indices: ["DAX 40"] },
   { ticker: "DB1.DE", expectedName: "Deutsche Börse", indices: ["DAX 40"] },
