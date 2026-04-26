@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react"
-import { X, Moon, Sun, User, LayoutDashboard, Trophy, LogOut, ChevronDown } from "lucide-react"
+import { X, Moon, Sun, User, LayoutDashboard, Trophy, LogOut, ChevronDown, Sparkles } from "lucide-react"
 import { Link, NavLink, Outlet, useNavigate, useLocation } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { SearchCommand } from "@/components/SearchCommand"
@@ -139,6 +139,18 @@ export function RootLayout() {
               }
             >
               Comparer
+            </NavLink>
+            <NavLink
+              to="/picks"
+              className={({ isActive }) =>
+                cn(
+                  "flex items-center gap-1 transition-colors hover:text-foreground",
+                  isActive ? "font-medium text-foreground" : "text-muted-foreground",
+                )
+              }
+            >
+              <Sparkles className="size-3.5" />
+              AlphaPicks
             </NavLink>
             <NavLink
               to="/leaderboard"

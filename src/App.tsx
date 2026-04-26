@@ -9,6 +9,8 @@ import { PortfolioPage } from "@/pages/PortfolioPage"
 import { ProfilePage } from "@/pages/ProfilePage"
 import { LeaderboardPage } from "@/pages/LeaderboardPage"
 import { DataFreshnessPage } from "@/pages/DataFreshnessPage"
+import { PicksPage } from "@/pages/PicksPage"
+import { PicksDetailPage } from "@/pages/PicksDetailPage"
 import { ProtectedRoute } from "@/components/ProtectedRoute"
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/methodologie" element={<MethodologiePage />} />
         <Route path="/data-freshness" element={<DataFreshnessPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
+        <Route path="/picks" element={<PicksPage />} />
+        <Route path="/picks/:id" element={<PicksDetailPage />} />
         <Route
           path="/portfolio"
           element={
