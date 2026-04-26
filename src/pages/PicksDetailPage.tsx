@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 import { usePicks } from "@/hooks/usePicks"
 import { usePicksHistory } from "@/hooks/usePicksHistory"
+import { StrategyChart } from "@/components/picks/StrategyChart"
 import { formatPrice, formatMarketCap, formatPercent } from "@/lib/format"
 import type { StrategyPick, PickPillars, PicksHistoryPeriod } from "@/types/picks"
 
@@ -433,6 +434,20 @@ export function PicksDetailPage() {
           )}
         </div>
       </div>
+
+      {/* Performance chart */}
+      {strategy.chartData && (
+        <div className="rounded-xl border bg-card px-5 py-4">
+          <p className="text-sm font-semibold mb-0.5">Performance simulée sur l'historique de prix</p>
+          <p className="text-xs text-muted-foreground mb-4">
+            Portefeuille equal-weighted des picks actuels · Rebased à 100 · Données passées sans garantie de résultats futurs
+          </p>
+          <StrategyChart
+            chartData={strategy.chartData}
+            benchmarkName={strategy.benchmarkName}
+          />
+        </div>
+      )}
 
       {/* Table */}
       <div className="rounded-xl border bg-card overflow-x-auto">

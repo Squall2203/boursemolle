@@ -108,6 +108,112 @@ async function fetchBenchmarkPrice(ticker: string): Promise<number | null> {
   }
 }
 
+// ─── Chart data helpers ───────────────────────────────────────────────────────
+
+interface ChartPoint { date: string; value: number }
+
+async function fetchBenchmarkHistory(ticker: string): Promise<ChartPoint[]> {
+  try {
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1wk&range=1y`
+    const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } })
+    if (!r.ok) return []
+    const data = await r.json() as {
+      chart?: {
+        result?: {
+          timestamp?: number[]
+          indicators?: { adjclose?: { adjclose: (number | null)[] }[] }
+        }[]
+      }
+    }
+    const result = data?.chart?.result?.[0]
+    if (!result?.timestamp) return []
+    const timestamps = result.timestamp
+    const closes = result.indicators?.adjclose?.[0]?.adjclose ?? []
+    const points: ChartPoint[] = []
+    for (let i = 0; i < timestamps.length; i++) {
+      const close = closes[i]
+      if (close != null) {
+        const date = new Date(timestamps[i] * 1000).toISOString().split("T")[0]
+        points.push({ date, value: close })
+      }
+    }
+    if (points.length === 0) return []
+    const base = points[0].value
+    return points.map(p => ({ date: p.date, value: Math.round((p.value / base) * 10000) / 100 }))
+  } catch {
+    return []
+  }
+}
+
+function computePortfolioChart(
+  tickers: string[],
+  priceDir: string,
+): ChartPoint[] {
+  const cutoff = new Date()
+  cutoff.setFullYear(cutoff.getFullYear() - 1)
+  const cutoffStr = cutoff.toISOString().split("T")[0]
+
+  // Load & filter candles per ticker
+  const pricesByticker: { ticker: string; candles: { date: string; close: number }[] }[] = []
+  for (const ticker of tickers) {
+    const p = path.join(priceDir, `${ticker}.json`)
+    if (!fs.existsSync(p)) continue
+    try {
+      const raw = JSON.parse(fs.readFileSync(p, "utf8"))
+      const candles = (raw.candles ?? [])
+        .filter((c: { date: string }) => c.date >= cutoffStr)
+        .map((c: { date: string; close: number }) => ({ date: c.date, close: c.close }))
+      if (candles.length > 0) pricesByticker.push({ ticker, candles })
+    } catch { /* skip */ }
+  }
+  if (pricesByticker.length === 0) return []
+
+  // Collect all dates and group by ISO week → keep last date per week
+  const allDates = new Set<string>()
+  for (const { candles } of pricesByticker) for (const c of candles) allDates.add(c.date)
+  const sortedDates = Array.from(allDates).sort()
+
+  const weekMap = new Map<string, string>()
+  for (const date of sortedDates) {
+    const d = new Date(date)
+    const thu = new Date(d); thu.setDate(d.getDate() + (4 - (d.getDay() || 7)))
+    const weekKey = `${thu.getFullYear()}-${String(thu.getMonth() + 1).padStart(2, "0")}-${String(thu.getDate()).padStart(2, "0")}`
+    weekMap.set(weekKey, date)
+  }
+  const weeklyDates = Array.from(weekMap.values()).sort()
+
+  // Build price maps and start prices
+  const maps = pricesByticker.map(({ candles }) => {
+    const m = new Map<string, number>()
+    for (const c of candles) m.set(c.date, c.close)
+    return m
+  })
+  const startPrices = maps.map(m => {
+    for (const d of sortedDates) { const v = m.get(d); if (v != null) return v }
+    return null
+  })
+
+  // Compute equal-weighted indexed values
+  const lastKnown = startPrices.map(p => p ?? 0)
+  const result: ChartPoint[] = []
+
+  for (const date of weeklyDates) {
+    const vals: number[] = []
+    for (let i = 0; i < maps.length; i++) {
+      const sp = startPrices[i]
+      if (sp == null || sp === 0) continue
+      const price = maps[i].get(date)
+      if (price != null) lastKnown[i] = price
+      vals.push((lastKnown[i] / sp) * 100)
+    }
+    if (vals.length > 0) {
+      result.push({ date, value: Math.round((vals.reduce((a, b) => a + b) / vals.length) * 100) / 100 })
+    }
+  }
+
+  return result
+}
+
 // ─── Math helpers ────────────────────────────────────────────────────────────
 
 function lerp(v: number, bps: [number, number][]): number {
@@ -451,8 +557,8 @@ const STRATEGIES: StrategyConfig[] = [
     market: "EU",
     marketLabel: "Europe · Mid Cap",
     description: "Petites et moyennes capitalisations européennes sous-valorisées avec un potentiel de croissance élevé",
-    benchmarkName: "CAC Mid 60",
-    benchmarkTicker: "CACM.PA",
+    benchmarkName: "MSCI Eur. Small Cap",
+    benchmarkTicker: "IQQM.DE",
     size: 10,
     filter: (s) =>
       EU_COUNTRIES.has(s.country) &&
@@ -660,6 +766,11 @@ async function main() {
       console.log(`  Benchmark ${strat.benchmarkTicker}: ${benchmarkPrice.toFixed(2)}`)
     }
 
+    const priceDir = path.join(process.cwd(), "public", "data", "prices")
+    const portfolioChart = computePortfolioChart(picks.map(p => p.ticker), priceDir)
+    const benchmarkChart = await fetchBenchmarkHistory(strat.benchmarkTicker)
+    console.log(`  Chart: ${portfolioChart.length} pts portefeuille, ${benchmarkChart.length} pts benchmark`)
+
     results.push({
       id: strat.id,
       name: strat.name,
@@ -674,6 +785,7 @@ async function main() {
       size: strat.size,
       picks,
       exits,
+      chartData: { portfolio: portfolioChart, benchmark: benchmarkChart },
     })
   }
 

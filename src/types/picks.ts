@@ -32,6 +32,16 @@ export interface StrategyPick {
 
 export type StrategyMarket = "FR" | "EU" | "US" | "WORLD"
 
+export interface ChartPoint {
+  date: string
+  value: number
+}
+
+export interface StrategyChartData {
+  portfolio: ChartPoint[]
+  benchmark: ChartPoint[]
+}
+
 export interface StrategyResult {
   id: string
   name: string
@@ -46,6 +56,7 @@ export interface StrategyResult {
   size: number
   picks: StrategyPick[]
   exits: string[]
+  chartData: StrategyChartData
 }
 
 export interface PicksDataset {
