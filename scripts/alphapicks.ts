@@ -64,6 +64,7 @@ interface StrategyConfig {
   marketLabel: string
   description: string
   benchmarkName: string
+  benchmarkTicker: string
   size: number
   filter: (s: StockData) => boolean
   weights: PickPillars
@@ -91,6 +92,20 @@ interface PicksHistoryPeriod {
 
 interface PicksHistory {
   entries: PicksHistoryPeriod[]
+}
+
+// ─── Benchmark fetch ──────────────────────────────────────────────────────────
+
+async function fetchBenchmarkPrice(ticker: string): Promise<number | null> {
+  try {
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=1d`
+    const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } })
+    if (!r.ok) return null
+    const data = await r.json() as { chart?: { result?: { meta?: { regularMarketPrice?: number } }[] } }
+    return data?.chart?.result?.[0]?.meta?.regularMarketPrice ?? null
+  } catch {
+    return null
+  }
 }
 
 // ─── Math helpers ────────────────────────────────────────────────────────────
@@ -385,6 +400,7 @@ const STRATEGIES: StrategyConfig[] = [
     marketLabel: "France · PEA",
     description: "Actions sous-évaluées PEA-éligibles de la zone euro, sélectionnées sur la valorisation et la solidité financière",
     benchmarkName: "CAC 40",
+    benchmarkTicker: "^FCHI",
     size: 10,
     filter: (s) => s.peaEligible === true && s.price != null && s.marketCap != null && s.marketCap > 500e6,
     weights: { valorisation: 0.38, qualite: 0.22, sante: 0.20, dividende: 0.10, croissance: 0.05, momentum: 0.05 },
@@ -397,6 +413,7 @@ const STRATEGIES: StrategyConfig[] = [
     marketLabel: "Monde entier",
     description: "Champions de la rentabilité et de la création de valeur, sans frontières géographiques",
     benchmarkName: "MSCI World",
+    benchmarkTicker: "CW8.PA",
     size: 12,
     filter: (s) => s.price != null && s.marketCap != null && s.marketCap > 5e9,
     weights: { qualite: 0.38, croissance: 0.25, sante: 0.17, momentum: 0.10, valorisation: 0.10, dividende: 0 },
@@ -409,6 +426,7 @@ const STRATEGIES: StrategyConfig[] = [
     marketLabel: "Europe",
     description: "Rendement élevé et historique de progression régulière du dividende, bilans solides",
     benchmarkName: "Euro Stoxx 50",
+    benchmarkTicker: "^STOXX50E",
     size: 10,
     filter: (s) => (s.dividendYield ?? 0) >= 2.5 && s.price != null && s.marketCap != null && s.marketCap > 1e9,
     weights: { dividende: 0.40, sante: 0.25, qualite: 0.20, valorisation: 0.15, croissance: 0, momentum: 0 },
@@ -420,7 +438,8 @@ const STRATEGIES: StrategyConfig[] = [
     market: "EU",
     marketLabel: "Europe",
     description: "Tendances haussières solides sur les marchés européens, confirmées par les fondamentaux",
-    benchmarkName: "MSCI Europe",
+    benchmarkName: "Euro Stoxx 50",
+    benchmarkTicker: "^STOXX50E",
     size: 10,
     filter: (s) => EU_COUNTRIES.has(s.country) && s.price != null && s.marketCap != null && s.marketCap > 2e9,
     weights: { momentum: 0.45, qualite: 0.25, valorisation: 0.15, croissance: 0.15, sante: 0, dividende: 0 },
@@ -433,6 +452,7 @@ const STRATEGIES: StrategyConfig[] = [
     marketLabel: "Europe · Mid Cap",
     description: "Petites et moyennes capitalisations européennes sous-valorisées avec un potentiel de croissance élevé",
     benchmarkName: "CAC Mid 60",
+    benchmarkTicker: "CACM.PA",
     size: 10,
     filter: (s) =>
       EU_COUNTRIES.has(s.country) &&
@@ -459,7 +479,7 @@ function currentPeriod(): string {
 
 // ─── Main ────────────────────────────────────────────────────────────────────
 
-function main() {
+async function main() {
   const stocksPath = path.join(process.cwd(), "public", "data", "stocks.json")
   const outDir = path.join(process.cwd(), "public", "data", "picks")
   const outPath = path.join(outDir, "latest.json")
@@ -476,7 +496,7 @@ function main() {
 
   // Previous picks for entry/exit detection + performance tracking
   let previousPicks: Record<string, string[]> = {}
-  let previousDataset: { period: string; generatedAt: string; strategies: { id: string; picks: { ticker: string; name: string; price: number | null }[] }[] } | null = null
+  let previousDataset: { period: string; generatedAt: string; strategies: { id: string; benchmarkPrice?: number | null; picks: { ticker: string; name: string; price: number | null }[] }[] } | null = null
 
   if (fs.existsSync(outPath)) {
     try {
@@ -524,6 +544,38 @@ function main() {
     let history: PicksHistory = { entries: [] }
     if (fs.existsSync(histPath)) {
       try { history = JSON.parse(fs.readFileSync(histPath, "utf8")) } catch { /* ignore */ }
+    }
+
+    // Fetch current benchmark prices for return computation
+    const benchmarkTickerMap = new Map<string, string>()
+    for (const strat of STRATEGIES) {
+      benchmarkTickerMap.set(strat.id, strat.benchmarkTicker)
+    }
+
+    for (const [id, entry] of Object.entries(strategyResults)) {
+      const bmTicker = benchmarkTickerMap.get(id)
+      if (!bmTicker) continue
+
+      const prevStrat = previousDataset.strategies.find((s) => s.id === id)
+      const bmEntryPrice = prevStrat?.benchmarkPrice ?? null
+      const bmExitPrice = await fetchBenchmarkPrice(bmTicker)
+
+      const bmReturn =
+        bmEntryPrice != null && bmExitPrice != null
+          ? Math.round(((bmExitPrice - bmEntryPrice) / bmEntryPrice) * 10000) / 100
+          : null
+      const alpha =
+        entry.portfolioReturn != null && bmReturn != null
+          ? Math.round((entry.portfolioReturn - bmReturn) * 100) / 100
+          : null
+
+      entry.benchmarkReturn = bmReturn
+      entry.alpha = alpha
+
+      if (bmReturn != null) {
+        const sign = bmReturn >= 0 ? "+" : ""
+        console.log(`  ${id} benchmark: ${sign}${bmReturn.toFixed(2)}% | alpha: ${alpha != null ? (alpha >= 0 ? "+" : "") + alpha.toFixed(2) + "%" : "n/a"}`)
+      }
     }
 
     history.entries = history.entries.filter((e) => e.period !== previousDataset!.period)
@@ -603,6 +655,11 @@ function main() {
 
     console.log(`  Top 3: ${picks.slice(0, 3).map(p => `${p.ticker} (${p.score.toFixed(1)})`).join(", ")}`)
 
+    const benchmarkPrice = await fetchBenchmarkPrice(strat.benchmarkTicker)
+    if (benchmarkPrice != null) {
+      console.log(`  Benchmark ${strat.benchmarkTicker}: ${benchmarkPrice.toFixed(2)}`)
+    }
+
     results.push({
       id: strat.id,
       name: strat.name,
@@ -612,6 +669,8 @@ function main() {
       description: strat.description,
       engine: "rule_based" as const,
       benchmarkName: strat.benchmarkName,
+      benchmarkTicker: strat.benchmarkTicker,
+      benchmarkPrice,
       size: strat.size,
       picks,
       exits,
@@ -632,4 +691,4 @@ function main() {
   console.log(`   ${results.length} stratégies · ${results.reduce((s, r) => s + r.picks.length, 0)} sélections au total`)
 }
 
-main()
+main().catch((e) => { console.error(e); process.exit(1) })

@@ -245,6 +245,20 @@ function PerfRow({
             </span>
           ) : "—"}
         </td>
+        <td className="px-3 py-3 text-sm tabular-nums text-muted-foreground">
+          {strat.benchmarkReturn != null ? (
+            <span className={strat.benchmarkReturn >= 0 ? "text-foreground" : "text-red-400"}>
+              {strat.benchmarkReturn >= 0 ? "+" : ""}{strat.benchmarkReturn.toFixed(2)}%
+            </span>
+          ) : "—"}
+        </td>
+        <td className={cn("px-3 py-3 text-sm font-semibold tabular-nums",
+          strat.alpha == null ? "text-muted-foreground"
+          : strat.alpha > 0 ? "text-emerald-600 dark:text-emerald-400"
+          : "text-red-500"
+        )}>
+          {strat.alpha != null ? `${strat.alpha > 0 ? "+" : ""}${strat.alpha.toFixed(2)}%` : "—"}
+        </td>
         <td className="px-3 py-3 text-sm tabular-nums text-emerald-600 dark:text-emerald-400">
           {sortedPicks[0]?.return != null
             ? `${sortedPicks[0].ticker} ${sortedPicks[0].return >= 0 ? "+" : ""}${sortedPicks[0].return.toFixed(1)}%`
@@ -261,7 +275,7 @@ function PerfRow({
       </tr>
       {open && (
         <tr>
-          <td colSpan={5} className="p-0">
+          <td colSpan={7} className="p-0">
             <div className="border-t border-border/50 bg-muted/20 px-5 py-3">
               <table className="w-full text-xs">
                 <thead>
@@ -329,6 +343,8 @@ function PerformanceHistory({ strategyId }: { strategyId: string }) {
           <tr className="border-b text-[11px] text-muted-foreground uppercase tracking-wider">
             <th className="pl-5 pr-3 py-2.5 text-left font-medium">Période</th>
             <th className="px-3 py-2.5 text-left font-medium">Portefeuille</th>
+            <th className="px-3 py-2.5 text-left font-medium">Benchmark</th>
+            <th className="px-3 py-2.5 text-left font-medium">Alpha</th>
             <th className="px-3 py-2.5 text-left font-medium">Meilleur pick</th>
             <th className="px-3 py-2.5 text-left font-medium">Pire pick</th>
             <th className="pl-3 pr-5 py-2.5 w-8" />

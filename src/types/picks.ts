@@ -41,6 +41,8 @@ export interface StrategyResult {
   description: string
   engine: "rule_based" | "ml"
   benchmarkName: string
+  benchmarkTicker: string
+  benchmarkPrice: number | null
   size: number
   picks: StrategyPick[]
   exits: string[]
@@ -65,6 +67,8 @@ export interface PickHistoryItem {
 
 export interface StrategyHistoryEntry {
   portfolioReturn: number | null
+  benchmarkReturn: number | null
+  alpha: number | null
   picks: PickHistoryItem[]
 }
 

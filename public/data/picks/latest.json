@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T21:32:01.769Z",
+  "generatedAt": "2026-04-26T21:50:37.104Z",
   "period": "2026-04",
   "nextUpdate": "2026-04-30",
   "strategies": [
@@ -12,6 +12,8 @@
       "description": "Actions sous-évaluées PEA-éligibles de la zone euro, sélectionnées sur la valorisation et la solidité financière",
       "engine": "rule_based",
       "benchmarkName": "CAC 40",
+      "benchmarkTicker": "^FCHI",
+      "benchmarkPrice": 8157.82,
       "size": 10,
       "picks": [
         {
@@ -296,6 +298,8 @@
       "description": "Champions de la rentabilité et de la création de valeur, sans frontières géographiques",
       "engine": "rule_based",
       "benchmarkName": "MSCI World",
+      "benchmarkTicker": "CW8.PA",
+      "benchmarkPrice": 635.725,
       "size": 12,
       "picks": [
         {
@@ -634,6 +638,8 @@
       "description": "Rendement élevé et historique de progression régulière du dividende, bilans solides",
       "engine": "rule_based",
       "benchmarkName": "Euro Stoxx 50",
+      "benchmarkTicker": "^STOXX50E",
+      "benchmarkPrice": 5883.48,
       "size": 10,
       "picks": [
         {
@@ -917,7 +923,9 @@
       "marketLabel": "Europe",
       "description": "Tendances haussières solides sur les marchés européens, confirmées par les fondamentaux",
       "engine": "rule_based",
-      "benchmarkName": "MSCI Europe",
+      "benchmarkName": "Euro Stoxx 50",
+      "benchmarkTicker": "^STOXX50E",
+      "benchmarkPrice": 5883.48,
       "size": 10,
       "picks": [
         {
@@ -1202,6 +1210,8 @@
       "description": "Petites et moyennes capitalisations européennes sous-valorisées avec un potentiel de croissance élevé",
       "engine": "rule_based",
       "benchmarkName": "CAC Mid 60",
+      "benchmarkTicker": "CACM.PA",
+      "benchmarkPrice": 193.34,
       "size": 10,
       "picks": [
         {
