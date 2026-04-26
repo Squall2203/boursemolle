@@ -1,0 +1,45 @@
+name: Monthly AlphaPicks
+
+on:
+  schedule:
+    - cron: "0 7 1 * *"  # 7h00 UTC le 1er de chaque mois (après l'ingest quotidien)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alphapicks-update
+  cancel-in-progress: true
+
+jobs:
+  alphapicks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Run AlphaPicks scoring
+        run: pnpm tsx scripts/alphapicks.ts
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/picks/
+          git commit -m "chore: update AlphaPicks $(date -u +%Y-%m)" || { echo "No changes to commit"; exit 0; }
+          git pull origin main --ff-only || git push --force-with-lease origin HEAD:main
+          git push origin HEAD:main
