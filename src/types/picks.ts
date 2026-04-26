@@ -52,3 +52,29 @@ export interface PicksDataset {
   nextUpdate: string
   strategies: StrategyResult[]
 }
+
+// ─── Performance history ──────────────────────────────────────────────────────
+
+export interface PickHistoryItem {
+  ticker: string
+  name: string
+  entryPrice: number | null
+  exitPrice: number | null
+  return: number | null
+}
+
+export interface StrategyHistoryEntry {
+  portfolioReturn: number | null
+  picks: PickHistoryItem[]
+}
+
+export interface PicksHistoryPeriod {
+  period: string
+  generatedAt: string
+  evaluatedAt: string
+  strategies: Record<string, StrategyHistoryEntry>
+}
+
+export interface PicksHistory {
+  entries: PicksHistoryPeriod[]
+}

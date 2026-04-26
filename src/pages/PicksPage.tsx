@@ -1,10 +1,11 @@
 import { useMemo } from "react"
 import { Link } from "react-router-dom"
-import { ArrowRight, Calendar, RefreshCw, Sparkles } from "lucide-react"
+import { ArrowRight, Calendar, RefreshCw, Sparkles, TrendingDown, TrendingUp } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 import { usePicks } from "@/hooks/usePicks"
+import { usePicksHistory } from "@/hooks/usePicksHistory"
 import type { StrategyResult } from "@/types/picks"
 
 const MARKET_FLAG: Record<string, string> = {
@@ -47,7 +48,7 @@ function MiniScoreBar({ score }: { score: number }) {
 
 // ─── Strategy card ────────────────────────────────────────────────────────────
 
-function StrategyCard({ strategy }: { strategy: StrategyResult }) {
+function StrategyCard({ strategy, lastPerf }: { strategy: StrategyResult; lastPerf?: number | null }) {
   const avgScore = useMemo(() => {
     if (!strategy.picks.length) return null
     return strategy.picks.reduce((s, p) => s + p.score, 0) / strategy.picks.length
@@ -120,6 +121,17 @@ function StrategyCard({ strategy }: { strategy: StrategyResult }) {
                   +{newCount} nouveau{newCount > 1 ? "x" : ""}
                 </span>
               )}
+              {lastPerf != null && (
+                <span className={cn(
+                  "flex items-center gap-0.5 font-medium",
+                  lastPerf >= 0 ? "text-emerald-600 dark:text-emerald-400" : "text-red-500",
+                )}>
+                  {lastPerf >= 0
+                    ? <TrendingUp className="size-3" />
+                    : <TrendingDown className="size-3" />}
+                  {lastPerf >= 0 ? "+" : ""}{lastPerf.toFixed(1)}% mois préc.
+                </span>
+              )}
             </div>
             <span className="flex items-center gap-1 text-xs font-medium text-primary group-hover:gap-1.5 transition-all">
               Voir les sélections
@@ -136,6 +148,17 @@ function StrategyCard({ strategy }: { strategy: StrategyResult }) {
 
 export function PicksPage() {
   const { data, loading, error } = usePicks()
+  const { data: history } = usePicksHistory()
+
+  const lastPerfByStrategy = useMemo(() => {
+    const latest = history?.entries[0]
+    if (!latest) return {}
+    const out: Record<string, number | null> = {}
+    for (const [id, entry] of Object.entries(latest.strategies)) {
+      out[id] = entry.portfolioReturn
+    }
+    return out
+  }, [history])
 
   if (loading) {
     return (
@@ -211,7 +234,11 @@ export function PicksPage() {
       {/* Strategy grid */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {data.strategies.map((strategy) => (
-          <StrategyCard key={strategy.id} strategy={strategy} />
+          <StrategyCard
+            key={strategy.id}
+            strategy={strategy}
+            lastPerf={lastPerfByStrategy[strategy.id]}
+          />
         ))}
       </div>
 

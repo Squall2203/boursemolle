@@ -69,6 +69,30 @@ interface StrategyConfig {
   weights: PickPillars
 }
 
+interface PickHistoryItem {
+  ticker: string
+  name: string
+  entryPrice: number | null
+  exitPrice: number | null
+  return: number | null
+}
+
+interface StrategyHistoryEntry {
+  portfolioReturn: number | null
+  picks: PickHistoryItem[]
+}
+
+interface PicksHistoryPeriod {
+  period: string
+  generatedAt: string
+  evaluatedAt: string
+  strategies: Record<string, StrategyHistoryEntry>
+}
+
+interface PicksHistory {
+  entries: PicksHistoryPeriod[]
+}
+
 // ─── Math helpers ────────────────────────────────────────────────────────────
 
 function lerp(v: number, bps: [number, number][]): number {
@@ -450,15 +474,74 @@ function main() {
 
   console.log(`📊 Univers : ${allStocks.length} actions`)
 
-  // Previous picks for entry/exit detection
+  // Previous picks for entry/exit detection + performance tracking
   let previousPicks: Record<string, string[]> = {}
+  let previousDataset: { period: string; generatedAt: string; strategies: { id: string; picks: { ticker: string; name: string; price: number | null }[] }[] } | null = null
+
   if (fs.existsSync(outPath)) {
     try {
       const prev = JSON.parse(fs.readFileSync(outPath, "utf8"))
+      previousDataset = prev
       for (const s of prev.strategies ?? []) {
         previousPicks[s.id] = (s.picks ?? []).map((p: { ticker: string }) => p.ticker)
       }
     } catch { /* ignore */ }
+  }
+
+  // Performance computation — runs when a new month starts
+  const period = currentPeriod()
+  if (previousDataset && previousDataset.period && previousDataset.period !== period) {
+    console.log(`\n📈 Calcul des performances pour la période ${previousDataset.period}...`)
+
+    const priceMap = new Map<string, number>()
+    for (const s of allStocks) {
+      if (s.price != null) priceMap.set(s.ticker, s.price)
+    }
+
+    const strategyResults: Record<string, StrategyHistoryEntry> = {}
+    for (const prevStrat of previousDataset.strategies) {
+      const picks: PickHistoryItem[] = []
+      let totalReturn = 0
+      let count = 0
+
+      for (const pick of prevStrat.picks) {
+        const exitPrice = priceMap.get(pick.ticker) ?? null
+        const ret =
+          exitPrice != null && pick.price != null
+            ? Math.round(((exitPrice - pick.price) / pick.price) * 10000) / 100
+            : null
+        picks.push({ ticker: pick.ticker, name: pick.name, entryPrice: pick.price, exitPrice, return: ret })
+        if (ret != null) { totalReturn += ret; count++ }
+      }
+
+      strategyResults[prevStrat.id] = {
+        portfolioReturn: count > 0 ? Math.round((totalReturn / count) * 100) / 100 : null,
+        picks,
+      }
+    }
+
+    const histPath = path.join(outDir, "history.json")
+    let history: PicksHistory = { entries: [] }
+    if (fs.existsSync(histPath)) {
+      try { history = JSON.parse(fs.readFileSync(histPath, "utf8")) } catch { /* ignore */ }
+    }
+
+    history.entries = history.entries.filter((e) => e.period !== previousDataset!.period)
+    history.entries.unshift({
+      period: previousDataset.period,
+      generatedAt: previousDataset.generatedAt,
+      evaluatedAt: new Date().toISOString(),
+      strategies: strategyResults,
+    })
+
+    fs.writeFileSync(histPath, JSON.stringify(history, null, 2))
+    console.log("  ✅ history.json mis à jour")
+    for (const [id, data] of Object.entries(strategyResults)) {
+      if (data.portfolioReturn != null) {
+        const sign = data.portfolioReturn >= 0 ? "+" : ""
+        console.log(`  ${id}: ${sign}${data.portfolioReturn.toFixed(2)}%`)
+      }
+    }
   }
 
   // Sector PE medians for valuation calibration
@@ -539,7 +622,7 @@ function main() {
 
   const output = {
     generatedAt: new Date().toISOString(),
-    period: currentPeriod(),
+    period,
     nextUpdate: nextFirstOfMonth(),
     strategies: results,
   }
