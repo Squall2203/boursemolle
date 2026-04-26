@@ -34,7 +34,8 @@ import {
 } from "@/lib/format"
 import { type StockScore } from "@/lib/scoring"
 import { getFreshness, freshnessColor } from "@/lib/freshness"
-import { LetterGrade, getGrade } from "@/components/LetterGrade"
+import { LetterGrade } from "@/components/LetterGrade"
+import { getGrade } from "@/lib/grades"
 import { useViewMode } from "@/hooks/useViewMode"
 import type { Stock } from "@/types/stock"
 
@@ -164,7 +165,7 @@ const ALL_COLUMNS: ColumnDef[] = [
   {
     key: "marketCap", label: "Capi", align: "right", group: "Valorisation",
     getValue: (s) => s.marketCap,
-    format: (s) => formatMarketCap(s.marketCap),
+    format: (s) => formatMarketCap(s.marketCap, s.currency),
   },
   {
     key: "price", label: "Prix", align: "right", group: "Prix",
@@ -379,7 +380,7 @@ function getStoredColumns(): string[] {
       const parsed = JSON.parse(v) as string[]
       if (Array.isArray(parsed) && parsed.length > 0) return parsed
     }
-  } catch {}
+  } catch { /* ignore localStorage errors */ }
   return DEFAULT_VISIBLE
 }
 
@@ -411,7 +412,7 @@ function getStoredPageSize(): number {
   try {
     const v = localStorage.getItem(LS_KEY)
     if (v != null) return Number(v)
-  } catch {}
+  } catch { /* ignore localStorage errors */ }
   return 50
 }
 
@@ -432,7 +433,7 @@ function exportCsv(stocks: Stock[], columns: ColumnDef[], scoreMap: Map<string, 
   a.href = url
   a.download = `boursemolle-${new Date().toISOString().split("T")[0]}.csv`
   a.click()
-  URL.revokeObjectURL(url)
+  setTimeout(() => URL.revokeObjectURL(url), 100)
 }
 
 export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
@@ -452,23 +453,21 @@ export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
   function toggleColumn(key: string) {
     setVisibleKeys((prev) => {
       const next = prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
-      try { localStorage.setItem(LS_COLS_KEY, JSON.stringify(next)) } catch {}
+      try { localStorage.setItem(LS_COLS_KEY, JSON.stringify(next)) } catch { /* ignore */ }
       return next
     })
   }
 
   function resetColumns() {
     setVisibleKeys(DEFAULT_VISIBLE)
-    try { localStorage.setItem(LS_COLS_KEY, JSON.stringify(DEFAULT_VISIBLE)) } catch {}
+    try { localStorage.setItem(LS_COLS_KEY, JSON.stringify(DEFAULT_VISIBLE)) } catch { /* ignore */ }
   }
-
-  const filteredStocks = stocks
 
   const effectiveSortKey = isSimple && !SIMPLE_COLUMN_KEYS.includes(sortKey) ? "score_letter" : sortKey
 
   const sorted = useMemo(() => {
     const col = ALL_COLUMNS.find((c) => c.key === effectiveSortKey) ?? SIMPLE_COLUMNS.find((c) => c.key === effectiveSortKey)
-    const copy = [...filteredStocks]
+    const copy = [...stocks]
     copy.sort((a, b) => {
       if (effectiveSortKey === "score" || effectiveSortKey === "score_letter") {
         const sa = scoreMap.get(a.ticker)?.total ?? 0
@@ -479,7 +478,7 @@ export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
       return compareValues(col.getValue(a), col.getValue(b), sortDir)
     })
     return copy
-  }, [filteredStocks, effectiveSortKey, sortDir, scoreMap])
+  }, [stocks, effectiveSortKey, sortDir, scoreMap])
 
   const effectivePageSize = pageSize === 0 ? sorted.length : pageSize
   const totalPages = Math.max(1, Math.ceil(sorted.length / (effectivePageSize || 1)))
@@ -626,7 +625,7 @@ export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
               const n = Number(v)
               setPageSize(n)
               setPage(0)
-              try { localStorage.setItem(LS_KEY, String(n)) } catch {}
+              try { localStorage.setItem(LS_KEY, String(n)) } catch { /* ignore */ }
             }}
           >
             <SelectTrigger className="h-8 w-20">

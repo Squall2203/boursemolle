@@ -7,8 +7,6 @@ interface DividendSparklineProps {
 }
 
 export function DividendSparkline({ dividends, currency }: DividendSparklineProps) {
-  if (dividends.length < 2) return null
-
   const symbol = currency === "EUR" ? "€" : currency
 
   const { bars, maxTotal } = useMemo(() => {
@@ -21,7 +19,7 @@ export function DividendSparkline({ dividends, currency }: DividendSparklineProp
     return { bars, maxTotal }
   }, [dividends])
 
-  if (maxTotal === 0) return null
+  if (dividends.length < 2 || maxTotal === 0) return null
 
   return (
     <div className="space-y-2">

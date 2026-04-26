@@ -21,12 +21,12 @@ function loadSaved(): SavedScreener[] {
   try {
     const v = localStorage.getItem(LS_KEY)
     if (v) return JSON.parse(v) as SavedScreener[]
-  } catch {}
+  } catch { /* ignore localStorage errors */ }
   return []
 }
 
 function persistSaved(screeners: SavedScreener[]) {
-  try { localStorage.setItem(LS_KEY, JSON.stringify(screeners)) } catch {}
+  try { localStorage.setItem(LS_KEY, JSON.stringify(screeners)) } catch { /* ignore */ }
 }
 
 interface SavedScreenersProps {

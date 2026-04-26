@@ -83,6 +83,7 @@ export function useProfile() {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     load()
   }, [user?.id]) // eslint-disable-line react-hooks/exhaustive-deps
 

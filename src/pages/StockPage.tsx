@@ -12,6 +12,7 @@ import { DividendSparkline } from "@/components/stock/DividendSparkline"
 import { TechnicalAnalysisPanel } from "@/components/stock/TechnicalAnalysisPanel"
 import { analyzeTechnicals } from "@/lib/technicalAnalysis"
 import { ExpertsSection } from "@/components/stock/ExpertsSection"
+import { StockNewsCard } from "@/components/stock/StockNewsCard"
 import { FreshnessBadge } from "@/components/FreshnessBadge"
 import { cn } from "@/lib/utils"
 import { computeScore } from "@/lib/scoring"
@@ -27,12 +28,12 @@ export function StockPage() {
   const { ticker } = useParams<{ ticker: string }>()
   const { data: dataset, loading: stocksLoading } = useStocks()
   const { data: priceData, loading: pricesLoading } = usePriceHistory(ticker ?? "")
-  const { isSimple } = useViewMode()
+  const { isSimple, setMode } = useViewMode()
   const { user, openAuthModal } = useAuth()
   const { openTradeModal } = usePortfolio()
   const { trackStockView, awardXP } = useXP()
 
-  const allStocks = dataset?.stocks ?? []
+  const allStocks = useMemo(() => dataset?.stocks ?? [], [dataset])
   const stock = allStocks.find((s) => s.ticker === ticker)
 
   // Track view + XP (once per ticker per mount, only when stock is loaded)
@@ -136,7 +137,7 @@ export function StockPage() {
             </>
           )}
           <Separator />
-          <SimpleFundamentalsCard score={score} onSwitchExpert={() => {}} />
+          <SimpleFundamentalsCard score={score} onSwitchExpert={() => setMode("expert")} />
         </>
       ) : (
         <>
@@ -191,6 +192,8 @@ export function StockPage() {
 
       <Separator />
       <ExpertsSection ticker={stock.ticker} simple={isSimple} />
+
+      <StockNewsCard ticker={stock.ticker} />
 
       {stock.description && (
         <>

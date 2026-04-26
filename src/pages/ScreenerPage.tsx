@@ -21,7 +21,7 @@ export function ScreenerPage() {
   const { filters, setFilters, resetFilters } = useScreenerFilters()
   const { isSimple } = useViewMode()
 
-  const allStocks = data?.stocks ?? []
+  const allStocks = useMemo(() => data?.stocks ?? [], [data])
 
   // Market counts for pills
   const marketCounts = useMemo(() => {

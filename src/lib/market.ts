@@ -4,14 +4,16 @@ export type MarketFilter = "" | "pea" | "us" | "asia"
 export type StockRegion = "eu" | "us" | "asia"
 
 const US_EXCHANGES = new Set(["NYSE", "NasdaqGS", "NasdaqGM", "NYSEArca", "NASDAQ"])
-const ASIA_EXCHANGES = new Set(["Tokyo", "HKSE", "YHD"])
-const ASIA_COUNTRIES = new Set(["Japan", "China", "Hong Kong"])
+const ASIA_EXCHANGES = new Set(["Tokyo", "HKSE"])
+const ASIA_COUNTRIES = new Set(["Japan", "China", "Hong Kong", "South Korea", "Taiwan", "Singapore"])
 const US_COUNTRIES = new Set(["United States"])
 
-
 export function getStockRegion(stock: Stock): StockRegion {
-  if (US_EXCHANGES.has(stock.exchange) || US_COUNTRIES.has(stock.country)) return "us"
-  if (ASIA_EXCHANGES.has(stock.exchange) || ASIA_COUNTRIES.has(stock.country)) return "asia"
+  // Country takes priority over exchange to avoid misclassification of dual-listed stocks
+  if (US_COUNTRIES.has(stock.country)) return "us"
+  if (ASIA_COUNTRIES.has(stock.country)) return "asia"
+  if (US_EXCHANGES.has(stock.exchange)) return "us"
+  if (ASIA_EXCHANGES.has(stock.exchange)) return "asia"
   return "eu"
 }
 

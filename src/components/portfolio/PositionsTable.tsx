@@ -7,6 +7,10 @@ import type { Stock } from "@/types/stock"
 import type { DbPosition } from "@/contexts/PortfolioContext"
 import { usePortfolio } from "@/contexts/PortfolioContext"
 
+function tradeCurrency(currency: string | undefined): string {
+  return currency === "GBp" ? "GBP" : (currency ?? "EUR")
+}
+
 export interface EnrichedPosition extends DbPosition {
   stock: Stock | undefined
   currentPrice: number | null
@@ -71,16 +75,16 @@ export function PositionsTable({ positions }: PositionsTableProps) {
                   {pos.weight.toFixed(1)}%
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums">
-                  {formatPrice(pos.avg_price, pos.stock?.currency)}
+                  {formatPrice(pos.avg_price, tradeCurrency(pos.stock?.currency))}
                 </td>
                 <td className="px-4 py-3 text-right tabular-nums">
                   {pos.currentPrice != null
-                    ? formatPrice(pos.currentPrice, pos.stock?.currency)
+                    ? formatPrice(pos.currentPrice, tradeCurrency(pos.stock?.currency))
                     : "—"}
                 </td>
                 <td className={cn("px-4 py-3 text-right tabular-nums font-medium", isPos ? "text-emerald-600" : "text-red-500")}>
                   {isPos ? "+" : ""}
-                  {formatPrice(pos.pl)}
+                  {formatPrice(pos.pl, tradeCurrency(pos.stock?.currency))}
                 </td>
                 <td className={cn("px-4 py-3 text-right tabular-nums font-medium", isPos ? "text-emerald-600" : "text-red-500")}>
                   {formatPercent(pos.plPercent, true)}

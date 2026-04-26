@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react"
+import { createContext, useContext, useEffect, useState, useCallback, type ReactNode } from "react"
 import { supabase } from "@/lib/supabase"
 import { useAuth } from "@/contexts/AuthContext"
 import { useXP } from "@/contexts/XPContext"
@@ -49,6 +49,9 @@ interface PortfolioContextValue {
   executeBuy: (ticker: string, quantity: number, price: number) => Promise<{ error: string | null }>
   executeSell: (ticker: string, quantity: number, price: number) => Promise<{ error: string | null }>
   refetch: () => Promise<void>
+  saveSnapshot: (totalValue: number, cashBalance: number, positionsValue: number) => Promise<void>
+  togglePublic: () => Promise<void>
+  resetPortfolio: () => Promise<{ error: string | null }>
   tradeModalStock: Stock | null
   tradeModalType: "buy" | "sell"
   openTradeModal: (stock: Stock, type?: "buy" | "sell") => void
@@ -59,7 +62,7 @@ const PortfolioContext = createContext<PortfolioContextValue | null>(null)
 
 export function PortfolioProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth()
-  const { awardXP, grantBadge, tradeCount } = useXP()
+  const { awardXP, grantBadge, incrementTradeCount } = useXP()
   const [portfolios, setPortfolios] = useState<DbPortfolio[]>([])
   const [activePortfolioId, setActivePortfolioId] = useState<number | null>(null)
   const [positions, setPositions] = useState<DbPosition[]>([])
@@ -69,6 +72,20 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
   const [tradeModalType, setTradeModalType] = useState<"buy" | "sell">("buy")
 
   const activePortfolio = portfolios.find((p) => p.id === activePortfolioId) ?? null
+
+  const loadPortfolioData = useCallback(async (portfolioId: number) => {
+    const [{ data: pos }, { data: tx }] = await Promise.all([
+      supabase.from("positions").select("*").eq("portfolio_id", portfolioId),
+      supabase
+        .from("transactions")
+        .select("*")
+        .eq("portfolio_id", portfolioId)
+        .order("executed_at", { ascending: false })
+        .limit(100),
+    ])
+    setPositions(pos ?? [])
+    setTransactions(tx ?? [])
+  }, [])
 
   async function loadAll(userId: string) {
     setLoading(true)
@@ -86,38 +103,15 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
     setActivePortfolioId(firstId)
 
     if (firstId) {
-      const [{ data: pos }, { data: tx }] = await Promise.all([
-        supabase.from("positions").select("*").eq("portfolio_id", firstId),
-        supabase
-          .from("transactions")
-          .select("*")
-          .eq("portfolio_id", firstId)
-          .order("executed_at", { ascending: false })
-          .limit(100),
-      ])
-      setPositions(pos ?? [])
-      setTransactions(tx ?? [])
+      await loadPortfolioData(firstId)
     }
 
     setLoading(false)
   }
 
-  async function loadPortfolioData(portfolioId: number) {
-    const [{ data: pos }, { data: tx }] = await Promise.all([
-      supabase.from("positions").select("*").eq("portfolio_id", portfolioId),
-      supabase
-        .from("transactions")
-        .select("*")
-        .eq("portfolio_id", portfolioId)
-        .order("executed_at", { ascending: false })
-        .limit(100),
-    ])
-    setPositions(pos ?? [])
-    setTransactions(tx ?? [])
-  }
-
   useEffect(() => {
     if (!user) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPortfolios([])
       setPositions([])
       setTransactions([])
@@ -128,8 +122,9 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
   }, [user?.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (activePortfolioId) loadPortfolioData(activePortfolioId)
-  }, [activePortfolioId]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [activePortfolioId, loadPortfolioData])
 
   async function refetch() {
     if (!user) return
@@ -147,6 +142,40 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
       await loadPortfolioData(targetId)
       if (!activePortfolioId) setActivePortfolioId(targetId)
     }
+  }
+
+  async function saveSnapshot(
+    totalValue: number,
+    cashBalance: number,
+    positionsValue: number,
+  ) {
+    if (!activePortfolioId) return
+    await supabase.rpc("upsert_portfolio_snapshot", {
+      p_portfolio_id: activePortfolioId,
+      p_total_value: totalValue,
+      p_cash_balance: cashBalance,
+      p_positions_value: positionsValue,
+    })
+  }
+
+  async function togglePublic() {
+    if (!activePortfolio) return
+    const newValue = !activePortfolio.is_public
+    await supabase
+      .from("portfolios")
+      .update({ is_public: newValue })
+      .eq("id", activePortfolio.id)
+    setPortfolios((prev) =>
+      prev.map((p) => (p.id === activePortfolio.id ? { ...p, is_public: newValue } : p)),
+    )
+  }
+
+  async function resetPortfolio(): Promise<{ error: string | null }> {
+    if (!activePortfolioId) return { error: "Aucun portefeuille actif" }
+    const { error } = await supabase.rpc("reset_portfolio", { p_portfolio_id: activePortfolioId })
+    if (error) return { error: error.message }
+    await refetch()
+    return { error: null }
   }
 
   async function createPortfolio(name: string): Promise<DbPortfolio | null> {
@@ -178,16 +207,16 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
 
     const existingPos = positions.find((p) => p.ticker === ticker)
 
-    const { error: txErr } = await supabase.from("transactions").insert({
-      portfolio_id: activePortfolio.id,
-      ticker,
-      type: "buy",
-      quantity,
-      price,
-      total,
-    })
+    // Step 1: Insert transaction record
+    const { data: tx, error: txErr } = await supabase
+      .from("transactions")
+      .insert({ portfolio_id: activePortfolio.id, ticker, type: "buy", quantity, price, total })
+      .select()
+      .single()
     if (txErr) return { error: txErr.message }
 
+    // Step 2: Update or create position
+    let posError: string | null = null
     if (existingPos) {
       const newQty = existingPos.quantity + quantity
       const newAvg = (existingPos.avg_price * existingPos.quantity + price * quantity) / newQty
@@ -195,31 +224,53 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
         .from("positions")
         .update({ quantity: newQty, avg_price: newAvg })
         .eq("id", existingPos.id)
-      if (error) return { error: error.message }
+      if (error) posError = error.message
     } else {
-      const { error } = await supabase.from("positions").insert({
-        portfolio_id: activePortfolio.id,
-        ticker,
-        quantity,
-        avg_price: price,
-      })
-      if (error) return { error: error.message }
+      const { error } = await supabase
+        .from("positions")
+        .insert({ portfolio_id: activePortfolio.id, ticker, quantity, avg_price: price })
+      if (error) posError = error.message
     }
 
+    if (posError) {
+      // Rollback: delete the transaction record
+      await supabase.from("transactions").delete().eq("id", tx.id)
+      await refetch()
+      return { error: posError }
+    }
+
+    // Step 3: Deduct cash balance
     const { error: cashErr } = await supabase
       .from("portfolios")
       .update({ cash_balance: activePortfolio.cash_balance - total })
       .eq("id", activePortfolio.id)
-    if (cashErr) return { error: cashErr.message }
+
+    if (cashErr) {
+      // Rollback: undo position and transaction
+      if (existingPos) {
+        await supabase
+          .from("positions")
+          .update({ quantity: existingPos.quantity, avg_price: existingPos.avg_price })
+          .eq("id", existingPos.id)
+      } else {
+        await supabase
+          .from("positions")
+          .delete()
+          .eq("ticker", ticker)
+          .eq("portfolio_id", activePortfolio.id)
+      }
+      await supabase.from("transactions").delete().eq("id", tx.id)
+      await refetch()
+      return { error: cashErr.message }
+    }
 
     await refetch()
 
-    // XP + badge premier trade
+    // XP + badge
     const a = XP_ACTIONS.TRADE
     await awardXP(a.action, a.xp, a.dailyMax, "Ordre exécuté")
-    if (tradeCount === 0) {
-      await grantBadge("first_trade", "🎬", "Premier trade")
-    }
+    await grantBadge("first_trade", "🎬", "Premier trade")
+    incrementTradeCount()
 
     return { error: null }
   }
@@ -235,41 +286,68 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
 
     const total = Math.round(quantity * price * 100) / 100
 
-    const { error: txErr } = await supabase.from("transactions").insert({
-      portfolio_id: activePortfolio.id,
-      ticker,
-      type: "sell",
-      quantity,
-      price,
-      total,
-    })
+    // Step 1: Insert transaction record
+    const { data: tx, error: txErr } = await supabase
+      .from("transactions")
+      .insert({ portfolio_id: activePortfolio.id, ticker, type: "sell", quantity, price, total })
+      .select()
+      .single()
     if (txErr) return { error: txErr.message }
 
+    // Step 2: Update or delete position
+    let posError: string | null = null
     if (position.quantity === quantity) {
       const { error } = await supabase.from("positions").delete().eq("id", position.id)
-      if (error) return { error: error.message }
+      if (error) posError = error.message
     } else {
       const { error } = await supabase
         .from("positions")
         .update({ quantity: position.quantity - quantity })
         .eq("id", position.id)
-      if (error) return { error: error.message }
+      if (error) posError = error.message
     }
 
+    if (posError) {
+      await supabase.from("transactions").delete().eq("id", tx.id)
+      await refetch()
+      return { error: posError }
+    }
+
+    // Step 3: Credit cash balance
     const { error: cashErr } = await supabase
       .from("portfolios")
       .update({ cash_balance: activePortfolio.cash_balance + total })
       .eq("id", activePortfolio.id)
-    if (cashErr) return { error: cashErr.message }
+
+    if (cashErr) {
+      // Rollback: undo position and transaction
+      if (position.quantity === quantity) {
+        await supabase.from("positions").insert({
+          id: position.id,
+          portfolio_id: position.portfolio_id,
+          ticker: position.ticker,
+          quantity: position.quantity,
+          avg_price: position.avg_price,
+        })
+      } else {
+        await supabase
+          .from("positions")
+          .update({ quantity: position.quantity })
+          .eq("id", position.id)
+      }
+      await supabase.from("transactions").delete().eq("id", tx.id)
+      await refetch()
+      return { error: cashErr.message }
+    }
 
     await refetch()
 
-    // XP + badge paper_hands si P/L < -20%
+    // XP + badges
     const a = XP_ACTIONS.TRADE
     await awardXP(a.action, a.xp, a.dailyMax, "Ordre exécuté")
-    if (tradeCount === 0) {
-      await grantBadge("first_trade", "🎬", "Premier trade")
-    }
+    await grantBadge("first_trade", "🎬", "Premier trade")
+    incrementTradeCount()
+
     const sellPLPercent = ((price - position.avg_price) / position.avg_price) * 100
     if (sellPLPercent < -20) {
       await grantBadge("paper_hands", "🧻", "Mains de papier")
@@ -292,6 +370,9 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
         executeBuy,
         executeSell,
         refetch,
+        saveSnapshot,
+        togglePublic,
+        resetPortfolio,
         tradeModalStock,
         tradeModalType,
         openTradeModal: (stock, type = "buy") => {
@@ -306,6 +387,7 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function usePortfolio() {
   const ctx = useContext(PortfolioContext)
   if (!ctx) throw new Error("usePortfolio doit être utilisé dans PortfolioProvider")

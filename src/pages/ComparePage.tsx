@@ -154,7 +154,7 @@ export function ComparePage() {
     [setSearchParams],
   )
 
-  const allStocks = dataset?.stocks ?? []
+  const allStocks = useMemo(() => dataset?.stocks ?? [], [dataset])
 
   const selectedStocks = useMemo(
     () =>

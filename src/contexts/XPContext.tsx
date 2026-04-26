@@ -4,6 +4,7 @@ import {
   useEffect,
   useState,
   useRef,
+  useCallback,
   type ReactNode,
 } from "react"
 import { supabase } from "@/lib/supabase"
@@ -31,6 +32,7 @@ interface XPContextValue {
   grantBadge: (badgeId: string, emoji: string, name: string) => Promise<boolean>
   trackStockView: (ticker: string) => Promise<void>
   refreshXP: () => Promise<void>
+  incrementTradeCount: () => void
 }
 
 const XPContext = createContext<XPContextValue | null>(null)
@@ -43,6 +45,8 @@ export function XPProvider({ children }: { children: ReactNode }) {
   const [tradeCount, setTradeCount] = useState(0)
   const [notifications, setNotifications] = useState<XPNotification[]>([])
   const notifTimers = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map())
+  // Prevent concurrent trackStockView calls for the same ticker
+  const viewInFlight = useRef<Set<string>>(new Set())
 
   function pushNotification(text: string, emoji?: string) {
     const id = Math.random().toString(36).slice(2)
@@ -65,26 +69,24 @@ export function XPProvider({ children }: { children: ReactNode }) {
   }
 
   async function loadUserData(userId: string) {
+    // Fetch portfolios first — needed to query transactions
+    const { data: portfolioData } = await supabase
+      .from("portfolios")
+      .select("id")
+      .eq("user_id", userId)
+    const portfolioIds = portfolioData?.map((p: { id: number }) => p.id) ?? []
+
     const [{ data: userData }, { data: badgeData }, { data: viewData }, { data: txData }] =
       await Promise.all([
         supabase.from("users").select("xp").eq("id", userId).single(),
         supabase.from("user_badges").select("badge_id").eq("user_id", userId),
-        supabase
-          .from("stock_views")
-          .select("ticker")
-          .eq("user_id", userId),
-        supabase
-          .from("transactions")
-          .select("id, portfolio_id")
-          .in(
-            "portfolio_id",
-            (
-              await supabase
-                .from("portfolios")
-                .select("id")
-                .eq("user_id", userId)
-            ).data?.map((p: { id: number }) => p.id) ?? [],
-          ),
+        supabase.from("stock_views").select("ticker").eq("user_id", userId),
+        portfolioIds.length > 0
+          ? supabase
+              .from("transactions")
+              .select("id, portfolio_id")
+              .in("portfolio_id", portfolioIds)
+          : Promise.resolve({ data: [] as { id: number; portfolio_id: number }[] }),
       ])
 
     if (userData) setCurrentXP(userData.xp)
@@ -102,6 +104,7 @@ export function XPProvider({ children }: { children: ReactNode }) {
       setEarnedBadgeIds(new Set())
       setViewedTickerCount(0)
       setTradeCount(0)
+      viewInFlight.current.clear()
       return
     }
     loadUserData(user.id)
@@ -114,79 +117,96 @@ export function XPProvider({ children }: { children: ReactNode }) {
     awardXP(a.action, a.xp, a.dailyMax, "Connexion du jour")
   }, [user?.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  async function awardXP(
-    action: string,
-    xp: number,
-    dailyMax?: number,
-    label?: string,
-  ): Promise<number> {
-    if (!user) return 0
+  const awardXP = useCallback(
+    async (
+      action: string,
+      xp: number,
+      dailyMax?: number,
+      label?: string,
+    ): Promise<number> => {
+      if (!user) return 0
 
-    if (dailyMax !== undefined) {
-      const today = new Date()
-      today.setHours(0, 0, 0, 0)
-      const { count } = await supabase
-        .from("xp_log")
-        .select("*", { count: "exact", head: true })
-        .eq("user_id", user.id)
-        .eq("action", action)
-        .gte("created_at", today.toISOString())
-      if ((count ?? 0) >= dailyMax) return 0
-    }
-
-    const { data: newXP, error } = await supabase.rpc("increment_user_xp", {
-      p_user_id: user.id,
-      p_amount: xp,
-      p_action: action,
-    })
-    if (error) return 0
-
-    setCurrentXP(newXP as number)
-    pushNotification(`+${xp} XP${label ? ` — ${label}` : ""}`, "⚡")
-    return xp
-  }
-
-  async function grantBadge(badgeId: string, emoji: string, name: string): Promise<boolean> {
-    if (!user || earnedBadgeIds.has(badgeId)) return false
-
-    const { error } = await supabase
-      .from("user_badges")
-      .insert({ user_id: user.id, badge_id: badgeId })
-      .select()
-      .single()
-
-    if (error) return false
-
-    setEarnedBadgeIds((prev) => new Set([...prev, badgeId]))
-    pushNotification(`Badge débloqué : ${name}`, emoji)
-    return true
-  }
-
-  async function trackStockView(ticker: string): Promise<void> {
-    if (!user) return
-
-    // Check if already viewed this ticker
-    const { count } = await supabase
-      .from("stock_views")
-      .select("*", { count: "exact", head: true })
-      .eq("user_id", user.id)
-      .eq("ticker", ticker)
-
-    await supabase.from("stock_views").insert({ user_id: user.id, ticker })
-
-    if ((count ?? 0) === 0) {
-      // New ticker viewed
-      const newCount = viewedTickerCount + 1
-      setViewedTickerCount(newCount)
-
-      // Check Explorer / Encyclopedist badges
-      if (newCount >= 50 && !earnedBadgeIds.has("explorer")) {
-        await grantBadge("explorer", "🗺️", "Explorateur")
+      if (dailyMax !== undefined) {
+        const today = new Date()
+        today.setHours(0, 0, 0, 0)
+        const { count } = await supabase
+          .from("xp_log")
+          .select("*", { count: "exact", head: true })
+          .eq("user_id", user.id)
+          .eq("action", action)
+          .gte("created_at", today.toISOString())
+        if ((count ?? 0) >= dailyMax) return 0
       }
-      if (newCount >= 200 && !earnedBadgeIds.has("encyclopedist")) {
-        await grantBadge("encyclopedist", "📖", "Encyclopédiste")
+
+      const { data: newXP, error } = await supabase.rpc("increment_user_xp", {
+        p_user_id: user.id,
+        p_amount: xp,
+        p_action: action,
+      })
+      if (error) return 0
+
+      setCurrentXP(newXP as number)
+      pushNotification(`+${xp} XP${label ? ` — ${label}` : ""}`, "⚡")
+      return xp
+    },
+    [user],
+  )
+
+  const grantBadge = useCallback(
+    async (badgeId: string, emoji: string, name: string): Promise<boolean> => {
+      if (!user || earnedBadgeIds.has(badgeId)) return false
+
+      const { error } = await supabase
+        .from("user_badges")
+        .insert({ user_id: user.id, badge_id: badgeId })
+        .select()
+        .single()
+
+      if (error) return false
+
+      setEarnedBadgeIds((prev) => new Set([...prev, badgeId]))
+      pushNotification(`Badge débloqué : ${name}`, emoji)
+      return true
+    },
+    [user, earnedBadgeIds],
+  )
+
+  const trackStockView = useCallback(
+    async (ticker: string): Promise<void> => {
+      if (!user) return
+      // Prevent duplicate concurrent calls for the same ticker
+      if (viewInFlight.current.has(ticker)) return
+      viewInFlight.current.add(ticker)
+
+      try {
+        const { count } = await supabase
+          .from("stock_views")
+          .select("*", { count: "exact", head: true })
+          .eq("user_id", user.id)
+          .eq("ticker", ticker)
+
+        await supabase.from("stock_views").insert({ user_id: user.id, ticker })
+
+        if ((count ?? 0) === 0) {
+          const newCount = viewedTickerCount + 1
+          setViewedTickerCount(newCount)
+
+          if (newCount >= 50 && !earnedBadgeIds.has("explorer")) {
+            await grantBadge("explorer", "🗺️", "Explorateur")
+          }
+          if (newCount >= 200 && !earnedBadgeIds.has("encyclopedist")) {
+            await grantBadge("encyclopedist", "📖", "Encyclopédiste")
+          }
+        }
+      } finally {
+        viewInFlight.current.delete(ticker)
       }
-    }
+    },
+    [user, viewedTickerCount, earnedBadgeIds, grantBadge],
+  )
+
+  function incrementTradeCount() {
+    setTradeCount((c) => c + 1)
   }
 
   return (
@@ -201,6 +221,7 @@ export function XPProvider({ children }: { children: ReactNode }) {
         grantBadge,
         trackStockView,
         refreshXP,
+        incrementTradeCount,
       }}
     >
       {children}
@@ -208,6 +229,7 @@ export function XPProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useXP() {
   const ctx = useContext(XPContext)
   if (!ctx) throw new Error("useXP doit être utilisé dans XPProvider")

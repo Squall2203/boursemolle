@@ -8,7 +8,8 @@ interface UseStocksResult {
   refresh: () => void
 }
 
-// Module-level so all hook instances refresh together
+// Module-level cache: all hook instances share data and refresh together
+let _cachedData: StocksDataset | null = null
 let _refreshListeners: Array<() => void> = []
 
 export function triggerStocksRefresh() {
@@ -16,8 +17,8 @@ export function triggerStocksRefresh() {
 }
 
 export function useStocks(): UseStocksResult {
-  const [data, setData] = useState<StocksDataset | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState<StocksDataset | null>(() => _cachedData)
+  const [loading, setLoading] = useState(() => _cachedData === null)
   const [error, setError] = useState<string | null>(null)
   const [refreshKey, setRefreshKey] = useState(0)
 
@@ -30,7 +31,11 @@ export function useStocks(): UseStocksResult {
   }, [])
 
   useEffect(() => {
+    // Skip initial fetch if cache is already populated (avoids N parallel fetches on mount)
+    if (_cachedData && refreshKey === 0) return
+
     let cancelled = false
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true)
     setError(null)
     fetch("/data/stocks.json", { cache: "no-store" })
@@ -40,6 +45,7 @@ export function useStocks(): UseStocksResult {
       })
       .then((json) => {
         if (cancelled) return
+        _cachedData = json
         setData(json)
         setLoading(false)
       })

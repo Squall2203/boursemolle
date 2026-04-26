@@ -174,7 +174,7 @@ export function SearchCommand() {
                   )}
                 </div>
                 <div className="flex items-center gap-2 shrink-0 text-xs">
-                  <span className="font-mono">{formatPrice(s.price)}</span>
+                  <span className="font-mono">{formatPrice(s.price, s.currency)}</span>
                   {change && (
                     <span
                       className={cn(

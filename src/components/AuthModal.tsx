@@ -62,7 +62,10 @@ export function AuthModal() {
   }
 
   async function handleGoogle() {
-    await signInWithGoogle()
+    setLoading(true)
+    const { error } = await signInWithGoogle()
+    setLoading(false)
+    if (error) setError(error)
   }
 
   return (

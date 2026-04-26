@@ -112,7 +112,7 @@ function HeroStockCard({ stocks }: { stocks: ReturnType<typeof useStocks>["data"
           { label: "Score", value: <span className={cn("font-bold", scoreColor)}>{score.total.toFixed(1)}</span> },
           { label: "P/E", value: s.trailingPE?.toFixed(1) ?? "—" },
           { label: "Dividende", value: s.dividendYield ? `${s.dividendYield.toFixed(1)}%` : "—" },
-          { label: "Capitalisation", value: s.marketCap ? formatMarketCap(s.marketCap) : "—" },
+          { label: "Capitalisation", value: s.marketCap ? formatMarketCap(s.marketCap, s.currency) : "—" },
         ].map(({ label, value }) => (
           <div key={label} className="text-center">
             <div className="text-[10px] uppercase tracking-wider text-muted-foreground">{label}</div>
@@ -223,6 +223,57 @@ function TopActions({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
   )
 }
 
+// ─── Top movers ───────────────────────────────────────────────────────────────
+
+function TopMovers({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }) {
+  const { gainers, losers } = useMemo(() => {
+    if (!stocks) return { gainers: [], losers: [] }
+    const withChange = stocks.stocks.filter((s) => s.priceChangePercent != null && s.price != null)
+    const sorted = [...withChange].sort((a, b) => b.priceChangePercent! - a.priceChangePercent!)
+    return {
+      gainers: sorted.slice(0, 5),
+      losers: sorted.slice(-5).reverse(),
+    }
+  }, [stocks])
+
+  if (gainers.length === 0) return null
+
+  const Row = ({ stock, isGainer }: { stock: (typeof gainers)[0]; isGainer: boolean }) => (
+    <Link
+      to={`/stock/${stock.ticker}`}
+      className="flex items-center gap-2 py-1.5 -mx-2 px-2 rounded hover:bg-muted/40 transition-colors"
+    >
+      <span className="w-18 shrink-0 font-mono text-xs font-semibold">{stock.ticker}</span>
+      <span className="flex-1 truncate text-xs text-muted-foreground">{stock.name}</span>
+      <span className={cn("text-xs font-bold tabular-nums shrink-0", isGainer ? "text-emerald-500" : "text-destructive")}>
+        {isGainer ? "+" : ""}{stock.priceChangePercent!.toFixed(2)}%
+      </span>
+    </Link>
+  )
+
+  return (
+    <div className="rounded-xl border border-border bg-card p-5">
+      <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+        Movers du jour
+      </h3>
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-500">Hausses</p>
+          <div className="divide-y divide-border/50">
+            {gainers.map((s) => <Row key={s.ticker} stock={s} isGainer={true} />)}
+          </div>
+        </div>
+        <div>
+          <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-destructive">Baisses</p>
+          <div className="divide-y divide-border/50">
+            {losers.map((s) => <Row key={s.ticker} stock={s} isGainer={false} />)}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // ─── Features strip ───────────────────────────────────────────────────────────
 
 function FeaturesStrip() {
@@ -298,6 +349,7 @@ export function DashboardPage() {
           <FeaturesStrip />
         </div>
         <div className="space-y-4">
+          {!stocksLoading && <TopMovers stocks={stocksData} />}
           {!stocksLoading && <SignauxDuJour stocks={stocksData} />}
           {!stocksLoading && <TopActions stocks={stocksData} />}
         </div>

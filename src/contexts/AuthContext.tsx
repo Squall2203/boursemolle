@@ -8,7 +8,7 @@ interface AuthContextValue {
   loading: boolean
   signInWithEmail: (email: string, password: string) => Promise<{ error: string | null }>
   signUpWithEmail: (email: string, password: string) => Promise<{ error: string | null }>
-  signInWithGoogle: () => Promise<void>
+  signInWithGoogle: () => Promise<{ error: string | null }>
   signOut: () => Promise<void>
   authModalOpen: boolean
   openAuthModal: () => void
@@ -73,12 +73,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return { error: null }
   }
 
-  async function signInWithGoogle() {
+  async function signInWithGoogle(): Promise<{ error: string | null }> {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: { redirectTo: window.location.origin },
     })
-    if (error) console.error("Google OAuth error:", error.message)
+    if (error) return { error: error.message }
+    return { error: null }
   }
 
   async function signOut() {
@@ -105,6 +106,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useAuth() {
   const ctx = useContext(AuthContext)
   if (!ctx) throw new Error("useAuth doit être utilisé dans AuthProvider")

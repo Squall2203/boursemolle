@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
+import { Info } from "lucide-react"
 import {
   Dialog,
   DialogContent,
@@ -24,7 +25,7 @@ export function BuySellModal() {
     executeSell,
   } = usePortfolio()
 
-  const [tab, setTab] = useState<"buy" | "sell">("buy")
+  const [tab, setTab] = useState<"buy" | "sell">(tradeModalType)
   const [amount, setAmount] = useState("")
   const [sellQty, setSellQty] = useState("")
   const [error, setError] = useState<string | null>(null)
@@ -32,18 +33,12 @@ export function BuySellModal() {
 
   const open = stock !== null
 
-  useEffect(() => {
-    if (open) {
-      setTab(tradeModalType)
-      setAmount("")
-      setSellQty("")
-      setError(null)
-    }
-  }, [open, tradeModalType])
-
   if (!stock) return null
 
-  const price = stock.price ?? 0
+  const rawPrice = stock.price ?? 0
+  // GBp stocks are quoted in pence — convert to £ for paper trade amounts
+  const price = stock.currency === "GBp" ? rawPrice / 100 : rawPrice
+  const tradeDisplayCurrency = stock.currency === "GBp" ? "GBP" : stock.currency
   const position = positions.find((p) => p.ticker === stock.ticker)
 
   const amountNum = parseFloat(amount.replace(",", ".")) || 0
@@ -79,7 +74,7 @@ export function BuySellModal() {
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && closeTradeModal()}>
-      <DialogContent className="sm:max-w-sm">
+      <DialogContent key={`${stock?.ticker ?? ""}-${tradeModalType}`} className="sm:max-w-sm">
         <DialogHeader>
           <DialogTitle>
             <span className="font-bold">{stock.ticker}</span>
@@ -102,9 +97,19 @@ export function BuySellModal() {
           </div>
         ) : (
           <>
+            {!stock.peaEligible && (
+              <div className="flex gap-2 rounded-lg bg-amber-500/10 px-3 py-2 text-xs text-amber-700 dark:text-amber-400">
+                <Info className="mt-0.5 size-3.5 shrink-0" />
+                <span>
+                  <strong>Hors PEA</strong> — dans la réalité, cette action ne peut pas être détenue dans un PEA. Ce simulateur l'autorise à titre pédagogique.
+                  {stock.currency !== "EUR" && " Prix converti en EUR simulé."}
+                </span>
+              </div>
+            )}
+
             <div className="flex items-center justify-between rounded-lg bg-muted/50 px-3 py-2 text-sm">
               <span className="text-muted-foreground">Prix de clôture</span>
-              <span className="font-semibold">{formatPrice(price, stock.currency)}</span>
+              <span className="font-semibold">{formatPrice(rawPrice, stock.currency)}</span>
             </div>
 
             {position && (
@@ -147,7 +152,7 @@ export function BuySellModal() {
                   </div>
                   {buyQty > 0 && (
                     <p className="text-xs text-muted-foreground">
-                      → {buyQty} action{buyQty > 1 ? "s" : ""} · total {formatPrice(buyTotal)}
+                      → {buyQty} action{buyQty > 1 ? "s" : ""} · total {formatPrice(buyTotal, tradeDisplayCurrency)}
                     </p>
                   )}
                 </div>
@@ -169,7 +174,7 @@ export function BuySellModal() {
                   {submitting
                     ? "Exécution..."
                     : buyQty > 0
-                      ? `Acheter ${buyQty} action${buyQty > 1 ? "s" : ""} — ${formatPrice(buyTotal)}`
+                      ? `Acheter ${buyQty} action${buyQty > 1 ? "s" : ""} — ${formatPrice(buyTotal, tradeDisplayCurrency)}`
                       : "Entrez un montant"}
                 </Button>
               </div>
@@ -182,13 +187,13 @@ export function BuySellModal() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">PRU</span>
-                    <span>{formatPrice(position!.avg_price, stock.currency)}</span>
+                    <span>{formatPrice(position!.avg_price, tradeDisplayCurrency)}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">P/L latent</span>
                     <span className={cn("font-medium", pl >= 0 ? "text-emerald-600" : "text-red-500")}>
                       {pl >= 0 ? "+" : ""}
-                      {formatPrice(pl)} ({formatPercent(plPct, true)})
+                      {formatPrice(pl, tradeDisplayCurrency)} ({formatPercent(plPct, true)})
                     </span>
                   </div>
                 </div>
@@ -219,7 +224,7 @@ export function BuySellModal() {
 
                 {sellQtyNum > 0 && (
                   <p className="text-xs text-muted-foreground">
-                    Montant estimé : {formatPrice(sellQtyNum * price)}
+                    Montant estimé : {formatPrice(sellQtyNum * price, tradeDisplayCurrency)}
                   </p>
                 )}
 
@@ -234,7 +239,7 @@ export function BuySellModal() {
                   {submitting
                     ? "Exécution..."
                     : sellQtyNum > 0
-                      ? `Vendre ${sellQtyNum} action${sellQtyNum > 1 ? "s" : ""} — ${formatPrice(sellQtyNum * price)}`
+                      ? `Vendre ${sellQtyNum} action${sellQtyNum > 1 ? "s" : ""} — ${formatPrice(sellQtyNum * price, tradeDisplayCurrency)}`
                       : "Entrez une quantité"}
                 </Button>
               </div>

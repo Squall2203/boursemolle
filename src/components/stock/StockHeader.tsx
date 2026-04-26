@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { LetterGrade, getGrade } from "@/components/LetterGrade"
+import { LetterGrade } from "@/components/LetterGrade"
+import { getGrade } from "@/lib/grades"
 import { useViewMode } from "@/hooks/useViewMode"
 import { cn } from "@/lib/utils"
 import { formatMarketCap, formatPercent, formatPrice } from "@/lib/format"
@@ -248,7 +249,7 @@ export function StockHeader({ stock, score }: StockHeaderProps) {
             {formatPercent(stock.priceChangePercent, true)} aujourd'hui
           </div>
           <div className="text-xs text-muted-foreground">
-            Capi. {formatMarketCap(stock.marketCap)}
+            Capi. {formatMarketCap(stock.marketCap, stock.currency)}
           </div>
         </div>
       </div>

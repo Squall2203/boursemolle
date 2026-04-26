@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react"
-import { Plus } from "lucide-react"
+import { useEffect, useMemo, useState } from "react"
+import { Globe, GlobeLock, Plus, RotateCcw } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { usePortfolio } from "@/contexts/PortfolioContext"
@@ -7,9 +7,11 @@ import { useStocks } from "@/hooks/useStocks"
 import { computeScore } from "@/lib/scoring"
 import { CreatePortfolioCard } from "@/components/portfolio/CreatePortfolioCard"
 import { PortfolioStats } from "@/components/portfolio/PortfolioStats"
+import { PortfolioChart } from "@/components/portfolio/PortfolioChart"
 import { PositionsTable, type EnrichedPosition } from "@/components/portfolio/PositionsTable"
 import { PortfolioAnalysis } from "@/components/portfolio/PortfolioAnalysis"
 import { TransactionHistory } from "@/components/portfolio/TransactionHistory"
+import { usePortfolioSnapshots } from "@/hooks/usePortfolioSnapshots"
 
 export function PortfolioPage() {
   const {
@@ -20,25 +22,38 @@ export function PortfolioPage() {
     positions,
     transactions,
     loading,
+    saveSnapshot,
+    togglePublic,
+    resetPortfolio,
   } = usePortfolio()
 
   const { data: dataset } = useStocks()
-  const allStocks = dataset?.stocks ?? []
+  const allStocks = useMemo(() => dataset?.stocks ?? [], [dataset])
+
+  const { snapshots } = usePortfolioSnapshots(activePortfolioId)
 
   const [tab, setTab] = useState<"positions" | "history">("positions")
   const [creatingNew, setCreatingNew] = useState(false)
+  const [confirmReset, setConfirmReset] = useState(false)
+  const [resetting, setResetting] = useState(false)
 
   const enrichedPositions = useMemo<EnrichedPosition[]>(() => {
     if (!activePortfolio) return []
+
+    function normalizedPrice(stock: { price?: number | null; currency?: string } | undefined, fallback: number): number {
+      if (!stock?.price) return fallback
+      return stock.currency === "GBp" ? stock.price / 100 : stock.price
+    }
+
     const totalPositionsValue = positions.reduce((sum, pos) => {
       const stock = allStocks.find((s) => s.ticker === pos.ticker)
-      return sum + pos.quantity * (stock?.price ?? pos.avg_price)
+      return sum + pos.quantity * normalizedPrice(stock, pos.avg_price)
     }, 0)
     const totalValue = totalPositionsValue + activePortfolio.cash_balance
 
     return positions.map((pos) => {
       const stock = allStocks.find((s) => s.ticker === pos.ticker)
-      const currentPrice = stock?.price ?? null
+      const currentPrice = stock ? normalizedPrice(stock, pos.avg_price) : null
       const value = pos.quantity * (currentPrice ?? pos.avg_price)
       const cost = pos.quantity * pos.avg_price
       const pl = value - cost
@@ -62,6 +77,12 @@ export function PortfolioPage() {
     const totalW = withScore.reduce((s, p) => s + p.value, 0)
     return totalW > 0 ? weighted / totalW : null
   }, [enrichedPositions])
+
+  // Save daily snapshot for leaderboard (fire-and-forget)
+  useEffect(() => {
+    if (!activePortfolio || totalValue === 0) return
+    void saveSnapshot(totalValue, activePortfolio.cash_balance, totalPositionsValue)
+  }, [activePortfolio?.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) {
     return <p className="py-12 text-center text-muted-foreground">Chargement...</p>
@@ -109,6 +130,26 @@ export function PortfolioPage() {
                 {p.name}
               </button>
             ))}
+          {activePortfolio && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => void togglePublic()}
+              title={activePortfolio.is_public ? "Retirer du classement" : "Apparaître dans le classement"}
+            >
+              {activePortfolio.is_public ? (
+                <>
+                  <Globe className="mr-1.5 size-3.5 text-emerald-500" />
+                  Public
+                </>
+              ) : (
+                <>
+                  <GlobeLock className="mr-1.5 size-3.5" />
+                  Privé
+                </>
+              )}
+            </Button>
+          )}
           {portfolios.length < 3 && (
             <Button
               variant="outline"
@@ -118,6 +159,38 @@ export function PortfolioPage() {
               <Plus className="mr-1.5 size-3.5" />
               Nouveau PEA
             </Button>
+          )}
+          {activePortfolio && !confirmReset && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setConfirmReset(true)}
+              className="text-muted-foreground hover:text-destructive"
+            >
+              <RotateCcw className="mr-1.5 size-3.5" />
+              Réinitialiser
+            </Button>
+          )}
+          {confirmReset && (
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-muted-foreground">Confirmer ?</span>
+              <Button
+                variant="destructive"
+                size="sm"
+                disabled={resetting}
+                onClick={async () => {
+                  setResetting(true)
+                  await resetPortfolio()
+                  setResetting(false)
+                  setConfirmReset(false)
+                }}
+              >
+                {resetting ? "..." : "Oui, réinitialiser"}
+              </Button>
+              <Button variant="ghost" size="sm" onClick={() => setConfirmReset(false)}>
+                Annuler
+              </Button>
+            </div>
           )}
         </div>
       </div>
@@ -130,6 +203,21 @@ export function PortfolioPage() {
             cashBalance={activePortfolio.cash_balance}
             avgScore={avgScore}
           />
+
+          {/* Performance chart */}
+          <Card>
+            <CardHeader className="pb-1 pt-4">
+              <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                Performance
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <PortfolioChart
+                snapshots={snapshots}
+                initialCapital={activePortfolio.initial_capital}
+              />
+            </CardContent>
+          </Card>
 
           {/* Positions / History tabs */}
           <div className="flex gap-1 text-sm">

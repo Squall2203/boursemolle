@@ -5,7 +5,7 @@ import type { Stock } from "@/types/stock"
 interface MetricDef {
   label: string
   getValue: (s: Stock) => number | null
-  format: (n: number | null) => string
+  format: (s: Stock) => string
   higherIsBetter: boolean
 }
 
@@ -13,43 +13,43 @@ const METRIC_GROUPS: Array<{ title: string; metrics: MetricDef[] }> = [
   {
     title: "Valorisation",
     metrics: [
-      { label: "Prix", getValue: (s) => s.price, format: (n) => formatPrice(n), higherIsBetter: false },
-      { label: "Capitalisation", getValue: (s) => s.marketCap, format: formatMarketCap, higherIsBetter: true },
-      { label: "P/E (TTM)", getValue: (s) => s.trailingPE, format: formatRatio, higherIsBetter: false },
-      { label: "P/E forward", getValue: (s) => s.forwardPE, format: formatRatio, higherIsBetter: false },
-      { label: "EV/EBITDA", getValue: (s) => s.evToEbitda, format: formatRatio, higherIsBetter: false },
-      { label: "P/B", getValue: (s) => s.priceToBook, format: formatRatio, higherIsBetter: false },
+      { label: "Prix", getValue: (s) => s.price, format: (s) => formatPrice(s.price, s.currency), higherIsBetter: false },
+      { label: "Capitalisation", getValue: (s) => s.marketCap, format: (s) => formatMarketCap(s.marketCap, s.currency), higherIsBetter: true },
+      { label: "P/E (TTM)", getValue: (s) => s.trailingPE, format: (s) => formatRatio(s.trailingPE), higherIsBetter: false },
+      { label: "P/E forward", getValue: (s) => s.forwardPE, format: (s) => formatRatio(s.forwardPE), higherIsBetter: false },
+      { label: "EV/EBITDA", getValue: (s) => s.evToEbitda, format: (s) => formatRatio(s.evToEbitda), higherIsBetter: false },
+      { label: "P/B", getValue: (s) => s.priceToBook, format: (s) => formatRatio(s.priceToBook), higherIsBetter: false },
     ],
   },
   {
     title: "Profitabilité",
     metrics: [
-      { label: "ROE", getValue: (s) => s.returnOnEquity, format: (n) => formatPercent(n), higherIsBetter: true },
-      { label: "ROA", getValue: (s) => s.returnOnAssets, format: (n) => formatPercent(n), higherIsBetter: true },
-      { label: "Marge nette", getValue: (s) => s.profitMargins, format: (n) => formatPercent(n), higherIsBetter: true },
-      { label: "Marge opérationnelle", getValue: (s) => s.operatingMargins, format: (n) => formatPercent(n), higherIsBetter: true },
+      { label: "ROE", getValue: (s) => s.returnOnEquity, format: (s) => formatPercent(s.returnOnEquity), higherIsBetter: true },
+      { label: "ROA", getValue: (s) => s.returnOnAssets, format: (s) => formatPercent(s.returnOnAssets), higherIsBetter: true },
+      { label: "Marge nette", getValue: (s) => s.profitMargins, format: (s) => formatPercent(s.profitMargins), higherIsBetter: true },
+      { label: "Marge opérationnelle", getValue: (s) => s.operatingMargins, format: (s) => formatPercent(s.operatingMargins), higherIsBetter: true },
     ],
   },
   {
     title: "Croissance",
     metrics: [
-      { label: "Croissance CA", getValue: (s) => s.revenueGrowth, format: (n) => formatPercent(n), higherIsBetter: true },
-      { label: "Croissance BPA", getValue: (s) => s.earningsGrowth, format: (n) => formatPercent(n), higherIsBetter: true },
+      { label: "Croissance CA", getValue: (s) => s.revenueGrowth, format: (s) => formatPercent(s.revenueGrowth), higherIsBetter: true },
+      { label: "Croissance BPA", getValue: (s) => s.earningsGrowth, format: (s) => formatPercent(s.earningsGrowth), higherIsBetter: true },
     ],
   },
   {
     title: "Dividendes",
     metrics: [
-      { label: "Rendement", getValue: (s) => s.dividendYield, format: (n) => formatPercent(n), higherIsBetter: true },
-      { label: "Payout ratio", getValue: (s) => s.payoutRatio, format: (n) => formatPercent(n), higherIsBetter: false },
+      { label: "Rendement", getValue: (s) => s.dividendYield, format: (s) => formatPercent(s.dividendYield), higherIsBetter: true },
+      { label: "Payout ratio", getValue: (s) => s.payoutRatio, format: (s) => formatPercent(s.payoutRatio), higherIsBetter: false },
     ],
   },
   {
     title: "Bilan",
     metrics: [
-      { label: "Dette totale", getValue: (s) => s.totalDebt, format: formatMarketCap, higherIsBetter: false },
-      { label: "Trésorerie", getValue: (s) => s.totalCash, format: formatMarketCap, higherIsBetter: true },
-      { label: "Dette / Capitaux propres", getValue: (s) => s.debtToEquity, format: formatRatio, higherIsBetter: false },
+      { label: "Dette totale", getValue: (s) => s.totalDebt, format: (s) => formatMarketCap(s.totalDebt, s.currency), higherIsBetter: false },
+      { label: "Trésorerie", getValue: (s) => s.totalCash, format: (s) => formatMarketCap(s.totalCash, s.currency), higherIsBetter: true },
+      { label: "Dette / Capitaux propres", getValue: (s) => s.debtToEquity, format: (s) => formatRatio(s.debtToEquity), higherIsBetter: false },
     ],
   },
 ]
@@ -128,7 +128,7 @@ export function CompareTable({ stocks }: CompareTableProps) {
                           i === bestIdx && "font-semibold text-emerald-600 dark:text-emerald-400",
                         )}
                       >
-                        {metric.format(metric.getValue(s))}
+                        {metric.format(s)}
                       </td>
                     ))}
                   </tr>

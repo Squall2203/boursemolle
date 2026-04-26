@@ -18,7 +18,7 @@ function ProgressBar({ value, max, color }: { value: number; max: number; color:
 
 export function DataFreshnessPage() {
   const { data, loading } = useStocks()
-  const allStocks = data?.stocks ?? []
+  const allStocks = useMemo(() => data?.stocks ?? [], [data])
 
   const stats = useMemo(() => {
     let green = 0, yellow = 0, orange = 0, red = 0, missing = 0

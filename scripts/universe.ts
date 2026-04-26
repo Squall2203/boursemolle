@@ -893,19 +893,157 @@ const SP500_NEXT: TickerEntry[] = [
   { ticker: "HSY", expectedName: "Hershey Company", indices: ["S&P 500"] },
 ]
 
+// ─── France — CAC Mid 60 complément (tickers vérifiés) ───
+const CAC_MID60_EXTRA: TickerEntry[] = [
+  { ticker: "SPIE.PA", expectedName: "SPIE", indices: ["CAC Mid 60"] },
+  { ticker: "BB.PA", expectedName: "Société BIC", indices: ["CAC Mid 60"] },      // BIC = BB sur Euronext
+  { ticker: "ARG.PA", expectedName: "Argan", indices: ["CAC Mid 60"] },
+  { ticker: "VCT.PA", expectedName: "Vicat", indices: ["CAC Mid 60"] },
+  { ticker: "GLO.PA", expectedName: "GL Events", indices: ["CAC Mid 60"] },
+  { ticker: "JCQ.PA", expectedName: "Jacquet Metals", indices: ["CAC Mid 60"] },
+  { ticker: "LNA.PA", expectedName: "LNA Santé", indices: ["CAC Mid 60"] },
+  { ticker: "KORI.PA", expectedName: "Clariane", indices: ["CAC Mid 60"] },        // ex-Korian
+  { ticker: "SII.PA", expectedName: "SII Group", indices: ["CAC Mid 60"] },
+  { ticker: "ASY.PA", expectedName: "Assystem", indices: ["CAC Mid 60"] },
+  { ticker: "DLTA.PA", expectedName: "Delta Plus Group", indices: ["CAC Mid 60"] },
+  { ticker: "BOI.PA", expectedName: "Boiron", indices: ["CAC Mid 60"] },
+  { ticker: "HEXA.PA", expectedName: "Hexaom", indices: ["CAC Mid 60"] },
+  { ticker: "TRO.PA", expectedName: "Tarkett", indices: ["CAC Mid 60"] },
+  { ticker: "ELIOR.PA", expectedName: "Elior Group", indices: ["CAC Mid 60"] },
+  { ticker: "MERY.PA", expectedName: "Mercialys", indices: ["CAC Mid 60"] },
+  { ticker: "TOUR.PA", expectedName: "Société de la Tour Eiffel", indices: ["CAC Mid 60"] },
+  { ticker: "FII.PA", expectedName: "Lisi", indices: ["CAC Mid 60"] },             // Lisi = FII sur Euronext
+  { ticker: "TRI.PA", expectedName: "Trigano", indices: ["CAC Mid 60"] },
+  { ticker: "MTU.PA", expectedName: "Manitou BF", indices: ["CAC Mid 60"] },
+  { ticker: "CTRG.PA", expectedName: "Catering International", indices: ["CAC Mid 60"] },
+  { ticker: "CEN.PA", expectedName: "Groupe Crit", indices: ["CAC Mid 60"] },
+]
+
+// ─── France — SBF 250 + autres valeurs SRD ───
+const SRD_EXTRA: TickerEntry[] = [
+  // Grandes caps hors SBF 120
+  { ticker: "AMUN.PA", expectedName: "Amundi", indices: ["SBF 250"] },
+  { ticker: "ADP.PA", expectedName: "Groupe ADP", indices: ["SBF 250"] },
+  { ticker: "FR.PA", expectedName: "Valeo", indices: ["SBF 250"] },               // Valeo = FR sur Euronext
+  { ticker: "ICAD.PA", expectedName: "Icade", indices: ["SBF 250"] },
+  { ticker: "DEC.PA", expectedName: "JCDecaux", indices: ["SBF 250"] },
+  { ticker: "ILD.PA", expectedName: "Iliad", indices: ["SBF 250"] },
+  { ticker: "RF.PA", expectedName: "Eurazeo", indices: ["SBF 250"] },
+  { ticker: "COFA.PA", expectedName: "Coface", indices: ["SBF 250"] },
+  { ticker: "FFP.PA", expectedName: "Établissements Peugeot Frères", indices: ["SBF 250"] },
+  { ticker: "ALTA.PA", expectedName: "Altarea", indices: ["SBF 250"] },
+  { ticker: "ATE.PA", expectedName: "Alten", indices: ["SBF 250"] },
+  { ticker: "MMT.PA", expectedName: "M6 Métropole Télévision", indices: ["SBF 250"] },
+  { ticker: "BON.PA", expectedName: "Bonduelle", indices: ["SBF 250"] },
+  { ticker: "ELIS.PA", expectedName: "Elis", indices: ["SBF 250"] },
+  { ticker: "ETL.PA", expectedName: "Eutelsat", indices: ["SBF 250"] },
+  { ticker: "ROTH.PA", expectedName: "Rothschild & Co", indices: ["SBF 250"] },
+  { ticker: "CDI.PA", expectedName: "Christian Dior", indices: ["SBF 250"] },
+  { ticker: "ENX.PA", expectedName: "Euronext", indices: ["SBF 250"] },
+  { ticker: "SAVE.PA", expectedName: "Savencia", indices: ["SBF 250"] },
+  { ticker: "SCHP.PA", expectedName: "Séché Environnement", indices: ["SBF 250"] },
+  { ticker: "RE.PA", expectedName: "Colas", indices: ["SBF 250"] },
+  { ticker: "PHA.PA", expectedName: "Equasens", indices: ["SBF 250"] },
+  // Finance
+  { ticker: "ABCA.PA", expectedName: "ABC Arbitrage", indices: ["SBF 250"] },
+  { ticker: "LTA.PA", expectedName: "Altamir", indices: ["SBF 250"] },
+  { ticker: "CDA.PA", expectedName: "Compagnie des Alpes", indices: ["SBF 250"] },
+  { ticker: "SOF.PA", expectedName: "Société Foncière Lyonnaise", indices: [] },
+  // Industrie / Environnement
+  { ticker: "MRN.PA", expectedName: "Mersen", indices: ["SBF 250"] },
+  { ticker: "BEN.PA", expectedName: "Beneteau", indices: ["SBF 250"] },
+  { ticker: "CRI.PA", expectedName: "Chargeurs", indices: ["SBF 250"] },
+  { ticker: "EXE.PA", expectedName: "Exel Industries", indices: ["SBF 250"] },
+  { ticker: "GOE.PA", expectedName: "Exail Technologies", indices: ["SBF 250"] },
+  { ticker: "AKW.PA", expectedName: "Akwel", indices: ["SBF 250"] },
+  { ticker: "PIG.PA", expectedName: "Haulotte Group", indices: [] },
+  { ticker: "STF.PA", expectedName: "STEF", indices: ["SBF 250"] },
+  { ticker: "DBG.PA", expectedName: "Derichebourg", indices: ["SBF 250"] },
+  { ticker: "SDG.PA", expectedName: "Synergie", indices: ["SBF 250"] },
+  { ticker: "MAU.PA", expectedName: "Maurel et Prom", indices: [] },
+  // IT / Tech
+  { ticker: "LDLC.PA", expectedName: "LDLC Group", indices: ["SBF 250"] },
+  { ticker: "AURES.PA", expectedName: "Aurès Technologies", indices: [] },
+  { ticker: "VU.PA", expectedName: "Vusiongroup", indices: ["SBF 250"] },          // ex-SES-imagotag
+  { ticker: "AXW.PA", expectedName: "Axway Software", indices: ["SBF 250"] },
+  { ticker: "SWP.PA", expectedName: "Sword Group", indices: [] },
+  // Agroalimentaire / Luxe
+  { ticker: "ITP.PA", expectedName: "Interparfums", indices: ["SBF 250"] },
+  { ticker: "LPE.PA", expectedName: "Laurent-Perrier", indices: [] },
+  { ticker: "MAN.PA", expectedName: "Manutan International", indices: [] },
+  { ticker: "VINCI.PA", expectedName: "Vilmorin & Cie", indices: ["SBF 250"] },    // Vilmorin ≠ Vinci
+  // Telecom / Services
+  { ticker: "IAM.PA", expectedName: "Maroc Telecom", indices: [] },
+  { ticker: "LSS.PA", expectedName: "Lectra", indices: ["SBF 250"] },
+  { ticker: "ATI.PA", expectedName: "Actia Group", indices: [] },
+  { ticker: "MND.PA", expectedName: "MND Group", indices: [] },
+  { ticker: "HDF.PA", expectedName: "Hydrogène de France", indices: [] },
+  { ticker: "ODET.PA", expectedName: "Financière de l'Odet", indices: [] },
+  { ticker: "PWG.PA", expectedName: "Prodways Group", indices: ["SBF 250"] },
+  { ticker: "FGA.PA", expectedName: "Figeac Aéro", indices: ["SBF 250"] },
+  { ticker: "CARM.PA", expectedName: "Carmila", indices: ["SBF 250"] },
+  { ticker: "SESG.PA", expectedName: "SES", indices: ["SBF 250"] },
+  { ticker: "TE.PA", expectedName: "Technip Energies", indices: ["CAC 40"] },
+  { ticker: "VK.PA", expectedName: "Vallourec", indices: ["SBF 250"] },
+  { ticker: "AB.PA", expectedName: "AB Science", indices: [] },
+  { ticker: "DBV.PA", expectedName: "DBV Technologies", indices: [] },
+]
+
+// ─── USA — Grandes caps récentes (post-2023, manquantes) ───
+const SP500_RECENT: TickerEntry[] = [
+  // Méga-caps tech absentes
+  { ticker: "PLTR", expectedName: "Palantir Technologies", indices: ["S&P 500"] },
+  { ticker: "ARM", expectedName: "Arm Holdings", indices: ["S&P 500"] },
+  { ticker: "CRWD", expectedName: "CrowdStrike Holdings", indices: ["S&P 500", "Nasdaq 100"] },
+  { ticker: "ANET", expectedName: "Arista Networks", indices: ["S&P 500"] },
+  { ticker: "APP", expectedName: "AppLovin", indices: ["Nasdaq 100"] },
+  { ticker: "SMCI", expectedName: "Super Micro Computer", indices: ["S&P 500"] },
+  // Énergie / Infrastructure
+  { ticker: "GEV", expectedName: "GE Vernova", indices: ["S&P 500"] },
+  { ticker: "CEG", expectedName: "Constellation Energy", indices: ["S&P 500"] },
+  { ticker: "VST", expectedName: "Vistra", indices: ["S&P 500"] },
+  // Hardware / PC
+  { ticker: "DELL", expectedName: "Dell Technologies", indices: ["S&P 500"] },
+  { ticker: "HPQ", expectedName: "HP Inc.", indices: ["S&P 500"] },
+  { ticker: "HPE", expectedName: "Hewlett Packard Enterprise", indices: ["S&P 500"] },
+  // Finance / Crypto
+  { ticker: "COIN", expectedName: "Coinbase Global", indices: ["S&P 500"] },
+  { ticker: "SQ", expectedName: "Block Inc.", indices: ["S&P 500"] },
+  { ticker: "AFRM", expectedName: "Affirm Holdings", indices: ["Nasdaq 100"] },
+  // Cybersécurité / SaaS
+  { ticker: "AXON", expectedName: "Axon Enterprise", indices: ["S&P 500"] },
+  { ticker: "ZS", expectedName: "Zscaler", indices: ["Nasdaq 100"] },
+  { ticker: "TEAM", expectedName: "Atlassian", indices: ["Nasdaq 100"] },
+  { ticker: "GTLB", expectedName: "GitLab", indices: [] },
+  { ticker: "SAMSF", expectedName: "Samsara", indices: [] },
+  { ticker: "IOT", expectedName: "Samsara Inc.", indices: ["S&P 500"] },
+  // Consommation / Streaming
+  { ticker: "SHOP", expectedName: "Shopify", indices: ["S&P 500"] },
+  { ticker: "SPOT", expectedName: "Spotify Technology", indices: [] },
+  // EV / Mobilité
+  { ticker: "RIVN", expectedName: "Rivian Automotive", indices: ["Nasdaq 100"] },
+  { ticker: "LCID", expectedName: "Lucid Group", indices: [] },
+  // Autres Nasdaq 100 manquants
+  { ticker: "MELI", expectedName: "MercadoLibre", indices: ["Nasdaq 100"] },
+  { ticker: "CPNG", expectedName: "Coupang", indices: ["S&P 500"] },
+  { ticker: "NU", expectedName: "Nu Holdings", indices: ["S&P 500"] },
+  { ticker: "HOOD", expectedName: "Robinhood Markets", indices: [] },
+]
+
 // ─── Merge & deduplicate ───
 
 function buildUniverse(): TickerEntry[] {
   const all = [
-    ...CAC40, ...CAC_NEXT20, ...CAC_MID60,
+    ...CAC40, ...CAC_NEXT20, ...CAC_MID60, ...CAC_MID60_EXTRA,
     ...DAX40, ...MDAX, ...AEX25, ...BEL20, ...IBEX,
     ...ITALY, ...PORTUGAL, ...FINLAND, ...IRELAND, ...AUSTRIA,
     ...FTSE100,
     ...SMI,
     ...OMX_SE, ...OMX_DK, ...OBX_NO,
-    ...SP500, ...SP500_NEXT,
+    ...SP500, ...SP500_NEXT, ...SP500_RECENT,
     ...CHINA_TOP100,
     ...JAPAN_TOP80,
+    ...SRD_EXTRA,
   ]
 
   const map = new Map<string, TickerEntry>()

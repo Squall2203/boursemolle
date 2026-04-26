@@ -34,7 +34,7 @@ export function FundamentalsTable({ stock }: FundamentalsTableProps) {
           <MetricRow label="P/E forward" value={formatRatio(stock.forwardPE)} />
           <MetricRow label="EV/EBITDA" value={formatRatio(stock.evToEbitda)} />
           <MetricRow label="P/B" value={formatRatio(stock.priceToBook)} />
-          <MetricRow label="Valeur d'entreprise" value={formatMarketCap(stock.enterpriseValue)} />
+          <MetricRow label="Valeur d'entreprise" value={formatMarketCap(stock.enterpriseValue, stock.currency)} />
         </CardContent>
       </Card>
 
@@ -83,8 +83,8 @@ export function FundamentalsTable({ stock }: FundamentalsTableProps) {
           </CardTitle>
         </CardHeader>
         <CardContent className="divide-y">
-          <MetricRow label="Dette totale" value={formatMarketCap(stock.totalDebt)} />
-          <MetricRow label="Trésorerie" value={formatMarketCap(stock.totalCash)} />
+          <MetricRow label="Dette totale" value={formatMarketCap(stock.totalDebt, stock.currency)} />
+          <MetricRow label="Trésorerie" value={formatMarketCap(stock.totalCash, stock.currency)} />
           <MetricRow label="Dette / Capitaux propres" value={formatRatio(stock.debtToEquity)} />
         </CardContent>
       </Card>

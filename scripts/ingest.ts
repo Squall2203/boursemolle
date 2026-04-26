@@ -47,15 +47,27 @@ function computeSMA(closes: number[], period: number): number | null {
 
 function computeRSI(closes: number[], period: number = 14): number | null {
   if (closes.length < period + 1) return null
+
+  // Wilder's initial averages over first `period` changes
   let avgGain = 0
   let avgLoss = 0
-  for (let i = closes.length - period; i < closes.length; i++) {
+  for (let i = 1; i <= period; i++) {
     const change = closes[i] - closes[i - 1]
     if (change > 0) avgGain += change
     else avgLoss -= change
   }
   avgGain /= period
   avgLoss /= period
+
+  // Wilder's smoothing for remaining bars
+  for (let i = period + 1; i < closes.length; i++) {
+    const change = closes[i] - closes[i - 1]
+    const gain = change > 0 ? change : 0
+    const loss = change < 0 ? -change : 0
+    avgGain = (avgGain * (period - 1) + gain) / period
+    avgLoss = (avgLoss * (period - 1) + loss) / period
+  }
+
   if (avgLoss === 0) return 100
   const rs = avgGain / avgLoss
   return round2(100 - 100 / (1 + rs))

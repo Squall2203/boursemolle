@@ -156,6 +156,7 @@ export function RootLayout() {
               size="icon"
               className="size-8"
               onClick={toggle}
+              aria-label={theme === "dark" ? "Passer en mode clair" : "Passer en mode sombre"}
             >
               {theme === "dark" ? (
                 <Sun className="size-4" />
