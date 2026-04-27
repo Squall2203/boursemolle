@@ -31,3 +31,8 @@ public/data/stocks.json
 public/data/feed.json
 public/data/feed/
 public/data/news/
+
+# ML pipeline — données volumineuses (non versionnées)
+scripts/ml/data/
+scripts/ml/__pycache__/
+scripts/ml/*.pyc

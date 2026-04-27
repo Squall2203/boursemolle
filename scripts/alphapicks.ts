@@ -789,6 +789,61 @@ async function main() {
     })
   }
 
+  // ─── US ML strategy — merge predictions from Python pipeline ──────────────
+  const usPredPath = path.join(outDir, "us_predictions.json")
+  if (fs.existsSync(usPredPath)) {
+    try {
+      const usPred = JSON.parse(fs.readFileSync(usPredPath, "utf8"))
+      const mlPicks = (usPred.picks ?? []) as Array<{
+        ticker: string; name: string; sector: string | null; country: string
+        currency: string; rank: number; score: number; pillars: PickPillars
+        weight: number; isNew: boolean; pe: number | null; roe: number | null
+        perf6M: number | null; divYield: number | null; marketCap: number | null
+        price: number | null; peaEligible: boolean; justification: string
+      }>
+
+      if (mlPicks.length > 0) {
+        // isNew detection vs previous US ML picks
+        const prevUsTickers = (previousPicks["tech-us-ml"] ?? [])
+        const mlPicksWithNew = mlPicks.map(p => ({
+          ...p,
+          isNew: !prevUsTickers.includes(p.ticker) && prevUsTickers.length > 0,
+        }))
+        const mlExits = prevUsTickers.filter(t => !mlPicks.map(p => p.ticker).includes(t))
+
+        const mlBenchmarkTicker = "^GSPC"
+        const mlBenchmarkPrice = await fetchBenchmarkPrice(mlBenchmarkTicker)
+        const priceDir = path.join(process.cwd(), "public", "data", "prices")
+        const mlPortfolioChart = computePortfolioChart(mlPicksWithNew.map(p => p.ticker), priceDir)
+        const mlBenchmarkChart = await fetchBenchmarkHistory(mlBenchmarkTicker)
+
+        console.log(`\n🤖 US ML Strategy — ${mlPicksWithNew.length} picks (LightGBM v${usPred.engine ?? "1"})`)
+        console.log(`  Top 3: ${mlPicksWithNew.slice(0, 3).map(p => `${p.ticker} (${p.score.toFixed(1)})`).join(", ")}`)
+
+        results.push({
+          id: "tech-us-ml",
+          name: "US Growth ML",
+          emoji: "🤖",
+          market: "US" as const,
+          marketLabel: "États-Unis",
+          description: "Sélection algorithmique LightGBM entraîné sur données SEC EDGAR (PIT) · Univers NYSE + NASDAQ large/mid cap",
+          engine: "ml" as const,
+          benchmarkName: "S&P 500",
+          benchmarkTicker: mlBenchmarkTicker,
+          benchmarkPrice: mlBenchmarkPrice,
+          size: mlPicksWithNew.length,
+          picks: mlPicksWithNew,
+          exits: mlExits,
+          chartData: { portfolio: mlPortfolioChart, benchmark: mlBenchmarkChart },
+        })
+      }
+    } catch (e) {
+      console.warn(`  ⚠️  us_predictions.json invalide: ${e}`)
+    }
+  } else {
+    console.log(`\n🤖 US ML Strategy — pas de prédictions (lancer scripts/ml/pipeline.py --predict)`)
+  }
+
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true })
 
   const output = {
