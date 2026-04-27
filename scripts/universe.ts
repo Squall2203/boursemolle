@@ -272,8 +272,7 @@ const SP500: TickerEntry[] = [
   { ticker: "NVDA", expectedName: "NVIDIA", indices: ["S&P 500"] },
   { ticker: "AMZN", expectedName: "Amazon", indices: ["S&P 500"] },
   { ticker: "META", expectedName: "Meta Platforms", indices: ["S&P 500"] },
-  { ticker: "GOOGL", expectedName: "Alphabet (Class A)", indices: ["S&P 500"] },
-  { ticker: "GOOG", expectedName: "Alphabet (Class C)", indices: ["S&P 500"] },
+  { ticker: "GOOGL", expectedName: "Alphabet", indices: ["S&P 500"] },
   { ticker: "BRK-B", expectedName: "Berkshire Hathaway", indices: ["S&P 500"] },
   { ticker: "TSLA", expectedName: "Tesla", indices: ["S&P 500"] },
   { ticker: "LLY", expectedName: "Eli Lilly", indices: ["S&P 500"] },
@@ -1014,8 +1013,7 @@ const SP500_RECENT: TickerEntry[] = [
   { ticker: "ZS", expectedName: "Zscaler", indices: ["Nasdaq 100"] },
   { ticker: "TEAM", expectedName: "Atlassian", indices: ["Nasdaq 100"] },
   { ticker: "GTLB", expectedName: "GitLab", indices: [] },
-  { ticker: "SAMSF", expectedName: "Samsara", indices: [] },
-  { ticker: "IOT", expectedName: "Samsara Inc.", indices: ["S&P 500"] },
+  { ticker: "IOT", expectedName: "Samsara", indices: ["S&P 500"] },
   // Consommation / Streaming
   { ticker: "SHOP", expectedName: "Shopify", indices: ["S&P 500"] },
   { ticker: "SPOT", expectedName: "Spotify Technology", indices: [] },
@@ -1091,6 +1089,7 @@ export const ALL_INDICES = [
   "OMX DK 25",
   "OBX 25",
   "S&P 500",
+  "Nasdaq 100",
   "Chine Top 100",
   "Japon Top 100",
 ] as const

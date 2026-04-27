@@ -209,9 +209,12 @@ export function RootLayout() {
         <Outlet />
       </main>
       <footer className="mt-12 border-t py-6">
-        <div className="mx-auto max-w-[1600px] px-4 text-center text-xs text-muted-foreground sm:px-6">
-          BourseMolle — Données fournies à titre informatif uniquement, ne
-          constitue pas un conseil en investissement.
+        <div className="mx-auto max-w-[1600px] px-4 text-center text-xs text-muted-foreground sm:px-6 space-y-2">
+          <p>BourseMolle — Données fournies à titre informatif uniquement, ne constitue pas un conseil en investissement.</p>
+          <div className="flex items-center justify-center gap-4">
+            <NavLink to="/methodologie" className="hover:text-foreground transition-colors">Méthodologie</NavLink>
+            <NavLink to="/data-freshness" className="hover:text-foreground transition-colors">État des données</NavLink>
+          </div>
         </div>
       </footer>
       <AuthModal />
