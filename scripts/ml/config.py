@@ -20,7 +20,7 @@ for d in [DATA_DIR, EDGAR_DIR, MODEL_DIR]:
 # ─── EDGAR settings ───────────────────────────────────────────────────────────
 
 EDGAR_START_YEAR = 2018     # first year to download
-EDGAR_BASE_URL = "https://www.sec.gov/dera/data/financial-statement-data-sets"
+EDGAR_BASE_URL = "https://www.sec.gov/files/dera/data/financial-statement-data-sets"
 TICKER_MAP_URL = "https://www.sec.gov/files/company_tickers.json"
 SEC_HEADERS = {"User-Agent": "BourseMolle research@boursemolle.com"}
 SEC_SLEEP = 0.4             # seconds between SEC requests (rate limit: 10 req/s)
