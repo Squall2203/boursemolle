@@ -32,6 +32,18 @@ NEGATIVE_KW = [
     "perte", "baisse", "recul", "avertissement",
 ]
 
+# Windows device names that can't be used as filenames (case-insensitive stem match)
+_WIN_RESERVED = {
+    "CON", "PRN", "AUX", "NUL",
+    "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9",
+    "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9",
+}
+
+def _is_win_reserved(ticker: str) -> bool:
+    """Return True if the ticker's safe filename stem is a Windows device name."""
+    stem = ticker.replace("/", "_").split(".")[0].upper()
+    return stem in _WIN_RESERVED
+
 HEADERS = {
     "User-Agent": (
         "BourseMolle/1.0 (personal finance tracker; "
@@ -240,6 +252,10 @@ def main() -> None:
 
     fetched = 0
     for i, (ticker, name) in enumerate(tickers, 1):
+        if _is_win_reserved(ticker):
+            print(f"[{i}/{total}] {ticker} — skip (Windows-reserved filename)")
+            continue
+
         safe = ticker.replace("/", "_")
         out_file = NEWS_DIR / f"{safe}.json"
 
