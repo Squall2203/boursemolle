@@ -33,6 +33,8 @@ public/data/feed/
 public/data/news/
 
 # ML pipeline — données volumineuses (non versionnées)
-scripts/ml/data/
+scripts/ml/data/edgar/          # téléchargements EDGAR bruts (plusieurs centaines de Mo)
+scripts/ml/data/features*.parquet  # cache feature dataset (régénéré depuis EDGAR)
 scripts/ml/__pycache__/
 scripts/ml/*.pyc
+# scripts/ml/data/model/ est versionné (lgbm_model.pkl ~10-20Mo)

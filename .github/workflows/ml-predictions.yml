@@ -1,0 +1,110 @@
+name: ML Predictions — Monthly
+
+on:
+  schedule:
+    - cron: "0 8 2 * *"  # 8h00 UTC le 2 de chaque mois (après alphapicks.ts le 1er)
+  workflow_dispatch:
+    inputs:
+      step:
+        description: "Étape pipeline"
+        required: false
+        default: "predict"
+        type: choice
+        options:
+          - predict            # scoring uniquement (modèle existant requis)
+          - train              # réentraînement + scoring
+          - all                # téléchargement EDGAR + train + scoring
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ml-predictions
+  cancel-in-progress: false   # ne pas annuler un entraînement en cours
+
+jobs:
+  ml-predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90       # --all peut prendre ~60 min
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"   # stable, compatible lightgbm/shap
+          cache: pip
+          cache-dependency-path: scripts/ml/requirements.txt
+
+      - name: Install ML dependencies
+        run: pip install -r scripts/ml/requirements.txt
+
+      # Cache des données EDGAR brutes (plusieurs centaines de Mo, par trimestre)
+      - name: Get current quarter key
+        id: quarter
+        shell: bash
+        run: |
+          MONTH=$(date -u +%-m)
+          YEAR=$(date -u +%Y)
+          Q=$(( (MONTH - 1) / 3 + 1 ))
+          echo "key=${YEAR}-Q${Q}" >> $GITHUB_OUTPUT
+
+      - name: Restore EDGAR cache
+        uses: actions/cache@v4
+        with:
+          path: scripts/ml/data/edgar/
+          key: edgar-${{ steps.quarter.outputs.key }}
+          restore-keys: |
+            edgar-
+
+      - name: Determine pipeline step
+        id: step
+        run: |
+          INPUT="${{ github.event.inputs.step }}"
+          STEP="${INPUT:-predict}"   # défaut predict pour le cron
+          MODEL="scripts/ml/data/model/lgbm_model.pkl"
+
+          if [ "$STEP" = "predict" ] && [ ! -f "$MODEL" ]; then
+            echo "Modèle absent — bascule sur 'all'"
+            STEP="all"
+          fi
+          echo "step=$STEP" >> $GITHUB_OUTPUT
+
+      - name: Run pipeline — predict only
+        if: steps.step.outputs.step == 'predict'
+        working-directory: scripts/ml
+        run: python pipeline.py --download --predict
+
+      - name: Run pipeline — retrain + predict
+        if: steps.step.outputs.step == 'train'
+        working-directory: scripts/ml
+        run: python pipeline.py --download --features --train --predict
+
+      - name: Run pipeline — full (first run)
+        if: steps.step.outputs.step == 'all'
+        working-directory: scripts/ml
+        run: python pipeline.py --all
+
+      - name: Commit predictions and model
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Toujours commiter les prédictions
+          git add public/data/picks/us_predictions.json
+
+          # Commiter le modèle s'il a changé (train/all uniquement)
+          STEP="${{ steps.step.outputs.step }}"
+          if [ "$STEP" = "train" ] || [ "$STEP" = "all" ]; then
+            git add scripts/ml/data/model/
+          fi
+
+          git diff --staged --quiet && echo "Aucun changement à commiter" && exit 0
+
+          PERIOD=$(date -u +%Y-%m)
+          git commit -m "chore: ML predictions ${PERIOD} [step=${STEP}]"
+          git pull origin main --ff-only
+          git push origin HEAD:main
