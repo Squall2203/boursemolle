@@ -95,9 +95,11 @@ def _sqlite_load_num() -> pd.DataFrame:
         chunk["ddate"] = pd.to_datetime(
             chunk["ddate"].astype(str), format="%Y%m%d", errors="coerce"
         )
-        chunk["qtrs"] = chunk.apply(
-            lambda r: _infer_qtrs(r["tag"], r["form"]), axis=1
-        )
+        bs_mask = chunk["tag"].isin(_BS_TAGS)
+        annual_mask = chunk["form"].str.contains("10-K", na=False)
+        chunk["qtrs"] = 1
+        chunk.loc[bs_mask, "qtrs"] = 0
+        chunk.loc[~bs_mask & annual_mask, "qtrs"] = 4
         chunk = chunk.dropna(subset=["ddate", "value"])
         chunks.append(chunk[["adsh", "tag", "ddate", "qtrs", "value"]])
     conn.close()

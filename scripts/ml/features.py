@@ -29,6 +29,7 @@ from edgar_download import load_all_sub, load_all_num, download_ticker_map
 log = logging.getLogger(__name__)
 
 FEATURES_PATH = DATA_DIR / "features.parquet"
+CHECKPOINT_PATH = DATA_DIR / "features_checkpoint.parquet"
 
 
 # ─── EDGAR data extraction ────────────────────────────────────────────────────
@@ -63,6 +64,8 @@ def build_pit_financials(
     num: pd.DataFrame,
     cik_to_ticker: dict[int, str],
     rebalancing_dates: list[date],
+    checkpoint_path: Path | None = None,
+    done_tickers: set[str] | None = None,
 ) -> pd.DataFrame:
     """
     For each (ticker, rebalancing_date), extract the most recently filed
@@ -81,9 +84,11 @@ def build_pit_financials(
 
     records = []
     tickers = sorted(sub["ticker"].unique())
+    if done_tickers:
+        tickers = [t for t in tickers if t not in done_tickers]
     log.info(f"Building PIT financials for {len(tickers)} tickers × {len(rebalancing_dates)} dates")
 
-    for ticker in tqdm(tickers, desc="Tickers"):
+    for i, ticker in enumerate(tqdm(tickers, desc="Tickers")):
         ticker_sub = sub[sub["ticker"] == ticker].sort_values("filed")
         cik = ticker_sub.iloc[0]["cik"]
 
@@ -176,6 +181,10 @@ def build_pit_financials(
                 "rd_intensity": safe_div(rd, rev, 100),
             }
             records.append(rec)
+
+        if checkpoint_path and (i + 1) % 500 == 0:
+            pd.DataFrame(records).to_parquet(checkpoint_path, index=False)
+            log.info(f"  Checkpoint saved ({i + 1}/{len(tickers)} tickers)")
 
     return pd.DataFrame(records)
 
@@ -370,7 +379,15 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
         log.info(f"Loading cached features from {FEATURES_PATH}")
         return pd.read_parquet(FEATURES_PATH)
 
-    log.info("Building PIT feature dataset from scratch...")
+    # Check for existing checkpoint (resume after interruption)
+    checkpoint_df: pd.DataFrame | None = None
+    done_tickers: set[str] = set()
+    if CHECKPOINT_PATH.exists() and not force:
+        checkpoint_df = pd.read_parquet(CHECKPOINT_PATH)
+        done_tickers = set(checkpoint_df["ticker"].unique())
+        log.info(f"Resuming from checkpoint: {len(done_tickers)} tickers already done")
+    else:
+        log.info("Building PIT feature dataset from scratch...")
 
     # Load raw EDGAR data
     sub = load_all_sub()
@@ -392,8 +409,16 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
     rebalancing_dates = [d for d in rebalancing_dates if pd.Timestamp(d) <= max_filed]
     log.info(f"Rebalancing dates: {rebalancing_dates[0]} → {rebalancing_dates[-1]} ({len(rebalancing_dates)} periods)")
 
-    # Build PIT fundamental features
-    fund_df = build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates)
+    # Build PIT fundamental features (resume from checkpoint if available)
+    fund_df_new = build_pit_financials(
+        sub, num, cik_to_ticker, rebalancing_dates,
+        checkpoint_path=CHECKPOINT_PATH,
+        done_tickers=done_tickers if done_tickers else None,
+    )
+    if checkpoint_df is not None and not checkpoint_df.empty:
+        fund_df = pd.concat([checkpoint_df, fund_df_new], ignore_index=True)
+    else:
+        fund_df = fund_df_new
     log.info(f"Fundamental features: {len(fund_df):,} rows")
 
     # Add SIC division
@@ -473,6 +498,8 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
     log.info(f"Feature dataset: {len(df_train):,} rows with labels, {len(df):,} total")
 
     df.to_parquet(FEATURES_PATH, index=False)
+    if CHECKPOINT_PATH.exists():
+        CHECKPOINT_PATH.unlink()
     log.info(f"Saved to {FEATURES_PATH}")
     return df
 
