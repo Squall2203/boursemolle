@@ -80,7 +80,7 @@ export function StrategyChart({ chartData, benchmarkName, className }: StrategyC
     if (benchmark.length > 0) {
       const benchSeries = chart.addSeries(LineSeries, {
         color: isDark ? "#6b7280" : "#9ca3af",
-        lineWidth: 1.5,
+        lineWidth: 1,
         priceFormat: { type: "custom", formatter: (p: number) => `${p.toFixed(1)}` },
       })
       benchSeries.setData(benchmark.map(p => ({ time: p.date, value: p.value })))
