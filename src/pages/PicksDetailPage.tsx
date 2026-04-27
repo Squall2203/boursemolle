@@ -1,13 +1,16 @@
 import { useState, useMemo } from "react"
 import { Link, useParams, Navigate } from "react-router-dom"
-import { ArrowLeft, ChevronDown, ChevronUp, ExternalLink, Info, TrendingDown, TrendingUp } from "lucide-react"
+import { ArrowLeft, ChevronDown, ChevronUp, ExternalLink, Info, TrendingDown, TrendingUp, Copy, CheckCircle2, AlertCircle, Loader2 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { usePicks } from "@/hooks/usePicks"
 import { usePicksHistory } from "@/hooks/usePicksHistory"
+import { usePortfolio } from "@/contexts/PortfolioContext"
+import { useAuth } from "@/contexts/AuthContext"
 import { StrategyChart } from "@/components/picks/StrategyChart"
 import { formatPrice, formatMarketCap, formatPercent } from "@/lib/format"
-import type { StrategyPick, PickPillars, PicksHistoryPeriod } from "@/types/picks"
+import type { StrategyPick, PickPillars, PicksHistoryPeriod, StrategyResult } from "@/types/picks"
 
 const MARKET_FLAG: Record<string, string> = {
   FR: "🇫🇷",
@@ -361,12 +364,200 @@ function PerformanceHistory({ strategyId }: { strategyId: string }) {
   )
 }
 
+// ─── Replicate modal ─────────────────────────────────────────────────────────
+
+type ReplicateStatus = "idle" | "running" | "done" | "error"
+
+interface ReplicateOrder {
+  ticker: string
+  name: string
+  price: number
+  quantity: number
+  total: number
+  currency: string
+}
+
+function ReplicateModal({
+  strategy,
+  onClose,
+}: {
+  strategy: StrategyResult
+  onClose: () => void
+}) {
+  const { activePortfolio, executeBuy, refetch } = usePortfolio()
+  const [status, setStatus] = useState<ReplicateStatus>("idle")
+  const [progress, setProgress] = useState(0)
+  const [errors, setErrors] = useState<string[]>([])
+
+  const cash = activePortfolio?.cash_balance ?? 0
+  const n = strategy.picks.filter((p) => p.price != null).length
+  const allocationPerPick = n > 0 ? Math.floor((cash / n) * 100) / 100 : 0
+
+  const orders: ReplicateOrder[] = useMemo(() =>
+    strategy.picks
+      .filter((p) => p.price != null)
+      .map((p) => {
+        const qty = p.price! > 0 ? Math.floor(allocationPerPick / p.price!) : 0
+        return {
+          ticker: p.ticker,
+          name: p.name,
+          price: p.price!,
+          quantity: qty,
+          total: Math.round(qty * p.price! * 100) / 100,
+          currency: p.currency ?? "EUR",
+        }
+      })
+      .filter((o) => o.quantity > 0),
+    [strategy.picks, allocationPerPick],
+  )
+
+  const totalInvested = orders.reduce((s, o) => s + o.total, 0)
+  const canExecute = orders.length > 0 && totalInvested <= cash
+
+  async function handleConfirm() {
+    setStatus("running")
+    setProgress(0)
+    const errs: string[] = []
+    for (let i = 0; i < orders.length; i++) {
+      const o = orders[i]
+      const { error } = await executeBuy(o.ticker, o.quantity, o.price)
+      if (error) errs.push(`${o.ticker}: ${error}`)
+      setProgress(i + 1)
+    }
+    await refetch()
+    setErrors(errs)
+    setStatus(errs.length > 0 ? "error" : "done")
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+      <div className="w-full max-w-lg rounded-2xl border bg-card shadow-2xl overflow-hidden">
+        {/* Header */}
+        <div className="px-6 py-5 border-b">
+          <h2 className="text-lg font-bold">Répliquer dans mon Paper PEA</h2>
+          <p className="text-sm text-muted-foreground mt-0.5">
+            {strategy.emoji} {strategy.name} · {strategy.picks.length} positions en pondération égale
+          </p>
+        </div>
+
+        {/* Body */}
+        <div className="px-6 py-4 space-y-4 max-h-[60vh] overflow-y-auto">
+          {status === "idle" && (
+            <>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Capital disponible</span>
+                <span className="font-semibold tabular-nums">{cash.toLocaleString("fr-FR", { style: "currency", currency: "EUR" })}</span>
+              </div>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Allocation par ligne</span>
+                <span className="font-semibold tabular-nums">{allocationPerPick.toLocaleString("fr-FR", { style: "currency", currency: "EUR" })}</span>
+              </div>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Investi total</span>
+                <span className={cn("font-semibold tabular-nums", totalInvested > cash ? "text-red-500" : "text-foreground")}>
+                  {totalInvested.toLocaleString("fr-FR", { style: "currency", currency: "EUR" })}
+                </span>
+              </div>
+
+              {orders.length === 0 ? (
+                <div className="flex items-center gap-2 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-400 px-3 py-2 text-sm">
+                  <AlertCircle className="size-4 shrink-0" />
+                  Capital insuffisant ou données de cours manquantes.
+                </div>
+              ) : (
+                <div className="rounded-lg border overflow-hidden">
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr className="border-b bg-muted/40 text-muted-foreground uppercase tracking-wider">
+                        <th className="pl-3 pr-2 py-2 text-left font-medium">Action</th>
+                        <th className="px-2 py-2 text-right font-medium">Cours</th>
+                        <th className="px-2 py-2 text-right font-medium">Qté</th>
+                        <th className="px-3 py-2 text-right font-medium">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {orders.map((o) => (
+                        <tr key={o.ticker} className="border-b last:border-0">
+                          <td className="pl-3 pr-2 py-2">
+                            <span className="font-mono font-semibold">{o.ticker}</span>
+                            <span className="ml-1.5 text-muted-foreground truncate">{o.name}</span>
+                          </td>
+                          <td className="px-2 py-2 text-right tabular-nums">{formatPrice(o.price, o.currency)}</td>
+                          <td className="px-2 py-2 text-right tabular-nums">{o.quantity}</td>
+                          <td className="px-3 py-2 text-right tabular-nums font-medium">{formatPrice(o.total, "EUR")}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {strategy.picks.length - orders.length > 0 && (
+                <p className="text-xs text-muted-foreground">
+                  {strategy.picks.length - orders.length} action(s) ignorée(s) — cours manquant ou quantité nulle.
+                </p>
+              )}
+            </>
+          )}
+
+          {status === "running" && (
+            <div className="flex flex-col items-center gap-4 py-6">
+              <Loader2 className="size-8 animate-spin text-primary" />
+              <p className="text-sm font-medium">Exécution en cours…</p>
+              <p className="text-xs text-muted-foreground">{progress} / {orders.length} ordres passés</p>
+            </div>
+          )}
+
+          {status === "done" && (
+            <div className="flex flex-col items-center gap-3 py-6">
+              <CheckCircle2 className="size-8 text-emerald-500" />
+              <p className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+                {orders.length} positions créées avec succès
+              </p>
+              <p className="text-xs text-muted-foreground text-center">
+                {totalInvested.toLocaleString("fr-FR", { style: "currency", currency: "EUR" })} investi en pondération égale
+              </p>
+            </div>
+          )}
+
+          {status === "error" && (
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-amber-600 dark:text-amber-400">
+                <AlertCircle className="size-4" />
+                <p className="text-sm font-medium">{orders.length - errors.length} succès, {errors.length} erreur(s)</p>
+              </div>
+              {errors.map((e) => (
+                <p key={e} className="text-xs text-red-500 pl-6">{e}</p>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Footer */}
+        <div className="px-6 py-4 border-t flex justify-end gap-2">
+          <Button variant="ghost" onClick={onClose} disabled={status === "running"}>
+            {status === "done" || status === "error" ? "Fermer" : "Annuler"}
+          </Button>
+          {status === "idle" && (
+            <Button onClick={handleConfirm} disabled={!canExecute}>
+              Confirmer · {orders.length} achats
+            </Button>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export function PicksDetailPage() {
   const { id } = useParams<{ id: string }>()
   const { data, loading } = usePicks()
+  const { user } = useAuth()
+  const { activePortfolio } = usePortfolio()
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
+  const [showReplicate, setShowReplicate] = useState(false)
 
   const strategy = useMemo(
     () => data?.strategies.find((s) => s.id === id) ?? null,
@@ -418,20 +609,33 @@ export function PicksDetailPage() {
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">{strategy.description}</p>
         </div>
-        <div className="text-xs text-muted-foreground space-y-1 text-right shrink-0">
-          <p>
-            {strategy.picks.length} sélections · Pondération égale ({(100 / strategy.picks.length).toFixed(0)}% chacune)
-          </p>
-          {newCount > 0 && (
-            <p className="text-emerald-600 dark:text-emerald-400 font-medium">
-              {newCount} nouvelle{newCount > 1 ? "s" : ""} entrée{newCount > 1 ? "s" : ""} ce mois
-            </p>
+        <div className="flex flex-col items-end gap-2 shrink-0">
+          {user && activePortfolio && (
+            <Button
+              size="sm"
+              variant="outline"
+              className="gap-1.5 text-xs"
+              onClick={() => setShowReplicate(true)}
+            >
+              <Copy className="size-3.5" />
+              Répliquer dans mon Paper PEA
+            </Button>
           )}
-          {strategy.exits.length > 0 && (
-            <p className="text-muted-foreground">
-              Sorties : {strategy.exits.join(", ")}
+          <div className="text-xs text-muted-foreground space-y-1 text-right">
+            <p>
+              {strategy.picks.length} sélections · Pondération égale ({(100 / strategy.picks.length).toFixed(0)}% chacune)
             </p>
-          )}
+            {newCount > 0 && (
+              <p className="text-emerald-600 dark:text-emerald-400 font-medium">
+                {newCount} nouvelle{newCount > 1 ? "s" : ""} entrée{newCount > 1 ? "s" : ""} ce mois
+              </p>
+            )}
+            {strategy.exits.length > 0 && (
+              <p className="text-muted-foreground">
+                Sorties : {strategy.exits.join(", ")}
+              </p>
+            )}
+          </div>
         </div>
       </div>
 
@@ -513,6 +717,11 @@ export function PicksDetailPage() {
           </Link>
         ))}
       </div>
+
+      {/* Replicate modal */}
+      {showReplicate && (
+        <ReplicateModal strategy={strategy} onClose={() => setShowReplicate(false)} />
+      )}
     </div>
   )
 }
