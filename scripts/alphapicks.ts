@@ -499,11 +499,24 @@ const EU_COUNTRIES = new Set([
 
 const STRATEGIES: StrategyConfig[] = [
   {
+    id: "france-elite",
+    name: "Champions France",
+    emoji: "🇫🇷",
+    market: "FR",
+    marketLabel: "France · PEA",
+    description: "Les meilleures actions françaises cotées sur Euronext Paris, sélectionnées sur la qualité, la valorisation et la solidité financière",
+    benchmarkName: "CAC 40",
+    benchmarkTicker: "^FCHI",
+    size: 10,
+    filter: (s) => s.country === "France" && s.peaEligible === true && s.price != null && s.marketCap != null && s.marketCap > 300e6,
+    weights: { qualite: 0.30, valorisation: 0.30, sante: 0.20, croissance: 0.10, dividende: 0.10, momentum: 0 },
+  },
+  {
     id: "value-pea",
     name: "Value PEA",
     emoji: "💎",
-    market: "FR",
-    marketLabel: "France · PEA",
+    market: "EU",
+    marketLabel: "Europe · PEA",
     description: "Actions sous-évaluées PEA-éligibles de la zone euro, sélectionnées sur la valorisation et la solidité financière",
     benchmarkName: "CAC 40",
     benchmarkTicker: "^FCHI",
