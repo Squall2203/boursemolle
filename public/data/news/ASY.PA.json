@@ -1,0 +1,53 @@
+{
+  "ticker": "ASY.PA",
+  "last_updated": "2026-04-28T05:33:24.744713+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "ASSYSTEM: First-quarter 2026  consolidated revenue",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assystem-first-quarter-2026-consolidated-153500562.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T15:35:00+00:00",
+      "summary": "First-quarter 2026 consolidated revenue at €165.8 million, with 2.2% organic growth, driven by Nuclear momentum of 8.0% Good growth momentum in France (+4.4%)2025 dividend payment calendar Paris La Dé",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Publication of the 2025 Universal Registration Document",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/publication-2025-universal-registration-document-163500593.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-27T16:35:00+00:00",
+      "summary": "Publication of the 2025 Universal Registration Document Paris-La Défense, 27 March 2026, 5.35 p.m. (CEST) – Assystem S.A. (ISIN: FR0000074148 – ASY) filed the original French version of its Universal ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ASSYSTEM: 2025 Annual results",
+      "url": "https://finance.yahoo.com/news/assystem-2025-annual-results-163500933.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-10T16:35:00+00:00",
+      "summary": "2025 annual results Revenue: solid performance (up 7.4%, with 4.5% organic growth)Operating profit before non-recurring items (EBIT-A)(1): €45.0 million (up 11.7%)Wider EBIT-A margin: 6.8% (up 0.2 pt)",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ASSYSTEM:2025 consolidated revenue",
+      "url": "https://finance.yahoo.com/news/assystem-2025-consolidated-revenue-163500375.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T16:35:00+00:00",
+      "summary": "2025 consolidated revenue: €656.6 million (up 7.4%)4.5% organic, primarily driven by robust International momentum Paris-La Défense, Tuesday 10 February 2026, 5.35 p.m. (CET) – Assystem S.A. (ISIN: FR",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Half-year liquidity contract statement on December 31st, 2025",
+      "url": "https://finance.yahoo.com/news/half-liquidity-contract-statement-december-163500914.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-09T16:35:00+00:00",
+      "summary": "HALF-YEAR LIQUIDITY CONTRACT STATEMENT Paris, January 9th, 2026 Under the liquidity contract entered between ASSYSTEM S.A. (ISIN: FR0000074148 - ASY) and Kepler Cheuvreux, the following resources appe",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "DELL",
+  "last_updated": "2026-04-28T05:36:22.917832+00:00",
+  "sentiment_score": 0.51,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Should You Buy, Sell, or Hold AAPL Stock Before Q2 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-aapl-stock-180900022.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T18:09:00+00:00",
+      "summary": "Apple expects 13%-16% sales growth in fiscal Q2 2026 and 48%-49% gross margin as iPhone and Services rise.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Should You Buy, Sell or Hold Microsoft Stock Before Q3 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-microsoft-stock-160700577.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T16:07:00+00:00",
+      "summary": "MSFT heads into fiscal Q3 earnings with strong AI momentum and cloud growth, but stretched valuation and margin pressure may keep new investors cautious.",
+      "sentiment": "positif",
+      "sentiment_score": 0.2
+    },
+    {
+      "title": "Dell, Hewlett Packard Enterprise Positioned to Benefit From Agentic AI-Driven CPU Demand, BofA Says",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/dell-hewlett-packard-enterprise-positioned-152020585.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T15:20:20+00:00",
+      "summary": "Dell Technologies (DELL) and Hewlett Packard Enterprise (HPE) are positioned to benefit from rising",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "These 2 stocks are set to benefit as Agentic AI lifts CPU intensity",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-stocks-set-benefit-agentic-142735532.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T14:27:35+00:00",
+      "summary": "Investing.com -- Bank of America raised its price targets for two computing names in a note on Monday, arguing that the rise of agentic AI will drive a new wave of demand for CPU-intensive hardware th",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Should You Invest in Dell Technologies (DELL) Based on Bullish Wall Street Views?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invest-dell-technologies-dell-based-133003406.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T13:30:03+00:00",
+      "summary": "Based on the average brokerage recommendation (ABR), Dell Technologies (DELL) should be added to one's portfolio. Wall Street analysts' overly optimistic recommendations cast doubt on the effectivenes",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

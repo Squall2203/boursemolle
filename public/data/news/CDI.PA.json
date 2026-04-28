@@ -1,0 +1,53 @@
+{
+  "ticker": "CDI.PA",
+  "last_updated": "2026-04-28T05:41:58.893425+00:00",
+  "sentiment_score": -0.4,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Christian Dior (ENXTPA:CDI) Valuation Check After Prolonged Share Price Weakness",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/christian-dior-enxtpa-cdi-valuation-230514106.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T23:05:14+00:00",
+      "summary": "Recent share performance and valuation snapshot Christian Dior (ENXTPA:CDI) has drawn investor attention after a mixed run in recent months, including a month gain of 1.9% but a past 3 months decline ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "EXCLUSIVE: Jodie Chan to Lead U.S. Communications and Marketing at Bottega Veneta",
+      "url": "https://wwd.com/business-news/human-resources/jodie-chan-bottega-veneta-communications-marketing-us-1238928643/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T04:01:00+00:00",
+      "summary": "She will report to Alejandra Rositto, CEO of the Americas.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "TikTok Tops Instagram as Beauty’s Biggest Driver of Earned Media Value",
+      "url": "https://wwd.com/beauty-industry-news/beauty-features/beauty-tiktok-virality-instagram-makeup-fragrance-1238928782/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T19:14:51+00:00",
+      "summary": "Data from WeArisma shows that beauty brands netted more earned media value on TikTok than Instagram for the first time last year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lvmh-share-transactions-disclosure-154700086.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T15:47:00+00:00",
+      "summary": "Paris, April 21st, 2026 The disclosure of share transactions carried out from April 13th to April 17th, 2026, was sent to the AMF on April 21st 2026. As required by current law, this document is publi",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Louis Vuitton, Gucci, Hermès luxury sales decline as Iran war hits crucial Middle East demand",
+      "url": "https://finance.yahoo.com/markets/stocks/article/louis-vuitton-gucci-hermes-luxury-sales-decline-as-iran-war-hits-crucial-middle-east-demand-114914361.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T11:49:14+00:00",
+      "summary": "The US-Israeli war with Iran is having knock-on effects everywhere, including energy markets, materials, and travel. One usually immune sector is also getting hit hard: luxury.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

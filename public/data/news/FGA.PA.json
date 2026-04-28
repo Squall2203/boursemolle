@@ -1,0 +1,53 @@
+{
+  "ticker": "FGA.PA",
+  "last_updated": "2026-04-28T05:47:36.943213+00:00",
+  "sentiment_score": -0.27,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "3 European Stocks Estimated To Be Trading At Over 49.3% Below Intrinsic Value",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-estimated-trading-053811649.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-18T05:38:11+00:00",
+      "summary": "As European markets navigate volatility amid concerns about AI disruption, the pan-European STOXX Europe 600 Index recently hit a new high but ended the week with only a slight gain. In this environme",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Market's Hidden Value: 3 Stocks Trading Below Estimated Worth",
+      "url": "https://finance.yahoo.com/news/european-markets-hidden-value-3-103803533.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-18T10:38:03+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index experienced a modest rise, bolstered by the reopening of the U.S. federal government, cooling sentiment on artificial intelligence tempered broader market ga",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Stocks Trading Below Estimated Value In October 2025",
+      "url": "https://finance.yahoo.com/news/european-stocks-trading-below-estimated-053802002.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-15T05:38:02+00:00",
+      "summary": "As European markets experience a pullback from recent record highs, driven by political turmoil in France and renewed global trade tensions, investors are keenly observing the region for potential opp",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Value Stocks: 3 Companies Trading Below Estimated Intrinsic Worth",
+      "url": "https://finance.yahoo.com/news/european-value-stocks-3-companies-054044227.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-15T05:40:44+00:00",
+      "summary": "As European markets experienced a positive week, with the pan-European STOXX Europe 600 Index rising by 1.03% amid expectations of potential U.S. interest rate cuts, investors are increasingly focused",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    },
+    {
+      "title": "European Stocks Estimated To Be Trading At Discounts Of Up To 47.8%",
+      "url": "https://finance.yahoo.com/news/european-stocks-estimated-trading-discounts-104046222.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-02T10:40:46+00:00",
+      "summary": "As European markets experience a positive uptick, with the pan-European STOXX Europe 600 Index climbing 2.77% amid easing trade tensions and economic reassurances from key figures, investors are keenl",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

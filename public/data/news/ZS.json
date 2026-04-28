@@ -1,0 +1,53 @@
+{
+  "ticker": "ZS",
+  "last_updated": "2026-04-28T05:37:19.530937+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "US High Growth Tech Stocks To Watch",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/us-high-growth-tech-stocks-173827434.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-27T17:38:27+00:00",
+      "summary": "The United States market remained flat over the last week, yet it has experienced a 30% rise over the past 12 months with earnings forecasted to grow by 16% annually. In this context of robust growth ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Zscaler (ZS) One of the Best Falling Stocks to Invest In Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zscaler-zs-one-best-falling-141539337.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-27T14:15:39+00:00",
+      "summary": "Zscaler, Inc. (NASDAQ:ZS) is one of the best falling stocks to invest in now. On April 22, Morgan Stanley analyst Meta Marshall downgraded Zscaler, Inc. (NASDAQ:ZS) from Overweight to Equalweight and ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Pictet Asset Management Holding SA Raises Holdings in Zscaler, Inc. $ZS",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-pictet-asset-management-holding-sa-raises-holdings-in-zscaler-inc-zs-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T11:01:25+00:00",
+      "summary": "Pictet Asset Management Holding SA raised its position in Zscaler, Inc. (NASDAQ:ZS - Free Report) by 30.1% during the fourth quarter, according to the company in its most recent 13F filing with the Se",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Zscaler, Inc. (ZS) A Good Stock To Buy Now?",
+      "url": "https://www.insidermonkey.com/blog/is-zscaler-inc-zs-a-good-stock-to-buy-now-2-1741800/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-26T22:09:33+00:00",
+      "summary": "Is ZS a good stock to buy? We came across a bullish thesis on Zscaler, Inc. on Compounding Your Wealth’s Substack by Sergey. In this article, we will summarize the bulls’ thesis on ZS. Zscaler, Inc.’s",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Munich Reinsurance Co Stock Corp in Munich Purchases 16,801 Shares of Zscaler, Inc. $ZS",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-munich-reinsurance-co-stock-corp-in-munich-purchases-16801-shares-of-zscaler-inc-zs-2026-04-25/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-25T12:47:03+00:00",
+      "summary": "Munich Reinsurance Co Stock Corp in Munich raised its position in shares of Zscaler, Inc. (NASDAQ:ZS - Free Report) by 246.1% during the 4th quarter, according to the company in its most recent 13F fi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

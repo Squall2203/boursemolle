@@ -1,0 +1,53 @@
+{
+  "ticker": "SESG.PA",
+  "last_updated": "2026-04-28T05:48:01.318384+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Eutelsat CEO says US demand holds despite SpaceX push to curb European rivals",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/eutelsat-ceo-says-us-demand-050221432.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T05:02:21+00:00",
+      "summary": "Demand for alternative satellite services from U.S. businesses and the Pentagon is resilient despite SpaceX's request to U.S. ‌regulators to restrict access for European rivals, the CEO of European sa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SES, Boeing Reach Milestone Toward Line-Fit Offerability for Multi-Orbit Connectivity",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ses-boeing-reach-milestone-toward-065000612.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T06:50:00+00:00",
+      "summary": "LUXEMBOURG, April 14, 2026--SES, a leading space solutions company, today announced a milestone toward offerability for SES’ multi-orbit antenna for installation by Boeing. This will allow airlines to",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SES, Japan Airlines to Expand Multi-Orbit Inflight Connectivity to Long-Haul Fleet",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ses-japan-airlines-expand-multi-060000306.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T06:00:00+00:00",
+      "summary": "LUXEMBOURG, April 14, 2026--SES, a leading space solutions company, today announced that Japan Airlines (JAL) has selected SES to deliver new multi-orbit inflight connectivity (IFC) for its Airbus and",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SES Announces Results of the Annual General Meeting",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ses-announces-results-annual-general-144900301.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T14:49:00+00:00",
+      "summary": "LUXEMBOURG, April 02, 2026--SES (the \"Company\") held the Annual General Meeting (\"AGM\") of Shareholders today in Betzdorf, Luxembourg.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SES Brings Satellite Connectivity to Refugees in Chad",
+      "url": "https://finance.yahoo.com/news/ses-brings-satellite-connectivity-refugees-075000685.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-04T07:50:00+00:00",
+      "summary": "LUXEMBOURG, March 04, 2026--SES, a space solutions company, is expanding humanitarian connectivity at the Farchana refugee settlement in Chad in cooperation with emergency.lu, the public-private partn",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

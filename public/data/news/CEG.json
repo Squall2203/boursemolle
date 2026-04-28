@@ -1,0 +1,53 @@
+{
+  "ticker": "CEG",
+  "last_updated": "2026-04-28T05:35:58.596309+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Microsoft Deal Puts Constellation Energy At Heart Of AI Power Story",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/microsoft-deal-puts-constellation-energy-042747667.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T04:27:47+00:00",
+      "summary": "Constellation Energy (NasdaqGS:CEG) is partnering with Microsoft to restart the Three Mile Island nuclear facility to supply power to data centers. The agreement focuses on providing carbon free elect",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Can Constellation Energy (CEG) Capitalize on the Growing Demand for Clean Electricity?",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/constellation-energy-ceg-capitalize-growing-184016962.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T18:40:16+00:00",
+      "summary": "Constellation Energy Corporation (NASDAQ:CEG) is one of the 10 Best Under-the-Radar Data Center Stocks to Buy. In the past year, the company’s stock jumped 36.87%, while it posted a 21.59% percent yea",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Constellation Energy Corporation (CEG) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-corporation-ceg-trending-130015344.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T13:00:15+00:00",
+      "summary": "Recently, Zacks.com users have been paying close attention to Constellation Energy Corporation (CEG). This makes it worthwhile to examine what the stock has in store.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Evercore ISI Resumes Coverage of Constellation Energy (CEG) with a Bullish Stance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/evercore-isi-resumes-coverage-constellation-141704241.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-26T14:17:04+00:00",
+      "summary": "Constellation Energy Corporation (NASDAQ:CEG) is included among the 10 Best Nuclear Energy Stocks to Buy for Dividends. Constellation Energy Corporation (NASDAQ:CEG) is the largest provider of clean, ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Oklo Is Interesting, but This Nuclear Stock Is a Better Buy",
+      "url": "https://www.fool.com/investing/2026/04/26/oklo-is-interesting-but-this-nuclear-stock-is-a-be/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-26T11:02:00+00:00",
+      "summary": "Oklo's liquid-metal cooled SMR technology is impressive, but you can invest in that technology without anywhere near as much risk.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

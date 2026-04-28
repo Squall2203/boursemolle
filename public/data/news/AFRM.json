@@ -1,0 +1,53 @@
+{
+  "ticker": "AFRM",
+  "last_updated": "2026-04-28T05:37:03.418999+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "How Affirm Retooled its Engineering Organization for Agentic Software Development in One Week",
+      "url": "https://tech.affirm.com/how-affirm-retooled-its-engineering-organization-for-agentic-software-development-in-one-week-1fd35268fde6?source=rss----9de3b57b3fb---4",
+      "source": "affirm.com",
+      "published_at": "2026-04-27T22:35:38+00:00",
+      "summary": "Author: Daniel Martin, Sr. Director of Engineering, Developer ProductivityIn February 2026, we paused normal engineering delivery for a week and asked over 800 engineers to use agentic AI to take real",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Affirm: Agentic Credit Rewrites the Rules of Consumer Lending",
+      "url": "https://www.pymnts.com/consumer-finance/2026/affirm-agentic-credit-rewrites-the-rules-of-consumer-lending/",
+      "source": "pymnts.com",
+      "published_at": "2026-04-27T06:07:12+00:00",
+      "summary": "Watch more: What’s Next in Payments With Affirm’s Libor Michalek For 60 years, the revolving credit line has been the default way Americans borrow. It wasn’t designed to be the best answer. It won bec",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "M&T Bank Corp Buys 51,791 Shares of Affirm Holdings, Inc. $AFRM",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-mt-bank-corp-buys-51791-shares-of-affirm-holdings-inc-afrm-2026-04-26/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-26T09:38:41+00:00",
+      "summary": "M&T Bank Corp raised its stake in shares of Affirm Holdings, Inc. (NASDAQ:AFRM - Free Report) by 271.3% in the 4th quarter, according to the company in its most recent filing with the Securities & Exc",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Affirm Holdings (AFRM) Outperforms Broader Market: What You Need to Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/affirm-holdings-afrm-outperforms-broader-215001018.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-24T21:50:01+00:00",
+      "summary": "In the closing of the recent trading day, Affirm Holdings (AFRM) stood at $63.74, denoting a +1.2% move from the preceding trading day.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "American Express vs. Affirm: Which Payments Stock Has More Upside?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/american-express-vs-affirm-payments-153100650.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-24T15:31:00+00:00",
+      "summary": "AFRM's surging BNPL growth and higher upside potential set it apart from AXP, despite AXP's stable spending trends and premium model strength.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

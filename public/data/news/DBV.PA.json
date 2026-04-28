@@ -1,0 +1,44 @@
+{
+  "ticker": "DBV.PA",
+  "last_updated": "2026-04-28T05:48:49.919954+00:00",
+  "sentiment_score": 0.75,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Equities Traded in the US as American Depositary Receipts Track Lower in Monday Trading",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-equities-traded-us-american-151718482.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T15:17:18+00:00",
+      "summary": "European equities traded in the US as American depositary receipts were trending lower late Monday m",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is It Too Late To Consider DBV Technologies (ENXTPA:DBV) After Its 1-Year 173% Surge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/too-consider-dbv-technologies-enxtpa-001637938.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T00:16:37+00:00",
+      "summary": "Wondering if DBV Technologies at €3.62 is still priced for opportunity or if most of the upside is already in the rear-view mirror. The stock has recently posted returns of 3.4% over 7 days, 6.3% over",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "DBV Technologies (DBVT) Upgraded to Buy: What Does It Mean for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dbv-technologies-dbvt-upgraded-buy-160005871.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T16:00:05+00:00",
+      "summary": "DBV Technologies (DBVT) has been upgraded to a Zacks Rank #2 (Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Wall Street Analysts Predict a 79.04% Upside in DBV Technologies (DBVT): Here's  What You Should Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-predict-79-135503802.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T13:55:03+00:00",
+      "summary": "The mean of analysts' price targets for DBV Technologies (DBVT) points to a 79% upside in the stock. While this highly sought-after metric has not proven reasonably effective, strong agreement among a",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

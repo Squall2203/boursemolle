@@ -1,0 +1,53 @@
+{
+  "ticker": "LCID",
+  "last_updated": "2026-04-28T05:38:32.440016+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Lucid Group (LCID) Stock Declines While Market Improves: Some Information for Investors",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lucid-group-lcid-stock-declines-221502849.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T22:15:02+00:00",
+      "summary": "In the closing of the recent trading day, Lucid Group (LCID) stood at $5.93, denoting a -5.12% move from the preceding trading day.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Lucid Crashes To 52-Week Low",
+      "url": "https://247wallst.com/investing/2026/04/27/lucid-crashes-to-52-week-low/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T12:54:17+00:00",
+      "summary": "Lucid (NASDAQ: LCID) traded as low as $6.22, which is its 52-week low. The high for the period is $33.70, which it reached last July. Over the last year, the stock has collapsed by 74%, including a 9%",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Lucid Is on Sale. Could This Be the Buy That Sets You Up for Life?",
+      "url": "https://www.fool.com/investing/2026/04/26/lucid-is-on-sale-could-this-be-the-buy-that-sets-y/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-26T21:35:00+00:00",
+      "summary": "Lucid stock is trading near its 52-week low; is that an opportunity or a sign to avoid the stock?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Is Lucid Stock a Buy at $7.25?",
+      "url": "https://www.fool.com/investing/2026/04/25/is-lucid-stock-a-buy-at-725/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-25T19:05:00+00:00",
+      "summary": "Risks remain high, but the bottom might be close.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EV Stock Showdown: Rivian or Lucid -- Which Is the Smarter Long-Term Buy?",
+      "url": "https://www.fool.com/investing/2026/04/25/ev-stock-showdown-rivian-or-lucid-which-is-the-sma/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-25T15:35:00+00:00",
+      "summary": "Rivian and Lucid are both start-ups attempting to build EV companies, but one is executing better than the other.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

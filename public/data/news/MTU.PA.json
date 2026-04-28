@@ -1,0 +1,53 @@
+{
+  "ticker": "MTU.PA",
+  "last_updated": "2026-04-28T05:34:37.661003+00:00",
+  "sentiment_score": 0.27,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 5.8%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-dividend-stocks-yielding-053230655.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T05:32:30+00:00",
+      "summary": "As European markets experience a rally with the STOXX Europe 600 Index climbing over 3% amid easing geopolitical tensions, investors are increasingly focused on opportunities within dividend stocks. I",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Dividend Stocks To Enhance Your Portfolio",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-enhance-portfolio-053210173.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-30T05:32:10+00:00",
+      "summary": "As European markets navigate renewed trade and geopolitical uncertainties, with the STOXX Europe 600 Index recently closing lower, investors are increasingly seeking stability in dividend stocks. In s",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks To Consider",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-consider-053141220.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-08T05:31:41+00:00",
+      "summary": "As European markets navigate mixed returns and hopes for interest rate cuts, investors are paying close attention to economic indicators such as inflation and GDP growth. In this environment, dividend",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks To Consider",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-consider-103159973.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-07T10:31:59+00:00",
+      "summary": "As the European markets navigate mixed performances, with the STOXX Europe 600 Index recently pulling back after hitting a fresh high, investors are keeping a close eye on interest rate decisions and ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks To Watch With Up To 7.3% Yield",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-watch-053146914.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-11T05:31:46+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index recently ended slightly lower amid concerns about global growth and a stronger euro, investors are increasingly looking towards dividend stocks as a potentia",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

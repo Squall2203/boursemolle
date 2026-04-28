@@ -1,0 +1,53 @@
+{
+  "ticker": "TEAM",
+  "last_updated": "2026-04-28T05:37:27.597219+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Atlassian Could Skyrocket This Week On Easing AI Fears | $EXPE $MDB $NOW $IGV $TEAM",
+      "url": "https://seekingalpha.com/article/4894730-atlassian-could-skyrocket-this-week-on-easing-ai-fears",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-27T20:48:09+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Cantor Fitzgerald Cuts Atlassian Price Target From $146 to $98: Is Software Multiple Compression Just Beginning?",
+      "url": "https://247wallst.com/investing/2026/04/27/cantor-fitzgerald-cuts-atlassian-price-target-from-146-to-98-is-software-multiple-compression-just-beginning/",
+      "source": "247wallst.com",
+      "published_at": "2026-04-27T15:18:28+00:00",
+      "summary": "Cantor Fitzgerald analyst Thomas Blakey lowered the firm’s price target on Atlassian (NASDAQ:TEAM) to $98 from $146 and kept an Overweight rating on the shares. The price target cut reflects continued",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Jim Cramer Shares Whether to Buy Atlassian (TEAM) Stock or Not",
+      "url": "https://www.insidermonkey.com/blog/jim-cramer-shares-whether-to-buy-atlassian-team-stock-or-not-1747703/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-27T14:02:09+00:00",
+      "summary": "We have recently published Jim Cramer Discussed AI Circular Deals, Top Quantum Plays & These 22 Stocks. Atlassian Corporation (NASDAQ:TEAM) is one of the stocks discussed by Jim Cramer. Atlassian Corp",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Pictet Asset Management Holding SA Has $640.63 Million Stake in Atlassian Corporation PLC $TEAM",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-pictet-asset-management-holding-sa-has-64063-million-stake-in-atlassian-corporation-plc-team-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T11:00:56+00:00",
+      "summary": "Pictet Asset Management Holding SA raised its position in shares of Atlassian Corporation PLC (NASDAQ:TEAM - Free Report) by 38.1% during the fourth quarter, according to its most recent disclosure wi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Atlassian (TEAM) Expands Google Cloud Partnership to Integrate Gemini AI Into Rovo Platform",
+      "url": "https://www.insidermonkey.com/blog/atlassian-team-expands-google-cloud-partnership-to-integrate-gemini-ai-into-rovo-platform-1747267/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-27T04:31:38+00:00",
+      "summary": "\\Atlassian Corporation (NASDAQ:TEAM) is one of the best NASDAQ stocks with the highest upside potential. On April 22, Atlassian and Google Cloud announced the next phase of their multi-year partnershi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

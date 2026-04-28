@@ -1,0 +1,53 @@
+{
+  "ticker": "CRWD",
+  "last_updated": "2026-04-28T05:35:14.051086+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "CrowdStrike Holdings, Inc.: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000025/0001778564-26-000025-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-28T00:05:05+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Crowdstrike CEO George Kurtz sells ~$1.97m in shares",
+      "url": "https://www.investing.com/news/insider-trading-news/crowdstrike-ceo-george-kurtz-sells-197m-in-shares-93CH-4640147",
+      "source": "investing.com",
+      "published_at": "2026-04-28T00:04:17+00:00",
+      "summary": "",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "CrowdStrike Holdings, Inc.: Form 4 - Statement of changes in beneficial ownership of securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000024/0001778564-26-000024-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-28T00:00:06+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Best Cybersecurity Stocks Worth Watching - April 27th",
+      "url": "https://www.marketbeat.com/instant-alerts/best-cybersecurity-stocks-worth-watching-april-27th-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T19:51:50+00:00",
+      "summary": "Palo Alto Networks, CrowdStrike, and Fortinet are the three Cybersecurity stocks to watch today, according to MarketBeat's stock screener tool. Cybersecurity stocks are shares of companies that develo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "New Wall Street research touts our long-held view on AI and cybersecurity stocks",
+      "url": "https://www.cnbc.com/2026/04/27/street-research-adopts-our-long-held-view-on-ai-and-cybersecurity-stocks.html",
+      "source": "cnbc.com",
+      "published_at": "2026-04-27T18:11:10+00:00",
+      "summary": "CrowdStrike won fresh Wall Street support as analyst said rising AI-driven cyber threats increase demand for the company's security platform.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

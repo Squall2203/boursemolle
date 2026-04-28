@@ -1,0 +1,53 @@
+{
+  "ticker": "ITP.PA",
+  "last_updated": "2026-04-28T05:45:58.820743+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Interparfums SA Stock Plunges Following Adjusted  Full-year Outlook",
+      "url": "https://wwd.com/beauty-industry-news/beauty-features/interparfums-sa-stock-plunges-adjusted-full-year-outlook-1238353538/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-19T09:05:52+00:00",
+      "summary": "The company lowered its forecast as the fragrance market overall grows modestly.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Examining Interparfums After 20% Drop and Stable Outlook for 2025",
+      "url": "https://finance.yahoo.com/news/examining-interparfums-20-drop-stable-104707613.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-15T10:47:07+00:00",
+      "summary": "If you’re sizing up what to do with Interparfums stock at this moment, you’re definitely not alone. It’s the kind of name that rarely makes the flashy headlines, but there’s a steady drumbeat of curio",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Interparfums SA Stock Hit After Full-year Estimate Adjustment",
+      "url": "https://wwd.com/beauty-industry-news/beauty-features/interparfum-sa-stock-hit-full-year-estimate-adjustment-1237994183/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-24T09:10:08+00:00",
+      "summary": "The group said 2025 sales should return to the lower end of its initial estimate due to the euro’s appreciation against the U.S. dollar since spring.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Interparfums Announces Fragrance License Agreement with Longchamp",
+      "url": "https://finance.yahoo.com/news/interparfums-announces-fragrance-license-agreement-120500952.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-22T12:05:00+00:00",
+      "summary": "NEW YORK, July 22, 2025 (GLOBE NEWSWIRE) -- Interparfums, Inc. (NASDAQ GS: IPAR) today announced that its subsidiary, Interparfums SA, has signed an exclusive fragrance license agreement with Longcham",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

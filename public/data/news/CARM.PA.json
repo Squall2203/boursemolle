@@ -1,0 +1,53 @@
+{
+  "ticker": "CARM.PA",
+  "last_updated": "2026-04-28T05:47:49.189968+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Carmila: First-Quarter 2026 Financial Information",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/carmila-first-quarter-2026-financial-154500149.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T15:45:00+00:00",
+      "summary": "PARIS, April 23, 2026--Regulatory News: Marie Cheval, Chair and Chief Executive Officer of Carmila (Paris:CARM), commented:",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Carmila: Availability of Documents for the Ordinary and Extraordinary Shareholder Meeting on 13 May 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/carmila-availability-documents-ordinary-extraordinary-094600616.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T09:46:00+00:00",
+      "summary": "PARIS, April 22, 2026--Regulatory News: Carmila (Paris:CARM) shareholders are invited to participate in Carmila’s Ordinary and Extraordinary Shareholder Meeting to be held on Wednesday May 13, 2026 at",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Carmila Makes its 2025 Universal Registration Document Available",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/carmila-makes-2025-universal-registration-140200039.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-01T14:02:00+00:00",
+      "summary": "PARIS, April 01, 2026--Regulatory News: Carmila (Euronext Paris: CARM) filed its 2025 Universal Registration Document with the French Financial Markets Authority (AMF) on 31 March 2026, under number D",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "CARMILA: Information Concerning the Total Number of Voting Rights and Share",
+      "url": "https://finance.yahoo.com/news/carmila-information-concerning-total-number-164000426.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T16:40:00+00:00",
+      "summary": "PARIS, March 09, 2026--Regulatory News: CARMILA (Paris:CARM):",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Assessing Carmila (ENXTPA:CARM) Valuation After Recent Share Price Momentum And Fair Value Gap",
+      "url": "https://finance.yahoo.com/news/assessing-carmila-enxtpa-carm-valuation-101151926.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T10:11:51+00:00",
+      "summary": "Recent performance snapshot and business profile Carmila (ENXTPA:CARM) has drawn fresh attention after recent share moves, with the stock showing positive returns over the past month and the past 3 mo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

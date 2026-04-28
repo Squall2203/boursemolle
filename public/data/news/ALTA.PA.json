@@ -1,0 +1,44 @@
+{
+  "ticker": "ALTA.PA",
+  "last_updated": "2026-04-28T05:40:45.971150+00:00",
+  "sentiment_score": 0.25,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Growth Stocks Insiders Are Confident In",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-growth-stocks-insiders-confident-103603181.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-31T10:36:03+00:00",
+      "summary": "As the European market navigates uncertainties stemming from geopolitical tensions and fluctuating energy prices, investors are keenly observing how these factors might impact economic growth and corp",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Altarea and Vantage Data Centers Announce Strategic Partnership to Develop AI and Cloud Data Center Campus in France",
+      "url": "https://finance.yahoo.com/news/altarea-vantage-data-centers-announce-164500457.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-24T16:45:00+00:00",
+      "summary": "PARIS & LUXEMBOURG, February 24, 2026--Altarea, France’s leading low carbon urban transformation group, and Vantage Data Centers, a leading global provider of hyperscale data center campuses, announce",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Altarea (ENXTPA:ALTA) Valuation: Is the Market Overlooking Hidden Value?",
+      "url": "https://finance.yahoo.com/news/altarea-enxtpa-alta-valuation-market-113414187.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-24T11:34:14+00:00",
+      "summary": "Altarea (ENXTPA:ALTA) shares have seen some movement recently that could easily fly under the radar but may nevertheless be prompting investors to take notice. There has not been a major announcement ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

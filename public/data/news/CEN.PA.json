@@ -1,0 +1,53 @@
+{
+  "ticker": "CEN.PA",
+  "last_updated": "2026-04-28T05:34:49.830768+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 13.5%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-103149041.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-30T10:31:49+00:00",
+      "summary": "As European markets navigate renewed trade and geopolitical uncertainty, with the pan-European STOXX Europe 600 Index ending 0.98% lower, investors are increasingly looking towards dividend stocks as ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Dividend Stocks To Consider With Up To 10.2% Yield",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-consider-053140007.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-25T05:31:40+00:00",
+      "summary": "As European markets show signs of steady economic growth and benefit from looser monetary policies, investors may find opportunities in dividend stocks that offer attractive yields. In the current env",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Dividend Stocks To Enhance Your Portfolio",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-enhance-portfolio-053150359.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-30T05:31:50+00:00",
+      "summary": "As the European markets navigate a landscape marked by stable growth in major indices and cautious optimism amidst interest rate assessments, investors continue to seek reliable avenues for income gen",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Undiscovered Gems in Europe for September 2025",
+      "url": "https://finance.yahoo.com/news/undiscovered-gems-europe-september-2025-053306498.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-24T05:33:06+00:00",
+      "summary": "As European markets navigate a complex landscape marked by mixed performances across major indices and cautious monetary policy decisions, investors are keenly assessing opportunities in the region's ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GL Events Valuation in Focus After Strong 61.7% Year-to-Date Rally",
+      "url": "https://finance.yahoo.com/news/gl-events-valuation-focus-strong-125433975.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T12:54:33+00:00",
+      "summary": "Thinking about what to do with your GL Events shares? Whether you are sizing up an entry point or reassessing your position after a strong rally, now is a great time to take stock of what is really ha",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

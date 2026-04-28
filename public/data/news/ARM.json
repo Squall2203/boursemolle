@@ -1,0 +1,53 @@
+{
+  "ticker": "ARM",
+  "last_updated": "2026-04-28T05:35:05.996258+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Arm’s stock snaps a seven-day winning streak as it loses some of its AI glow",
+      "url": "https://www.marketwatch.com/story/arms-stock-snaps-a-seven-day-winning-streak-as-it-loses-some-of-its-ai-glow-8d390975?mod=mw_rss_topstories",
+      "source": "marketwatch.com",
+      "published_at": "2026-04-27T22:09:00+00:00",
+      "summary": "Arm shares led Nadsaq 100 decliners on Monday, reflecting more general pressure on AI names and specific concerns about whether Arm will play a role in a potential Qualcomm-OpenAI chip.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "ARM (NASDAQ:ARM) Shares Down 8.1% - Should You Sell?",
+      "url": "https://www.marketbeat.com/instant-alerts/arm-nasdaqarm-shares-down-81-should-you-sell-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T21:58:38+00:00",
+      "summary": "ARM (NASDAQ:ARM) Stock Price Down 8.1% - What's Next?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Intel Confirms Another Gold Mine Segment In Semiconductors | $AMD $ARM $AFMC $AFSM $ARKK",
+      "url": "https://seekingalpha.com/article/4894722-intel-confirms-another-gold-mine-segment-in-semiconductors",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-27T19:30:00+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Chip Stocks Wipe Out as Iran War Fears and Big Tech Earnings Loom",
+      "url": "https://www.gurufocus.com/news/8820603/chip-stocks-wipe-out-as-iran-war-fears-and-big-tech-earnings-loom",
+      "source": "gurufocus.com",
+      "published_at": "2026-04-27T18:10:26+00:00",
+      "summary": "Arm and Marvell Tumble While Nvidia Bucks the RoutRelated Stocks: ARM, INTC, AAOI, NVDA, MRVL,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ARM (NASDAQ:ARM) Shares Gap Down - Time to Sell?",
+      "url": "https://www.marketbeat.com/instant-alerts/arm-nasdaqarm-shares-gap-down-time-to-sell-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T16:23:27+00:00",
+      "summary": "ARM (NASDAQ:ARM) Shares Gap Down - Here's Why",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

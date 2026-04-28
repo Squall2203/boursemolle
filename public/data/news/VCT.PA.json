@@ -1,0 +1,53 @@
+{
+  "ticker": "VCT.PA",
+  "last_updated": "2026-04-28T05:32:31.591017+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Summary of the Vicat Combined General Meeting 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/summary-vicat-combined-general-meeting-160000527.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T16:00:00+00:00",
+      "summary": "Annual General Meeting of April 10, 2026 Vicat (Euronext Paris: FR0000031775 – VCT) Annual Shareholders’ Meeting was held today under the chairmanship of Guy Sidos, Chairman of the Board of Directors ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vicat SA (SDCVF) Full Year 2025 Earnings Call Highlights: Strong Revenue Growth Amid Market ...",
+      "url": "https://finance.yahoo.com/news/vicat-sa-sdcvf-full-2025-210035219.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T21:00:35+00:00",
+      "summary": "Vicat SA (SDCVF) reports robust financial performance with significant revenue growth and strategic advancements despite facing foreign exchange headwinds and market volatility.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Vicat - FY 2025 Results",
+      "url": "https://finance.yahoo.com/news/vicat-fy-2025-results-170000636.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-16T17:00:00+00:00",
+      "summary": "Robust revenue growth of +3.3% like-for-like1 in 2025, accelerating in Q4 (+8.1%)Cement business stabilized in France, recovery in Switzerland, and strong growth in the Mediterranean regionEBITDA of €",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Vicat (ENXTPA:VCT) Valuation Check After Strong Long Term Returns And Recent Share Price Pullback",
+      "url": "https://finance.yahoo.com/news/vicat-enxtpa-vct-valuation-check-201743146.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T20:17:43+00:00",
+      "summary": "Vicat (ENXTPA:VCT) has drawn investor attention after recent share price moves, with a roughly 1.6% decline over the past month contrasted with a gain of about 10% over the past 3 months. See our late",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The Vicat Group awarded a “Grand Projets Industriels de Décarbonation” (GPID) grant for its VAIA project",
+      "url": "https://finance.yahoo.com/news/vicat-group-awarded-grand-projets-074500735.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T07:45:00+00:00",
+      "summary": "The Vicat Group awarded a “Grand Projets Industriels de Décarbonation” (GPID) grant for its VAIA project The VAIA (Vicat Advanced Industrial Alliance) project has been awarded a GPID grant by the Fren",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

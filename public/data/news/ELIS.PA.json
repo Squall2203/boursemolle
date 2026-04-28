@@ -1,0 +1,35 @@
+{
+  "ticker": "ELIS.PA",
+  "last_updated": "2026-04-28T05:41:34.635806+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Why The Narrative Around Elis (ENXTPA:ELIS) Is Shifting On Mixed Analyst Price Targets",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-narrative-around-elis-enxtpa-190634060.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-25T19:06:34+00:00",
+      "summary": "Elis now carries a refreshed fair value estimate of €29.03, compared with the previous €28.90. This points to only a very modest tweak in analyst modelling rather than a wholesale reset. That adjustme",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Elis: Disclosure of trading in own shares occured from April 13 to April 17, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elis-disclosure-trading-own-shares-060000157.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T06:00:00+00:00",
+      "summary": "Disclosure of trading in own shares occurred from April 13 to April 17, 2026 Puteaux, April 21, 2026 In accordance with the regulations on share buybacks, in particular Regulation (EU) 2016/1052, Elis",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Elis: Disclosure of trading in own shares occured on March 30, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elis-disclosure-trading-own-shares-060000652.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-02T06:00:00+00:00",
+      "summary": "Disclosure of trading in own shares occurred on March 30, 2026 Puteaux, April 2, 2026 In accordance with the regulations on share buybacks, in particular Regulation (EU) 2016/1052, Elis hereby declare",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

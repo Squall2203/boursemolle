@@ -1,0 +1,53 @@
+{
+  "ticker": "ANET",
+  "last_updated": "2026-04-28T05:35:22.119606+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Arista Networks (NYSE:ANET) Shares Down 2.5% After Insider Selling",
+      "url": "https://www.marketbeat.com/instant-alerts/arista-networks-nyseanet-shares-down-25-after-insider-selling-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T21:12:35+00:00",
+      "summary": "Arista Networks (NYSE:ANET) Stock Price Down 2.5% Following Insider Selling",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "5 AI Infrastructure Stocks Smart Money Is Buying Before the Next Surge",
+      "url": "https://www.marketbeat.com/originals/5-ai-infrastructure-stocks-smart-money-is-buying-before-the-next-surge/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T14:45:00+00:00",
+      "summary": "Institutional investors have been steadily accumulating shares in five AI infrastructure companies, including Vertiv, Arista Networks, and Celestica.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Block, Arista Networks, Meta Platforms and Alphabet",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-block-125000464.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-27T12:50:00+00:00",
+      "summary": "Block, Arista Networks, Meta Platforms and Alphabet are poised to beat earnings as AI growth and resilient digital ads drive Internet sector momentum.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Nvidia: The $31 Billion Footnote Nobody's Talking About | $AMD $AVGO $MRVL $ANET $CSCO",
+      "url": "https://seekingalpha.com/article/4894556-nvidia-the-31-billion-footnote-nobodys-talking-about",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-27T12:30:27+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Pictet Asset Management Holding SA Buys 1,724,758 Shares of Arista Networks, Inc. $ANET",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-pictet-asset-management-holding-sa-buys-1724758-shares-of-arista-networks-inc-anet-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T11:01:23+00:00",
+      "summary": "Pictet Asset Management Holding SA raised its stake in Arista Networks, Inc. (NYSE:ANET - Free Report) by 310.6% during the 4th quarter, according to its most recent Form 13F filing with the Securitie",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

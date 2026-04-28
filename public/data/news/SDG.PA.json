@@ -1,0 +1,53 @@
+{
+  "ticker": "SDG.PA",
+  "last_updated": "2026-04-28T05:45:10.298365+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SYNERGIE : Q1 2026 REVENUES",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/synergie-q1-2026-revenues-161500716.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T16:15:00+00:00",
+      "summary": "PRESS RELEASE | April 22nd, 2026 – 5.45pm 2026 FIRST-QUARTER (Q1) REVENUE SYNERGIE maintains its growth momentum and reports 2026 first‑quarter revenue of €795.1 million, up +5.0%. in €MQ1 2026Q1 2025",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SYNERGIE closes the acquisition of a majority stake in House of Flexwork Group.",
+      "url": "https://finance.yahoo.com/news/synergie-closes-acquisition-majority-stake-171100857.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-02T17:11:00+00:00",
+      "summary": "PRESS RELEASE | February 2nd, 2026 – 5.45pm SYNERGIE CLOSES THE ACQUISITION OF A MAJORITY STAKE IN HOUSE OF FLEXWORK GROUP. Following the signing of an agreement on December 23rd, 2025, SYNERGIE and H",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SYNERGIE : 2025 REVENUE",
+      "url": "https://finance.yahoo.com/news/synergie-2025-revenue-164700103.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T16:47:00+00:00",
+      "summary": "2025 REVENUE SYNERGIE confirms its growth momentum in a declining market and reports annual revenue of €3.2 billion, up +1.6%. in € mQ4 2025Q4 2024Variation20252024VariationInternational512.2502.6+1.9",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SYNERGIE ANNOUNCES AN AGREEMENT TO ACQUIRE A MAJORITY STAKE OF AGILUS WORK SOLUTIONS",
+      "url": "https://finance.yahoo.com/news/synergie-announces-agreement-acquire-majority-074600836.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-26T07:46:00+00:00",
+      "summary": "PRESS RELEASE | January 26th, 2026 – 8.30am SYNERGIE ANNOUNCES AN AGREEMENT TO ACQUIRE A MAJORITY STAKE OF AGILUS WORK SOLUTIONS SYNERGIE strengthens its Canadian based operations with the acquisition",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SYNERGIE strengthens its Swiss based operations with the acquisition of a majority stake in House of Flexwork Group.",
+      "url": "https://finance.yahoo.com/news/synergie-strengthens-swiss-based-operations-173000303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-23T17:30:00+00:00",
+      "summary": "PRESS RELEASE | December 23rd, 2025 – 5.45pm SYNERGIE STRENGTHENS ITS SWISS BASED OPERATIONS WITH THE ACQUISITION OF A MAJORITY STAKE IN HOUSE OF FLEXWORK GROUP. The SYNERGIE Group has signed on 23rd ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

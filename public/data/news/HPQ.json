@@ -1,0 +1,53 @@
+{
+  "ticker": "HPQ",
+  "last_updated": "2026-04-28T05:36:35.134393+00:00",
+  "sentiment_score": 0.17,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Should You Buy, Sell, or Hold AAPL Stock Before Q2 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-aapl-stock-180900022.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T18:09:00+00:00",
+      "summary": "Apple expects 13%-16% sales growth in fiscal Q2 2026 and 48%-49% gross margin as iPhone and Services rise.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Should You Buy, Sell or Hold Microsoft Stock Before Q3 Earnings?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-microsoft-stock-160700577.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T16:07:00+00:00",
+      "summary": "MSFT heads into fiscal Q3 earnings with strong AI momentum and cloud growth, but stretched valuation and margin pressure may keep new investors cautious.",
+      "sentiment": "positif",
+      "sentiment_score": 0.2
+    },
+    {
+      "title": "3 Services Stocks We’re Skeptical Of",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-services-stocks-skeptical-155655804.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T15:56:55+00:00",
+      "summary": "Business services providers play a critical role for enterprises, assisting them with everything from new hardware integrations to consulting and marketing. Still, investors are uneasy as firms face c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "What to Expect From HP Inc.'s Next Quarterly Earnings Report",
+      "url": "https://www.barchart.com/story/news/1499203/what-to-expect-from-hp-inc-s-next-quarterly-earnings-report?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T12:40:47+00:00",
+      "summary": "HP Inc. will release its second-quarter earnings soon, and analysts anticipate bottom-line to remain unchanged year over year.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rising AI PC Sales Can’t Hide HPQ’s Mounting Risks",
+      "url": "https://www.trefis.com/articles/597180/rising-ai-pc-sales-cant-hide-hpqs-mounting-risks/2026-04-23?source=yahoo&from=HPQ-2026-04-23&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T14:27:06+00:00",
+      "summary": "An 11% rally in a month. A mere 7x forward earnings multiple. And a genuine hardware upgrade cycle to AI PCs.",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

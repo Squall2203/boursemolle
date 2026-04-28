@@ -1,0 +1,35 @@
+{
+  "ticker": "EXE.PA",
+  "last_updated": "2026-04-28T05:44:09.553701+00:00",
+  "sentiment_score": -0.33,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "EXEL Industries: Q2 2025–2026 revenue -12.1%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exel-industries-q2-2025-2026-060700956.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T06:07:00+00:00",
+      "summary": "Q2 2025–2026 revenue: -12.1%Contrasting sales in a market environment that remains under pressure, particularly in the agricultural sectorQ2 revenue(January 2026–March 2026) 2024-20252025-2026Change (",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "EXEL Industries: Total number of voting rights and shares at 02.28.2026",
+      "url": "https://finance.yahoo.com/news/exel-industries-total-number-voting-112200789.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-03T11:22:00+00:00",
+      "summary": "EXEL IndustriesA French Société Anonyme with a share capital of €16,969,750Registered office: 54, rue Marcel Paul - 51206 Epernay Cedex - FranceReims Companies Register (RCS): No. 095 550 356 Number o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "EXEL Industries: Q1 2025–2026 revenue -17.5%",
+      "url": "https://finance.yahoo.com/news/exel-industries-q1-2025-2026-070700694.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T07:07:00+00:00",
+      "summary": "Q1 2025–2026 revenue: -17.5%A downturn in the first quarter against a backdrop of contrasting markets Revenue Q1(October 2025–December 2025)) 2024-20252025-2026Change (reported)Change (LFL)*ReportedRe",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "RIVN",
+  "last_updated": "2026-04-28T05:38:20.280846+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "What Rivian Automotive (RIVN)'s Second-Life Battery Storage Plan Means For Shareholders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rivian-automotive-rivn-second-life-030957274.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T03:09:57+00:00",
+      "summary": "Earlier in April 2026, Redwood Materials and Rivian announced a partnership to deploy a 10 megawatt-hour second-life battery energy storage system at Rivian’s Normal, Illinois plant, using more than 1",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Uber Rivian Robotaxis Put Autonomy At Center Of Growth Story",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-rivian-robotaxis-put-autonomy-030841238.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T03:08:41+00:00",
+      "summary": "Uber Technologies (NYSE:UBER) has announced a major pivot toward autonomous vehicles through a new partnership with Rivian. The agreement includes plans to develop and potentially deploy tens of thous",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Uber CEO has a strong 2-word message for investors",
+      "url": "https://www.thestreet.com/investing/stocks/uber-ceo-has-a-strong-2-word-message-for-investors?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T00:37:00+00:00",
+      "summary": "Uber Technologies (UBER) has been stuck in a familiar debate. Investors see autonomous vehicles as an existential threat, with companies like Waymo and Tesla building Robotaxi networks that could bypa",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Rivian Automotive (RIVN) Begins Production of Lower-cost SUVs",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rivian-automotive-rivn-begins-production-184033325.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T18:40:33+00:00",
+      "summary": "Rivian Automotive, Inc. (NASDAQ:RIVN) is one of the 8 Best Automotive Stocks to Buy According to Analysts. In the past year, Rivian’s shares have increased 25.25%, while they have declined 14.89% year",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Rivian Says It's Not Considering a Hybrid Model. Slowing EV Sales Suggest It Should Keep an Open Mind",
+      "url": "https://www.fool.com/investing/2026/04/27/rivian-says-its-not-considering-a-hybrid-model-slo/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T17:59:00+00:00",
+      "summary": "Rivian may want to keep this option on the table.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

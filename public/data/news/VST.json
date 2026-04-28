@@ -1,0 +1,53 @@
+{
+  "ticker": "VST",
+  "last_updated": "2026-04-28T05:36:10.754141+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Vistra Corp. (VST) Laps the Stock Market: Here's Why",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/vistra-corp-vst-laps-stock-214503781.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T21:45:03+00:00",
+      "summary": "In the latest trading session, Vistra Corp. (VST) closed at $166.58, marking a +1.36% move from the previous day.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Vistra Corp. (VST) – Among the 10 Best Nuclear Energy Stocks to Buy for Dividends",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/vistra-corp-vst-among-10-141628923.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-26T14:16:28+00:00",
+      "summary": "Vistra Corp. (NYSE:VST) is included among the 10 Best Nuclear Energy Stocks to Buy for Dividends. Vistra Corp. (NYSE:VST) is one of the largest competitive power generators in the United States. The c",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "At US$164, Is It Time To Put Vistra Corp. (NYSE:VST) On Your Watch List?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/us-164-time-put-vistra-140011900.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-25T14:00:11+00:00",
+      "summary": "Today we're going to take a look at the well-established Vistra Corp. ( NYSE:VST ). The company's stock saw a...",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "The 1 Energy Stock You Should Be Buying for the $700 Billion AI Spending Spree",
+      "url": "https://247wallst.com/investing/2026/04/24/the-1-energy-stock-you-should-be-buying-for-the-700-billion-ai-spending-spree/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T16:08:29+00:00",
+      "summary": "The market has a funny way of chasing what’s visible while missing what actually powers it. Everyone is focused on AI chips, software, and trillion-dollar tech giants. But here’s the question investor",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Edison International to Release Q1 Earnings: What's in Store?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/edison-international-release-q1-earnings-144700116.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T14:47:00+00:00",
+      "summary": "EIX gears up for Q1 results with a strong revenue outlook, higher returns and rate-driven gains, but model signals uncertainty around an earnings beat.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

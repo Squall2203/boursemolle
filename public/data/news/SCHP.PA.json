@@ -1,0 +1,53 @@
+{
+  "ticker": "SCHP.PA",
+  "last_updated": "2026-04-28T05:42:35.375410+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Séché Environnement: Combined General Meeting of April 24, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ch-environnement-combined-general-meeting-095800700.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T09:58:00+00:00",
+      "summary": "CHANGÉ, France, April 24, 2026--Regulatory News: Séché Environnement (Paris:SCHP):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Séché Environnement: Activity as of March 31, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ch-environnement-activity-march-31-154500873.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T15:45:00+00:00",
+      "summary": "CHANGÉ, France, April 23, 2026--Regulatory News: Séché Environnement (Paris:SCHP):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Séché Environnement: 2025 Consolidated Results",
+      "url": "https://finance.yahoo.com/news/ch-environnement-2025-consolidated-results-164500439.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T16:45:00+00:00",
+      "summary": "CHANGÉ, France, March 09, 2026--Regulatory News: Séché Environnement (Paris:SCHP):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Séché Environnement: Q4 2025 Confirms Trends That Emerged During the Financial Year",
+      "url": "https://finance.yahoo.com/news/ch-environnement-q4-2025-confirms-063000733.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-02T06:30:00+00:00",
+      "summary": "CHANGÉ, France, February 02, 2026--Regulatory News: Séché Environnement (Paris:SCHP) should report a Q4 2025 in line with the trends that emerged over the summer, characterized in France by a decline ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Séché Environnement Announces Two Major External Growth Operations in Chile and Italy.",
+      "url": "https://finance.yahoo.com/news/ch-environnement-announces-two-major-201600499.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-05T20:16:00+00:00",
+      "summary": "CHANGÉ, France, January 05, 2026--Regulatory News: Séché Environnement (Paris:SCHP) announces two acquisitions that reinforce its leadership in two countries that are strategic for the Group's interna",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

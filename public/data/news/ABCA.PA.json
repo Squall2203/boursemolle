@@ -1,0 +1,53 @@
+{
+  "ticker": "ABCA.PA",
+  "last_updated": "2026-04-28T05:42:47.592103+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Undiscovered Gems In Europe Featuring 3 Promising Small Cap Stocks",
+      "url": "https://finance.yahoo.com/news/undiscovered-gems-europe-featuring-3-103341798.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-03T10:33:41+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index experiences modest gains amid earnings optimism, small-cap stocks continue to capture investor interest, particularly in light of the eurozone's ongoing econ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Undiscovered Gems in Europe with Strong Potential for November 2025",
+      "url": "https://finance.yahoo.com/news/undiscovered-gems-europe-strong-potential-103305154.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-18T10:33:05+00:00",
+      "summary": "As European markets navigate a landscape marked by the reopening of the U.S. government and cooling enthusiasm around artificial intelligence, the pan-European STOXX Europe 600 Index has seen a modest",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ABC arbitrage: calendar of financial events for the year 2026",
+      "url": "https://finance.yahoo.com/news/abc-arbitrage-calendar-financial-events-170000240.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-31T17:00:00+00:00",
+      "summary": "ABC arbitrage Calendar of financial events for the year 2026 ABC arbitrage Group hereby informs you of the key dates in the financial calendar for the 2026 financial year. Registered name of the issue",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Uncovering Europe's Undiscovered Gems for October 2025",
+      "url": "https://finance.yahoo.com/news/uncovering-europes-undiscovered-gems-october-053300376.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-15T05:33:00+00:00",
+      "summary": "As European markets navigate the complexities of political turmoil in France and international trade tensions, the pan-European STOXX Europe 600 Index has recently experienced a slight decline after r",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "ABC arbitrage Release of the interim financial report as of June 30, 2025",
+      "url": "https://finance.yahoo.com/news/abc-arbitrage-release-interim-financial-160200041.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-25T16:02:00+00:00",
+      "summary": "ABC arbitrageRelease of the interim financial report as of June 30, 202 5 ABC arbitrage announces that as of today its financial report for the first half of 2025 has been publicly released and filed ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

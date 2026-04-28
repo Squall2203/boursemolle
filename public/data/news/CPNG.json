@@ -1,0 +1,53 @@
+{
+  "ticker": "CPNG",
+  "last_updated": "2026-04-28T05:38:52.687397+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "South Korean Lawmakers Condemn US Pressure Over Coupang Probe",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-28/south-korean-lawmakers-condemn-us-pressure-over-coupang-probe",
+      "source": "bloomberg.com",
+      "published_at": "2026-04-28T02:36:25+00:00",
+      "summary": "South Korean lawmakers protested what they described as US political pressure over a legal case involving Coupang Inc., with about 90 legislators planning to deliver a formal complaint to the US ambas",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Coupang, Inc.: Form ARS - Annual Report to Security Holders",
+      "url": "https://www.sec.gov/Archives/edgar/data/1834584/000114036126017108/0001140361-26-017108-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-27T20:17:19+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Coupang, Inc.: Form DEFA14A - Additional definitive proxy soliciting materials and Rule 14(a)(12) material",
+      "url": "https://www.sec.gov/Archives/edgar/data/1834584/000114036126017105/0001140361-26-017105-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-27T20:16:29+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Coupang, Inc.: Form DEF 14A - Other definitive proxy statements",
+      "url": "https://www.sec.gov/Archives/edgar/data/1834584/000114036126017102/0001140361-26-017102-index.htm",
+      "source": "sec.gov",
+      "published_at": "2026-04-27T20:15:55+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Coupang: Mounting Costs And Slowing Growth Weigh On Margins | $CPNG",
+      "url": "https://seekingalpha.com/article/4894398-mounting-costs-slowing-growth-threaten-coupangs-stock-margins",
+      "source": "seekingalpha.com",
+      "published_at": "2026-04-26T08:28:45+00:00",
+      "summary": "",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

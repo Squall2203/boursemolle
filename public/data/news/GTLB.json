@@ -1,0 +1,53 @@
+{
+  "ticker": "GTLB",
+  "last_updated": "2026-04-28T05:37:35.673978+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Give your AI agent direct, structured GitLab access with glab CLI",
+      "url": "https://about.gitlab.com/blog/give-your-ai-agent-direct-structured-gitlab-access-with-glab-cli/",
+      "source": "gitlab.com",
+      "published_at": "2026-04-27T00:00:00+00:00",
+      "summary": "When teams use GitLab Duo, Claude, Cursor, and other AI assistants, more of the development workflow runs through an AI agent acting on your behalf — reading issues, reviewing merge requests, running ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Is GitLab Inc. (GTLB) A Good Stock To Buy Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gitlab-inc-gtlb-good-stock-195433444.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-26T19:54:33+00:00",
+      "summary": "Is GTLB a good stock to buy? We came across a bullish thesis on GitLab Inc. on Elliot’s Musings’s Substack by Elliot. In this article, we will summarize the bulls’ thesis on GTLB. GitLab Inc.’s share ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "GitLab (GTLB), AWS Deepen Partnership to Integrate GitLab Duo With Amazon Bedrock",
+      "url": "https://www.insidermonkey.com/blog/gitlab-gtlb-aws-deepen-partnership-to-integrate-gitlab-duo-with-amazon-bedrock-1747184/",
+      "source": "insidermonkey.com",
+      "published_at": "2026-04-26T17:15:35+00:00",
+      "summary": "Gitlab Inc. (NASDAQ:GTLB) is one of the 10 Best New Stocks to Invest In According to Hedge Funds. Gitlab Inc. (NASDAQ:GTLB) is one of the best new stocks to invest in according to hedge funds. On Apri",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GitLab Inc. $GTLB Shares Purchased by Coronation Fund Managers Ltd.",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-gitlab-inc-gtlb-shares-purchased-by-coronation-fund-managers-ltd-2026-04-25/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-25T09:02:03+00:00",
+      "summary": "Coronation Fund Managers Ltd. increased its position in shares of GitLab Inc. (NASDAQ:GTLB - Free Report) by 18.3% during the 4th quarter, according to the company in its most recent 13F filing with t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Massive Downward Target Price Revisions Continue GitLab’s (GTLB) Downtrend",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/massive-downward-target-price-revisions-155523953.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-24T15:55:23+00:00",
+      "summary": "GitLab Inc. (NASDAQ:GTLB) is one of the 10 Stocks That Will Collapse Because of AI. Within just one week, GitLab Inc. (NASDAQ:GTLB) has seen three downward target price revisions. Bank of America Secu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

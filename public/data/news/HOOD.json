@@ -1,0 +1,53 @@
+{
+  "ticker": "HOOD",
+  "last_updated": "2026-04-28T05:39:08.780028+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Robinhood account creation flaw abused to send phishing emails",
+      "url": "https://www.bleepingcomputer.com/news/security/robinhood-account-creation-flaw-abused-to-send-phishing-emails/",
+      "source": "bleepingcomputer.com",
+      "published_at": "2026-04-27T23:11:01+00:00",
+      "summary": "Online trading platform Robinhood's account creation process was exploited by threat actors to inject phishing messages into legitimate emails, tricking users into believing their accounts had suspici",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Robinhood To Report As Growth Slows And Expansions Add Risk",
+      "url": "https://www.investors.com/news/robinhood-earnings-q1-hood-stock/",
+      "source": "investors.com",
+      "published_at": "2026-04-27T20:24:51+00:00",
+      "summary": "Robinhood has made bold but risky bets, while formerly triple-digit growth has sharply slowed. The post Robinhood To Report As Growth Slows And Expansions Add Risk appeared first on Investor's Busines",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Dear Robinhood Stock Fans, Mark Your Calendars for April 28",
+      "url": "https://www.barchart.com/story/news/1542907/dear-robinhood-stock-fans-mark-your-calendars-for-april-28",
+      "source": "barchart.com",
+      "published_at": "2026-04-27T19:54:57+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Financial Stocks To Consider - April 27th",
+      "url": "https://www.marketbeat.com/instant-alerts/financial-stocks-to-consider-april-27th-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T19:51:49+00:00",
+      "summary": "Robinhood Markets, Visa, and Coinbase Global are the three Financial stocks to watch today, according to MarketBeat's stock screener tool. Financial stocks are shares of companies that provide financi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Robinhood Users Received Malicious Phishing Emails, Investment Platform Asks Investors to Remain Vigilant",
+      "url": "https://www.crowdfundinsider.com/2026/04/275911-robinhood-users-received-malicious-phishing-emails-investment-platform-asks-investors-to-remain-vigilant/",
+      "source": "crowdfundinsider.com",
+      "published_at": "2026-04-27T19:51:44+00:00",
+      "summary": "Robinhood Markets (NASDAQ:HOOD) has one of the most seamless digital investing and trading experiences, however, the investment platform continues to face challenges such as malicious phishing emails ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

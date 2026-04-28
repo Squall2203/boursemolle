@@ -1,0 +1,53 @@
+{
+  "ticker": "FII.PA",
+  "last_updated": "2026-04-28T05:34:13.360745+00:00",
+  "sentiment_score": -0.6,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "European Stocks Estimated To Be Trading Below Fair Value In February 2026",
+      "url": "https://finance.yahoo.com/news/european-stocks-estimated-trading-below-103814802.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-05T10:38:14+00:00",
+      "summary": "As the eurozone economy continues its modest recovery with stronger investment and household consumption, European markets have shown resilience despite geopolitical uncertainties. In this environment",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks That May Be Trading Below Their Estimated Value",
+      "url": "https://finance.yahoo.com/news/european-stocks-may-trading-below-103804767.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-17T10:38:04+00:00",
+      "summary": "Amid a mixed performance in European markets, with the pan-European STOXX Europe 600 Index slightly down and varied results across major indices like Germany's DAX and France's CAC 40, investors are c",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Companies That Might Be Trading Below Their Estimated Value",
+      "url": "https://finance.yahoo.com/news/european-companies-might-trading-below-103806785.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-14T10:38:06+00:00",
+      "summary": "In recent weeks, European markets have experienced a pullback, with the pan-European STOXX Europe 600 Index closing lower amid concerns over artificial intelligence-related stock valuations. As invest",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Stocks Estimated Below Intrinsic Value",
+      "url": "https://finance.yahoo.com/news/european-stocks-estimated-below-intrinsic-053746964.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-03T05:37:46+00:00",
+      "summary": "As European markets remain relatively stable, with the pan-European STOXX Europe 600 Index ending unchanged amid investor assessments of interest rate policies and trade concerns, there is a growing i",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Societe Generale: shares & voting rights as of 31 August 2025",
+      "url": "https://finance.yahoo.com/news/societe-generale-shares-voting-rights-153700303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:37:00+00:00",
+      "summary": "NUMBER OF SHARES COMPOSING CURRENT SHARE CAPITAL AND TOTAL NUMBER OF VOTING RIGHTS AS OF 31 AUGUST 2025Regulated Information Paris, 9 September 2025 Information about the total number of voting rights",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

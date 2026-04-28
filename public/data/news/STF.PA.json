@@ -1,0 +1,35 @@
+{
+  "ticker": "STF.PA",
+  "last_updated": "2026-04-28T05:44:45.972161+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "European Dividend Stocks To Consider For December 2025",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-consider-december-103155606.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-19T10:31:55+00:00",
+      "summary": "As the European market experiences mixed movements, with indices such as Germany's DAX gaining while others like France's CAC 40 see declines, investors are keeping a close eye on potential policy shi",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 7.4%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-103147603.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-09T10:31:47+00:00",
+      "summary": "As European stocks rally, driven by technology gains and expectations of lower U.S. borrowing costs, investors are taking a renewed interest in dividend stocks as a potential source of steady income a",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "How Rising Sales and Lower Profits at STEF (ENXTPA:STF) Has Changed Its Investment Story",
+      "url": "https://finance.yahoo.com/news/rising-sales-lower-profits-stef-122156741.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-17T12:21:56+00:00",
+      "summary": "STEF SA reported results for the first half of 2025, with sales reaching €2.47 billion, up from €2.33 billion a year prior, but net income falling sharply to €15.83 million from €67.97 million. This c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

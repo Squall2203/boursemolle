@@ -1,0 +1,53 @@
+{
+  "ticker": "BEN.PA",
+  "last_updated": "2026-04-28T05:43:45.151107+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Nautical Ventures Streamlines Operations to Strengthen Efficiency and Capital Allocation Across Florida Network",
+      "url": "https://finance.yahoo.com/news/nautical-ventures-streamlines-operations-strengthen-144500749.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-23T14:45:00+00:00",
+      "summary": "MONTRÉAL, QC / ACCESS Newswire / October 23, 2025 /Vision Marine Technologies Inc. (NASDAQ:VMAR) (\"Vision Marine\" or the \"Company\"), owner of Nautical Ventures, one of Florida's leading marine dealers",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Market Insights Bénéteau And Two Other Stocks Possibly Priced Below Value Estimates",
+      "url": "https://finance.yahoo.com/news/european-market-insights-b-n-103753412.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-03T10:37:53+00:00",
+      "summary": "As European markets navigate a landscape of interest rate assessments and trade uncertainties, the pan-European STOXX Europe 600 Index remains relatively stable, with major indexes like Italy's FTSE M",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "GL Events Valuation in Focus After Strong 61.7% Year-to-Date Rally",
+      "url": "https://finance.yahoo.com/news/gl-events-valuation-focus-strong-125433975.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T12:54:33+00:00",
+      "summary": "Thinking about what to do with your GL Events shares? Whether you are sizing up an entry point or reassessing your position after a strong rally, now is a great time to take stock of what is really ha",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Heineken’s Strongbow adds NaviLens levels to packaging",
+      "url": "https://www.packaging-gateway.com/news/heineken-strongbow-navilens-packaging/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T10:38:43+00:00",
+      "summary": "The cider brand has added a high-contrast NaviLens QR code to its cans.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 firms to lay off hundreds of North Jersey-based employees",
+      "url": "https://www.northjersey.com/story/news/business/2025/09/09/firms-layoffs-nj-where-jpmorgan/86043850007/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T08:28:25+00:00",
+      "summary": "BioReference health, JPMorgan Chase and an Italian fashion retailer are making the job cuts amid market uncertainty",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

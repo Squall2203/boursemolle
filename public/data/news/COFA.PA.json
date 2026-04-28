@@ -1,0 +1,53 @@
+{
+  "ticker": "COFA.PA",
+  "last_updated": "2026-04-28T05:40:33.847838+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "How A Small Target Cut Is Reframing The Story For COFACE (ENXTPA:COFA)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/small-target-cut-reframing-story-140419898.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T14:04:19+00:00",
+      "summary": "The latest update on COFACE includes a modest €0.30 trim to the price target, described more as a fine tuning of the existing view than a rethink of the story. Sell side analysts link this move to a m",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "NewSat Lawsuit Advances With Claims Up To $4.81 Billion Against Global Lenders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/newsat-lawsuit-advances-claims-4-193358910.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T19:33:58+00:00",
+      "summary": "Trial in Victoria examines disputed financing withdrawal tied to failed satellite project and alleged lost earnings",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Coface SA: Disclosure of total number of voting rights and number of shares in the capital  as at April 8, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coface-sa-disclosure-total-number-154500038.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:45:00+00:00",
+      "summary": "COFACE SA: Disclosure of total number of voting rights and number of shares in the capital as at April 8, 2026 Paris, April 9, 2026 – 5.45 p.m. In accordance with Article R. 22-10-23 of the French Com",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Coface SA: Combined Shareholders’ Meeting on Tuesday, May 19, 2026  at 2:00 p.m. CET",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coface-sa-combined-shareholders-meeting-154500834.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T15:45:00+00:00",
+      "summary": "COFACE SA: Combined Shareholders’ Meeting on Tuesday, May 19, 2026 at 2:00 p.m. CET Paris, April 9, 2026 – 5:45 p.m. COFACE SA's shareholders are hereby informed that the Combined Shareholders’ Meetin",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Coface announces the publication of its 2025 Universal Registration Document",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coface-announces-publication-2025-universal-154500911.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T15:45:00+00:00",
+      "summary": "Coface announces the publication of its 2025 Universal Registration Document Paris, 7 April 2026 – 17.45 Communication setting out the arrangements for the supplying of the Universal Registration Docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

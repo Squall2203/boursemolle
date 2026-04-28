@@ -1,0 +1,53 @@
+{
+  "ticker": "SMCI",
+  "last_updated": "2026-04-28T05:35:38.289677+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "The most underrated PC case feature protects your entire build, and you can't even see it",
+      "url": "https://www.xda-developers.com/the-most-underrated-pc-case-feature-is-something-you-cant-see/",
+      "source": "xda-developers.com",
+      "published_at": "2026-04-27T23:00:21+00:00",
+      "summary": "It may cost a little more, but should be absolutely non-negotiable for all your future builds We've all built our fair share of PCs, and we've all appreciated some rather underrated features in the pr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Super Micro Computer (NASDAQ:SMCI) Stock Price Down 4.2% - Here's Why",
+      "url": "https://www.marketbeat.com/instant-alerts/super-micro-computer-nasdaqsmci-stock-price-down-42-heres-why-2026-04-27/",
+      "source": "marketbeat.com",
+      "published_at": "2026-04-27T21:58:28+00:00",
+      "summary": "Super Micro Computer (NASDAQ:SMCI) Shares Down 4.2% - Should You Sell?",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "RIP my MSI B550-A PRO after being used for 4 years.",
+      "url": "https://www.reddit.com/r/pcmasterrace/comments/1sx8xy5/rip_my_msi_b550a_pro_after_being_used_for_4_years/",
+      "source": "reddit.com",
+      "published_at": "2026-04-27T16:34:51+00:00",
+      "summary": "After 4 years in use. While I was transferring all of my PC parts to the new PC case (and to be specific, I brought one of those aqua PC cases or KEDIERS PC Case), one of my M.2 SSD slots was not bein",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Supermicro Adds Largest Silicon Valley Campus - New DCBBS Facility to Advance the Delivery of Next-Generation AI Data Centers",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/supermicro-adds-largest-silicon-valley-130500324.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-04-27T13:05:00+00:00",
+      "summary": "Super Micro Computer, Inc. (NASDAQ: SMCI), an AI, Enterprise, Storage, 5G/Edge Total Solution Provider with optimized Data Center Building Block Solutions ® (DCBBS), today announced its largest US loc",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "(PR) Rosewill Announces the Hearth Series NAS Server Chassis",
+      "url": "https://www.techpowerup.com/348542/rosewill-announces-the-hearth-series-nas-server-chassis",
+      "source": "techpowerup.com",
+      "published_at": "2026-04-27T04:22:46+00:00",
+      "summary": "Rosewill, a trusted brand in PC components and server hardware since 2004, today announced the launch of the HEARTH NAS and the HEARTH NAS PRO, two new server chassis designed to bring enterprise-leve",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "ADP.PA",
+  "last_updated": "2026-04-28T05:39:33.061588+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Groupe ADP third-quarter revenue exceeds consensus estimates",
+      "url": "https://finance.yahoo.com/news/groupe-adp-third-quarter-revenue-101759620.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-24T10:17:59+00:00",
+      "summary": "Investing.com - Shares of Groupe ADP were lower in mid-morning trading on Friday, despite the manager of three of Paris’ main airports posting better-than-anticipated revenue in the third quarter.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Assessing Aeroports de Paris (ENXTPA:ADP) Valuation as Markets Pause for Direction",
+      "url": "https://finance.yahoo.com/news/assessing-aeroports-paris-enxtpa-adp-121037375.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-11T12:10:37+00:00",
+      "summary": "When Aeroports de Paris (ENXTPA:ADP) quietly moved sideways this week, some investors might have wondered what, if anything, the market is signaling. With no single headline grabbing attention, the st",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Aéroports de Paris stock falls after mixed 2Q results",
+      "url": "https://finance.yahoo.com/news/roports-paris-posts-revenue-rise-164258126.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-30T16:42:58+00:00",
+      "summary": "Investing.com -- Aéroports de Paris (EPA:ADP) stock dropped 4.2% on Thursday after the airport operator reported mixed second quarter results, highlighted by a rare 1% year-over-year decline in Extime",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

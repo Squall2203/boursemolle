@@ -1,0 +1,44 @@
+{
+  "ticker": "ICAD.PA",
+  "last_updated": "2026-04-28T05:39:57.309445+00:00",
+  "sentiment_score": -0.33,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Stocks Estimated To Be Up To 48.3% Below Intrinsic Value",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-estimated-48-103750773.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-24T10:37:50+00:00",
+      "summary": "As the European stock market remains relatively flat, with mixed performances across major indices like Germany's DAX and France's CAC 40, investors are keenly observing trade discussions between the ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Stocks Estimated To Be Trading At Discounts Of Up To 46.3%",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-estimated-trading-053753532.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-12T05:37:53+00:00",
+      "summary": "As the European market experiences a notable upswing, with the pan-European STOXX Europe 600 Index rising by 0.90% and major stock indexes like Germany's DAX and Italy's FTSE MIB increasing by 1.28%, ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Stocks Trading At Up To 42.8% Below Intrinsic Value Estimates",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-trading-42-103810825.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-07T10:38:10+00:00",
+      "summary": "As European markets experience a surge, with the pan-European STOXX Europe 600 Index climbing 3.44% amid easing tariff concerns, investors are keenly observing opportunities that may arise from these ",
+      "sentiment": "négatif",
+      "sentiment_score": -0.33
+    }
+  ]
+}

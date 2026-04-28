@@ -1,0 +1,53 @@
+{
+  "ticker": "TE.PA",
+  "last_updated": "2026-04-28T05:48:13.446645+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Weekly report TEN share buyback from April 20 to April 24, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/weekly-report-ten-share-buyback-163000670.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T16:30:00+00:00",
+      "summary": "In accordance with the regulations relating to share buybacks, Technip Energies (PARIS:TE) declares the following purchases of its own shares from April 20, 2026, to April 24, 2026. These transactions",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Technip Energies Extends LNG And Cleaner Fuels Reach Across Three Continents",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/technip-energies-extends-lng-cleaner-011021167.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T01:10:21+00:00",
+      "summary": "Technip Energies secured new engineering work for a refinery expansion in Gabon, focused on cleaner fuels and higher throughput. The company won an upgrade project for a petrochemicals complex in Viet",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Weekly report share buyback from April 13 to April 17, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/weekly-report-share-buyback-april-163000594.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T16:30:00+00:00",
+      "summary": "In accordance with the regulations relating to share buybacks, Technip Energies (PARIS:TE) declares the following purchases of its own shares from April 13, 2026, to April 17, 2026. These transactions",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Technip Energies awarded two FEED contracts by SOGARA for refinery complex in Gabon",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/technip-energies-awarded-two-feed-160000247.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-14T16:00:00+00:00",
+      "summary": "SOGARA_TechnipEnergies @TechnipEnergies Technip Energies (PARIS:TE) has been awarded two Front-End Engineering Design (FEED) contracts by Société Gabonaise de Raffinage (SOGARA) for its refinery in Po",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Weekly report share buyback from April 7 to April 10, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/weekly-report-share-buyback-april-163000631.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-13T16:30:00+00:00",
+      "summary": "In accordance with the regulations relating to share buybacks, Technip Energies (PARIS:TE) declares the following purchases of its own shares from April 7, 2026, to April 10, 2026. These transactions ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

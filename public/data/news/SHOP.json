@@ -1,0 +1,53 @@
+{
+  "ticker": "SHOP",
+  "last_updated": "2026-04-28T05:37:55.906332+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Reddit Tests Shopping Tools To Turn High Intent Chats Into Ad Sales",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/reddit-tests-shopping-tools-turn-011105025.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T01:11:05+00:00",
+      "summary": "Reddit (NYSE:RDDT) has rolled out new shopping tools for its Dynamic Product Ads. The company is also testing a Shopify integration aimed at connecting merchants directly with Reddit users. Reddit is ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Smart Sellers Academy Launches Multi‑Channel Expansion to Power the Next Generation of Digital Brands",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/smart-sellers-academy-launches-multi-230700866.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T23:07:00+00:00",
+      "summary": "Summary: Smart Sellers Academy reinforces its status as an e-commerce operator by announcing a major expansion beyond Amazon FBA, integrating TikTok Shop and Shopify to support sustainable brand growt",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Shopify (SHOP) Stock Dips While Market Gains: Key Facts",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/shopify-shop-stock-dips-while-214503303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T21:45:03+00:00",
+      "summary": "In the latest trading session, Shopify (SHOP) closed at $124.23, marking a -1.27% move from the previous day.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 Reasons SHOP Has Explosive Upside Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-shop-explosive-upside-211655228.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T21:16:55+00:00",
+      "summary": "What a brutal six months it’s been for Shopify. The stock has dropped 28.3% and now trades at $125.58, rattling many shareholders. This might have investors contemplating their next move.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 Magnificent Growth Stocks That Won't Be This Cheap for Long",
+      "url": "https://www.fool.com/investing/2026/04/27/3-magnificent-growth-stocks-that-wont-be-this-chea/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T18:20:00+00:00",
+      "summary": "They're trailing the S&amp;P 500 right now, but that should change, soon.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}
