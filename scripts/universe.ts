@@ -985,6 +985,17 @@ const SRD_EXTRA: TickerEntry[] = [
   { ticker: "VK.PA", expectedName: "Vallourec", indices: ["SBF 250"] },
   { ticker: "AB.PA", expectedName: "AB Science", indices: [] },
   { ticker: "DBV.PA", expectedName: "DBV Technologies", indices: [] },
+  // Compartiment B — manquants
+  { ticker: "AYV.PA",   expectedName: "Ayvens",      indices: ["SBF 250"] },
+  { ticker: "VRLA.PA",  expectedName: "Verallia",    indices: ["SBF 250"] },
+  { ticker: "SUEZ.PA",  expectedName: "Suez SA",     indices: ["SBF 250"] },
+  { ticker: "CLARI.PA", expectedName: "Clariane SE", indices: ["SBF 250"] },
+  { ticker: "ORP.PA",   expectedName: "Emeis",       indices: ["SBF 250"] },
+  { ticker: "RBT.PA",   expectedName: "Robertet",    indices: ["SBF 250"] },
+  { ticker: "VLTSA.PA", expectedName: "Voltalia",    indices: ["SBF 250"] },
+  { ticker: "BUR.PA",   expectedName: "Burelle SA",  indices: ["SBF 250"] },
+  { ticker: "BLC.PA",   expectedName: "Bastide",     indices: ["SBF 250"] },
+  { ticker: "AELIS.PA", expectedName: "Aelis Farma", indices: [] },
 ]
 
 // ─── USA — Grandes caps récentes (post-2023, manquantes) ───
