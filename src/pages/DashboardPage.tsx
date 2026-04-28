@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { ArrowRight, Sparkles, BarChart2, Star, Target } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useStocks } from "@/hooks/useStocks"
-import { useMacro, type MacroItem } from "@/hooks/useMacro"
+import { useMacro, type MacroItem, type MacroData } from "@/hooks/useMacro"
 import { computeScore } from "@/lib/scoring"
 import { getStockRegion } from "@/lib/market"
 
@@ -333,7 +333,7 @@ function formatMacroValue(item: MacroItem, type: MacroType): string {
   return `${item.value.toFixed(2)} %`
 }
 
-const MACRO_CONFIG: Array<{ key: keyof ReturnType<typeof useMacro>["data"]; label: string; type: MacroType }> = [
+const MACRO_CONFIG: Array<{ key: keyof MacroData; label: string; type: MacroType }> = [
   { key: "cac40",  label: "CAC 40",    type: "index" },
   { key: "sp500",  label: "S&P 500",   type: "index" },
   { key: "eurusd", label: "EUR/USD",   type: "forex" },
