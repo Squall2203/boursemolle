@@ -15,6 +15,7 @@ export interface EnrichedPosition extends DbPosition {
   stock: Stock | undefined
   currentPrice: number | null
   value: number
+  valueEur: number
   cost: number
   pl: number
   plPercent: number

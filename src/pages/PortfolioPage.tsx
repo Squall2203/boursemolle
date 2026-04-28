@@ -12,6 +12,7 @@ import { PositionsTable, type EnrichedPosition } from "@/components/portfolio/Po
 import { PortfolioAnalysis } from "@/components/portfolio/PortfolioAnalysis"
 import { TransactionHistory } from "@/components/portfolio/TransactionHistory"
 import { usePortfolioSnapshots } from "@/hooks/usePortfolioSnapshots"
+import { useMacro } from "@/hooks/useMacro"
 
 export function PortfolioPage() {
   const {
@@ -29,6 +30,7 @@ export function PortfolioPage() {
 
   const { data: dataset } = useStocks()
   const allStocks = useMemo(() => dataset?.stocks ?? [], [dataset])
+  const { data: macroData } = useMacro()
 
   const { snapshots } = usePortfolioSnapshots(activePortfolioId)
 
@@ -40,41 +42,54 @@ export function PortfolioPage() {
   const enrichedPositions = useMemo<EnrichedPosition[]>(() => {
     if (!activePortfolio) return []
 
-    function normalizedPrice(stock: { price?: number | null; currency?: string } | undefined, fallback: number): number {
+    function nativePrice(stock: { price?: number | null; currency?: string } | undefined, fallback: number): number {
       if (!stock?.price) return fallback
       return stock.currency === "GBp" ? stock.price / 100 : stock.price
     }
 
-    const totalPositionsValue = positions.reduce((sum, pos) => {
+    function toEur(price: number, currency: string | undefined): number {
+      if (!currency || currency === "EUR") return price
+      if (currency === "GBp" || currency === "GBP") return price / (macroData?.eurgbp?.value ?? 0.856)
+      if (currency === "USD") return price / (macroData?.eurusd?.value ?? 1.10)
+      if (currency === "SEK") return price / (macroData?.eursek?.value ?? 11.0)
+      if (currency === "NOK") return price / 11.5
+      if (currency === "DKK") return price / 7.46
+      if (currency === "CHF") return price / 0.94
+      return price
+    }
+
+    const totalPositionsValueEur = positions.reduce((sum, pos) => {
       const stock = allStocks.find((s) => s.ticker === pos.ticker)
-      return sum + pos.quantity * normalizedPrice(stock, pos.avg_price)
+      const price = nativePrice(stock, pos.avg_price)
+      return sum + pos.quantity * toEur(price, stock?.currency)
     }, 0)
-    const totalValue = totalPositionsValue + activePortfolio.cash_balance
+    const totalValueEur = totalPositionsValueEur + activePortfolio.cash_balance
 
     return positions.map((pos) => {
       const stock = allStocks.find((s) => s.ticker === pos.ticker)
-      const currentPrice = stock ? normalizedPrice(stock, pos.avg_price) : null
+      const currentPrice = stock ? nativePrice(stock, pos.avg_price) : null
       const value = pos.quantity * (currentPrice ?? pos.avg_price)
+      const valueEur = pos.quantity * toEur(currentPrice ?? pos.avg_price, stock?.currency)
       const cost = pos.quantity * pos.avg_price
       const pl = value - cost
       const plPercent = cost > 0 ? (pl / cost) * 100 : 0
-      const weight = totalValue > 0 ? (value / totalValue) * 100 : 0
+      const weight = totalValueEur > 0 ? (valueEur / totalValueEur) * 100 : 0
       const score = stock ? computeScore(stock, allStocks).total : null
 
-      return { ...pos, stock, currentPrice, value, cost, pl, plPercent, weight, score }
+      return { ...pos, stock, currentPrice, value, valueEur, cost, pl, plPercent, weight, score }
     })
-  }, [positions, allStocks, activePortfolio])
+  }, [positions, allStocks, activePortfolio, macroData])
 
-  const totalPositionsValue = enrichedPositions.reduce((s, p) => s + p.value, 0)
+  const totalPositionsValue = enrichedPositions.reduce((s, p) => s + p.valueEur, 0)
   const totalValue = activePortfolio
     ? totalPositionsValue + activePortfolio.cash_balance
     : 0
 
   const avgScore = useMemo(() => {
-    const withScore = enrichedPositions.filter((p) => p.score != null && p.value > 0)
+    const withScore = enrichedPositions.filter((p) => p.score != null && p.valueEur > 0)
     if (withScore.length === 0) return null
-    const weighted = withScore.reduce((s, p) => s + p.score! * p.value, 0)
-    const totalW = withScore.reduce((s, p) => s + p.value, 0)
+    const weighted = withScore.reduce((s, p) => s + p.score! * p.valueEur, 0)
+    const totalW = withScore.reduce((s, p) => s + p.valueEur, 0)
     return totalW > 0 ? weighted / totalW : null
   }, [enrichedPositions])
 

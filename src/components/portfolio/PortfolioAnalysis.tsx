@@ -9,7 +9,7 @@ interface PortfolioAnalysisProps {
 export function PortfolioAnalysis({ positions, totalValue, cashBalance }: PortfolioAnalysisProps) {
   if (positions.length === 0) return null
 
-  const sorted = [...positions].sort((a, b) => b.value - a.value)
+  const sorted = [...positions].sort((a, b) => b.valueEur - a.valueEur)
   const top3Weight = sorted.slice(0, 3).reduce((s, p) => s + p.weight, 0)
 
   const sectors: Record<string, number> = {}

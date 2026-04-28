@@ -239,10 +239,15 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
       return { error: posError }
     }
 
-    // Step 3: Deduct cash balance
+    // Step 3: Deduct cash balance (re-fetch to avoid stale React state)
+    const { data: freshPortfolio } = await supabase
+      .from("portfolios")
+      .select("cash_balance")
+      .eq("id", activePortfolio.id)
+      .single()
     const { error: cashErr } = await supabase
       .from("portfolios")
-      .update({ cash_balance: activePortfolio.cash_balance - total })
+      .update({ cash_balance: (freshPortfolio?.cash_balance ?? activePortfolio.cash_balance) - total })
       .eq("id", activePortfolio.id)
 
     if (cashErr) {
@@ -313,10 +318,15 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
       return { error: posError }
     }
 
-    // Step 3: Credit cash balance
+    // Step 3: Credit cash balance (re-fetch to avoid stale React state)
+    const { data: freshPortfolio } = await supabase
+      .from("portfolios")
+      .select("cash_balance")
+      .eq("id", activePortfolio.id)
+      .single()
     const { error: cashErr } = await supabase
       .from("portfolios")
-      .update({ cash_balance: activePortfolio.cash_balance + total })
+      .update({ cash_balance: (freshPortfolio?.cash_balance ?? activePortfolio.cash_balance) + total })
       .eq("id", activePortfolio.id)
 
     if (cashErr) {

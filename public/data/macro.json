@@ -36,5 +36,17 @@
     "changePercent": 0,
     "label": "Taux BCE",
     "static": true
+  },
+  "eurgbp": {
+    "value": 0.856,
+    "change": 0,
+    "changePercent": 0,
+    "label": "EUR/GBP"
+  },
+  "eursek": {
+    "value": 10.92,
+    "change": 0,
+    "changePercent": 0,
+    "label": "EUR/SEK"
   }
 }

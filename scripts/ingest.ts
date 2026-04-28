@@ -286,6 +286,8 @@ export interface MacroData {
   brent:  MacroItem | null
   us10y:  MacroItem | null
   bce:    MacroItem
+  eurgbp: MacroItem | null
+  eursek: MacroItem | null
 }
 
 const MACRO_TICKERS: Array<{ key: keyof MacroData; ticker: string; label: string }> = [
@@ -294,6 +296,8 @@ const MACRO_TICKERS: Array<{ key: keyof MacroData; ticker: string; label: string
   { key: "eurusd", ticker: "EURUSD=X", label: "EUR/USD"  },
   { key: "brent",  ticker: "BZ=F",     label: "Brent"    },
   { key: "us10y",  ticker: "^TNX",     label: "US 10Y"   },
+  { key: "eurgbp", ticker: "EURGBP=X", label: "EUR/GBP"  },
+  { key: "eursek", ticker: "EURSEK=X", label: "EUR/SEK"  },
 ]
 
 async function fetchMacro(): Promise<MacroData> {
@@ -301,6 +305,7 @@ async function fetchMacro(): Promise<MacroData> {
     generatedAt: new Date().toISOString(),
     cac40: null, sp500: null, eurusd: null, brent: null, us10y: null,
     bce: { value: 2.40, change: 0, changePercent: 0, label: "Taux BCE", static: true },
+    eurgbp: null, eursek: null,
   }
 
   for (const { key, ticker, label } of MACRO_TICKERS) {

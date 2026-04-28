@@ -16,6 +16,8 @@ export interface MacroData {
   brent:  MacroItem | null
   us10y:  MacroItem | null
   bce:    MacroItem
+  eurgbp: MacroItem | null
+  eursek: MacroItem | null
 }
 
 let _cached: MacroData | null = null
