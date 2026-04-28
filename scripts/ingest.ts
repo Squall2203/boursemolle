@@ -10,7 +10,8 @@ const yahooFinance = new YahooFinance({ suppressNotices: ["yahooSurvey"] })
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = path.resolve(__dirname, "../public/data/stocks.json")
-const PRICES_DIR = path.resolve(__dirname, "../public/data/prices")
+const MACRO_PATH  = path.resolve(__dirname, "../public/data/macro.json")
+const PRICES_DIR  = path.resolve(__dirname, "../public/data/prices")
 
 const EEE_COUNTRIES = new Set([
   "France", "Germany", "Netherlands", "Belgium", "Luxembourg",
@@ -267,6 +268,60 @@ async function fetchPriceHistory(
   }
 }
 
+// ─── Macro indicators ────────────────────────────────────────────────────────
+
+export interface MacroItem {
+  value: number
+  change: number
+  changePercent: number
+  label: string
+  static?: true
+}
+
+export interface MacroData {
+  generatedAt: string
+  cac40:  MacroItem | null
+  sp500:  MacroItem | null
+  eurusd: MacroItem | null
+  brent:  MacroItem | null
+  us10y:  MacroItem | null
+  bce:    MacroItem
+}
+
+const MACRO_TICKERS: Array<{ key: keyof MacroData; ticker: string; label: string }> = [
+  { key: "cac40",  ticker: "^FCHI",    label: "CAC 40"   },
+  { key: "sp500",  ticker: "^GSPC",    label: "S&P 500"  },
+  { key: "eurusd", ticker: "EURUSD=X", label: "EUR/USD"  },
+  { key: "brent",  ticker: "BZ=F",     label: "Brent"    },
+  { key: "us10y",  ticker: "^TNX",     label: "US 10Y"   },
+]
+
+async function fetchMacro(): Promise<MacroData> {
+  const data: MacroData = {
+    generatedAt: new Date().toISOString(),
+    cac40: null, sp500: null, eurusd: null, brent: null, us10y: null,
+    bce: { value: 2.40, change: 0, changePercent: 0, label: "Taux BCE", static: true },
+  }
+
+  for (const { key, ticker, label } of MACRO_TICKERS) {
+    try {
+      const q = await yahooFinance.quote(ticker)
+      ;(data as Record<string, MacroItem | null>)[key] = {
+        value:         round2(q.regularMarketPrice          ?? 0),
+        change:        round2(q.regularMarketChange         ?? 0),
+        changePercent: round2(q.regularMarketChangePercent  ?? 0),
+        label,
+      }
+      process.stdout.write(`  macro ${ticker.padEnd(12)} ✓ ${q.regularMarketPrice?.toFixed(2)}\n`)
+    } catch (err) {
+      console.warn(`  macro ${ticker}: ${err instanceof Error ? err.message : err}`)
+    }
+    await sleep(200)
+  }
+
+  return data
+}
+
 async function main() {
   console.log(`Fetching ${UNIVERSE.length} tickers from Yahoo Finance...\n`)
 
@@ -350,6 +405,11 @@ async function main() {
   await mkdir(path.dirname(OUTPUT_PATH), { recursive: true })
   await writeFile(OUTPUT_PATH, JSON.stringify(dataset, null, 2), "utf-8")
   console.log(`\n✓ Wrote ${OUTPUT_PATH} (${results.length} stocks)`)
+
+  console.log(`\nFetching macro indicators...\n`)
+  const macro = await fetchMacro()
+  await writeFile(MACRO_PATH, JSON.stringify(macro, null, 2), "utf-8")
+  console.log(`✓ Wrote ${MACRO_PATH}`)
 }
 
 main().catch((err) => {

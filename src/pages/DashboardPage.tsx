@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { ArrowRight, Sparkles, BarChart2, Star, Target } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useStocks } from "@/hooks/useStocks"
+import { useMacro, type MacroItem } from "@/hooks/useMacro"
 import { computeScore } from "@/lib/scoring"
 import { getStockRegion } from "@/lib/market"
 
@@ -323,28 +324,62 @@ function AlphaPicksCTA({ stocks }: { stocks: ReturnType<typeof useStocks>["data"
 
 // ─── Macro Card ───────────────────────────────────────────────────────────────
 
-const MACRO_ROWS = [
-  { label: "CAC 40", key: "cac" },
-  { label: "S&P 500", key: "sp500" },
-  { label: "EUR/USD", key: "eurusd" },
-  { label: "Brent", key: "brent" },
-  { label: "OAT 10Y", key: "oat" },
-  { label: "Taux BCE", key: "bce" },
+type MacroType = "index" | "forex" | "commodity" | "yield"
+
+function formatMacroValue(item: MacroItem, type: MacroType): string {
+  if (type === "index")     return item.value.toLocaleString("fr-FR", { maximumFractionDigits: 0 })
+  if (type === "forex")     return item.value.toFixed(4)
+  if (type === "commodity") return `${item.value.toFixed(2)} $`
+  return `${item.value.toFixed(2)} %`
+}
+
+const MACRO_CONFIG: Array<{ key: keyof ReturnType<typeof useMacro>["data"]; label: string; type: MacroType }> = [
+  { key: "cac40",  label: "CAC 40",    type: "index" },
+  { key: "sp500",  label: "S&P 500",   type: "index" },
+  { key: "eurusd", label: "EUR/USD",   type: "forex" },
+  { key: "brent",  label: "Brent",     type: "commodity" },
+  { key: "us10y",  label: "US 10Y",    type: "yield" },
+  { key: "bce",    label: "Taux BCE",  type: "yield" },
 ]
 
 function MacroCard() {
+  const { data } = useMacro()
+
   return (
     <div className="rounded-xl border border-border bg-card p-4">
       <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
         Contexte macro
       </span>
       <div className="mt-3 divide-y divide-border">
-        {MACRO_ROWS.map(({ label }) => (
-          <div key={label} className="flex items-center justify-between py-2">
-            <span className="text-[13px] text-muted-foreground">{label}</span>
-            <span className="font-mono text-[12px] font-medium text-muted-foreground/50">—</span>
-          </div>
-        ))}
+        {MACRO_CONFIG.map(({ key, label, type }) => {
+          const item = data?.[key] as MacroItem | null | undefined
+          const hasChange = item && !item.static && item.changePercent !== 0
+          return (
+            <div key={key} className="flex items-center justify-between py-2">
+              <span className="text-[13px] text-muted-foreground">{label}</span>
+              <div className="flex items-center gap-2">
+                {hasChange && (
+                  <span className={cn(
+                    "font-mono text-[10px] tabular-nums",
+                    item.changePercent >= 0 ? "text-emerald-500" : "text-destructive"
+                  )}>
+                    {item.changePercent >= 0 ? "+" : ""}{item.changePercent.toFixed(2)}%
+                  </span>
+                )}
+                <span className={cn(
+                  "font-mono text-[12px] font-medium tabular-nums",
+                  item
+                    ? (hasChange
+                        ? item.changePercent >= 0 ? "text-emerald-500" : "text-destructive"
+                        : "text-foreground")
+                    : "text-muted-foreground/40"
+                )}>
+                  {item ? formatMacroValue(item, type) : "—"}
+                </span>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
