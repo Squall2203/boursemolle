@@ -60,6 +60,7 @@ export interface Stock {
   fetchedAt: string
   lastFundamentalsUpdate?: string | null
   refreshPriority?: number | null   // 0=critique, 1=haute, 2=normale, 3=basse
+  mlScore?: number | null           // ML percentile score 0-10 (US stocks only)
 }
 
 export interface AnnualFinancial {

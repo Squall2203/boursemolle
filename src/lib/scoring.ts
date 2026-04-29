@@ -530,10 +530,19 @@ function scoreMomentumMetrics(stock: Stock): { score: number; detail: PillarDeta
   }
 }
 
-// ─── 7. SIGNAUX QUANT (10%) — MVP ───
+// ─── 7. SIGNAUX QUANT (10%) ───
+// For US stocks with an ML score: use it directly (LightGBM trained on SEC EDGAR PIT data).
+// For all others: rule-based proxy (revision + distance ATH + earnings trend).
 
 function scoreQuantMetrics(stock: Stock): { score: number; detail: PillarDetail } {
   const detail: PillarDetail = {}
+
+  if (stock.mlScore != null) {
+    detail.ml_signal = makeMetric("Signal ML (LightGBM EDGAR)", stock.mlScore, stock.mlScore, 1.0, null, {
+      displayValue: stock.mlScore.toFixed(1) + " / 10",
+    })
+    return { score: clamp(stock.mlScore), detail }
+  }
 
   let noteRevision = 5
   if (stock.forwardPE != null && stock.trailingPE != null && stock.trailingPE > 0 && stock.forwardPE > 0) {

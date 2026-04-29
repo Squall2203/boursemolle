@@ -210,6 +210,13 @@ def predict_current(force_features: bool = False) -> list[dict]:
                 row[f] = np.nan
         df = pd.concat([df, pd.DataFrame([row])], ignore_index=True)
 
+    # Quality gate: exclude falling knives (down >35% in 6 months)
+    # ROE filter removed — negative equity from buybacks (AAPL, MSFT) would wrongly exclude top stocks
+    n_before = len(df)
+    if "mom_6m" in df.columns:
+        df = df[df["mom_6m"].isna() | (df["mom_6m"] > -35)].reset_index(drop=True)
+    log.info(f"Quality gate: {n_before - len(df)} stocks excluded, {len(df)} remaining")
+
     # Rank-normalize fundamental features (cross-sectional, same as training)
     for col in FUNDAMENTAL_FEATURES:
         if col in df.columns:
@@ -234,6 +241,9 @@ def predict_current(force_features: bool = False) -> list[dict]:
 
     # Sort by ML score
     df = df.sort_values("ml_score", ascending=False).reset_index(drop=True)
+
+    # Write mlScore for all scored US stocks to stocks.json immediately
+    _write_ml_scores_to_stocks(df)
 
     # Build picks output
     picks = []
@@ -286,8 +296,26 @@ def _pillar_from_percentile(pct: float) -> float:
     return round(float(pct) * 10, 1)
 
 
+def _write_ml_scores_to_stocks(df: "pd.DataFrame"):
+    """Write mlScore for all scored US stocks back to stocks.json."""
+    stocks_data = json.loads(STOCKS_JSON.read_text())
+    score_map = dict(zip(df["ticker"].tolist(), df["score_normalized"].tolist()))
+
+    updated = 0
+    for stock in stocks_data["stocks"]:
+        t = stock["ticker"]
+        if t in score_map:
+            stock["mlScore"] = round(float(score_map[t]), 1)
+            updated += 1
+        elif stock.get("country") == "United States" and "mlScore" in stock:
+            del stock["mlScore"]
+
+    STOCKS_JSON.write_text(json.dumps(stocks_data, separators=(",", ":")))
+    log.info(f"Written mlScore for {updated} US stocks to stocks.json")
+
+
 def write_predictions(picks: list[dict]):
-    """Write predictions to public/data/picks/us_predictions.json."""
+    """Write predictions to public/data/picks/us_predictions.json and mlScore to stocks.json."""
     period = date.today().strftime("%Y-%m")
     model = joblib.load(MODEL_PATH)
 
@@ -304,7 +332,6 @@ def write_predictions(picks: list[dict]):
     }
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    # Write to a separate file (us_predictions.json) not latest.json
     pred_path = OUTPUT_JSON.parent / "us_predictions.json"
     pred_path.write_text(json.dumps(output, indent=2))
     log.info(f"Saved {len(picks)} picks to {pred_path}")
