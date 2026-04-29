@@ -1,8 +1,8 @@
-name: Monthly AlphaPicks
+name: Weekly AlphaPicks
 
 on:
   schedule:
-    - cron: "0 7 1 * *"  # 7h00 UTC le 1er de chaque mois (après l'ingest quotidien)
+    - cron: "0 8 * * 1"  # 8h00 UTC chaque lundi (après l'ingest quotidien)
   workflow_dispatch:
 
 permissions:
