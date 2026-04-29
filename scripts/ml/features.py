@@ -201,6 +201,15 @@ def compute_momentum_bulk(dates_ns, prices, reb_dates):
     return results
 
 
+def compute_momentum_features(ticker: str, price_series, ref_date) -> dict:
+    """Single-date wrapper around compute_momentum_bulk for the predict step."""
+    dates_ns, prices = price_series
+    results = compute_momentum_bulk(dates_ns, prices, [ref_date])
+    if results:
+        return results[0]
+    return {f: np.nan for f in MOMENTUM_FEATURES}
+
+
 # ─── Forward label computation ────────────────────────────────────────────────
 
 def compute_forward_returns(tickers, rebalancing_dates, forward_days=FORWARD_DAYS):

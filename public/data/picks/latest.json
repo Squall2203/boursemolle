@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T21:11:13.539Z",
+  "generatedAt": "2026-04-29T09:35:22.466Z",
   "period": "2026-04",
   "nextUpdate": "2026-04-30",
   "strategies": [
@@ -13,16 +13,43 @@
       "engine": "rule_based",
       "benchmarkName": "CAC 40",
       "benchmarkTicker": "^FCHI",
-      "benchmarkPrice": 8104.09,
+      "benchmarkPrice": 8054.86,
       "size": 10,
       "picks": [
+        {
+          "ticker": "IDIP.PA",
+          "name": "IDI",
+          "sector": "Financial Services",
+          "country": "France",
+          "currency": "EUR",
+          "rank": 1,
+          "score": 8.3,
+          "pillars": {
+            "valorisation": 8.2,
+            "qualite": 10,
+            "croissance": 2.3,
+            "sante": 10,
+            "dividende": 5.6,
+            "momentum": 5.1
+          },
+          "weight": 0.1,
+          "isNew": true,
+          "pe": 8.585247,
+          "roe": null,
+          "perf6M": -2.74,
+          "divYield": 4.05,
+          "marketCap": 506540768,
+          "price": 71,
+          "peaEligible": true,
+          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
+        },
         {
           "ticker": "MAU.PA",
           "name": "Etablissements Maurel & Prom S.A.",
           "sector": "Energy",
           "country": "France",
           "currency": "EUR",
-          "rank": 1,
+          "rank": 2,
           "score": 8.2,
           "pillars": {
             "valorisation": 9,
@@ -34,14 +61,41 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 5.4914284,
+          "pe": 5.5485716,
           "roe": 31.15,
-          "perf6M": 103.6,
-          "divYield": 4.01,
-          "marketCap": 1917484032,
-          "price": 9.61,
+          "perf6M": 113.16,
+          "divYield": 3.95,
+          "marketCap": 1937437056,
+          "price": 9.71,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 104% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Momentum technique favorable : progression de 113% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
+        },
+        {
+          "ticker": "BNP.PA",
+          "name": "BNP Paribas SA",
+          "sector": "Financial Services",
+          "country": "France",
+          "currency": "EUR",
+          "rank": 3,
+          "score": 7.9,
+          "pillars": {
+            "valorisation": 8,
+            "qualite": 6.4,
+            "croissance": 9.2,
+            "sante": 10,
+            "dividende": 6.1,
+            "momentum": 9.7
+          },
+          "weight": 0.1,
+          "isNew": false,
+          "pe": 8.786201,
+          "roe": 9.66,
+          "perf6M": 35.6,
+          "divYield": 10.87,
+          "marketCap": 99595714560,
+          "price": 90.41,
+          "peaEligible": true,
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 10.9% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "ACA.PA",
@@ -49,7 +103,7 @@
           "sector": "Financial Services",
           "country": "France",
           "currency": "EUR",
-          "rank": 2,
+          "rank": 4,
           "score": 7.9,
           "pillars": {
             "valorisation": 8.5,
@@ -61,41 +115,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 7.9403663,
+          "pe": 7.9220185,
           "roe": 9.52,
-          "perf6M": 6,
-          "divYield": 6.59,
-          "marketCap": 52357033984,
-          "price": 17.31,
+          "perf6M": 6.58,
+          "divYield": 6.53,
+          "marketCap": 52236050432,
+          "price": 17.27,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 6.6% renforce le rendement total pour les investisseurs long terme."
-        },
-        {
-          "ticker": "BNP.PA",
-          "name": "BNP Paribas SA",
-          "sector": "Financial Services",
-          "country": "France",
-          "currency": "EUR",
-          "rank": 3,
-          "score": 7.8,
-          "pillars": {
-            "valorisation": 7.9,
-            "qualite": 6.4,
-            "croissance": 9.2,
-            "sante": 10,
-            "dividende": 6.1,
-            "momentum": 9.8
-          },
-          "weight": 0.1,
-          "isNew": false,
-          "pe": 8.894072,
-          "roe": 9.66,
-          "perf6M": 32.27,
-          "divYield": 11.04,
-          "marketCap": 100818485248,
-          "price": 91.52,
-          "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 11.0% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 6.5% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "EDEN.PA",
@@ -103,26 +130,26 @@
           "sector": "Financial Services",
           "country": "France",
           "currency": "EUR",
-          "rank": 4,
+          "rank": 5,
           "score": 7.7,
           "pillars": {
-            "valorisation": 7.6,
+            "valorisation": 7.8,
             "qualite": 8.2,
             "croissance": 6.4,
             "sante": 7.3,
             "dividende": 8.2,
-            "momentum": 3.9
+            "momentum": 3.6
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 10.226416,
+          "pe": 9.919812,
           "roe": null,
-          "perf6M": -14.65,
-          "divYield": 6.21,
-          "marketCap": 5035306496,
-          "price": 21.68,
+          "perf6M": -19.18,
+          "divYield": 6.13,
+          "marketCap": 4884340224,
+          "price": 21.03,
           "peaEligible": true,
-          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. Le dividende de 6.2% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. Le dividende de 6.1% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "GTT.PA",
@@ -130,7 +157,7 @@
           "sector": "Energy",
           "country": "France",
           "currency": "EUR",
-          "rank": 5,
+          "rank": 6,
           "score": 7.7,
           "pillars": {
             "valorisation": 4.1,
@@ -142,14 +169,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 18.361837,
+          "pe": 18.45045,
           "roe": 78.69,
-          "perf6M": 21.79,
-          "divYield": 4.94,
-          "marketCap": 7561161216,
-          "price": 204,
+          "perf6M": 22,
+          "divYield": 4.84,
+          "marketCap": 7590813184,
+          "price": 204.8,
           "peaEligible": true,
-          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.9% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.8% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "IPS.PA",
@@ -157,7 +184,7 @@
           "sector": "Industrials",
           "country": "France",
           "currency": "EUR",
-          "rank": 6,
+          "rank": 7,
           "score": 7.7,
           "pillars": {
             "valorisation": 9.3,
@@ -165,18 +192,45 @@
             "croissance": 6.8,
             "sante": 7.2,
             "dividende": 10,
-            "momentum": 6.1
+            "momentum": 6.5
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.187353,
+          "pe": 8.299766,
           "roe": 11.98,
-          "perf6M": 2.88,
+          "perf6M": 4.48,
           "divYield": 5.72,
-          "marketCap": 1483241856,
-          "price": 34.96,
+          "marketCap": 1503606784,
+          "price": 35.44,
           "peaEligible": true,
           "justification": "Rendement du dividende de 5.7% avec un historique de progression régulière, signal de confiance de la direction. La croissance du CA de 5% témoigne d'une dynamique commerciale solide."
+        },
+        {
+          "ticker": "ALVDM.PA",
+          "name": "Voyageurs du Monde SA",
+          "sector": "Consumer Cyclical",
+          "country": "France",
+          "currency": "EUR",
+          "rank": 8,
+          "score": 7.7,
+          "pillars": {
+            "valorisation": 7.4,
+            "qualite": 7,
+            "croissance": 5.5,
+            "sante": 9.9,
+            "dividende": 8.2,
+            "momentum": 2.1
+          },
+          "weight": 0.1,
+          "isNew": true,
+          "pe": 11.904761,
+          "roe": 26.15,
+          "perf6M": -20.59,
+          "divYield": 3.76,
+          "marketCap": 595110784,
+          "price": 135,
+          "peaEligible": true,
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 3.8% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "GLE.PA",
@@ -184,7 +238,7 @@
           "sector": "Financial Services",
           "country": "France",
           "currency": "EUR",
-          "rank": 7,
+          "rank": 9,
           "score": 7.6,
           "pillars": {
             "valorisation": 7.3,
@@ -192,18 +246,18 @@
             "croissance": 7.7,
             "sante": 10,
             "dividende": 7,
-            "momentum": 10
+            "momentum": 9.9
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 10.461764,
+          "pe": 10.405883,
           "roe": 8.84,
-          "perf6M": 32.72,
-          "divYield": 2.3,
-          "marketCap": 51920269312,
-          "price": 71.14,
+          "perf6M": 30.7,
+          "divYield": 2.26,
+          "marketCap": 51642937344,
+          "price": 70.76,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. La dynamique de marché est positive avec +33% sur les 6 derniers mois."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. La dynamique de marché est positive avec +31% sur les 6 derniers mois."
         },
         {
           "ticker": "ABCA.PA",
@@ -211,10 +265,10 @@
           "sector": "Financial Services",
           "country": "France",
           "currency": "EUR",
-          "rank": 8,
+          "rank": 10,
           "score": 7.3,
           "pillars": {
-            "valorisation": 6.8,
+            "valorisation": 6.9,
             "qualite": 8.4,
             "croissance": 3.1,
             "sante": 10,
@@ -223,284 +277,233 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 12.857143,
+          "pe": 12.785714,
           "roe": 15.04,
-          "perf6M": -3.23,
-          "divYield": 7.45,
-          "marketCap": 320981024,
-          "price": 5.4,
+          "perf6M": -2.89,
+          "divYield": 7.41,
+          "marketCap": 319197792,
+          "price": 5.37,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 7.5% renforce le rendement total pour les investisseurs long terme."
-        },
-        {
-          "ticker": "SOP.PA",
-          "name": "Sopra Steria Group SA",
-          "sector": "Technology",
-          "country": "France",
-          "currency": "EUR",
-          "rank": 9,
-          "score": 7.2,
-          "pillars": {
-            "valorisation": 9.4,
-            "qualite": 5.4,
-            "croissance": 4.3,
-            "sante": 6.8,
-            "dividende": 10,
-            "momentum": 1.9
-          },
-          "weight": 0.1,
-          "isNew": false,
-          "pe": 7.519789,
-          "roe": 14.72,
-          "perf6M": -18.1,
-          "divYield": 4.68,
-          "marketCap": 2208082432,
-          "price": 114,
-          "peaEligible": true,
-          "justification": "Rendement du dividende de 4.7% avec un historique de progression régulière, signal de confiance de la direction."
-        },
-        {
-          "ticker": "ITP.PA",
-          "name": "Interparfums SA",
-          "sector": "Consumer Defensive",
-          "country": "France",
-          "currency": "EUR",
-          "rank": 10,
-          "score": 7.2,
-          "pillars": {
-            "valorisation": 6.1,
-            "qualite": 7.7,
-            "croissance": 4.9,
-            "sante": 8.5,
-            "dividende": 9.1,
-            "momentum": 3.2
-          },
-          "weight": 0.1,
-          "isNew": false,
-          "pe": 15.189873,
-          "roe": 17.76,
-          "perf6M": -18.7,
-          "divYield": 4.35,
-          "marketCap": 2007121536,
-          "price": 24,
-          "peaEligible": true,
-          "justification": "Rendement du dividende de 4.3% avec un historique de progression régulière, signal de confiance de la direction. Le ROE de 18% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 7.4% renforce le rendement total pour les investisseurs long terme."
         }
       ],
-      "exits": [],
+      "exits": [
+        "SOP.PA",
+        "ITP.PA"
+      ],
       "chartData": {
         "portfolio": [
           {
             "date": "2025-05-02",
-            "value": 103.25
+            "value": 101.98
           },
           {
             "date": "2025-05-09",
-            "value": 104.48
+            "value": 103.49
           },
           {
             "date": "2025-05-16",
-            "value": 106.95
+            "value": 106.65
           },
           {
             "date": "2025-05-23",
-            "value": 105.98
+            "value": 106.48
           },
           {
             "date": "2025-05-30",
-            "value": 106.78
+            "value": 107.77
           },
           {
             "date": "2025-06-06",
-            "value": 107.44
+            "value": 108.02
           },
           {
             "date": "2025-06-13",
-            "value": 106.79
+            "value": 106.77
           },
           {
             "date": "2025-06-20",
-            "value": 106.09
+            "value": 106.78
           },
           {
             "date": "2025-06-27",
-            "value": 107.81
+            "value": 108.16
           },
           {
             "date": "2025-07-04",
-            "value": 107.4
+            "value": 107.7
           },
           {
             "date": "2025-07-11",
-            "value": 108.58
+            "value": 109.64
           },
           {
             "date": "2025-07-18",
-            "value": 107.41
+            "value": 109.06
           },
           {
             "date": "2025-07-25",
-            "value": 106.81
+            "value": 109.54
           },
           {
             "date": "2025-08-01",
-            "value": 105.18
+            "value": 107.75
           },
           {
             "date": "2025-08-08",
-            "value": 108.07
+            "value": 110.47
           },
           {
             "date": "2025-08-15",
-            "value": 107.65
+            "value": 111.09
           },
           {
             "date": "2025-08-22",
-            "value": 108.3
+            "value": 111.51
           },
           {
             "date": "2025-08-29",
-            "value": 101.5
+            "value": 105.84
           },
           {
             "date": "2025-09-05",
-            "value": 99.04
+            "value": 103.69
           },
           {
             "date": "2025-09-12",
-            "value": 100.76
+            "value": 104.68
           },
           {
             "date": "2025-09-19",
-            "value": 100.7
+            "value": 105.04
           },
           {
             "date": "2025-09-26",
-            "value": 100.91
+            "value": 104.46
           },
           {
             "date": "2025-10-03",
-            "value": 100.29
+            "value": 103.96
           },
           {
             "date": "2025-10-10",
-            "value": 97.18
+            "value": 103.25
           },
           {
             "date": "2025-10-17",
-            "value": 96.63
+            "value": 102.18
           },
           {
             "date": "2025-10-24",
-            "value": 98.61
+            "value": 103.76
           },
           {
             "date": "2025-10-31",
-            "value": 97.25
+            "value": 102.62
           },
           {
             "date": "2025-11-07",
-            "value": 94.54
+            "value": 99.71
           },
           {
             "date": "2025-11-14",
-            "value": 96.37
+            "value": 101.44
           },
           {
             "date": "2025-11-21",
-            "value": 93.59
+            "value": 99.6
           },
           {
             "date": "2025-11-28",
-            "value": 96.09
+            "value": 102.22
           },
           {
             "date": "2025-12-05",
-            "value": 97.7
+            "value": 104.2
           },
           {
             "date": "2025-12-12",
-            "value": 98.4
+            "value": 103.64
           },
           {
             "date": "2025-12-19",
-            "value": 100.03
+            "value": 104.72
           },
           {
             "date": "2025-12-24",
-            "value": 99.84
+            "value": 104.67
           },
           {
             "date": "2026-01-02",
-            "value": 102.33
+            "value": 107.09
           },
           {
             "date": "2026-01-09",
-            "value": 105.43
+            "value": 109.54
           },
           {
             "date": "2026-01-16",
-            "value": 105.47
+            "value": 110.26
           },
           {
             "date": "2026-01-23",
-            "value": 106.21
+            "value": 111.58
           },
           {
             "date": "2026-01-30",
-            "value": 109.2
-          },
-          {
-            "date": "2026-02-06",
-            "value": 107.53
-          },
-          {
-            "date": "2026-02-13",
-            "value": 106.62
-          },
-          {
-            "date": "2026-02-20",
-            "value": 111.92
-          },
-          {
-            "date": "2026-02-27",
-            "value": 115.22
-          },
-          {
-            "date": "2026-03-06",
-            "value": 112.49
-          },
-          {
-            "date": "2026-03-13",
-            "value": 113.5
-          },
-          {
-            "date": "2026-03-20",
-            "value": 111.53
-          },
-          {
-            "date": "2026-03-27",
-            "value": 107.67
-          },
-          {
-            "date": "2026-04-02",
-            "value": 112.45
-          },
-          {
-            "date": "2026-04-10",
             "value": 113.68
           },
           {
+            "date": "2026-02-06",
+            "value": 112.61
+          },
+          {
+            "date": "2026-02-13",
+            "value": 112.55
+          },
+          {
+            "date": "2026-02-20",
+            "value": 117.73
+          },
+          {
+            "date": "2026-02-27",
+            "value": 121.21
+          },
+          {
+            "date": "2026-03-06",
+            "value": 117.47
+          },
+          {
+            "date": "2026-03-13",
+            "value": 118.56
+          },
+          {
+            "date": "2026-03-20",
+            "value": 116.92
+          },
+          {
+            "date": "2026-03-27",
+            "value": 112.99
+          },
+          {
+            "date": "2026-04-02",
+            "value": 117.2
+          },
+          {
+            "date": "2026-04-10",
+            "value": 119.08
+          },
+          {
             "date": "2026-04-17",
-            "value": 113.53
+            "value": 118.08
           },
           {
             "date": "2026-04-24",
-            "value": 112.56
+            "value": 118.38
           },
           {
-            "date": "2026-04-28",
-            "value": 114.15
+            "date": "2026-04-29",
+            "value": 119.96
           }
         ],
         "benchmark": [
@@ -714,11 +717,11 @@
           },
           {
             "date": "2026-04-26",
-            "value": 104.78
+            "value": 104.29
           },
           {
-            "date": "2026-04-28",
-            "value": 104.29
+            "date": "2026-04-29",
+            "value": 103.66
           }
         ]
       }
@@ -733,7 +736,7 @@
       "engine": "rule_based",
       "benchmarkName": "CAC 40",
       "benchmarkTicker": "^FCHI",
-      "benchmarkPrice": 8104.09,
+      "benchmarkPrice": 8054.86,
       "size": 10,
       "picks": [
         {
@@ -750,18 +753,18 @@
             "croissance": 7.7,
             "sante": 8.4,
             "dividende": 7.6,
-            "momentum": 9.8
+            "momentum": 9.7
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 6,
+          "pe": 5.971709,
           "roe": 21.21,
-          "perf6M": 19.6,
+          "perf6M": 18.4,
           "divYield": 1.5,
-          "marketCap": 1143379066880,
-          "price": 373.2,
+          "marketCap": 1138170658816,
+          "price": 371.5,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 18% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "INDU-C.ST",
@@ -777,18 +780,18 @@
             "croissance": 8.5,
             "sante": 7.5,
             "dividende": 7.2,
-            "momentum": 9.9
+            "momentum": 9.8
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 5.1735287,
+          "pe": 5.1411943,
           "roe": 21.64,
-          "perf6M": 22.39,
+          "perf6M": 20.45,
           "divYield": 1.82,
-          "marketCap": 207791980544,
-          "price": 480,
+          "marketCap": 206493286400,
+          "price": 477,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 22% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 22% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 22% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "MAU.PA",
@@ -808,14 +811,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 5.4914284,
+          "pe": 5.5485716,
           "roe": 31.15,
-          "perf6M": 103.6,
-          "divYield": 4.01,
-          "marketCap": 1917484032,
-          "price": 9.61,
+          "perf6M": 113.16,
+          "divYield": 3.95,
+          "marketCap": 1937437056,
+          "price": 9.71,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 104% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Momentum technique favorable : progression de 113% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "BIRG.L",
@@ -831,18 +834,18 @@
             "croissance": 2,
             "sante": 10,
             "dividende": 8,
-            "momentum": 9
+            "momentum": 9.1
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 0.14069565,
+          "pe": 0.14208695,
           "roe": 9.26,
-          "perf6M": 18.27,
-          "divYield": 5.66,
-          "marketCap": 15372919808,
-          "price": 16.18,
+          "perf6M": 17.41,
+          "divYield": 5.56,
+          "marketCap": 15524938752,
+          "price": 16.34,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.7% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.6% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "ACA.PA",
@@ -862,14 +865,41 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 7.9403663,
+          "pe": 7.9220185,
           "roe": 9.52,
-          "perf6M": 6,
-          "divYield": 6.59,
-          "marketCap": 52357033984,
-          "price": 17.31,
+          "perf6M": 6.58,
+          "divYield": 6.53,
+          "marketCap": 52236050432,
+          "price": 17.27,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 6.6% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 6.5% renforce le rendement total pour les investisseurs long terme."
+        },
+        {
+          "ticker": "IDIP.PA",
+          "name": "IDI",
+          "sector": "Financial Services",
+          "country": "France",
+          "currency": "EUR",
+          "rank": 6,
+          "score": 8.2,
+          "pillars": {
+            "valorisation": 8.2,
+            "qualite": 10,
+            "croissance": 2.3,
+            "sante": 10,
+            "dividende": 5.6,
+            "momentum": 5.1
+          },
+          "weight": 0.1,
+          "isNew": true,
+          "pe": 8.585247,
+          "roe": null,
+          "perf6M": -2.74,
+          "divYield": 4.05,
+          "marketCap": 506540768,
+          "price": 71,
+          "peaEligible": true,
+          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "BNP.PA",
@@ -877,53 +907,26 @@
           "sector": "Financial Services",
           "country": "France",
           "currency": "EUR",
-          "rank": 6,
+          "rank": 7,
           "score": 8,
           "pillars": {
-            "valorisation": 7.9,
+            "valorisation": 8,
             "qualite": 6.4,
             "croissance": 9.2,
             "sante": 10,
             "dividende": 6.1,
-            "momentum": 9.8
+            "momentum": 9.7
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.894072,
+          "pe": 8.786201,
           "roe": 9.66,
-          "perf6M": 32.27,
-          "divYield": 11.04,
-          "marketCap": 100818485248,
-          "price": 91.52,
+          "perf6M": 35.6,
+          "divYield": 10.87,
+          "marketCap": 99595714560,
+          "price": 90.41,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 11.0% renforce le rendement total pour les investisseurs long terme."
-        },
-        {
-          "ticker": "AGS.BR",
-          "name": "ageas SA/NV",
-          "sector": "Financial Services",
-          "country": "Belgium",
-          "currency": "EUR",
-          "rank": 7,
-          "score": 8,
-          "pillars": {
-            "valorisation": 8.2,
-            "qualite": 6.2,
-            "croissance": 10,
-            "sante": 8.2,
-            "dividende": 8.7,
-            "momentum": 9.2
-          },
-          "weight": 0.1,
-          "isNew": false,
-          "pe": 7.4202414,
-          "roe": 18.82,
-          "perf6M": 16.29,
-          "divYield": 5.18,
-          "marketCap": 12864553984,
-          "price": 67.45,
-          "peaEligible": true,
-          "justification": "Croissance soutenue du chiffre d'affaires (+20% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 10.9% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "IPS.PA",
@@ -939,18 +942,45 @@
             "croissance": 6.8,
             "sante": 7.2,
             "dividende": 10,
-            "momentum": 6.1
+            "momentum": 6.5
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.187353,
+          "pe": 8.299766,
           "roe": 11.98,
-          "perf6M": 2.88,
+          "perf6M": 4.48,
           "divYield": 5.72,
-          "marketCap": 1483241856,
-          "price": 34.96,
+          "marketCap": 1503606784,
+          "price": 35.44,
           "peaEligible": true,
           "justification": "Rendement du dividende de 5.7% avec un historique de progression régulière, signal de confiance de la direction. La croissance du CA de 5% témoigne d'une dynamique commerciale solide."
+        },
+        {
+          "ticker": "AGS.BR",
+          "name": "ageas SA/NV",
+          "sector": "Financial Services",
+          "country": "Belgium",
+          "currency": "EUR",
+          "rank": 9,
+          "score": 7.9,
+          "pillars": {
+            "valorisation": 8.2,
+            "qualite": 6.2,
+            "croissance": 10,
+            "sante": 8.2,
+            "dividende": 8.7,
+            "momentum": 9.1
+          },
+          "weight": 0.1,
+          "isNew": false,
+          "pe": 7.3212323,
+          "roe": 18.82,
+          "perf6M": 14.43,
+          "divYield": 5.19,
+          "marketCap": 12692900864,
+          "price": 66.55,
+          "peaEligible": true,
+          "justification": "Croissance soutenue du chiffre d'affaires (+20% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "DWS.DE",
@@ -958,271 +988,244 @@
           "sector": "Financial Services",
           "country": "Germany",
           "currency": "EUR",
-          "rank": 9,
+          "rank": 10,
           "score": 7.8,
           "pillars": {
-            "valorisation": 7,
+            "valorisation": 7.1,
             "qualite": 7.2,
             "croissance": 9.4,
             "sante": 9.8,
             "dividende": 7.4,
-            "momentum": 8.1
+            "momentum": 7.9
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 12.37069,
+          "pe": 12.252155,
           "roe": 12.4,
-          "perf6M": 9.13,
-          "divYield": 5.22,
-          "marketCap": 11480000512,
-          "price": 57.4,
+          "perf6M": 7.34,
+          "divYield": 5.23,
+          "marketCap": 11369999360,
+          "price": 56.85,
           "peaEligible": true,
           "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
-        },
-        {
-          "ticker": "SAMPO.HE",
-          "name": "Sampo Oyj",
-          "sector": "Financial Services",
-          "country": "Finland",
-          "currency": "EUR",
-          "rank": 10,
-          "score": 7.8,
-          "pillars": {
-            "valorisation": 6.9,
-            "qualite": 8.8,
-            "croissance": 10,
-            "sante": 9.1,
-            "dividende": 7.6,
-            "momentum": 2.6
-          },
-          "weight": 0.1,
-          "isNew": true,
-          "pe": 11.908109,
-          "roe": 26.37,
-          "perf6M": -9.64,
-          "divYield": 4.03,
-          "marketCap": 23401807872,
-          "price": 8.812,
-          "peaEligible": true,
-          "justification": "Croissance soutenue du chiffre d'affaires (+21% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
         }
       ],
       "exits": [
-        "GLE.PA"
+        "SAMPO.HE"
       ],
       "chartData": {
         "portfolio": [
           {
             "date": "2025-05-02",
-            "value": 101.98
+            "value": 101.38
           },
           {
             "date": "2025-05-09",
-            "value": 104.04
+            "value": 103.21
           },
           {
             "date": "2025-05-16",
-            "value": 107.04
+            "value": 106.2
           },
           {
             "date": "2025-05-23",
-            "value": 104.87
+            "value": 104.03
           },
           {
             "date": "2025-05-30",
-            "value": 105.38
+            "value": 104.68
           },
           {
             "date": "2025-06-06",
-            "value": 105.04
+            "value": 104.27
           },
           {
             "date": "2025-06-13",
-            "value": 104.2
+            "value": 103.62
           },
           {
             "date": "2025-06-20",
-            "value": 103.58
+            "value": 103.23
           },
           {
             "date": "2025-06-27",
-            "value": 105.38
+            "value": 105.22
           },
           {
             "date": "2025-07-04",
-            "value": 104.44
+            "value": 104.41
           },
           {
             "date": "2025-07-11",
-            "value": 106.86
+            "value": 106.76
           },
           {
             "date": "2025-07-18",
-            "value": 106.04
+            "value": 105.95
           },
           {
             "date": "2025-07-25",
-            "value": 108.51
+            "value": 108.46
           },
           {
             "date": "2025-08-01",
-            "value": 104.58
+            "value": 104.53
           },
           {
             "date": "2025-08-08",
-            "value": 109.58
+            "value": 109.15
           },
           {
             "date": "2025-08-15",
-            "value": 111.13
+            "value": 110.6
           },
           {
             "date": "2025-08-22",
-            "value": 112.22
+            "value": 111.52
           },
           {
             "date": "2025-08-29",
-            "value": 107.09
+            "value": 106.55
           },
           {
             "date": "2025-09-05",
-            "value": 105.33
+            "value": 104.83
           },
           {
             "date": "2025-09-12",
-            "value": 107.13
+            "value": 106.19
           },
           {
             "date": "2025-09-19",
-            "value": 107.29
+            "value": 106.77
           },
           {
             "date": "2025-09-26",
-            "value": 108.64
+            "value": 107.82
           },
           {
             "date": "2025-10-03",
-            "value": 109.81
+            "value": 108.89
           },
           {
             "date": "2025-10-10",
-            "value": 108.95
+            "value": 107.77
           },
           {
             "date": "2025-10-17",
-            "value": 106.32
+            "value": 105.16
           },
           {
             "date": "2025-10-24",
-            "value": 106.88
+            "value": 105.57
           },
           {
             "date": "2025-10-31",
-            "value": 107.22
+            "value": 106.05
           },
           {
             "date": "2025-11-07",
-            "value": 106.62
+            "value": 104.62
           },
           {
             "date": "2025-11-14",
-            "value": 109.62
+            "value": 107.64
           },
           {
             "date": "2025-11-21",
-            "value": 107.65
+            "value": 105.4
           },
           {
             "date": "2025-11-28",
-            "value": 110.66
+            "value": 108.01
           },
           {
             "date": "2025-12-05",
-            "value": 111.15
+            "value": 109.2
           },
           {
             "date": "2025-12-12",
-            "value": 111.99
+            "value": 109.86
           },
           {
             "date": "2025-12-19",
-            "value": 113.92
+            "value": 111.6
           },
           {
             "date": "2025-12-24",
-            "value": 114.52
+            "value": 112.28
           },
           {
             "date": "2026-01-02",
-            "value": 117.12
+            "value": 114.69
           },
           {
             "date": "2026-01-09",
-            "value": 119.47
+            "value": 117.68
           },
           {
             "date": "2026-01-16",
-            "value": 121.08
+            "value": 119.08
           },
           {
             "date": "2026-01-23",
-            "value": 119.5
+            "value": 118.93
           },
           {
             "date": "2026-01-30",
-            "value": 123.29
+            "value": 122.59
           },
           {
             "date": "2026-02-06",
-            "value": 125.21
+            "value": 124.56
           },
           {
             "date": "2026-02-13",
-            "value": 123.07
+            "value": 123
           },
           {
             "date": "2026-02-20",
-            "value": 129.04
+            "value": 128.52
           },
           {
             "date": "2026-02-27",
-            "value": 131.6
+            "value": 130.78
           },
           {
             "date": "2026-03-06",
-            "value": 125.98
-          },
-          {
-            "date": "2026-03-13",
-            "value": 128.5
-          },
-          {
-            "date": "2026-03-20",
             "value": 125.36
           },
           {
+            "date": "2026-03-13",
+            "value": 127.35
+          },
+          {
+            "date": "2026-03-20",
+            "value": 124.12
+          },
+          {
             "date": "2026-03-27",
-            "value": 124.55
+            "value": 123.35
           },
           {
             "date": "2026-04-02",
-            "value": 128.96
+            "value": 127.94
           },
           {
             "date": "2026-04-10",
-            "value": 131.49
+            "value": 130.5
           },
           {
             "date": "2026-04-17",
-            "value": 131.57
+            "value": 130.58
           },
           {
             "date": "2026-04-24",
-            "value": 129
+            "value": 128.64
           },
           {
-            "date": "2026-04-28",
-            "value": 129.49
+            "date": "2026-04-29",
+            "value": 129.71
           }
         ],
         "benchmark": [
@@ -1436,11 +1439,11 @@
           },
           {
             "date": "2026-04-26",
-            "value": 104.78
+            "value": 104.29
           },
           {
-            "date": "2026-04-28",
-            "value": 104.29
+            "date": "2026-04-29",
+            "value": 103.66
           }
         ]
       }
@@ -1455,7 +1458,7 @@
       "engine": "rule_based",
       "benchmarkName": "MSCI World",
       "benchmarkTicker": "CW8.PA",
-      "benchmarkPrice": 632.8626,
+      "benchmarkPrice": 634.5706,
       "size": 12,
       "picks": [
         {
@@ -1467,7 +1470,7 @@
           "rank": 1,
           "score": 9.3,
           "pillars": {
-            "valorisation": 7.3,
+            "valorisation": 7.2,
             "qualite": 10,
             "croissance": 10,
             "sante": 7.4,
@@ -1476,12 +1479,12 @@
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 14.271076,
+          "pe": 14.254215,
           "roe": 25.83,
-          "perf6M": 31.68,
-          "divYield": 0.9,
-          "marketCap": 117462827008,
-          "price": 110.03,
+          "perf6M": 31.82,
+          "divYield": 0.95,
+          "marketCap": 117324054528,
+          "price": 109.9,
           "peaEligible": false,
           "justification": "Qualité exceptionnelle avec un ROE de 26%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +32% sur les 6 derniers mois."
         },
@@ -1503,14 +1506,14 @@
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 18.361837,
+          "pe": 18.45045,
           "roe": 78.69,
-          "perf6M": 21.79,
-          "divYield": 4.94,
-          "marketCap": 7561161216,
-          "price": 204,
+          "perf6M": 22,
+          "divYield": 4.84,
+          "marketCap": 7590813184,
+          "price": 204.8,
           "peaEligible": true,
-          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.9% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.8% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "INDU-C.ST",
@@ -1526,18 +1529,18 @@
             "croissance": 8.5,
             "sante": 7.5,
             "dividende": 7.2,
-            "momentum": 9.9
+            "momentum": 9.8
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 5.1735287,
+          "pe": 5.1411943,
           "roe": 21.64,
-          "perf6M": 22.39,
+          "perf6M": 20.45,
           "divYield": 1.82,
-          "marketCap": 207791980544,
-          "price": 480,
+          "marketCap": 206493286400,
+          "price": 477,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 22% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 22% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 22% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "INVE-B.ST",
@@ -1553,18 +1556,18 @@
             "croissance": 7.7,
             "sante": 8.4,
             "dividende": 7.6,
-            "momentum": 9.8
+            "momentum": 9.7
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 6,
+          "pe": 5.971709,
           "roe": 21.21,
-          "perf6M": 19.6,
+          "perf6M": 18.4,
           "divYield": 1.5,
-          "marketCap": 1143379066880,
-          "price": 373.2,
+          "marketCap": 1138170658816,
+          "price": 371.5,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 18% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "MU",
@@ -1573,25 +1576,25 @@
           "country": "United States",
           "currency": "USD",
           "rank": 5,
-          "score": 8.9,
+          "score": 8.8,
           "pillars": {
-            "valorisation": 4,
+            "valorisation": 3.8,
             "qualite": 10,
             "croissance": 10,
             "sante": 7.3,
             "dividende": 3.2,
-            "momentum": 10
+            "momentum": 9
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 23.252949,
+          "pe": 23.809727,
           "roe": 39.82,
-          "perf6M": 127,
-          "divYield": 0.11,
-          "marketCap": 555668406272,
-          "price": 492.73,
+          "perf6M": 130.25,
+          "divYield": 0.12,
+          "marketCap": 568705024000,
+          "price": 504.29,
           "peaEligible": false,
-          "justification": "Qualité exceptionnelle avec un ROE de 40%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +127% sur les 6 derniers mois."
+          "justification": "Qualité exceptionnelle avec un ROE de 40%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +130% sur les 6 derniers mois."
         },
         {
           "ticker": "CF",
@@ -1602,7 +1605,7 @@
           "rank": 6,
           "score": 8.8,
           "pillars": {
-            "valorisation": 7.3,
+            "valorisation": 7.2,
             "qualite": 9.6,
             "croissance": 8.5,
             "sante": 7.5,
@@ -1611,68 +1614,68 @@
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 13.6603565,
+          "pe": 13.63545,
           "roe": 23.4,
-          "perf6M": 41.63,
-          "divYield": 1.62,
-          "marketCap": 18844127232,
-          "price": 122.67,
+          "perf6M": 41.45,
+          "divYield": 1.64,
+          "marketCap": 18788825088,
+          "price": 122.31,
           "peaEligible": false,
-          "justification": "Momentum technique favorable : progression de 42% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 23% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 41% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 23% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
-          "ticker": "NVDA",
-          "name": "NVIDIA Corporation",
+          "ticker": "6857.T",
+          "name": "Advantest Corporation",
           "sector": "Technology",
-          "country": "United States",
-          "currency": "USD",
+          "country": "Japan",
+          "currency": "JPY",
           "rank": 7,
-          "score": 8.7,
+          "score": 8.8,
           "pillars": {
-            "valorisation": 0.8,
+            "valorisation": 0.2,
             "qualite": 10,
             "croissance": 10,
-            "sante": 8.8,
-            "dividende": 3.8,
-            "momentum": 8
+            "sante": 8.9,
+            "dividende": 4.7,
+            "momentum": 10
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 42.891834,
-          "roe": 101.49,
-          "perf6M": 13.22,
-          "divYield": 0.02,
-          "marketCap": 5108182024192,
-          "price": 210.17,
+          "pe": 57.802906,
+          "roe": 57.65,
+          "perf6M": 70.98,
+          "divYield": 0.2,
+          "marketCap": 21584093904896,
+          "price": 29750,
           "peaEligible": false,
-          "justification": "Qualité exceptionnelle avec un ROE de 101%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +13% sur les 6 derniers mois."
+          "justification": "Qualité exceptionnelle avec un ROE de 58%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +71% sur les 6 derniers mois."
         },
         {
-          "ticker": "GOOGL",
-          "name": "Alphabet Inc.",
-          "sector": "Communication Services",
+          "ticker": "HLT",
+          "name": "Hilton Worldwide Holdings Inc.",
+          "sector": "Consumer Cyclical",
           "country": "United States",
           "currency": "USD",
           "rank": 8,
           "score": 8.7,
           "pillars": {
-            "valorisation": 0.8,
-            "qualite": 10,
-            "croissance": 9.7,
-            "sante": 8.6,
+            "valorisation": 0.4,
+            "qualite": 9.2,
+            "croissance": 10,
+            "sante": 10,
             "dividende": 3.2,
-            "momentum": 9
+            "momentum": 9.6
           },
           "weight": 0.083,
-          "isNew": false,
-          "pe": 32.24746,
-          "roe": 35.71,
-          "perf6M": 34.56,
-          "divYield": 0.24,
-          "marketCap": 4224911147008,
-          "price": 349.24,
+          "isNew": true,
+          "pe": 49.292683,
+          "roe": null,
+          "perf6M": 20.76,
+          "divYield": 0.19,
+          "marketCap": 73596731392,
+          "price": 323.36,
           "peaEligible": false,
-          "justification": "Qualité exceptionnelle avec un ROE de 36%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +35% sur les 6 derniers mois."
+          "justification": "Croissance soutenue du chiffre d'affaires (+176% en glissement annuel), avec une trajectoire haussière cohérente. La dynamique de marché est positive avec +21% sur les 6 derniers mois."
         },
         {
           "ticker": "6861.T",
@@ -1683,7 +1686,7 @@
           "rank": 9,
           "score": 8.7,
           "pillars": {
-            "valorisation": 1.5,
+            "valorisation": 1.3,
             "qualite": 10,
             "croissance": 10,
             "sante": 8.7,
@@ -1692,41 +1695,68 @@
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 40.178135,
+          "pe": 40.160645,
           "roe": null,
-          "perf6M": 18.99,
+          "perf6M": 21.32,
           "divYield": 0.75,
           "marketCap": 17898355556352,
           "price": 73800,
           "peaEligible": false,
-          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. La dynamique de marché est positive avec +19% sur les 6 derniers mois."
+          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. La dynamique de marché est positive avec +21% sur les 6 derniers mois."
         },
         {
-          "ticker": "6857.T",
-          "name": "Advantest Corporation",
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
           "sector": "Technology",
-          "country": "Japan",
-          "currency": "JPY",
+          "country": "United States",
+          "currency": "USD",
           "rank": 10,
-          "score": 8.7,
+          "score": 8.6,
           "pillars": {
-            "valorisation": 0.2,
+            "valorisation": 0.5,
             "qualite": 10,
             "croissance": 10,
-            "sante": 8.9,
-            "dividende": 4.7,
+            "sante": 8.8,
+            "dividende": 3.8,
+            "momentum": 8
+          },
+          "weight": 0.083,
+          "isNew": false,
+          "pe": 43.50408,
+          "roe": 101.49,
+          "perf6M": 14.45,
+          "divYield": 0.02,
+          "marketCap": 5181096853504,
+          "price": 213.17,
+          "peaEligible": false,
+          "justification": "Qualité exceptionnelle avec un ROE de 101%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +14% sur les 6 derniers mois."
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet Inc.",
+          "sector": "Communication Services",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 11,
+          "score": 8.6,
+          "pillars": {
+            "valorisation": 0.5,
+            "qualite": 10,
+            "croissance": 9.7,
+            "sante": 8.6,
+            "dividende": 3.2,
             "momentum": 9
           },
           "weight": 0.083,
           "isNew": false,
-          "pe": 57.941376,
-          "roe": 57.65,
-          "perf6M": 79.9,
-          "divYield": 0.19,
-          "marketCap": 21584093904896,
-          "price": 29750,
+          "pe": 32.357075,
+          "roe": 35.71,
+          "perf6M": 34.57,
+          "divYield": 0.24,
+          "marketCap": 4231443775488,
+          "price": 349.78,
           "peaEligible": false,
-          "justification": "Qualité exceptionnelle avec un ROE de 58%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +80% sur les 6 derniers mois."
+          "justification": "Qualité exceptionnelle avec un ROE de 36%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +35% sur les 6 derniers mois."
         },
         {
           "ticker": "ANET",
@@ -1734,7 +1764,7 @@
           "sector": "Technology",
           "country": "United States",
           "currency": "USD",
-          "rank": 11,
+          "rank": 12,
           "score": 8.6,
           "pillars": {
             "valorisation": 0.2,
@@ -1742,264 +1772,236 @@
             "croissance": 9.2,
             "sante": 9.1,
             "dividende": 0,
-            "momentum": 8.9
+            "momentum": 9
           },
           "weight": 0.083,
-          "isNew": true,
-          "pe": 59.450733,
+          "isNew": false,
+          "pe": 60.324814,
           "roe": 31.4,
-          "perf6M": 6.14,
+          "perf6M": 7.46,
           "divYield": null,
-          "marketCap": 205112410112,
-          "price": 162.895,
+          "marketCap": 208128098304,
+          "price": 165.29,
           "peaEligible": false,
           "justification": "Qualité exceptionnelle avec un ROE de 31%, reflet d'un avantage concurrentiel durable sur ses pairs. La croissance du CA de 29% témoigne d'une dynamique commerciale solide."
-        },
-        {
-          "ticker": "MS",
-          "name": "Morgan Stanley",
-          "sector": "Financial Services",
-          "country": "United States",
-          "currency": "USD",
-          "rank": 12,
-          "score": 8.5,
-          "pillars": {
-            "valorisation": 3.9,
-            "qualite": 10,
-            "croissance": 9.6,
-            "sante": 6,
-            "dividende": 5,
-            "momentum": 8.4
-          },
-          "weight": 0.083,
-          "isNew": true,
-          "pe": 17.133936,
-          "roe": null,
-          "perf6M": 15.67,
-          "divYield": 2.1,
-          "marketCap": 300629590016,
-          "price": 189.33,
-          "peaEligible": false,
-          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. La dynamique de marché est positive avec +16% sur les 6 derniers mois."
         }
       ],
       "exits": [
-        "GOOG",
-        "4507.T"
+        "MS"
       ],
       "chartData": {
         "portfolio": [
           {
             "date": "2025-05-02",
-            "value": 104.21
+            "value": 104.35
           },
           {
             "date": "2025-05-09",
-            "value": 105.07
+            "value": 105.2
           },
           {
             "date": "2025-05-16",
-            "value": 112.35
+            "value": 112.15
           },
           {
             "date": "2025-05-23",
-            "value": 109.89
+            "value": 109.73
           },
           {
             "date": "2025-05-30",
-            "value": 111.16
+            "value": 110.99
           },
           {
             "date": "2025-06-06",
-            "value": 115.54
+            "value": 115.22
           },
           {
             "date": "2025-06-13",
-            "value": 117.58
+            "value": 117.12
           },
           {
             "date": "2025-06-20",
-            "value": 119.51
+            "value": 118.99
           },
           {
             "date": "2025-06-27",
-            "value": 124
+            "value": 123.45
           },
           {
             "date": "2025-07-04",
-            "value": 123.76
+            "value": 123.2
           },
           {
             "date": "2025-07-11",
-            "value": 128.5
+            "value": 128.22
           },
           {
             "date": "2025-07-18",
-            "value": 127.13
+            "value": 126.75
           },
           {
             "date": "2025-07-25",
-            "value": 129.47
+            "value": 128.99
           },
           {
             "date": "2025-08-01",
-            "value": 125.85
+            "value": 125.17
           },
           {
             "date": "2025-08-08",
-            "value": 131.54
+            "value": 130.6
           },
           {
             "date": "2025-08-15",
-            "value": 133.48
+            "value": 132.63
           },
           {
             "date": "2025-08-22",
-            "value": 132.77
+            "value": 132.07
           },
           {
             "date": "2025-08-29",
-            "value": 135.24
+            "value": 134.28
           },
           {
             "date": "2025-09-05",
-            "value": 136.64
+            "value": 135.75
           },
           {
             "date": "2025-09-12",
-            "value": 145.3
+            "value": 143.88
           },
           {
             "date": "2025-09-19",
-            "value": 149.33
+            "value": 147.38
           },
           {
             "date": "2025-09-26",
-            "value": 148.46
+            "value": 146.28
           },
           {
             "date": "2025-10-03",
-            "value": 155.28
+            "value": 153.18
           },
           {
             "date": "2025-10-10",
-            "value": 157.87
+            "value": 156.1
           },
           {
             "date": "2025-10-17",
-            "value": 158.73
+            "value": 156.65
           },
           {
             "date": "2025-10-24",
-            "value": 163.53
+            "value": 161.32
           },
           {
             "date": "2025-10-31",
-            "value": 174.61
+            "value": 171.73
           },
           {
             "date": "2025-11-07",
-            "value": 167.92
+            "value": 165.98
           },
           {
             "date": "2025-11-14",
-            "value": 169.44
+            "value": 167.33
           },
           {
             "date": "2025-11-21",
-            "value": 159.6
+            "value": 158.07
           },
           {
             "date": "2025-11-28",
-            "value": 170.58
+            "value": 168.58
           },
           {
             "date": "2025-12-05",
-            "value": 170.75
+            "value": 167.82
           },
           {
             "date": "2025-12-12",
-            "value": 171.72
+            "value": 168.99
           },
           {
             "date": "2025-12-19",
-            "value": 173.24
+            "value": 171.16
           },
           {
             "date": "2025-12-26",
-            "value": 179.03
+            "value": 176.66
           },
           {
             "date": "2026-01-02",
-            "value": 182.06
+            "value": 179.73
           },
           {
             "date": "2026-01-09",
-            "value": 188.02
+            "value": 185.76
           },
           {
             "date": "2026-01-16",
-            "value": 197.5
+            "value": 195.01
           },
           {
             "date": "2026-01-23",
-            "value": 203.99
+            "value": 202.17
           },
           {
             "date": "2026-01-30",
-            "value": 208.54
+            "value": 206.36
           },
           {
             "date": "2026-02-06",
-            "value": 204.31
+            "value": 202.94
           },
           {
             "date": "2026-02-13",
-            "value": 210.81
+            "value": 210.04
           },
           {
             "date": "2026-02-20",
-            "value": 211.87
+            "value": 210.97
           },
           {
             "date": "2026-02-27",
-            "value": 213.78
+            "value": 213.32
           },
           {
             "date": "2026-03-06",
-            "value": 204.5
+            "value": 203.87
           },
           {
             "date": "2026-03-13",
-            "value": 207.54
+            "value": 207.21
           },
           {
             "date": "2026-03-20",
-            "value": 203.29
+            "value": 202.46
           },
           {
             "date": "2026-03-27",
-            "value": 192.67
+            "value": 192.08
           },
           {
             "date": "2026-04-03",
-            "value": 191.97
+            "value": 191.4
           },
           {
             "date": "2026-04-10",
-            "value": 215.77
+            "value": 214.92
           },
           {
             "date": "2026-04-17",
-            "value": 227.07
+            "value": 225.98
           },
           {
             "date": "2026-04-24",
-            "value": 236.55
+            "value": 235.31
           },
           {
-            "date": "2026-04-28",
-            "value": 237.55
+            "date": "2026-04-29",
+            "value": 235.58
           }
         ],
         "benchmark": [
@@ -2213,11 +2215,11 @@
           },
           {
             "date": "2026-04-26",
-            "value": 121.46
+            "value": 121.07
           },
           {
-            "date": "2026-04-28",
-            "value": 121.07
+            "date": "2026-04-29",
+            "value": 121.4
           }
         ]
       }
@@ -2232,7 +2234,7 @@
       "engine": "rule_based",
       "benchmarkName": "Euro Stoxx 50",
       "benchmarkTicker": "^STOXX50E",
-      "benchmarkPrice": 5836.1,
+      "benchmarkPrice": 5817.02,
       "size": 10,
       "picks": [
         {
@@ -2242,29 +2244,29 @@
           "country": "Sweden",
           "currency": "SEK",
           "rank": 1,
-          "score": 8.9,
+          "score": 8.8,
           "pillars": {
-            "valorisation": 5.8,
+            "valorisation": 5.4,
             "qualite": 10,
             "croissance": 5.2,
             "sante": 8.9,
             "dividende": 9.5,
-            "momentum": 3.9
+            "momentum": 4.4
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 11.2843075,
+          "pe": 11.434109,
           "roe": 24.97,
-          "perf6M": -11.6,
+          "perf6M": -4.27,
           "divYield": 5.05,
-          "marketCap": 127783952384,
-          "price": 641.4,
+          "marketCap": 129298071552,
+          "price": 649,
           "peaEligible": true,
           "justification": "Qualité exceptionnelle avec un ROE de 25%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 5.0% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "III.L",
-          "name": "3i Group Ord",
+          "name": "3i Group plc",
           "sector": "Financial Services",
           "country": "United Kingdom",
           "currency": "GBp",
@@ -2280,12 +2282,12 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 3.9938369,
+          "pe": 3.8976223,
           "roe": 25.05,
-          "perf6M": -41.87,
+          "perf6M": -42.98,
           "divYield": 3.05,
-          "marketCap": 26383697920,
-          "price": 2592,
+          "marketCap": 25748094976,
+          "price": 2529.557,
           "peaEligible": false,
           "justification": "Qualité exceptionnelle avec un ROE de 25%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 3.0% renforce le rendement total pour les investisseurs long terme."
         },
@@ -2307,14 +2309,41 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 7.9403663,
+          "pe": 7.9220185,
           "roe": 9.52,
-          "perf6M": 6,
-          "divYield": 6.59,
-          "marketCap": 52357033984,
-          "price": 17.31,
+          "perf6M": 6.58,
+          "divYield": 6.53,
+          "marketCap": 52236050432,
+          "price": 17.27,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 6.6% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 6.5% renforce le rendement total pour les investisseurs long terme."
+        },
+        {
+          "ticker": "HNR1.DE",
+          "name": "Hannover Rück SE",
+          "sector": "Financial Services",
+          "country": "Germany",
+          "currency": "EUR",
+          "rank": 4,
+          "score": 8.6,
+          "pillars": {
+            "valorisation": 6.9,
+            "qualite": 7.1,
+            "croissance": 9.9,
+            "sante": 8.4,
+            "dividende": 10,
+            "momentum": 6.2
+          },
+          "weight": 0.1,
+          "isNew": false,
+          "pe": 11.811957,
+          "roe": 20.79,
+          "perf6M": 1.02,
+          "divYield": 4.71,
+          "marketCap": 31210536960,
+          "price": 258.8,
+          "peaEligible": true,
+          "justification": "Rendement du dividende de 4.7% avec un historique de progression régulière, signal de confiance de la direction. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "MAU.PA",
@@ -2322,7 +2351,7 @@
           "sector": "Energy",
           "country": "France",
           "currency": "EUR",
-          "rank": 4,
+          "rank": 5,
           "score": 8.6,
           "pillars": {
             "valorisation": 9,
@@ -2334,41 +2363,41 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 5.4914284,
+          "pe": 5.5485716,
           "roe": 31.15,
-          "perf6M": 103.6,
-          "divYield": 4.01,
-          "marketCap": 1917484032,
-          "price": 9.61,
+          "perf6M": 113.16,
+          "divYield": 3.95,
+          "marketCap": 1937437056,
+          "price": 9.71,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 104% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Momentum technique favorable : progression de 113% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
         },
         {
-          "ticker": "HNR1.DE",
-          "name": "Hannover Rück SE",
+          "ticker": "MUV2.DE",
+          "name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
           "sector": "Financial Services",
           "country": "Germany",
           "currency": "EUR",
-          "rank": 5,
+          "rank": 6,
           "score": 8.5,
           "pillars": {
-            "valorisation": 6.8,
-            "qualite": 7.1,
-            "croissance": 9.9,
-            "sante": 8.4,
+            "valorisation": 6.2,
+            "qualite": 6,
+            "croissance": 3.9,
+            "sante": 9.3,
             "dividende": 10,
-            "momentum": 7.6
+            "momentum": 4.9
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 12.133395,
-          "roe": 20.79,
-          "perf6M": 3.99,
-          "divYield": 4.72,
-          "marketCap": 32030599168,
-          "price": 265.6,
+          "pe": 11.268024,
+          "roe": 18.46,
+          "perf6M": -3.24,
+          "divYield": 4.41,
+          "marketCap": 67998949376,
+          "price": 531.4,
           "peaEligible": true,
-          "justification": "Rendement du dividende de 4.7% avec un historique de progression régulière, signal de confiance de la direction. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Rendement du dividende de 4.4% avec un historique de progression régulière, signal de confiance de la direction. Le ROE de 18% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "0883.HK",
@@ -2376,26 +2405,26 @@
           "sector": "Energy",
           "country": "Hong Kong",
           "currency": "HKD",
-          "rank": 6,
+          "rank": 7,
           "score": 8.5,
           "pillars": {
             "valorisation": 8.6,
-            "qualite": 8.7,
-            "croissance": 2.9,
+            "qualite": 8.6,
+            "croissance": 5.8,
             "sante": 9.2,
             "dividende": 8,
             "momentum": 10
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 9.823729,
-          "roe": 15.71,
-          "perf6M": 52.82,
-          "divYield": 5.13,
-          "marketCap": 1377418084352,
-          "price": 28.98,
+          "pe": 9.9931965,
+          "roe": 15.35,
+          "perf6M": 52.07,
+          "divYield": 4.42,
+          "marketCap": 1396430077952,
+          "price": 29.38,
           "peaEligible": false,
-          "justification": "Momentum technique favorable : progression de 53% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 5.1% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Momentum technique favorable : progression de 52% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.4% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "IPS.PA",
@@ -2403,7 +2432,7 @@
           "sector": "Industrials",
           "country": "France",
           "currency": "EUR",
-          "rank": 7,
+          "rank": 8,
           "score": 8.4,
           "pillars": {
             "valorisation": 9.3,
@@ -2411,16 +2440,16 @@
             "croissance": 6.8,
             "sante": 7.2,
             "dividende": 10,
-            "momentum": 6.1
+            "momentum": 6.5
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.187353,
+          "pe": 8.299766,
           "roe": 11.98,
-          "perf6M": 2.88,
+          "perf6M": 4.48,
           "divYield": 5.72,
-          "marketCap": 1483241856,
-          "price": 34.96,
+          "marketCap": 1503606784,
+          "price": 35.44,
           "peaEligible": true,
           "justification": "Rendement du dividende de 5.7% avec un historique de progression régulière, signal de confiance de la direction. La croissance du CA de 5% témoigne d'une dynamique commerciale solide."
         },
@@ -2430,53 +2459,26 @@
           "sector": "Financial Services",
           "country": "Germany",
           "currency": "EUR",
-          "rank": 8,
+          "rank": 9,
           "score": 8.4,
           "pillars": {
-            "valorisation": 8.2,
+            "valorisation": 8.3,
             "qualite": 6,
             "croissance": 3.1,
             "sante": 10,
             "dividende": 8.6,
-            "momentum": 4
+            "momentum": 3.8
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.833334,
+          "pe": 8.640778,
           "roe": 8.3,
-          "perf6M": -5.11,
-          "divYield": 3.69,
-          "marketCap": 52418482176,
-          "price": 27.295,
+          "perf6M": -7.52,
+          "divYield": 3.66,
+          "marketCap": 51275821056,
+          "price": 26.7,
           "peaEligible": true,
           "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 3.7% renforce le rendement total pour les investisseurs long terme."
-        },
-        {
-          "ticker": "MUV2.DE",
-          "name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
-          "sector": "Financial Services",
-          "country": "Germany",
-          "currency": "EUR",
-          "rank": 9,
-          "score": 8.4,
-          "pillars": {
-            "valorisation": 6.1,
-            "qualite": 6,
-            "croissance": 3.9,
-            "sante": 9.3,
-            "dividende": 10,
-            "momentum": 6.2
-          },
-          "weight": 0.1,
-          "isNew": false,
-          "pe": 11.53944,
-          "roe": 18.46,
-          "perf6M": -0.44,
-          "divYield": 4.44,
-          "marketCap": 69636857856,
-          "price": 544.2,
-          "peaEligible": true,
-          "justification": "Rendement du dividende de 4.4% avec un historique de progression régulière, signal de confiance de la direction. Le ROE de 18% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "BIRG.L",
@@ -2492,18 +2494,18 @@
             "croissance": 2,
             "sante": 10,
             "dividende": 8,
-            "momentum": 9
+            "momentum": 9.1
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 0.14069565,
+          "pe": 0.14208695,
           "roe": 9.26,
-          "perf6M": 18.27,
-          "divYield": 5.66,
-          "marketCap": 15372919808,
-          "price": 16.18,
+          "perf6M": 17.41,
+          "divYield": 5.56,
+          "marketCap": 15524938752,
+          "price": 16.34,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.7% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.6% renforce le rendement total pour les investisseurs long terme."
         }
       ],
       "exits": [],
@@ -2511,215 +2513,215 @@
         "portfolio": [
           {
             "date": "2025-05-02",
-            "value": 99.15
+            "value": 98.26
           },
           {
             "date": "2025-05-09",
-            "value": 100.07
+            "value": 99.17
           },
           {
             "date": "2025-05-16",
-            "value": 101.06
+            "value": 100.14
           },
           {
             "date": "2025-05-23",
-            "value": 100.79
+            "value": 99.9
           },
           {
             "date": "2025-05-30",
-            "value": 101.4
+            "value": 100.5
           },
           {
             "date": "2025-06-06",
-            "value": 101.76
+            "value": 100.85
           },
           {
             "date": "2025-06-13",
-            "value": 101.28
+            "value": 100.4
           },
           {
             "date": "2025-06-20",
-            "value": 100.63
+            "value": 99.77
           },
           {
             "date": "2025-06-27",
-            "value": 102.7
+            "value": 101.75
           },
           {
             "date": "2025-07-04",
-            "value": 102.2
+            "value": 101.32
           },
           {
             "date": "2025-07-11",
-            "value": 103.93
+            "value": 103.03
           },
           {
             "date": "2025-07-18",
-            "value": 104.29
+            "value": 103.37
           },
           {
             "date": "2025-07-25",
-            "value": 107.05
+            "value": 106.08
           },
           {
             "date": "2025-08-01",
-            "value": 103.93
+            "value": 102.99
           },
           {
             "date": "2025-08-08",
-            "value": 107.24
+            "value": 106.23
           },
           {
             "date": "2025-08-15",
-            "value": 106.61
+            "value": 105.61
           },
           {
             "date": "2025-08-22",
-            "value": 108.14
+            "value": 107.13
           },
           {
             "date": "2025-08-29",
-            "value": 103.83
+            "value": 102.88
           },
           {
             "date": "2025-09-05",
-            "value": 102.32
+            "value": 101.38
           },
           {
             "date": "2025-09-12",
-            "value": 103.85
+            "value": 102.84
           },
           {
             "date": "2025-09-19",
-            "value": 104.04
+            "value": 103.04
           },
           {
             "date": "2025-09-26",
-            "value": 105.9
+            "value": 104.93
           },
           {
             "date": "2025-10-03",
-            "value": 106.65
+            "value": 105.67
           },
           {
             "date": "2025-10-10",
-            "value": 105.03
+            "value": 104.06
           },
           {
             "date": "2025-10-17",
-            "value": 101.84
+            "value": 100.9
           },
           {
             "date": "2025-10-24",
-            "value": 103.18
+            "value": 102.26
           },
           {
             "date": "2025-10-31",
-            "value": 103.13
+            "value": 102.19
           },
           {
             "date": "2025-11-07",
-            "value": 103.73
+            "value": 102.8
           },
           {
             "date": "2025-11-14",
-            "value": 104.86
+            "value": 103.93
           },
           {
             "date": "2025-11-21",
-            "value": 101.53
+            "value": 100.65
           },
           {
             "date": "2025-11-28",
-            "value": 103.36
+            "value": 102.44
           },
           {
             "date": "2025-12-05",
-            "value": 104.55
+            "value": 103.65
           },
           {
             "date": "2025-12-12",
-            "value": 104.64
+            "value": 103.69
           },
           {
             "date": "2025-12-19",
-            "value": 105.74
+            "value": 104.75
           },
           {
             "date": "2025-12-24",
-            "value": 106.19
+            "value": 105.19
           },
           {
             "date": "2026-01-02",
-            "value": 108.43
+            "value": 107.47
           },
           {
             "date": "2026-01-09",
-            "value": 107.72
+            "value": 106.77
           },
           {
             "date": "2026-01-16",
-            "value": 109.13
+            "value": 108.2
           },
           {
             "date": "2026-01-23",
-            "value": 108.55
+            "value": 107.64
           },
           {
             "date": "2026-01-30",
-            "value": 111.7
+            "value": 110.8
           },
           {
             "date": "2026-02-06",
-            "value": 110.79
+            "value": 109.96
           },
           {
             "date": "2026-02-13",
-            "value": 109.78
+            "value": 109.05
           },
           {
             "date": "2026-02-20",
-            "value": 114.88
+            "value": 114.15
           },
           {
             "date": "2026-02-27",
-            "value": 116.3
+            "value": 115.57
           },
           {
             "date": "2026-03-06",
-            "value": 113.14
+            "value": 112.51
           },
           {
             "date": "2026-03-13",
-            "value": 118.47
+            "value": 117.94
           },
           {
             "date": "2026-03-20",
-            "value": 116.44
+            "value": 115.97
           },
           {
             "date": "2026-03-27",
-            "value": 113
+            "value": 112.49
           },
           {
             "date": "2026-04-02",
-            "value": 116.72
+            "value": 116.18
           },
           {
             "date": "2026-04-10",
-            "value": 116.65
+            "value": 116
           },
           {
             "date": "2026-04-17",
-            "value": 117.02
+            "value": 116.3
           },
           {
             "date": "2026-04-24",
-            "value": 115.91
+            "value": 115.28
           },
           {
-            "date": "2026-04-28",
-            "value": 116.16
+            "date": "2026-04-29",
+            "value": 116.41
           }
         ],
         "benchmark": [
@@ -2933,11 +2935,11 @@
           },
           {
             "date": "2026-04-26",
-            "value": 110.88
+            "value": 110.42
           },
           {
-            "date": "2026-04-28",
-            "value": 110.42
+            "date": "2026-04-29",
+            "value": 110.06
           }
         ]
       }
@@ -2952,7 +2954,7 @@
       "engine": "rule_based",
       "benchmarkName": "Euro Stoxx 50",
       "benchmarkTicker": "^STOXX50E",
-      "benchmarkPrice": 5836.1,
+      "benchmarkPrice": 5817.02,
       "size": 10,
       "picks": [
         {
@@ -2969,18 +2971,18 @@
             "croissance": 8.5,
             "sante": 7.5,
             "dividende": 7.2,
-            "momentum": 9.9
+            "momentum": 9.8
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 5.1735287,
+          "pe": 5.1411943,
           "roe": 21.64,
-          "perf6M": 22.39,
+          "perf6M": 20.45,
           "divYield": 1.82,
-          "marketCap": 207791980544,
-          "price": 480,
+          "marketCap": 206493286400,
+          "price": 477,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 22% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 22% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 22% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "INVE-B.ST",
@@ -2989,25 +2991,25 @@
           "country": "Sweden",
           "currency": "SEK",
           "rank": 2,
-          "score": 9.3,
+          "score": 9.2,
           "pillars": {
             "valorisation": 8.8,
             "qualite": 9.6,
             "croissance": 7.7,
             "sante": 8.4,
             "dividende": 7.6,
-            "momentum": 9.8
+            "momentum": 9.7
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 6,
+          "pe": 5.971709,
           "roe": 21.21,
-          "perf6M": 19.6,
+          "perf6M": 18.4,
           "divYield": 1.5,
-          "marketCap": 1143379066880,
-          "price": 373.2,
+          "marketCap": 1138170658816,
+          "price": 371.5,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 18% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 21% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "GTT.PA",
@@ -3027,14 +3029,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 18.361837,
+          "pe": 18.45045,
           "roe": 78.69,
-          "perf6M": 21.79,
-          "divYield": 4.94,
-          "marketCap": 7561161216,
-          "price": 204,
+          "perf6M": 22,
+          "divYield": 4.84,
+          "marketCap": 7590813184,
+          "price": 204.8,
           "peaEligible": true,
-          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.9% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.8% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "BNP.PA",
@@ -3043,25 +3045,25 @@
           "country": "France",
           "currency": "EUR",
           "rank": 4,
-          "score": 8.6,
+          "score": 8.5,
           "pillars": {
-            "valorisation": 7.9,
+            "valorisation": 8,
             "qualite": 6.4,
             "croissance": 9.2,
             "sante": 10,
             "dividende": 6.1,
-            "momentum": 9.8
+            "momentum": 9.7
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.894072,
+          "pe": 8.786201,
           "roe": 9.66,
-          "perf6M": 32.27,
-          "divYield": 11.04,
-          "marketCap": 100818485248,
-          "price": 91.52,
+          "perf6M": 35.6,
+          "divYield": 10.87,
+          "marketCap": 99595714560,
+          "price": 90.41,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 11.0% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 10.9% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "TEL2-B.ST",
@@ -3070,25 +3072,52 @@
           "country": "Sweden",
           "currency": "SEK",
           "rank": 5,
-          "score": 8.6,
+          "score": 8.5,
           "pillars": {
-            "valorisation": 6.2,
+            "valorisation": 5.8,
             "qualite": 9.9,
             "croissance": 7.8,
             "sante": 6.4,
             "dividende": 7.1,
-            "momentum": 8.9
+            "momentum": 8.8
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 12.872929,
+          "pe": 12.793914,
           "roe": 39.05,
-          "perf6M": 22.55,
-          "divYield": 5.66,
-          "marketCap": 129278861312,
-          "price": 186.4,
+          "perf6M": 20.62,
+          "divYield": 5.63,
+          "marketCap": 128307888128,
+          "price": 185,
           "peaEligible": true,
-          "justification": "Qualité exceptionnelle avec un ROE de 39%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 5.7% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Qualité exceptionnelle avec un ROE de 39%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 5.6% renforce le rendement total pour les investisseurs long terme."
+        },
+        {
+          "ticker": "ASML.AS",
+          "name": "ASML Holding N.V.",
+          "sector": "Technology",
+          "country": "Netherlands",
+          "currency": "EUR",
+          "rank": 6,
+          "score": 8.4,
+          "pillars": {
+            "valorisation": 0.3,
+            "qualite": 10,
+            "croissance": 8.8,
+            "sante": 8.6,
+            "dividende": 5.1,
+            "momentum": 10
+          },
+          "weight": 0.1,
+          "isNew": true,
+          "pe": 45.69112,
+          "roe": 52.24,
+          "perf6M": 30.64,
+          "divYield": 0.92,
+          "marketCap": 456103264256,
+          "price": 1183.4,
+          "peaEligible": true,
+          "justification": "Qualité exceptionnelle avec un ROE de 52%, reflet d'un avantage concurrentiel durable sur ses pairs. La dynamique de marché est positive avec +31% sur les 6 derniers mois."
         },
         {
           "ticker": "AGS.BR",
@@ -3096,7 +3125,7 @@
           "sector": "Financial Services",
           "country": "Belgium",
           "currency": "EUR",
-          "rank": 6,
+          "rank": 7,
           "score": 8.4,
           "pillars": {
             "valorisation": 8.2,
@@ -3104,45 +3133,18 @@
             "croissance": 10,
             "sante": 8.2,
             "dividende": 8.7,
-            "momentum": 9.2
-          },
-          "weight": 0.1,
-          "isNew": true,
-          "pe": 7.4202414,
-          "roe": 18.82,
-          "perf6M": 16.29,
-          "divYield": 5.18,
-          "marketCap": 12864553984,
-          "price": 67.45,
-          "peaEligible": true,
-          "justification": "Croissance soutenue du chiffre d'affaires (+20% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
-        },
-        {
-          "ticker": "ROG.SW",
-          "name": "Roche Holding AG",
-          "sector": "Healthcare",
-          "country": "Switzerland",
-          "currency": "CHF",
-          "rank": 7,
-          "score": 8.4,
-          "pillars": {
-            "valorisation": 4.7,
-            "qualite": 10,
-            "croissance": 7.5,
-            "sante": 6.9,
-            "dividende": 7.3,
-            "momentum": 9
+            "momentum": 9.1
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 20.106049,
-          "roe": 37.27,
-          "perf6M": 14.39,
-          "divYield": 3.03,
-          "marketCap": 256427556864,
-          "price": 322.3,
-          "peaEligible": false,
-          "justification": "Qualité exceptionnelle avec un ROE de 37%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 3.0% renforce le rendement total pour les investisseurs long terme."
+          "pe": 7.3212323,
+          "roe": 18.82,
+          "perf6M": 14.43,
+          "divYield": 5.19,
+          "marketCap": 12692900864,
+          "price": 66.55,
+          "peaEligible": true,
+          "justification": "Croissance soutenue du chiffre d'affaires (+20% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "CB",
@@ -3162,14 +3164,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 11.728362,
+          "pe": 11.6810465,
           "roe": 15.43,
-          "perf6M": 17.53,
-          "divYield": 1.2,
-          "marketCap": 128809902080,
-          "price": 331.5608,
+          "perf6M": 17.17,
+          "divYield": 1.17,
+          "marketCap": 128335626240,
+          "price": 330.34,
           "peaEligible": false,
-          "justification": "Momentum technique favorable : progression de 18% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 15% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Momentum technique favorable : progression de 17% sur 6 mois, cours au-dessus de la SMA 200. Le ROE de 15% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
         },
         {
           "ticker": "GLE.PA",
@@ -3185,18 +3187,18 @@
             "croissance": 7.7,
             "sante": 10,
             "dividende": 7,
-            "momentum": 10
+            "momentum": 9.9
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 10.461764,
+          "pe": 10.405883,
           "roe": 8.84,
-          "perf6M": 32.72,
-          "divYield": 2.3,
-          "marketCap": 51920269312,
-          "price": 71.14,
+          "perf6M": 30.7,
+          "divYield": 2.26,
+          "marketCap": 51642937344,
+          "price": 70.76,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. La dynamique de marché est positive avec +33% sur les 6 derniers mois."
+          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. La dynamique de marché est positive avec +31% sur les 6 derniers mois."
         },
         {
           "ticker": "ENG.MC",
@@ -3207,7 +3209,7 @@
           "rank": 10,
           "score": 8.3,
           "pillars": {
-            "valorisation": 6.7,
+            "valorisation": 6.6,
             "qualite": 6.5,
             "croissance": 8.4,
             "sante": 4.3,
@@ -3216,232 +3218,232 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 13.587302,
+          "pe": 13.444445,
           "roe": 14.8,
-          "perf6M": 19.8,
-          "divYield": 5.92,
-          "marketCap": 4450219008,
-          "price": 17.12,
+          "perf6M": 18.77,
+          "divYield": 5.84,
+          "marketCap": 4403428864,
+          "price": 16.94,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 20% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 5.9% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Momentum technique favorable : progression de 19% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 5.8% renforce le rendement total pour les investisseurs long terme."
         }
       ],
       "exits": [
-        "ASML.AS"
+        "ROG.SW"
       ],
       "chartData": {
         "portfolio": [
           {
             "date": "2025-05-02",
-            "value": 102.98
+            "value": 102.51
           },
           {
             "date": "2025-05-09",
-            "value": 102.5
+            "value": 102.88
           },
           {
             "date": "2025-05-16",
-            "value": 104.86
+            "value": 105.86
           },
           {
             "date": "2025-05-23",
-            "value": 104.27
+            "value": 104.8
           },
           {
             "date": "2025-05-30",
-            "value": 105.5
+            "value": 106
           },
           {
             "date": "2025-06-06",
-            "value": 106.12
+            "value": 106.74
           },
           {
             "date": "2025-06-13",
-            "value": 104.51
+            "value": 105.03
           },
           {
             "date": "2025-06-20",
-            "value": 103.88
+            "value": 104.56
           },
           {
             "date": "2025-06-27",
-            "value": 105.28
+            "value": 106.41
           },
           {
             "date": "2025-07-04",
-            "value": 104.07
+            "value": 104.89
           },
           {
             "date": "2025-07-11",
-            "value": 104.94
+            "value": 106.29
           },
           {
             "date": "2025-07-18",
-            "value": 105.83
+            "value": 106.26
           },
           {
             "date": "2025-07-25",
-            "value": 105.96
+            "value": 105.88
           },
           {
             "date": "2025-08-01",
-            "value": 106.12
+            "value": 105.85
           },
           {
             "date": "2025-08-08",
-            "value": 108.1
+            "value": 108.68
           },
           {
             "date": "2025-08-15",
-            "value": 110.03
+            "value": 110.58
           },
           {
             "date": "2025-08-22",
-            "value": 110.91
+            "value": 111.41
           },
           {
             "date": "2025-08-29",
-            "value": 108.03
+            "value": 108.44
           },
           {
             "date": "2025-09-05",
-            "value": 107.45
+            "value": 107.76
           },
           {
             "date": "2025-09-12",
-            "value": 109.01
+            "value": 110.15
           },
           {
             "date": "2025-09-19",
-            "value": 107.88
+            "value": 110.78
           },
           {
             "date": "2025-09-26",
-            "value": 107.58
+            "value": 111.25
           },
           {
             "date": "2025-10-03",
-            "value": 110.02
+            "value": 113.59
           },
           {
             "date": "2025-10-10",
-            "value": 109.9
+            "value": 112.21
           },
           {
             "date": "2025-10-17",
-            "value": 108.54
+            "value": 112.18
           },
           {
             "date": "2025-10-24",
-            "value": 108.85
+            "value": 113.26
           },
           {
             "date": "2025-10-31",
-            "value": 108.12
+            "value": 113.4
           },
           {
             "date": "2025-11-07",
-            "value": 109.41
+            "value": 113.51
           },
           {
             "date": "2025-11-14",
-            "value": 111.7
+            "value": 115.17
           },
           {
             "date": "2025-11-21",
-            "value": 111.75
+            "value": 113.43
           },
           {
             "date": "2025-11-28",
-            "value": 113.68
+            "value": 116.84
           },
           {
             "date": "2025-12-05",
-            "value": 113.54
+            "value": 117.4
           },
           {
             "date": "2025-12-12",
-            "value": 114.17
+            "value": 117.36
           },
           {
             "date": "2025-12-19",
-            "value": 116.42
+            "value": 118.87
           },
           {
             "date": "2025-12-26",
-            "value": 116.52
+            "value": 118.97
           },
           {
             "date": "2026-01-02",
-            "value": 117.73
+            "value": 121.61
           },
           {
             "date": "2026-01-09",
-            "value": 120.66
+            "value": 125.58
           },
           {
             "date": "2026-01-16",
-            "value": 122.48
+            "value": 128.55
           },
           {
             "date": "2026-01-23",
-            "value": 121.99
+            "value": 128.27
           },
           {
             "date": "2026-01-30",
-            "value": 125.09
+            "value": 131.88
           },
           {
             "date": "2026-02-06",
-            "value": 129.36
+            "value": 135.57
           },
           {
             "date": "2026-02-13",
-            "value": 128.49
+            "value": 134.53
           },
           {
             "date": "2026-02-20",
-            "value": 132.95
+            "value": 139.76
           },
           {
             "date": "2026-02-27",
-            "value": 135.01
+            "value": 141.47
           },
           {
             "date": "2026-03-06",
-            "value": 128.48
+            "value": 134.46
           },
           {
             "date": "2026-03-13",
-            "value": 126.87
+            "value": 134.18
           },
           {
             "date": "2026-03-20",
-            "value": 123.14
+            "value": 130.31
           },
           {
             "date": "2026-03-27",
-            "value": 126.15
+            "value": 133.19
           },
           {
             "date": "2026-04-02",
-            "value": 129.49
+            "value": 136.55
           },
           {
             "date": "2026-04-10",
-            "value": 133.99
+            "value": 143
           },
           {
             "date": "2026-04-17",
-            "value": 134.58
+            "value": 142.98
           },
           {
             "date": "2026-04-24",
-            "value": 132.02
+            "value": 140.44
           },
           {
-            "date": "2026-04-28",
-            "value": 133.49
+            "date": "2026-04-29",
+            "value": 139.8
           }
         ],
         "benchmark": [
@@ -3655,11 +3657,11 @@
           },
           {
             "date": "2026-04-26",
-            "value": 110.88
+            "value": 110.42
           },
           {
-            "date": "2026-04-28",
-            "value": 110.42
+            "date": "2026-04-29",
+            "value": 110.06
           }
         ]
       }
@@ -3674,7 +3676,7 @@
       "engine": "rule_based",
       "benchmarkName": "MSCI Eur. Small Cap",
       "benchmarkTicker": "IQQM.DE",
-      "benchmarkPrice": 83.95,
+      "benchmarkPrice": 84.13,
       "size": 10,
       "picks": [
         {
@@ -3691,16 +3693,16 @@
             "croissance": 10,
             "sante": 8.2,
             "dividende": 8.7,
-            "momentum": 9.2
+            "momentum": 9.1
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 7.4202414,
+          "pe": 7.3212323,
           "roe": 18.82,
-          "perf6M": 16.29,
-          "divYield": 5.18,
-          "marketCap": 12864553984,
-          "price": 67.45,
+          "perf6M": 14.43,
+          "divYield": 5.19,
+          "marketCap": 12692900864,
+          "price": 66.55,
           "peaEligible": true,
           "justification": "Croissance soutenue du chiffre d'affaires (+20% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
         },
@@ -3713,21 +3715,21 @@
           "rank": 2,
           "score": 8.2,
           "pillars": {
-            "valorisation": 7,
+            "valorisation": 7.1,
             "qualite": 7.2,
             "croissance": 9.4,
             "sante": 9.8,
             "dividende": 7.4,
-            "momentum": 8.1
+            "momentum": 7.9
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 12.37069,
+          "pe": 12.252155,
           "roe": 12.4,
-          "perf6M": 9.13,
-          "divYield": 5.22,
-          "marketCap": 11480000512,
-          "price": 57.4,
+          "perf6M": 7.34,
+          "divYield": 5.23,
+          "marketCap": 11369999360,
+          "price": 56.85,
           "peaEligible": true,
           "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
         },
@@ -3749,14 +3751,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 18.361837,
+          "pe": 18.45045,
           "roe": 78.69,
-          "perf6M": 21.79,
-          "divYield": 4.94,
-          "marketCap": 7561161216,
-          "price": 204,
+          "perf6M": 22,
+          "divYield": 4.84,
+          "marketCap": 7590813184,
+          "price": 204.8,
           "peaEligible": true,
-          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.9% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Qualité exceptionnelle avec un ROE de 79%, reflet d'un avantage concurrentiel durable sur ses pairs. Le dividende de 4.8% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "KRN.DE",
@@ -3776,12 +3778,12 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 13.369683,
+          "pe": 13.413304,
           "roe": 14.77,
-          "perf6M": -4.07,
-          "divYield": 2.25,
-          "marketCap": 3873310464,
-          "price": 122.6,
+          "perf6M": -4.35,
+          "divYield": 2.28,
+          "marketCap": 3885947904,
+          "price": 123,
           "peaEligible": true,
           "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. La croissance du CA de 10% témoigne d'une dynamique commerciale solide."
         },
@@ -3799,16 +3801,16 @@
             "croissance": 6.8,
             "sante": 7.2,
             "dividende": 10,
-            "momentum": 6.1
+            "momentum": 6.5
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 8.187353,
+          "pe": 8.299766,
           "roe": 11.98,
-          "perf6M": 2.88,
+          "perf6M": 4.48,
           "divYield": 5.72,
-          "marketCap": 1483241856,
-          "price": 34.96,
+          "marketCap": 1503606784,
+          "price": 35.44,
           "peaEligible": true,
           "justification": "Rendement du dividende de 5.7% avec un historique de progression régulière, signal de confiance de la direction. La croissance du CA de 5% témoigne d'une dynamique commerciale solide."
         },
@@ -3830,14 +3832,14 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 5.4914284,
+          "pe": 5.5485716,
           "roe": 31.15,
-          "perf6M": 103.6,
-          "divYield": 4.01,
-          "marketCap": 1917484032,
-          "price": 9.61,
+          "perf6M": 113.16,
+          "divYield": 3.95,
+          "marketCap": 1937437056,
+          "price": 9.71,
           "peaEligible": true,
-          "justification": "Momentum technique favorable : progression de 104% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Momentum technique favorable : progression de 113% sur 6 mois, cours au-dessus de la SMA 200. Le dividende de 4.0% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "RF.PA",
@@ -3859,39 +3861,39 @@
           "isNew": false,
           "pe": null,
           "roe": -5.93,
-          "perf6M": -23.03,
-          "divYield": 6.3,
-          "marketCap": 2987975680,
-          "price": 46.26,
+          "perf6M": -23.95,
+          "divYield": 6.31,
+          "marketCap": 2960847616,
+          "price": 45.84,
           "peaEligible": true,
           "justification": "Décote de valorisation marquée sur les ratios de bilan, offrant une marge de sécurité intéressante. Le dividende de 6.3% renforce le rendement total pour les investisseurs long terme."
         },
         {
-          "ticker": "BOI.PA",
-          "name": "Boiron SA",
-          "sector": "Healthcare",
+          "ticker": "EDEN.PA",
+          "name": "Edenred SE",
+          "sector": "Financial Services",
           "country": "France",
           "currency": "EUR",
           "rank": 8,
           "score": 7.4,
           "pillars": {
-            "valorisation": 8.2,
-            "qualite": 4.4,
-            "croissance": 7.5,
-            "sante": 9.2,
-            "dividende": 5.5,
-            "momentum": 5.6
+            "valorisation": 7.8,
+            "qualite": 8.2,
+            "croissance": 6.4,
+            "sante": 7.3,
+            "dividende": 8.2,
+            "momentum": 3.6
           },
           "weight": 0.1,
-          "isNew": false,
-          "pe": 14.095745,
-          "roe": 5.22,
-          "perf6M": -4.5,
-          "divYield": 5.23,
-          "marketCap": 460100320,
-          "price": 26.5,
+          "isNew": true,
+          "pe": 9.919812,
+          "roe": null,
+          "perf6M": -19.18,
+          "divYield": 6.13,
+          "marketCap": 4884340224,
+          "price": 21.03,
           "peaEligible": true,
-          "justification": "Bilan solide avec un endettement maîtrisé, offrant une résilience élevée face aux cycles économiques. Le dividende de 5.2% renforce le rendement total pour les investisseurs long terme."
+          "justification": "Profil de rentabilité supérieur à son secteur, avec des marges régulières sur plusieurs exercices. Le dividende de 6.1% renforce le rendement total pour les investisseurs long terme."
         },
         {
           "ticker": "TMV.DE",
@@ -3911,259 +3913,260 @@
           },
           "weight": 0.1,
           "isNew": false,
-          "pe": 6.4602737,
+          "pe": 6.5726023,
           "roe": 89.12,
-          "perf6M": -28.59,
+          "perf6M": -27.6,
           "divYield": null,
-          "marketCap": 740252416,
-          "price": 4.716,
+          "marketCap": 753123584,
+          "price": 4.798,
           "peaEligible": true,
           "justification": "Qualité exceptionnelle avec un ROE de 89%, reflet d'un avantage concurrentiel durable sur ses pairs. La croissance du CA de 9% témoigne d'une dynamique commerciale solide."
         },
         {
-          "ticker": "AF.PA",
-          "name": "Air France-KLM SA",
-          "sector": "Industrials",
+          "ticker": "AUB.PA",
+          "name": "Aubay Société Anonyme",
+          "sector": "Technology",
           "country": "France",
           "currency": "EUR",
           "rank": 10,
-          "score": 7.3,
+          "score": 7.4,
           "pillars": {
-            "valorisation": 10,
-            "qualite": 5.8,
-            "croissance": 7.5,
-            "sante": 2.5,
-            "dividende": 0,
-            "momentum": 1.9
+            "valorisation": 6.8,
+            "qualite": 5.7,
+            "croissance": 8.8,
+            "sante": 8.5,
+            "dividende": 8.1,
+            "momentum": 5.4
           },
           "weight": 0.1,
           "isNew": true,
-          "pe": 1.4735974,
-          "roe": 110.91,
-          "perf6M": -19.62,
-          "divYield": null,
-          "marketCap": 2345538048,
-          "price": 8.93,
+          "pe": 16.20339,
+          "roe": 13.56,
+          "perf6M": 3.57,
+          "divYield": 3.41,
+          "marketCap": 608898624,
+          "price": 47.8,
           "peaEligible": true,
-          "justification": "Valorisation attractive avec un P/E de 1.5x, significativement sous la moyenne historique du secteur. Le ROE de 111% confirme la capacité à générer de la valeur actionnariale de façon pérenne."
+          "justification": "Croissance soutenue du chiffre d'affaires (+24% en glissement annuel), avec une trajectoire haussière cohérente. Le dividende de 3.4% renforce le rendement total pour les investisseurs long terme."
         }
       ],
       "exits": [
-        "LNA.PA"
+        "BOI.PA",
+        "AF.PA"
       ],
       "chartData": {
         "portfolio": [
           {
             "date": "2025-05-02",
-            "value": 103.22
+            "value": 102.93
           },
           {
             "date": "2025-05-09",
-            "value": 103.46
+            "value": 102.95
           },
           {
             "date": "2025-05-16",
-            "value": 106.55
+            "value": 105.13
           },
           {
             "date": "2025-05-23",
-            "value": 103.88
+            "value": 103.35
           },
           {
             "date": "2025-05-30",
-            "value": 105.96
+            "value": 104.93
           },
           {
             "date": "2025-06-06",
-            "value": 105.09
+            "value": 104.67
           },
           {
             "date": "2025-06-13",
-            "value": 103.18
+            "value": 103.26
           },
           {
             "date": "2025-06-20",
-            "value": 102.03
+            "value": 102.06
           },
           {
             "date": "2025-06-27",
-            "value": 105.01
+            "value": 104.51
           },
           {
             "date": "2025-07-04",
-            "value": 104.47
+            "value": 103.34
           },
           {
             "date": "2025-07-11",
-            "value": 107.29
+            "value": 104.5
           },
           {
             "date": "2025-07-18",
-            "value": 107.01
+            "value": 104.24
           },
           {
             "date": "2025-07-25",
-            "value": 106
+            "value": 103.43
           },
           {
             "date": "2025-08-01",
-            "value": 102.71
+            "value": 99.39
           },
           {
             "date": "2025-08-08",
-            "value": 108.4
+            "value": 102.9
           },
           {
             "date": "2025-08-15",
-            "value": 109.2
+            "value": 102.11
           },
           {
             "date": "2025-08-22",
-            "value": 111.66
+            "value": 103.57
           },
           {
             "date": "2025-08-29",
-            "value": 106.6
+            "value": 99.75
           },
           {
             "date": "2025-09-05",
-            "value": 104.12
+            "value": 95.88
           },
           {
             "date": "2025-09-12",
-            "value": 105.99
+            "value": 96.39
           },
           {
             "date": "2025-09-19",
-            "value": 105.33
+            "value": 95.85
           },
           {
             "date": "2025-09-26",
-            "value": 106.01
+            "value": 96.93
           },
           {
             "date": "2025-10-03",
-            "value": 105.88
+            "value": 98.7
           },
           {
             "date": "2025-10-10",
-            "value": 106.4
+            "value": 98.11
           },
           {
             "date": "2025-10-17",
-            "value": 103.76
+            "value": 94.8
           },
           {
             "date": "2025-10-24",
-            "value": 103.77
+            "value": 97.52
           },
           {
             "date": "2025-10-31",
-            "value": 104.59
+            "value": 98.39
           },
           {
             "date": "2025-11-07",
-            "value": 99.53
+            "value": 94.24
           },
           {
             "date": "2025-11-14",
-            "value": 100.4
+            "value": 95.23
           },
           {
             "date": "2025-11-21",
-            "value": 99.19
+            "value": 92.77
           },
           {
             "date": "2025-11-28",
-            "value": 102.24
+            "value": 94.94
           },
           {
             "date": "2025-12-05",
-            "value": 103.56
+            "value": 95.38
           },
           {
             "date": "2025-12-12",
-            "value": 102.79
+            "value": 95.38
           },
           {
             "date": "2025-12-19",
-            "value": 103.95
+            "value": 95.5
           },
           {
             "date": "2025-12-24",
-            "value": 104.06
+            "value": 96.1
           },
           {
             "date": "2026-01-02",
-            "value": 107.31
+            "value": 98.43
           },
           {
             "date": "2026-01-09",
-            "value": 108.39
+            "value": 101.08
           },
           {
             "date": "2026-01-16",
-            "value": 109.29
+            "value": 102.28
           },
           {
             "date": "2026-01-23",
-            "value": 108.95
+            "value": 102.02
           },
           {
             "date": "2026-01-30",
-            "value": 110.22
+            "value": 103.73
           },
           {
             "date": "2026-02-06",
-            "value": 111.59
+            "value": 102.32
           },
           {
             "date": "2026-02-13",
-            "value": 111.79
+            "value": 102.02
           },
           {
             "date": "2026-02-20",
-            "value": 114.88
+            "value": 104.28
           },
           {
             "date": "2026-02-27",
-            "value": 115.73
+            "value": 105.94
           },
           {
             "date": "2026-03-06",
-            "value": 111.95
+            "value": 105.04
           },
           {
             "date": "2026-03-13",
-            "value": 112.32
+            "value": 105.7
           },
           {
             "date": "2026-03-20",
-            "value": 110.06
+            "value": 103.84
           },
           {
             "date": "2026-03-27",
-            "value": 108.53
+            "value": 101.54
           },
           {
             "date": "2026-04-02",
-            "value": 113.15
+            "value": 106.23
           },
           {
             "date": "2026-04-10",
-            "value": 113.1
+            "value": 105.65
           },
           {
             "date": "2026-04-17",
-            "value": 112.93
+            "value": 107.14
           },
           {
             "date": "2026-04-24",
-            "value": 111.47
+            "value": 107.53
           },
           {
-            "date": "2026-04-28",
-            "value": 111.59
+            "date": "2026-04-29",
+            "value": 108.6
           }
         ],
         "benchmark": [
@@ -4377,11 +4380,986 @@
           },
           {
             "date": "2026-04-26",
-            "value": 117.94
+            "value": 117.48
+          },
+          {
+            "date": "2026-04-29",
+            "value": 117.73
+          }
+        ]
+      }
+    },
+    {
+      "id": "tech-us-ml",
+      "name": "US Growth ML",
+      "emoji": "🤖",
+      "market": "US",
+      "marketLabel": "États-Unis",
+      "description": "Sélection algorithmique LightGBM entraîné sur données SEC EDGAR (PIT) · Univers NYSE + NASDAQ large/mid cap",
+      "engine": "ml",
+      "benchmarkName": "S&P 500",
+      "benchmarkTicker": "^GSPC",
+      "benchmarkPrice": 7138.8,
+      "size": 15,
+      "picks": [
+        {
+          "ticker": "LCID",
+          "name": "Lucid Group, Inc.",
+          "sector": "Consumer Cyclical",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 1,
+          "score": 10,
+          "ml_score": 24.264,
+          "shap_top": {
+            "mom_1m": 11.8455,
+            "price_vs_sma200": 11.3465,
+            "mom_12m": 9.2447,
+            "price_vs_sma50": 2.3955,
+            "vol_20d": 2.0979
+          },
+          "justification": "Mom 1m fort. Cours au-dessus de la SMA 200 — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": null,
+          "roe": -66.02,
+          "perf6M": -68.24,
+          "divYield": null,
+          "marketCap": 2149607936,
+          "price": 5.87,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 5,
+            "qualite": 9.4,
+            "croissance": 9.6,
+            "sante": 5.1,
+            "dividende": 0,
+            "momentum": 0.1
+          }
+        },
+        {
+          "ticker": "OPEN",
+          "name": "Opendoor Technologies Inc.",
+          "sector": "Real Estate",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 2,
+          "score": 10,
+          "ml_score": 18.4463,
+          "shap_top": {
+            "mom_12m": 7.6114,
+            "mom_12m_skip1m": 7.0912,
+            "vol_20d": 2.4054,
+            "fcf_margin": 1.6002,
+            "rd_intensity": 1.4376
+          },
+          "justification": "Mom 12m fort. Momentum 12M exceptionnel (+621%) — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": null,
+          "roe": -151.34,
+          "perf6M": -31.24,
+          "divYield": null,
+          "marketCap": 5251623936,
+          "price": 5.48,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 5,
+            "qualite": 5,
+            "croissance": 5,
+            "sante": 5,
+            "dividende": 0,
+            "momentum": 10
+          }
+        },
+        {
+          "ticker": "AMD",
+          "name": "Advanced Micro Devices, Inc.",
+          "sector": "Technology",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 3,
+          "score": 9.9,
+          "ml_score": 16.2091,
+          "shap_top": {
+            "mom_12m": 4.8445,
+            "vol_20d": 3.5778,
+            "mom_12m_skip1m": 2.607,
+            "mom_1m": 1.3263,
+            "current_ratio": 1.1967
+          },
+          "justification": "Mom 12m fort. Volatilité faible à 20 jours — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 123.362595,
+          "roe": 7.08,
+          "perf6M": 27.79,
+          "divYield": null,
+          "marketCap": 526965080064,
+          "price": 323.21,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 0.6,
+            "qualite": 8.1,
+            "croissance": 2,
+            "sante": 8.9,
+            "dividende": 0,
+            "momentum": 9.7
+          }
+        },
+        {
+          "ticker": "AA",
+          "name": "Alcoa Corporation",
+          "sector": "Basic Materials",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 4,
+          "score": 9.9,
+          "ml_score": 15.1223,
+          "shap_top": {
+            "mom_12m_skip1m": 7.5545,
+            "vol_20d": 2.1398,
+            "fcf_margin": 1.6903,
+            "price_vs_sma200": 1.0512,
+            "mom_1m": 0.983
+          },
+          "justification": "Momentum 12M exceptionnel (+146%). Volatilité faible à 20 jours — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 16.197435,
+          "roe": 15.43,
+          "perf6M": 60.25,
+          "divYield": 0.63,
+          "marketCap": 16668199936,
+          "price": 63.17,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 7.9,
+            "qualite": 5,
+            "croissance": 8.3,
+            "sante": 5,
+            "dividende": 1.26,
+            "momentum": 9.8
+          }
+        },
+        {
+          "ticker": "CF",
+          "name": "CF Industries Holdings, Inc.",
+          "sector": "Basic Materials",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 5,
+          "score": 9.9,
+          "ml_score": 13.1452,
+          "shap_top": {
+            "gp_margin": 4.8742,
+            "mom_12m_skip1m": 2.7793,
+            "current_ratio": 1.1894,
+            "vol_20d": 1.1296,
+            "price_vs_sma200": 1.0376
+          },
+          "justification": "Marge brute fort. Momentum 12M exceptionnel (+56%) — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 13.63545,
+          "roe": 23.4,
+          "perf6M": 41.45,
+          "divYield": 1.64,
+          "marketCap": 18788825088,
+          "price": 122.31,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 8.8,
+            "qualite": 7.1,
+            "croissance": 8.5,
+            "sante": 9.3,
+            "dividende": 3.28,
+            "momentum": 9.3
+          }
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin Corporation",
+          "sector": "Communication Services",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 6,
+          "score": 9.8,
+          "ml_score": 12.1652,
+          "shap_top": {
+            "mom_12m_skip1m": 2.1475,
+            "vol_20d": 1.7688,
+            "price_vs_sma200": 1.369,
+            "mom_1m": 1.3601,
+            "mom_12m": 1.0179
+          },
+          "justification": "Momentum 12M exceptionnel (+62%). Volatilité faible à 20 jours — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 44.635185,
+          "roe": 212.95,
+          "perf6M": -27.58,
+          "divYield": null,
+          "marketCap": 150991241216,
+          "price": 449.03,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 1.9,
+            "qualite": 10,
+            "croissance": 8,
+            "sante": 9.3,
+            "dividende": 0,
+            "momentum": 7.7
+          }
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell Technology, Inc.",
+          "sector": "Technology",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 7,
+          "score": 9.8,
+          "ml_score": 11.8297,
+          "shap_top": {
+            "vol_20d": 1.9289,
+            "mom_12m_skip1m": 1.8473,
+            "price_vs_sma200": 1.7648,
+            "mom_1m": 1.3765,
+            "mom_3m": 1.3455
+          },
+          "justification": "Volatilité faible à 20 jours. Momentum 12M exceptionnel (+160%) — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 50.075165,
+          "roe": 19.25,
+          "perf6M": 82.13,
+          "divYield": 0.16,
+          "marketCap": 133993234432,
+          "price": 153.23,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 1.6,
+            "qualite": 5,
+            "croissance": 7.6,
+            "sante": 7.8,
+            "dividende": 0.32,
+            "momentum": 9
+          }
+        },
+        {
+          "ticker": "PLTR",
+          "name": "Palantir Technologies Inc.",
+          "sector": "Technology",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 8,
+          "score": 9.7,
+          "ml_score": 9.6531,
+          "shap_top": {
+            "mom_12m_skip1m": 1.8248,
+            "price_vs_sma200": 1.6976,
+            "mom_12m": 1.5452,
+            "current_ratio": 1.4552,
+            "net_margin": 1.2396
+          },
+          "justification": "Momentum 12M exceptionnel (+25%). Cours au-dessus de la SMA 200 — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 220.59375,
+          "roe": 25.98,
+          "perf6M": -23.53,
+          "divYield": null,
+          "marketCap": 338430623744,
+          "price": 141.18,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 0.4,
+            "qualite": 6.5,
+            "croissance": 6.4,
+            "sante": 9.9,
+            "dividende": 0,
+            "momentum": 6.8
+          }
+        },
+        {
+          "ticker": "BKR",
+          "name": "Baker Hughes Company",
+          "sector": "Energy",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 9,
+          "score": 9.7,
+          "ml_score": 8.7522,
+          "shap_top": {
+            "price_vs_sma200": 3.5492,
+            "price_vs_sma50": 0.8806,
+            "cash_to_assets": 0.8723,
+            "rev_growth_yoy": 0.8304,
+            "mom_3m": 0.8159
+          },
+          "justification": "Cours au-dessus de la SMA 200. Price vs sma50 fort — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 21.619806,
+          "roe": 17.18,
+          "perf6M": 43.07,
+          "divYield": 1.36,
+          "marketCap": 67133284352,
+          "price": 67.67,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 6.4,
+            "qualite": 5.5,
+            "croissance": 9.7,
+            "sante": 5.6,
+            "dividende": 2.72,
+            "momentum": 9.3
+          }
+        },
+        {
+          "ticker": "MU",
+          "name": "Micron Technology, Inc.",
+          "sector": "Technology",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 10,
+          "score": 9.7,
+          "ml_score": 8.1167,
+          "shap_top": {
+            "mom_12m": 4.4488,
+            "mom_12m_skip1m": 2.847,
+            "vol_20d": 1.8934,
+            "mom_1m": 1.0364,
+            "gp_margin": 0.6934
+          },
+          "justification": "Mom 12m fort. Momentum 12M exceptionnel (+532%) — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 23.809727,
+          "roe": 39.82,
+          "perf6M": 130.25,
+          "divYield": 0.12,
+          "marketCap": 568705024000,
+          "price": 504.29,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 5.9,
+            "qualite": 8.5,
+            "croissance": 2.8,
+            "sante": 9,
+            "dividende": 0.24,
+            "momentum": 10
+          }
+        },
+        {
+          "ticker": "TWLO",
+          "name": "Twilio Inc.",
+          "sector": "Technology",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 11,
+          "score": 9.6,
+          "ml_score": 7.4473,
+          "shap_top": {
+            "vol_20d": 2.8203,
+            "mom_1m": 1.4538,
+            "mom_12m": 1.0424,
+            "fcf_margin": 0.8537,
+            "mom_3m": 0.8232
+          },
+          "justification": "Volatilité faible à 20 jours. Mom 1m fort — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 676.9524,
+          "roe": 0.43,
+          "perf6M": 26.3,
+          "divYield": null,
+          "marketCap": 21553278976,
+          "price": 142.16,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 0,
+            "qualite": 9.5,
+            "croissance": 6.6,
+            "sante": 9.5,
+            "dividende": 0,
+            "momentum": 6.7
+          }
+        },
+        {
+          "ticker": "APA",
+          "name": "APA Corporation",
+          "sector": "Energy",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 12,
+          "score": 9.6,
+          "ml_score": 7.4109,
+          "shap_top": {
+            "mom_12m_skip1m": 5.0278,
+            "vol_20d": 2.3629,
+            "price_vs_sma50": 0.7796,
+            "fcf_margin": 0.6838,
+            "op_margin": 0.6356
+          },
+          "justification": "Momentum 12M exceptionnel (+136%). Volatilité faible à 20 jours — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 9.686717,
+          "roe": 25.32,
+          "perf6M": 62.19,
+          "divYield": 2.59,
+          "marketCap": 13658927104,
+          "price": 38.65,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 9.6,
+            "qualite": 6.8,
+            "croissance": 0.4,
+            "sante": 1.7,
+            "dividende": 5.18,
+            "momentum": 9.9
+          }
+        },
+        {
+          "ticker": "ANET",
+          "name": "Arista Networks, Inc.",
+          "sector": "Technology",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 13,
+          "score": 9.6,
+          "ml_score": 7.4097,
+          "shap_top": {
+            "mom_1m": 1.9763,
+            "mom_6m": 1.4088,
+            "rd_intensity": 1.1847,
+            "fcf_margin": 0.9544,
+            "mom_12m_skip1m": 0.7803
+          },
+          "justification": "Mom 1m fort. Mom 6m fort — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 60.324814,
+          "roe": 31.4,
+          "perf6M": 7.46,
+          "divYield": null,
+          "marketCap": 208128098304,
+          "price": 165.29,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 1.3,
+            "qualite": 7.1,
+            "croissance": 1.6,
+            "sante": 9.2,
+            "dividende": 0,
+            "momentum": 8.7
+          }
+        },
+        {
+          "ticker": "PSX",
+          "name": "Phillips 66",
+          "sector": "Energy",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 14,
+          "score": 9.5,
+          "ml_score": 6.9146,
+          "shap_top": {
+            "mom_12m_skip1m": 1.6964,
+            "fcf_margin": 1.3078,
+            "current_ratio": 1.2556,
+            "debt_to_equity": 0.8617,
+            "mom_12m": 0.6878
+          },
+          "justification": "Momentum 12M exceptionnel (+59%). Génération de cash-flow libre fort — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 15.318183,
+          "roe": 15.43,
+          "perf6M": 22.34,
+          "divYield": 3.08,
+          "marketCap": 66214256640,
+          "price": 165.13,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 8.4,
+            "qualite": 5.7,
+            "croissance": 0.8,
+            "sante": 0.6,
+            "dividende": 6.16,
+            "momentum": 9.4
+          }
+        },
+        {
+          "ticker": "FCX",
+          "name": "Freeport-McMoRan Inc.",
+          "sector": "Basic Materials",
+          "country": "United States",
+          "currency": "USD",
+          "rank": 15,
+          "score": 9.5,
+          "ml_score": 6.847,
+          "shap_top": {
+            "mom_12m_skip1m": 2.27,
+            "fcf_margin": 1.9955,
+            "vol_20d": 1.3475,
+            "mom_12m": 1.0095,
+            "cash_to_assets": 0.6544
+          },
+          "justification": "Momentum 12M exceptionnel (+56%). Génération de cash-flow libre fort — sélection algorithmique LightGBM.",
+          "weight": 0.0667,
+          "isNew": false,
+          "pe": 30.79894,
+          "roe": 15.63,
+          "perf6M": 40.71,
+          "divYield": 1.03,
+          "marketCap": 83560546304,
+          "price": 58.21,
+          "peaEligible": false,
+          "pillars": {
+            "valorisation": 4,
+            "qualite": 5,
+            "croissance": 5,
+            "sante": 8.2,
+            "dividende": 2.06,
+            "momentum": 8.5
+          }
+        }
+      ],
+      "exits": [],
+      "chartData": {
+        "portfolio": [
+          {
+            "date": "2025-05-02",
+            "value": 103.31
+          },
+          {
+            "date": "2025-05-09",
+            "value": 103.61
+          },
+          {
+            "date": "2025-05-16",
+            "value": 113.9
+          },
+          {
+            "date": "2025-05-23",
+            "value": 108.54
+          },
+          {
+            "date": "2025-05-30",
+            "value": 108.64
+          },
+          {
+            "date": "2025-06-06",
+            "value": 114.52
+          },
+          {
+            "date": "2025-06-13",
+            "value": 114.64
+          },
+          {
+            "date": "2025-06-20",
+            "value": 115.16
+          },
+          {
+            "date": "2025-06-27",
+            "value": 117.02
+          },
+          {
+            "date": "2025-07-03",
+            "value": 119.75
+          },
+          {
+            "date": "2025-07-11",
+            "value": 123.46
+          },
+          {
+            "date": "2025-07-18",
+            "value": 139.02
+          },
+          {
+            "date": "2025-07-25",
+            "value": 143.5
+          },
+          {
+            "date": "2025-08-01",
+            "value": 135.17
+          },
+          {
+            "date": "2025-08-08",
+            "value": 139.08
+          },
+          {
+            "date": "2025-08-15",
+            "value": 150.69
+          },
+          {
+            "date": "2025-08-22",
+            "value": 165.21
+          },
+          {
+            "date": "2025-08-29",
+            "value": 161.13
+          },
+          {
+            "date": "2025-09-05",
+            "value": 180.72
+          },
+          {
+            "date": "2025-09-12",
+            "value": 207.9
+          },
+          {
+            "date": "2025-09-19",
+            "value": 217.35
+          },
+          {
+            "date": "2025-09-26",
+            "value": 212.22
+          },
+          {
+            "date": "2025-10-03",
+            "value": 210.22
+          },
+          {
+            "date": "2025-10-10",
+            "value": 203.98
+          },
+          {
+            "date": "2025-10-17",
+            "value": 203.71
+          },
+          {
+            "date": "2025-10-24",
+            "value": 217.44
+          },
+          {
+            "date": "2025-10-31",
+            "value": 219.31
+          },
+          {
+            "date": "2025-11-07",
+            "value": 204.15
+          },
+          {
+            "date": "2025-11-14",
+            "value": 217.16
+          },
+          {
+            "date": "2025-11-21",
+            "value": 192.14
+          },
+          {
+            "date": "2025-11-28",
+            "value": 212.75
+          },
+          {
+            "date": "2025-12-05",
+            "value": 213.38
+          },
+          {
+            "date": "2025-12-12",
+            "value": 206.26
+          },
+          {
+            "date": "2025-12-19",
+            "value": 209.2
+          },
+          {
+            "date": "2025-12-26",
+            "value": 209.05
+          },
+          {
+            "date": "2026-01-02",
+            "value": 211.32
+          },
+          {
+            "date": "2026-01-09",
+            "value": 226.37
+          },
+          {
+            "date": "2026-01-16",
+            "value": 221.52
+          },
+          {
+            "date": "2026-01-23",
+            "value": 223.19
+          },
+          {
+            "date": "2026-01-30",
+            "value": 212.11
+          },
+          {
+            "date": "2026-02-06",
+            "value": 205.8
+          },
+          {
+            "date": "2026-02-13",
+            "value": 204.2
+          },
+          {
+            "date": "2026-02-20",
+            "value": 210.98
+          },
+          {
+            "date": "2026-02-27",
+            "value": 217
+          },
+          {
+            "date": "2026-03-06",
+            "value": 212.97
+          },
+          {
+            "date": "2026-03-13",
+            "value": 217.53
+          },
+          {
+            "date": "2026-03-20",
+            "value": 217.05
+          },
+          {
+            "date": "2026-03-27",
+            "value": 213.8
+          },
+          {
+            "date": "2026-04-02",
+            "value": 219.95
+          },
+          {
+            "date": "2026-04-10",
+            "value": 223.56
+          },
+          {
+            "date": "2026-04-17",
+            "value": 239.99
+          },
+          {
+            "date": "2026-04-24",
+            "value": 255.37
           },
           {
             "date": "2026-04-28",
-            "value": 117.48
+            "value": 250.68
+          }
+        ],
+        "benchmark": [
+          {
+            "date": "2025-04-28",
+            "value": 100
+          },
+          {
+            "date": "2025-05-05",
+            "value": 99.53
+          },
+          {
+            "date": "2025-05-12",
+            "value": 104.78
+          },
+          {
+            "date": "2025-05-19",
+            "value": 102.04
+          },
+          {
+            "date": "2025-05-26",
+            "value": 103.96
+          },
+          {
+            "date": "2025-06-02",
+            "value": 105.52
+          },
+          {
+            "date": "2025-06-09",
+            "value": 105.1
+          },
+          {
+            "date": "2025-06-16",
+            "value": 104.94
+          },
+          {
+            "date": "2025-06-23",
+            "value": 108.55
+          },
+          {
+            "date": "2025-06-30",
+            "value": 110.42
+          },
+          {
+            "date": "2025-07-07",
+            "value": 110.08
+          },
+          {
+            "date": "2025-07-14",
+            "value": 110.73
+          },
+          {
+            "date": "2025-07-21",
+            "value": 112.34
+          },
+          {
+            "date": "2025-07-28",
+            "value": 109.7
+          },
+          {
+            "date": "2025-08-04",
+            "value": 112.36
+          },
+          {
+            "date": "2025-08-11",
+            "value": 113.42
+          },
+          {
+            "date": "2025-08-18",
+            "value": 113.72
+          },
+          {
+            "date": "2025-08-25",
+            "value": 113.6
+          },
+          {
+            "date": "2025-09-01",
+            "value": 113.98
+          },
+          {
+            "date": "2025-09-08",
+            "value": 115.78
+          },
+          {
+            "date": "2025-09-15",
+            "value": 117.19
+          },
+          {
+            "date": "2025-09-22",
+            "value": 116.83
+          },
+          {
+            "date": "2025-09-29",
+            "value": 118.1
+          },
+          {
+            "date": "2025-10-06",
+            "value": 115.23
+          },
+          {
+            "date": "2025-10-13",
+            "value": 117.19
+          },
+          {
+            "date": "2025-10-20",
+            "value": 119.43
+          },
+          {
+            "date": "2025-10-27",
+            "value": 120.28
+          },
+          {
+            "date": "2025-11-03",
+            "value": 118.33
+          },
+          {
+            "date": "2025-11-10",
+            "value": 118.42
+          },
+          {
+            "date": "2025-11-17",
+            "value": 116.11
+          },
+          {
+            "date": "2025-11-24",
+            "value": 120.44
+          },
+          {
+            "date": "2025-12-01",
+            "value": 120.82
+          },
+          {
+            "date": "2025-12-08",
+            "value": 120.06
+          },
+          {
+            "date": "2025-12-15",
+            "value": 120.18
+          },
+          {
+            "date": "2025-12-22",
+            "value": 121.86
+          },
+          {
+            "date": "2025-12-29",
+            "value": 120.61
+          },
+          {
+            "date": "2026-01-05",
+            "value": 122.5
+          },
+          {
+            "date": "2026-01-12",
+            "value": 122.04
+          },
+          {
+            "date": "2026-01-19",
+            "value": 121.61
+          },
+          {
+            "date": "2026-01-26",
+            "value": 122.02
+          },
+          {
+            "date": "2026-02-02",
+            "value": 121.9
+          },
+          {
+            "date": "2026-02-09",
+            "value": 120.21
+          },
+          {
+            "date": "2026-02-16",
+            "value": 121.5
+          },
+          {
+            "date": "2026-02-23",
+            "value": 120.96
+          },
+          {
+            "date": "2026-03-02",
+            "value": 118.52
+          },
+          {
+            "date": "2026-03-09",
+            "value": 116.63
+          },
+          {
+            "date": "2026-03-16",
+            "value": 114.42
+          },
+          {
+            "date": "2026-03-23",
+            "value": 112
+          },
+          {
+            "date": "2026-03-30",
+            "value": 115.76
+          },
+          {
+            "date": "2026-04-06",
+            "value": 119.87
+          },
+          {
+            "date": "2026-04-13",
+            "value": 125.31
+          },
+          {
+            "date": "2026-04-20",
+            "value": 126
+          },
+          {
+            "date": "2026-04-27",
+            "value": 125.54
+          },
+          {
+            "date": "2026-04-28",
+            "value": 125.54
           }
         ]
       }
