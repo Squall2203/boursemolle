@@ -1,0 +1,53 @@
+{
+  "ticker": "VRLA.PA",
+  "last_updated": "2026-04-30T05:31:41.133489+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Assessing Verallia Société Anonyme’s Valuation After Recent Share Price Rebound",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-verallia-soci-t-anonyme-230652109.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-25T23:06:52+00:00",
+      "summary": "Understanding Verallia Société Anonyme’s Recent Share Performance Verallia Société Anonyme (ENXTPA:VRLA) has drawn attention after its share price closed at €19.97, with recent returns showing a mix o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Verallia: Dividend Payment Terms for the 2025 Financial Year",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/verallia-dividend-payment-terms-2025-154500878.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T15:45:00+00:00",
+      "summary": "PARIS, April 24, 2026--Regulatory News: Verallia (Paris:VRLA):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Verallia: General Shareholders’ Meeting held on April 24th, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/verallia-general-shareholders-meeting-held-154500778.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T15:45:00+00:00",
+      "summary": "PARIS, April 24, 2026--Regulatory News: The annual General Shareholders’ Meeting of Verallia (the \"Company\") was held on 24 April 2026 under the chairmanship of Michel Giannuzzi, Chairman of the Board",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Verallia Q1 revenues edge lower, debt rises",
+      "url": "https://www.packaging-gateway.com/news/verallia-q1-revenues/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T10:56:03+00:00",
+      "summary": "The company said the drop in revenue was mainly linked to lower selling prices.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "2026 First Quarter Results: Verallia Improves Its Profitability and Confirms Its 2026 Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2026-first-quarter-results-verallia-164500485.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T16:45:00+00:00",
+      "summary": "PARIS, April 22, 2026--Regulatory News: Verallia (Paris:VRLA):",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

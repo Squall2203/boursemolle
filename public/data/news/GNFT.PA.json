@@ -1,0 +1,53 @@
+{
+  "ticker": "GNFT.PA",
+  "last_updated": "2026-04-30T05:47:25.184804+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "GENFIT Receives FDA Orphan Drug Designation for NTZ for the treatment of ACLF",
+      "url": "https://finance.yahoo.com/news/genfit-receives-fda-orphan-drug-170000440.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-09T17:00:00+00:00",
+      "summary": "FDA grants Orphan Drug Designation (ODD) for NTZ for ACLF, a severe condition with no approved therapiesNTZ is being advanced in ACLF through its G1090N reformulation, designed to unlock its clinical ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GENFIT Reports Fourth Quarter 2025 Financial Information and Provides a Corporate Update",
+      "url": "https://finance.yahoo.com/news/genfit-reports-fourth-quarter-2025-170000234.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T17:00:00+00:00",
+      "summary": "Cash and cash equivalents totaled €101.1 million as of December 31, 2025Revenues amounted to €65.4 million as of December 31, 2025Ipsen’s strong performance with Iqirvo® in PBC (>$200M net sales in ye",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "GENFIT to receive US$20M milestone after Ipsen’s Iqirvo® exceeds the US$200M threshold in its first full year of net sales",
+      "url": "https://finance.yahoo.com/news/genfit-receive-us-20m-milestone-173500231.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-12T17:35:00+00:00",
+      "summary": "Ipsen reported US$88M of Iqirvo® net sales in PBC for 4Q25, bringing 2025 sales to US$208M, triggering the first commercial milestone payment to GENFIT ahead of schedule1Ipsen confirmed its commitment",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "GENFIT: Half-Year Report of Liquidity Contract with Crédit Industriel et Commercial",
+      "url": "https://finance.yahoo.com/news/genfit-half-report-liquidity-contract-170000301.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-13T17:00:00+00:00",
+      "summary": "Lille (France), Cambridge (Massachusetts, United States), Zurich (Switzerland), January 13, 2026 - GENFIT (Euronext: GNFT), a biopharmaceutical company dedicated to improving the lives of patients wit",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GENFIT Announces 2026 Financial Calendar",
+      "url": "https://finance.yahoo.com/news/genfit-announces-2026-financial-calendar-170000893.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-07T17:00:00+00:00",
+      "summary": "Lille (France), Cambridge (Massachusetts, United States), Zurich (Switzerland), January 7, 2026 - GENFIT (Euronext: GNFT), a late-stage biopharmaceutical company dedicated to improving the lives of pa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

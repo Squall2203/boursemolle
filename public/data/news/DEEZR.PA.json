@@ -1,0 +1,53 @@
+{
+  "ticker": "DEEZR.PA",
+  "last_updated": "2026-04-30T05:42:44.467852+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Deezer outlines new strategy after first annual profit, shares rise",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/deezer-reshapes-offering-businesses-boost-080721720.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-19T08:07:21+00:00",
+      "summary": "French music streaming platform Deezer  said on Thursday it was ‌reshaping its partnership offerings under a single ‌brand after reporting its first ever annual profit late on Wednesday.  Deezer, whic",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Deezer licenses AI music detection tool to French royalty agency Sacem, plans wider rollout",
+      "url": "https://finance.yahoo.com/news/deezer-licenses-ai-detection-tool-080323572.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-29T08:03:23+00:00",
+      "summary": "Music streaming platform Deezer has licensed its artificial intelligence-detection technology to France's royalty agency Sacem ​in a landmark commercial deal to combat music fraud, as the ‌company pur",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "App developers urge EU action on Apple fee practices",
+      "url": "https://finance.yahoo.com/video/app-developers-urge-eu-action-101759900.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-16T10:17:59+00:00",
+      "summary": "STORY: A coalition of 20 app developers and consumer groups on Tuesday (December 16) called upon European regulators to enforce EU laws against Apple.  They say the company's fee structure unfairly di",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "North America Music Streaming Market Forecast and Company Analysis Report 2025-2033 Featuring SoundCloud, Apple, iHeartMedia, Amazon, YouTube, Deezer, Pandora, Tencent, Tidal, Spotify",
+      "url": "https://finance.yahoo.com/news/north-america-music-streaming-market-093300028.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-28T09:33:00+00:00",
+      "summary": "The North America Music Streaming Market is set to grow from $16.52 billion in 2024 to $44.14 billion by 2033, achieving a CAGR of 11.54% from 2025 to 2033, driven by increased smartphone use, interne",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Warner Music Group, Udio settle copyright case, plan new AI song creation platform",
+      "url": "https://finance.yahoo.com/news/warner-music-settles-ai-firm-182327967.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-19T18:23:27+00:00",
+      "summary": "Universal Music Group has also settled a similar copyright case with Udio last month.  The deals come at a time when a surge in AI-generated tracks has triggered some ⁠platforms like Deezer to clearly",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ALSTW.PA",
+  "last_updated": "2026-04-30T06:06:09.711183+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "European Stocks Estimated To Be Trading Below Fair Value In February 2026",
+      "url": "https://finance.yahoo.com/news/european-stocks-estimated-trading-below-103836431.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-11T10:38:36+00:00",
+      "summary": "As optimism about the eurozone economy helps buoy investor sentiment, the pan-European STOXX Europe 600 Index has reached a new intraday high, reflecting resilience despite recent market volatility. I",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Stocks Estimated To Be Trading At Discounts Of Up To 46%",
+      "url": "https://finance.yahoo.com/news/3-european-stocks-estimated-trading-053818616.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-11T05:38:18+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index reaches new intraday highs, optimism about the eurozone economy is helping to counteract recent market volatility. In this environment, identifying undervalu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks That May Be Trading Below Their Estimated Intrinsic Value",
+      "url": "https://finance.yahoo.com/news/european-stocks-may-trading-below-053756317.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T05:37:56+00:00",
+      "summary": "As European markets show signs of optimism, with the STOXX Europe 600 Index reaching new highs and major indexes like Germany's DAX and France's CAC 40 posting gains, investors are increasingly intere",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Possibly Priced Below Intrinsic Value In February 2026",
+      "url": "https://finance.yahoo.com/news/european-stocks-possibly-priced-below-103802868.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T10:38:02+00:00",
+      "summary": "As the European market experiences a wave of optimism, with the STOXX Europe 600 Index reaching new highs and major indexes like Germany’s DAX and France’s CAC 40 posting gains, investors are keenly o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Stocks Estimated To Be Undervalued By Up To 36.5% Offer Intriguing Investment Opportunities",
+      "url": "https://finance.yahoo.com/news/european-stocks-estimated-undervalued-36-053754012.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-09T05:37:54+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index reaches new highs, optimism about the eurozone economy seems to be bolstering investor sentiment despite recent market volatility. In this environment, ident",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

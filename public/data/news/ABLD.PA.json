@@ -1,0 +1,53 @@
+{
+  "ticker": "ABLD.PA",
+  "last_updated": "2026-04-30T05:34:05.519539+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "ABL Diagnostics: Sale of a New Block of Shares by Its Main Shareholder ABL",
+      "url": "https://finance.yahoo.com/news/abl-diagnostics-sale-block-shares-170000935.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-17T17:00:00+00:00",
+      "summary": "WOIPPY, France, March 17, 2026--Regulatory News: ABL Diagnostics (Paris:ABLD) announces that its main shareholder, Advanced Biological Laboratories (ABL), a Luxembourg-based diagnostics company, has f",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ABL Diagnostics Update Regarding Non-Binding Letter of Intent",
+      "url": "https://finance.yahoo.com/news/abl-diagnostics-regarding-non-binding-070000499.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-19T07:00:00+00:00",
+      "summary": "WOIPPY, France, February 19, 2026--Regulatory News: ABL Diagnostics S.A. (Euronext: ABLD – ISIN: FR001400AHX6) informs the market that the non-binding Letter of Intent entered into between ProPhase La",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ABL SA Executes the First Purchase Notice of ABL Diagnostics Shares With Alumni Capital",
+      "url": "https://finance.yahoo.com/news/abl-sa-executes-first-purchase-170000452.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-13T17:00:00+00:00",
+      "summary": "WOIPPY, France, February 13, 2026--Regulatory News: ISIN: FR001400AHX6 – Euronext Paris",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "ABL Diagnostics Informs the Market of a Non‑Binding Letter of Intent Between ABL S.A. and ProPhase Labs (Nasdaq: PRPH) for a Proposed Reverse Merger",
+      "url": "https://finance.yahoo.com/news/abl-diagnostics-informs-market-non-070000608.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-19T07:00:00+00:00",
+      "summary": "WOIPPY, France, December 19, 2025--Regulatory News: ABL Diagnostics (Euronext: ABLD - ISIN: FR001400AHX6) informs its shareholders and the market that Advanced Biological Laboratories S.A. (\"ABL S.A.\"",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Information on a Temporary Transfer of ABL Diagnostics Shares",
+      "url": "https://finance.yahoo.com/news/information-temporary-transfer-abl-diagnostics-160000841.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-05T16:00:00+00:00",
+      "summary": "WOIPPY, France, December 05, 2025--Regulatory News: ABL Diagnostics S.A. (ISIN: FR001400AHX6, ticker: ABLD, listed on Euronext Paris) informs its shareholders and the market that a temporary transfer ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

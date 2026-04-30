@@ -1,0 +1,26 @@
+{
+  "ticker": "ALBPK.PA",
+  "last_updated": "2026-04-30T05:39:43.466571+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Discovering NX Filtration And 2 Other Prominent European Penny Stocks",
+      "url": "https://finance.yahoo.com/news/discovering-nx-filtration-2-other-060515102.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-14T06:05:15+00:00",
+      "summary": "European markets have shown resilience, with the pan-European STOXX Europe 600 Index rising by 2.11% amid strong corporate earnings and optimism surrounding geopolitical tensions. As investors navigat",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Penny Stocks Spotlight: Sinteza And Two Promising Picks",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-spotlight-sinteza-060508095.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-10T06:05:08+00:00",
+      "summary": "As the European markets continue to show resilience, with major stock indexes rising and inflation easing, investors are increasingly looking for opportunities in less conventional areas. Penny stocks",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

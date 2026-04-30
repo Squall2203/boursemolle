@@ -1,0 +1,53 @@
+{
+  "ticker": "ALVDM.PA",
+  "last_updated": "2026-04-30T06:07:40.451791+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "3 European Dividend Stocks Yielding Over 3.5%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-european-dividend-stocks-yielding-103205531.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T10:32:05+00:00",
+      "summary": "As European markets face heightened geopolitical risks and economic uncertainties, traditionally defensive sectors like utilities and telecoms have shown resilience. In this environment, dividend stoc",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 Undiscovered Gems In Europe To Bolster Your Portfolio",
+      "url": "https://finance.yahoo.com/news/3-undiscovered-gems-europe-bolster-103318787.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-14T10:33:18+00:00",
+      "summary": "Amidst a backdrop of optimism in the European markets, the STOXX Europe 600 Index has climbed 2.27%, buoyed by encouraging signs from key economies like Germany and a favorable interest rate environme",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 9.4%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-053147078.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-19T05:31:47+00:00",
+      "summary": "As European markets navigate a landscape marked by cooling enthusiasm for artificial intelligence and economic challenges in key regions, the pan-European STOXX Europe 600 Index managed to rise by 1.7",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Discovering Europe's Hidden Stock Gems October 2025",
+      "url": "https://finance.yahoo.com/news/discovering-europes-hidden-stock-gems-103302612.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-20T10:33:02+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index edges higher amidst dovish signals from U.S. Fed Chair Jerome Powell and easing U.S.-China trade tensions, investors are keenly observing mixed performances ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Exploring 3 Undiscovered European Gems with Promising Potential",
+      "url": "https://finance.yahoo.com/news/exploring-3-undiscovered-european-gems-103253302.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-12T10:32:53+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index climbs 2.11% on strong corporate earnings and hopes for a resolution to the Ukraine-Russia conflict, investors are increasingly turning their attention to sm",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

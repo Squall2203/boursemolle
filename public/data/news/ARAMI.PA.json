@@ -1,0 +1,26 @@
+{
+  "ticker": "ARAMI.PA",
+  "last_updated": "2026-04-30T05:36:46.538261+00:00",
+  "sentiment_score": -0.5,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Aramis Group SAS And 2 Other European Penny Stocks To Watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aramis-group-sas-2-other-060536774.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-29T06:05:36+00:00",
+      "summary": "The European stock market has recently faced challenges, with major indices like the STOXX Europe 600 experiencing declines amid geopolitical tensions and economic uncertainties. Despite these hurdles",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Aramis Group - Declaration of transactions on own shares conducted from April 20 to April 24, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/aramis-group-declaration-transactions-own-155000140.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T15:50:00+00:00",
+      "summary": "PRESS RELEASE Arcueil, April 27th, 2026 Declaration of transactions on own shares conducted from April 20 to April 24, 2026 Within the framework of the authorizations granted by the General Assembly o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

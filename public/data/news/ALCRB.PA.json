@@ -1,0 +1,53 @@
+{
+  "ticker": "ALCRB.PA",
+  "last_updated": "2026-04-30T05:40:28.966131+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Carbios files its 2025 Universal Registration Document",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/carbios-files-2025-universal-registration-160000297.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-29T16:00:00+00:00",
+      "summary": "Clermont-Ferrand (France), 29 April 2026 (6:00 pm CEST). Carbios (Euronext Growth Paris: ALCRB) announces to its shareholders and the financial community that its 2025 Universal Registration Document,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Recycled Terephthalic Acid Market Report 2025-2035, Profiles of ALPLA, Alpek, Biffa, Carbios, DePoly, Evergreen Plastics, Far Eastern New Century, INTCO Recycling, Krones, Loop Industries, SUEZ, Unifi",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/recycled-terephthalic-acid-market-report-110300267.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-20T11:03:00+00:00",
+      "summary": "The recycled terephthalic acid (rTPA) market presents key opportunities through its increasing demand in sustainable practices across automotive, textiles, and packaging industries. Driven by a shift ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Carbios FY 2025 Results Show Lower Costs and Wider Loss",
+      "url": "https://wwd.com/sourcing-journal/industry-news/carbios-fiscal-2025-lower-costs-wider-loss-1238920198/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T17:38:39+00:00",
+      "summary": "The French biotech firm’s 2025 financials revealed a period of sizable operational simplifications and strategic shifts toward a licensing model.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Carbios announces fiscal-year 2025 financial results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/carbios-announces-fiscal-2025-financial-054500818.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-17T05:45:00+00:00",
+      "summary": "Carbios significantly reduced its operating expenses during 2025, resulting in a €7 million reduction in operating lossCarbios has a solid cash position of €59 million as of December 31, 2025, on a Gr",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Carbios adjusts Longlaville facility launch plans",
+      "url": "https://www.just-style.com/news/carbios-longlaville-plant-financing/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T10:28:09+00:00",
+      "summary": "Biotech company Carbios has outlined progress on funding for its planned Longlaville polyethylene terephthalate (PET) biorecycling plant in France.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

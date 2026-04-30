@@ -1,0 +1,44 @@
+{
+  "ticker": "IDIP.PA",
+  "last_updated": "2026-04-30T05:51:36.101774+00:00",
+  "sentiment_score": 0.25,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Exploring Three Promising European Small Caps With Strong Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exploring-three-promising-european-small-053313348.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-24T05:33:13+00:00",
+      "summary": "As European markets experience a positive uptick, with the STOXX Europe 600 Index rising by 1.91% amid optimistic corporate earnings and geopolitical de-escalation, investors are increasingly looking ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Undiscovered Gems In Europe Promising Stocks For January 2026",
+      "url": "https://finance.yahoo.com/news/undiscovered-gems-europe-promising-stocks-103330430.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-22T10:33:30+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index edges higher, buoyed by resilient economic data and earnings results, small-cap stocks in Europe are drawing attention for their potential amidst mixed perfo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Undiscovered European Gems for December 2025",
+      "url": "https://finance.yahoo.com/news/undiscovered-european-gems-december-2025-053303721.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-17T05:33:03+00:00",
+      "summary": "As the European markets navigate a landscape marked by mixed performance in major indices and cautious economic outlooks, investors are keenly observing the potential impacts of interest rate shifts a",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

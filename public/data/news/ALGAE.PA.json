@@ -1,0 +1,53 @@
+{
+  "ticker": "ALGAE.PA",
+  "last_updated": "2026-04-30T05:58:15.791785+00:00",
+  "sentiment_score": -0.2,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Websolute And 2 Other European Penny Stocks To Consider",
+      "url": "https://finance.yahoo.com/news/websolute-2-other-european-penny-060526173.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T06:05:26+00:00",
+      "summary": "Amid renewed trade and geopolitical uncertainty, the European markets have experienced a downturn, with major stock indexes like France's CAC 40 and Germany's DAX posting notable declines. Despite the",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In December 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-december-110457870.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-29T11:04:57+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index edges closer to record highs, optimism about future earnings and economic growth is fueling positive sentiment across the continent. Penny stocks, though an ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Penny Stocks With Market Caps Over €40M To Watch",
+      "url": "https://finance.yahoo.com/news/3-european-penny-stocks-market-110656350.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-25T11:06:56+00:00",
+      "summary": "Amid renewed concerns about inflated AI stock valuations, the pan-European STOXX Europe 600 Index recently ended 2.21% lower, reflecting a cautious sentiment across major European markets. Despite the",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In October 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-october-110522774.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-22T11:05:22+00:00",
+      "summary": "As of mid-October 2025, the European market has shown mixed performance, with the pan-European STOXX Europe 600 Index edging higher due to dovish signals from U.S. Fed Chair Jerome Powell and easing t",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Penny Stocks: Antares Vision And Two Others To Watch",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-antares-vision-060449697.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-10T06:04:49+00:00",
+      "summary": "Amid concerns about global growth following weak U.S. jobs data and a stronger euro, the pan-European STOXX Europe 600 Index recently ended slightly lower. Despite these challenges, investors continue",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

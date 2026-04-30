@@ -1,0 +1,53 @@
+{
+  "ticker": "ACAN.PA",
+  "last_updated": "2026-04-30T05:34:17.738624+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "GL Events Valuation in Focus After Strong 61.7% Year-to-Date Rally",
+      "url": "https://finance.yahoo.com/news/gl-events-valuation-focus-strong-125433975.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T12:54:33+00:00",
+      "summary": "Thinking about what to do with your GL Events shares? Whether you are sizing up an entry point or reassessing your position after a strong rally, now is a great time to take stock of what is really ha",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Heineken’s Strongbow adds NaviLens levels to packaging",
+      "url": "https://www.packaging-gateway.com/news/heineken-strongbow-navilens-packaging/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T10:38:43+00:00",
+      "summary": "The cider brand has added a high-contrast NaviLens QR code to its cans.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 firms to lay off hundreds of North Jersey-based employees",
+      "url": "https://www.northjersey.com/story/news/business/2025/09/09/firms-layoffs-nj-where-jpmorgan/86043850007/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T08:28:25+00:00",
+      "summary": "BioReference health, JPMorgan Chase and an Italian fashion retailer are making the job cuts amid market uncertainty",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Temenos Named Overall Winner in IDC FinTech Real Results 2025",
+      "url": "https://finance.yahoo.com/news/temenos-named-overall-winner-idc-072800280.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T07:28:00+00:00",
+      "summary": "Temenos also the winner for Bank Deposit Transformation with Credem and listed in the 2025 IDC FinTech Rankings Top 25GRAND-LANCY, Switzerland, Sept. 09, 2025 (GLOBE NEWSWIRE) -- Temenos (SIX: TEMN), ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Changes in the Management of AB Artea Bankas",
+      "url": "https://finance.yahoo.com/news/changes-management-ab-artea-bankas-063000327.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T06:30:00+00:00",
+      "summary": "The Management Board of Artea Bankas has approved changes to the management and organizational structure. The Management Board has received a notice from board member Mindaugas Rudys regarding his res",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

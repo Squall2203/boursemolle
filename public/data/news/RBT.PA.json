@@ -1,0 +1,53 @@
+{
+  "ticker": "RBT.PA",
+  "last_updated": "2026-04-30T05:32:05.791749+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Iconic British Brand Laura Ashley launches Four Fragrances Inspired by Archival Prints",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/iconic-british-brand-laura-ashley-073000446.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T07:30:00+00:00",
+      "summary": "Iconic British brand Laura Ashley has partnered with fragrance company Nirvana Brands to launch a new Parfum Collection featuring four fragrances that pay homage to the British countryside.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "eXoZymes CCO, Damien Perriman, Outlines NCTx Strategy and the Commercial Path for Cell-Free Biomanufacturing on Grow Everything Podcast",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/exozymes-cco-damien-perriman-outlines-131000039.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T13:10:00+00:00",
+      "summary": "LOS ANGELES, CA / ACCESS Newswire / April 10, 2026 / Today, eXoZymes Inc. (NASDAQ:EXOZ) (\"eXoZymes\") - a pioneer of AI-enhanced enzymes that transforms abundant feedstock into valuable nutraceuticals ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Robertet Group : Strong organic growth and improved profitability in 2025",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/robertet-group-strong-organic-growth-160000214.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T16:00:00+00:00",
+      "summary": "Strong organic growth and improved profitability in 2025 Strong organic revenue growth of 7.6% (like for like)Improved EBITDA margin, up 120 basis points at 20.6% of revenueProposed dividend of €12 fo",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Robertet’s Aethera Biotech Move Adds New Angle To Valuation Story",
+      "url": "https://finance.yahoo.com/news/robertet-aethera-biotech-move-adds-061528277.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-13T06:15:28+00:00",
+      "summary": "Robertet, ticker ENXTPA:RBT, has expanded its partnership with Aethera Biotech through an equity investment. The deal marks Robertet’s first major move into biotechnology, with a focus on cosmetic act",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Robertet Leans Into Plant-based Biotechnologies",
+      "url": "https://wwd.com/beauty-industry-news/fragrance/robertet-leans-plant-based-biotechnologies-aethera-biotech-1238652502/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T10:30:49+00:00",
+      "summary": "The natural materials supplier has invested in Aethera Biotech.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "HCO.PA",
+  "last_updated": "2026-04-30T05:49:53.027813+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Highco: Q1 2026 GROSS PROFIT",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/highco-q1-2026-gross-profit-160000334.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-22T16:00:00+00:00",
+      "summary": "Aix-en-Provence, 22 April 2026 (6:00 p.m.) HIGHCO: BUSINESS GROWTH IN Q1 2026 IN LINE WITH EXPECTATIONS, WITH REPORTED GROSS PROFIT OF €19.93 M (UP 26.4%) AND €16.18 M LFL (UP 2.6%); 2026 GUIDANCE CON",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "HIGHCO: SHAREHOLDING",
+      "url": "https://finance.yahoo.com/news/highco-shareholding-131700938.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-06T13:17:00+00:00",
+      "summary": "INFORMATION CONCERNING THE TOTAL NUMBER OF VOTING RIGHTS AND SHARES Declaration pursuant to Articles L.233-8 II of the French Commercial Code and 223-16 of the General Regulations of the Autorité des ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "HighCo: Q4 2025 Gross Profit",
+      "url": "https://finance.yahoo.com/news/highco-q4-2025-gross-profit-170000640.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-28T17:00:00+00:00",
+      "summary": "Aix-en-Provence, 28 January 2026 (6:00 p.m.) HIGHCO: STRONG BUSINESS GROWTH IN Q4 2025 (GROSS PROFIT UP 20.3% LFL); 2025 GROSS PROFIT OF €66.65 M (REPORTED) AND €62.1 M (LFL), UP 1.8%; 2025 ADJUSTED O",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In January 2026",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-january-110523410.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-23T11:05:23+00:00",
+      "summary": "As the European markets show resilience with the STOXX Europe 600 Index ending higher, supported by robust economic data and earnings results, investors are keeping a close watch on smaller companies ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In December 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-december-110447607.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-25T11:04:47+00:00",
+      "summary": "As European markets continue to show signs of steady economic growth, with the STOXX Europe 600 Index rising by 1.60%, investors are exploring diverse opportunities across the continent. Penny stocks,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

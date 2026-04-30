@@ -1,0 +1,35 @@
+{
+  "ticker": "ALGEN.PA",
+  "last_updated": "2026-04-30T05:59:01.296284+00:00",
+  "sentiment_score": -0.33,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Nyxoah Leads The Charge In European Penny Stocks",
+      "url": "https://finance.yahoo.com/news/nyxoah-leads-charge-european-penny-110458379.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-23T11:04:58+00:00",
+      "summary": "As European markets navigate a complex landscape of mixed stock index performances and monetary policy decisions, investors are keenly observing opportunities that might arise amidst these fluctuation",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Market Insights: genOway Société anonyme And 2 Promising Penny Stocks",
+      "url": "https://finance.yahoo.com/news/european-market-insights-genoway-soci-060449178.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-09T06:04:49+00:00",
+      "summary": "The European market has shown resilience with the pan-European STOXX Europe 600 Index rising by 0.90%, buoyed by a slowdown in inflation and easing monetary policy from the European Central Bank. As i",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In May 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-may-060504164.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-05T06:05:04+00:00",
+      "summary": "As European markets experience a lift, with the STOXX Europe 600 Index rising by 3.44% amid easing tariff concerns, investor sentiment appears cautiously optimistic. This economic backdrop provides an",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

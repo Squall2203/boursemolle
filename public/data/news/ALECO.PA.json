@@ -1,0 +1,35 @@
+{
+  "ticker": "ALECO.PA",
+  "last_updated": "2026-04-30T05:57:34.707526+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "European Penny Stocks To Watch In April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-penny-stocks-watch-april-110523064.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T11:05:23+00:00",
+      "summary": "The European market has seen a positive shift, with the pan-European STOXX Europe 600 Index rising by 1.91% amid encouraging corporate earnings and geopolitical de-escalation in the Middle East. As in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "ELES Semiconductor Equipment And 2 Other European Penny Stocks With Promising Fundamentals",
+      "url": "https://finance.yahoo.com/news/eles-semiconductor-equipment-2-other-110521001.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-21T11:05:21+00:00",
+      "summary": "The European market has shown resilience, with the pan-European STOXX Europe 600 Index ending higher, buoyed by robust economic data and earnings results. In the context of this steady economic backdr",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Market Insights: AFYREN SAS And 2 Other Noteworthy Penny Stocks",
+      "url": "https://finance.yahoo.com/news/european-market-insights-afyren-sas-060507519.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-19T06:05:07+00:00",
+      "summary": "As the European markets navigate mixed performances, with indices like Germany’s DAX gaining slightly and others such as France’s CAC 40 experiencing declines, investors are closely watching policy si",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

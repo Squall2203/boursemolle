@@ -1,0 +1,53 @@
+{
+  "ticker": "PARP.PA",
+  "last_updated": "2026-04-30T05:48:47.279581+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "GROUPE PARTOUCHE: 1st quarter 2026 Turnover: +3.5 % - Good dynamic across all activities - General Meeting on 25th March 2026 - Proposal to distribute increased dividend of € 1.25 per share (compared to € 0.32 in year N-1)",
+      "url": "https://finance.yahoo.com/news/groupe-partouche-1st-quarter-2026-170000142.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T17:00:00+00:00",
+      "summary": "1st quarter 2026 Turnover: +3.5 %Good dynamic across all activities General Meeting on 25th March 2026Proposal to distribute increased dividend of € 1.25 per share (compared to € 0.32 in year N-1) Par",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GROUPE PARTOUCHE: Annual Income 2024/2025 - Strong results achieved through investments and arbitrage in the portfolio",
+      "url": "https://finance.yahoo.com/news/groupe-partouche-annual-income-2024-170000387.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T17:00:00+00:00",
+      "summary": "Annual Income 2024/2025 Strong results achieved through investments and arbitrage in the portfolio Turnover: € 460.2 M (+6,0 %)EBITDA: € 94.4 M (+27,8 %)Current operating income: € 30.8 M (+56,6 %)Net",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "GROUPE PARTOUCHE: Sustained performance over 2025 - Turnover of € 460.2 M, up by +6.0 %",
+      "url": "https://finance.yahoo.com/news/groupe-partouche-sustained-performance-over-170000565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-09T17:00:00+00:00",
+      "summary": "Sustained performance over 2025Turnover of € 460.2 M, up by +6.0 % Paris, 9th December 2025, 06:00 p.m. Groupe Partouche European leader in gaming, published this day its consolidated turnover for the",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GROUPE PARTOUCHE: Turnover first 9 months - € 347.8 M up +6.2% - Solid momentum confirmed in all activities - Closure of the Financière Partouche safeguard plan",
+      "url": "https://finance.yahoo.com/news/groupe-partouche-turnover-first-9-160000756.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T16:00:00+00:00",
+      "summary": "Turnover first 9 months€ 347.8 M up +6.2% Solid momentum confirmed in all activitiesClosure of the Financière Partouche safeguard plan Paris, 9th September 2025, 06:00 p.m. Groupe Partouche European l",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "GROUPE PARTOUCHE: Solid Half-Year Income in a period of significant growth investments",
+      "url": "https://finance.yahoo.com/news/groupe-partouche-solid-half-income-160000312.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-24T16:00:00+00:00",
+      "summary": "Solid Half-Year Income in a period of significant growth investments Turnover: € 233.3 M (+5.7 %)EBITDA: € 55.3 M compared to 41.0 €M at 1st Half-year 2024Net Income: € 12.6 M compared to € 7.1 M at 1",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "BASS.PA",
+  "last_updated": "2026-04-30T05:38:33.237270+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "3 Undiscovered European Gems with Promising Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-undiscovered-european-gems-promising-103312786.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-29T10:33:12+00:00",
+      "summary": "As European markets face heightened geopolitical risks and economic uncertainties, the pan-European STOXX Europe 600 Index recently experienced a decline, with defensive sectors like utilities and tel",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Exploring Aeroporto Guglielmo Marconi di Bologna And 2 Other European Small Caps With Potential",
+      "url": "https://finance.yahoo.com/news/exploring-aeroporto-guglielmo-marconi-di-053251796.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-29T05:32:51+00:00",
+      "summary": "In the current European market landscape, characterized by geopolitical uncertainties and fluctuating economic indicators, small-cap stocks have faced notable challenges. Despite this, the pan-Europea",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "BASSAC Société anonyme And 2 Other Undiscovered Gems with Promising Potential",
+      "url": "https://finance.yahoo.com/news/bassac-soci-t-anonyme-2-053258506.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-26T05:32:58+00:00",
+      "summary": "As the European market shows signs of steady economic growth and benefits from looser monetary policy, the pan-European STOXX Europe 600 Index has climbed 1.60%, reflecting a positive sentiment across",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 Undiscovered European Gems To Enhance Your Portfolio",
+      "url": "https://finance.yahoo.com/news/3-undiscovered-european-gems-enhance-053317491.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-26T05:33:17+00:00",
+      "summary": "As the European market grapples with concerns over inflated AI stock valuations and shifting interest rate expectations, the pan-European STOXX Europe 600 Index recently experienced a notable decline.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Undiscovered Gems in Europe for August 2025",
+      "url": "https://finance.yahoo.com/news/undiscovered-gems-europe-august-2025-053301239.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-13T05:33:01+00:00",
+      "summary": "As the European markets experience a boost, with the pan-European STOXX Europe 600 Index climbing 2.11% on strong corporate earnings and optimism surrounding geopolitical resolutions, investors are in",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

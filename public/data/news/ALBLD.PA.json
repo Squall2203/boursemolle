@@ -1,0 +1,44 @@
+{
+  "ticker": "ALBLD.PA",
+  "last_updated": "2026-04-30T05:55:22.687941+00:00",
+  "sentiment_score": 0.33,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Stocks Priced Below Estimated Intrinsic Value In October 2025",
+      "url": "https://finance.yahoo.com/news/european-stocks-priced-below-estimated-103758352.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-16T10:37:58+00:00",
+      "summary": "As of October 2025, the European stock market has seen a downturn, with the pan-European STOXX Europe 600 Index falling by 1.10% amid profit-taking after reaching record highs and ongoing political tu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Market Picks: 3 Stocks That May Be Trading Below Their Estimated Value",
+      "url": "https://finance.yahoo.com/news/european-market-picks-3-stocks-053750039.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-16T05:37:50+00:00",
+      "summary": "Amid recent profit-taking and political uncertainties, the European markets have seen a slight downturn, with the STOXX Europe 600 Index dropping 1.10% from its record highs. Despite these challenges,",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bilendi (ENXTPA:ALBLD) Earnings Growth Tops 5-Year Average, Challenging Margin Compression Concerns",
+      "url": "https://finance.yahoo.com/news/bilendi-enxtpa-albld-earnings-growth-002201697.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-15T00:22:01+00:00",
+      "summary": "Bilendi (ENXTPA:ALBLD) delivered earnings growth of 14.4% over the past year, outpacing its own 5-year average of 10.6% per year. The company’s net profit margin came in at 6.6%, down slightly from 7%",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Lacroix : First-half revenue of €291.5 million, down 12.3% on a like-for-like basis, reflecting challenging sector conditions for Electronics despite continued positive momentum in Environment",
+      "url": "https://finance.yahoo.com/news/lacroix-first-half-revenue-291-154500134.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-23T15:45:00+00:00",
+      "summary": "Revenue for the first half of 2025: €43.5 million, up +42.2% Paris, 23 July 2025 – Bilendi, a global leader in technology, data and AI solutions for the market research industry, announces its consoli",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

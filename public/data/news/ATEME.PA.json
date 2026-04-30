@@ -1,0 +1,35 @@
+{
+  "ticker": "ATEME.PA",
+  "last_updated": "2026-04-30T05:37:32.100190+00:00",
+  "sentiment_score": -0.67,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Netflix Expands Games And Live Streaming As Valuation Signals Mixed Picture",
+      "url": "https://finance.yahoo.com/news/netflix-expands-games-live-streaming-120838035.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-11T12:08:38+00:00",
+      "summary": "Netflix (NasdaqGS:NFLX) has hired Magali Huot, a former YouTube Gaming and Warner Bros. Entertainment executive, to lead games marketing at the director level. The company has also entered a multi yea",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Penny Stocks With Market Caps Under €1B To Consider",
+      "url": "https://finance.yahoo.com/news/3-european-penny-stocks-market-060506798.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-01T06:05:06+00:00",
+      "summary": "The European market has recently seen a boost, with the pan-European STOXX Europe 600 Index rising as geopolitical tensions eased and economic stimulus measures were announced. Amidst this backdrop, i",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "3 European Penny Stocks With A Market Cap Of €20M",
+      "url": "https://finance.yahoo.com/news/3-european-penny-stocks-market-110515548.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-15T11:05:15+00:00",
+      "summary": "As European markets continue to navigate a landscape marked by mixed performances and hopes for easing trade tensions, investors are increasingly seeking opportunities in less conventional areas. Penn",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

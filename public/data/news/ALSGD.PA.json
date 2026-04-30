@@ -1,0 +1,53 @@
+{
+  "ticker": "ALSGD.PA",
+  "last_updated": "2026-04-30T06:05:11.985594+00:00",
+  "sentiment_score": 0.2,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SpineGuard: Official Launch of Three New PediGuard® Models During the Annual Scoliosis Meeting in China",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/spineguard-official-launch-three-pediguard-160000306.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T16:00:00+00:00",
+      "summary": "PARIS & BOULDER, Colo., April 28, 2026--Regulatory News: SpineGuard (FR0011464452 - ALSGD), an innovative company that deploys its DSG® (Dynamic Surgical Guidance) local conductivity sensing technolog",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SpineGuard Reports Its Full-year 2025 Revenue",
+      "url": "https://finance.yahoo.com/news/spineguard-reports-full-2025-revenue-170000643.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-19T17:00:00+00:00",
+      "summary": "PARIS & BOULDER, Colo., January 19, 2026--Regulatory News: SpineGuard (FR0011464452 – ALSGD), an innovative company that deploys its digital surgical guidance (DSG®) technology, which measures the ele",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SpineGuard Announces its 2026 Financial Calendar",
+      "url": "https://finance.yahoo.com/news/spineguard-announces-2026-financial-calendar-170000565.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-05T17:00:00+00:00",
+      "summary": "PARIS & BOULDER, Colo., January 05, 2026--Regulatory News: SpineGuard (FR0011464452 – ALSGD), an innovative company that deploys its DSG® (Dynamic Surgical Guidance) local conductivity sensing technol",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "PhD Thesis Presentation of Positive Results Obtained by SpineGuard’s New Ultrasound Technology",
+      "url": "https://finance.yahoo.com/news/phd-thesis-presentation-positive-results-170000003.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-17T17:00:00+00:00",
+      "summary": "PARIS & BOULDER, Colo., December 17, 2025--Regulatory News: SpineGuard (FR0011464452 - ALSGD), an innovative company that deploys its DSG® (Dynamic Surgical Guidance) local conductivity sensing techno",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SpineGuard Obtains the Clearance of Three New PediGuard® Models in China",
+      "url": "https://finance.yahoo.com/news/spineguard-obtains-clearance-three-pediguard-170000137.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-04T17:00:00+00:00",
+      "summary": "PARIS & BOULDER, Colo., December 04, 2025--Regulatory News: SpineGuard (FR0011464452 - ALSGD), an innovative company that deploys its DSG® (Dynamic Surgical Guidance) local conductivity sensing techno",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

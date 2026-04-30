@@ -1,0 +1,44 @@
+{
+  "ticker": "ALSAF.PA",
+  "last_updated": "2026-04-30T06:04:35.336491+00:00",
+  "sentiment_score": 0.25,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SAFE, SPONSOR OF THE 12TH MAMMI INTERNATIONAL CONFERENCE IN ITALY",
+      "url": "https://finance.yahoo.com/news/safe-sponsor-12th-mammi-international-070000178.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-22T07:00:00+00:00",
+      "summary": "SAFE, SPONSOR OF THE 12TH MAMMI INTERNATIONAL CONFERENCE IN ITALY Presentation of its Sycamore technology during a live surgical procedure Fleurieux-sur-l’Arbresle – France – December 22, 2025 – 8am -",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SAFE SIGNS A STRATEGIC DISTRIBUTION AGREEMENT IN SPAIN WITH VORTROM BIOLOGICS",
+      "url": "https://finance.yahoo.com/news/safe-signs-strategic-distribution-agreement-070000666.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-17T07:00:00+00:00",
+      "summary": "SAFE SIGNS A STRATEGIC DISTRIBUTION AGREEMENT IN SPAIN WITH VORTROM BIOLOGICS A major partnership to accelerate Safe's development in the Spanish market Fleurieux-sur-l’Arbresle – France – December 17",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Safe Group announces FDA 510(k) clearance for SpineUp's Frida solution",
+      "url": "https://finance.yahoo.com/news/safe-group-announces-fda-510-160400687.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-06-10T16:04:00+00:00",
+      "summary": "Safe Group announces FDA 510(k) clearance for SpineUp's Frida solution Fleurieux-sur-l’Arbresle - France - June 5, 2025 at 6 p.m. Safe Group, a leading player in the field of medical devices for spine",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "SAFE Group - Successful first surgeries in Texas following purchase contract",
+      "url": "https://finance.yahoo.com/news/safe-group-successful-first-surgeries-160000652.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-12T16:00:00+00:00",
+      "summary": "Successful first surgeries in Texas following purchase contract Fleurieux-sur-l’Arbresle - France – May 12, 2025, 6.00 p.m. Safe Group (FR001400F1V2 – ALSAF), a leader in innovative medical solutions,",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "ALCLA.PA",
+  "last_updated": "2026-04-30T05:41:22.178847+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Claranova Accelerates its AI Adoption and Restructures its Organization",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/claranova-accelerates-ai-adoption-restructures-060000197.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-29T06:00:00+00:00",
+      "summary": "PARIS, April 29, 2026--Regulatory News: Claranova (Euronext Growth Paris: FR0013426004 - ALCLA) is expanding the integration of artificial intelligence at the core of its operations both in its intern",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Illumisoft Lighting Corp. Announces Closing of its Qualifying Transaction",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/illumisoft-lighting-corp-announces-closing-175000088.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T17:50:00+00:00",
+      "summary": "Not for distribution to U.S. news wire services or for dissemination in the United States VANCOUVER, BC / ACCESS Newswire / April 21, 2026 / Illumisoft Lighting Corp. (TSXV:UVC) (the \"Company\" or \"Ill",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Gstaad Capital Corp. and Claranova Technologies Inc. Announce TSXV Conditional Acceptance and Filing of Filing Statement for Their Qualifying Transaction",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gstaad-capital-corp-claranova-technologies-133500590.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-08T13:35:00+00:00",
+      "summary": "Not for distribution to U.S. news wire services or for dissemination in the United States VANCOUVER, BC / ACCESS Newswire / April 8, 2026 / Gstaad Capital Corp.(\"Gstaad\")(TSXV:GTD.H), a capital pool c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Claranova: H1 2025-2026 Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/claranova-h1-2025-2026-results-173000468.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-25T17:30:00+00:00",
+      "summary": "PARIS, March 25, 2026--Regulatory News: Claranova (Euronext Growth : FR0013426004 - ALCLA) improved its operating margin and reported positive net income while maintaining debt under control in H1 202",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Claranova and Reverso Enter Into a Strategic Partnership and Launch an AI-Native Multilingual Document Intelligence Platform for Businesses",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/claranova-reverso-enter-strategic-partnership-070000772.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-23T07:00:00+00:00",
+      "summary": "PARIS, March 23, 2026--Regulatory News: Claranova (Paris:ALCLA):",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

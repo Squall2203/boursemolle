@@ -1,0 +1,44 @@
+{
+  "ticker": "VLTSA.PA",
+  "last_updated": "2026-04-30T05:32:18.083153+00:00",
+  "sentiment_score": -0.25,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "+25%: strong growth in Q1 2026 turnover",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/25-strong-growth-q1-2026-163300048.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T16:33:00+00:00",
+      "summary": "+25%: strong growth in Q1 2026 turnover First-quarter (Q1) 2026 turnover amounts to 133.3 million euros, showing a strong increase, driven by Energy Sales and the intensification of Renvolt’s activity",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Rio Tinto Expands African Renewables As Shares Trade Above Target Price",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/rio-tinto-expands-african-renewables-130744362.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-11T13:07:44+00:00",
+      "summary": "Rio Tinto Group signed new power purchase agreements with Voltalia in South Africa, supporting the commissioning of the Bolobedu solar farm. The company also agreed a partnership with the Internationa",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Voltalia SA: Total number of shares and voting rights in the share capital as of March 31, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/voltalia-sa-total-number-shares-160000766.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T16:00:00+00:00",
+      "summary": "Total number of shares and voting rights in the share capital as of March 31, 2026 (Articles L. 233-8 (II) of the French Commercial Code and 223-16 of the General Regulations of the French Financial M",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Voltalia commissions 148MW Bolobedu solar farm in South Africa",
+      "url": "https://www.energymonitor.ai/news/voltalia-commissions-bolobedu-solar-farm/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-09T10:55:36+00:00",
+      "summary": "The plant will supply 300GWh annually and reduce emissions by more than 237,000tpa.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

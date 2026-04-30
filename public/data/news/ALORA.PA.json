@@ -1,0 +1,26 @@
+{
+  "ticker": "ALORA.PA",
+  "last_updated": "2026-04-30T05:54:12.682208+00:00",
+  "sentiment_score": -0.5,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Altheora And 2 Other Promising European Penny Stocks To Watch",
+      "url": "https://finance.yahoo.com/news/altheora-2-other-promising-european-110518560.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-20T11:05:18+00:00",
+      "summary": "As European markets experience a boost from easing trade tensions and optimism over potential U.S. interest rate cuts, investors are increasingly looking at diverse opportunities across the continent.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

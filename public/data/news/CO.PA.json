@@ -1,0 +1,53 @@
+{
+  "ticker": "CO.PA",
+  "last_updated": "2026-04-30T05:40:57.749615+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Casino Group: Q1 2026 activity",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/casino-group-q1-2026-activity-160000103.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-29T16:00:00+00:00",
+      "summary": "FIRST-QUARTER 2026 Profitability improvement and sustained operational performance Net sales: €1.95bn (+0.3% LFL) Q1 2026 net sales amounted to €1,946m, up +0.3% LFL Convenience brands: €1.7bn (+0.6% ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Casino Group Communication",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/casino-group-communication-060100393.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-27T06:01:00+00:00",
+      "summary": "Casino Group Communication Paris, 27 April 2026 On 17 April 2026, Companhia Brasileira de Distribuição (GPA) applied for and obtained from a Brazilian civil court a preliminary injunction prohibiting ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Casino Group: Status update on the project to adapt and strengthen the Casino Group’s financial structure",
+      "url": "https://finance.yahoo.com/news/casino-group-status-project-adapt-173000361.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-03-05T17:30:00+00:00",
+      "summary": "Status update on the project to adapt and strengthen the Casino Group’s financial structure Paris, 5 March 2026 Further to the Casino Group's previous communications regarding the project to adapt and",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Casino Group: 2025 fourth quarter and full-year net sales",
+      "url": "https://finance.yahoo.com/news/casino-group-2025-fourth-quarter-071500296.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-26T07:15:00+00:00",
+      "summary": "2025 FOURTH QUARTER AND FULL-YEAR NET SALES Given the ongoing negotiations to adapt and strengthen the financial structure, the Group will publish its 2025 full-year results by 31 March 2026 and will ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Status update on the project to adapt and strengthen the Casino Group’s financial structure",
+      "url": "https://finance.yahoo.com/news/status-project-adapt-strengthen-casino-213400875.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-10T21:34:00+00:00",
+      "summary": "Status update on the project to adapt and strengthen the Casino Group’s financial structure Paris, 10 February 2026 In order to support the execution of its strategic plan, and in light of the maturit",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

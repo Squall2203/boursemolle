@@ -1,0 +1,26 @@
+{
+  "ticker": "ALDNE.PA",
+  "last_updated": "2026-04-30T05:43:13.176211+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "European Penny Stocks: Don't Nod Entertainment Leads Our Top 3 Picks",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-dont-nod-060500225.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-01T06:05:00+00:00",
+      "summary": "The European stock market has shown resilience, with major indices like Italy's FTSE MIB and Germany's DAX posting gains amid a climate of cautious optimism regarding interest rate policies and trade ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In May 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-may-110454803.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-05-29T11:04:54+00:00",
+      "summary": "As European markets face challenges from proposed U.S. tariffs and a contraction in eurozone business activity, investors are keenly observing how these developments influence smaller stocks. Penny st",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

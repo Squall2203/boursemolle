@@ -1,0 +1,53 @@
+{
+  "ticker": "ALSPW.PA",
+  "last_updated": "2026-04-30T06:05:57.356762+00:00",
+  "sentiment_score": 0.6,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "SPINEWAY : Minutes of the General Meeting of April 2, 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spineway-minutes-general-meeting-april-060000321.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-07T06:00:00+00:00",
+      "summary": "Ecully, April 7, 2026 – 8:00 a.m. SPINEWAY Minutes of the General Meeting of April 2, 2026 The Combined General Meeting (Ordinary and Extraordinary) of Spineway shareholders was held on first notice o",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Spineway : 2025 annual results",
+      "url": "https://finance.yahoo.com/news/spineway-2025-annual-results-180000664.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-17T18:00:00+00:00",
+      "summary": "Ecully, February 17, 2026 – 7:00 p.m. SPINEWAY2025 annual results Revenue up 4%Improved resultsStronger growth potential Condensed consolidated income statement20252024Pro forma* 2024ReportedIn thousa",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "SPINEWAY : 2025 revenue of €12.4 million,  with an acceleration of sales in Q4 2025 (+34%)",
+      "url": "https://finance.yahoo.com/news/spineway-2025-revenue-12-4-173000417.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-13T17:30:00+00:00",
+      "summary": "Ecully, January 13, 2026 – 6:30 p.m. SPINEWAY 2025 revenue of €12.4 million, with an acceleration of sales in Q4 2025 (+34%) In thousands of euros20252024Change as a %H1 revenue5,5736,535-15%H2 revenu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Spineway : Revenue growth in the third quarter",
+      "url": "https://finance.yahoo.com/news/spineway-revenue-growth-third-quarter-164700000.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-14T16:47:00+00:00",
+      "summary": "Ecully, October 14, 2025 – 6:30 p.m. SPINEWAYRevenue growth in the third quarter In thousands of euros20252024Change as a %Q3 revenue3,0452,575 +18%Q2 revenue2,7453,465-21% Q1 revenue2,8283,070-8%9M r",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Spineway : H1 2025 results - Continued improvement in results and financial position",
+      "url": "https://finance.yahoo.com/news/spineway-h1-2025-results-continued-172400442.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-30T17:24:00+00:00",
+      "summary": "Press release Ecully, July 30, 2025 – 7 p.m. SPINEWAY H1 2025 results Continued improvement in results and financial positionFull-year 2025 growth target confirmed In thousands of eurosConsolidated fi",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

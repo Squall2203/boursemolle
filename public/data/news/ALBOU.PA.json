@@ -1,0 +1,53 @@
+{
+  "ticker": "ALBOU.PA",
+  "last_updated": "2026-04-30T05:56:08.215915+00:00",
+  "sentiment_score": 0.04,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "Bourrelier Group And 2 Other Undiscovered Gems To Enhance Your Portfolio",
+      "url": "https://finance.yahoo.com/news/bourrelier-group-2-other-undiscovered-103304041.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-02-06T10:33:04+00:00",
+      "summary": "As the eurozone economy continues its modest recovery, marked by a 1.5% growth in 2025 and improving confidence, European markets present intriguing opportunities for investors seeking to diversify th",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "European Undiscovered Gems to Explore in January 2026",
+      "url": "https://finance.yahoo.com/news/european-undiscovered-gems-explore-january-103302805.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-08T10:33:02+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index reaches new heights, buoyed by an improving economic backdrop and a strong annual performance in 2025, investors are increasingly turning their attention to ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bourrelier Group And 2 Other Promising Small Caps In Europe",
+      "url": "https://finance.yahoo.com/news/bourrelier-group-2-other-promising-053310836.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-10T05:33:10+00:00",
+      "summary": "Amidst a backdrop of mixed returns in major European stock indexes, the pan-European STOXX Europe 600 Index ended slightly higher, buoyed by hopes of interest rate cuts in the U.S. and UK. As eurozone",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Bourrelier Group (ENXTPA:ALBOU) Earnings Surge 228%, Margin Recovery Challenges Skeptics After Heavy One-Off Loss",
+      "url": "https://finance.yahoo.com/news/bourrelier-group-enxtpa-albou-earnings-071255195.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-02T07:12:55+00:00",
+      "summary": "Bourrelier Group (ENXTPA:ALBOU) delivered a dramatic turnaround in the past year, notching a 228.1% surge in earnings growth after five years of average annual declines at -19.9%. Newly profitable, th",
+      "sentiment": "positif",
+      "sentiment_score": 0.2
+    },
+    {
+      "title": "Societe Generale: shares & voting rights as of 31 August 2025",
+      "url": "https://finance.yahoo.com/news/societe-generale-shares-voting-rights-153700303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:37:00+00:00",
+      "summary": "NUMBER OF SHARES COMPOSING CURRENT SHARE CAPITAL AND TOTAL NUMBER OF VOTING RIGHTS AS OF 31 AUGUST 2025Regulated Information Paris, 9 September 2025 Information about the total number of voting rights",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

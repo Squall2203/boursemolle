@@ -1,0 +1,53 @@
+{
+  "ticker": "AL2SI.PA",
+  "last_updated": "2026-04-30T05:51:48.276039+00:00",
+  "sentiment_score": 0.4,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "3 High Growth Tech Stocks With Promising Global Potential",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/3-high-growth-tech-stocks-093832959.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-10T09:38:32+00:00",
+      "summary": "As global markets navigate the complexities of Middle East tensions and energy market volatility, major indices like the Nasdaq Composite have shown resilience with significant gains, reflecting a bro",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "2CRSi SA: Valeo and 2CRSi Announce Strategic Partnership to Develop Innovative Liquid Cooling Solutions for Edge Data Centers",
+      "url": "https://finance.yahoo.com/news/2crsi-sa-valeo-2crsi-announce-075000201.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-04T07:50:00+00:00",
+      "summary": "The partners will present their first dielectric-immersion cooling solution at Data Centre World Paris 2025 on November 5-6 on Valeo's booth. PARIS, FR / ACCESS Newswire / November 4, 2025 /Valeo, a g",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2CRSi SA: 2CRSi Announces Strategic Partnership with NAFFCO to Develop AI Modular Factories Across the MEA EN",
+      "url": "https://finance.yahoo.com/news/2crsi-sa-2crsi-announces-strategic-164500055.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-20T16:45:00+00:00",
+      "summary": "DUBAI, UAE / ACCESS Newswire / October 20, 2025 /NAFFCO Group, a global leader in manufacturing firefighting, safety, and engineering systems, today announced a strategic partnership with 2CRSi, a glo",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2CRSi SA: First Order Under the \"$610m\" Contract: $290 Million for California",
+      "url": "https://finance.yahoo.com/news/2crsi-sa-first-order-under-174500149.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-29T17:45:00+00:00",
+      "summary": "SAN JOSE, CA / ACCESS Newswire / September 29, 2025 /2CRSi (ISIN: FR0013341781), a designer and manufacturer of high-performance, energy-efficient servers, announces the first order $290 million (list",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "2CRSi SA: The 2CRSi Group Recorded Revenue of €220.8 Million for the 2024/2025 Fiscal Year, Representing a 31% Increase",
+      "url": "https://finance.yahoo.com/news/2crsi-sa-2crsi-group-recorded-161000956.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-24T16:10:00+00:00",
+      "summary": "STRASBOURG, FR / ACCESS Newswire / July 24, 2025 /2CRSi (ISIN code: FR0013341781), a designer and manufacturer of high-performance, energy-efficient servers, announces annual revenue of €220.8 million",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

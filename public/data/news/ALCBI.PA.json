@@ -1,0 +1,35 @@
+{
+  "ticker": "ALCBI.PA",
+  "last_updated": "2026-04-30T05:42:15.554417+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "European Penny Stocks To Watch In December 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-december-110510584.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-23T11:05:10+00:00",
+      "summary": "As the European markets show signs of steady economic growth, with the pan-European STOXX Europe 600 Index rising by 1.60%, investors are keenly observing how looser monetary policies might influence ",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "3 European Penny Stocks With Market Caps Under €200M To Consider",
+      "url": "https://finance.yahoo.com/news/3-european-penny-stocks-market-060507682.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-13T06:05:07+00:00",
+      "summary": "The European market has recently experienced a pullback, with concerns over artificial intelligence-related stock valuations affecting investor sentiment across major indices. Despite these challenges",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "Top European Penny Stocks To Watch In August 2025",
+      "url": "https://finance.yahoo.com/news/top-european-penny-stocks-watch-060505018.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-07T06:05:05+00:00",
+      "summary": "As the European market navigates through recent economic challenges, including a disappointing trade deal framework with the U.S. and fluctuating stock indexes, investors are keenly observing potentia",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "ticker": "BLEE.PA",
+  "last_updated": "2026-04-30T05:39:14.578355+00:00",
+  "sentiment_score": 0.5,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Formation Bio gains global rights to Lynk Pharma’s TYK2 inhibitor",
+      "url": "https://www.pharmaceutical-technology.com/news/formation-bio-lynk/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-11T10:15:47+00:00",
+      "summary": "Lynk Pharmaceuticals will receive an upfront payment and potential milestone payments that could reach $605m.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}

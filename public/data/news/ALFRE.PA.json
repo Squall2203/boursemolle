@@ -1,0 +1,53 @@
+{
+  "ticker": "ALFRE.PA",
+  "last_updated": "2026-04-30T05:46:06.227750+00:00",
+  "sentiment_score": 0.07,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "European Penny Stocks Spotlight: BFF Bank And 2 More Standout Picks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/european-penny-stocks-spotlight-bff-060457596.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-23T06:04:57+00:00",
+      "summary": "European markets have shown resilience, with the pan-European STOXX Europe 600 Index rising by 1.91% as investors remain optimistic amid easing geopolitical tensions and corporate earnings reports. In",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Penny Stocks With Market Caps Up To €1B",
+      "url": "https://finance.yahoo.com/news/3-european-penny-stocks-market-060519844.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-29T06:05:19+00:00",
+      "summary": "As the pan-European STOXX Europe 600 Index edges closer to record highs, optimism about future earnings and economic prospects is creating a favorable backdrop for investors. Penny stocks, although an",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Penny Stocks To Watch In November 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-watch-november-060453708.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-11-28T06:04:53+00:00",
+      "summary": "Amidst renewed concerns over inflated AI stock valuations, European markets have experienced a downturn, with the pan-European STOXX Europe 600 Index declining by 2.21%. Despite these broader market c",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    },
+    {
+      "title": "European Penny Stocks To Consider In October 2025",
+      "url": "https://finance.yahoo.com/news/european-penny-stocks-consider-october-060512791.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-30T06:05:12+00:00",
+      "summary": "The European markets have shown resilience with the pan-European STOXX Europe 600 Index climbing 1.68% and major stock indexes across the continent experiencing gains, reflecting a robust economic out",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Freelance.com (ENXTPA:ALFRE) Profit Margin Rise Challenges Bearish Growth Narratives",
+      "url": "https://finance.yahoo.com/news/freelance-com-enxtpa-alfre-profit-191155905.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-21T19:11:55+00:00",
+      "summary": "Freelance.com (ENXTPA:ALFRE) posted a net profit margin of 2.2%, up from 1.6% a year ago. Earnings grew a substantial 53.2% over the past year, outpacing its five-year annual growth rate of 20.2%. Tha",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    }
+  ]
+}

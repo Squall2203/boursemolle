@@ -1,0 +1,44 @@
+{
+  "ticker": "BUR.PA",
+  "last_updated": "2026-04-30T05:32:30.593331+00:00",
+  "sentiment_score": 0.0,
+  "sentiment_label": "neutre",
+  "articles": [
+    {
+      "title": "3 European Dividend Stocks Yielding Up To 10%",
+      "url": "https://finance.yahoo.com/news/3-european-dividend-stocks-yielding-053141871.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-12-17T05:31:41+00:00",
+      "summary": "As the European market experiences mixed movements with indices like Germany’s DAX and Italy’s FTSE MIB seeing gains while France's CAC 40 and the UK’s FTSE 100 face declines, investors are closely wa",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks To Consider Now",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-consider-now-053143677.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-29T05:31:43+00:00",
+      "summary": "As European markets experience a positive upswing, with major indices like the STOXX Europe 600 Index and Germany's DAX showing notable gains, investors are increasingly looking towards stable investm",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LVMH: Share transactions disclosure",
+      "url": "https://finance.yahoo.com/news/lvmh-share-transactions-disclosure-154700501.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:47:00+00:00",
+      "summary": "Paris, September 9th, 2025 The disclosure of share transactions carried out from September 1st to September 5th, 2025, was sent to the AMF on September 9th, 2025. As required by current law, this docu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "European Dividend Stocks Featuring 3 Top Picks",
+      "url": "https://finance.yahoo.com/news/european-dividend-stocks-featuring-3-103143864.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-03T10:31:43+00:00",
+      "summary": "As European markets face challenges from political instability and renewed tariff uncertainties, the pan-European STOXX Europe 600 Index recently ended lower amid these concerns. In this environment, ",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

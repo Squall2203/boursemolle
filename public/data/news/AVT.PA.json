@@ -1,0 +1,26 @@
+{
+  "ticker": "AVT.PA",
+  "last_updated": "2026-04-30T05:38:08.734429+00:00",
+  "sentiment_score": -0.5,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Spotlight On 3 European Penny Stocks With Market Caps Over €4M",
+      "url": "https://finance.yahoo.com/news/spotlight-3-european-penny-stocks-110501349.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-01-27T11:05:01+00:00",
+      "summary": "The European markets have experienced a downturn, with the pan-European STOXX Europe 600 Index declining by 0.98% amid renewed trade and geopolitical uncertainties. In such a climate, investors often ",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "3 European Penny Stocks With Market Caps Under €30M To Consider",
+      "url": "https://finance.yahoo.com/news/3-european-penny-stocks-market-110508656.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-10-16T11:05:08+00:00",
+      "summary": "The European market recently experienced a downturn, with the pan-European STOXX Europe 600 Index falling by 1.10%, as political turmoil and international trade tensions weighed on investor sentiment.",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

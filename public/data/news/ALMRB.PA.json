@@ -1,0 +1,35 @@
+{
+  "ticker": "ALMRB.PA",
+  "last_updated": "2026-04-30T06:02:48.132722+00:00",
+  "sentiment_score": -0.33,
+  "sentiment_label": "négatif",
+  "articles": [
+    {
+      "title": "Societe Generale: shares & voting rights as of 31 August 2025",
+      "url": "https://finance.yahoo.com/news/societe-generale-shares-voting-rights-153700303.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T15:37:00+00:00",
+      "summary": "NUMBER OF SHARES COMPOSING CURRENT SHARE CAPITAL AND TOTAL NUMBER OF VOTING RIGHTS AS OF 31 AUGUST 2025Regulated Information Paris, 9 September 2025 Information about the total number of voting rights",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Bayer Foundation Backs 15 Women Entrepreneurs Scaling Urgent Healthcare and Food Solutions",
+      "url": "https://finance.yahoo.com/news/bayer-foundation-backs-15-women-070000833.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T07:00:00+00:00",
+      "summary": "The Bayer Foundation Women Entrepreneurs Award (BFWEA), powered by the Impact Hub Network, honours 15 women from Latin America, Africa & the Middle East, and Asia Pacific who are addressing critical c",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Nokia expands defense portfolio with two advanced tactical communication solutions",
+      "url": "https://finance.yahoo.com/news/nokia-expands-defense-portfolio-two-070000640.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-09-09T07:00:00+00:00",
+      "summary": "Nokia Mission-Safe Phone Nokia Mission-Safe Phone Nokia Banshee 5G Tactical Radio Nokia Banshee 5G Tactical Radio Press Release Nokia expands defense portfolio with two advanced tactical communication",
+      "sentiment": "négatif",
+      "sentiment_score": -1.0
+    }
+  ]
+}

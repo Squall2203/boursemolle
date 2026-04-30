@@ -1,0 +1,35 @@
+{
+  "ticker": "ALATA.PA",
+  "last_updated": "2026-04-30T05:55:10.381162+00:00",
+  "sentiment_score": 0.67,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Atari Announces Strategic IP Agreement With Ubisoft To Revive Five Acclaimed Titles",
+      "url": "https://finance.yahoo.com/news/atari-announces-strategic-ip-agreement-160000006.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-26T16:00:00+00:00",
+      "summary": "NEW YORK, August 26, 2025--Atari acquired all IP rights for five Ubisoft titles on new platforms, including Cold Fear, I Am Alive, Child of Eden, Grow Home, and Grow Up.",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "ATARI: Capital increase in relation to the repayment in shares of loans from IRATA LLC",
+      "url": "https://finance.yahoo.com/news/atari-capital-increase-relation-repayment-160000310.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-08-07T16:00:00+00:00",
+      "summary": "Capital increase in relation to the repayment in shares of loans from IRATA LLC PARIS, FRANCE (August 7, 2025 - 6.00 pm CET) - Atari® (Euronext Growth Paris: ALATA) — one of the world's most iconic co",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Atari enters into an agreement to invest in Thunderful Group AB",
+      "url": "https://finance.yahoo.com/news/atari-enters-agreement-invest-thunderful-061500608.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2025-07-29T06:15:00+00:00",
+      "summary": "Atari enters into an agreement to invest in Thunderful Group AB PARIS, FRANCE (July 29, 2025 - 8.00 am CET) - Atari® (Euronext Growth Paris: ALATA) — one of the world's most iconic consumer brands and",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "SFPI.PA",
+  "last_updated": "2026-04-30T05:49:11.922108+00:00",
+  "sentiment_score": 0.27,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Three European Undiscovered Gems For Savvy Investors",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/three-european-undiscovered-gems-savvy-053315219.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-29T05:33:15+00:00",
+      "summary": "As European markets face challenges, with the STOXX Europe 600 Index recently declining and key economic indicators like Germany's business confidence reaching pandemic-era lows, investors are increas",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Uncovering Three European Small Cap Gems With Strong Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uncovering-three-european-small-cap-103311854.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-28T10:33:11+00:00",
+      "summary": "As European markets face heightened geopolitical risks and economic uncertainties, small-cap stocks have become an intriguing area for investors seeking growth potential. In this environment, identify",
+      "sentiment": "positif",
+      "sentiment_score": 0.33
+    },
+    {
+      "title": "Exploring Three European Undiscovered Gems with Promising Potential",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exploring-three-european-undiscovered-gems-053258528.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-21T05:32:58+00:00",
+      "summary": "As European markets show resilience with the STOXX Europe 600 Index rising by 1.91% amid geopolitical developments and economic forecasts, investors are increasingly attentive to small-cap opportuniti",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Undiscovered European Gems with Strong Potential April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/undiscovered-european-gems-strong-potential-053300922.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-16T05:33:00+00:00",
+      "summary": "As European markets experience a rally, with the STOXX Europe 600 Index up 3.05% following a U.S.-Iran ceasefire, investors are cautiously optimistic despite looming economic uncertainties like potent",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Exploring Undiscovered Gems in Europe for April 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/exploring-undiscovered-gems-europe-april-103311874.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-04-15T10:33:11+00:00",
+      "summary": "As European markets experience a notable upswing, with the STOXX Europe 600 Index rising 3.05% amid improved global sentiment following a U.S.-Iran ceasefire agreement, investors are increasingly focu",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    }
+  ]
+}
