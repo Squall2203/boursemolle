@@ -1,6 +1,599 @@
 {
   "entries": [
     {
+      "period": "2026-05",
+      "generatedAt": "2026-05-25T11:53:23.102Z",
+      "evaluatedAt": "2026-06-01T13:39:49.794Z",
+      "strategies": {
+        "france-elite": {
+          "portfolioReturn": -0.66,
+          "picks": [
+            {
+              "ticker": "MAU.PA",
+              "name": "Etablissements Maurel & Prom S.A.",
+              "entryPrice": 9.57,
+              "exitPrice": 9.09,
+              "return": -5.02
+            },
+            {
+              "ticker": "ACA.PA",
+              "name": "Crédit Agricole S.A.",
+              "entryPrice": 17.64,
+              "exitPrice": 16.53,
+              "return": -6.29
+            },
+            {
+              "ticker": "EDEN.PA",
+              "name": "Edenred SE",
+              "entryPrice": 22.37,
+              "exitPrice": 23.76,
+              "return": 6.21
+            },
+            {
+              "ticker": "GTT.PA",
+              "name": "Gaztransport & Technigaz SA",
+              "entryPrice": 204,
+              "exitPrice": 196.1,
+              "return": -3.87
+            },
+            {
+              "ticker": "IPS.PA",
+              "name": "Ipsos SA",
+              "entryPrice": 37.3,
+              "exitPrice": 39.26,
+              "return": 5.25
+            },
+            {
+              "ticker": "AMUN.PA",
+              "name": "Amundi S.A.",
+              "entryPrice": 87.15,
+              "exitPrice": 84.45,
+              "return": -3.1
+            },
+            {
+              "ticker": "BNP.PA",
+              "name": "BNP Paribas SA",
+              "entryPrice": 92.34,
+              "exitPrice": 93.16,
+              "return": 0.89
+            },
+            {
+              "ticker": "ALVDM.PA",
+              "name": "Voyageurs du Monde SA",
+              "entryPrice": 147,
+              "exitPrice": 145,
+              "return": -1.36
+            },
+            {
+              "ticker": "EQS.PA",
+              "name": "Equasens Société anonyme",
+              "entryPrice": 38.1,
+              "exitPrice": 39.2,
+              "return": 2.89
+            },
+            {
+              "ticker": "IDIP.PA",
+              "name": "IDI",
+              "entryPrice": 73.2,
+              "exitPrice": 71.6,
+              "return": -2.19
+            }
+          ],
+          "benchmarkReturn": -1.44,
+          "alpha": 0.78
+        },
+        "value-pea": {
+          "portfolioReturn": -1.52,
+          "picks": [
+            {
+              "ticker": "INDU-C.ST",
+              "name": "AB Industrivärden (publ)",
+              "entryPrice": 506.6,
+              "exitPrice": 504.2,
+              "return": -0.47
+            },
+            {
+              "ticker": "MAU.PA",
+              "name": "Etablissements Maurel & Prom S.A.",
+              "entryPrice": 9.57,
+              "exitPrice": 9.09,
+              "return": -5.02
+            },
+            {
+              "ticker": "DWS.DE",
+              "name": "DWS Group GmbH & Co. KGaA",
+              "entryPrice": 62.25,
+              "exitPrice": 62.2,
+              "return": -0.08
+            },
+            {
+              "ticker": "INVE-B.ST",
+              "name": "Investor AB (publ)",
+              "entryPrice": 385.45,
+              "exitPrice": 382,
+              "return": -0.9
+            },
+            {
+              "ticker": "BIRG.L",
+              "name": "Bank of Ireland Group plc",
+              "entryPrice": 17.615,
+              "exitPrice": 17.42,
+              "return": -1.11
+            },
+            {
+              "ticker": "ACA.PA",
+              "name": "Crédit Agricole S.A.",
+              "entryPrice": 17.64,
+              "exitPrice": 16.53,
+              "return": -6.29
+            },
+            {
+              "ticker": "IPS.PA",
+              "name": "Ipsos SA",
+              "entryPrice": 37.3,
+              "exitPrice": 39.26,
+              "return": 5.25
+            },
+            {
+              "ticker": "AGS.BR",
+              "name": "ageas SA/NV",
+              "entryPrice": 68.3,
+              "exitPrice": 66.15,
+              "return": -3.15
+            },
+            {
+              "ticker": "BNP.PA",
+              "name": "BNP Paribas SA",
+              "entryPrice": 92.34,
+              "exitPrice": 93.16,
+              "return": 0.89
+            },
+            {
+              "ticker": "DBK.DE",
+              "name": "Deutsche Bank Aktiengesellschaft",
+              "entryPrice": 28.975,
+              "exitPrice": 27.72,
+              "return": -4.33
+            }
+          ],
+          "benchmarkReturn": -1.44,
+          "alpha": -0.08
+        },
+        "qualite-monde": {
+          "portfolioReturn": 0.95,
+          "picks": [
+            {
+              "ticker": "DWS.DE",
+              "name": "DWS Group GmbH & Co. KGaA",
+              "entryPrice": 62.25,
+              "exitPrice": 62.2,
+              "return": -0.08
+            },
+            {
+              "ticker": "GTT.PA",
+              "name": "Gaztransport & Technigaz SA",
+              "entryPrice": 204,
+              "exitPrice": 196.1,
+              "return": -3.87
+            },
+            {
+              "ticker": "NEM",
+              "name": "Newmont Corporation",
+              "entryPrice": 107.64,
+              "exitPrice": 109.81,
+              "return": 2.02
+            },
+            {
+              "ticker": "INDU-C.ST",
+              "name": "AB Industrivärden (publ)",
+              "entryPrice": 506.6,
+              "exitPrice": 504.2,
+              "return": -0.47
+            },
+            {
+              "ticker": "INVE-B.ST",
+              "name": "Investor AB (publ)",
+              "entryPrice": 385.45,
+              "exitPrice": 382,
+              "return": -0.9
+            },
+            {
+              "ticker": "NVDA",
+              "name": "NVIDIA Corporation",
+              "entryPrice": 215.33,
+              "exitPrice": 211.14,
+              "return": -1.95
+            },
+            {
+              "ticker": "CF",
+              "name": "CF Industries Holdings, Inc.",
+              "entryPrice": 121.7,
+              "exitPrice": 112.35,
+              "return": -7.68
+            },
+            {
+              "ticker": "GOOGL",
+              "name": "Alphabet Inc.",
+              "entryPrice": 382.97,
+              "exitPrice": 380.34,
+              "return": -0.69
+            },
+            {
+              "ticker": "6857.T",
+              "name": "Advantest Corporation",
+              "entryPrice": 27755,
+              "exitPrice": 25675,
+              "return": -7.49
+            },
+            {
+              "ticker": "6861.T",
+              "name": "Keyence Corporation",
+              "entryPrice": 78860,
+              "exitPrice": 80220,
+              "return": 1.72
+            },
+            {
+              "ticker": "NOVO-B.CO",
+              "name": "Novo Nordisk A/S",
+              "entryPrice": 289,
+              "exitPrice": 293.3,
+              "return": 1.49
+            },
+            {
+              "ticker": "MU",
+              "name": "Micron Technology, Inc.",
+              "entryPrice": 751,
+              "exitPrice": 971,
+              "return": 29.29
+            }
+          ],
+          "benchmarkReturn": -0.08,
+          "alpha": 1.03
+        },
+        "dividendes-croissants": {
+          "portfolioReturn": -1.09,
+          "picks": [
+            {
+              "ticker": "III.L",
+              "name": "3i Group Ord",
+              "entryPrice": 2310,
+              "exitPrice": 2269,
+              "return": -1.77
+            },
+            {
+              "ticker": "EVO.ST",
+              "name": "Evolution AB (publ)",
+              "entryPrice": 703.2,
+              "exitPrice": 697,
+              "return": -0.88
+            },
+            {
+              "ticker": "ALV.DE",
+              "name": "Allianz SE",
+              "entryPrice": 389.2,
+              "exitPrice": 375.4,
+              "return": -3.55
+            },
+            {
+              "ticker": "HNR1.DE",
+              "name": "Hannover Rück SE",
+              "entryPrice": 243.6,
+              "exitPrice": 229,
+              "return": -5.99
+            },
+            {
+              "ticker": "0883.HK",
+              "name": "CNOOC Limited",
+              "entryPrice": 27.44,
+              "exitPrice": 26.7,
+              "return": -2.7
+            },
+            {
+              "ticker": "3659.T",
+              "name": "NEXON Co., Ltd.",
+              "entryPrice": 2230,
+              "exitPrice": 2307,
+              "return": 3.45
+            },
+            {
+              "ticker": "MAU.PA",
+              "name": "Etablissements Maurel & Prom S.A.",
+              "entryPrice": 9.57,
+              "exitPrice": 9.09,
+              "return": -5.02
+            },
+            {
+              "ticker": "TME",
+              "name": "Tencent Music Entertainment Group",
+              "entryPrice": 8.81,
+              "exitPrice": 9.22,
+              "return": 4.65
+            },
+            {
+              "ticker": "IPS.PA",
+              "name": "Ipsos SA",
+              "entryPrice": 37.3,
+              "exitPrice": 39.26,
+              "return": 5.25
+            },
+            {
+              "ticker": "DBK.DE",
+              "name": "Deutsche Bank Aktiengesellschaft",
+              "entryPrice": 28.975,
+              "exitPrice": 27.72,
+              "return": -4.33
+            }
+          ],
+          "benchmarkReturn": -1.69,
+          "alpha": 0.6
+        },
+        "momentum-europe": {
+          "portfolioReturn": -1.25,
+          "picks": [
+            {
+              "ticker": "INDU-C.ST",
+              "name": "AB Industrivärden (publ)",
+              "entryPrice": 506.6,
+              "exitPrice": 504.2,
+              "return": -0.47
+            },
+            {
+              "ticker": "INVE-B.ST",
+              "name": "Investor AB (publ)",
+              "entryPrice": 385.45,
+              "exitPrice": 382,
+              "return": -0.9
+            },
+            {
+              "ticker": "GTT.PA",
+              "name": "Gaztransport & Technigaz SA",
+              "entryPrice": 204,
+              "exitPrice": 196.1,
+              "return": -3.87
+            },
+            {
+              "ticker": "DWS.DE",
+              "name": "DWS Group GmbH & Co. KGaA",
+              "entryPrice": 62.25,
+              "exitPrice": 62.2,
+              "return": -0.08
+            },
+            {
+              "ticker": "BOL.ST",
+              "name": "Boliden AB (publ)",
+              "entryPrice": 552.2,
+              "exitPrice": 574,
+              "return": 3.95
+            },
+            {
+              "ticker": "AGS.BR",
+              "name": "ageas SA/NV",
+              "entryPrice": 68.3,
+              "exitPrice": 66.15,
+              "return": -3.15
+            },
+            {
+              "ticker": "ASML.AS",
+              "name": "ASML Holding N.V.",
+              "entryPrice": 1425.4,
+              "exitPrice": 1365.8,
+              "return": -4.18
+            },
+            {
+              "ticker": "BNP.PA",
+              "name": "BNP Paribas SA",
+              "entryPrice": 92.34,
+              "exitPrice": 93.16,
+              "return": 0.89
+            },
+            {
+              "ticker": "ENG.MC",
+              "name": "Enagás, S.A.",
+              "entryPrice": 17.23,
+              "exitPrice": 16.96,
+              "return": -1.57
+            },
+            {
+              "ticker": "AMUN.PA",
+              "name": "Amundi S.A.",
+              "entryPrice": 87.15,
+              "exitPrice": 84.45,
+              "return": -3.1
+            }
+          ],
+          "benchmarkReturn": -1.69,
+          "alpha": 0.44
+        },
+        "pepites-midcap": {
+          "portfolioReturn": 1.43,
+          "picks": [
+            {
+              "ticker": "DWS.DE",
+              "name": "DWS Group GmbH & Co. KGaA",
+              "entryPrice": 62.25,
+              "exitPrice": 62.2,
+              "return": -0.08
+            },
+            {
+              "ticker": "AGS.BR",
+              "name": "ageas SA/NV",
+              "entryPrice": 68.3,
+              "exitPrice": 66.15,
+              "return": -3.15
+            },
+            {
+              "ticker": "LNA.PA",
+              "name": "LNA Santé SA",
+              "entryPrice": 31.1,
+              "exitPrice": 32.5,
+              "return": 4.5
+            },
+            {
+              "ticker": "GTT.PA",
+              "name": "Gaztransport & Technigaz SA",
+              "entryPrice": 204,
+              "exitPrice": 196.1,
+              "return": -3.87
+            },
+            {
+              "ticker": "IPS.PA",
+              "name": "Ipsos SA",
+              "entryPrice": 37.3,
+              "exitPrice": 39.26,
+              "return": 5.25
+            },
+            {
+              "ticker": "RF.PA",
+              "name": "Eurazeo SE",
+              "entryPrice": 46.76,
+              "exitPrice": 46.86,
+              "return": 0.21
+            },
+            {
+              "ticker": "MAU.PA",
+              "name": "Etablissements Maurel & Prom S.A.",
+              "entryPrice": 9.57,
+              "exitPrice": 9.09,
+              "return": -5.02
+            },
+            {
+              "ticker": "VU.PA",
+              "name": "Vusion S.A.",
+              "entryPrice": 135.7,
+              "exitPrice": 145.4,
+              "return": 7.15
+            },
+            {
+              "ticker": "EDEN.PA",
+              "name": "Edenred SE",
+              "entryPrice": 22.37,
+              "exitPrice": 23.76,
+              "return": 6.21
+            },
+            {
+              "ticker": "G24.DE",
+              "name": "Scout24 SE",
+              "entryPrice": 71.75,
+              "exitPrice": 74,
+              "return": 3.14
+            }
+          ],
+          "benchmarkReturn": -0.71,
+          "alpha": 2.14
+        },
+        "tech-us-ml": {
+          "portfolioReturn": 17.57,
+          "picks": [
+            {
+              "ticker": "OPEN",
+              "name": "Opendoor Technologies Inc.",
+              "entryPrice": 5.48,
+              "exitPrice": 5.04,
+              "return": -8.03
+            },
+            {
+              "ticker": "AA",
+              "name": "Alcoa Corporation",
+              "entryPrice": 63.17,
+              "exitPrice": 77.64,
+              "return": 22.91
+            },
+            {
+              "ticker": "AMD",
+              "name": "Advanced Micro Devices, Inc.",
+              "entryPrice": 323.21,
+              "exitPrice": 516.1,
+              "return": 59.68
+            },
+            {
+              "ticker": "MRVL",
+              "name": "Marvell Technology, Inc.",
+              "entryPrice": 153.23,
+              "exitPrice": 205,
+              "return": 33.79
+            },
+            {
+              "ticker": "APP",
+              "name": "AppLovin Corporation",
+              "entryPrice": 449.03,
+              "exitPrice": 613.09,
+              "return": 36.54
+            },
+            {
+              "ticker": "CF",
+              "name": "CF Industries Holdings, Inc.",
+              "entryPrice": 122.31,
+              "exitPrice": 112.35,
+              "return": -8.14
+            },
+            {
+              "ticker": "BKR",
+              "name": "Baker Hughes Company",
+              "entryPrice": 67.67,
+              "exitPrice": 63.88,
+              "return": -5.6
+            },
+            {
+              "ticker": "MU",
+              "name": "Micron Technology, Inc.",
+              "entryPrice": 504.29,
+              "exitPrice": 971,
+              "return": 92.55
+            },
+            {
+              "ticker": "PLTR",
+              "name": "Palantir Technologies Inc.",
+              "entryPrice": 141.18,
+              "exitPrice": 156.54,
+              "return": 10.88
+            },
+            {
+              "ticker": "APA",
+              "name": "APA Corporation",
+              "entryPrice": 38.65,
+              "exitPrice": 36.43,
+              "return": -5.74
+            },
+            {
+              "ticker": "ANET",
+              "name": "Arista Networks, Inc.",
+              "entryPrice": 165.29,
+              "exitPrice": 159.47,
+              "return": -3.52
+            },
+            {
+              "ticker": "PSX",
+              "name": "Phillips 66",
+              "entryPrice": 165.13,
+              "exitPrice": 175.88,
+              "return": 6.51
+            },
+            {
+              "ticker": "ISRG",
+              "name": "Intuitive Surgical, Inc.",
+              "entryPrice": 466.64,
+              "exitPrice": 424.64,
+              "return": -9
+            },
+            {
+              "ticker": "TWLO",
+              "name": "Twilio Inc.",
+              "entryPrice": 142.16,
+              "exitPrice": 190.64,
+              "return": 34.1
+            },
+            {
+              "ticker": "CCL",
+              "name": "Carnival Corporation & plc",
+              "entryPrice": 26.3,
+              "exitPrice": 28.06,
+              "return": 6.69
+            }
+          ]
+        }
+      }
+    },
+    {
       "period": "2026-04",
       "generatedAt": "2026-04-29T11:30:08.667Z",
       "evaluatedAt": "2026-05-04T10:13:47.976Z",
