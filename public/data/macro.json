@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-06-22T18:54:49.885Z",
+  "generatedAt": "2026-06-23T10:20:22.528Z",
   "cac40": {
-    "value": 8400.11,
-    "change": -21.03,
-    "changePercent": -0.25,
+    "value": 8350.45,
+    "change": -49.66,
+    "changePercent": -0.59,
     "label": "CAC 40"
   },
   "sp500": {
-    "value": 7469.19,
-    "change": -31.39,
-    "changePercent": -0.42,
+    "value": 7472.79,
+    "change": -27.79,
+    "changePercent": -0.37,
     "label": "S&P 500"
   },
   "eurusd": {
     "value": 1.14,
     "change": 0,
-    "changePercent": -0.34,
+    "changePercent": -0.17,
     "label": "EUR/USD"
   },
   "brent": {
-    "value": 77.82,
-    "change": -2.03,
-    "changePercent": -2.54,
+    "value": 77.44,
+    "change": -0.46,
+    "changePercent": -0.59,
     "label": "Brent"
   },
   "us10y": {
@@ -40,13 +40,13 @@
   "eurgbp": {
     "value": 0.86,
     "change": 0,
-    "changePercent": -0.47,
+    "changePercent": 0.08,
     "label": "EUR/GBP"
   },
   "eursek": {
-    "value": 10.99,
-    "change": 0,
-    "changePercent": -0.01,
+    "value": 11.04,
+    "change": 0.05,
+    "changePercent": 0.44,
     "label": "EUR/SEK"
   }
 }
