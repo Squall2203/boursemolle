@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-11-03T14:43:07.071Z",
+  "generatedAt": "2026-11-03T20:57:09.038Z",
   "cac40": {
-    "value": 8063,
-    "change": 15.31,
-    "changePercent": 0.19,
+    "value": 8020.31,
+    "change": -27.38,
+    "changePercent": -0.34,
     "label": "CAC 40"
   },
   "sp500": {
-    "value": 7561.67,
-    "change": 20.27,
-    "changePercent": 0.27,
+    "value": 7567.92,
+    "change": 26.52,
+    "changePercent": 0.35,
     "label": "S&P 500"
   },
   "eurusd": {
     "value": 1.12,
     "change": 0,
-    "changePercent": -0.01,
+    "changePercent": 0.03,
     "label": "EUR/USD"
   },
   "brent": {
-    "value": 103.78,
-    "change": -0.99,
-    "changePercent": -0.94,
+    "value": 104.35,
+    "change": -0.42,
+    "changePercent": -0.4,
     "label": "Brent"
   },
   "us10y": {
-    "value": 4.92,
-    "change": 0.03,
-    "changePercent": 0.59,
+    "value": 4.95,
+    "change": 0.06,
+    "changePercent": 1.19,
     "label": "US 10Y"
   },
   "bce": {
@@ -40,13 +40,13 @@
   "eurgbp": {
     "value": 0.83,
     "change": 0,
-    "changePercent": -0.13,
+    "changePercent": -0.01,
     "label": "EUR/GBP"
   },
   "eursek": {
-    "value": 10.97,
-    "change": 0.03,
-    "changePercent": 0.26,
+    "value": 10.96,
+    "change": 0.02,
+    "changePercent": 0.15,
     "label": "EUR/SEK"
   }
 }
