@@ -1,0 +1,53 @@
+{
+  "ticker": "ANSS",
+  "last_updated": "2026-11-24T12:03:47.115245+00:00",
+  "sentiment_score": 0.8,
+  "sentiment_label": "positif",
+  "articles": [
+    {
+      "title": "Adobe vs. Synopsys: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/19/adobe-vs-synopsys-which-technology-stock-is-a-better-buy-for-2027/?source=iedfolrf0000001",
+      "source": "fool.com",
+      "published_at": "2026-11-19T17:57:02+00:00",
+      "summary": "Adobe's cheaper valuation and Synopsys's Ansys-fueled growth set up a sharp contrast for investors weighing where to put their money. Choosing between Adobe Systems Inc. (NASDAQ:ADBE) and Synopsys Inc",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Can AI-Driven EDA Accelerate Synopsys' Next Growth Phase?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-driven-eda-accelerate-synopsys-141300180.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-11-12T14:13:00+00:00",
+      "summary": "SNPS is advancing AI-powered chip design and verification, expanding EDA capabilities and integrating Ansys as rising demand supports its next growth phase.",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "LIVE at embedded world North America: Ansys, a part of Synopsys",
+      "url": "https://go.embeddedcomputing.com/e/1039643/erica-ansys-a-part-of-synopsys/4twgb/732852852/h/u9Tq8adtx24-xflUo1xjaTPn0QpIvVTtJOb7LL9ZVL4",
+      "source": "embeddedcomputing.com",
+      "published_at": "2026-10-16T08:05:30+00:00",
+      "summary": "",
+      "sentiment": "neutre",
+      "sentiment_score": 0.0
+    },
+    {
+      "title": "Synopsys Rises 34.5% in a Month: Should You Buy the Stock Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/synopsys-rises-34-5-month-131800404.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-10-14T13:18:00+00:00",
+      "summary": "SNPS gains from AI-driven chip design demand, recurring revenues and its Ansys acquisition. Should you buy the stock?",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    },
+    {
+      "title": "Synopsys (SNPS) Just Laid Out a $11B AI Roadmap. Is the Stock a Buy Right Now?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/synopsys-snps-just-laid-11b-221932828.html?.tsrc=rss",
+      "source": "yahoo.com",
+      "published_at": "2026-10-13T22:19:32+00:00",
+      "summary": "For much of the past year, Synopsys (NASDAQ:SNPS) was a stock investors argued about more than celebrated. It had piled on debt to buy simulation specialist Ansys, and its design IP business spent the",
+      "sentiment": "positif",
+      "sentiment_score": 1.0
+    }
+  ]
+}
