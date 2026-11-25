@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from config import DATA_DIR, OUTPUT_JSON
+from config import DATA_DIR, MODEL_CARD_PATH, PUBLICATION_CRITERIA, FORWARD_DAYS
 
 log = logging.getLogger(__name__)
 
@@ -28,11 +28,10 @@ BACKTEST_PATH = DATA_DIR / "backtest_results.parquet"
 METRICS_PATH = DATA_DIR / "backtest_metrics.json"
 CURVE_PATH = DATA_DIR / "backtest_curve.json"
 
-RISK_FREE_MONTHLY = 0.04 / 12       # 4% annual risk-free rate, monthly
 
 
-def compute_metrics(monthly_returns: pd.Series) -> dict:
-    """Compute standard performance metrics from a monthly return series."""
+def compute_metrics(monthly_returns: pd.Series, periods_per_year: float = 4) -> dict:
+    """Mesures de performance d'une série de rendements successifs qui ne se chevauchent pas."""
     if monthly_returns.empty:
         return {}
 
@@ -43,17 +42,18 @@ def compute_metrics(monthly_returns: pd.Series) -> dict:
     total_return = (cumulative.iloc[-1] - 1) * 100
 
     # Annualized return
-    years = n / 12
+    years = n / periods_per_year
     ann_return = ((cumulative.iloc[-1]) ** (1 / years) - 1) * 100 if years > 0 else 0
 
     # Sharpe
-    excess = r / 100 - RISK_FREE_MONTHLY
-    sharpe = (excess.mean() / excess.std() * np.sqrt(12)) if excess.std() > 0 else 0
+    risk_free = 0.04 / periods_per_year
+    excess = r / 100 - risk_free
+    sharpe = (excess.mean() / excess.std() * np.sqrt(periods_per_year)) if excess.std() > 0 else 0
 
     # Sortino
     downside = r[r < 0] / 100
-    sortino_denom = np.sqrt((downside ** 2).mean()) * np.sqrt(12) if len(downside) > 0 else 1e-9
-    sortino = ((r / 100 - RISK_FREE_MONTHLY).mean() * 12) / sortino_denom
+    sortino_denom = np.sqrt((downside ** 2).mean()) * np.sqrt(periods_per_year) if len(downside) > 0 else 1e-9
+    sortino = (excess.mean() * periods_per_year) / sortino_denom
 
     # Max drawdown
     running_max = cumulative.cummax()
@@ -92,6 +92,76 @@ def build_monthly_returns(results: pd.DataFrame) -> tuple[pd.Series, pd.Series]:
     return portfolio, universe
 
 
+def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_rets: pd.Series) -> dict:
+    """
+    Résume l'évaluation du modèle et décide s'il est publiable (voir PUBLICATION_CRITERIA).
+    Chaque date de sélection est jugée sur le rendement des FORWARD_DAYS séances qui la suivent.
+    """
+    alpha = (portfolio_rets - universe_rets).dropna()
+    n = int(len(alpha))
+    labeled = results.dropna(subset=["fwd_return"])
+    ic = labeled.groupby("rebalancing_date")[["predicted_score", "fwd_return"]].apply(
+        lambda d: d["predicted_score"].corr(d["fwd_return"], method="spearman")
+    ).dropna()
+
+    hit_rate = float((alpha > 0).mean()) if n else 0.0
+    median_alpha = float(alpha.median()) if n else 0.0
+    rank_ic = float(ic.mean()) if len(ic) else 0.0
+    ex_best = alpha.drop(alpha.idxmax()) if n > 1 else alpha
+
+    # Les dates consécutives partagent deux mois de rendement sur trois : elles ne sont pas des preuves
+    # indépendantes. La même mesure est donc refaite sur des périodes disjointes (une date sur trois),
+    # pour vérifier que le résultat ne tient pas à ce recouvrement.
+    step = max(1, round(FORWARD_DAYS / 21))
+    independent = alpha.iloc[::step]
+
+    # Stabilité : la corrélation de rang doit rester positive sur la moitié récente de l'historique,
+    # sinon l'avantage mesuré appartient peut-être au passé.
+    recent_ic = float(ic.iloc[len(ic) // 2:].mean()) if len(ic) >= 4 else 0.0
+
+    c = PUBLICATION_CRITERIA
+    failed = []
+    if n < c["min_periods"]:
+        failed.append(f"{n} dates évaluées (minimum {c['min_periods']})")
+    if hit_rate < c["min_hit_rate"]:
+        failed.append(f"devant son univers {hit_rate:.0%} du temps (minimum {c['min_hit_rate']:.0%})")
+    if median_alpha <= c["min_median_alpha"]:
+        failed.append(f"écart médian de {median_alpha:+.2f} point (doit être positif)")
+    if rank_ic < c["min_rank_ic"]:
+        failed.append(f"corrélation de rang de {rank_ic:+.3f} (minimum {c['min_rank_ic']:+.2f})")
+    if recent_ic <= 0:
+        failed.append(f"corrélation de rang de {recent_ic:+.3f} sur la moitié récente (doit être positive)")
+
+    card = {
+        "evaluated_at": date.today().isoformat(),
+        "horizon": f"{FORWARD_DAYS} séances après chaque date de sélection mensuelle",
+        "first_date": str(alpha.index.min()) if n else None,
+        "last_date": str(alpha.index.max()) if n else None,
+        "n_periods": n,
+        "n_tickers": int(results["ticker"].nunique()),
+        "periods_ahead": int((alpha > 0).sum()),
+        "hit_rate": round(hit_rate, 3),
+        "mean_alpha_pct": round(float(alpha.mean()) if n else 0.0, 3),
+        "median_alpha_pct": round(median_alpha, 3),
+        "mean_alpha_ex_best_pct": round(float(ex_best.mean()) if len(ex_best) else 0.0, 3),
+        "rank_ic": round(rank_ic, 4),
+        "rank_ic_recent_half": round(recent_ic, 4),
+        "independent_periods": {
+            "n": int(len(independent)),
+            "ahead": int((independent > 0).sum()),
+            "median_alpha_pct": round(float(independent.median()) if len(independent) else 0.0, 3),
+        },
+        "caveat": "Univers limité aux sociétés cotées aujourd'hui : celles qui ont disparu en cours de route "
+                  "n'y figurent pas, ce qui embellit un peu le passé. Hors frais de transaction.",
+        "criteria": c,
+        "failed_criteria": failed,
+        "validated": len(failed) == 0,
+    }
+    MODEL_CARD_PATH.write_text(json.dumps(card, indent=2, ensure_ascii=False))
+    log.info(f"Model card saved to {MODEL_CARD_PATH}")
+    return card
+
+
 def run_backtest(results: pd.DataFrame | None = None) -> dict:
     """
     Load walk-forward results and compute full performance metrics.
@@ -105,21 +175,28 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
 
     portfolio_rets, universe_rets = build_monthly_returns(results)
 
-    port_metrics = compute_metrics(portfolio_rets)
-    univ_metrics = compute_metrics(universe_rets)
+    # Une sélection par mois, tenue trois mois : les périodes se chevauchent. Pour une courbe cumulée
+    # ou un ratio de Sharpe, on ne peut enchaîner que des périodes disjointes, donc une date sur trois.
+    step = max(1, round(FORWARD_DAYS / 21))
+    port_seq, univ_seq = portfolio_rets.dropna().iloc[::step], universe_rets.dropna().iloc[::step]
+    periods_per_year = 252 / FORWARD_DAYS
 
-    alpha_periods = portfolio_rets - universe_rets
+    port_metrics = compute_metrics(port_seq, periods_per_year)
+    univ_metrics = compute_metrics(univ_seq, periods_per_year)
+
+    alpha_periods = (portfolio_rets - universe_rets).dropna()
     avg_alpha = float(alpha_periods.mean())
     hit_vs_bench = float((alpha_periods > 0).mean() * 100)
 
     metrics = {
         "generated_at": date.today().isoformat(),
+        "horizon_sessions": FORWARD_DAYS,
         "portfolio": port_metrics,
         "universe_benchmark": univ_metrics,
         "alpha": {
-            "avg_monthly_pct": round(avg_alpha, 3),
+            "avg_per_period_pct": round(avg_alpha, 3),
             "hit_rate_vs_universe_pct": round(hit_vs_bench, 1),
-            "ann_alpha_pct": round(avg_alpha * 12, 2),
+            "ann_alpha_pct": round(avg_alpha * periods_per_year, 2),
         },
     }
 
@@ -135,11 +212,14 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
         ]
 
     curve = {
-        "portfolio": to_cumulative(portfolio_rets),
-        "universe": to_cumulative(universe_rets),
+        "portfolio": to_cumulative(port_seq),
+        "universe": to_cumulative(univ_seq),
     }
     CURVE_PATH.write_text(json.dumps(curve, indent=2))
     log.info(f"Cumulative curve saved to {CURVE_PATH}")
+
+    card = write_model_card(results, portfolio_rets, universe_rets)
+    metrics["model_card"] = card
 
     # Print summary
     p = metrics["portfolio"]
@@ -149,10 +229,17 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
     log.info(f"  Ann. return:     {p.get('ann_return_pct', 0):+.1f}%")
     log.info(f"  Sharpe:          {p.get('sharpe', 0):.2f}")
     log.info(f"  Max drawdown:    {p.get('max_drawdown_pct', 0):.1f}%")
-    log.info(f"  Avg monthly α:   {a['avg_monthly_pct']:+.2f}%")
+    log.info(f"  Avg α / period:  {a['avg_per_period_pct']:+.2f}%")
     log.info(f"  Ann. alpha:      {a['ann_alpha_pct']:+.1f}%")
     log.info(f"  Hit rate vs univ:{a['hit_rate_vs_universe_pct']:.0f}%")
     log.info("=" * 50)
+    log.info(f"  Écart médian:    {card['median_alpha_pct']:+.2f} pt  |  sans la meilleure date: {card['mean_alpha_ex_best_pct']:+.2f} pt")
+    log.info(f"  Dates devant l'univers: {card['periods_ahead']}/{card['n_periods']}  |  périodes disjointes: {card['independent_periods']['ahead']}/{card['independent_periods']['n']}")
+    log.info(f"  Corrélation de rang: {card['rank_ic']:+.3f}  |  moitié récente: {card['rank_ic_recent_half']:+.3f}")
+    if card["validated"]:
+        log.info("  → Modèle VALIDÉ : ses sélections seront publiées.")
+    else:
+        log.warning("  → Modèle NON validé, ses sélections ne seront pas publiées : " + " ; ".join(card["failed_criteria"]))
 
     return metrics
 

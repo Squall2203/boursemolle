@@ -1,32 +1,40 @@
 """
 Point-in-Time feature engineering for the AlphaPicks ML pipeline.
+
+« Point-in-Time » : à chaque date de sélection, on n'utilise que ce qui était public ce jour-là
+(dernier rapport déposé à la SEC, cours jusqu'à la veille au soir). Aucune donnée du futur.
 """
 import logging
 import json
 from datetime import date
-from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
 from config import (
-    EDGAR_DIR, PRICES_DIR, STOCKS_JSON, DATA_DIR,
-    TAG_MAP, FUNDAMENTAL_FEATURES, MOMENTUM_FEATURES, ALL_FEATURES,
-    MIN_MARKET_CAP_USD, FORWARD_DAYS,
+    EDGAR_DIR, PRICES_DIR, ML_PRICES_DIR, DATA_DIR,
+    TAG_MAP, MOMENTUM_FEATURES, VALUATION_FEATURES, RANKED_FEATURES, ALL_FEATURES,
+    FORWARD_DAYS, REBALANCE_MONTHS,
 )
-from edgar_download import load_all_sub, load_all_num, download_ticker_map
+from edgar_download import load_all_sub, download_ticker_map
 
 log = logging.getLogger(__name__)
 
-FEATURES_PATH       = DATA_DIR / "features.parquet"
-FUNDAMENTALS_PATH   = DATA_DIR / "fundamentals.parquet"   # cache EDGAR permanent
-CHECKPOINT_PATH     = DATA_DIR / "features_checkpoint.parquet"
-MOMENTUM_CHECKPOINT = DATA_DIR / "momentum_checkpoint.parquet"
+FEATURES_PATH = DATA_DIR / "features.parquet"
+
+# Écart maximal toléré entre la date de sélection et la première séance cotée qui la suit (week-ends, jours fériés)
+MAX_ENTRY_GAP_NS = np.int64(7 * 24 * 3600 * 1_000_000_000)
+
+# Un rapport plus ancien que cela n'est plus considéré comme une information à jour sur l'entreprise
+MAX_FILING_AGE_DAYS = 200
 
 # ─── EDGAR data extraction ────────────────────────────────────────────────────
 
 def get_tag_value(num_for_filing, concept, qtrs_filter=None):
+    """Valeur la plus récente d'un poste comptable dans un rapport, ou None."""
+    if num_for_filing is None or num_for_filing.empty:
+        return None
     for tag in TAG_MAP.get(concept, []):
         rows = num_for_filing[num_for_filing["tag"] == tag]
         if qtrs_filter is not None:
@@ -40,133 +48,233 @@ def get_tag_value(num_for_filing, concept, qtrs_filter=None):
     return None
 
 
-def build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates,
-                         checkpoint_path=None, done_tickers=None):
+def load_num_for_filings(adsh_set: set) -> pd.DataFrame:
+    """
+    Charge les valeurs comptables des seuls rapports utiles, trimestre par trimestre.
+    Tout charger d'un bloc (plusieurs dizaines de millions de lignes) est lent et gourmand en mémoire.
+    """
+    files = sorted(EDGAR_DIR.glob("*_num.parquet"))
+    if not files:
+        raise FileNotFoundError("No EDGAR data found. Run: python pipeline.py --download")
+    parts = []
+    for f in tqdm(files, desc="EDGAR num"):
+        part = pd.read_parquet(f)
+        parts.append(part[part["adsh"].isin(adsh_set)])
+    num = pd.concat(parts, ignore_index=True)
+    num["qtrs"] = num["qtrs"].astype("Int64")
+    return num
+
+
+def _safe_div(a, b, scale=1.0):
+    if a is None or b is None or b == 0:
+        return np.nan
+    return (a / b) * scale
+
+
+def _safe_growth(curr, prev):
+    if curr is None or prev is None or prev <= 0:
+        return np.nan
+    return (curr / prev - 1) * 100
+
+
+def _filing_record(filing, num_rows, ya_num):
+    """
+    Variables tirées d'un rapport (et du rapport de la même période un an plus tôt).
+
+    Un rapport annuel (10-K) donne des montants sur douze mois, un rapport trimestriel (10-Q) sur trois.
+    Les montants trimestriels sont multipliés par quatre avant d'être rapportés à un stock (capitaux
+    propres, actif, capitalisation) : sinon la rentabilité d'une même société varierait du simple au
+    quadruple selon le type de son dernier rapport.
+    """
+    flow_q = 4 if "10-K" in str(filing["form"]) else 1
+    annual = 4 / flow_q
+
+    def flow(concept, rows=num_rows):
+        return get_tag_value(rows, concept, qtrs_filter=[flow_q])
+
+    rev, gp, op_inc, net_inc = flow("revenue"), flow("gross_profit"), flow("operating_income"), flow("net_income")
+    rd, eps = flow("rd_expense"), flow("eps_diluted")
+
+    assets      = get_tag_value(num_rows, "total_assets",        qtrs_filter=[0])
+    curr_assets = get_tag_value(num_rows, "current_assets",      qtrs_filter=[0])
+    curr_liab   = get_tag_value(num_rows, "current_liabilities", qtrs_filter=[0])
+    equity      = get_tag_value(num_rows, "total_equity",        qtrs_filter=[0])
+    ltd         = get_tag_value(num_rows, "long_term_debt",      qtrs_filter=[0])
+    cash        = get_tag_value(num_rows, "cash",                qtrs_filter=[0])
+    shares      = get_tag_value(num_rows, "shares_outstanding")
+
+    # Les flux de trésorerie d'un rapport trimestriel sont cumulés depuis le début de l'exercice
+    # (trois, six ou neuf mois). On prend le cumul le plus long disponible et on le ramène à l'année.
+    fcf_ann = None
+    for q in ([4] if flow_q == 4 else [3, 2, 1]):
+        op_cf = get_tag_value(num_rows, "operating_cf", qtrs_filter=[q])
+        if op_cf is None:
+            continue
+        capex = get_tag_value(num_rows, "capex", qtrs_filter=[q])
+        fcf_ann = (op_cf - capex if capex is not None else op_cf) * 4 / q
+        break
+
+    rev_ya = flow("revenue", ya_num) if ya_num is not None else None
+    ni_ya  = flow("net_income", ya_num) if ya_num is not None else None
+
+    def ann(v):
+        return None if v is None else v * annual
+
+    return {
+        "sic": int(filing["sic"]) if pd.notna(filing.get("sic")) else None,
+        "filed_date": filing["filed"].date(),
+        "period_end": filing["period"].date() if pd.notna(filing["period"]) else None,
+        # Montants annualisés, gardés pour calculer la valorisation une fois le cours connu
+        "_revenue_ann": ann(rev), "_net_income_ann": ann(net_inc), "_fcf_ann": fcf_ann,
+        "_eps_ann": ann(eps), "_equity": equity, "_shares": shares,
+        "gp_margin":      _safe_div(gp,      rev, 100),
+        "op_margin":      _safe_div(op_inc,  rev, 100),
+        "net_margin":     _safe_div(net_inc, rev, 100),
+        "fcf_margin":     _safe_div(fcf_ann, ann(rev), 100),
+        "rd_intensity":   _safe_div(rd,      rev, 100),
+        "roe":            _safe_div(ann(net_inc), equity, 100),
+        "roa":            _safe_div(ann(net_inc), assets, 100),
+        "asset_turnover": _safe_div(ann(rev),     assets),
+        "rev_growth_yoy": _safe_growth(rev, rev_ya),
+        "ni_growth_yoy":  _safe_growth(net_inc, ni_ya),
+        "debt_to_equity": _safe_div(ltd,         equity, 100),
+        "current_ratio":  _safe_div(curr_assets, curr_liab),
+        "cash_to_assets": _safe_div(cash,        assets, 100),
+    }
+
+
+def _year_ago_filing(ticker_sub, filing):
+    """
+    Rapport de même nature (annuel ou trimestriel) portant sur la même période un an plus tôt.
+    Comparer un trimestre à une année entière donnerait une « croissance » de −75 %.
+    """
+    if pd.isna(filing["period"]):
+        return None
+    is_annual = "10-K" in str(filing["form"])
+    same_kind = ticker_sub[ticker_sub["form"].str.contains("10-K").astype(bool) == is_annual]
+    target = filing["period"] - pd.DateOffset(years=1)
+    gap = (same_kind["period"] - target).abs()
+    candidates = same_kind[(gap <= pd.Timedelta(days=20)) & (same_kind["filed"] < filing["filed"])]
+    if candidates.empty:
+        return None
+    return candidates.sort_values("filed").iloc[-1]
+
+
+def build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates, only_tickers=None):
     sub = sub[sub["form"].isin(["10-K", "10-Q", "10-K/A", "10-Q/A"])].copy()
     sub["cik"] = sub["cik"].astype("Int64")
     sub["ticker"] = sub["cik"].map(cik_to_ticker)
     sub = sub.dropna(subset=["ticker"])
+    if only_tickers is not None:
+        # Une société sans historique de cours n'a ni momentum ni rendement futur : elle ne peut pas
+        # servir à l'entraînement. L'écarter ici évite de traiter des milliers de sociétés pour rien.
+        sub = sub[sub["ticker"].isin(only_tickers)]
+    if num is None:
+        num = load_num_for_filings(set(sub["adsh"]))
     num_by_adsh = {adsh: grp for adsh, grp in num.groupby("adsh")}
 
     records = []
     tickers = sorted(sub["ticker"].unique())
-    if done_tickers:
-        tickers = [t for t in tickers if t not in done_tickers]
     log.info(f"Building PIT financials for {len(tickers)} tickers x {len(rebalancing_dates)} dates")
 
-    for i, ticker in enumerate(tqdm(tickers, desc="Tickers")):
+    for ticker in tqdm(tickers, desc="Tickers"):
         ticker_sub = sub[sub["ticker"] == ticker].sort_values("filed")
-        cik = ticker_sub.iloc[0]["cik"]
+        cik = int(ticker_sub.iloc[0]["cik"])
+        filed = ticker_sub["filed"].values.astype("datetime64[ns]")
+        # Un même rapport reste le plus récent pendant plusieurs dates de sélection : calculé une seule fois
+        cache: dict[str, dict | None] = {}
 
         for reb_date in rebalancing_dates:
             reb_ts = pd.Timestamp(reb_date)
-            available = ticker_sub[ticker_sub["filed"] <= reb_ts]
-            if available.empty:
+            # « left » : un rapport déposé le jour même n'est pas encore exploitable
+            idx = int(np.searchsorted(filed, reb_ts.to_datetime64(), side="left"))
+            if idx == 0:
                 continue
-            latest = available.iloc[-1]
+            latest = ticker_sub.iloc[idx - 1]
+            if (reb_ts - latest["filed"]).days > MAX_FILING_AGE_DAYS:
+                continue
             adsh = latest["adsh"]
-            num_rows = num_by_adsh.get(adsh, pd.DataFrame())
-            if num_rows.empty:
+            if adsh not in cache:
+                num_rows = num_by_adsh.get(adsh)
+                if num_rows is None or num_rows.empty:
+                    cache[adsh] = None
+                else:
+                    ya = _year_ago_filing(ticker_sub, latest)
+                    ya_num = num_by_adsh.get(ya["adsh"]) if ya is not None else None
+                    cache[adsh] = _filing_record(latest, num_rows, ya_num)
+            rec = cache[adsh]
+            if rec is None:
                 continue
-
-            year_ago_ts = reb_ts - pd.DateOffset(years=1)
-            year_ago_available = ticker_sub[ticker_sub["filed"] <= year_ago_ts]
-            year_ago_num = pd.DataFrame()
-            if not year_ago_available.empty:
-                ya_adsh = year_ago_available.iloc[-1]["adsh"]
-                year_ago_num = num_by_adsh.get(ya_adsh, pd.DataFrame())
-
-            rev     = get_tag_value(num_rows, "revenue",                qtrs_filter=[4, 1])
-            gp      = get_tag_value(num_rows, "gross_profit",           qtrs_filter=[4, 1])
-            op_inc  = get_tag_value(num_rows, "operating_income",       qtrs_filter=[4, 1])
-            net_inc = get_tag_value(num_rows, "net_income",             qtrs_filter=[4, 1])
-            assets  = get_tag_value(num_rows, "total_assets",           qtrs_filter=[0])
-            curr_assets = get_tag_value(num_rows, "current_assets",     qtrs_filter=[0])
-            curr_liab   = get_tag_value(num_rows, "current_liabilities",qtrs_filter=[0])
-            equity  = get_tag_value(num_rows, "total_equity",           qtrs_filter=[0])
-            ltd     = get_tag_value(num_rows, "long_term_debt",         qtrs_filter=[0])
-            cash    = get_tag_value(num_rows, "cash",                   qtrs_filter=[0])
-            op_cf   = get_tag_value(num_rows, "operating_cf",           qtrs_filter=[4, 1])
-            capex   = get_tag_value(num_rows, "capex",                  qtrs_filter=[4, 1])
-            rd      = get_tag_value(num_rows, "rd_expense",             qtrs_filter=[4, 1])
-            rev_ya  = get_tag_value(year_ago_num, "revenue",    qtrs_filter=[4, 1]) if not year_ago_num.empty else None
-            ni_ya   = get_tag_value(year_ago_num, "net_income", qtrs_filter=[4, 1]) if not year_ago_num.empty else None
-
-            def safe_div(a, b, scale=1.0):
-                if a is None or b is None or b == 0: return np.nan
-                return (a / b) * scale
-
-            def safe_growth(curr, prev):
-                if curr is None or prev is None or prev <= 0: return np.nan
-                return (curr / prev - 1) * 100
-
-            records.append({
-                "ticker": ticker, "cik": int(cik),
-                "rebalancing_date": reb_date,
-                "filed_date": latest["filed"].date(),
-                "period_end": latest["period"].date() if pd.notna(latest["period"]) else None,
-                "sic": int(latest["sic"]) if pd.notna(latest.get("sic")) else None,
-                "_revenue": rev, "_net_income": net_inc, "_total_assets": assets,
-                "gp_margin":      safe_div(gp,      rev,    100),
-                "op_margin":      safe_div(op_inc,  rev,    100),
-                "net_margin":     safe_div(net_inc, rev,    100),
-                "roe":            safe_div(net_inc, equity, 100),
-                "roa":            safe_div(net_inc, assets, 100),
-                "asset_turnover": safe_div(rev,     assets),
-                "rev_growth_yoy": safe_growth(rev,     rev_ya),
-                "ni_growth_yoy":  safe_growth(net_inc, ni_ya),
-                "debt_to_equity": safe_div(ltd,         equity, 100),
-                "current_ratio":  safe_div(curr_assets, curr_liab),
-                "cash_to_assets": safe_div(cash,        assets, 100),
-                "fcf_margin": safe_div(
-                    (op_cf - capex) if (op_cf is not None and capex is not None) else op_cf,
-                    rev, 100),
-                "rd_intensity": safe_div(rd, rev, 100),
-            })
-
-        if checkpoint_path and (i + 1) % 500 == 0:
-            pd.DataFrame(records).to_parquet(checkpoint_path, index=False)
-            log.info(f" Checkpoint saved ({i + 1}/{len(tickers)} tickers)")
+            records.append({"ticker": ticker, "cik": cik, "rebalancing_date": reb_date, **rec})
 
     return pd.DataFrame(records)
 
 
 # ─── Price loading ────────────────────────────────────────────────────────────
 
-def load_price_series(ticker: str):
-    """Retourne (dates_ns int64, prices float64) ou None."""
-    p = PRICES_DIR / f"{ticker}.json"
-    if not p.exists():
-        return None
+def load_price_frame(ticker: str):
+    """
+    Retourne (dates_ns, adj, raw) ou None.
+      adj : cours corrigé des divisions et des dividendes (rendements, momentum)
+      raw : cours réellement coté (valorisation)
+    Lit l'historique long du modèle ; à défaut, le fichier de cours du site (cinq ans, sans correction).
+    """
+    p = ML_PRICES_DIR / f"{ticker}.parquet"
     try:
-        raw = json.loads(p.read_text(encoding="utf-8", errors="replace"))
-        candles = raw.get("candles", [])
-        if not candles:
-            return None
-        df = pd.DataFrame(candles)[["date", "close"]]
-        df["date"] = (
-            pd.to_datetime(df["date"], format="mixed", dayfirst=False,
-                           utc=True, errors="coerce")
-            .dt.tz_localize(None)
-        )
-        df = df.dropna(subset=["date"])
+        if p.exists():
+            df = pd.read_parquet(p)
+            df["date"] = pd.to_datetime(df["date"])
+            adj_col, raw_col = "adjclose", "raw_close"
+        else:
+            pj = PRICES_DIR / f"{ticker}.json"
+            if not pj.exists():
+                return None
+            candles = json.loads(pj.read_text(encoding="utf-8", errors="replace")).get("candles", [])
+            if not candles:
+                return None
+            df = pd.DataFrame(candles)[["date", "close"]]
+            df["date"] = pd.to_datetime(df["date"], errors="coerce")
+            adj_col = raw_col = "close"
+        df = df.dropna(subset=["date", adj_col]).sort_values("date").drop_duplicates(subset=["date"], keep="last")
         if df.empty:
             return None
-        df = df.sort_values("date").drop_duplicates(subset=["date"], keep="last")
-        return df["date"].values.astype("int64"), df["close"].values.astype("float64")
+        # Conversion explicite en nanosecondes : depuis pandas 3, les dates n'ont plus d'unité fixe, alors
+        # que tout le pipeline compare à Timestamp.value (nanosecondes). Sans cela, aucune date de
+        # sélection ne retombe dans l'historique et aucun rendement n'est calculé.
+        dates_ns = df["date"].values.astype("datetime64[ns]").astype("int64")
+        return dates_ns, df[adj_col].values.astype("float64"), df[raw_col].values.astype("float64")
     except Exception as e:
         log.warning(f"Failed to load prices for {ticker}: {e}")
         return None
 
 
+def load_price_series(ticker: str):
+    """Retourne (dates_ns, cours corrigés) ou None."""
+    frame = load_price_frame(ticker)
+    return None if frame is None else (frame[0], frame[1])
+
+
+def available_price_tickers() -> set:
+    tickers = {p.stem for p in ML_PRICES_DIR.glob("*.parquet")}
+    for p in PRICES_DIR.glob("*.json"):
+        tickers.add(p.stem[1:] if p.stem.startswith("_") else p.stem)
+    return tickers
+
+
+def _ts_ns(d) -> np.int64:
+    return np.int64(pd.Timestamp(d).value)
+
+
 # ─── Momentum features — numpy pur ───────────────────────────────────────────
 
 def compute_momentum_bulk(dates_ns, prices, reb_dates):
+    """Variables de cours à chaque date, calculées sur les séances strictement antérieures."""
     nan = np.nan
     results = []
     for reb_date in reb_dates:
-        ts_ns = np.int64(pd.Timestamp(reb_date).value)
-        idx   = int(np.searchsorted(dates_ns, ts_ns, side="right"))
+        # « left » : la séance du jour de sélection n'est pas utilisée, son cours de clôture
+        # n'est pas encore connu au moment de choisir.
+        idx = int(np.searchsorted(dates_ns, _ts_ns(reb_date), side="left"))
         if idx == 0:
             results.append({f: nan for f in MOMENTUM_FEATURES})
             continue
@@ -210,57 +318,100 @@ def compute_momentum_features(ticker: str, price_series, ref_date) -> dict:
     return {f: np.nan for f in MOMENTUM_FEATURES}
 
 
+# ─── Valorisation ─────────────────────────────────────────────────────────────
+
+def raw_price_before(dates_ns, raw, ref_date):
+    """Dernier cours réellement coté avant la date de sélection, ou None."""
+    idx = int(np.searchsorted(dates_ns, _ts_ns(ref_date), side="left"))
+    if idx == 0:
+        return None
+    # Un cours trop ancien (cotation suspendue, historique troué) ne dit rien du prix du jour
+    if _ts_ns(ref_date) - dates_ns[idx - 1] > MAX_ENTRY_GAP_NS:
+        return None
+    price = float(raw[idx - 1])
+    return price if np.isfinite(price) and price > 0 else None
+
+
+def valuation_features(rec: dict, price) -> dict:
+    """Comptes publiés rapportés au cours du jour. Les valeurs sont en pourcentage du prix."""
+    out = {f: np.nan for f in VALUATION_FEATURES}
+    if price is None:
+        return out
+
+    def val(key):
+        v = rec.get(key)
+        return None if v is None or (isinstance(v, float) and np.isnan(v)) else float(v)
+
+    shares = val("_shares")
+    mcap = shares * price if shares and shares > 0 else None
+    eps = val("_eps_ann")
+    # Le bénéfice par action est publié directement : plus fiable que bénéfice / nombre d'actions
+    # pour les sociétés à plusieurs classes d'actions.
+    if eps is not None:
+        out["earnings_yield"] = eps / price * 100
+    elif mcap:
+        out["earnings_yield"] = _safe_div(val("_net_income_ann"), mcap, 100)
+    if mcap:
+        out["book_to_price"]  = _safe_div(val("_equity"),      mcap, 100)
+        out["sales_to_price"] = _safe_div(val("_revenue_ann"), mcap, 100)
+        out["fcf_yield"]      = _safe_div(val("_fcf_ann"),     mcap, 100)
+    return out
+
+
 # ─── Forward label computation ────────────────────────────────────────────────
 
 def compute_forward_returns(tickers, rebalancing_dates, forward_days=FORWARD_DAYS):
     records = []
-    log.info("Computing forward returns...")
+    log.info(f"Computing forward returns over {forward_days} sessions...")
     for ticker in tqdm(tickers, desc="Forward returns"):
         data = load_price_series(ticker)
         if data is None:
             continue
         dates_ns, prices = data
         for reb_date in rebalancing_dates:
-            ts_ns     = np.int64(pd.Timestamp(reb_date).value)
+            ts_ns = _ts_ns(reb_date)
+            # Une date de sélection antérieure au début de l'historique n'a pas de cours d'entrée :
+            # sans ce test, elle recevait le rendement des premières séances connues, donc une
+            # étiquette fausse, répétée à l'identique pour toutes les dates trop anciennes.
+            if ts_ns < dates_ns[0] - MAX_ENTRY_GAP_NS:
+                continue
             idx_entry = int(np.searchsorted(dates_ns, ts_ns, side="left"))
             idx_exit  = idx_entry + forward_days
             if idx_entry >= len(prices) or idx_exit >= len(prices):
                 continue
+            # Même garde-fou en cas de trou dans l'historique (cotation suspendue, données manquantes)
+            if dates_ns[idx_entry] - ts_ns > MAX_ENTRY_GAP_NS:
+                continue
             entry_price = prices[idx_entry]
             exit_price  = prices[idx_exit]
-            if entry_price <= 0:
+            if not np.isfinite(entry_price) or entry_price <= 0 or not np.isfinite(exit_price):
                 continue
             records.append({
                 "ticker": ticker,
                 "rebalancing_date": reb_date,
                 "fwd_return": (exit_price / entry_price - 1) * 100,
             })
-    df = pd.DataFrame(records)
-    if df.empty:
-        return df
-    df["fwd_return_rel"] = df.groupby("rebalancing_date")["fwd_return"].transform(
-        lambda x: x - x.mean()
-    )
+    return pd.DataFrame(records)
+
+
+def add_targets(df: pd.DataFrame, min_names: int = 30) -> pd.DataFrame:
+    """
+    Ajoute, par date : l'écart au rendement moyen de l'univers (fwd_return_rel) et la cible
+    d'entraînement (target), le rang du rendement parmi les actions de la même date, de −0,5 à +0,5.
+    Apprendre un rang plutôt qu'un rendement évite qu'une poignée d'actions ayant doublé en trois mois
+    dicte à elles seules ce que le modèle retient.
+    """
+    grp = df.groupby("rebalancing_date")["fwd_return"]
+    df["fwd_return_rel"] = df["fwd_return"] - grp.transform("mean")
+    df["target"] = grp.rank(pct=True) - 0.5
+    # Une date avec trop peu d'actions notées ne permet pas de classer : elle ne sert pas à l'entraînement
+    counts = grp.transform("count")
+    df.loc[counts < min_names, ["target", "fwd_return_rel"]] = np.nan
     return df
 
 
-# ─── Valuation ───────────────────────────────────────────────────────────────
-
-def load_current_valuation():
-    raw = json.loads(STOCKS_JSON.read_text())
-    rows = []
-    for s in raw.get("stocks", []):
-        rows.append({
-            "ticker": s["ticker"], "market_cap": s.get("marketCap"),
-            "pe_ttm": s.get("trailingPE"), "pb_ratio": s.get("priceToBook"),
-            "price": s.get("price"), "country": s.get("country"),
-            "sector": s.get("sector"), "peaEligible": s.get("peaEligible", False),
-        })
-    return pd.DataFrame(rows)
-
-
 def sic_to_division(sic):
-    if sic is None:   return -1
+    if sic is None or (isinstance(sic, float) and np.isnan(sic)): return -1
     if sic < 1000:    return 0
     elif sic < 2000:  return 1
     elif sic < 4000:  return 2
@@ -272,10 +423,24 @@ def sic_to_division(sic):
     else:             return 8
 
 
+def rank_features(df: pd.DataFrame, by: str | None = "rebalancing_date") -> pd.DataFrame:
+    """
+    Remplace chaque variable par son rang parmi les actions de la même date (0 à 1).
+    Le modèle compare ainsi les actions entre elles un jour donné, sans dépendre du niveau général du
+    marché cette année-là. Les valeurs absentes restent absentes.
+    """
+    out = df.copy()
+    for col in RANKED_FEATURES:
+        values = out[col].astype("float64")
+        out[col] = values.groupby(out[by]).rank(pct=True) if by else values.rank(pct=True)
+    out["sic_div"] = out["sic_div"].astype("float64")
+    return out
+
+
 def _build_rebalancing_dates(start_year, end_year, max_filed):
     dates = []
     for year in range(int(start_year) + 1, end_year + 1):
-        for month in [1, 4, 7, 10]:
+        for month in REBALANCE_MONTHS:
             dates.append(date(year, month, 2))
     return [d for d in dates if pd.Timestamp(d) <= max_filed]
 
@@ -287,166 +452,65 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
         log.info(f"Loading cached features from {FEATURES_PATH}")
         return pd.read_parquet(FEATURES_PATH)
 
-    # ── Etape 1 : fondamentaux EDGAR ─────────────────────────────────────────
-    if FUNDAMENTALS_PATH.exists() and not force:
-        log.info(f"Loading cached fundamentals from {FUNDAMENTALS_PATH}")
-        fund_df = pd.read_parquet(FUNDAMENTALS_PATH)
-        # Recalcule les dates de rebalancing depuis les donnees cachees
-        min_year = fund_df["filed_date"].apply(lambda d: d.year).min()
-        max_date = pd.Timestamp(fund_df["filed_date"].max())
-        rebalancing_dates = _build_rebalancing_dates(min_year, date.today().year, max_date)
-        log.info(f"Fundamental features: {len(fund_df):,} rows (cached) | "
-                 f"Dates: {rebalancing_dates[0]} -> {rebalancing_dates[-1]}")
-    else:
-        # Charge les donnees EDGAR (long — ~15 min)
-        checkpoint_df = None
-        done_tickers: set = set()
-        if CHECKPOINT_PATH.exists() and not force:
-            checkpoint_df = pd.read_parquet(CHECKPOINT_PATH)
-            done_tickers  = set(checkpoint_df["ticker"].unique())
-            log.info(f"Resuming from checkpoint: {len(done_tickers)} tickers already done")
-        else:
-            log.info("Building PIT feature dataset from scratch...")
+    us_tickers = {p.stem for p in ML_PRICES_DIR.glob("*.parquet")} or available_price_tickers()
+    log.info(f"Price history available: {len(us_tickers)} tickers")
 
-        sub = load_all_sub()
-        num = load_all_num()
-        cik_to_ticker = download_ticker_map()
-        log.info(f"Loaded {len(sub):,} filings, {len(num):,} numeric values")
+    # ── Etape 1 : comptes publiés ────────────────────────────────────────────
+    sub = load_all_sub()
+    cik_to_ticker = download_ticker_map()
+    rebalancing_dates = _build_rebalancing_dates(sub["filed"].dt.year.min(), date.today().year, sub["filed"].max())
+    log.info(f"Rebalancing dates: {rebalancing_dates[0]} -> {rebalancing_dates[-1]} ({len(rebalancing_dates)} periods)")
 
-        rebalancing_dates = _build_rebalancing_dates(
-            sub["filed"].dt.year.min(), date.today().year, sub["filed"].max()
-        )
-        log.info(f"Rebalancing dates: {rebalancing_dates[0]} -> {rebalancing_dates[-1]} "
-                 f"({len(rebalancing_dates)} periods)")
+    df = build_pit_financials(sub, None, cik_to_ticker, rebalancing_dates, only_tickers=us_tickers)
+    if df.empty:
+        raise RuntimeError("Aucun compte publié n'a pu être rattaché aux actions de l'univers.")
+    df["sic_div"] = df["sic"].apply(sic_to_division)
+    log.info(f"Fundamental features: {len(df):,} rows, {df['ticker'].nunique()} tickers")
 
-        fund_df_new = build_pit_financials(
-            sub, num, cik_to_ticker, rebalancing_dates,
-            checkpoint_path=CHECKPOINT_PATH,
-            done_tickers=done_tickers if done_tickers else None,
-        )
-        if checkpoint_df is not None and not checkpoint_df.empty:
-            fund_df = pd.concat([checkpoint_df, fund_df_new], ignore_index=True)
-        else:
-            fund_df = fund_df_new
-
-        fund_df["sic_div"] = fund_df["sic"].apply(sic_to_division)
-        fund_df.to_parquet(FUNDAMENTALS_PATH, index=False)
-        log.info(f"Fundamental features: {len(fund_df):,} rows — saved to {FUNDAMENTALS_PATH}")
-
-        if CHECKPOINT_PATH.exists():
-            CHECKPOINT_PATH.unlink()
-
-    fund_df["sic_div"] = fund_df["sic"].apply(sic_to_division)
-
-    # Pre-scan price files once — reused in étapes 2, 3 et 4
-    available_price_tickers: set = set()
-    for p in PRICES_DIR.glob("*.json"):
-        stem = p.stem
-        available_price_tickers.add(stem)
-        if stem.startswith("_"):          # Windows reserved-name workaround (_CON.DE → CON.DE)
-            available_price_tickers.add(stem[1:])
-    log.info(f"Price files available: {len(available_price_tickers)} tickers")
-
-    # ── Etape 2 : momentum features ──────────────────────────────────────────
-    mom_done_tickers: set = set()
-    mom_records_prev = []
-    if MOMENTUM_CHECKPOINT.exists() and not force:
-        mom_ckpt_df      = pd.read_parquet(MOMENTUM_CHECKPOINT)
-        mom_done_tickers = set(mom_ckpt_df["ticker"].unique())
-        mom_records_prev = mom_ckpt_df.to_dict("records")
-        log.info(f"Resuming momentum from checkpoint: {len(mom_done_tickers)} tickers done")
-
-    log.info("Adding momentum features...")
-    grouped       = {t: g["rebalancing_date"].tolist() for t, g in fund_df.groupby("ticker")}
-    all_tickers_m = sorted(grouped.keys())
-    total_tickers = len(all_tickers_m)
-
-    tickers_with_prices    = [t for t in all_tickers_m if t in available_price_tickers]
-    tickers_without_prices = [t for t in all_tickers_m
-                               if t not in available_price_tickers and t not in mom_done_tickers]
-
-    log.info(f"  {len(tickers_with_prices)} tickers have price data, "
-             f"{len(tickers_without_prices)} get NaN in bulk (no price file)")
-
-    # Bulk-insert NaN rows for tickers with no price data — no per-file I/O
-    nan_feats = {f: np.nan for f in MOMENTUM_FEATURES}
-    mom_records = list(mom_records_prev)
-    for ticker in tickers_without_prices:
-        for rd in grouped[ticker]:
-            mom_records.append({"ticker": ticker, "rebalancing_date": rd, **nan_feats})
-
-    # Process only tickers with price files that aren't already in checkpoint
-    tickers_to_process = [t for t in tickers_with_prices if t not in mom_done_tickers]
-    log.info(f"  {len(tickers_to_process)} tickers to compute (after checkpoint exclusion)")
-
-    pbar = tqdm(tickers_to_process, desc="Momentum", total=len(tickers_to_process))
-    for i, ticker in enumerate(pbar):
-        pbar.set_postfix({"t": ticker})
-        try:
-            data      = load_price_series(ticker)
-            reb_dates = grouped[ticker]
-            if data is None:
-                for rd in reb_dates:
-                    mom_records.append({"ticker": ticker, "rebalancing_date": rd, **nan_feats})
-            else:
-                dates_ns, prices = data
-                bulk = compute_momentum_bulk(dates_ns, prices, reb_dates)
-                for rd, feats in zip(reb_dates, bulk):
-                    mom_records.append({"ticker": ticker, "rebalancing_date": rd, **feats})
-        except Exception as e:
-            log.warning(f"Skipping {ticker} (momentum error): {e}")
-            for rd in grouped[ticker]:
-                mom_records.append({"ticker": ticker, "rebalancing_date": rd, **nan_feats})
-
-        if (i + 1) % 200 == 0:
-            pd.DataFrame(mom_records).to_parquet(MOMENTUM_CHECKPOINT, index=False)
-            log.info(f" Momentum checkpoint saved ({i + 1}/{len(tickers_to_process)} tickers)")
-
-    mom_df = pd.DataFrame(mom_records)
-    df = fund_df.merge(mom_df, on=["ticker", "rebalancing_date"], how="left")
-
-    # ── Etape 3 : P/E approx ─────────────────────────────────────────────────
-    log.info("Approximating historical P/E from price and EPS...")
-    pe_records = []
-    for ticker, group in tqdm(
-        df[df["ticker"].isin(available_price_tickers)].groupby("ticker"),
-        desc="P/E approx",
-    ):
-        data = load_price_series(ticker)
-        for _, row in group.iterrows():
-            price = None
-            if data is not None:
-                dates_ns, prices = data
-                ts_ns = np.int64(pd.Timestamp(row["rebalancing_date"]).value)
-                idx   = int(np.searchsorted(dates_ns, ts_ns, side="right"))
-                if idx > 0:
-                    price = float(prices[idx - 1])
-            pe_records.append({
-                "ticker": ticker,
-                "rebalancing_date": row["rebalancing_date"],
-                "_price_at_date": price,
+    # ── Etape 2 : cours (momentum et valorisation) ───────────────────────────
+    log.info("Adding momentum and valuation features...")
+    extra = []
+    for ticker, group in tqdm(df.groupby("ticker"), desc="Prices"):
+        frame = load_price_frame(ticker)
+        if frame is None:
+            continue
+        dates_ns, adj, raw = frame
+        rows = group.to_dict("records")
+        mom = compute_momentum_bulk(dates_ns, adj, [r["rebalancing_date"] for r in rows])
+        for row, feats in zip(rows, mom):
+            price = raw_price_before(dates_ns, raw, row["rebalancing_date"])
+            extra.append({
+                "ticker": ticker, "rebalancing_date": row["rebalancing_date"],
+                **feats, **valuation_features(row, price),
             })
-    pe_df = pd.DataFrame(pe_records)
-    df = df.merge(pe_df, on=["ticker", "rebalancing_date"], how="left")
-    df["pe_ttm"]   = np.nan
-    df["pb_ratio"] = np.nan
+    if extra:
+        df = df.merge(pd.DataFrame(extra), on=["ticker", "rebalancing_date"], how="left")
+    for col in MOMENTUM_FEATURES + VALUATION_FEATURES:
+        if col not in df.columns:
+            df[col] = np.nan
 
-    # ── Etape 4 : forward returns ─────────────────────────────────────────────
-    fwd_tickers = [t for t in df["ticker"].unique() if t in available_price_tickers]
-    fwd_df = compute_forward_returns(fwd_tickers, rebalancing_dates)
-    if not fwd_df.empty:
-        df = df.merge(
-            fwd_df[["ticker", "rebalancing_date", "fwd_return", "fwd_return_rel"]],
-            on=["ticker", "rebalancing_date"], how="left",
-        )
+    # ── Etape 3 : rendements futurs ──────────────────────────────────────────
+    fwd_df = compute_forward_returns(sorted(df["ticker"].unique()), rebalancing_dates)
+    if fwd_df.empty:
+        df["fwd_return"] = np.nan
     else:
-        df["fwd_return"]     = np.nan
-        df["fwd_return_rel"] = np.nan
+        df = df.merge(fwd_df, on=["ticker", "rebalancing_date"], how="left")
+    df = add_targets(df)
 
-    log.info(f"Feature dataset: {len(df.dropna(subset=['fwd_return_rel'])):,} rows with labels, {len(df):,} total")
+    n_labeled = int(df["target"].notna().sum())
+    log.info(f"Feature dataset: {n_labeled:,} rows with labels, {len(df):,} total, "
+             f"{df.loc[df['target'].notna(), 'rebalancing_date'].nunique()} labeled dates")
+    if n_labeled == 0:
+        # Sans rendement futur calculé, il n'y a rien à apprendre : on s'arrête ici avec un message clair
+        # plutôt que de laisser l'entraînement planter plus loin sur un jeu vide.
+        raise RuntimeError(
+            "Aucun rendement futur n'a pu être calculé : vérifier que l'historique de cours du modèle "
+            "a bien été téléchargé (python pipeline.py --download) et que ses dates sont lisibles."
+        )
+    coverage = {f: round(float(df[f].notna().mean()), 2) for f in ALL_FEATURES}
+    log.info(f"Feature coverage: {coverage}")
+
     df.to_parquet(FEATURES_PATH, index=False)
-    if MOMENTUM_CHECKPOINT.exists():
-        MOMENTUM_CHECKPOINT.unlink()
     log.info(f"Saved to {FEATURES_PATH}")
     return df
 

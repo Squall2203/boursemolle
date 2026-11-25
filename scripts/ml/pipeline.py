@@ -2,7 +2,7 @@
 AlphaPicks ML pipeline — main CLI orchestrator.
 
 Usage:
-  python pipeline.py --download              # Download EDGAR data
+  python pipeline.py --download              # Download EDGAR data + long price history
   python pipeline.py --features              # Build PIT feature dataset
   python pipeline.py --train                 # Walk-forward + final model
   python pipeline.py --predict               # Score current universe
@@ -37,8 +37,10 @@ log = logging.getLogger(__name__)
 
 def step_download(args):
     from edgar_download import run_download
-    log.info("━━━ Step 1: EDGAR download ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    from prices_download import run_price_download
+    log.info("━━━ Step 1: EDGAR + price download ━━━━━━━━━━━━━━━━━━━━━━")
     run_download(force=args.force)
+    run_price_download(force=args.force)
 
 
 def step_features(args):
@@ -80,7 +82,8 @@ def step_predict(args):
         write_predictions(picks)
         log.info(f"Generated {len(picks)} picks for {date.today().strftime('%B %Y')}")
     else:
-        log.error("No picks generated — check EDGAR data and model")
+        # Sortie en erreur : sinon l'automatisation paraît réussie alors qu'elle n'a rien produit
+        raise RuntimeError("No picks generated — check EDGAR data and model")
     return picks
 
 
@@ -126,7 +129,7 @@ def main():
         if args.all or args.predict:
             step_predict(args)
 
-    except FileNotFoundError as e:
+    except (FileNotFoundError, RuntimeError) as e:
         log.error(str(e))
         sys.exit(1)
     except KeyboardInterrupt:
