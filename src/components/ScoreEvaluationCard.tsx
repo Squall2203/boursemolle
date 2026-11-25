@@ -10,6 +10,7 @@ interface HorizonSummary {
   avgNames: number
   meanIc: number
   medianSpread: number
+  datesSpreadPositive: number
   meanTopExcess: number | null
   meanBottomExcess: number | null
   pillarIc: Record<string, number>
@@ -31,15 +32,60 @@ const signed = (v: number | null) => (v == null ? "—" : `${v > 0 ? "+" : ""}${
 const tone = (v: number | null) =>
   v == null || v === 0 ? "" : v > 0 ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400"
 
+/** Tableau commun aux deux mesures : une ligne par groupe d'actions comparées. */
+function EvaluationTable({ rows, periodsLabel }: { rows: { label: string; s: HorizonSummary }[]; periodsLabel: string }) {
+  return (
+    <div className="overflow-x-auto rounded-lg border">
+      <table className="w-full min-w-[560px] text-xs">
+        <thead>
+          <tr className="border-b bg-muted/40 text-left text-muted-foreground">
+            <th className="px-3 py-2 font-medium">Actions comparées</th>
+            <th className="px-3 py-2 text-right font-medium">Notées 7 ou plus</th>
+            <th className="px-3 py-2 text-right font-medium">Notées moins de 5</th>
+            <th className="px-3 py-2 text-right font-medium">Meilleur cinquième contre le moins bon</th>
+            <th className="px-3 py-2 text-right font-medium">{periodsLabel}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(({ label, s }) => (
+            <tr key={label} className="border-b last:border-0">
+              <td className="px-3 py-2 text-foreground">
+                {label}
+                <span className="block text-[11px] text-muted-foreground">environ {s.avgNames} actions</span>
+              </td>
+              <td className={cn("px-3 py-2 text-right font-mono tabular-nums", tone(s.meanTopExcess))}>{signed(s.meanTopExcess)}</td>
+              <td className={cn("px-3 py-2 text-right font-mono tabular-nums", tone(s.meanBottomExcess))}>{signed(s.meanBottomExcess)}</td>
+              <td className={cn("px-3 py-2 text-right font-mono tabular-nums", tone(s.medianSpread))}>{signed(s.medianSpread)}</td>
+              <td className="px-3 py-2 text-right font-mono tabular-nums text-foreground">
+                {s.datesSpreadPositive} sur {s.nDates}
+                {s.independent.n !== s.nDates && (
+                  <span className="block text-[11px] font-sans text-muted-foreground">
+                    dont {s.independent.spreadPositive} sur {s.independent.n} distinctes
+                  </span>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
 /** Ce que les notes ont réellement donné depuis que le site conserve ses données. */
 export function ScoreEvaluationCard() {
   const [data, setData] = useState<ScoreEvaluation | null>(null)
+  const [history, setHistory] = useState<ScoreEvaluation | null>(null)
 
   useEffect(() => {
     fetch("/data/score-evaluation.json")
       .then((r) => (r.ok ? r.json() : null))
       .then(setData)
       .catch(() => setData(null))
+    fetch("/data/score-evaluation-history.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then(setHistory)
+      .catch(() => setHistory(null))
   }, [])
 
   if (!data) return null
@@ -56,6 +102,12 @@ export function ScoreEvaluationCard() {
   const weakerOnLargeCaps = large != null && ref.medianSpread > 0 && large.medianSpread < ref.medianSpread / 2
   const pillars = Object.entries(ref.pillarIc).sort((a, b) => b[1] - a[1])
 
+  // Mesure sur plusieurs années, à partir de notes reconstituées (rendement de l'année suivante)
+  const historyRows = (history?.universes ?? [])
+    .map((u) => ({ label: u.label, s: u.horizons.find((h) => h.sessions === 252)?.summary }))
+    .filter((r): r is { label: string; s: HorizonSummary } => r.s != null && r.s.nDates > 0)
+  const historyRef = historyRows[0]?.s
+
   return (
     <Card>
       <CardHeader>
@@ -69,35 +121,7 @@ export function ScoreEvaluationCard() {
           fait pendant le mois suivant.
         </p>
 
-        <div className="overflow-x-auto rounded-lg border">
-          <table className="w-full min-w-[560px] text-xs">
-            <thead>
-              <tr className="border-b bg-muted/40 text-left text-muted-foreground">
-                <th className="px-3 py-2 font-medium">Actions comparées</th>
-                <th className="px-3 py-2 text-right font-medium">Notées 7 ou plus</th>
-                <th className="px-3 py-2 text-right font-medium">Notées moins de 5</th>
-                <th className="px-3 py-2 text-right font-medium">Meilleur cinquième contre le moins bon</th>
-                <th className="px-3 py-2 text-right font-medium">Mois favorables</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(({ label, s }) => (
-                <tr key={label} className="border-b last:border-0">
-                  <td className="px-3 py-2 text-foreground">
-                    {label}
-                    <span className="block text-[11px] text-muted-foreground">environ {s.avgNames} actions</span>
-                  </td>
-                  <td className={cn("px-3 py-2 text-right font-mono tabular-nums", tone(s.meanTopExcess))}>{signed(s.meanTopExcess)}</td>
-                  <td className={cn("px-3 py-2 text-right font-mono tabular-nums", tone(s.meanBottomExcess))}>{signed(s.meanBottomExcess)}</td>
-                  <td className={cn("px-3 py-2 text-right font-mono tabular-nums", tone(s.medianSpread))}>{signed(s.medianSpread)}</td>
-                  <td className="px-3 py-2 text-right font-mono tabular-nums text-foreground">
-                    {s.independent.spreadPositive} sur {s.independent.n}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <EvaluationTable rows={rows} periodsLabel="Semaines favorables" />
 
         <ul className="list-disc space-y-1.5 pl-5 text-xs leading-relaxed">
           <li>
@@ -122,9 +146,39 @@ export function ScoreEvaluationCard() {
             {pillars.map(([k]) => PILLAR_NAMES[k] ?? k).join(", ")}.
           </li>
         </ul>
+        {historyRef && (
+          <div className="space-y-3 border-t pt-4">
+            <h3 className="text-sm font-semibold text-foreground">Et sur plusieurs années ?</h3>
+            <p>
+              Quelques mois, c'est court. Pour remonter plus loin, nous avons reconstitué la note que chaque action aurait
+              eue deux fois par an depuis {fmtDate(historyRef.firstDate)}, à partir des comptes annuels déjà publiés à
+              chaque date et des cours de l'époque, puis regardé ce que l'action a fait pendant l'année suivante.
+            </p>
+            <EvaluationTable rows={historyRows} periodsLabel="Dates favorables" />
+            <ul className="list-disc space-y-1.5 pl-5 text-xs leading-relaxed">
+              <li>
+                Ici, les deux premières colonnes donnent le rendement moyen sur <strong className="text-foreground">un an</strong>,
+                comparé à la moyenne du groupe.
+              </li>
+              <li>
+                <strong className="text-foreground">Ce sont des notes reconstituées, pas des notes publiées.</strong> La date
+                de publication des comptes est supposée (quatre mois après la clôture), les prévisions d'analystes de
+                l'époque ne sont plus disponibles, et le secteur comme les taux de change sont ceux d'aujourd'hui.
+              </li>
+              <li>
+                Les sociétés qui ont quitté la cote entre-temps ne figurent pas dans cette mesure, faute de données.
+              </li>
+              <li>
+                {historyRef.independent.n} années distinctes seulement : les dates espacées de six mois partagent la
+                moitié de leur période. C'est mieux que quelques mois, pas encore une preuve.
+              </li>
+            </ul>
+          </div>
+        )}
+
         <p className="text-[11px]">
           Mesure mise à jour chaque semaine, dernière le {new Date(data.generatedAt).toLocaleDateString("fr-FR")}.
-          Rendements hors dividendes et hors frais, en devise de cotation.
+          Rendements hors dividendes et hors frais, en devise de cotation ; les 2,5 % de rendements les plus extrêmes de chaque côté sont plafonnés.
         </p>
       </CardContent>
     </Card>

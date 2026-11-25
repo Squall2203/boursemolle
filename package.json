@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "ingest": "tsx scripts/ingest.ts",
     "ingest-feed": "tsx scripts/ingest-feed.ts",
-    "evaluate-score": "tsx scripts/evaluate-score.ts"
+    "evaluate-score": "tsx scripts/evaluate-score.ts",
+    "evaluate-score-history": "tsx scripts/fetch-annual-fundamentals.ts --if-stale && tsx scripts/evaluate-score-history.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.8",
