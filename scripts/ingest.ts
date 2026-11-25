@@ -4,7 +4,9 @@ import { fileURLToPath } from "node:url"
 import YahooFinance from "yahoo-finance2"
 import type { Stock, StocksDataset, StockPriceHistory, PriceCandle, AnnualFinancial, AnnualDividend } from "../src/types/stock.ts"
 import { UNIVERSE } from "./universe.ts"
+import { writeBenchmarks } from "./benchmarks.ts"
 import { toPriceFilename } from "../src/lib/tickerFilename.ts"
+import { getStockRegion } from "../src/lib/market.ts"
 import { detectSmaCross } from "../src/lib/smaCross.ts"
 import { FALLBACK_FX_RATES, normalizeCurrency, toEur, type FxRates } from "../src/lib/fx.ts"
 
@@ -231,11 +233,16 @@ async function fetchStock(ticker: string, indices: string[]): Promise<Stock | nu
 
       indices,
 
-      peaEligible: EEE_COUNTRIES.has(country),
+      peaEligible: false, // renseigné juste après, une fois l'action construite
       fetchedAt: new Date().toISOString(),
       lastFundamentalsUpdate: new Date().toISOString(),
       refreshPriority: 2,
     }
+
+    // Éligibilité PEA estimée : siège dans l'Espace économique européen ET cotation en Europe.
+    // Le siège seul ne suffit pas : une société cotée uniquement à New York ou à Hong Kong avec un
+    // siège à Dublin ou à Luxembourg n'est pas proposée dans un PEA par les courtiers.
+    stock.peaEligible = EEE_COUNTRIES.has(country) && getStockRegion(stock) === "eu"
 
     return stock
   } catch (err) {
@@ -499,6 +506,9 @@ async function main() {
   const macro = await fetchMacro()
   await writeFile(MACRO_PATH, JSON.stringify(macro, null, 2), "utf-8")
   console.log(`✓ Wrote ${MACRO_PATH}`)
+
+  console.log(`\nFetching benchmark history...\n`)
+  await writeBenchmarks(yahooFinance)
 }
 
 main().catch((err) => {

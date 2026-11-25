@@ -1,4 +1,4 @@
-import type { Stock } from "@/types/stock"
+import type { Stock } from "../types/stock"
 
 /** Valeur en euros d'une unité de chaque devise (EUR = 1). */
 export type FxRates = Record<string, number>

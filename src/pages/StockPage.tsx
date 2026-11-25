@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { PriceChart } from "@/components/stock/PriceChart"
 import { StockHeader } from "@/components/stock/StockHeader"
+import { stockMeta } from "@/lib/stockMeta"
+import { usePageMeta } from "@/hooks/usePageMeta"
 import { FundamentalsTable } from "@/components/stock/FundamentalsTable"
 import { GrowthHistoryTable } from "@/components/stock/GrowthHistoryTable"
 import { DividendSparkline } from "@/components/stock/DividendSparkline"
@@ -48,6 +50,9 @@ export function StockPage() {
     () => (stock ? computeScore(stock, allStocks) : null),
     [stock, allStocks],
   )
+
+  const meta = useMemo(() => (stock && score ? stockMeta(stock, score) : null), [stock, score])
+  usePageMeta(meta?.title, meta?.description)
 
   const technicals = useMemo(() => {
     if (!priceData || priceData.candles.length < 50) return null

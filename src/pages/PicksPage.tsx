@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 import { usePicks } from "@/hooks/usePicks"
 import { usePicksHistory } from "@/hooks/usePicksHistory"
+import { usePageMeta } from "@/hooks/usePageMeta"
 import type { StrategyResult } from "@/types/picks"
 
 const MARKET_FLAG: Record<string, string> = {
@@ -147,6 +148,10 @@ function StrategyCard({ strategy, lastPerf }: { strategy: StrategyResult; lastPe
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export function PicksPage() {
+  usePageMeta(
+    "AlphaPicks : sélections d'actions mensuelles",
+    "Six sélections d'actions renouvelées chaque mois, avec leur bilan réel face à l'indice.",
+  )
   const { data, loading, error } = usePicks()
   const { data: history } = usePicksHistory()
 

@@ -91,6 +91,13 @@ function ExpandedRow({ pick, colSpan }: { pick: StrategyPick; colSpan: number })
               Pourquoi cette sélection
             </p>
             <p className="text-sm text-foreground leading-relaxed">{pick.justification}</p>
+            {pick.globalScore != null && (
+              <p className="mt-2 text-xs text-muted-foreground">
+                Les notes par critère sont celles de la fiche de l'action. Le score de cette stratégie les pondère
+                selon son objectif ; la note générale de l'action sur le site est de{" "}
+                <span className="font-medium text-foreground">{pick.globalScore.toLocaleString("fr-FR", { minimumFractionDigits: 1 })} sur 10</span>.
+              </p>
+            )}
             <div className="mt-3 flex flex-wrap gap-2 text-xs text-muted-foreground">
               {pick.pe != null && <span>P/E : <span className="font-medium text-foreground">{pick.pe.toFixed(1)}x</span></span>}
               {pick.roe != null && <span>ROE : <span className="font-medium text-foreground">{pick.roe.toFixed(0)}%</span></span>}

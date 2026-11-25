@@ -11,6 +11,7 @@ import { LeaderboardPage } from "@/pages/LeaderboardPage"
 import { DataFreshnessPage } from "@/pages/DataFreshnessPage"
 import { PicksPage } from "@/pages/PicksPage"
 import { PicksDetailPage } from "@/pages/PicksDetailPage"
+import { LexiquePage } from "@/pages/LexiquePage"
 import { ProtectedRoute } from "@/components/ProtectedRoute"
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/stock/:ticker" element={<StockPage />} />
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/methodologie" element={<MethodologiePage />} />
+        <Route path="/lexique" element={<LexiquePage />} />
         <Route path="/data-freshness" element={<DataFreshnessPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/picks" element={<PicksPage />} />

@@ -15,6 +15,8 @@ export interface StrategyPick {
   currency: string
   rank: number
   score: number
+  /** Note générale de l'action sur le site (absente des sélections générées avant décembre 2026) */
+  globalScore?: number
   pillars: PickPillars
   weight: number
   isNew: boolean

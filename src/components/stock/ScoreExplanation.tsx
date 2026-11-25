@@ -2,6 +2,7 @@ import { useState } from "react"
 import { AlertTriangle, Ban, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
+import { GlossaryText } from "@/components/glossary/GlossaryText"
 import type { MetricDetail, PillarKey, StockScore } from "@/lib/scoring"
 
 const PILLAR_ORDER: PillarKey[] = ["valorisation", "qualite", "croissance", "sante", "dividende", "momentum", "quant"]
@@ -38,7 +39,7 @@ export function ScoreHighlights({ score }: { score: StockScore }) {
           <ul className="space-y-2">
             {score.strengths.map((text) => (
               <li key={text} className="border-l-2 border-emerald-500/40 pl-3 text-sm leading-relaxed text-muted-foreground">
-                {text}
+                <GlossaryText>{text}</GlossaryText>
               </li>
             ))}
           </ul>
@@ -55,7 +56,7 @@ export function ScoreHighlights({ score }: { score: StockScore }) {
           <ul className="space-y-2">
             {score.watchPoints.map((text) => (
               <li key={text} className="border-l-2 border-orange-500/40 pl-3 text-sm leading-relaxed text-muted-foreground">
-                {text}
+                <GlossaryText>{text}</GlossaryText>
               </li>
             ))}
           </ul>
@@ -159,13 +160,13 @@ export function PillarExplanations({ score, showFigures = false }: PillarExplana
               <div className="space-y-3 px-2 pb-4 pt-1 sm:pl-8">
                 <p className="rounded-md bg-muted/40 px-3 py-2 text-sm leading-relaxed">
                   <span className="font-medium">Ce que ce critère cherche à savoir. </span>
-                  <span className="text-muted-foreground">{exp.question}</span>
+                  <span className="text-muted-foreground"><GlossaryText>{exp.question}</GlossaryText></span>
                 </p>
                 {exp.points.length > 0 && (
                   <ul className="space-y-2">
                     {exp.points.map((text) => (
                       <li key={text} className="border-l-2 border-border pl-3 text-sm leading-relaxed text-muted-foreground">
-                        {text}
+                        <GlossaryText>{text}</GlossaryText>
                       </li>
                     ))}
                   </ul>

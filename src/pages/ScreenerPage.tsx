@@ -7,11 +7,13 @@ import { MarketPills } from "@/components/screener/MarketPills"
 import { PresetBar } from "@/components/screener/PresetBar"
 import { ResultsTable } from "@/components/screener/ResultsTable"
 import { SavedScreeners } from "@/components/screener/SavedScreeners"
+import { ObjectiveBanner } from "@/components/screener/ObjectiveBanner"
 import { SimpleFilters } from "@/components/screener/SimpleFilters"
 import { ScoreQuickFilter } from "@/components/screener/ScoreQuickFilter"
 import { useScreenerFilters } from "@/hooks/useScreenerFilters"
 import { useStocks } from "@/hooks/useStocks"
 import { useViewMode } from "@/hooks/useViewMode"
+import { usePageMeta } from "@/hooks/usePageMeta"
 import { filterStocks } from "@/lib/filterStocks"
 import { matchesMarketFilter, type MarketFilter } from "@/lib/market"
 import { computeScore, type StockScore } from "@/lib/scoring"
@@ -21,6 +23,10 @@ export function ScreenerPage() {
   const { data, loading, error, refresh } = useStocks()
   const { filters, setFilters, resetFilters } = useScreenerFilters()
   const { isSimple } = useViewMode()
+  usePageMeta(
+    "Screener d'actions éligibles au PEA",
+    "Filtrez près de 1 000 actions par note, secteur, taille et dividende. Chaque note est expliquée en clair.",
+  )
 
   const allStocks = useMemo(() => data?.stocks ?? [], [data])
 
@@ -150,6 +156,7 @@ export function ScreenerPage() {
             </div>
           </div>
         </header>
+        <ObjectiveBanner resultCount={loading ? 0 : filteredStocks.length} />
         <MarketPills
           value={filters.market}
           onChange={(market) => setFilters({ market })}
