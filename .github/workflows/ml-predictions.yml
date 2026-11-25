@@ -44,7 +44,7 @@ jobs:
       - name: Install ML dependencies
         run: pip install -r scripts/ml/requirements.txt
 
-      # Cache des données EDGAR brutes (plusieurs centaines de Mo, par trimestre)
+      # Cache des comptes EDGAR et de l'historique de cours long du modèle (plusieurs centaines de Mo)
       - name: Get current quarter key
         id: quarter
         shell: bash
@@ -57,7 +57,9 @@ jobs:
       - name: Restore EDGAR cache
         uses: actions/cache@v4
         with:
-          path: scripts/ml/data/edgar/
+          path: |
+            scripts/ml/data/edgar/
+            scripts/ml/data/prices/
           key: edgar-${{ steps.quarter.outputs.key }}
           restore-keys: |
             edgar-

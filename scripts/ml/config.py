@@ -11,15 +11,17 @@ DATA_DIR = ML_DIR / "data"
 EDGAR_DIR = DATA_DIR / "edgar"
 MODEL_DIR = DATA_DIR / "model"
 PRICES_DIR = ROOT / "public" / "data" / "prices"
+ML_PRICES_DIR = DATA_DIR / "prices"                 # historique long, propre au modèle
 STOCKS_JSON = ROOT / "public" / "data" / "stocks.json"
 OUTPUT_JSON = ROOT / "public" / "data" / "picks" / "us_predictions.json"
 
-for d in [DATA_DIR, EDGAR_DIR, MODEL_DIR]:
+for d in [DATA_DIR, EDGAR_DIR, MODEL_DIR, ML_PRICES_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 
 # ─── EDGAR settings ───────────────────────────────────────────────────────────
 
-EDGAR_START_YEAR = 2018     # first year to download
+EDGAR_START_YEAR = 2012     # première année de comptes téléchargée
+PRICE_START_DATE = "2011-01-01"   # début de l'historique de cours du modèle
 EDGAR_BASE_URL = "https://www.sec.gov/files/dera/data/financial-statement-data-sets"
 TICKER_MAP_URL = "https://www.sec.gov/files/company_tickers.json"
 SEC_HEADERS = {"User-Agent": "BourseMolle research@boursemolle.com"}
@@ -59,6 +61,7 @@ TAG_MAP: dict[str, list[str]] = {
     "rd_expense": ["ResearchAndDevelopmentExpense"],
     "eps_diluted": ["EarningsPerShareDiluted", "EarningsPerShareBasic"],
     "shares_outstanding": [
+        "EntityCommonStockSharesOutstanding",
         "CommonStockSharesOutstanding",
         "WeightedAverageNumberOfDilutedSharesOutstanding",
     ],
@@ -68,34 +71,42 @@ ALL_TAGS: set[str] = {tag for tags in TAG_MAP.values() for tag in tags}
 
 # ─── ML settings ─────────────────────────────────────────────────────────────
 
-# Forward return period (trading days)
-FORWARD_DAYS = 21       # ~1 month
+# Horizon du rendement à prévoir, en séances. Trois mois : à un mois, le bruit domine.
+FORWARD_DAYS = 63
+
+# Une date de sélection par mois (au lieu d'une par trimestre) : trois fois plus d'exemples.
+REBALANCE_MONTHS = list(range(1, 13))
+
+# Nombre de mois écartés entre la fin de l'entraînement et la date testée. Le rendement d'une date
+# n'est connu que trois mois plus tard : sans cet écart, l'entraînement verrait une partie de la réponse.
+EMBARGO_MONTHS = 4
 
 # Minimum observations per company to include in training
 MIN_OBSERVATIONS = 8
 
 # Walk-forward settings
 INITIAL_TRAIN_YEARS = 3     # minimum years of history before first test period
-RETRAIN_EVERY_QUARTERS = 1  # retrain every quarter
 
-# LightGBM hyperparameters
+# Modèle volontairement simple : peu de feuilles, beaucoup d'exemples par feuille, forte régularisation.
+# Avec quelques dizaines de milliers de lignes très bruitées, un modèle plus riche apprend du bruit.
 LGBM_PARAMS = {
     "objective": "regression",
     "metric": "rmse",
-    "n_estimators": 500,
-    "learning_rate": 0.05,
-    "num_leaves": 63,
-    "min_child_samples": 30,
+    "n_estimators": 400,
+    "learning_rate": 0.03,
+    "num_leaves": 15,
+    "min_child_samples": 100,
     "subsample": 0.8,
-    "colsample_bytree": 0.8,
-    "reg_alpha": 0.1,
-    "reg_lambda": 0.1,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.7,
+    "reg_alpha": 0.5,
+    "reg_lambda": 5.0,
     "random_state": 42,
     "n_jobs": -1,
     "verbose": -1,
 }
 
-EARLY_STOPPING_ROUNDS = 50
+EARLY_STOPPING_ROUNDS = 40
 
 # ─── Feature columns ──────────────────────────────────────────────────────────
 
@@ -111,10 +122,18 @@ FUNDAMENTAL_FEATURES = [
     "current_ratio",
     "cash_to_assets",
     "fcf_margin",
-    "pe_ttm",
-    "pb_ratio",
     "asset_turnover",
     "rd_intensity",
+]
+
+# Valorisation à la date de sélection : comptes publiés rapportés au cours réellement coté ce jour-là.
+# Exprimée en rendement (bénéfice / prix) plutôt qu'en multiple (prix / bénéfice) pour rester
+# définie et ordonnée quand le bénéfice est négatif.
+VALUATION_FEATURES = [
+    "earnings_yield",
+    "book_to_price",
+    "sales_to_price",
+    "fcf_yield",
 ]
 
 MOMENTUM_FEATURES = [
@@ -132,7 +151,10 @@ SECTOR_FEATURES = [
     "sic_div",          # SIC division (broad sector)
 ]
 
-ALL_FEATURES = FUNDAMENTAL_FEATURES + MOMENTUM_FEATURES + SECTOR_FEATURES
+# Variables ramenées à leur rang parmi les actions de la même date (0 = la plus basse, 1 = la plus haute)
+RANKED_FEATURES = FUNDAMENTAL_FEATURES + VALUATION_FEATURES + MOMENTUM_FEATURES
+
+ALL_FEATURES = RANKED_FEATURES + SECTOR_FEATURES
 
 # ─── Universe ─────────────────────────────────────────────────────────────────
 
@@ -150,8 +172,8 @@ US_STRATEGY_SIZE = 15
 MODEL_CARD_PATH = MODEL_DIR / "model_card.json"
 
 PUBLICATION_CRITERIA = {
-    "min_periods": 12,          # nombre minimal de trimestres évalués
-    "min_hit_rate": 0.55,       # part des trimestres où la sélection bat la moyenne de son univers
+    "min_periods": 36,          # nombre minimal de dates de sélection évaluées (une par mois)
+    "min_hit_rate": 0.55,       # part des dates où la sélection bat la moyenne de son univers
     "min_median_alpha": 0.0,    # écart médian à l'univers (en points), strictement positif
     "min_rank_ic": 0.02,        # corrélation de rang moyenne entre prédictions et rendements réalisés
 }

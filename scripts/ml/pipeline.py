@@ -2,7 +2,7 @@
 AlphaPicks ML pipeline — main CLI orchestrator.
 
 Usage:
-  python pipeline.py --download              # Download EDGAR data
+  python pipeline.py --download              # Download EDGAR data + long price history
   python pipeline.py --features              # Build PIT feature dataset
   python pipeline.py --train                 # Walk-forward + final model
   python pipeline.py --predict               # Score current universe
@@ -37,8 +37,10 @@ log = logging.getLogger(__name__)
 
 def step_download(args):
     from edgar_download import run_download
-    log.info("━━━ Step 1: EDGAR download ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    from prices_download import run_price_download
+    log.info("━━━ Step 1: EDGAR + price download ━━━━━━━━━━━━━━━━━━━━━━")
     run_download(force=args.force)
+    run_price_download(force=args.force)
 
 
 def step_features(args):
