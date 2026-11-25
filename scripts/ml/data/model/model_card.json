@@ -1,0 +1,31 @@
+{
+  "evaluated_at": "2026-11-25",
+  "horizon": "63 séances après chaque date de sélection mensuelle",
+  "first_date": "2016-01-02",
+  "last_date": "2026-08-02",
+  "n_periods": 128,
+  "n_tickers": 218,
+  "periods_ahead": 75,
+  "hit_rate": 0.586,
+  "mean_alpha_pct": 2.4,
+  "median_alpha_pct": 1.718,
+  "mean_alpha_ex_best_pct": 2.104,
+  "rank_ic": 0.0204,
+  "rank_ic_recent_half": -0.0129,
+  "independent_periods": {
+    "n": 43,
+    "ahead": 28,
+    "median_alpha_pct": 1.705
+  },
+  "caveat": "Univers limité aux sociétés cotées aujourd'hui : celles qui ont disparu en cours de route n'y figurent pas, ce qui embellit un peu le passé. Hors frais de transaction.",
+  "criteria": {
+    "min_periods": 36,
+    "min_hit_rate": 0.55,
+    "min_median_alpha": 0.0,
+    "min_rank_ic": 0.02
+  },
+  "failed_criteria": [
+    "corrélation de rang de -0.013 sur la moitié récente (doit être positive)"
+  ],
+  "validated": false
+}
