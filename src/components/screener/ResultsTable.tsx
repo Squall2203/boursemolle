@@ -50,6 +50,8 @@ interface ColumnDef {
   group: string
   getValue: (s: Stock) => number | string | null
   format: (s: Stock, scoreMap: Map<string, StockScore>) => React.ReactNode
+  /** Colonne masquée sur petit écran (mode simple) pour que l'essentiel tienne sans défilement */
+  hideOnMobile?: boolean
 }
 
 const TEXT_SORT_KEYS = new Set(["ticker", "name", "sector", "country", "industry"])
@@ -164,8 +166,8 @@ const ALL_COLUMNS: ColumnDef[] = [
   },
   {
     key: "marketCap", label: "Capi", align: "right", group: "Valorisation",
-    getValue: (s) => s.marketCap,
-    format: (s) => formatMarketCap(s.marketCap, s.currency),
+    getValue: (s) => s.marketCapEur ?? null,
+    format: (s) => formatMarketCap(s.marketCapEur ?? null, "EUR"),
   },
   {
     key: "price", label: "Prix", align: "right", group: "Prix",
@@ -300,7 +302,7 @@ const SIMPLE_COLUMNS: ColumnDef[] = [
     },
   },
   {
-    key: "ticker", label: "Ticker", align: "left", group: "Général",
+    key: "ticker", label: "Ticker", align: "left", group: "Général", hideOnMobile: true,
     getValue: (s) => s.ticker,
     format: (s) => (
       <div className="flex items-center gap-2 font-mono text-xs font-medium">
@@ -312,10 +314,18 @@ const SIMPLE_COLUMNS: ColumnDef[] = [
   {
     key: "name", label: "Nom", align: "left", group: "Général",
     getValue: (s) => s.name,
-    format: (s) => <span className="max-w-[260px] truncate" title={s.name}>{s.name}</span>,
+    format: (s) => (
+      <div className="max-w-[150px] sm:max-w-[260px]">
+        <span className="block truncate" title={s.name}>{s.name}</span>
+        {/* Sur mobile, la colonne Ticker est masquée : le code et la mention PEA passent sous le nom */}
+        <span className="block font-mono text-[10px] text-muted-foreground md:hidden">
+          {s.ticker}{s.peaEligible && " · PEA"}
+        </span>
+      </div>
+    ),
   },
   {
-    key: "verdict", label: "Verdict", align: "left", group: "Général",
+    key: "verdict", label: "Verdict", align: "left", group: "Général", hideOnMobile: true,
     getValue: () => null,
     format: (s, scoreMap) => {
       const score = scoreMap.get(s.ticker)
@@ -324,7 +334,7 @@ const SIMPLE_COLUMNS: ColumnDef[] = [
     },
   },
   {
-    key: "signaux_simple", label: "Signaux", align: "left", group: "Général",
+    key: "signaux_simple", label: "Signaux", align: "left", group: "Général", hideOnMobile: true,
     getValue: () => null,
     format: (s, scoreMap) => {
       const score = scoreMap.get(s.ticker)
@@ -565,6 +575,7 @@ export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
                     className={cn(
                       "select-none whitespace-nowrap",
                       col.align === "right" && "text-right",
+                      col.hideOnMobile && "hidden md:table-cell",
                     )}
                   >
                     <button
@@ -604,7 +615,7 @@ export function ResultsTable({ stocks, scoreMap }: ResultsTableProps) {
                   {visibleColumns.map((col) => (
                     <TableCell
                       key={col.key}
-                      className={cn(col.align === "right" && "text-right tabular-nums")}
+                      className={cn(col.align === "right" && "text-right tabular-nums", col.hideOnMobile && "hidden md:table-cell")}
                     >
                       {col.format(s, scoreMap)}
                     </TableCell>

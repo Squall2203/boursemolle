@@ -18,7 +18,11 @@ export function usePicks(): UsePicksResult {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()
       })
-      .then((d: PicksDataset) => setData(d))
+      // Une stratégie ML n'est affichée que si ses prédictions sont celles du mois en cours
+      .then((d: PicksDataset) => setData({
+        ...d,
+        strategies: d.strategies.filter((s) => s.engine !== "ml" || s.predictionsPeriod === d.period),
+      }))
       .catch((e: Error) => setError(e.message))
       .finally(() => setLoading(false))
   }, [])

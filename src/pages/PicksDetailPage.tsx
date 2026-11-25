@@ -8,7 +8,6 @@ import { usePicks } from "@/hooks/usePicks"
 import { usePicksHistory } from "@/hooks/usePicksHistory"
 import { usePortfolio } from "@/contexts/PortfolioContext"
 import { useAuth } from "@/contexts/AuthContext"
-import { StrategyChart } from "@/components/picks/StrategyChart"
 import { formatPrice, formatMarketCap, formatPercent } from "@/lib/format"
 import type { StrategyPick, PickPillars, PicksHistoryPeriod, StrategyResult } from "@/types/picks"
 
@@ -95,7 +94,7 @@ function ExpandedRow({ pick, colSpan }: { pick: StrategyPick; colSpan: number })
             <div className="mt-3 flex flex-wrap gap-2 text-xs text-muted-foreground">
               {pick.pe != null && <span>P/E : <span className="font-medium text-foreground">{pick.pe.toFixed(1)}x</span></span>}
               {pick.roe != null && <span>ROE : <span className="font-medium text-foreground">{pick.roe.toFixed(0)}%</span></span>}
-              {pick.marketCap != null && <span>Capi : <span className="font-medium text-foreground">{formatMarketCap(pick.marketCap, pick.currency)}</span></span>}
+              {pick.marketCap != null && <span>Capi : <span className="font-medium text-foreground">{pick.marketCapEur != null ? formatMarketCap(pick.marketCapEur, "EUR") : formatMarketCap(pick.marketCap, pick.currency)}</span></span>}
               {pick.peaEligible && (
                 <span className="text-emerald-600 dark:text-emerald-400 font-medium">✓ PEA</span>
               )}
@@ -219,6 +218,62 @@ function formatPeriod(period: string): string {
   return new Date(Number(year), Number(month) - 1, 1).toLocaleDateString("fr-FR", { month: "long", year: "numeric" })
 }
 
+/** Dates réelles entre lesquelles le rendement a été mesuré. */
+function formatWindow(entry: PicksHistoryPeriod): string {
+  const fmt = (iso: string) => new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
+  return `du ${fmt(entry.generatedAt)} au ${fmt(entry.evaluatedAt)}`
+}
+
+/** Une période ne compte dans le bilan que si le portefeuille ET son indice ont été mesurés. */
+function isMeasured<T extends { portfolioReturn: number | null; benchmarkReturn: number | null }>(
+  e: T | undefined,
+): e is T & { portfolioReturn: number; benchmarkReturn: number } {
+  return e != null && e.portfolioReturn != null && e.benchmarkReturn != null
+}
+
+// ─── Bilan réel ───────────────────────────────────────────────────────────────
+
+function TrackRecord({ strategyId, benchmarkName }: { strategyId: string; benchmarkName: string }) {
+  const { data, loading } = usePicksHistory()
+  if (loading || !data) return null
+
+  const measured = data.entries.map((e) => e.strategies[strategyId]).filter(isMeasured)
+  if (measured.length === 0) return null
+
+  const compound = (values: number[]) => (values.reduce((acc, v) => acc * (1 + v / 100), 1) - 1) * 100
+  const portfolio = compound(measured.map((m) => m.portfolioReturn))
+  const benchmark = compound(measured.map((m) => m.benchmarkReturn))
+  const gap = portfolio - benchmark
+  const wins = measured.filter((m) => m.portfolioReturn > m.benchmarkReturn).length
+  const signed = (v: number) => `${v >= 0 ? "+" : ""}${v.toFixed(1)} %`
+  const tone = (v: number) => (v > 0 ? "text-emerald-600 dark:text-emerald-400" : v < 0 ? "text-red-500" : "text-foreground")
+
+  const tiles = [
+    { label: "Sélection", value: signed(portfolio), className: tone(portfolio) },
+    { label: benchmarkName, value: signed(benchmark), className: "text-foreground" },
+    { label: "Écart", value: signed(gap), className: tone(gap) },
+    { label: "Périodes devant l'indice", value: `${wins} sur ${measured.length}`, className: "text-foreground" },
+  ]
+
+  return (
+    <div className="rounded-xl border bg-card px-5 py-4">
+      <p className="text-sm font-semibold mb-0.5">Bilan réel des sélections publiées</p>
+      <p className="text-xs text-muted-foreground mb-4">
+        Cumul des {measured.length} périodes mesurées ci-dessous, à pondération égale, hors frais et dividendes.
+        Mesuré après publication, jamais recalculé sur le passé.
+      </p>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {tiles.map((t) => (
+          <div key={t.label} className="rounded-lg bg-muted/40 px-3 py-2.5">
+            <p className="text-[11px] text-muted-foreground">{t.label}</p>
+            <p className={cn("mt-0.5 text-lg font-semibold tabular-nums", t.className)}>{t.value}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function PerfRow({
   entry,
   strategyId,
@@ -228,7 +283,7 @@ function PerfRow({
 }) {
   const [open, setOpen] = useState(false)
   const strat = entry.strategies[strategyId]
-  if (!strat) return null
+  if (!isMeasured(strat)) return null
 
   const perf = strat.portfolioReturn
   const isPos = perf != null && perf >= 0
@@ -240,7 +295,10 @@ function PerfRow({
         className="border-b border-border/50 cursor-pointer hover:bg-muted/20 transition-colors select-none"
         onClick={() => setOpen((v) => !v)}
       >
-        <td className="pl-5 pr-3 py-3 text-sm font-medium capitalize">{formatPeriod(entry.period)}</td>
+        <td className="pl-5 pr-3 py-3 text-sm font-medium">
+          <span className="capitalize">{formatPeriod(entry.period)}</span>
+          <span className="block text-[11px] font-normal text-muted-foreground">{formatWindow(entry)}</span>
+        </td>
         <td className={cn("px-3 py-3 text-sm font-semibold tabular-nums", perf == null ? "text-muted-foreground" : isPos ? "text-emerald-600 dark:text-emerald-400" : "text-red-500")}>
           {perf != null ? (
             <span className="flex items-center gap-1">
@@ -333,14 +391,17 @@ function PerformanceHistory({ strategyId }: { strategyId: string }) {
     )
   }
 
-  const relevantEntries = data.entries.filter((e) => e.strategies[strategyId])
+  const relevantEntries = data.entries.filter((e) => isMeasured(e.strategies[strategyId]))
   if (relevantEntries.length === 0) return null
 
   return (
     <div className="rounded-xl border bg-card overflow-x-auto">
       <div className="px-5 py-3 border-b">
         <p className="text-sm font-semibold">Historique des performances</p>
-        <p className="text-xs text-muted-foreground">Rendement equal-weighted mensuel · Calcul J+30 après sélection</p>
+        <p className="text-xs text-muted-foreground">
+          Rendement à pondération égale entre les deux dates indiquées. Jusqu'en novembre 2026, les sélections
+          étaient recalculées chaque semaine : chaque ligne ne couvre donc que la dernière semaine du mois.
+        </p>
       </div>
       <table className="w-full text-sm min-w-[500px]">
         <thead>
@@ -640,18 +701,7 @@ export function PicksDetailPage() {
       </div>
 
       {/* Performance chart */}
-      {strategy.chartData && (
-        <div className="rounded-xl border bg-card px-5 py-4">
-          <p className="text-sm font-semibold mb-0.5">Performance simulée sur l'historique de prix</p>
-          <p className="text-xs text-muted-foreground mb-4">
-            Portefeuille equal-weighted des picks actuels · Rebased à 100 · Données passées sans garantie de résultats futurs
-          </p>
-          <StrategyChart
-            chartData={strategy.chartData}
-            benchmarkName={strategy.benchmarkName}
-          />
-        </div>
-      )}
+      <TrackRecord strategyId={strategy.id} benchmarkName={strategy.benchmarkName} />
 
       {/* Table */}
       <div className="rounded-xl border bg-card overflow-x-auto">
@@ -694,7 +744,7 @@ export function PicksDetailPage() {
             <span className="font-medium text-foreground">Méthodologie Rule-Based.</span>{" "}
             Chaque action est notée de 0 à 10 sur six piliers (valorisation, qualité, croissance, santé financière,
             dividende, momentum). Le score composite de cette stratégie pondère chaque pilier selon son objectif.
-            Rééquilibrage mensuel le 1er de chaque mois.
+            Sélections figées pour le mois, renouvelées le premier lundi du mois suivant. Les actions trop peu échangées sont écartées.
           </p>
           <p>
             AlphaPicks est un outil de recherche algorithmique à titre informatif. Les sélections ne constituent

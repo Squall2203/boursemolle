@@ -7,6 +7,7 @@ import { MarketPills } from "@/components/screener/MarketPills"
 import { PresetBar } from "@/components/screener/PresetBar"
 import { ResultsTable } from "@/components/screener/ResultsTable"
 import { SavedScreeners } from "@/components/screener/SavedScreeners"
+import { SimpleFilters } from "@/components/screener/SimpleFilters"
 import { ScoreQuickFilter } from "@/components/screener/ScoreQuickFilter"
 import { useScreenerFilters } from "@/hooks/useScreenerFilters"
 import { useStocks } from "@/hooks/useStocks"
@@ -158,6 +159,7 @@ export function ScreenerPage() {
           <PresetBar filters={filters} onApply={setFilters} onReset={resetFilters} />
           {!isSimple && <SavedScreeners filters={filters} onLoad={setFilters} />}
         </div>
+        {isSimple && <SimpleFilters filters={filters} onChange={setFilters} availableSectors={availableSectors} />}
         {!isSimple && <ActiveFiltersBar filters={filters} onChange={setFilters} onReset={resetFilters} />}
         {!loading && !error && <ResultsTable stocks={filteredStocks} scoreMap={scoreMap} />}
       </main>

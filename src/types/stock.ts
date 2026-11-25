@@ -11,7 +11,9 @@ export interface Stock {
   priceChange: number | null
   priceChangePercent: number | null
 
-  marketCap: number | null
+  marketCap: number | null       // dans la devise de cotation
+  marketCapEur?: number | null   // convertie en euros (ingestion, sinon calculée au chargement)
+  avgDailyValueEur?: number | null  // montant moyen échangé par séance sur 60 séances, en euros
   trailingPE: number | null
   forwardPE: number | null
   priceToBook: number | null
@@ -50,6 +52,8 @@ export interface Stock {
   perf3M: number | null
   perf6M: number | null
   perf1Y: number | null
+  /** Dernier croisement réel des moyennes 50 et 200 séances (30 dernières séances), null sinon */
+  smaCross?: { type: "golden" | "death"; daysAgo: number } | null
 
   indices: string[]
 
@@ -92,5 +96,6 @@ export interface StockPriceHistory {
 export interface StocksDataset {
   generatedAt: string
   count: number
+  fxRates?: Record<string, number>  // valeur en euros d'une unité de chaque devise
   stocks: Stock[]
 }

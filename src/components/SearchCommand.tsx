@@ -117,8 +117,8 @@ export function SearchCommand() {
   }
 
   return (
-    <div ref={containerRef} className="relative">
-      <div className="flex h-8 w-48 items-center gap-2 rounded-md border bg-background px-2.5 text-xs sm:w-64">
+    <div ref={containerRef} className="relative min-w-0 flex-1 sm:flex-none">
+      <div className="flex h-8 w-full items-center gap-2 rounded-md border bg-background px-2.5 text-xs sm:w-64">
         <Search className="size-3.5 shrink-0 text-muted-foreground" />
         <input
           ref={inputRef}
@@ -132,7 +132,7 @@ export function SearchCommand() {
           onFocus={() => { if (query.trim()) setOpen(true) }}
           onKeyDown={onKeyDown}
           placeholder="Rechercher..."
-          className="flex-1 bg-transparent text-xs outline-none placeholder:text-muted-foreground"
+          className="min-w-0 flex-1 bg-transparent text-xs outline-none placeholder:text-muted-foreground"
         />
         <kbd className="hidden rounded border bg-muted px-1.5 py-0.5 font-mono text-[10px] text-muted-foreground sm:inline-block">
           Ctrl+K
@@ -142,7 +142,7 @@ export function SearchCommand() {
       {open && results.length > 0 && (
         <div
           ref={listRef}
-          className="absolute top-full left-0 z-50 mt-1 w-[400px] max-h-[380px] overflow-y-auto rounded-lg border bg-popover p-1 shadow-lg"
+          className="absolute top-full left-0 z-50 mt-1 w-[min(400px,calc(100vw-2rem))] max-h-[380px] overflow-y-auto rounded-lg border bg-popover p-1 shadow-lg"
         >
           {results.map((s, i) => {
             const change = formatChange(s.priceChangePercent)

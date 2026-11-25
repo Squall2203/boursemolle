@@ -4,12 +4,15 @@ export function formatMarketCap(n: number | null, currency = "EUR"): string {
   if (n == null) return EM_DASH
   // GBp stocks: market cap is in GBP (pounds), not pence — treat as GBP
   const c = currency === "GBp" ? "GBP" : currency
-  const sym = c === "USD" ? "$" : c === "GBP" ? "£" : "€"
-  const suffix = c === "USD" ? "B" : "Md"
-  if (n >= 1e9) return `${(n / 1e9).toFixed(1)} ${suffix}${sym}`
+  const sym = AMOUNT_SYMBOLS[c] ?? ` ${c}`
+  if (n >= 1e12) return `${(n / 1e9).toLocaleString("fr-FR", { maximumFractionDigits: 0 })} Md${sym}`
+  if (n >= 1e9) return `${(n / 1e9).toFixed(1)} Md${sym}`
   if (n >= 1e6) return `${(n / 1e6).toFixed(0)} M${sym}`
-  return `${n.toFixed(0)} ${sym}`
+  return `${n.toFixed(0)} ${sym.trim()}`
 }
+
+// Symbole collé au suffixe (« Md€ », « Md$ ») ; code devise séparé pour les autres (« Md SEK »)
+const AMOUNT_SYMBOLS: Record<string, string> = { EUR: "€", USD: "$", GBP: "£", JPY: "¥" }
 
 const CURRENCY_SYMBOLS: Record<string, string> = {
   EUR: "€", USD: "$", GBP: "£", CHF: "CHF", SEK: "kr",

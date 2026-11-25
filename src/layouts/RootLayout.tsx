@@ -32,7 +32,7 @@ function UserMenu() {
         <Button variant="ghost" size="sm" onClick={openAuthModal}>
           Connexion
         </Button>
-        <Button size="sm" onClick={openAuthModal}>
+        <Button size="sm" className="hidden sm:inline-flex" onClick={openAuthModal}>
           S'inscrire
         </Button>
       </div>
@@ -99,6 +99,28 @@ function UserMenu() {
   )
 }
 
+function MainLinks() {
+  const linkClass = ({ isActive }: { isActive: boolean }) =>
+    cn(
+      "flex shrink-0 items-center gap-1 whitespace-nowrap transition-colors hover:text-foreground",
+      isActive ? "font-medium text-foreground" : "text-muted-foreground",
+    )
+  return (
+    <>
+      <NavLink to="/screener" className={linkClass}>Screener</NavLink>
+      <NavLink to="/compare" className={linkClass}>Comparer</NavLink>
+      <NavLink to="/picks" className={linkClass}>
+        <Sparkles className="size-3.5" />
+        AlphaPicks
+      </NavLink>
+      <NavLink to="/leaderboard" className={linkClass} aria-label="Classement">
+        <Trophy className="size-3.5" />
+        <span className="md:hidden">Classement</span>
+      </NavLink>
+    </>
+  )
+}
+
 export function RootLayout() {
   const { theme, toggle } = useTheme()
   const { showExpertHint, dismissHint, setMode } = useViewMode()
@@ -108,61 +130,20 @@ export function RootLayout() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b bg-card">
-        <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-4 sm:px-6">
-          <Link to="/" className="flex items-baseline gap-1">
+        <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between gap-3 px-4 sm:px-6">
+          <Link to="/" className="flex shrink-0 items-baseline gap-1">
             <span className="text-lg font-bold tracking-tight">Bourse</span>
             <span className="text-lg font-bold tracking-tight text-primary">
               Molle
             </span>
           </Link>
           <SearchCommand />
-          <nav className="flex items-center gap-3 text-sm">
-            {showViewToggle && <ViewModeToggle />}
-            <NavLink
-              to="/screener"
-              className={({ isActive }) =>
-                cn(
-                  "transition-colors hover:text-foreground",
-                  isActive ? "font-medium text-foreground" : "text-muted-foreground",
-                )
-              }
-            >
-              Screener
-            </NavLink>
-            <NavLink
-              to="/compare"
-              className={({ isActive }) =>
-                cn(
-                  "transition-colors hover:text-foreground",
-                  isActive ? "font-medium text-foreground" : "text-muted-foreground",
-                )
-              }
-            >
-              Comparer
-            </NavLink>
-            <NavLink
-              to="/picks"
-              className={({ isActive }) =>
-                cn(
-                  "flex items-center gap-1 transition-colors hover:text-foreground",
-                  isActive ? "font-medium text-foreground" : "text-muted-foreground",
-                )
-              }
-            >
-              <Sparkles className="size-3.5" />
-              AlphaPicks
-            </NavLink>
-            <NavLink
-              to="/leaderboard"
-              className={({ isActive }) =>
-                cn(
-                  "transition-colors hover:text-foreground",
-                  isActive ? "font-medium text-foreground" : "text-muted-foreground",
-                )
-              }
-            >
-              <Trophy className="inline size-3.5 -mt-0.5 mr-0.5" />
-            </NavLink>
+          <nav className="flex shrink-0 items-center gap-3 text-sm">
+            {/* Sur ordinateur, les liens tiennent dans la barre ; sur mobile ils passent sur une 2e ligne */}
+            <div className="hidden items-center gap-3 md:flex">
+              {showViewToggle && <ViewModeToggle />}
+              <MainLinks />
+            </div>
             <Button
               variant="ghost"
               size="icon"
@@ -178,6 +159,10 @@ export function RootLayout() {
             </Button>
             <UserMenu />
           </nav>
+        </div>
+        <div className="flex h-11 items-center gap-4 overflow-x-auto border-t px-4 text-sm md:hidden">
+          <MainLinks />
+          {showViewToggle && <div className="ml-auto shrink-0"><ViewModeToggle /></div>}
         </div>
       </header>
       {showExpertHint && (

@@ -5,14 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { PriceChart } from "@/components/stock/PriceChart"
-import { StockHeader, SimpleFundamentalsCard } from "@/components/stock/StockHeader"
+import { StockHeader } from "@/components/stock/StockHeader"
 import { FundamentalsTable } from "@/components/stock/FundamentalsTable"
 import { GrowthHistoryTable } from "@/components/stock/GrowthHistoryTable"
 import { DividendSparkline } from "@/components/stock/DividendSparkline"
 import { TechnicalAnalysisPanel } from "@/components/stock/TechnicalAnalysisPanel"
 import { analyzeTechnicals } from "@/lib/technicalAnalysis"
 import { ExpertsSection } from "@/components/stock/ExpertsSection"
-import { StockNewsCard } from "@/components/stock/StockNewsCard"
 import { FreshnessBadge } from "@/components/FreshnessBadge"
 import { cn } from "@/lib/utils"
 import { computeScore } from "@/lib/scoring"
@@ -28,7 +27,7 @@ export function StockPage() {
   const { ticker } = useParams<{ ticker: string }>()
   const { data: dataset, loading: stocksLoading } = useStocks()
   const { data: priceData, loading: pricesLoading } = usePriceHistory(ticker ?? "")
-  const { isSimple, setMode } = useViewMode()
+  const { isSimple } = useViewMode()
   const { user, openAuthModal } = useAuth()
   const { openTradeModal } = usePortfolio()
   const { trackStockView, awardXP } = useXP()
@@ -136,8 +135,6 @@ export function StockPage() {
               </Card>
             </>
           )}
-          <Separator />
-          <SimpleFundamentalsCard score={score} onSwitchExpert={() => setMode("expert")} />
         </>
       ) : (
         <>
@@ -193,7 +190,6 @@ export function StockPage() {
       <Separator />
       <ExpertsSection ticker={stock.ticker} simple={isSimple} />
 
-      <StockNewsCard ticker={stock.ticker} />
 
       {stock.description && (
         <>

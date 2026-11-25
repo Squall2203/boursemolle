@@ -5,6 +5,8 @@ import YahooFinance from "yahoo-finance2"
 import type { Stock, StocksDataset, StockPriceHistory, PriceCandle, AnnualFinancial, AnnualDividend } from "../src/types/stock.ts"
 import { UNIVERSE } from "./universe.ts"
 import { toPriceFilename } from "../src/lib/tickerFilename.ts"
+import { detectSmaCross } from "../src/lib/smaCross.ts"
+import { FALLBACK_FX_RATES, normalizeCurrency, toEur, type FxRates } from "../src/lib/fx.ts"
 
 const yahooFinance = new YahooFinance({ suppressNotices: ["yahooSurvey"] })
 
@@ -102,6 +104,7 @@ function enrichWithTechnicals(stock: Stock, candles: PriceCandle[]): void {
   stock.perf3M = computePerf(closes, 63)
   stock.perf6M = computePerf(closes, 126)
   stock.perf1Y = computePerf(closes, 252)
+  stock.smaCross = detectSmaCross(closes)
 }
 
 // ─── Data fetching ───
@@ -327,6 +330,33 @@ async function fetchMacro(): Promise<MacroData> {
   return data
 }
 
+// ─── Taux de change (pour exprimer toutes les capitalisations en euros) ─────
+
+async function fetchFxRates(currencies: string[]): Promise<FxRates> {
+  const rates: FxRates = { EUR: 1 }
+  for (const c of currencies) {
+    if (c === "EUR") continue
+    try {
+      // EURXXX=X = nombre d'unités de XXX pour 1 euro → on stocke l'inverse
+      const q = await yahooFinance.quote(`EUR${c}=X`)
+      const perEur = q.regularMarketPrice
+      if (perEur != null && perEur > 0) {
+        rates[c] = Math.round((1 / perEur) * 1e6) / 1e6
+        process.stdout.write(`  fx EUR${c.padEnd(4)} ✓ ${perEur.toFixed(4)}\n`)
+        continue
+      }
+    } catch (err) {
+      console.warn(`  fx ${c}: ${err instanceof Error ? err.message : err}`)
+    }
+    if (FALLBACK_FX_RATES[c] != null) {
+      rates[c] = FALLBACK_FX_RATES[c]
+      console.warn(`  fx ${c}: taux de secours utilisé (${rates[c]})`)
+    }
+    await sleep(200)
+  }
+  return rates
+}
+
 async function main() {
   console.log(`Fetching ${UNIVERSE.length} tickers from Yahoo Finance...\n`)
 
@@ -358,6 +388,7 @@ async function main() {
   console.log(`\nFetching price history (5 years) + computing technicals...\n`)
   await mkdir(PRICES_DIR, { recursive: true })
   let priceSuccesses = 0
+  const recentCandles = new Map<string, PriceCandle[]>()
   for (const stock of results) {
     process.stdout.write(`  ${stock.ticker.padEnd(12)} prices ... `)
     const result = await fetchPriceHistory(stock.ticker, stock.currency)
@@ -365,6 +396,7 @@ async function main() {
       const filePath = path.join(PRICES_DIR, `${toPriceFilename(stock.ticker)}.json`)
       await writeFile(filePath, JSON.stringify(result.history), "utf-8")
       enrichWithTechnicals(stock, result.history.candles)
+      recentCandles.set(stock.ticker, result.history.candles.slice(-60))
       stock.dividendHistory = result.dividends
       const rsi = stock.rsi14 != null ? `RSI=${stock.rsi14}` : ""
       const divYears = result.dividends.length > 0 ? ` div=${result.dividends.length}y` : ""
@@ -401,9 +433,26 @@ async function main() {
   console.log(`  missing sector    : ${missingSector.length}`)
   console.log(`  missing RSI       : ${missingRSI.length}`)
 
+  console.log(`\nFetching FX rates...\n`)
+  const currencies = [...new Set(results.map((s) => normalizeCurrency(s.currency)))].sort()
+  const fxRates = await fetchFxRates(currencies)
+  for (const stock of results) {
+    const eur = toEur(stock.marketCap, stock.currency, fxRates)
+    stock.marketCapEur = eur != null ? Math.round(eur) : null
+
+    // Montant moyen échangé par séance (60 dernières séances), en euros : sert de mesure de liquidité
+    const candles = recentCandles.get(stock.ticker)
+    if (candles && candles.length >= 20) {
+      const avg = candles.reduce((sum, c) => sum + c.close * (c.volume || 0), 0) / candles.length
+      const dailyEur = toEur(stock.currency === "GBp" ? avg / 100 : avg, stock.currency, fxRates)
+      stock.avgDailyValueEur = dailyEur != null ? Math.round(dailyEur) : null
+    }
+  }
+
   const dataset: StocksDataset = {
     generatedAt: new Date().toISOString(),
     count: results.length,
+    fxRates,
     stocks: results,
   }
 

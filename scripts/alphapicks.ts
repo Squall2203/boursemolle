@@ -6,6 +6,7 @@
 
 import fs from "fs"
 import path from "path"
+import { toEur, type FxRates } from "../src/lib/fx.ts"
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -19,6 +20,8 @@ interface StockData {
   industry: string | null
   price: number | null
   marketCap: number | null
+  marketCapEur?: number | null
+  avgDailyValueEur?: number | null
   trailingPE: number | null
   forwardPE: number | null
   priceToBook: number | null
@@ -106,112 +109,6 @@ async function fetchBenchmarkPrice(ticker: string): Promise<number | null> {
   } catch {
     return null
   }
-}
-
-// ─── Chart data helpers ───────────────────────────────────────────────────────
-
-interface ChartPoint { date: string; value: number }
-
-async function fetchBenchmarkHistory(ticker: string): Promise<ChartPoint[]> {
-  try {
-    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1wk&range=1y`
-    const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } })
-    if (!r.ok) return []
-    const data = await r.json() as {
-      chart?: {
-        result?: {
-          timestamp?: number[]
-          indicators?: { adjclose?: { adjclose: (number | null)[] }[] }
-        }[]
-      }
-    }
-    const result = data?.chart?.result?.[0]
-    if (!result?.timestamp) return []
-    const timestamps = result.timestamp
-    const closes = result.indicators?.adjclose?.[0]?.adjclose ?? []
-    const points: ChartPoint[] = []
-    for (let i = 0; i < timestamps.length; i++) {
-      const close = closes[i]
-      if (close != null) {
-        const date = new Date(timestamps[i] * 1000).toISOString().split("T")[0]
-        points.push({ date, value: close })
-      }
-    }
-    if (points.length === 0) return []
-    const base = points[0].value
-    return points.map(p => ({ date: p.date, value: Math.round((p.value / base) * 10000) / 100 }))
-  } catch {
-    return []
-  }
-}
-
-function computePortfolioChart(
-  tickers: string[],
-  priceDir: string,
-): ChartPoint[] {
-  const cutoff = new Date()
-  cutoff.setFullYear(cutoff.getFullYear() - 1)
-  const cutoffStr = cutoff.toISOString().split("T")[0]
-
-  // Load & filter candles per ticker
-  const pricesByticker: { ticker: string; candles: { date: string; close: number }[] }[] = []
-  for (const ticker of tickers) {
-    const p = path.join(priceDir, `${ticker}.json`)
-    if (!fs.existsSync(p)) continue
-    try {
-      const raw = JSON.parse(fs.readFileSync(p, "utf8"))
-      const candles = (raw.candles ?? [])
-        .filter((c: { date: string }) => c.date >= cutoffStr)
-        .map((c: { date: string; close: number }) => ({ date: c.date, close: c.close }))
-      if (candles.length > 0) pricesByticker.push({ ticker, candles })
-    } catch { /* skip */ }
-  }
-  if (pricesByticker.length === 0) return []
-
-  // Collect all dates and group by ISO week → keep last date per week
-  const allDates = new Set<string>()
-  for (const { candles } of pricesByticker) for (const c of candles) allDates.add(c.date)
-  const sortedDates = Array.from(allDates).sort()
-
-  const weekMap = new Map<string, string>()
-  for (const date of sortedDates) {
-    const d = new Date(date)
-    const thu = new Date(d); thu.setDate(d.getDate() + (4 - (d.getDay() || 7)))
-    const weekKey = `${thu.getFullYear()}-${String(thu.getMonth() + 1).padStart(2, "0")}-${String(thu.getDate()).padStart(2, "0")}`
-    weekMap.set(weekKey, date)
-  }
-  const weeklyDates = Array.from(weekMap.values()).sort()
-
-  // Build price maps and start prices
-  const maps = pricesByticker.map(({ candles }) => {
-    const m = new Map<string, number>()
-    for (const c of candles) m.set(c.date, c.close)
-    return m
-  })
-  const startPrices = maps.map(m => {
-    for (const d of sortedDates) { const v = m.get(d); if (v != null) return v }
-    return null
-  })
-
-  // Compute equal-weighted indexed values
-  const lastKnown = startPrices.map(p => p ?? 0)
-  const result: ChartPoint[] = []
-
-  for (const date of weeklyDates) {
-    const vals: number[] = []
-    for (let i = 0; i < maps.length; i++) {
-      const sp = startPrices[i]
-      if (sp == null || sp === 0) continue
-      const price = maps[i].get(date)
-      if (price != null) lastKnown[i] = price
-      vals.push((lastKnown[i] / sp) * 100)
-    }
-    if (vals.length > 0) {
-      result.push({ date, value: Math.round((vals.reduce((a, b) => a + b) / vals.length) * 100) / 100 })
-    }
-  }
-
-  return result
 }
 
 // ─── Math helpers ────────────────────────────────────────────────────────────
@@ -497,6 +394,44 @@ const EU_COUNTRIES = new Set([
   "Portugal", "Ireland", "Luxembourg",
 ])
 
+// ─── Taille et liquidité ─────────────────────────────────────────────────────
+
+let FX_RATES: FxRates | null = null
+
+/** Capitalisation en euros (0 si inconnue), pour que les seuils aient le même sens sur toutes les places. */
+function capEur(s: StockData): number {
+  return s.marketCapEur ?? toEur(s.marketCap, s.currency, FX_RATES) ?? 0
+}
+
+/** Montant moyen échangé par séance en dessous duquel une action est écartée des sélections. */
+const MIN_DAILY_VALUE_EUR = 250_000
+/** Sans mesure de liquidité disponible, seules les grandes capitalisations sont conservées. */
+const LARGE_CAP_EUR = 2e9
+
+/** Montant moyen échangé par séance (euros) sur les 60 dernières séances, lu dans l'historique de cours. */
+function dailyValueFromPrices(s: StockData, priceDir: string): number | null {
+  const p = path.join(priceDir, `${s.ticker}.json`)
+  if (!fs.existsSync(p)) return null
+  try {
+    const candles = (JSON.parse(fs.readFileSync(p, "utf8")).candles ?? []).slice(-60) as { close: number; volume: number }[]
+    if (candles.length < 20) return null
+    const avg = candles.reduce((sum, c) => sum + c.close * (c.volume ?? 0), 0) / candles.length
+    // Londres cote en pence : on repasse en livres avant conversion
+    return toEur(s.currency === "GBp" ? avg / 100 : avg, s.currency, FX_RATES)
+  } catch {
+    return null
+  }
+}
+
+function isLiquidEnough(s: StockData, priceDir: string): boolean {
+  const daily = s.avgDailyValueEur ?? dailyValueFromPrices(s, priceDir)
+  if (daily == null) return capEur(s) >= LARGE_CAP_EUR
+  return daily >= MIN_DAILY_VALUE_EUR
+}
+
+const ML_STRATEGY_ID = "tech-us-ml"
+const ML_BENCHMARK_TICKER = "^GSPC"
+
 const STRATEGIES: StrategyConfig[] = [
   {
     id: "france-elite",
@@ -508,7 +443,7 @@ const STRATEGIES: StrategyConfig[] = [
     benchmarkName: "CAC 40",
     benchmarkTicker: "^FCHI",
     size: 10,
-    filter: (s) => s.country === "France" && s.peaEligible === true && s.price != null && s.marketCap != null && s.marketCap > 300e6,
+    filter: (s) => s.country === "France" && s.peaEligible === true && s.price != null && capEur(s) > 300e6,
     weights: { qualite: 0.30, valorisation: 0.30, sante: 0.20, croissance: 0.10, dividende: 0.10, momentum: 0 },
   },
   {
@@ -521,7 +456,7 @@ const STRATEGIES: StrategyConfig[] = [
     benchmarkName: "CAC 40",
     benchmarkTicker: "^FCHI",
     size: 10,
-    filter: (s) => s.peaEligible === true && s.price != null && s.marketCap != null && s.marketCap > 500e6,
+    filter: (s) => s.peaEligible === true && s.price != null && capEur(s) > 500e6,
     weights: { valorisation: 0.38, qualite: 0.22, sante: 0.20, dividende: 0.10, croissance: 0.05, momentum: 0.05 },
   },
   {
@@ -534,7 +469,7 @@ const STRATEGIES: StrategyConfig[] = [
     benchmarkName: "MSCI World",
     benchmarkTicker: "CW8.PA",
     size: 12,
-    filter: (s) => s.price != null && s.marketCap != null && s.marketCap > 5e9,
+    filter: (s) => s.price != null && capEur(s) > 5e9,
     weights: { qualite: 0.38, croissance: 0.25, sante: 0.17, momentum: 0.10, valorisation: 0.10, dividende: 0 },
   },
   {
@@ -547,7 +482,8 @@ const STRATEGIES: StrategyConfig[] = [
     benchmarkName: "Euro Stoxx 50",
     benchmarkTicker: "^STOXX50E",
     size: 10,
-    filter: (s) => (s.dividendYield ?? 0) >= 2.5 && s.price != null && s.marketCap != null && s.marketCap > 1e9,
+    // Stratégie présentée comme européenne : l'univers est restreint à l'Europe (il ne l'était pas)
+    filter: (s) => EU_COUNTRIES.has(s.country) && (s.dividendYield ?? 0) >= 2.5 && s.price != null && capEur(s) > 1e9,
     weights: { dividende: 0.40, sante: 0.25, qualite: 0.20, valorisation: 0.15, croissance: 0, momentum: 0 },
   },
   {
@@ -560,7 +496,7 @@ const STRATEGIES: StrategyConfig[] = [
     benchmarkName: "Euro Stoxx 50",
     benchmarkTicker: "^STOXX50E",
     size: 10,
-    filter: (s) => EU_COUNTRIES.has(s.country) && s.price != null && s.marketCap != null && s.marketCap > 2e9,
+    filter: (s) => EU_COUNTRIES.has(s.country) && s.price != null && capEur(s) > 2e9,
     weights: { momentum: 0.45, qualite: 0.25, valorisation: 0.15, croissance: 0.15, sante: 0, dividende: 0 },
   },
   {
@@ -576,19 +512,20 @@ const STRATEGIES: StrategyConfig[] = [
     filter: (s) =>
       EU_COUNTRIES.has(s.country) &&
       s.price != null &&
-      s.marketCap != null &&
-      s.marketCap > 300e6 &&
-      s.marketCap < 15e9,
+      capEur(s) > 300e6 &&
+      capEur(s) < 15e9,
     weights: { valorisation: 0.35, croissance: 0.30, qualite: 0.20, sante: 0.15, dividende: 0, momentum: 0 },
   },
 ]
 
 // ─── Next update date ────────────────────────────────────────────────────────
 
-function nextFirstOfMonth(): string {
+/** Prochaine sélection : premier lundi du mois suivant (la tâche planifiée tourne le lundi). */
+function nextRebalanceDate(): string {
   const now = new Date()
-  const next = new Date(now.getFullYear(), now.getMonth() + 1, 1)
-  return next.toISOString().split("T")[0]
+  const d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 1))
+  while (d.getUTCDay() !== 1) d.setUTCDate(d.getUTCDate() + 1)
+  return d.toISOString().split("T")[0]
 }
 
 function currentPeriod(): string {
@@ -610,11 +547,14 @@ async function main() {
 
   const dataset = JSON.parse(fs.readFileSync(stocksPath, "utf8"))
   const allStocks: StockData[] = dataset.stocks
+  FX_RATES = dataset.fxRates ?? null
+  const priceDir = path.join(process.cwd(), "public", "data", "prices")
+  const force = process.argv.includes("--force")
 
   console.log(`📊 Univers : ${allStocks.length} actions`)
 
   // Previous picks for entry/exit detection + performance tracking
-  let previousPicks: Record<string, string[]> = {}
+  const previousPicks: Record<string, string[]> = {}
   let previousDataset: { period: string; generatedAt: string; strategies: { id: string; benchmarkPrice?: number | null; picks: { ticker: string; name: string; price: number | null }[] }[] } | null = null
 
   if (fs.existsSync(outPath)) {
@@ -629,6 +569,13 @@ async function main() {
 
   // Performance computation — runs when a new month starts
   const period = currentPeriod()
+
+  // Les sélections sont figées pour le mois : on ne les recalcule pas en cours de mois, sinon le
+  // prix d'entrée est réécrit chaque semaine et le bilan mensuel ne mesure plus que la dernière semaine.
+  if (previousDataset && previousDataset.period === period && !force) {
+    console.log(`\n🔒 Sélections de ${period} déjà figées (générées le ${previousDataset.generatedAt.slice(0, 10)}) — rien à faire. Utiliser --force pour recalculer.`)
+    return
+  }
   if (previousDataset && previousDataset.period && previousDataset.period !== period) {
     console.log(`\n📈 Calcul des performances pour la période ${previousDataset.period}...`)
 
@@ -670,6 +617,7 @@ async function main() {
     for (const strat of STRATEGIES) {
       benchmarkTickerMap.set(strat.id, strat.benchmarkTicker)
     }
+    benchmarkTickerMap.set(ML_STRATEGY_ID, ML_BENCHMARK_TICKER)
 
     for (const [id, entry] of Object.entries(strategyResults)) {
       const bmTicker = benchmarkTickerMap.get(id)
@@ -732,8 +680,9 @@ async function main() {
   const results = []
 
   for (const strat of STRATEGIES) {
-    const candidates = allStocks.filter(strat.filter)
-    console.log(`\n🎯 ${strat.name} — ${candidates.length} candidats`)
+    const eligible = allStocks.filter(strat.filter)
+    const candidates = eligible.filter((s) => isLiquidEnough(s, priceDir))
+    console.log(`\n🎯 ${strat.name} — ${candidates.length} candidats (${eligible.length - candidates.length} écartés pour liquidité insuffisante)`)
 
     const scored = candidates.map((s) => {
       const sectorPeMedian = s.sector ? (sectorPeMedians.get(s.sector) ?? null) : null
@@ -767,6 +716,7 @@ async function main() {
       perf6M: s.perf6M,
       divYield: s.dividendYield,
       marketCap: s.marketCap,
+      marketCapEur: capEur(s) || null,
       price: s.price,
       peaEligible: s.peaEligible,
       justification: generateJustification(s, pillars, strat.id),
@@ -778,11 +728,6 @@ async function main() {
     if (benchmarkPrice != null) {
       console.log(`  Benchmark ${strat.benchmarkTicker}: ${benchmarkPrice.toFixed(2)}`)
     }
-
-    const priceDir = path.join(process.cwd(), "public", "data", "prices")
-    const portfolioChart = computePortfolioChart(picks.map(p => p.ticker), priceDir)
-    const benchmarkChart = await fetchBenchmarkHistory(strat.benchmarkTicker)
-    console.log(`  Chart: ${portfolioChart.length} pts portefeuille, ${benchmarkChart.length} pts benchmark`)
 
     results.push({
       id: strat.id,
@@ -798,11 +743,12 @@ async function main() {
       size: strat.size,
       picks,
       exits,
-      chartData: { portfolio: portfolioChart, benchmark: benchmarkChart },
     })
   }
 
   // ─── US ML strategy — merge predictions from Python pipeline ──────────────
+  // Publiée seulement si les prédictions sont celles du mois en cours : un modèle qui n'a pas
+  // tourné ne doit pas continuer d'afficher d'anciennes sélections comme si elles étaient à jour.
   const usPredPath = path.join(outDir, "us_predictions.json")
   if (fs.existsSync(usPredPath)) {
     try {
@@ -815,39 +761,38 @@ async function main() {
         price: number | null; peaEligible: boolean; justification: string
       }>
 
-      if (mlPicks.length > 0) {
-        // isNew detection vs previous US ML picks
-        const prevUsTickers = (previousPicks["tech-us-ml"] ?? [])
+      if (usPred.period !== period) {
+        console.log(`\n🤖 US ML Strategy — prédictions périmées (${usPred.period ?? "date inconnue"}, attendu ${period}) : stratégie non publiée`)
+      } else if (mlPicks.length > 0) {
+        const currentPrices = new Map(allStocks.map((s) => [s.ticker, s.price]))
+        const prevUsTickers = (previousPicks[ML_STRATEGY_ID] ?? [])
         const mlPicksWithNew = mlPicks.map(p => ({
           ...p,
+          // Prix d'entrée = cours du jour de publication, pas celui du jour de la prédiction
+          price: currentPrices.get(p.ticker) ?? p.price,
           isNew: !prevUsTickers.includes(p.ticker) && prevUsTickers.length > 0,
         }))
         const mlExits = prevUsTickers.filter(t => !mlPicks.map(p => p.ticker).includes(t))
-
-        const mlBenchmarkTicker = "^GSPC"
-        const mlBenchmarkPrice = await fetchBenchmarkPrice(mlBenchmarkTicker)
-        const priceDir = path.join(process.cwd(), "public", "data", "prices")
-        const mlPortfolioChart = computePortfolioChart(mlPicksWithNew.map(p => p.ticker), priceDir)
-        const mlBenchmarkChart = await fetchBenchmarkHistory(mlBenchmarkTicker)
+        const mlBenchmarkPrice = await fetchBenchmarkPrice(ML_BENCHMARK_TICKER)
 
         console.log(`\n🤖 US ML Strategy — ${mlPicksWithNew.length} picks (LightGBM v${usPred.engine ?? "1"})`)
         console.log(`  Top 3: ${mlPicksWithNew.slice(0, 3).map(p => `${p.ticker} (${p.score.toFixed(1)})`).join(", ")}`)
 
         results.push({
-          id: "tech-us-ml",
+          id: ML_STRATEGY_ID,
           name: "US Growth ML",
           emoji: "🤖",
           market: "US" as const,
           marketLabel: "États-Unis",
           description: "Sélection algorithmique LightGBM entraîné sur données SEC EDGAR (PIT) · Univers NYSE + NASDAQ large/mid cap",
           engine: "ml" as const,
+          predictionsPeriod: usPred.period as string,
           benchmarkName: "S&P 500",
-          benchmarkTicker: mlBenchmarkTicker,
+          benchmarkTicker: ML_BENCHMARK_TICKER,
           benchmarkPrice: mlBenchmarkPrice,
           size: mlPicksWithNew.length,
           picks: mlPicksWithNew,
           exits: mlExits,
-          chartData: { portfolio: mlPortfolioChart, benchmark: mlBenchmarkChart },
         })
       }
     } catch (e) {
@@ -862,7 +807,7 @@ async function main() {
   const output = {
     generatedAt: new Date().toISOString(),
     period,
-    nextUpdate: nextFirstOfMonth(),
+    nextUpdate: nextRebalanceDate(),
     strategies: results,
   }
 

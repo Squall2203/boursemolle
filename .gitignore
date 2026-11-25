@@ -25,12 +25,9 @@ dist-ssr
 
 .vercel
 
-# Données générées (regénérées via scripts automatisés)
-public/data/prices/
-public/data/stocks.json
-public/data/feed.json
-public/data/feed/
-public/data/news/
+# Les données générées (public/data/) sont versionnées : le site est déployé depuis git.
+# Ne pas les ignorer, sinon `git add public/data/` laisse de côté les nouveaux fichiers
+# (c'est ce qui privait d'historique de cours les actions ajoutées après coup).
 
 # ML pipeline — données volumineuses (non versionnées)
 scripts/ml/data/edgar/          # téléchargements EDGAR bruts (plusieurs centaines de Mo)

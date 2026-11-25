@@ -14,7 +14,7 @@ const METRIC_GROUPS: Array<{ title: string; metrics: MetricDef[] }> = [
     title: "Valorisation",
     metrics: [
       { label: "Prix", getValue: (s) => s.price, format: (s) => formatPrice(s.price, s.currency), higherIsBetter: false },
-      { label: "Capitalisation", getValue: (s) => s.marketCap, format: (s) => formatMarketCap(s.marketCap, s.currency), higherIsBetter: true },
+      { label: "Capitalisation", getValue: (s) => s.marketCapEur ?? null, format: (s) => formatMarketCap(s.marketCapEur ?? null, "EUR"), higherIsBetter: true },
       { label: "P/E (TTM)", getValue: (s) => s.trailingPE, format: (s) => formatRatio(s.trailingPE), higherIsBetter: false },
       { label: "P/E forward", getValue: (s) => s.forwardPE, format: (s) => formatRatio(s.forwardPE), higherIsBetter: false },
       { label: "EV/EBITDA", getValue: (s) => s.evToEbitda, format: (s) => formatRatio(s.evToEbitda), higherIsBetter: false },
