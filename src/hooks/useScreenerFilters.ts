@@ -56,6 +56,35 @@ function applyList(params: URLSearchParams, key: string, values: string[]) {
   else params.set(key, values.join(","))
 }
 
+/** Écrit des filtres dans les paramètres d'adresse (seuls les filtres actifs y figurent). */
+export function filtersToParams(merged: ScreenerFilters, base?: URLSearchParams): URLSearchParams {
+  const params = new URLSearchParams(base)
+  applyRange(params, "marketCap", merged.marketCap, FILTER_BOUNDS.marketCap)
+  applyRange(params, "pe", merged.pe, FILTER_BOUNDS.pe)
+  applyRange(params, "roe", merged.roe, FILTER_BOUNDS.roe)
+  applyRange(params, "divYield", merged.divYield, FILTER_BOUNDS.divYield)
+  applyRange(params, "rsi", merged.rsi, FILTER_BOUNDS.rsi)
+  applyRange(params, "perf1M", merged.perf1M, FILTER_BOUNDS.perf1M)
+  applyRange(params, "perf6M", merged.perf6M, FILTER_BOUNDS.perf6M)
+  applyRange(params, "perf1Y", merged.perf1Y, FILTER_BOUNDS.perf1Y)
+  applyRange(params, "scoreGlobal", merged.scoreGlobal, FILTER_BOUNDS.scoreGlobal)
+  applyRange(params, "scoreValorisation", merged.scoreValorisation, FILTER_BOUNDS.scoreValorisation)
+  applyRange(params, "scoreQualite", merged.scoreQualite, FILTER_BOUNDS.scoreQualite)
+  applyRange(params, "scoreCroissance", merged.scoreCroissance, FILTER_BOUNDS.scoreCroissance)
+  applyRange(params, "scoreSante", merged.scoreSante, FILTER_BOUNDS.scoreSante)
+  applyRange(params, "scoreDividende", merged.scoreDividende, FILTER_BOUNDS.scoreDividende)
+  applyRange(params, "scoreMomentum", merged.scoreMomentum, FILTER_BOUNDS.scoreMomentum)
+  applyRange(params, "scoreQuant", merged.scoreQuant, FILTER_BOUNDS.scoreQuant)
+  applyNum(params, "freshnessMaxDays", merged.freshnessMaxDays, 0)
+  if (merged.market) params.set("market", merged.market)
+  else params.delete("market")
+  applyList(params, "indices", merged.indices)
+  applyList(params, "sectors", merged.sectors)
+  applyList(params, "countries", merged.countries)
+  applyList(params, "signaux", merged.signaux)
+  return params
+}
+
 interface UseScreenerFiltersResult {
   filters: ScreenerFilters
   setFilters: (next: Partial<ScreenerFilters>) => void
@@ -97,31 +126,7 @@ export function useScreenerFilters(): UseScreenerFiltersResult {
     (next: Partial<ScreenerFilters>) => {
       setSearchParams(
         (prev) => {
-          const params = new URLSearchParams(prev)
-          const merged = { ...filters, ...next }
-          applyRange(params, "marketCap", merged.marketCap, FILTER_BOUNDS.marketCap)
-          applyRange(params, "pe", merged.pe, FILTER_BOUNDS.pe)
-          applyRange(params, "roe", merged.roe, FILTER_BOUNDS.roe)
-          applyRange(params, "divYield", merged.divYield, FILTER_BOUNDS.divYield)
-          applyRange(params, "rsi", merged.rsi, FILTER_BOUNDS.rsi)
-          applyRange(params, "perf1M", merged.perf1M, FILTER_BOUNDS.perf1M)
-          applyRange(params, "perf6M", merged.perf6M, FILTER_BOUNDS.perf6M)
-          applyRange(params, "perf1Y", merged.perf1Y, FILTER_BOUNDS.perf1Y)
-          applyRange(params, "scoreGlobal", merged.scoreGlobal, FILTER_BOUNDS.scoreGlobal)
-          applyRange(params, "scoreValorisation", merged.scoreValorisation, FILTER_BOUNDS.scoreValorisation)
-          applyRange(params, "scoreQualite", merged.scoreQualite, FILTER_BOUNDS.scoreQualite)
-          applyRange(params, "scoreCroissance", merged.scoreCroissance, FILTER_BOUNDS.scoreCroissance)
-          applyRange(params, "scoreSante", merged.scoreSante, FILTER_BOUNDS.scoreSante)
-          applyRange(params, "scoreDividende", merged.scoreDividende, FILTER_BOUNDS.scoreDividende)
-          applyRange(params, "scoreMomentum", merged.scoreMomentum, FILTER_BOUNDS.scoreMomentum)
-          applyRange(params, "scoreQuant", merged.scoreQuant, FILTER_BOUNDS.scoreQuant)
-          applyNum(params, "freshnessMaxDays", merged.freshnessMaxDays, 0)
-          if (merged.market) params.set("market", merged.market)
-          else params.delete("market")
-          applyList(params, "indices", merged.indices)
-          applyList(params, "sectors", merged.sectors)
-          applyList(params, "countries", merged.countries)
-          applyList(params, "signaux", merged.signaux)
+          const params = filtersToParams({ ...filters, ...next }, prev)
           return params
         },
         { replace: true },

@@ -5,22 +5,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { SECTOR_LABELS } from "@/lib/sectors"
 import { FILTER_BOUNDS, type ScreenerFilters } from "@/types/filters"
-
-/** Noms des secteurs en français (les données les fournissent en anglais). */
-const SECTOR_LABELS: Record<string, string> = {
-  "Technology": "Technologie",
-  "Healthcare": "Santé",
-  "Financial Services": "Finance",
-  "Consumer Cyclical": "Consommation cyclique",
-  "Consumer Defensive": "Consommation de base",
-  "Industrials": "Industrie",
-  "Communication Services": "Télécoms et médias",
-  "Basic Materials": "Matériaux de base",
-  "Real Estate": "Immobilier",
-  "Energy": "Énergie",
-  "Utilities": "Services aux collectivités",
-}
 
 const CAP = FILTER_BOUNDS.marketCap
 const SIZES = [

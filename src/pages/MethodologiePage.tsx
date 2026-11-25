@@ -13,6 +13,7 @@ import {
 import { ScoreEvaluationCard } from "@/components/ScoreEvaluationCard"
 import { FLAG_CATALOG, getPillarCatalog } from "@/lib/scoring"
 import { cn } from "@/lib/utils"
+import { usePageMeta } from "@/hooks/usePageMeta"
 
 const PILLARS = getPillarCatalog()
 
@@ -27,6 +28,10 @@ const GRADES = [
 ]
 
 export function MethodologiePage() {
+  usePageMeta(
+    "Comment les notes sont calculées",
+    "Les sept critères de la note sur 10, la comparaison au secteur, et ce que les notes ont réellement donné depuis leur publication.",
+  )
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <Button variant="ghost" size="sm" asChild className="gap-1">
