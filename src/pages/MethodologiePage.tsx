@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { ScoreEvaluationCard } from "@/components/ScoreEvaluationCard"
 import { FLAG_CATALOG, getPillarCatalog } from "@/lib/scoring"
 import { cn } from "@/lib/utils"
 
@@ -123,6 +124,8 @@ export function MethodologiePage() {
           </p>
         </CardContent>
       </Card>
+
+      <ScoreEvaluationCard />
 
       {/* Données manquantes */}
       <Card>

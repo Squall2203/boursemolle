@@ -1,4 +1,4 @@
-import type { Stock } from "@/types/stock"
+import type { Stock } from "../types/stock"
 
 export type MarketFilter = "" | "pea" | "us" | "asia"
 export type StockRegion = "eu" | "us" | "asia"

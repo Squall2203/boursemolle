@@ -1,6 +1,6 @@
-import type { Stock } from "@/types/stock"
-import { getStockRegion, type StockRegion } from "@/lib/market"
-import { getGrade } from "@/lib/grades"
+import type { Stock } from "../types/stock"
+import { getStockRegion, type StockRegion } from "./market"
+import { getGrade } from "./grades"
 
 // ─── Types ───
 
