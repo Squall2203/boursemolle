@@ -92,17 +92,36 @@ def build_monthly_returns(results: pd.DataFrame) -> tuple[pd.Series, pd.Series]:
     return portfolio, universe
 
 
-def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_rets: pd.Series) -> dict:
+def _rank_ic(df: pd.DataFrame, score_col: str) -> pd.Series:
+    """Corrélation de rang entre une note et le rendement réalisé, date par date."""
+    labeled = df.dropna(subset=["fwd_return", score_col])
+    return labeled.groupby("rebalancing_date")[[score_col, "fwd_return"]].apply(
+        lambda d: d[score_col].corr(d["fwd_return"], method="spearman")
+    ).dropna()
+
+
+def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_rets: pd.Series,
+                     broad: pd.DataFrame | None = None) -> dict:
     """
     Résume l'évaluation du modèle et décide s'il est publiable (voir PUBLICATION_CRITERIA).
     Chaque date de sélection est jugée sur le rendement des FORWARD_DAYS séances qui la suivent.
     """
     alpha = (portfolio_rets - universe_rets).dropna()
     n = int(len(alpha))
-    labeled = results.dropna(subset=["fwd_return"])
-    ic = labeled.groupby("rebalancing_date")[["predicted_score", "fwd_return"]].apply(
-        lambda d: d["predicted_score"].corr(d["fwd_return"], method="spearman")
-    ).dropna()
+    ic = _rank_ic(results, "predicted_score")
+
+    # Référence simple (moyenne de quelques critères, sans apprentissage) et mesure sur l'univers élargi
+    baseline = None
+    if "baseline_score" in results.columns:
+        base_port = results[results["in_baseline_portfolio"]].groupby("rebalancing_date")["fwd_return"].mean()
+        base_alpha = (base_port - universe_rets).dropna()
+        base_ic = _rank_ic(results, "baseline_score")
+        baseline = {
+            "hit_rate": round(float((base_alpha > 0).mean()) if len(base_alpha) else 0.0, 3),
+            "median_alpha_pct": round(float(base_alpha.median()) if len(base_alpha) else 0.0, 3),
+            "rank_ic": round(float(base_ic.mean()) if len(base_ic) else 0.0, 4),
+        }
+    broad_ic = _rank_ic(broad, "predicted_score") if broad is not None else pd.Series(dtype=float)
 
     hit_rate = float((alpha > 0).mean()) if n else 0.0
     median_alpha = float(alpha.median()) if n else 0.0
@@ -119,6 +138,12 @@ def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_
     # sinon l'avantage mesuré appartient peut-être au passé.
     recent_ic = float(ic.iloc[len(ic) // 2:].mean()) if len(ic) >= 4 else 0.0
 
+    # Comportement selon le sens du marché (rendement moyen de l'univers sur la période)
+    market = universe_rets.reindex(alpha.index)
+    down, up = alpha[market < 0], alpha[market >= 0]
+    down_hit = float((down > 0).mean()) if len(down) else None
+    up_hit = float((up > 0).mean()) if len(up) else None
+
     c = PUBLICATION_CRITERIA
     failed = []
     if n < c["min_periods"]:
@@ -131,6 +156,11 @@ def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_
         failed.append(f"corrélation de rang de {rank_ic:+.3f} (minimum {c['min_rank_ic']:+.2f})")
     if recent_ic <= 0:
         failed.append(f"corrélation de rang de {recent_ic:+.3f} sur la moitié récente (doit être positive)")
+    if down_hit is not None and len(down) >= 6 and down_hit < c["min_down_market_hit_rate"]:
+        failed.append(f"devant son univers seulement {down_hit:.0%} du temps quand le marché baisse (minimum {c['min_down_market_hit_rate']:.0%}) : "
+                      "son avance vient surtout d'actions plus nerveuses que la moyenne")
+    if baseline is not None and rank_ic <= baseline["rank_ic"]:
+        failed.append(f"ne fait pas mieux que la référence simple (corrélation de rang {rank_ic:+.3f} contre {baseline['rank_ic']:+.3f})")
 
     card = {
         "evaluated_at": date.today().isoformat(),
@@ -146,6 +176,13 @@ def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_
         "mean_alpha_ex_best_pct": round(float(ex_best.mean()) if len(ex_best) else 0.0, 3),
         "rank_ic": round(rank_ic, 4),
         "rank_ic_recent_half": round(recent_ic, 4),
+        "rank_ic_training_universe": round(float(broad_ic.mean()), 4) if len(broad_ic) else None,
+        "n_tickers_training_universe": int(broad["ticker"].nunique()) if broad is not None else None,
+        "simple_baseline": baseline,
+        "by_market_direction": {
+            "up": {"n": int(len(up)), "ahead": int((up > 0).sum()), "hit_rate": round(up_hit, 3) if up_hit is not None else None},
+            "down": {"n": int(len(down)), "ahead": int((down > 0).sum()), "hit_rate": round(down_hit, 3) if down_hit is not None else None},
+        },
         "independent_periods": {
             "n": int(len(independent)),
             "ahead": int((independent > 0).sum()),
@@ -171,7 +208,13 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
             raise FileNotFoundError(f"No backtest results found at {BACKTEST_PATH}. Run train.py first.")
         results = pd.read_parquet(BACKTEST_PATH)
 
-    log.info(f"Evaluating backtest: {len(results):,} predictions across {results['rebalancing_date'].nunique()} periods")
+    broad = results
+    # L'évaluation porte sur les actions du site, celles parmi lesquelles le modèle choisit réellement.
+    # L'univers élargi ne sert qu'à l'entraînement et à une mesure de contrôle.
+    if "in_site_universe" in results.columns:
+        results = results[results["in_site_universe"]]
+    log.info(f"Evaluating backtest: {len(results):,} predictions on the site's stocks across "
+             f"{results['rebalancing_date'].nunique()} periods ({len(broad):,} on the training universe)")
 
     portfolio_rets, universe_rets = build_monthly_returns(results)
 
@@ -218,7 +261,7 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
     CURVE_PATH.write_text(json.dumps(curve, indent=2))
     log.info(f"Cumulative curve saved to {CURVE_PATH}")
 
-    card = write_model_card(results, portfolio_rets, universe_rets)
+    card = write_model_card(results, portfolio_rets, universe_rets, broad)
     metrics["model_card"] = card
 
     # Print summary
@@ -235,7 +278,12 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
     log.info("=" * 50)
     log.info(f"  Écart médian:    {card['median_alpha_pct']:+.2f} pt  |  sans la meilleure date: {card['mean_alpha_ex_best_pct']:+.2f} pt")
     log.info(f"  Dates devant l'univers: {card['periods_ahead']}/{card['n_periods']}  |  périodes disjointes: {card['independent_periods']['ahead']}/{card['independent_periods']['n']}")
-    log.info(f"  Corrélation de rang: {card['rank_ic']:+.3f}  |  moitié récente: {card['rank_ic_recent_half']:+.3f}")
+    log.info(f"  Corrélation de rang: {card['rank_ic']:+.3f}  |  moitié récente: {card['rank_ic_recent_half']:+.3f}  |  univers élargi: {card['rank_ic_training_universe']}")
+    d = card["by_market_direction"]
+    log.info(f"  Marché en hausse: devant {d['up']['ahead']}/{d['up']['n']}  |  marché en baisse: devant {d['down']['ahead']}/{d['down']['n']}")
+    if card["simple_baseline"]:
+        b = card["simple_baseline"]
+        log.info(f"  Référence simple: devant {b['hit_rate']:.0%} du temps, écart médian {b['median_alpha_pct']:+.2f} pt, corrélation de rang {b['rank_ic']:+.3f}")
     if card["validated"]:
         log.info("  → Modèle VALIDÉ : ses sélections seront publiées.")
     else:

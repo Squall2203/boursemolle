@@ -38,6 +38,15 @@ VALIDATION_SHARE = 0.15
 RETRAIN_EVERY = 3
 
 
+# Critères de la référence simple : bon marché, rentable, bien orientée
+BASELINE_FEATURES = ["earnings_yield", "book_to_price", "roe", "op_margin", "mom_12m_skip1m"]
+
+
+def top_n(scores: pd.Series, n: int = US_STRATEGY_SIZE) -> pd.Series:
+    """Vrai pour les n meilleures notes ; les notes absentes ne sont jamais retenues."""
+    return scores.rank(ascending=False, method="first") <= n
+
+
 def fit_model(train: pd.DataFrame, n_estimators: int | None = None) -> tuple[lgb.LGBMRegressor, int]:
     """
     Entraîne un modèle sur des lignes déjà ramenées en rangs. Sans `n_estimators`, le nombre d'arbres
@@ -97,9 +106,15 @@ def run_walk_forward(df: pd.DataFrame) -> tuple[pd.DataFrame, int]:
         test = ranked[ranked["rebalancing_date"] == test_date]
         if test.empty:
             continue
-        out = test[["ticker", "rebalancing_date", "fwd_return", "fwd_return_rel"]].copy()
+        out = test[["ticker", "rebalancing_date", "fwd_return", "fwd_return_rel", "in_site_universe"]].copy()
         out["predicted_score"] = model.predict(test[ALL_FEATURES])
-        out["in_portfolio"] = out["predicted_score"].rank(ascending=False, method="first") <= US_STRATEGY_SIZE
+        # Référence simple : moyenne des rangs de quelques critères classiques, sans aucun apprentissage.
+        # Le modèle n'a d'intérêt que s'il fait mieux qu'elle.
+        out["baseline_score"] = test[BASELINE_FEATURES].mean(axis=1)
+        # Les sélections sont prises parmi les actions du site, comme en production
+        site = out["in_site_universe"]
+        out["in_portfolio"] = top_n(out["predicted_score"].where(site))
+        out["in_baseline_portfolio"] = top_n(out["baseline_score"].where(site))
         predictions.append(out)
 
     if not predictions:
