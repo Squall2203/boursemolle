@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises"
+import { writeFile, mkdir, readFile } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import YahooFinance from "yahoo-finance2"
@@ -14,6 +14,33 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = path.resolve(__dirname, "../public/data/stocks.json")
 const MACRO_PATH  = path.resolve(__dirname, "../public/data/macro.json")
 const PRICES_DIR  = path.resolve(__dirname, "../public/data/prices")
+const ML_PREDICTIONS_PATH = path.resolve(__dirname, "../public/data/picks/us_predictions.json")
+
+/**
+ * Notes du modèle statistique américain (ticker → note sur 10), publiées par scripts/ml.
+ * Ignorées si elles datent de plus d'un mois : une note périmée ne doit pas peser dans le classement.
+ */
+async function loadMlScores(): Promise<Record<string, number>> {
+  try {
+    const pred = JSON.parse(await readFile(ML_PREDICTIONS_PATH, "utf-8")) as { period?: string; validated?: boolean; scores?: Record<string, number> }
+    if (!pred.scores || !pred.period) return {}
+    if (pred.validated !== true) {
+      console.log("  notes ML ignorées : modèle non validé par son évaluation")
+      return {}
+    }
+    const now = new Date()
+    const months = (d: Date) => d.getUTCFullYear() * 12 + d.getUTCMonth()
+    const [y, m] = pred.period.split("-").map(Number)
+    const age = months(now) - (y * 12 + (m - 1))
+    if (age < 0 || age > 1) {
+      console.log(`  notes ML ignorées : prédictions de ${pred.period}`)
+      return {}
+    }
+    return pred.scores
+  } catch {
+    return {}
+  }
+}
 
 const EEE_COUNTRIES = new Set([
   "France", "Germany", "Netherlands", "Belgium", "Luxembourg",
@@ -448,6 +475,14 @@ async function main() {
       stock.avgDailyValueEur = dailyEur != null ? Math.round(dailyEur) : null
     }
   }
+
+  const mlScores = await loadMlScores()
+  let mlCount = 0
+  for (const stock of results) {
+    const score = mlScores[stock.ticker]
+    if (score != null) { stock.mlScore = score; mlCount++ }
+  }
+  console.log(`  notes ML appliquées : ${mlCount}`)
 
   const dataset: StocksDataset = {
     generatedAt: new Date().toISOString(),

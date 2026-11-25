@@ -39,14 +39,13 @@ import shap
 
 from config import (
     MODEL_DIR, DATA_DIR, STOCKS_JSON, OUTPUT_JSON, PRICES_DIR,
-    ALL_FEATURES, FUNDAMENTAL_FEATURES, MIN_MARKET_CAP_USD, US_STRATEGY_SIZE,
+    ALL_FEATURES, MIN_MARKET_CAP_USD, US_STRATEGY_SIZE, MODEL_CARD_PATH,
 )
 from features import (
-    build_feature_dataset, load_price_series, compute_momentum_features,
-    sic_to_division,
+    build_pit_financials, load_price_frame, compute_momentum_features,
+    valuation_features, raw_price_before, rank_features, sic_to_division,
 )
-from edgar_download import load_all_sub, load_all_num, download_ticker_map
-from features import build_pit_financials
+from edgar_download import load_all_sub, download_ticker_map
 
 log = logging.getLogger(__name__)
 
@@ -54,67 +53,43 @@ MODEL_PATH = MODEL_DIR / "lgbm_model.pkl"
 SHAP_PATH = MODEL_DIR / "shap_values.parquet"
 
 
-def generate_justification(
-    ticker: str,
-    shap_contribs: dict[str, float],
-    stock_data: dict,
-) -> str:
-    """Generate human-readable justification from top SHAP contributors."""
-    # Sort by absolute contribution
-    top = sorted(shap_contribs.items(), key=lambda x: abs(x[1]), reverse=True)[:3]
+FEATURE_LABELS = {
+    "mom_1m": "performance sur un mois", "mom_3m": "performance sur trois mois",
+    "mom_6m": "performance sur six mois", "mom_12m": "performance sur un an",
+    "mom_12m_skip1m": "performance sur un an (hors dernier mois)",
+    "vol_20d": "volatilité récente", "price_vs_sma200": "cours par rapport à sa moyenne de 200 séances",
+    "price_vs_sma50": "cours par rapport à sa moyenne de 50 séances",
+    "earnings_yield": "bénéfices rapportés au prix", "book_to_price": "actif net rapporté au prix",
+    "sales_to_price": "ventes rapportées au prix", "fcf_yield": "trésorerie dégagée rapportée au prix",
+    "gp_margin": "marge brute", "op_margin": "marge opérationnelle", "net_margin": "marge nette",
+    "roe": "rentabilité des capitaux propres", "roa": "rentabilité de l'actif",
+    "rev_growth_yoy": "croissance des ventes", "ni_growth_yoy": "croissance du bénéfice",
+    "debt_to_equity": "endettement", "current_ratio": "liquidité à court terme",
+    "cash_to_assets": "trésorerie", "fcf_margin": "trésorerie dégagée sur les ventes",
+    "asset_turnover": "rotation de l'actif", "rd_intensity": "effort de recherche",
+    "sic_div": "secteur d'activité",
+}
 
+
+def generate_justification(shap_contribs: dict[str, float], ranks: dict) -> str:
+    """
+    Phrase d'explication : les variables qui ont le plus poussé la note à la hausse, avec la place de
+    l'action dans l'univers pour chacune (« parmi les 10 % les plus élevées »).
+    """
+    top = [(f, c) for f, c in sorted(shap_contribs.items(), key=lambda x: x[1], reverse=True) if c > 0][:3]
     parts = []
-    for feat, contrib in top:
-        if abs(contrib) < 0.005:
-            continue
-        direction = "fort" if contrib > 0 else "faible"
-
-        if feat == "mom_12m_skip1m":
-            val = stock_data.get("perf1Y")
-            parts.append(
-                f"Momentum 12M exceptionnel (+{val:.0f}%)" if val and val > 0
-                else "Momentum 12M favorable"
-            )
-        elif feat == "op_margin":
-            val = stock_data.get("operatingMargins")
-            parts.append(
-                f"Marge opérationnelle {direction} ({val*100:.1f}%)" if val else f"Marge opérationnelle {direction}"
-            )
-        elif feat == "roe":
-            val = stock_data.get("returnOnEquity")
-            parts.append(
-                f"ROE {direction} ({val*100:.0f}%)" if val else f"Rentabilité des fonds propres {direction}"
-            )
-        elif feat == "rev_growth_yoy":
-            val = stock_data.get("revenueGrowth")
-            parts.append(
-                f"Croissance du CA de {val*100:.0f}% en glissement annuel" if val else "Croissance du chiffre d'affaires solide"
-            )
-        elif feat == "net_margin":
-            parts.append(f"Marge nette {direction}")
-        elif feat == "fcf_margin":
-            parts.append(f"Génération de cash-flow libre {direction}")
-        elif feat == "debt_to_equity":
-            parts.append(f"Levier financier {'maîtrisé' if contrib > 0 else 'élevé'}")
-        elif feat == "vol_20d":
-            parts.append(f"Volatilité {'faible' if contrib > 0 else 'élevée'} à 20 jours")
-        elif feat == "price_vs_sma200":
-            parts.append(f"Cours {'au-dessus' if contrib > 0 else 'en-dessous'} de la SMA 200")
-        elif feat == "gp_margin":
-            parts.append(f"Marge brute {direction}")
-        elif feat == "current_ratio":
-            parts.append(f"Liquidité {direction}")
+    for feat, _ in top:
+        label = FEATURE_LABELS.get(feat, feat)
+        rank = ranks.get(feat)
+        if feat == "sic_div" or rank is None or pd.isna(rank):
+            parts.append(label)
+        elif rank >= 0.5:
+            parts.append(f"{label} parmi les {max(1, round((1 - rank) * 100))} % les plus élevées")
         else:
-            parts.append(f"{feat.replace('_', ' ').capitalize()} {direction}")
-
+            parts.append(f"{label} parmi les {max(1, round(rank * 100))} % les plus basses")
     if not parts:
-        return "Profil ML favorable sur l'ensemble des critères quantitatifs."
-
-    result = parts[0]
-    if len(parts) > 1:
-        result += f". {parts[1]}"
-    result += " — sélection algorithmique LightGBM."
-    return result
+        return "Aucune variable ne se détache : profil moyen sur l'ensemble des critères."
+    return "Ce qui a le plus pesé dans le classement du modèle : " + " ; ".join(parts) + "."
 
 
 def predict_current(force_features: bool = False) -> list[dict]:
@@ -142,42 +117,32 @@ def predict_current(force_features: bool = False) -> list[dict]:
     ]
     log.info(f"US universe: {len(us_tickers)} stocks above ${MIN_MARKET_CAP_USD/1e9:.0f}B market cap")
 
-    # Get EDGAR PIT features for today
+    # Comptes publiés les plus récents, connus à ce jour
     today = date.today()
     sub = load_all_sub()
-    num = load_all_num()
     cik_to_ticker = download_ticker_map()
-    ticker_to_cik = {v: k for k, v in cik_to_ticker.items()}
-
-    # Filter sub to only our US tickers
-    us_ciks = {ticker_to_cik[t] for t in us_tickers if t in ticker_to_cik}
-    sub_us = sub[sub["cik"].isin(us_ciks)]
-    num_us = num[num["adsh"].isin(sub_us["adsh"])]
-
-    fund_df = build_pit_financials(sub_us, num_us, cik_to_ticker, [today])
+    fund_df = build_pit_financials(sub, None, cik_to_ticker, [today], only_tickers=set(us_tickers))
     log.info(f"Got EDGAR features for {len(fund_df)} tickers")
+    fund_by_ticker = {r["ticker"]: r for r in fund_df.to_dict("records")} if not fund_df.empty else {}
 
-    # Add momentum features
+    # Mêmes variables qu'à l'entraînement, calculées de la même façon : comptes publiés, cours du modèle
     rows = []
-    for _, row in fund_df.iterrows():
-        ticker = row["ticker"]
-        ps = load_price_series(ticker)
-        if ps is None:
-            mom_feats = {f: np.nan for f in [
-                "mom_1m", "mom_3m", "mom_6m", "mom_12m", "mom_12m_skip1m",
-                "vol_20d", "price_vs_sma200", "price_vs_sma50"
-            ]}
+    for ticker in us_tickers:
+        frame = load_price_frame(ticker)
+        rec = fund_by_ticker.get(ticker)
+        if frame is None and rec is None:
+            continue
+        row = {"ticker": ticker, "rebalancing_date": today, **{f: np.nan for f in ALL_FEATURES}}
+        if rec is not None:
+            row.update(rec)
+            row["sic_div"] = sic_to_division(rec.get("sic"))
         else:
-            mom_feats = compute_momentum_features(ticker, ps, today)
-
-        stock = all_stocks.get(ticker, {})
-        rows.append({
-            **row.to_dict(),
-            **mom_feats,
-            "sic_div": sic_to_division(row.get("sic")),
-            "pe_ttm": stock.get("trailingPE"),
-            "pb_ratio": stock.get("priceToBook"),
-        })
+            row["sic_div"] = -1
+        if frame is not None:
+            dates_ns, adj, raw = frame
+            row.update(compute_momentum_features(ticker, (dates_ns, adj), today))
+            row.update(valuation_features(rec or {}, raw_price_before(dates_ns, raw, today)))
+        rows.append(row)
 
     if not rows:
         log.error("No features generated for current US universe")
@@ -185,44 +150,14 @@ def predict_current(force_features: bool = False) -> list[dict]:
 
     df = pd.DataFrame(rows)
 
-    # Add tickers with price data but no EDGAR (use momentum-only features)
-    tickers_with_edgar = set(df["ticker"].tolist())
-    for ticker in us_tickers:
-        if ticker in tickers_with_edgar:
-            continue
-        ps = load_price_series(ticker)
-        if ps is None:
-            continue
-        mom_feats = compute_momentum_features(ticker, ps, today)
-        stock = all_stocks.get(ticker, {})
-        row = {
-            "ticker": ticker,
-            "rebalancing_date": today,
-            "sic": None,
-            "sic_div": -1,
-            "pe_ttm": stock.get("trailingPE"),
-            "pb_ratio": stock.get("priceToBook"),
-            **{f: np.nan for f in FUNDAMENTAL_FEATURES if f not in ["pe_ttm", "pb_ratio"]},
-            **mom_feats,
-        }
-        for f in ALL_FEATURES:
-            if f not in row:
-                row[f] = np.nan
-        df = pd.concat([df, pd.DataFrame([row])], ignore_index=True)
-
-    # Quality gate: exclude falling knives (down >35% in 6 months)
-    # ROE filter removed — negative equity from buybacks (AAPL, MSFT) would wrongly exclude top stocks
+    # Garde-fou : on écarte les actions en chute libre (plus de 35 % de baisse en six mois)
     n_before = len(df)
-    if "mom_6m" in df.columns:
-        df = df[df["mom_6m"].isna() | (df["mom_6m"] > -35)].reset_index(drop=True)
+    df = df[df["mom_6m"].isna() | (df["mom_6m"] > -35)].reset_index(drop=True)
     log.info(f"Quality gate: {n_before - len(df)} stocks excluded, {len(df)} remaining")
 
-    # Rank-normalize fundamental features (cross-sectional, same as training)
-    for col in FUNDAMENTAL_FEATURES:
-        if col in df.columns:
-            df[col] = df[col].rank(pct=True)
-
-    X = df[ALL_FEATURES].fillna(0.5)
+    # Passage en rangs, comme à l'entraînement. Les valeurs absentes restent absentes : le modèle sait les traiter.
+    df = rank_features(df, by=None)
+    X = df[ALL_FEATURES].astype("float64")
 
     # Raw ML scores
     raw_scores = model.predict(X)
@@ -242,8 +177,13 @@ def predict_current(force_features: bool = False) -> list[dict]:
     # Sort by ML score
     df = df.sort_values("ml_score", ascending=False).reset_index(drop=True)
 
-    # Write mlScore for all scored US stocks to stocks.json immediately
-    _write_ml_scores_to_stocks(df)
+    # Note de toutes les actions américaines évaluées. Elle est publiée dans us_predictions.json, que
+    # l'ingestion relit pour renseigner mlScore : écrire directement dans stocks.json ne servait à rien,
+    # ce fichier n'était pas commité par cette tâche et l'ingestion suivante l'écrasait.
+    global _LAST_SCORES
+    _LAST_SCORES = {
+        t: round(float(sc), 1) for t, sc in zip(df["ticker"].tolist(), df["score_normalized"].tolist())
+    }
 
     # Build picks output
     picks = []
@@ -265,7 +205,7 @@ def predict_current(force_features: bool = False) -> list[dict]:
             "score": float(row["score_normalized"]),
             "ml_score": round(float(row["ml_score"]), 4),
             "shap_top": {k: round(float(v), 4) for k, v in shap_contribs.items()},
-            "justification": generate_justification(ticker, shap_contribs, stock),
+            "justification": generate_justification(shap_contribs, row.to_dict()),
             "weight": round(1 / US_STRATEGY_SIZE, 4),
             "isNew": False,      # populated by alphapicks.ts comparison
             "pe": stock.get("trailingPE"),
@@ -275,13 +215,14 @@ def predict_current(force_features: bool = False) -> list[dict]:
             "marketCap": stock.get("marketCap"),
             "price": stock.get("price"),
             "peaEligible": False,
+            # Rangs (0 à 10) de l'action dans l'univers noté, par famille de variables
             "pillars": {
-                "valorisation": _pillar_from_percentile(1 - df["pe_ttm"].rank(pct=True).iloc[rank - 1]),
-                "qualite": _pillar_from_percentile(df["roe"].rank(pct=True).iloc[rank - 1] if "roe" in df else 0.5),
-                "croissance": _pillar_from_percentile(df["rev_growth_yoy"].rank(pct=True).iloc[rank - 1] if "rev_growth_yoy" in df else 0.5),
-                "sante": _pillar_from_percentile(df["current_ratio"].rank(pct=True).iloc[rank - 1] if "current_ratio" in df else 0.5),
+                "valorisation": _pillar_from_percentile(row.get("earnings_yield")),
+                "qualite": _pillar_from_percentile(row.get("roe")),
+                "croissance": _pillar_from_percentile(row.get("rev_growth_yoy")),
+                "sante": _pillar_from_percentile(row.get("current_ratio")),
                 "dividende": min(10.0, (stock.get("dividendYield") or 0) * 2),
-                "momentum": _pillar_from_percentile(df["mom_12m_skip1m"].rank(pct=True).iloc[rank - 1] if "mom_12m_skip1m" in df else 0.5),
+                "momentum": _pillar_from_percentile(row.get("mom_12m_skip1m")),
             },
         }
         picks.append(pick)
@@ -291,37 +232,32 @@ def predict_current(force_features: bool = False) -> list[dict]:
 
 def _pillar_from_percentile(pct: float) -> float:
     """Convert a 0-1 percentile to a 0-10 score."""
-    if pd.isna(pct):
+    if pct is None or pd.isna(pct):
         return 5.0
     return round(float(pct) * 10, 1)
 
 
-def _write_ml_scores_to_stocks(df: "pd.DataFrame"):
-    """Write mlScore for all scored US stocks back to stocks.json."""
-    stocks_data = json.loads(STOCKS_JSON.read_text())
-    score_map = dict(zip(df["ticker"].tolist(), df["score_normalized"].tolist()))
-
-    updated = 0
-    for stock in stocks_data["stocks"]:
-        t = stock["ticker"]
-        if t in score_map:
-            stock["mlScore"] = round(float(score_map[t]), 1)
-            updated += 1
-        elif stock.get("country") == "United States" and "mlScore" in stock:
-            del stock["mlScore"]
-
-    STOCKS_JSON.write_text(json.dumps(stocks_data, separators=(",", ":")))
-    log.info(f"Written mlScore for {updated} US stocks to stocks.json")
+_LAST_SCORES: dict[str, float] = {}
 
 
 def write_predictions(picks: list[dict]):
-    """Write predictions to public/data/picks/us_predictions.json and mlScore to stocks.json."""
+    """Write the picks and the score of every evaluated US stock to public/data/picks/us_predictions.json."""
     period = date.today().strftime("%Y-%m")
     model = joblib.load(MODEL_PATH)
+
+    # Évaluation du modèle sur le passé. Sans elle, ou si elle n'est pas concluante, les sélections sont
+    # tout de même écrites (pour suivi), mais marquées non validées : le site ne les publie pas.
+    card = json.loads(MODEL_CARD_PATH.read_text()) if MODEL_CARD_PATH.exists() else None
+    validated = bool(card and card.get("validated"))
+    if not validated:
+        reasons = card["failed_criteria"] if card else ["aucune évaluation disponible pour ce modèle"]
+        log.warning("Modèle non validé, sélections non publiées : " + " ; ".join(reasons))
 
     output = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "period": period,
+        "validated": validated,
+        "backtest": card,
         "engine": "lightgbm_v1",
         "model": {
             "n_estimators": int(model.n_estimators_),
@@ -329,6 +265,7 @@ def write_predictions(picks: list[dict]):
             "n_picks": US_STRATEGY_SIZE,
         },
         "picks": picks,
+        "scores": _LAST_SCORES,
     }
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)

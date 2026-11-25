@@ -27,6 +27,7 @@ from config import (
 log = logging.getLogger(__name__)
 
 DB_PATH = DATA_DIR / "pit_us.db"
+DOWNLOAD_ATTEMPTS = 4
 
 # Balance sheet tags — instant values (qtrs=0)
 _BS_TAGS = {
@@ -198,6 +199,12 @@ def _available_quarters(start_year: int = EDGAR_START_YEAR) -> list[tuple[int, i
     return result
 
 
+def _parse_yyyymmdd(col: pd.Series) -> pd.Series:
+    """Dates au format AAAAMMJJ, tolérant un suffixe décimal parasite."""
+    text = col.astype("string").str.strip().str.replace(r"\.0$", "", regex=True)
+    return pd.to_datetime(text, format="%Y%m%d", errors="coerce")
+
+
 def _download_quarter_parquet(year: int, quarter: int, force: bool = False) -> bool:
     sp = EDGAR_DIR / f"{year}q{quarter}_sub.parquet"
     np_ = EDGAR_DIR / f"{year}q{quarter}_num.parquet"
@@ -205,14 +212,22 @@ def _download_quarter_parquet(year: int, quarter: int, force: bool = False) -> b
         return False
 
     url = f"{EDGAR_BASE_URL}/{year}q{quarter}.zip"
-    try:
-        r = requests.get(url, headers=SEC_HEADERS, timeout=120)
-        r.raise_for_status()
-    except requests.HTTPError as e:
-        if e.response.status_code == 404:
-            log.warning(f"  {year}Q{quarter} not yet available")
-            return False
-        raise
+    # Le serveur de la SEC coupe parfois la connexion en cours de route : on réessaie avant d'abandonner,
+    # sinon un seul trimestre capricieux fait échouer tout le pipeline.
+    r = None
+    for attempt in range(1, DOWNLOAD_ATTEMPTS + 1):
+        try:
+            r = requests.get(url, headers=SEC_HEADERS, timeout=180)
+            if r.status_code == 404:
+                log.warning(f"  {year}Q{quarter} not yet available")
+                return False
+            r.raise_for_status()
+            break
+        except (requests.ConnectionError, requests.Timeout, requests.HTTPError) as e:
+            if attempt == DOWNLOAD_ATTEMPTS:
+                raise
+            log.warning(f"  {year}Q{quarter}: {type(e).__name__}, nouvel essai {attempt + 1}/{DOWNLOAD_ATTEMPTS}")
+            time.sleep(5 * attempt)
 
     with zipfile.ZipFile(io.BytesIO(r.content)) as z:
         names = z.namelist()
@@ -224,19 +239,24 @@ def _download_quarter_parquet(year: int, quarter: int, force: bool = False) -> b
         with z.open(sub_file) as f:
             sub = pd.read_csv(f, sep="\t", low_memory=False,
                 usecols=["adsh","cik","name","sic","filed","period","form","fy","fp"],
-                dtype={"cik": "Int64", "adsh": str, "form": str, "sic": "Int64"})
+                dtype={"cik": "Int64", "adsh": str, "form": str, "sic": "Int64", "filed": str, "period": str})
         sub = sub[sub["form"].isin(["10-K","10-Q","10-K/A","10-Q/A"])].copy()
-        sub["filed"] = pd.to_datetime(sub["filed"].astype(str), format="%Y%m%d", errors="coerce")
-        sub["period"] = pd.to_datetime(sub["period"].astype(str), format="%Y%m%d", errors="coerce")
+        # Dates lues comme du texte : dès qu'une seule manque dans le fichier, pandas lit sinon la colonne
+        # en nombres décimaux (« 20231231.0 »), plus aucune date n'est reconnue et le trimestre entier
+        # est perdu sans message. Six trimestres de 2024 et 2025 disparaissaient ainsi.
+        sub["filed"] = _parse_yyyymmdd(sub["filed"])
+        sub["period"] = _parse_yyyymmdd(sub["period"])
         sub = sub.dropna(subset=["filed","period","cik"])
+        if sub.empty:
+            raise RuntimeError(f"{year}Q{quarter} : aucun rapport lisible dans le fichier de la SEC")
         sub.to_parquet(sp, index=False)
 
         with z.open(num_file) as f:
             num = pd.read_csv(f, sep="\t", low_memory=False,
                 usecols=["adsh","tag","ddate","qtrs","value"],
-                dtype={"adsh": str, "tag": str, "qtrs": "Int64", "value": float})
+                dtype={"adsh": str, "tag": str, "qtrs": "Int64", "value": float, "ddate": str})
         num = num[num["tag"].isin(ALL_TAGS)].copy()
-        num["ddate"] = pd.to_datetime(num["ddate"].astype(str), format="%Y%m%d", errors="coerce")
+        num["ddate"] = _parse_yyyymmdd(num["ddate"])
         num = num.dropna(subset=["ddate","value"])
         num.to_parquet(np_, index=False)
 
