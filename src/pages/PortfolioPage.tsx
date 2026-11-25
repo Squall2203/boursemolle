@@ -9,7 +9,8 @@ import { CreatePortfolioCard } from "@/components/portfolio/CreatePortfolioCard"
 import { PortfolioStats } from "@/components/portfolio/PortfolioStats"
 import { PortfolioChart } from "@/components/portfolio/PortfolioChart"
 import { PositionsTable, type EnrichedPosition } from "@/components/portfolio/PositionsTable"
-import { PortfolioAnalysis } from "@/components/portfolio/PortfolioAnalysis"
+import { PortfolioReview } from "@/components/portfolio/PortfolioReview"
+import { useBenchmark } from "@/hooks/useBenchmark"
 import { TransactionHistory } from "@/components/portfolio/TransactionHistory"
 import { usePortfolioSnapshots } from "@/hooks/usePortfolioSnapshots"
 import { useMacro } from "@/hooks/useMacro"
@@ -33,6 +34,7 @@ export function PortfolioPage() {
   const { data: macroData } = useMacro()
 
   const { snapshots } = usePortfolioSnapshots(activePortfolioId)
+  const benchmark = useBenchmark("cac40")
 
   const [tab, setTab] = useState<"positions" | "history">("positions")
   const [creatingNew, setCreatingNew] = useState(false)
@@ -267,10 +269,12 @@ export function PortfolioPage() {
             </Card>
           )}
 
-          <PortfolioAnalysis
+          <PortfolioReview
             positions={enrichedPositions}
-            totalValue={totalValue}
             cashBalance={activePortfolio.cash_balance}
+            initialCapital={activePortfolio.initial_capital}
+            since={activePortfolio.reset_at ?? activePortfolio.created_at}
+            benchmark={benchmark}
           />
         </>
       )}

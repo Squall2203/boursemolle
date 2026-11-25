@@ -5,6 +5,9 @@ import { cn } from "@/lib/utils"
 import { useStocks } from "@/hooks/useStocks"
 import { useMacro, type MacroItem, type MacroData } from "@/hooks/useMacro"
 import { computeScore } from "@/lib/scoring"
+import { ObjectivePicker } from "@/components/ObjectivePicker"
+import { TrackRecordTeaser } from "@/components/TrackRecordTeaser"
+import { usePageMeta } from "@/hooks/usePageMeta"
 import { getStockRegion } from "@/lib/market"
 
 // ─── Ticker Tape ─────────────────────────────────────────────────────────────
@@ -429,6 +432,7 @@ function FeaturesStrip() {
 // ─── Dashboard ────────────────────────────────────────────────────────────────
 
 export function DashboardPage() {
+  usePageMeta()
   const { data: stocksData, loading } = useStocks()
 
   const stats = useMemo(() => {
@@ -484,6 +488,11 @@ export function DashboardPage() {
         </div>
       </section>
 
+      {/* Parcours guidé */}
+      <div className="pt-8">
+        <ObjectivePicker />
+      </div>
+
       {/* Main grid 2 colonnes */}
       <div className="grid grid-cols-1 gap-6 pt-6 lg:grid-cols-[1fr_320px]">
         {/* Colonne gauche : signaux + top scores */}
@@ -498,6 +507,11 @@ export function DashboardPage() {
           <AlphaPicksCTA />
           <MacroCard />
         </div>
+      </div>
+
+      {/* Ce que valent les notes */}
+      <div className="pt-8">
+        <TrackRecordTeaser />
       </div>
 
       {/* Features strip */}

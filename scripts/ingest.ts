@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url"
 import YahooFinance from "yahoo-finance2"
 import type { Stock, StocksDataset, StockPriceHistory, PriceCandle, AnnualFinancial, AnnualDividend } from "../src/types/stock.ts"
 import { UNIVERSE } from "./universe.ts"
+import { writeBenchmarks } from "./benchmarks.ts"
 import { toPriceFilename } from "../src/lib/tickerFilename.ts"
 import { getStockRegion } from "../src/lib/market.ts"
 import { detectSmaCross } from "../src/lib/smaCross.ts"
@@ -505,6 +506,9 @@ async function main() {
   const macro = await fetchMacro()
   await writeFile(MACRO_PATH, JSON.stringify(macro, null, 2), "utf-8")
   console.log(`✓ Wrote ${MACRO_PATH}`)
+
+  console.log(`\nFetching benchmark history...\n`)
+  await writeBenchmarks(yahooFinance)
 }
 
 main().catch((err) => {

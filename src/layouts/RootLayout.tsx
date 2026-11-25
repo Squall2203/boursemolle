@@ -198,6 +198,7 @@ export function RootLayout() {
           <p>BourseMolle — Données fournies à titre informatif uniquement, ne constitue pas un conseil en investissement.</p>
           <div className="flex items-center justify-center gap-4">
             <NavLink to="/methodologie" className="hover:text-foreground transition-colors">Méthodologie</NavLink>
+            <NavLink to="/lexique" className="hover:text-foreground transition-colors">Lexique</NavLink>
             <NavLink to="/data-freshness" className="hover:text-foreground transition-colors">État des données</NavLink>
           </div>
         </div>
