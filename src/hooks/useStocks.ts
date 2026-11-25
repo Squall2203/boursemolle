@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react"
 import type { StocksDataset } from "@/types/stock"
+import { toEur } from "@/lib/fx"
+
+/** Garantit une capitalisation en euros sur chaque action, quel que soit l'âge du fichier de données. */
+function withMarketCapEur(json: StocksDataset): StocksDataset {
+  for (const s of json.stocks) {
+    if (s.marketCapEur == null) s.marketCapEur = toEur(s.marketCap, s.currency, json.fxRates)
+  }
+  return json
+}
 
 interface UseStocksResult {
   data: StocksDataset | null
@@ -38,15 +47,16 @@ export function useStocks(): UseStocksResult {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoading(true)
     setError(null)
-    fetch("/data/stocks.json", { cache: "no-store" })
+    // « no-cache » : le navigateur vérifie si le fichier a changé et ne le retélécharge (3 Mo) que dans ce cas
+    fetch("/data/stocks.json", { cache: "no-cache" })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json() as Promise<StocksDataset>
       })
       .then((json) => {
         if (cancelled) return
-        _cachedData = json
-        setData(json)
+        _cachedData = withMarketCapEur(json)
+        setData(_cachedData)
         setLoading(false)
       })
       .catch((err) => {

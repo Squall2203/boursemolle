@@ -153,7 +153,7 @@ export function ExpertsSection({ ticker, simple = false }: ExpertsSectionProps) 
   if (loading) {
     return (
       <section className="space-y-3">
-        <h2 className={titleClass}>Ce qu'en disent les experts</h2>
+        <h2 className={titleClass}>Dans la presse financière</h2>
         <Card>
           <CardContent className="py-8 text-center text-sm text-muted-foreground">
             Chargement...
@@ -166,7 +166,7 @@ export function ExpertsSection({ ticker, simple = false }: ExpertsSectionProps) 
   if (!data || data.articles.length === 0) {
     return (
       <section className="space-y-3">
-        <h2 className={titleClass}>Ce qu'en disent les experts</h2>
+        <h2 className={titleClass}>Dans la presse financière</h2>
         <Card>
           <CardContent className="py-6 text-center text-sm text-muted-foreground">
             Aucune actualité récente disponible pour cette action.
@@ -181,7 +181,7 @@ export function ExpertsSection({ ticker, simple = false }: ExpertsSectionProps) 
   return (
     <section className="space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className={titleClass}>Ce qu'en disent les experts</h2>
+        <h2 className={titleClass}>Dans la presse financière</h2>
         <SentimentSummary news={data} />
       </div>
       <div className="space-y-2">

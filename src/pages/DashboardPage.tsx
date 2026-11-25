@@ -19,7 +19,7 @@ function TickerTape({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
         const r = getStockRegion(s)
         return (r === "eu" || r === "us") && s.price != null && s.name
       })
-      .sort((a, b) => (b.marketCap ?? 0) - (a.marketCap ?? 0))
+      .sort((a, b) => (b.marketCapEur ?? 0) - (a.marketCapEur ?? 0))
       .slice(0, 22)
   }, [stocks])
 
@@ -77,6 +77,16 @@ function TickerTape({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
 
 // ─── Signal Grid ──────────────────────────────────────────────────────────────
 
+// Une ligne d'explication par signal, pour qu'un débutant sache ce qu'il regarde
+const SIGNAL_HINTS: Record<string, string> = {
+  golden_cross: "La tendance récente vient de repasser au-dessus de la tendance longue.",
+  dividend_aristocrat: "Dividende relevé chaque année, sans distribuer tous les bénéfices.",
+  cash_machine: "Plus d'argent en caisse que de dettes.",
+  turnaround: "Bénéfices en forte hausse alors que le cours a baissé.",
+  consensus_up: "Les analystes attendent des bénéfices nettement plus élevés.",
+  oversold: "Forte chute récente : rebond possible, à vérifier.",
+}
+
 function signalIconBg(colorClass: string) {
   if (colorClass.includes("yellow")) return "bg-yellow-500/10"
   if (colorClass.includes("blue"))   return "bg-blue-500/10"
@@ -85,19 +95,23 @@ function signalIconBg(colorClass: string) {
   return "bg-emerald-500/10"
 }
 
+// Signaux mis en avant sur l'accueil, dans cet ordre (les autres restent disponibles dans le screener)
+const HOME_SIGNALS = ["golden_cross", "dividend_aristocrat", "cash_machine", "turnaround", "consensus_up", "oversold"]
+
 function SignalGrid({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }) {
   const signals = useMemo(() => {
     if (!stocks) return []
     const all = stocks.stocks
-    const byFlag: Record<string, { label: string; emoji: string; color: string; tickers: string[] }> = {}
+    const byFlag: Record<string, { label: string; emoji: string; color: string; detail: string; tickers: string[] }> = {}
     for (const s of all) {
+      if (!s.peaEligible) continue
       for (const flag of computeScore(s, all).flags) {
         if (!byFlag[flag.id])
-          byFlag[flag.id] = { label: flag.label, emoji: flag.emoji, color: flag.color, tickers: [] }
+          byFlag[flag.id] = { label: flag.label, emoji: flag.emoji, color: flag.color, detail: SIGNAL_HINTS[flag.id] ?? "", tickers: [] }
         byFlag[flag.id].tickers.push(s.ticker)
       }
     }
-    return Object.entries(byFlag).slice(0, 6).map(([id, data]) => ({ id, ...data }))
+    return HOME_SIGNALS.filter((id) => byFlag[id]).map((id) => ({ id, ...byFlag[id] }))
   }, [stocks])
 
   if (signals.length === 0) return null
@@ -106,9 +120,9 @@ function SignalGrid({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
     <div className="space-y-3">
       <div className="flex items-center justify-between">
         <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-          ⚡ Signaux du jour
+          ⚡ Signaux du jour · actions éligibles au PEA
         </span>
-        <Link to="/screener" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+        <Link to="/screener?market=pea" className="text-xs text-muted-foreground hover:text-primary transition-colors">
           Ouvrir le screener →
         </Link>
       </div>
@@ -119,7 +133,7 @@ function SignalGrid({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
           return (
             <Link
               key={sig.id}
-              to="/screener"
+              to={`/screener?market=pea&signaux=${sig.id}`}
               className="rounded-xl border border-border bg-card p-4 hover:border-border/80 hover:bg-muted/20 hover:-translate-y-0.5 transition-all"
             >
               <div className="flex items-center gap-2 mb-3">
@@ -129,6 +143,7 @@ function SignalGrid({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
                 <span className="text-[12px] font-semibold leading-tight">{sig.label}</span>
                 <span className="ml-auto text-[10px] text-muted-foreground shrink-0">{sig.tickers.length}</span>
               </div>
+              {sig.detail && <p className="mb-2.5 text-[11px] leading-snug text-muted-foreground">{sig.detail}</p>}
               <div className="flex flex-wrap gap-1">
                 {shown.map((t) => (
                   <span key={t} className="font-mono text-[10px] bg-muted px-1.5 py-0.5 rounded text-muted-foreground">
@@ -156,6 +171,7 @@ function TopScoresTable({ stocks }: { stocks: ReturnType<typeof useStocks>["data
     if (!stocks) return []
     const all = stocks.stocks
     return all
+      .filter((s) => s.peaEligible)
       .map((s) => ({ stock: s, score: computeScore(s, all) }))
       .sort((a, b) => b.score.total - a.score.total)
       .slice(0, 7)
@@ -167,9 +183,9 @@ function TopScoresTable({ stocks }: { stocks: ReturnType<typeof useStocks>["data
     <div className="space-y-3">
       <div className="flex items-center justify-between">
         <span className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-          🏆 Top scores du jour
+          🏆 Meilleures notes · actions éligibles au PEA
         </span>
-        <Link to="/screener" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+        <Link to="/screener?market=pea" className="text-xs text-muted-foreground hover:text-primary transition-colors">
           Voir tout →
         </Link>
       </div>
@@ -284,40 +300,19 @@ function MoversCard({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }
 
 // ─── AlphaPicks CTA ───────────────────────────────────────────────────────────
 
-function AlphaPicksCTA({ stocks }: { stocks: ReturnType<typeof useStocks>["data"] }) {
-  const topPicks = useMemo(() => {
-    if (!stocks) return []
-    const all = stocks.stocks
-    return all
-      .map((s) => ({ stock: s, score: computeScore(s, all) }))
-      .sort((a, b) => b.score.total - a.score.total)
-      .slice(0, 3)
-  }, [stocks])
-
+function AlphaPicksCTA() {
   return (
     <Link
       to="/picks"
       className="block rounded-xl border border-primary/15 p-5 text-center hover:border-primary/30 hover:-translate-y-0.5 transition-all bg-gradient-to-br from-emerald-500/5 to-blue-500/5 dark:from-emerald-500/8 dark:to-blue-500/8"
     >
       <div className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary mb-2">
-        <Sparkles className="size-3" /> Nouveau
+        <Sparkles className="size-3" /> Bêta
       </div>
       <h3 className="font-heading text-[18px] font-semibold mb-1.5">AlphaPicks</h3>
-      <p className="text-[13px] text-muted-foreground leading-relaxed mb-3">
-        Sélections algorithmiques mensuelles. 5 stratégies, recalculées chaque mois.
+      <p className="text-[13px] text-muted-foreground leading-relaxed">
+        Des sélections d'actions renouvelées chaque mois, avec leur bilan réel face à l'indice.
       </p>
-      {topPicks.length > 0 && (
-        <div className="flex flex-wrap justify-center gap-2">
-          {topPicks.map(({ stock, score }) => (
-            <span
-              key={stock.ticker}
-              className="font-mono text-[10px] border border-border rounded-md px-2 py-1 text-muted-foreground bg-background/60"
-            >
-              {stock.ticker} {score.total.toFixed(1)}
-            </span>
-          ))}
-        </div>
-      )}
     </Link>
   )
 }
@@ -399,7 +394,7 @@ const FEATURES = [
     icon: <Star className="size-5" />,
     bg: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
     title: "Score /10 par action",
-    desc: "7 piliers calibrés par secteur. Méthodologie 100% transparente et publique.",
+    desc: "Sept critères comparés au secteur, chacun expliqué en clair sur la fiche de l'action.",
     href: "/methodologie",
   },
   {
@@ -500,7 +495,7 @@ export function DashboardPage() {
         {/* Sidebar droite : movers + alpha + macro */}
         <div className="space-y-4">
           {!loading && <MoversCard stocks={stocksData} />}
-          {!loading && <AlphaPicksCTA stocks={stocksData} />}
+          <AlphaPicksCTA />
           <MacroCard />
         </div>
       </div>

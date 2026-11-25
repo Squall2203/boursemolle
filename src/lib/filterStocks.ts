@@ -6,6 +6,7 @@ import {
   type ScreenerFilters,
 } from "@/types/filters"
 import { matchesMarketFilter } from "@/lib/market"
+import { marketCapEur } from "@/lib/fx"
 
 function inRange(
   value: number | null,
@@ -22,7 +23,8 @@ export function filterStocks(
   filters: ScreenerFilters,
 ): Stock[] {
   return stocks.filter((s) => {
-    const marketCapB = s.marketCap != null ? s.marketCap / 1e9 : null
+    const capEur = marketCapEur(s)
+    const marketCapB = capEur != null ? capEur / 1e9 : null
     if (!inRange(marketCapB, filters.marketCap, FILTER_BOUNDS.marketCap)) return false
     if (!inRange(s.trailingPE, filters.pe, FILTER_BOUNDS.pe)) return false
     if (!inRange(s.returnOnEquity, filters.roe, FILTER_BOUNDS.roe)) return false

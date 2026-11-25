@@ -24,6 +24,7 @@ export interface StrategyPick {
   perf6M: number | null
   divYield: number | null
   marketCap: number | null
+  marketCapEur?: number | null
   price: number | null
   peaEligible: boolean
 
@@ -31,16 +32,6 @@ export interface StrategyPick {
 }
 
 export type StrategyMarket = "FR" | "EU" | "US" | "WORLD"
-
-export interface ChartPoint {
-  date: string
-  value: number
-}
-
-export interface StrategyChartData {
-  portfolio: ChartPoint[]
-  benchmark: ChartPoint[]
-}
 
 export interface StrategyResult {
   id: string
@@ -50,13 +41,14 @@ export interface StrategyResult {
   marketLabel: string
   description: string
   engine: "rule_based" | "ml"
+  /** Mois des prédictions du modèle (stratégie ML uniquement) */
+  predictionsPeriod?: string
   benchmarkName: string
   benchmarkTicker: string
   benchmarkPrice: number | null
   size: number
   picks: StrategyPick[]
   exits: string[]
-  chartData: StrategyChartData
 }
 
 export interface PicksDataset {

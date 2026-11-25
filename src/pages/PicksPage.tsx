@@ -129,7 +129,7 @@ function StrategyCard({ strategy, lastPerf }: { strategy: StrategyResult; lastPe
                   {lastPerf >= 0
                     ? <TrendingUp className="size-3" />
                     : <TrendingDown className="size-3" />}
-                  {lastPerf >= 0 ? "+" : ""}{lastPerf.toFixed(1)}% mois préc.
+                  {lastPerf >= 0 ? "+" : ""}{lastPerf.toFixed(1)}% dernière période
                 </span>
               )}
             </div>
@@ -155,7 +155,8 @@ export function PicksPage() {
     if (!latest) return {}
     const out: Record<string, number | null> = {}
     for (const [id, entry] of Object.entries(latest.strategies)) {
-      out[id] = entry.portfolioReturn
+      // Sans indice de comparaison mesuré, le chiffre n'est pas affiché
+      out[id] = entry.benchmarkReturn != null ? entry.portfolioReturn : null
     }
     return out
   }, [history])
@@ -225,7 +226,7 @@ export function PicksPage() {
         <p className="text-sm text-muted-foreground">
           <span className="font-medium text-foreground">Comment ça fonctionne.</span>{" "}
           Chaque mois, un algorithme de scoring multifactoriel analyse l'ensemble de l'univers BourseMolle
-          et sélectionne les actions les plus prometteuses selon 6 critères — valorisation, qualité,
+          et retient les actions les mieux notées selon 6 critères — valorisation, qualité,
           croissance, solidité financière, dividende et momentum. Chaque stratégie pondère ces critères
           différemment selon son objectif.
         </p>

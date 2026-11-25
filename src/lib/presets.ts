@@ -42,6 +42,7 @@ export const PRESETS: Preset[] = [
     name: "Value PEA",
     description: "Actions sous-évaluées par rapport à leurs bénéfices, avec une rentabilité correcte",
     criteria: [
+      { label: "Marché", value: "PEA" },
       { label: "P/E", value: "< 15" },
       { label: "ROE", value: "> 8%" },
       { label: "Dividende", value: "> 1.5%" },
@@ -56,7 +57,7 @@ export const PRESETS: Preset[] = [
       ...NO_SCORE,
       scoreValorisation: { min: 7, max: 10 },
       freshnessMaxDays: 0,
-      market: "" as const,
+      market: "pea" as const,
       indices: [],
       sectors: [],
       countries: [],
@@ -248,7 +249,7 @@ export const PRESETS: Preset[] = [
     name: "Top scores",
     description: "Les meilleures notes BourseMolle — actions les plus attractives sur tous les critères",
     criteria: [
-      { label: "Score", value: "> 8" },
+      { label: "Score", value: "≥ 7,5" },
     ],
     filters: {
       pe: full("pe"),
@@ -257,7 +258,7 @@ export const PRESETS: Preset[] = [
       divYield: full("divYield"),
       ...BASE_TECH,
       ...NO_SCORE,
-      scoreGlobal: { min: 8, max: 10 },
+      scoreGlobal: { min: 7.5, max: 10 },
       freshnessMaxDays: 0,
       market: "" as const,
       indices: [],

@@ -12,7 +12,7 @@ import { writeFile, mkdir } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { UNIVERSE } from "./universe.ts"
-import type { ContentSource, FeedItem, FeedData, ContentType, Platform } from "../src/types/feed.ts"
+import type { ContentSource, FeedItem, FeedData, ContentType } from "../src/types/feed.ts"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const FEED_DIR = path.resolve(__dirname, "../public/data/feed")
