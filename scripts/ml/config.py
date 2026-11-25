@@ -158,6 +158,14 @@ ALL_FEATURES = RANKED_FEATURES + SECTOR_FEATURES
 
 # ─── Universe ─────────────────────────────────────────────────────────────────
 
+# Univers d'entraînement : les plus grandes sociétés américaines selon la liste de la SEC (classée par
+# taille), en plus des actions du site. Apprendre sur 200 actions seulement, toutes survivantes et
+# presque toutes dans l'indice S&P 500 d'aujourd'hui, pousse le modèle à parier sur un style de marché.
+TRAINING_UNIVERSE_SIZE = 2000
+
+# Taille minimale, à la date considérée, pour qu'une action serve à l'entraînement (hors actions du site)
+MIN_TRAIN_MARKET_CAP_USD = 1_000_000_000
+
 # Minimum market cap (USD) to include in ML universe
 MIN_MARKET_CAP_USD = 2_000_000_000      # $2B — liquid large/mid caps only
 
@@ -176,4 +184,8 @@ PUBLICATION_CRITERIA = {
     "min_hit_rate": 0.55,       # part des dates où la sélection bat la moyenne de son univers
     "min_median_alpha": 0.0,    # écart médian à l'univers (en points), strictement positif
     "min_rank_ic": 0.02,        # corrélation de rang moyenne entre prédictions et rendements réalisés
+    # Part des périodes de marché baissier où la sélection fait mieux que son univers. Des actions plus
+    # nerveuses que la moyenne battent mécaniquement le marché quand il monte : ce n'est pas un talent,
+    # et cela se paie quand il baisse. Une vraie capacité de sélection doit tenir dans les deux cas.
+    "min_down_market_hit_rate": 0.45,
 }

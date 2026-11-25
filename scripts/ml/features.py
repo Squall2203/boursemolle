@@ -15,9 +15,10 @@ from tqdm import tqdm
 from config import (
     EDGAR_DIR, PRICES_DIR, ML_PRICES_DIR, DATA_DIR,
     TAG_MAP, MOMENTUM_FEATURES, VALUATION_FEATURES, RANKED_FEATURES, ALL_FEATURES,
-    FORWARD_DAYS, REBALANCE_MONTHS,
+    FORWARD_DAYS, REBALANCE_MONTHS, MIN_TRAIN_MARKET_CAP_USD,
 )
 from edgar_download import load_all_sub, download_ticker_map
+from prices_download import us_universe
 
 log = logging.getLogger(__name__)
 
@@ -160,7 +161,7 @@ def _year_ago_filing(ticker_sub, filing):
     return candidates.sort_values("filed").iloc[-1]
 
 
-def build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates, only_tickers=None):
+def build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates, only_tickers=None, min_filed=None):
     sub = sub[sub["form"].isin(["10-K", "10-Q", "10-K/A", "10-Q/A"])].copy()
     sub["cik"] = sub["cik"].astype("Int64")
     sub["ticker"] = sub["cik"].map(cik_to_ticker)
@@ -169,6 +170,9 @@ def build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates, only_ticker
         # Une société sans historique de cours n'a ni momentum ni rendement futur : elle ne peut pas
         # servir à l'entraînement. L'écarter ici évite de traiter des milliers de sociétés pour rien.
         sub = sub[sub["ticker"].isin(only_tickers)]
+    if min_filed is not None:
+        # Pour une prédiction du jour, seuls les rapports récents (et ceux d'un an plus tôt) servent
+        sub = sub[sub["filed"] >= pd.Timestamp(min_filed)]
     if num is None:
         num = load_num_for_filings(set(sub["adsh"]))
     num_by_adsh = {adsh: grp for adsh, grp in num.groupby("adsh")}
@@ -394,19 +398,44 @@ def compute_forward_returns(tickers, rebalancing_dates, forward_days=FORWARD_DAY
     return pd.DataFrame(records)
 
 
-def add_targets(df: pd.DataFrame, min_names: int = 30) -> pd.DataFrame:
+def market_cap_usd(rec: dict, price) -> float:
+    """Capitalisation à la date considérée : nombre d'actions publié × cours réellement coté."""
+    shares = rec.get("_shares")
+    if price is None or shares is None or (isinstance(shares, float) and np.isnan(shares)) or shares <= 0:
+        return np.nan
+    return float(shares) * price
+
+
+def select_training_universe(df: pd.DataFrame, site_tickers: set) -> pd.DataFrame:
+    """
+    Actions retenues à chaque date : celles du site, et les autres si elles pesaient au moins
+    MIN_TRAIN_MARKET_CAP_USD ce jour-là. La taille est jugée à la date, pas aujourd'hui.
+    """
+    df = df.copy()
+    df["in_site_universe"] = df["ticker"].isin(site_tickers)
+    return df[df["in_site_universe"] | (df["mcap_usd"] >= MIN_TRAIN_MARKET_CAP_USD)].reset_index(drop=True)
+
+
+def add_targets(df: pd.DataFrame, min_names: int = 30, min_sector_names: int = 5) -> pd.DataFrame:
     """
     Ajoute, par date : l'écart au rendement moyen de l'univers (fwd_return_rel) et la cible
-    d'entraînement (target), le rang du rendement parmi les actions de la même date, de −0,5 à +0,5.
-    Apprendre un rang plutôt qu'un rendement évite qu'une poignée d'actions ayant doublé en trois mois
-    dicte à elles seules ce que le modèle retient.
+    d'entraînement (target), de −0,5 à +0,5.
+
+    La cible est le rang du rendement une fois retiré le rendement moyen du secteur à cette date.
+    Sans cela, le modèle apprend surtout quel secteur a monté (la technologie pendant dix ans) et
+    reproduit un pari de style qui se retourne dès que le marché change de préférence. Ici, il doit
+    trouver quelles actions font mieux que leurs semblables.
+    Un rang plutôt qu'un rendement : une poignée d'actions ayant doublé ne dicte pas tout l'apprentissage.
     """
     grp = df.groupby("rebalancing_date")["fwd_return"]
     df["fwd_return_rel"] = df["fwd_return"] - grp.transform("mean")
-    df["target"] = grp.rank(pct=True) - 0.5
+    sector = df.groupby(["rebalancing_date", "sic_div"])["fwd_return"]
+    sector_mean = sector.transform("mean").where(sector.transform("count") >= min_sector_names, grp.transform("mean"))
+    df["fwd_return_sector_rel"] = df["fwd_return"] - sector_mean
+    df["target"] = df.groupby("rebalancing_date")["fwd_return_sector_rel"].rank(pct=True) - 0.5
     # Une date avec trop peu d'actions notées ne permet pas de classer : elle ne sert pas à l'entraînement
     counts = grp.transform("count")
-    df.loc[counts < min_names, ["target", "fwd_return_rel"]] = np.nan
+    df.loc[counts < min_names, ["target", "fwd_return_rel", "fwd_return_sector_rel"]] = np.nan
     return df
 
 
@@ -481,13 +510,19 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
             price = raw_price_before(dates_ns, raw, row["rebalancing_date"])
             extra.append({
                 "ticker": ticker, "rebalancing_date": row["rebalancing_date"],
+                "mcap_usd": market_cap_usd(row, price),
                 **feats, **valuation_features(row, price),
             })
     if extra:
         df = df.merge(pd.DataFrame(extra), on=["ticker", "rebalancing_date"], how="left")
-    for col in MOMENTUM_FEATURES + VALUATION_FEATURES:
+    for col in MOMENTUM_FEATURES + VALUATION_FEATURES + ["mcap_usd"]:
         if col not in df.columns:
             df[col] = np.nan
+
+    n_all = len(df)
+    df = select_training_universe(df, set(us_universe()))
+    log.info(f"Training universe: {len(df):,} rows kept out of {n_all:,} "
+             f"({df['ticker'].nunique()} tickers, {int(df['in_site_universe'].sum()):,} rows from the site's stocks)")
 
     # ── Etape 3 : rendements futurs ──────────────────────────────────────────
     fwd_df = compute_forward_returns(sorted(df["ticker"].unique()), rebalancing_dates)

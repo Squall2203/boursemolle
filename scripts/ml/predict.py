@@ -29,7 +29,7 @@ Output: public/data/picks/us_predictions.json
 """
 import json
 import logging
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import joblib
@@ -38,12 +38,13 @@ import pandas as pd
 import shap
 
 from config import (
-    MODEL_DIR, DATA_DIR, STOCKS_JSON, OUTPUT_JSON, PRICES_DIR,
+    MODEL_DIR, STOCKS_JSON, OUTPUT_JSON, ML_PRICES_DIR,
     ALL_FEATURES, MIN_MARKET_CAP_USD, US_STRATEGY_SIZE, MODEL_CARD_PATH,
 )
 from features import (
     build_pit_financials, load_price_frame, compute_momentum_features,
     valuation_features, raw_price_before, rank_features, sic_to_division,
+    market_cap_usd, select_training_universe,
 )
 from edgar_download import load_all_sub, download_ticker_map
 
@@ -51,6 +52,11 @@ log = logging.getLogger(__name__)
 
 MODEL_PATH = MODEL_DIR / "lgbm_model.pkl"
 SHAP_PATH = MODEL_DIR / "shap_values.parquet"
+
+# Rapports relus pour une prédiction : le plus récent et celui de la même période un an plus tôt
+RECENT_FILINGS_DAYS = 650
+# Rang (0 à 1) de la performance sur six mois en dessous duquel une action est écartée
+FALLING_KNIFE_RANK = 0.05
 
 
 FEATURE_LABELS = {
@@ -117,22 +123,29 @@ def predict_current(force_features: bool = False) -> list[dict]:
     ]
     log.info(f"US universe: {len(us_tickers)} stocks above ${MIN_MARKET_CAP_USD/1e9:.0f}B market cap")
 
-    # Comptes publiés les plus récents, connus à ce jour
+    # Les variables sont des rangs dans l'univers d'entraînement (les grandes sociétés américaines).
+    # Pour noter les actions du site comme le modèle a appris à le faire, il faut donc les situer dans
+    # ce même univers aujourd'hui, pas seulement entre elles.
     today = date.today()
+    site_tickers = set(us_tickers)
+    universe = sorted(site_tickers | {p.stem for p in ML_PRICES_DIR.glob("*.parquet")})
     sub = load_all_sub()
     cik_to_ticker = download_ticker_map()
-    fund_df = build_pit_financials(sub, None, cik_to_ticker, [today], only_tickers=set(us_tickers))
+    fund_df = build_pit_financials(
+        sub, None, cik_to_ticker, [today], only_tickers=set(universe),
+        min_filed=today - timedelta(days=RECENT_FILINGS_DAYS),
+    )
     log.info(f"Got EDGAR features for {len(fund_df)} tickers")
     fund_by_ticker = {r["ticker"]: r for r in fund_df.to_dict("records")} if not fund_df.empty else {}
 
     # Mêmes variables qu'à l'entraînement, calculées de la même façon : comptes publiés, cours du modèle
     rows = []
-    for ticker in us_tickers:
+    for ticker in universe:
         frame = load_price_frame(ticker)
         rec = fund_by_ticker.get(ticker)
         if frame is None and rec is None:
             continue
-        row = {"ticker": ticker, "rebalancing_date": today, **{f: np.nan for f in ALL_FEATURES}}
+        row = {"ticker": ticker, "rebalancing_date": today, "mcap_usd": np.nan, **{f: np.nan for f in ALL_FEATURES}}
         if rec is not None:
             row.update(rec)
             row["sic_div"] = sic_to_division(rec.get("sic"))
@@ -140,23 +153,30 @@ def predict_current(force_features: bool = False) -> list[dict]:
             row["sic_div"] = -1
         if frame is not None:
             dates_ns, adj, raw = frame
+            price = raw_price_before(dates_ns, raw, today)
             row.update(compute_momentum_features(ticker, (dates_ns, adj), today))
-            row.update(valuation_features(rec or {}, raw_price_before(dates_ns, raw, today)))
+            row.update(valuation_features(rec or {}, price))
+            row["mcap_usd"] = market_cap_usd(rec or {}, price)
         rows.append(row)
 
     if not rows:
         log.error("No features generated for current US universe")
         return []
 
-    df = pd.DataFrame(rows)
+    df = select_training_universe(pd.DataFrame(rows), site_tickers)
+    log.info(f"Ranking universe: {len(df)} stocks, of which {int(df['in_site_universe'].sum())} from the site")
 
-    # Garde-fou : on écarte les actions en chute libre (plus de 35 % de baisse en six mois)
+    # Passage en rangs dans cet univers, comme à l'entraînement. Les valeurs absentes restent absentes.
+    df = rank_features(df, by=None)
+
+    # Seules les actions du site sont notées et proposées
+    df = df[df["in_site_universe"]].reset_index(drop=True)
+
+    # Garde-fou : on écarte les actions en chute libre (parmi les 5 % les plus fortes baisses sur six mois)
     n_before = len(df)
-    df = df[df["mom_6m"].isna() | (df["mom_6m"] > -35)].reset_index(drop=True)
+    df = df[df["mom_6m"].isna() | (df["mom_6m"] > FALLING_KNIFE_RANK)].reset_index(drop=True)
     log.info(f"Quality gate: {n_before - len(df)} stocks excluded, {len(df)} remaining")
 
-    # Passage en rangs, comme à l'entraînement. Les valeurs absentes restent absentes : le modèle sait les traiter.
-    df = rank_features(df, by=None)
     X = df[ALL_FEATURES].astype("float64")
 
     # Raw ML scores

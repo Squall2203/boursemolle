@@ -40,7 +40,9 @@ def step_download(args):
     from prices_download import run_price_download
     log.info("━━━ Step 1: EDGAR + price download ━━━━━━━━━━━━━━━━━━━━━━")
     run_download(force=args.force)
-    run_price_download(force=args.force)
+    # Univers complet dans tous les cas : même pour prédire, les actions du site doivent être situées
+    # parmi les grandes sociétés américaines du jour, comme pendant l'entraînement.
+    run_price_download(force=args.force, full=True)
 
 
 def step_features(args):

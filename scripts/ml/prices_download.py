@@ -21,7 +21,7 @@ import pandas as pd
 import requests
 from tqdm import tqdm
 
-from config import ML_PRICES_DIR, PRICE_START_DATE, STOCKS_JSON
+from config import ML_PRICES_DIR, PRICE_START_DATE, STOCKS_JSON, EDGAR_DIR, TRAINING_UNIVERSE_SIZE
 
 log = logging.getLogger(__name__)
 
@@ -34,6 +34,20 @@ MAX_AGE_HOURS = 20          # un fichier plus récent n'est pas retéléchargé
 def us_universe() -> list[str]:
     raw = json.loads(STOCKS_JSON.read_text())
     return sorted(s["ticker"] for s in raw.get("stocks", []) if s.get("country") == "United States")
+
+
+def training_universe() -> list[str]:
+    """
+    Actions du site, plus les TRAINING_UNIVERSE_SIZE premières sociétés de la liste de la SEC
+    (classée par taille). Les sociétés étrangères de cette liste ne déposent pas de comptes
+    trimestriels américains : elles sont écartées plus loin, faute de comptes.
+    """
+    tickers = set(us_universe())
+    map_path = EDGAR_DIR / "ticker_map.json"
+    if map_path.exists():
+        entries = list(json.loads(map_path.read_text()).values())[:TRAINING_UNIVERSE_SIZE]
+        tickers.update(e["ticker"].upper() for e in entries)
+    return sorted(tickers)
 
 
 def fetch_history(ticker: str) -> pd.DataFrame | None:
@@ -73,10 +87,12 @@ def fetch_history(ticker: str) -> pd.DataFrame | None:
     return df
 
 
-def run_price_download(force: bool = False) -> int:
+def run_price_download(force: bool = False, full: bool = False) -> int:
+    """`full` : tout l'univers d'entraînement. Sinon, seulement les actions du site (suffisant pour prédire)."""
     ML_PRICES_DIR.mkdir(parents=True, exist_ok=True)
-    tickers = us_universe()
+    tickers = training_universe() if full else us_universe()
     log.info(f"Downloading long price history for {len(tickers)} US tickers (since {PRICE_START_DATE})...")
+    consecutive_failures = 0
     done = failed = cached = 0
     for ticker in tqdm(tickers, desc="Prices"):
         path = ML_PRICES_DIR / f"{ticker}.parquet"
@@ -90,9 +106,14 @@ def run_price_download(force: bool = False) -> int:
             df = None
         if df is None:
             failed += 1
+            consecutive_failures += 1
+            # Une longue série d'échecs signale un blocage côté fournisseur, pas des actions introuvables
+            if consecutive_failures >= 40:
+                raise RuntimeError("Téléchargement des cours interrompu : 40 échecs consécutifs (fournisseur indisponible ?).")
         else:
             df.to_parquet(path, index=False)
             done += 1
+            consecutive_failures = 0
         time.sleep(YAHOO_SLEEP)
     log.info(f"Prices: {done} downloaded, {cached} cached, {failed} unavailable")
     if done + cached == 0:
