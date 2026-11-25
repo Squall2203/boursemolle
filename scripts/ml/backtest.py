@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from config import DATA_DIR, OUTPUT_JSON
+from config import DATA_DIR, OUTPUT_JSON, MODEL_CARD_PATH, PUBLICATION_CRITERIA
 
 log = logging.getLogger(__name__)
 
@@ -92,6 +92,54 @@ def build_monthly_returns(results: pd.DataFrame) -> tuple[pd.Series, pd.Series]:
     return portfolio, universe
 
 
+def write_model_card(results: pd.DataFrame, portfolio_rets: pd.Series, universe_rets: pd.Series) -> dict:
+    """
+    Résume l'évaluation du modèle et décide s'il est publiable (voir PUBLICATION_CRITERIA).
+    Les rendements sont ceux des 21 séances qui suivent chaque date de sélection trimestrielle.
+    """
+    alpha = (portfolio_rets - universe_rets).dropna()
+    n = int(len(alpha))
+    labeled = results.dropna(subset=["fwd_return"])
+    ic = labeled.groupby("rebalancing_date").apply(
+        lambda d: d["predicted_score"].corr(d["fwd_return"], method="spearman")
+    ).dropna()
+
+    hit_rate = float((alpha > 0).mean()) if n else 0.0
+    median_alpha = float(alpha.median()) if n else 0.0
+    rank_ic = float(ic.mean()) if len(ic) else 0.0
+    ex_best = alpha.drop(alpha.idxmax()) if n > 1 else alpha
+
+    c = PUBLICATION_CRITERIA
+    failed = []
+    if n < c["min_periods"]:
+        failed.append(f"{n} trimestres évalués (minimum {c['min_periods']})")
+    if hit_rate < c["min_hit_rate"]:
+        failed.append(f"devant son univers {hit_rate:.0%} du temps (minimum {c['min_hit_rate']:.0%})")
+    if median_alpha <= c["min_median_alpha"]:
+        failed.append(f"écart médian de {median_alpha:+.2f} point (doit être positif)")
+    if rank_ic < c["min_rank_ic"]:
+        failed.append(f"corrélation de rang de {rank_ic:+.3f} (minimum {c['min_rank_ic']:+.2f})")
+
+    card = {
+        "evaluated_at": date.today().isoformat(),
+        "horizon": "21 séances après chaque date de sélection trimestrielle",
+        "n_periods": n,
+        "n_tickers": int(results["ticker"].nunique()),
+        "periods_ahead": int((alpha > 0).sum()),
+        "hit_rate": round(hit_rate, 3),
+        "mean_alpha_pct": round(float(alpha.mean()) if n else 0.0, 3),
+        "median_alpha_pct": round(median_alpha, 3),
+        "mean_alpha_ex_best_pct": round(float(ex_best.mean()) if len(ex_best) else 0.0, 3),
+        "rank_ic": round(rank_ic, 4),
+        "criteria": c,
+        "failed_criteria": failed,
+        "validated": len(failed) == 0,
+    }
+    MODEL_CARD_PATH.write_text(json.dumps(card, indent=2, ensure_ascii=False))
+    log.info(f"Model card saved to {MODEL_CARD_PATH}")
+    return card
+
+
 def run_backtest(results: pd.DataFrame | None = None) -> dict:
     """
     Load walk-forward results and compute full performance metrics.
@@ -141,6 +189,9 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
     CURVE_PATH.write_text(json.dumps(curve, indent=2))
     log.info(f"Cumulative curve saved to {CURVE_PATH}")
 
+    card = write_model_card(results, portfolio_rets, universe_rets)
+    metrics["model_card"] = card
+
     # Print summary
     p = metrics["portfolio"]
     a = metrics["alpha"]
@@ -153,6 +204,12 @@ def run_backtest(results: pd.DataFrame | None = None) -> dict:
     log.info(f"  Ann. alpha:      {a['ann_alpha_pct']:+.1f}%")
     log.info(f"  Hit rate vs univ:{a['hit_rate_vs_universe_pct']:.0f}%")
     log.info("=" * 50)
+    log.info(f"  Écart médian:    {card['median_alpha_pct']:+.2f} pt  |  sans le meilleur trimestre: {card['mean_alpha_ex_best_pct']:+.2f} pt")
+    log.info(f"  Trimestres devant l'univers: {card['periods_ahead']}/{card['n_periods']}  |  corrélation de rang: {card['rank_ic']:+.3f}")
+    if card["validated"]:
+        log.info("  → Modèle VALIDÉ : ses sélections seront publiées.")
+    else:
+        log.warning("  → Modèle NON validé, ses sélections ne seront pas publiées : " + " ; ".join(card["failed_criteria"]))
 
     return metrics
 

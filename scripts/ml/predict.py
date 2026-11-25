@@ -39,7 +39,7 @@ import shap
 
 from config import (
     MODEL_DIR, DATA_DIR, STOCKS_JSON, OUTPUT_JSON, PRICES_DIR,
-    ALL_FEATURES, FUNDAMENTAL_FEATURES, MIN_MARKET_CAP_USD, US_STRATEGY_SIZE,
+    ALL_FEATURES, FUNDAMENTAL_FEATURES, MIN_MARKET_CAP_USD, US_STRATEGY_SIZE, MODEL_CARD_PATH,
 )
 from features import (
     build_feature_dataset, load_price_series, compute_momentum_features,
@@ -222,7 +222,9 @@ def predict_current(force_features: bool = False) -> list[dict]:
         if col in df.columns:
             df[col] = df[col].rank(pct=True)
 
-    X = df[ALL_FEATURES].fillna(0.5)
+    # Mêmes données qu'à l'entraînement : les valeurs absentes restent absentes (le modèle sait les
+    # traiter). Les remplacer par 0,5 donnait un faux « momentum de +0,5 % » aux actions sans historique.
+    X = df[ALL_FEATURES].astype("float64")
 
     # Raw ML scores
     raw_scores = model.predict(X)
@@ -242,8 +244,13 @@ def predict_current(force_features: bool = False) -> list[dict]:
     # Sort by ML score
     df = df.sort_values("ml_score", ascending=False).reset_index(drop=True)
 
-    # Write mlScore for all scored US stocks to stocks.json immediately
-    _write_ml_scores_to_stocks(df)
+    # Note de toutes les actions américaines évaluées. Elle est publiée dans us_predictions.json, que
+    # l'ingestion relit pour renseigner mlScore : écrire directement dans stocks.json ne servait à rien,
+    # ce fichier n'était pas commité par cette tâche et l'ingestion suivante l'écrasait.
+    global _LAST_SCORES
+    _LAST_SCORES = {
+        t: round(float(sc), 1) for t, sc in zip(df["ticker"].tolist(), df["score_normalized"].tolist())
+    }
 
     # Build picks output
     picks = []
@@ -296,32 +303,27 @@ def _pillar_from_percentile(pct: float) -> float:
     return round(float(pct) * 10, 1)
 
 
-def _write_ml_scores_to_stocks(df: "pd.DataFrame"):
-    """Write mlScore for all scored US stocks back to stocks.json."""
-    stocks_data = json.loads(STOCKS_JSON.read_text())
-    score_map = dict(zip(df["ticker"].tolist(), df["score_normalized"].tolist()))
-
-    updated = 0
-    for stock in stocks_data["stocks"]:
-        t = stock["ticker"]
-        if t in score_map:
-            stock["mlScore"] = round(float(score_map[t]), 1)
-            updated += 1
-        elif stock.get("country") == "United States" and "mlScore" in stock:
-            del stock["mlScore"]
-
-    STOCKS_JSON.write_text(json.dumps(stocks_data, separators=(",", ":")))
-    log.info(f"Written mlScore for {updated} US stocks to stocks.json")
+_LAST_SCORES: dict[str, float] = {}
 
 
 def write_predictions(picks: list[dict]):
-    """Write predictions to public/data/picks/us_predictions.json and mlScore to stocks.json."""
+    """Write the picks and the score of every evaluated US stock to public/data/picks/us_predictions.json."""
     period = date.today().strftime("%Y-%m")
     model = joblib.load(MODEL_PATH)
+
+    # Évaluation du modèle sur le passé. Sans elle, ou si elle n'est pas concluante, les sélections sont
+    # tout de même écrites (pour suivi), mais marquées non validées : le site ne les publie pas.
+    card = json.loads(MODEL_CARD_PATH.read_text()) if MODEL_CARD_PATH.exists() else None
+    validated = bool(card and card.get("validated"))
+    if not validated:
+        reasons = card["failed_criteria"] if card else ["aucune évaluation disponible pour ce modèle"]
+        log.warning("Modèle non validé, sélections non publiées : " + " ; ".join(reasons))
 
     output = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "period": period,
+        "validated": validated,
+        "backtest": card,
         "engine": "lightgbm_v1",
         "model": {
             "n_estimators": int(model.n_estimators_),
@@ -329,6 +331,7 @@ def write_predictions(picks: list[dict]):
             "n_picks": US_STRATEGY_SIZE,
         },
         "picks": picks,
+        "scores": _LAST_SCORES,
     }
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)

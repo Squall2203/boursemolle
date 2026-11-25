@@ -533,6 +533,75 @@ function currentPeriod(): string {
   return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`
 }
 
+// ─── Stratégie ML américaine ─────────────────────────────────────────────────
+
+/**
+ * Construit la stratégie ML à partir des prédictions du pipeline Python.
+ * Renvoie null si les prédictions ne sont pas celles du mois en cours : un modèle qui n'a pas tourné
+ * ne doit pas continuer d'afficher d'anciennes sélections comme si elles étaient à jour.
+ */
+async function buildMlStrategy(outDir: string, period: string, allStocks: StockData[], prevTickers: string[]) {
+  const usPredPath = path.join(outDir, "us_predictions.json")
+  if (!fs.existsSync(usPredPath)) {
+    console.log(`\n🤖 US ML Strategy — pas de prédictions (lancer scripts/ml/pipeline.py --predict)`)
+    return null
+  }
+  try {
+    const usPred = JSON.parse(fs.readFileSync(usPredPath, "utf8"))
+    const mlPicks = (usPred.picks ?? []) as Array<{
+      ticker: string; name: string; sector: string | null; country: string
+      currency: string; rank: number; score: number; pillars: PickPillars
+      weight: number; isNew: boolean; pe: number | null; roe: number | null
+      perf6M: number | null; divYield: number | null; marketCap: number | null
+      price: number | null; peaEligible: boolean; justification: string
+    }>
+
+    if (usPred.period !== period) {
+      console.log(`\n🤖 US ML Strategy — prédictions périmées (${usPred.period ?? "date inconnue"}, attendu ${period}) : stratégie non publiée`)
+      return null
+    }
+    if (usPred.validated !== true) {
+      const reasons = (usPred.backtest?.failed_criteria ?? ["aucune évaluation disponible"]).join(" ; ")
+      console.log(`\n🤖 US ML Strategy — modèle non validé par son évaluation sur le passé, stratégie non publiée (${reasons})`)
+      return null
+    }
+    if (mlPicks.length === 0) return null
+
+    const currentPrices = new Map(allStocks.map((s) => [s.ticker, s.price]))
+    const picks = mlPicks.map((p) => ({
+      ...p,
+      // Prix d'entrée = cours du jour de publication, pas celui du jour de la prédiction
+      price: currentPrices.get(p.ticker) ?? p.price,
+      isNew: !prevTickers.includes(p.ticker) && prevTickers.length > 0,
+    }))
+    const exits = prevTickers.filter((t) => !mlPicks.some((p) => p.ticker === t))
+    const benchmarkPrice = await fetchBenchmarkPrice(ML_BENCHMARK_TICKER)
+
+    console.log(`\n🤖 US ML Strategy — ${picks.length} picks (${usPred.engine ?? "lightgbm"})`)
+    console.log(`  Top 3: ${picks.slice(0, 3).map((p) => `${p.ticker} (${p.score.toFixed(1)})`).join(", ")}`)
+
+    return {
+      id: ML_STRATEGY_ID,
+      name: "US Growth ML",
+      emoji: "🤖",
+      market: "US" as const,
+      marketLabel: "États-Unis",
+      description: "Sélection par un modèle statistique entraîné sur les comptes publiés par les sociétés américaines (SEC EDGAR) et sur l'évolution de leurs cours",
+      engine: "ml" as const,
+      predictionsPeriod: usPred.period as string,
+      benchmarkName: "S&P 500",
+      benchmarkTicker: ML_BENCHMARK_TICKER,
+      benchmarkPrice,
+      size: picks.length,
+      picks,
+      exits,
+    }
+  } catch (e) {
+    console.warn(`  ⚠️  us_predictions.json invalide: ${e}`)
+    return null
+  }
+}
+
 // ─── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -573,7 +642,23 @@ async function main() {
   // Les sélections sont figées pour le mois : on ne les recalcule pas en cours de mois, sinon le
   // prix d'entrée est réécrit chaque semaine et le bilan mensuel ne mesure plus que la dernière semaine.
   if (previousDataset && previousDataset.period === period && !force) {
-    console.log(`\n🔒 Sélections de ${period} déjà figées (générées le ${previousDataset.generatedAt.slice(0, 10)}) — rien à faire. Utiliser --force pour recalculer.`)
+    console.log(`\n🔒 Sélections de ${period} déjà figées (générées le ${previousDataset.generatedAt.slice(0, 10)}). Utiliser --force pour recalculer.`)
+
+    // Seule exception : la stratégie ML, si ses prédictions du mois sont arrivées après la génération.
+    // Elle est alors ajoutée telle quelle, avec le cours du jour comme prix d'entrée ; les autres ne bougent pas.
+    const frozen = JSON.parse(fs.readFileSync(outPath, "utf8"))
+    const isCurrentMl = (s: { id: string; predictionsPeriod?: string }) =>
+      s.id === ML_STRATEGY_ID && s.predictionsPeriod === period
+    if (!frozen.strategies.some(isCurrentMl)) {
+      const mlStrategy = await buildMlStrategy(outDir, period, allStocks, [])
+      if (mlStrategy) {
+        // Remplace une éventuelle ancienne version, fondée sur des prédictions d'un autre mois
+        frozen.strategies = frozen.strategies.filter((s: { id: string }) => s.id !== ML_STRATEGY_ID)
+        frozen.strategies.push(mlStrategy)
+        fs.writeFileSync(outPath, JSON.stringify(frozen, null, 2))
+        console.log("  ✅ Stratégie ML ajoutée aux sélections du mois")
+      }
+    }
     return
   }
   if (previousDataset && previousDataset.period && previousDataset.period !== period) {
@@ -747,60 +832,8 @@ async function main() {
   }
 
   // ─── US ML strategy — merge predictions from Python pipeline ──────────────
-  // Publiée seulement si les prédictions sont celles du mois en cours : un modèle qui n'a pas
-  // tourné ne doit pas continuer d'afficher d'anciennes sélections comme si elles étaient à jour.
-  const usPredPath = path.join(outDir, "us_predictions.json")
-  if (fs.existsSync(usPredPath)) {
-    try {
-      const usPred = JSON.parse(fs.readFileSync(usPredPath, "utf8"))
-      const mlPicks = (usPred.picks ?? []) as Array<{
-        ticker: string; name: string; sector: string | null; country: string
-        currency: string; rank: number; score: number; pillars: PickPillars
-        weight: number; isNew: boolean; pe: number | null; roe: number | null
-        perf6M: number | null; divYield: number | null; marketCap: number | null
-        price: number | null; peaEligible: boolean; justification: string
-      }>
-
-      if (usPred.period !== period) {
-        console.log(`\n🤖 US ML Strategy — prédictions périmées (${usPred.period ?? "date inconnue"}, attendu ${period}) : stratégie non publiée`)
-      } else if (mlPicks.length > 0) {
-        const currentPrices = new Map(allStocks.map((s) => [s.ticker, s.price]))
-        const prevUsTickers = (previousPicks[ML_STRATEGY_ID] ?? [])
-        const mlPicksWithNew = mlPicks.map(p => ({
-          ...p,
-          // Prix d'entrée = cours du jour de publication, pas celui du jour de la prédiction
-          price: currentPrices.get(p.ticker) ?? p.price,
-          isNew: !prevUsTickers.includes(p.ticker) && prevUsTickers.length > 0,
-        }))
-        const mlExits = prevUsTickers.filter(t => !mlPicks.map(p => p.ticker).includes(t))
-        const mlBenchmarkPrice = await fetchBenchmarkPrice(ML_BENCHMARK_TICKER)
-
-        console.log(`\n🤖 US ML Strategy — ${mlPicksWithNew.length} picks (LightGBM v${usPred.engine ?? "1"})`)
-        console.log(`  Top 3: ${mlPicksWithNew.slice(0, 3).map(p => `${p.ticker} (${p.score.toFixed(1)})`).join(", ")}`)
-
-        results.push({
-          id: ML_STRATEGY_ID,
-          name: "US Growth ML",
-          emoji: "🤖",
-          market: "US" as const,
-          marketLabel: "États-Unis",
-          description: "Sélection algorithmique LightGBM entraîné sur données SEC EDGAR (PIT) · Univers NYSE + NASDAQ large/mid cap",
-          engine: "ml" as const,
-          predictionsPeriod: usPred.period as string,
-          benchmarkName: "S&P 500",
-          benchmarkTicker: ML_BENCHMARK_TICKER,
-          benchmarkPrice: mlBenchmarkPrice,
-          size: mlPicksWithNew.length,
-          picks: mlPicksWithNew,
-          exits: mlExits,
-        })
-      }
-    } catch (e) {
-      console.warn(`  ⚠️  us_predictions.json invalide: ${e}`)
-    }
-  } else {
-    console.log(`\n🤖 US ML Strategy — pas de prédictions (lancer scripts/ml/pipeline.py --predict)`)
-  }
+  const mlStrategy = await buildMlStrategy(outDir, period, allStocks, previousPicks[ML_STRATEGY_ID] ?? [])
+  if (mlStrategy) results.push(mlStrategy)
 
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true })
 

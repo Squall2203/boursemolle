@@ -141,3 +141,17 @@ MIN_MARKET_CAP_USD = 2_000_000_000      # $2B — liquid large/mid caps only
 
 # Top N picks for the US ML strategy
 US_STRATEGY_SIZE = 15
+
+# ─── Critères de publication ──────────────────────────────────────────────────
+# Le modèle n'est publié sur le site que si son évaluation sur le passé (chaque trimestre, entraîné
+# uniquement sur ce qui précède) montre un avantage régulier, pas un coup de chance isolé.
+# La moyenne seule ne suffit pas : un unique trimestre exceptionnel peut la rendre flatteuse.
+
+MODEL_CARD_PATH = MODEL_DIR / "model_card.json"
+
+PUBLICATION_CRITERIA = {
+    "min_periods": 12,          # nombre minimal de trimestres évalués
+    "min_hit_rate": 0.55,       # part des trimestres où la sélection bat la moyenne de son univers
+    "min_median_alpha": 0.0,    # écart médian à l'univers (en points), strictement positif
+    "min_rank_ic": 0.02,        # corrélation de rang moyenne entre prédictions et rendements réalisés
+}

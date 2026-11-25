@@ -80,7 +80,8 @@ def step_predict(args):
         write_predictions(picks)
         log.info(f"Generated {len(picks)} picks for {date.today().strftime('%B %Y')}")
     else:
-        log.error("No picks generated — check EDGAR data and model")
+        # Sortie en erreur : sinon l'automatisation paraît réussie alors qu'elle n'a rien produit
+        raise RuntimeError("No picks generated — check EDGAR data and model")
     return picks
 
 
@@ -126,7 +127,7 @@ def main():
         if args.all or args.predict:
             step_predict(args)
 
-    except FileNotFoundError as e:
+    except (FileNotFoundError, RuntimeError) as e:
         log.error(str(e))
         sys.exit(1)
     except KeyboardInterrupt:

@@ -29,9 +29,13 @@ dist-ssr
 # Ne pas les ignorer, sinon `git add public/data/` laisse de côté les nouveaux fichiers
 # (c'est ce qui privait d'historique de cours les actions ajoutées après coup).
 
-# ML pipeline — données volumineuses (non versionnées)
-scripts/ml/data/edgar/          # téléchargements EDGAR bruts (plusieurs centaines de Mo)
-scripts/ml/data/features*.parquet  # cache feature dataset (régénéré depuis EDGAR)
+# Pipeline ML : tout le dossier de travail est ignoré (téléchargements EDGAR de plusieurs centaines
+# de Mo, caches de variables, résultats intermédiaires), sauf le modèle entraîné, qui est versionné.
+# Attention : git n'accepte pas de commentaire en fin de ligne dans ce fichier.
+scripts/ml/data/*
+!scripts/ml/data/model/
+scripts/ml/data/model/*
+!scripts/ml/data/model/lgbm_model.pkl
+!scripts/ml/data/model/model_card.json
 scripts/ml/__pycache__/
 scripts/ml/*.pyc
-# scripts/ml/data/model/ est versionné (lgbm_model.pkl ~10-20Mo)

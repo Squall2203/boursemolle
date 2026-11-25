@@ -41,11 +41,16 @@ def get_tag_value(num_for_filing, concept, qtrs_filter=None):
 
 
 def build_pit_financials(sub, num, cik_to_ticker, rebalancing_dates,
-                         checkpoint_path=None, done_tickers=None):
+                         checkpoint_path=None, done_tickers=None, only_tickers=None):
     sub = sub[sub["form"].isin(["10-K", "10-Q", "10-K/A", "10-Q/A"])].copy()
     sub["cik"] = sub["cik"].astype("Int64")
     sub["ticker"] = sub["cik"].map(cik_to_ticker)
     sub = sub.dropna(subset=["ticker"])
+    if only_tickers is not None:
+        # Une société sans historique de cours n'a ni momentum ni rendement futur : elle ne peut pas
+        # servir à l'entraînement. L'écarter ici évite de traiter des milliers de sociétés pour rien.
+        sub = sub[sub["ticker"].isin(only_tickers)]
+        num = num[num["adsh"].isin(sub["adsh"])]
     num_by_adsh = {adsh: grp for adsh, grp in num.groupby("adsh")}
 
     records = []
@@ -153,7 +158,11 @@ def load_price_series(ticker: str):
         if df.empty:
             return None
         df = df.sort_values("date").drop_duplicates(subset=["date"], keep="last")
-        return df["date"].values.astype("int64"), df["close"].values.astype("float64")
+        # Conversion explicite en nanosecondes : depuis pandas 3, les dates lues depuis du texte sont en
+        # microsecondes, alors que tout le reste du pipeline compare à Timestamp.value (nanosecondes).
+        # Sans cela, aucune date de sélection ne retombe dans l'historique et aucun rendement n'est calculé.
+        dates_ns = df["date"].values.astype("datetime64[ns]").astype("int64")
+        return dates_ns, df["close"].values.astype("float64")
     except Exception as e:
         log.warning(f"Failed to load prices for {ticker}: {e}")
         return None
@@ -212,6 +221,10 @@ def compute_momentum_features(ticker: str, price_series, ref_date) -> dict:
 
 # ─── Forward label computation ────────────────────────────────────────────────
 
+# Écart maximal toléré entre la date de sélection et la première séance cotée qui la suit (week-ends, jours fériés)
+MAX_ENTRY_GAP_NS = np.int64(7 * 24 * 3600 * 1_000_000_000)
+
+
 def compute_forward_returns(tickers, rebalancing_dates, forward_days=FORWARD_DAYS):
     records = []
     log.info("Computing forward returns...")
@@ -222,9 +235,17 @@ def compute_forward_returns(tickers, rebalancing_dates, forward_days=FORWARD_DAY
         dates_ns, prices = data
         for reb_date in rebalancing_dates:
             ts_ns     = np.int64(pd.Timestamp(reb_date).value)
+            # Une date de sélection antérieure au début de l'historique n'a pas de cours d'entrée :
+            # sans ce test, elle recevait le rendement des premières séances connues, donc une
+            # étiquette fausse, répétée à l'identique pour toutes les dates trop anciennes.
+            if ts_ns < dates_ns[0] - MAX_ENTRY_GAP_NS:
+                continue
             idx_entry = int(np.searchsorted(dates_ns, ts_ns, side="left"))
             idx_exit  = idx_entry + forward_days
             if idx_entry >= len(prices) or idx_exit >= len(prices):
+                continue
+            # Même garde-fou en cas de trou dans l'historique (cotation suspendue, données manquantes)
+            if dates_ns[idx_entry] - ts_ns > MAX_ENTRY_GAP_NS:
                 continue
             entry_price = prices[idx_entry]
             exit_price  = prices[idx_exit]
@@ -287,6 +308,15 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
         log.info(f"Loading cached features from {FEATURES_PATH}")
         return pd.read_parquet(FEATURES_PATH)
 
+    # Pre-scan price files once — reused in étapes 2, 3 et 4
+    available_price_tickers: set = set()
+    for p in PRICES_DIR.glob("*.json"):
+        stem = p.stem
+        available_price_tickers.add(stem)
+        if stem.startswith("_"):          # Windows reserved-name workaround (_CON.DE → CON.DE)
+            available_price_tickers.add(stem[1:])
+    log.info(f"Price files available: {len(available_price_tickers)} tickers")
+
     # ── Etape 1 : fondamentaux EDGAR ─────────────────────────────────────────
     if FUNDAMENTALS_PATH.exists() and not force:
         log.info(f"Loading cached fundamentals from {FUNDAMENTALS_PATH}")
@@ -323,6 +353,7 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
             sub, num, cik_to_ticker, rebalancing_dates,
             checkpoint_path=CHECKPOINT_PATH,
             done_tickers=done_tickers if done_tickers else None,
+            only_tickers=available_price_tickers,
         )
         if checkpoint_df is not None and not checkpoint_df.empty:
             fund_df = pd.concat([checkpoint_df, fund_df_new], ignore_index=True)
@@ -337,15 +368,6 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
             CHECKPOINT_PATH.unlink()
 
     fund_df["sic_div"] = fund_df["sic"].apply(sic_to_division)
-
-    # Pre-scan price files once — reused in étapes 2, 3 et 4
-    available_price_tickers: set = set()
-    for p in PRICES_DIR.glob("*.json"):
-        stem = p.stem
-        available_price_tickers.add(stem)
-        if stem.startswith("_"):          # Windows reserved-name workaround (_CON.DE → CON.DE)
-            available_price_tickers.add(stem[1:])
-    log.info(f"Price files available: {len(available_price_tickers)} tickers")
 
     # ── Etape 2 : momentum features ──────────────────────────────────────────
     mom_done_tickers: set = set()
@@ -443,7 +465,15 @@ def build_feature_dataset(force: bool = False) -> pd.DataFrame:
         df["fwd_return"]     = np.nan
         df["fwd_return_rel"] = np.nan
 
-    log.info(f"Feature dataset: {len(df.dropna(subset=['fwd_return_rel'])):,} rows with labels, {len(df):,} total")
+    n_labeled = int(df["fwd_return_rel"].notna().sum())
+    log.info(f"Feature dataset: {n_labeled:,} rows with labels, {len(df):,} total")
+    if n_labeled == 0:
+        # Sans rendement futur calculé, il n'y a rien à apprendre : on s'arrête ici avec un message clair
+        # plutôt que de laisser l'entraînement planter plus loin sur un jeu vide.
+        raise RuntimeError(
+            "Aucun rendement futur n'a pu être calculé : vérifier que public/data/prices contient des "
+            "historiques de cours pour les actions américaines et que leurs dates sont lisibles."
+        )
     df.to_parquet(FEATURES_PATH, index=False)
     if MOMENTUM_CHECKPOINT.exists():
         MOMENTUM_CHECKPOINT.unlink()

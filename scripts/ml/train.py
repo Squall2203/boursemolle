@@ -169,6 +169,12 @@ def train_final_model(df: pd.DataFrame) -> lgb.LGBMRegressor:
     log.info("Training final production model on full dataset...")
 
     df_labeled = df[df["fwd_return_rel"].notna()].copy()
+    if len(df_labeled) < MIN_OBSERVATIONS * 10:
+        raise RuntimeError(
+            f"Jeu d'entraînement trop petit ({len(df_labeled)} lignes) : le modèle n'est pas entraîné."
+        )
+    log.info(f"Training set: {len(df_labeled):,} rows, {df_labeled['ticker'].nunique()} tickers, "
+             f"{df_labeled['rebalancing_date'].nunique()} periods")
 
     # Rank-normalize features cross-sectionally
     for col in FUNDAMENTAL_FEATURES:
