@@ -40,11 +40,20 @@ jobs:
       - name: Evaluate scores against past returns
         run: pnpm tsx scripts/evaluate-score.ts
 
+      # Mesure sur plusieurs années à partir de notes reconstituées. Les comptes annuels ne sont
+      # retéléchargés que s'ils datent de plus de 25 jours. Une panne de la source ne doit pas
+      # empêcher le reste de la tâche : le fichier précédent est alors conservé.
+      - name: Evaluate reconstructed scores over several years
+        continue-on-error: true
+        run: |
+          pnpm tsx scripts/fetch-annual-fundamentals.ts --if-stale
+          pnpm tsx scripts/evaluate-score-history.ts
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/picks/ public/data/score-evaluation.json
+          git add public/data/picks/ public/data/score-evaluation.json public/data/score-evaluation-history.json scripts/data/annual-fundamentals.json
           git commit -m "chore: update AlphaPicks $(date -u +%Y-%m)" || { echo "No changes to commit"; exit 0; }
           git pull origin main --ff-only || git push --force-with-lease origin HEAD:main
           git push origin HEAD:main
