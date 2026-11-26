@@ -181,6 +181,7 @@ interface SectorStats {
   pe: number[]
   evEbitda: number[]
   pb: number[]
+  fcfYield: number[]
   roe: number[]
   roa: number[]
   marginOpe: number[]
@@ -188,7 +189,7 @@ interface SectorStats {
   count: number
 }
 
-const EMPTY_STATS: SectorStats = { pe: [], evEbitda: [], pb: [], roe: [], roa: [], marginOpe: [], marginNette: [], count: 0 }
+const EMPTY_STATS: SectorStats = { pe: [], evEbitda: [], pb: [], fcfYield: [], roe: [], roa: [], marginOpe: [], marginNette: [], count: 0 }
 
 function computeAllSectorStats(universe: Stock[]): Map<string, SectorStats> {
   const bySector = new Map<string, SectorStats>()
@@ -197,13 +198,14 @@ function computeAllSectorStats(universe: Stock[]): Map<string, SectorStats> {
     const sector = s.sector ?? "Unknown"
     let stats = bySector.get(sector)
     if (!stats) {
-      stats = { pe: [], evEbitda: [], pb: [], roe: [], roa: [], marginOpe: [], marginNette: [], count: 0 }
+      stats = { pe: [], evEbitda: [], pb: [], fcfYield: [], roe: [], roa: [], marginOpe: [], marginNette: [], count: 0 }
       bySector.set(sector, stats)
     }
     stats.count++
     if (s.trailingPE != null && s.trailingPE > 0) stats.pe.push(s.trailingPE)
     if (s.evToEbitda != null && s.evToEbitda > 0) stats.evEbitda.push(s.evToEbitda)
     if (s.priceToBook != null && s.priceToBook > 0) stats.pb.push(s.priceToBook)
+    if (s.freeCashflowYield != null) stats.fcfYield.push(s.freeCashflowYield)
     if (s.returnOnEquity != null) stats.roe.push(s.returnOnEquity)
     if (s.returnOnAssets != null) stats.roa.push(s.returnOnAssets)
     if (s.operatingMargins != null) stats.marginOpe.push(s.operatingMargins)
@@ -308,6 +310,13 @@ function scoreValorisation(stock: Stock, stats: SectorStats): PillarResult {
   const isFin = isFinancialSector(stock.sector)
   const sect = sectorLabel(stock.sector)
   const inputs: MetricInput[] = []
+  // La trésorerie dégagée entre dans le critère dès que les données la fournissent (hors banques et assureurs,
+  // dont la trésorerie ne se lit pas ainsi). Les autres chiffres lui cèdent alors une part de leur poids,
+  // dans les mêmes proportions. Les données plus anciennes, qui ne la contiennent pas, sont notées comme avant.
+  const withFcf = !isFin && stock.freeCashflowYield !== undefined
+  const w = withFcf
+    ? { pe: 0.27, fwd: 0.12, ev: 0.23, pb: 0.15, fcf: 0.23 }
+    : { pe: isFin ? 0.45 : 0.35, fwd: 0.15, ev: 0.30, pb: isFin ? 0.40 : 0.20, fcf: 0 }
 
   // PER : prix payé pour 1 € de bénéfice annuel
   {
@@ -332,7 +341,7 @@ function scoreValorisation(stock: Stock, stats: SectorStats): PillarResult {
         : "L'entreprise a perdu de l'argent sur les douze derniers mois : son prix ne peut pas être rapporté à ses bénéfices, ce qui pèse sur la note."
     }
     inputs.push({
-      key: "pe_vs_secteur", label: "PER vs secteur", value: pe, note, weight: isFin ? 0.45 : 0.35,
+      key: "pe_vs_secteur", label: "PER vs secteur", value: pe, note, weight: w.pe,
       sectorValues: stats.pe, explanation,
     })
   }
@@ -354,7 +363,7 @@ function scoreValorisation(stock: Stock, stats: SectorStats): PillarResult {
           ? `Rapporté aux bénéfices attendus pour l'an prochain, le PER monte à ${fr(fwd)} : les analystes anticipent des bénéfices en baisse, l'action est donc plus chère qu'elle n'en a l'air.`
           : `Les analystes attendent des bénéfices stables l'an prochain (PER prévisionnel de ${fr(fwd)}).`
     }
-    inputs.push({ key: "pe_forward_trend", label: "PER sur bénéfices attendus", value: fwd, displayValue: display, note, weight: 0.15, explanation })
+    inputs.push({ key: "pe_forward_trend", label: "PER sur bénéfices attendus", value: fwd, displayValue: display, note, weight: w.fwd, explanation })
   }
 
   // VE/EBITDA : prix de l'entreprise entière, dette comprise
@@ -373,7 +382,7 @@ function scoreValorisation(stock: Stock, stats: SectorStats): PillarResult {
       }
     }
     inputs.push({
-      key: "ev_ebitda", label: "VE/EBITDA vs secteur", value: v, note, weight: 0.30, sectorValues: stats.evEbitda,
+      key: "ev_ebitda", label: "VE/EBITDA vs secteur", value: v, note, weight: w.ev, sectorValues: stats.evEbitda,
       excludedReason: isFin ? "Non pertinent pour les banques et assureurs" : null, explanation,
     })
   }
@@ -393,7 +402,31 @@ function scoreValorisation(stock: Stock, stats: SectorStats): PillarResult {
         explanation = `L'action vaut ${fr(v, 2)} fois la valeur comptable de l'entreprise.`
       }
     }
-    inputs.push({ key: "pb", label: "Cours / actif net vs secteur", value: v, displayValue: v != null ? fr(v, 2) : "—", note, weight: isFin ? 0.40 : 0.20, sectorValues: stats.pb, explanation })
+    inputs.push({ key: "pb", label: "Cours / actif net vs secteur", value: v, displayValue: v != null ? fr(v, 2) : "—", note, weight: w.pb, sectorValues: stats.pb, explanation })
+  }
+
+  // Trésorerie dégagée : l'argent réellement encaissé sur l'exercice, rapporté à la valeur en Bourse
+  if (withFcf) {
+    const v = stock.freeCashflowYield ?? null
+    let note: number | null = null
+    let explanation: string | null = null
+    if (v != null) {
+      const med = computeMedian(stats.fcfYield)
+      const enough = stats.fcfYield.length >= MIN_SECTOR_SAMPLE && med != null
+      note = enough
+        ? noteByRank(v, stats.fcfYield, false)
+        : clamp(lerp(v, [[-5, 0], [0, 2], [3, 5], [6, 7.5], [10, 10]]))
+      const versus = enough ? `, contre ${fr(med!)} € pour la société médiane ${sect}` : ""
+      explanation = v > 0
+        ? `Sur son dernier exercice, l'entreprise a dégagé ${fr(v)} € de trésorerie pour 100 € de valeur en Bourse${versus}. La trésorerie dégagée est l'argent réellement encaissé une fois payés les dépenses courantes et les investissements : elle est plus difficile à embellir qu'un bénéfice comptable.`
+        : v > -100
+          ? `Sur son dernier exercice, l'entreprise a dépensé plus d'argent qu'elle n'en a encaissé : sa trésorerie dégagée est négative (${fr(v)} € pour 100 € de valeur en Bourse${versus}). Cela peut venir de gros investissements comme d'une activité qui consomme de l'argent.`
+          : "Sur son dernier exercice, l'entreprise a dépensé bien plus d'argent qu'elle n'en a encaissé : sa trésorerie dégagée est négative, pour un montant supérieur à sa valeur en Bourse actuelle. Elle dépend de financements extérieurs pour continuer."
+    }
+    inputs.push({
+      key: "fcf_yield", label: "Trésorerie dégagée / valeur en Bourse", value: v, displayValue: v != null ? `${fr(v)} %` : "—",
+      note, weight: w.fcf, sectorValues: stats.fcfYield, explanation,
+    })
   }
 
   return buildPillar(inputs)
@@ -784,7 +817,7 @@ function scoreQuant(stock: Stock): PillarResult {
 const PILLAR_INFO: Record<PillarKey, { title: string; question: string; levels: [string, string, string] }> = {
   valorisation: {
     title: "Valorisation",
-    question: "L'action est-elle chère ou bon marché par rapport à ce que l'entreprise gagne et possède ? Une excellente société peut être un mauvais achat si on la paie trop cher.",
+    question: "L'action est-elle chère ou bon marché par rapport à ce que l'entreprise gagne, encaisse et possède ? Une excellente société peut être un mauvais achat si on la paie trop cher.",
     levels: ["L'action est bon marché par rapport aux sociétés comparables.", "L'action est à un prix dans la moyenne de son secteur.", "L'action est chère par rapport aux sociétés comparables."],
   },
   qualite: {

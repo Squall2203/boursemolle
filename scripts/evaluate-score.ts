@@ -11,6 +11,7 @@
 import { execFileSync } from "node:child_process"
 import fs from "node:fs"
 import path from "node:path"
+import { pathToFileURL } from "node:url"
 import { computeScore, type PillarKey } from "../src/lib/scoring.ts"
 import { getStockRegion } from "../src/lib/market.ts"
 import { toPriceFilename } from "../src/lib/tickerFilename.ts"
@@ -32,7 +33,7 @@ const LARGE_CAP_EUR = 1e9
 interface Snapshot { sha: string; date: string }
 
 /** Première version publiée de chaque semaine. */
-function weeklySnapshots(): Snapshot[] {
+export function weeklySnapshots(): Snapshot[] {
   const log = execFileSync("git", ["log", "--reverse", "--format=%H %cs", "--", STOCKS_PATH], { cwd: ROOT, encoding: "utf8" })
   const byWeek = new Map<string, Snapshot>()
   for (const line of log.trim().split("\n")) {
@@ -46,7 +47,7 @@ function weeklySnapshots(): Snapshot[] {
   return [...byWeek.values()]
 }
 
-function loadSnapshot(sha: string): Stock[] {
+export function loadSnapshot(sha: string): Stock[] {
   const raw = execFileSync("git", ["show", `${sha}:${STOCKS_PATH}`], { cwd: ROOT, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 })
   // Les versions les plus anciennes n'avaient pas encore tous les champs : on les complète à vide,
   // la notation traite alors ces chiffres comme des données absentes.
@@ -80,7 +81,7 @@ function loadPrices(ticker: string) {
  * Rendement en % entre la première séance qui suit la date de la note et `horizon` séances plus tard.
  * L'entrée se fait après la date : la note a été calculée avec les cours de ce jour-là.
  */
-function forwardReturn(ticker: string, date: string, horizon: number): number | null {
+export function forwardReturn(ticker: string, date: string, horizon: number): number | null {
   const series = loadPrices(ticker)
   if (!series) return null
   const entry = series.dates.findIndex((d) => d > date)
@@ -166,4 +167,5 @@ function main() {
   }
 }
 
-main()
+// Lancé directement (et non importé par un autre script)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main()

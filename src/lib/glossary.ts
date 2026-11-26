@@ -73,6 +73,11 @@ export const GLOSSARY: GlossaryEntry[] = [
     more: "Contrairement au PER, il tient compte de la dette : il évite de trouver bon marché une société très endettée. Il ne s'applique pas aux banques et aux assureurs.",
   },
   {
+    id: "tresorerie-degagee", term: "Trésorerie dégagée", category: "Le prix d'une action", match: ["trésorerie dégagée", "flux de trésorerie disponible", "free cash flow"],
+    short: "L'argent qu'il reste réellement à l'entreprise sur une année, une fois payés ses dépenses courantes et ses investissements.",
+    more: "On parle aussi de flux de trésorerie disponible. C'est avec cet argent que l'entreprise verse des dividendes, rembourse sa dette ou rachète ses actions. Rapportée à la valeur en Bourse, elle dit combien l'entreprise encaisse pour 100 € investis. Elle est plus difficile à embellir qu'un bénéfice comptable, mais varie beaucoup d'une année à l'autre quand l'entreprise investit fortement. Elle ne s'applique pas aux banques et aux assureurs.",
+  },
+  {
     id: "cours-actif-net", term: "Cours sur actif net", category: "Le prix d'une action", match: ["valeur comptable", "actif net", "P/B"],
     short: "Le prix de l'action comparé à ce qui resterait aux actionnaires si l'entreprise vendait tout et remboursait ses dettes.",
     more: "En dessous de 1, l'action vaut moins que ses biens au bilan : soit une bonne affaire, soit le signe que ces biens rapportent peu. Surtout parlant pour les banques, l'immobilier et l'industrie.",

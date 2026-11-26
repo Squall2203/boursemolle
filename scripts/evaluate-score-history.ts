@@ -16,6 +16,7 @@
  */
 import fs from "node:fs"
 import path from "node:path"
+import { pathToFileURL } from "node:url"
 import { computeScore, type PillarKey } from "../src/lib/scoring.ts"
 import { getStockRegion } from "../src/lib/market.ts"
 import { toPriceFilename } from "../src/lib/tickerFilename.ts"
@@ -32,19 +33,16 @@ const FUNDAMENTALS_PATH = path.join(ROOT, "scripts", "data", "annual-fundamental
 const OUT_PATH = path.join(ROOT, "public", "data", "score-evaluation-history.json")
 
 /** Délai supposé entre la clôture d'un exercice et la publication de ses comptes */
-const PUBLICATION_LAG_DAYS = 120
+export const PUBLICATION_LAG_DAYS = 120
 /** Horizons mesurés, en séances de Bourse (environ six mois et un an) */
 const HORIZONS = [126, 252]
 /** Séances de cours nécessaires avant la date pour calculer la tendance */
 const MIN_PRICE_HISTORY = 200
-const LARGE_CAP_EUR = 1e9
+export const LARGE_CAP_EUR = 1e9
 const DAY_MS = 86_400_000
 
-// Devises de comptes absentes des taux du site (valeur en euros d'une unité, ordre de grandeur)
-const EXTRA_FX: FxRates = { CNY: 0.126, TWD: 0.028, KRW: 0.00066, SGD: 0.68, INR: 0.011, BRL: 0.16, MXN: 0.05, ZAR: 0.05, ILS: 0.25, PLN: 0.23, CZK: 0.04, HUF: 0.0025 }
-
 /** Deux fois par an : en mai (comptes de l'année précédente publiés) et en novembre. */
-function evaluationDates(firstCandle: string, lastCandle: string): string[] {
+export function evaluationDates(firstCandle: string, lastCandle: string): string[] {
   const dates: string[] = []
   for (let year = Number(firstCandle.slice(0, 4)); year <= Number(lastCandle.slice(0, 4)); year++) {
     for (const month of ["05", "11"]) dates.push(`${year}-${month}-02`)
@@ -52,7 +50,7 @@ function evaluationDates(firstCandle: string, lastCandle: string): string[] {
   return dates.filter((d) => d > firstCandle && d < lastCandle)
 }
 
-function loadCandles(ticker: string): PriceCandle[] | null {
+export function loadCandles(ticker: string): PriceCandle[] | null {
   const p = path.join(PRICES_DIR, `${toPriceFilename(ticker)}.json`)
   if (!fs.existsSync(p)) return null
   try {
@@ -69,7 +67,7 @@ const growth = (cur: number | null, prev: number | null) => (cur != null && prev
  * Ce que le site aurait affiché pour cette action à la date donnée, ou null si les données manquent.
  * Renvoie aussi l'indice de la séance correspondante, pour calculer ensuite le rendement.
  */
-function reconstruct(
+export function reconstruct(
   today: Stock, statements: AnnualStatement[], financialCurrency: string | undefined,
   candles: PriceCandle[], date: string, fx: FxRates,
 ): { stock: Stock; index: number } | null {
@@ -105,7 +103,7 @@ function reconstruct(
   // Conversion des comptes vers la devise de cotation (taux d'aujourd'hui)
   const tradeCcy = normalizeCurrency(today.currency)
   const finCcy = financialCurrency ?? tradeCcy
-  const rate = (c: string) => fx[c] ?? FALLBACK_FX_RATES[c] ?? EXTRA_FX[c]
+  const rate = (c: string) => fx[c] ?? FALLBACK_FX_RATES[c]
   const conv = finCcy === tradeCcy ? 1 : rate(finCcy) && rate(tradeCcy) ? rate(finCcy) / rate(tradeCcy) : null
   const inTrade = (v: number | null) => (v != null && conv != null ? v * conv : null)
 
@@ -132,6 +130,7 @@ function reconstruct(
     forwardPE: null, // les prévisions d'analystes de l'époque ne sont pas disponibles
     priceToBook: marketCap != null && equity != null && equity > 0 ? marketCap / equity : null,
     enterpriseValue,
+    freeCashflowYield: marketCap != null && marketCap > 0 && inTrade(cur.freeCashFlow) != null ? Math.round((inTrade(cur.freeCashFlow)! / marketCap) * 10000) / 100 : null,
     evToEbitda: enterpriseValue != null && ebitda != null && ebitda > 0 ? enterpriseValue / ebitda : null,
     returnOnEquity: cur.equity != null && cur.equity > 0 ? pct(cur.netIncome, cur.equity) : null,
     returnOnAssets: pct(cur.netIncome, cur.totalAssets),
@@ -254,4 +253,5 @@ function main() {
   }
 }
 
-main()
+// Lancé directement (et non importé par un autre script)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main()

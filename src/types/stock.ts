@@ -19,6 +19,8 @@ export interface Stock {
   priceToBook: number | null
   enterpriseValue: number | null
   evToEbitda: number | null
+  /** Trésorerie dégagée sur le dernier exercice, en % de la capitalisation. Absent des données antérieures à son ajout. */
+  freeCashflowYield?: number | null
 
   returnOnEquity: number | null
   returnOnAssets: number | null
