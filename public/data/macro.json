@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:23:20.631Z",
+  "generatedAt": "2026-11-26T23:40:05.612Z",
   "cac40": {
     "value": 8108.74,
     "change": 128.17,
@@ -19,9 +19,9 @@
     "label": "EUR/USD"
   },
   "brent": {
-    "value": 91.29,
-    "change": 0.65,
-    "changePercent": 0.72,
+    "value": 91.64,
+    "change": 1,
+    "changePercent": 1.1,
     "label": "Brent"
   },
   "us10y": {
@@ -40,13 +40,13 @@
   "eurgbp": {
     "value": 0.84,
     "change": 0,
-    "changePercent": 0.05,
+    "changePercent": 0.03,
     "label": "EUR/GBP"
   },
   "eursek": {
-    "value": 11.21,
-    "change": -0.02,
-    "changePercent": -0.21,
+    "value": 11.19,
+    "change": -0.04,
+    "changePercent": -0.33,
     "label": "EUR/SEK"
   }
 }
