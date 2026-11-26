@@ -41,9 +41,6 @@ const MIN_PRICE_HISTORY = 200
 export const LARGE_CAP_EUR = 1e9
 const DAY_MS = 86_400_000
 
-// Devises de comptes absentes des taux du site (valeur en euros d'une unité, ordre de grandeur)
-export const EXTRA_FX: FxRates = { CNY: 0.126, TWD: 0.028, KRW: 0.00066, SGD: 0.68, INR: 0.011, BRL: 0.16, MXN: 0.05, ZAR: 0.05, ILS: 0.25, PLN: 0.23, CZK: 0.04, HUF: 0.0025 }
-
 /** Deux fois par an : en mai (comptes de l'année précédente publiés) et en novembre. */
 export function evaluationDates(firstCandle: string, lastCandle: string): string[] {
   const dates: string[] = []
@@ -106,7 +103,7 @@ export function reconstruct(
   // Conversion des comptes vers la devise de cotation (taux d'aujourd'hui)
   const tradeCcy = normalizeCurrency(today.currency)
   const finCcy = financialCurrency ?? tradeCcy
-  const rate = (c: string) => fx[c] ?? FALLBACK_FX_RATES[c] ?? EXTRA_FX[c]
+  const rate = (c: string) => fx[c] ?? FALLBACK_FX_RATES[c]
   const conv = finCcy === tradeCcy ? 1 : rate(finCcy) && rate(tradeCcy) ? rate(finCcy) / rate(tradeCcy) : null
   const inTrade = (v: number | null) => (v != null && conv != null ? v * conv : null)
 
@@ -133,6 +130,7 @@ export function reconstruct(
     forwardPE: null, // les prévisions d'analystes de l'époque ne sont pas disponibles
     priceToBook: marketCap != null && equity != null && equity > 0 ? marketCap / equity : null,
     enterpriseValue,
+    freeCashflowYield: marketCap != null && marketCap > 0 && inTrade(cur.freeCashFlow) != null ? Math.round((inTrade(cur.freeCashFlow)! / marketCap) * 10000) / 100 : null,
     evToEbitda: enterpriseValue != null && ebitda != null && ebitda > 0 ? enterpriseValue / ebitda : null,
     returnOnEquity: cur.equity != null && cur.equity > 0 ? pct(cur.netIncome, cur.equity) : null,
     returnOnAssets: pct(cur.netIncome, cur.totalAssets),

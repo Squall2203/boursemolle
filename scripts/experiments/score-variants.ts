@@ -1,6 +1,6 @@
 /**
- * Essai : la note serait-elle meilleure avec la trésorerie dégagée dans le critère Valorisation,
- * ou avec d'autres poids entre les critères ?
+ * Essai : que vaut la note avec et sans la trésorerie dégagée dans le critère Valorisation,
+ * et avec d'autres poids entre les critères ?
  * Run: npx tsx scripts/experiments/score-variants.ts
  *
  * Ne modifie rien sur le site. Les variantes sont recalculées à partir du détail de la note actuelle,
@@ -10,15 +10,14 @@ import fs from "node:fs"
 import path from "node:path"
 import { computeScore, type PillarKey, type StockScore } from "../../src/lib/scoring.ts"
 import { getStockRegion } from "../../src/lib/market.ts"
-import { FALLBACK_FX_RATES, normalizeCurrency, toEur, type FxRates } from "../../src/lib/fx.ts"
+import { FALLBACK_FX_RATES, toEur, type FxRates } from "../../src/lib/fx.ts"
 import type { PriceCandle, Stock } from "../../src/types/stock.ts"
 import { PILLARS, evaluateDate, mean, median, round, type DateResult, type Row } from "../score-stats.ts"
 import type { AnnualFundamentalsFile } from "../fetch-annual-fundamentals.ts"
-import { EXTRA_FX, LARGE_CAP_EUR, PUBLICATION_LAG_DAYS, evaluationDates, loadCandles, reconstruct } from "../evaluate-score-history.ts"
+import { LARGE_CAP_EUR, evaluationDates, loadCandles, reconstruct } from "../evaluate-score-history.ts"
 import { forwardReturn, loadSnapshot, weeklySnapshots } from "../evaluate-score.ts"
 
 const ROOT = process.cwd()
-const DAY_MS = 86_400_000
 
 type Weights = Record<PillarKey, number>
 const CURRENT: Weights = { valorisation: 0.20, qualite: 0.20, croissance: 0.15, sante: 0.15, dividende: 0.10, momentum: 0.10, quant: 0.10 }
@@ -29,42 +28,20 @@ const WEIGHT_VARIANTS: Record<string, Weights> = {
   "tendance +20 pts (marqué)": { valorisation: 0.20, qualite: 0.15, croissance: 0.10, sante: 0.10, dividende: 0.05, momentum: 0.20, quant: 0.20 },
   "poids égaux": Object.fromEntries(PILLARS.map((k) => [k, 1 / 7])) as Weights,
 }
-/** Poids de la trésorerie dégagée dans le critère Valorisation (les autres chiffres gardent le leur, puis tout est ramené à 100 %) */
-const FCF_WEIGHT = 0.30
-
 const clamp = (v: number) => Math.max(0, Math.min(10, v))
 const round1 = (v: number) => Math.round(v * 10) / 10
 
-/** Note globale recalculée avec d'autres poids et, au besoin, une autre note de valorisation. */
-function total(score: StockScore, weights: Weights, valorisation?: { note: number; counted: boolean }): number {
-  const counted = (k: PillarKey) => (k === "valorisation" && valorisation ? valorisation.counted : score.explanations[k].counted)
-  const value = (k: PillarKey) => (k === "valorisation" && valorisation ? valorisation.note : score.pillars[k])
+/** Note globale recalculée avec d'autres poids. */
+function total(score: StockScore, weights: Weights): number {
+  const counted = (k: PillarKey) => score.explanations[k].counted
+  const value = (k: PillarKey) => score.pillars[k]
   const sum = PILLARS.reduce((s, k) => s + (counted(k) ? weights[k] : 0), 0)
   const raw = sum > 0 ? clamp(PILLARS.reduce((s, k) => s + (counted(k) ? value(k) * weights[k] : 0), 0) / sum) : 5
   const confidence = Math.min(1, score.dataCoverage / 0.8)
   return round1(5 + (raw - 5) * confidence)
 }
 
-/** Critère Valorisation recalculé en y ajoutant la note de trésorerie dégagée. */
-function valorisationWithFcf(score: StockScore, fcfNote: number | null): { note: number; counted: boolean } {
-  let weighted = 0, used = 0
-  for (const m of Object.values(score.details.valorisation)) {
-    if (m.excluded || m.missing) continue
-    weighted += m.note * m.weight
-    used += m.weight
-  }
-  if (fcfNote != null) { weighted += fcfNote * FCF_WEIGHT; used += FCF_WEIGHT }
-  return { note: used > 0 ? round1(clamp(weighted / used)) : 5, counted: used > 0 }
-}
-
-/** Position (0 à 10) dans le groupe ; les ex æquo comptent pour moitié. Même règle que la notation du site. */
-function rankNote(value: number, group: number[]): number {
-  let below = 0, equal = 0
-  for (const v of group) { if (v < value) below++; else if (v === value) equal++ }
-  return clamp(Math.round(((below + equal / 2) / group.length) * 100) / 10)
-}
-
-interface Item { stock: Stock; score: StockScore; rets: Record<number, number | null>; fcfYield: number | null; fcfNote: number | null }
+interface Item { stock: Stock; score: StockScore; rets: Record<number, number | null> }
 type UniverseId = "pea" | "peaLarge" | "peaSmall" | "all"
 const UNIVERSES: UniverseId[] = ["pea", "peaLarge", "peaSmall", "all"]
 
@@ -139,81 +116,58 @@ function reconstructed() {
   const reference = candlesByTicker.get("MC.PA")!
   const dates = evaluationDates(reference[0].date, reference[reference.length - 1].date)
   const HORIZONS = [126, 252]
-  const rate = (c: string) => fx[c] ?? FALLBACK_FX_RATES[c] ?? EXTRA_FX[c]
 
-  const weightsOut: Results = {}, fcfOut: Results = {}, fcfOnlyOut: Results = {}, metricOut: Results = {}
-  let withFcf = 0, nonFin = 0
+  const weightsOut: Results = {}, fcfOut: Results = {}, pillarOut: Results = {}, metricOut: Results = {}
 
   for (const date of dates) {
-    const rebuilt: { stock: Stock; index: number; candles: PriceCandle[]; fcfYield: number | null }[] = []
+    const rebuilt: { stock: Stock; index: number; candles: PriceCandle[] }[] = []
     for (const today of todayStocks) {
       const candles = candlesByTicker.get(today.ticker)
       if (!candles) continue
-      const statements = fundamentals.statements[today.ticker]
-      const r = reconstruct(today, statements, fundamentals.financialCurrency?.[today.ticker], candles, date, fx)
-      if (!r) continue
-      // Trésorerie dégagée du même exercice que celui retenu pour la note, rapportée à la capitalisation
-      const cutoff = new Date(Date.parse(date) - PUBLICATION_LAG_DAYS * DAY_MS).toISOString().slice(0, 10)
-      const cur = statements.filter((s) => s.periodEnd <= cutoff).at(-1)!
-      const tradeCcy = normalizeCurrency(today.currency)
-      const finCcy = fundamentals.financialCurrency?.[today.ticker] ?? tradeCcy
-      const conv = finCcy === tradeCcy ? 1 : rate(finCcy) && rate(tradeCcy) ? rate(finCcy) / rate(tradeCcy) : null
-      const fcfYield = cur.freeCashFlow != null && conv != null && r.stock.marketCap ? (cur.freeCashFlow * conv / r.stock.marketCap) * 100 : null
-      rebuilt.push({ ...r, candles, fcfYield })
+      const r = reconstruct(today, fundamentals.statements[today.ticker], fundamentals.financialCurrency?.[today.ticker], candles, date, fx)
+      if (r) rebuilt.push({ ...r, candles })
     }
     const universe = rebuilt.map((r) => r.stock)
     if (universe.length < 100) continue
+    // Même univers sans la trésorerie dégagée : la notation retombe sur l'ancienne formule
+    const without = universe.map((s) => ({ ...s, freeCashflowYield: undefined }))
+    const scoresWithout = new Map(without.map((s) => [s.ticker, computeScore(s, without)]))
 
-    // Rang de la trésorerie dégagée parmi les sociétés de la même région et du même secteur (hors finance)
-    const groups = new Map<string, number[]>()
-    const groupKey = (s: Stock) => `${getStockRegion(s)}|${s.sector ?? "Unknown"}`
-    for (const r of rebuilt) {
-      if (r.fcfYield == null || r.stock.sector === "Financial Services") continue
-      const g = groups.get(groupKey(r.stock)) ?? []
-      g.push(r.fcfYield)
-      groups.set(groupKey(r.stock), g)
-    }
-
-    const items: Item[] = rebuilt.map((r) => {
-      const score = computeScore(r.stock, universe)
+    const items: (Item & { before: StockScore })[] = rebuilt.map((r) => {
       const entry = r.index + 1
       const rets = Object.fromEntries(HORIZONS.map((h) => {
         const exit = entry + h
         const a = r.candles[entry]?.close, b = r.candles[exit]?.close
         return [h, exit < r.candles.length && a > 0 && Number.isFinite(b) ? (b / a - 1) * 100 : null]
       }))
-      const group = groups.get(groupKey(r.stock))
-      const isFin = r.stock.sector === "Financial Services"
-      const fcfNote = !isFin && r.fcfYield != null && group && group.length >= 8 ? rankNote(r.fcfYield, group) : null
-      if (!isFin) { nonFin++; if (fcfNote != null) withFcf++ }
-      return { stock: r.stock, score, rets, fcfYield: r.fcfYield, fcfNote }
+      return { stock: r.stock, score: computeScore(r.stock, universe), before: scoresWithout.get(r.stock.ticker)!, rets }
     })
+    const before = (it: Item) => (it as Item & { before: StockScore }).before
 
     evaluateVariants(date, items, HORIZONS, Object.fromEntries(Object.entries(WEIGHT_VARIANTS).map(([n, w]) => [n, (it: Item) => total(it.score, w)])), weightsOut)
     evaluateVariants(date, items, HORIZONS, {
-      "note actuelle": (it) => it.score.total,
-      "avec trésorerie dégagée": (it) => total(it.score, CURRENT, valorisationWithFcf(it.score, it.fcfNote)),
-      "trésorerie + tendance +10 pts": (it) => total(it.score, WEIGHT_VARIANTS["tendance +10 pts (modeste)"], valorisationWithFcf(it.score, it.fcfNote)),
+      "sans trésorerie dégagée": (it) => before(it).total,
+      "avec trésorerie dégagée": (it) => it.score.total,
     }, fcfOut)
-    // Le critère Valorisation seul, avec et sans trésorerie, puis chaque chiffre isolé (sociétés hors finance ayant la donnée)
-    const m = (it: Item, key: string) => { const d = it.score.details.valorisation[key]; return d && !d.excluded && !d.missing ? d.note : null }
     evaluateVariants(date, items, HORIZONS, {
-      "Valorisation actuelle": (it) => (it.score.explanations.valorisation.counted ? it.score.pillars.valorisation : null),
-      "Valorisation avec trésorerie": (it) => { const v = valorisationWithFcf(it.score, it.fcfNote); return v.counted ? v.note : null },
-    }, fcfOnlyOut)
+      "Valorisation sans trésorerie": (it) => (before(it).explanations.valorisation.counted ? before(it).pillars.valorisation : null),
+      "Valorisation avec trésorerie": (it) => (it.score.explanations.valorisation.counted ? it.score.pillars.valorisation : null),
+    }, pillarOut)
+    // Chaque chiffre de prix pris isolément, sur les sociétés qui ont la trésorerie dégagée
+    const m = (it: Item, key: string) => { const d = it.score.details.valorisation[key]; return d && !d.excluded && !d.missing ? d.note : null }
     evaluateVariants(date, items, HORIZONS, {
       "PER seul": (it) => m(it, "pe_vs_secteur"),
       "VE/EBITDA seul": (it) => m(it, "ev_ebitda"),
       "Cours/actif net seul": (it) => m(it, "pb"),
-      "Trésorerie dégagée seule": (it) => it.fcfNote,
-    }, metricOut, (it) => it.fcfNote != null)
+      "Trésorerie dégagée seule": (it) => m(it, "fcf_yield"),
+    }, metricOut, (it) => m(it, "fcf_yield") != null)
   }
 
-  console.log(`Trésorerie dégagée disponible pour ${withFcf} notes sur ${nonFin} (hors finance), soit ${Math.round((withFcf / nonFin) * 100)} %`)
-  report("NOTES RECONSTITUÉES · chiffres de valorisation pris isolément", metricOut, HORIZONS, ["pea", "peaLarge", "peaSmall", "all"], "PER seul")
-  report("NOTES RECONSTITUÉES · critère Valorisation", fcfOnlyOut, HORIZONS, ["pea", "peaLarge", "peaSmall", "all"], "Valorisation actuelle")
-  report("NOTES RECONSTITUÉES · note globale, trésorerie dégagée", fcfOut, HORIZONS, ["pea", "peaLarge", "peaSmall", "all"], "note actuelle")
-  report("NOTES RECONSTITUÉES · note globale, poids", weightsOut, HORIZONS, ["pea", "peaLarge", "peaSmall", "all"], "poids actuels")
+  const all: UniverseId[] = ["pea", "peaLarge", "peaSmall", "all"]
+  report("NOTES RECONSTITUÉES · chiffres de valorisation pris isolément", metricOut, HORIZONS, all, "PER seul")
+  report("NOTES RECONSTITUÉES · critère Valorisation", pillarOut, HORIZONS, all, "Valorisation sans trésorerie")
+  report("NOTES RECONSTITUÉES · note globale, trésorerie dégagée", fcfOut, HORIZONS, all, "sans trésorerie dégagée")
+  report("NOTES RECONSTITUÉES · note globale, poids", weightsOut, HORIZONS, all, "poids actuels")
 }
 
 // ─── 2. Versions hebdomadaires réelles (poids seulement : la trésorerie n'y figure pas) ──
@@ -225,7 +179,7 @@ function weekly() {
     let stocks: Stock[]
     try { stocks = loadSnapshot(snap.sha) } catch { continue }
     const items: Item[] = stocks.map((s) => ({
-      stock: s, score: computeScore(s, stocks), fcfYield: null, fcfNote: null,
+      stock: s, score: computeScore(s, stocks),
       rets: Object.fromEntries(HORIZONS.map((h) => [h, forwardReturn(s.ticker, snap.date, h)])),
     }))
     evaluateVariants(snap.date, items, HORIZONS, Object.fromEntries(Object.entries(WEIGHT_VARIANTS).map(([n, w]) => [n, (it: Item) => total(it.score, w)])), out)

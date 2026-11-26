@@ -8,7 +8,8 @@ import { enrichWithTechnicals } from "./technicals.ts"
 import { writeBenchmarks } from "./benchmarks.ts"
 import { toPriceFilename } from "../src/lib/tickerFilename.ts"
 import { getStockRegion } from "../src/lib/market.ts"
-import { FALLBACK_FX_RATES, normalizeCurrency, toEur, type FxRates } from "../src/lib/fx.ts"
+import { FALLBACK_FX_RATES, freeCashflowYield, normalizeCurrency, toEur, type FxRates } from "../src/lib/fx.ts"
+import type { AnnualFundamentalsFile } from "./fetch-annual-fundamentals.ts"
 
 const yahooFinance = new YahooFinance({ suppressNotices: ["yahooSurvey"] })
 
@@ -22,6 +23,18 @@ const ML_PREDICTIONS_PATH = path.resolve(__dirname, "../public/data/picks/us_pre
  * Notes du modèle statistique américain (ticker → note sur 10), publiées par scripts/ml.
  * Ignorées si elles datent de plus d'un mois : une note périmée ne doit pas peser dans le classement.
  */
+/** Au-delà, les derniers comptes connus sont trop anciens pour décrire la société d'aujourd'hui */
+const MAX_STATEMENT_AGE_DAYS = 550
+
+async function loadAnnualFundamentals(): Promise<AnnualFundamentalsFile | null> {
+  try {
+    return JSON.parse(await readFile(path.join(process.cwd(), "scripts", "data", "annual-fundamentals.json"), "utf-8")) as AnnualFundamentalsFile
+  } catch {
+    console.log("  comptes annuels introuvables : trésorerie dégagée non renseignée")
+    return null
+  }
+}
+
 async function loadMlScores(): Promise<Record<string, number>> {
   try {
     const pred = JSON.parse(await readFile(ML_PREDICTIONS_PATH, "utf-8")) as { period?: string; validated?: boolean; scores?: Record<string, number> }
@@ -414,6 +427,24 @@ async function main() {
       const dailyEur = toEur(stock.currency === "GBp" ? avg / 100 : avg, stock.currency, fxRates)
       stock.avgDailyValueEur = dailyEur != null ? Math.round(dailyEur) : null
     }
+  }
+
+  // Trésorerie dégagée du dernier exercice publié, rapportée à la capitalisation (comptes annuels
+  // téléchargés une fois par mois par scripts/fetch-annual-fundamentals.ts). Si le fichier manque,
+  // le champ reste absent et la notation s'en passe.
+  const annual = await loadAnnualFundamentals()
+  if (annual) {
+    let fcfCount = 0
+    for (const stock of results) {
+      const latest = annual.statements[stock.ticker]?.at(-1)
+      const recent = latest != null && (Date.now() - Date.parse(latest.periodEnd)) / 86_400_000 < MAX_STATEMENT_AGE_DAYS
+      const finCcy = annual.financialCurrency?.[stock.ticker] ?? normalizeCurrency(stock.currency)
+      // Sans objet pour les banques et assureurs, dont la trésorerie ne se lit pas ainsi
+      const applies = stock.sector !== "Financial Services"
+      stock.freeCashflowYield = recent && applies ? freeCashflowYield(latest.freeCashFlow, finCcy, stock.marketCapEur, fxRates) : null
+      if (stock.freeCashflowYield != null) fcfCount++
+    }
+    console.log(`  trésorerie dégagée renseignée : ${fcfCount}`)
   }
 
   const mlScores = await loadMlScores()

@@ -34,6 +34,9 @@ export function FundamentalsTable({ stock }: FundamentalsTableProps) {
           <MetricRow label="P/E forward" value={formatRatio(stock.forwardPE)} />
           <MetricRow label="EV/EBITDA" value={formatRatio(stock.evToEbitda)} />
           <MetricRow label="P/B" value={formatRatio(stock.priceToBook)} />
+          {stock.freeCashflowYield != null && (
+            <MetricRow label="Trésorerie dégagée / valeur en Bourse" value={`${stock.freeCashflowYield.toLocaleString("fr-FR", { maximumFractionDigits: 1 })} %`} />
+          )}
           <MetricRow label="Valeur d'entreprise" value={formatMarketCap(stock.enterpriseValue, stock.currency)} />
         </CardContent>
       </Card>

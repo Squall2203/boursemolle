@@ -19,6 +19,8 @@ export const FALLBACK_FX_RATES: FxRates = {
   HKD: 0.117,
   CAD: 0.66,
   AUD: 0.6,
+  // Devises dans lesquelles certaines sociétés publient leurs comptes sans y être cotées
+  CNY: 0.126, TWD: 0.028, KRW: 0.00066, SGD: 0.68, INR: 0.011, BRL: 0.16, MXN: 0.05, ZAR: 0.05, ILS: 0.25, PLN: 0.23, CZK: 0.04, HUF: 0.0025,
 }
 
 /** Yahoo cote Londres en pence (GBp) mais exprime les capitalisations et les bilans en livres. */
@@ -32,6 +34,18 @@ export function toEur(amount: number | null | undefined, currency: string, rates
   if (c === "EUR") return amount
   const rate = rates?.[c] ?? FALLBACK_FX_RATES[c]
   return rate != null ? amount * rate : null
+}
+
+/**
+ * Trésorerie dégagée sur un exercice, en % de la capitalisation boursière.
+ * Les comptes peuvent être publiés dans une autre devise que celle de la cotation : tout est ramené en euros.
+ */
+export function freeCashflowYield(
+  freeCashFlow: number | null | undefined, financialCurrency: string, marketCapInEur: number | null | undefined, rates?: FxRates | null,
+): number | null {
+  const fcfEur = toEur(freeCashFlow, financialCurrency, rates)
+  if (fcfEur == null || marketCapInEur == null || !(marketCapInEur > 0)) return null
+  return Math.round((fcfEur / marketCapInEur) * 10000) / 100
 }
 
 /** Capitalisation en euros : valeur fournie par l'ingestion, sinon conversion à la volée. */
