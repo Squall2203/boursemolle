@@ -40,5 +40,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add --force public/data/news/
           git commit -m "chore: update news data $(date -u +%F)" || { echo "No changes to commit"; exit 0; }
-          git pull origin main --ff-only || git push --force-with-lease origin HEAD:main
-          git push origin HEAD:main
+          # Une autre tâche a pu publier entre-temps : on rejoue notre enregistrement par-dessus le sien
+          # (jamais d'écrasement), et on réessaie si elle publie encore pendant ce temps.
+          for attempt in 1 2 3 4; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 10))
+          done
+          echo "Publication impossible après 4 essais"; exit 1
